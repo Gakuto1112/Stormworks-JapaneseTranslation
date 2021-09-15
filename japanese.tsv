@@ -79,11 +79,11 @@ id	description	en	local
 		Click on the 'Logic' button in the top bar to enter logic connecting mode.	上部バーの「ロジック」ボタンをクリックしてロジック接続モードに入ります.
 		Select the 'Data' logic type to view 'On/Off' and 'Number' logic nodes.	「オン/オフ」と「数値」のノードを見るために「データ」ロジックタイプを選択します.
 		Select the 'Power' logic type to view 'Power' logic nodes.	「動力「のノードを見るために「動力」ロジックタイプを選択します.
-		Place a wedge in the highlighted space.\n\nYou can change a component's rotation by hovering over different adjacent surfaces in the vehicle.	強調表示された場所に斜めブロックを置きます.\n\n乗り物の異なる面にカーソルを合わせることで, パーツの向きを変えることができます.
-		Click on the wedge block in the component list to start building with it.	パーツ一覧から斜めブロックをクリックして, 斜めブロックでブロックの設置を開始します.
+		Place a wedge in the highlighted space.\n\nYou can change a component's rotation by hovering over different adjacent surfaces in the vehicle.	強調表示された場所に斜めブロックを置きます.\n\n乗り物の異なる面にカーソルを合わせることで, 部品の向きを変えることができます.
+		Click on the wedge block in the component list to start building with it.	部品一覧から斜めブロックをクリックして, 斜めブロックでブロックの設置を開始します.
 		Place the next five wedges.\n\nMultiple wedges can be placed at once by dragging.	次の5つの斜めブロックを設置します.\n\nドラッグすると複数のブロックを一度に設置できます.
-		You can also use the following keys to rotate and flip the component.\n\n[j] rotates on the x axis\n[k] rotates on the y axis\n[l] rotates on the z axis\n\n[u] flips on the x axis\n[i] flips on the y axis\n[o] flips on the z axis\n\n[p] toggles the rotation display	次のキーでパーツの回転や反転が可能です.\n\n[j] でx軸回転\n[k] でy軸回転\n[l] でz軸回転\n\n[u] でx軸反転\n[i] でy軸反転\n[o] でz軸反転\n\n[p] でブロック操作ガイドを表示/非表示にできます.
-		Click on the pyramid block in the component list to start building with it.	パーツ一覧から三角ブロックをクリックして, 三角ブロックでブロックの設置を開始します.
+		You can also use the following keys to rotate and flip the component.\n\n[j] rotates on the x axis\n[k] rotates on the y axis\n[l] rotates on the z axis\n\n[u] flips on the x axis\n[i] flips on the y axis\n[o] flips on the z axis\n\n[p] toggles the rotation display	次のキーで部品の回転や反転が可能です.\n\n[j] でx軸回転\n[k] でy軸回転\n[l] でz軸回転\n\n[u] でx軸反転\n[i] でy軸反転\n[o] でz軸反転\n\n[p] でブロック操作ガイドを表示/非表示にできます.
+		Click on the pyramid block in the component list to start building with it.	部品一覧から三角ブロックをクリックして, 三角ブロックでブロックの設置を開始します.
 		First, connect the button in front of seat to the engine's 'on/off' node.\n\nThis will allow you to switch the engine on by pressing the button.\n\nClick on one of the flashing logic nodes to select it and then drag and release while hovering over the node you want to connect it to.	始めに, 座席前方のボタンとエンジンの「オン/オフ」のノードを接続します.\n\nこれにより, ボタンを押してエンジンを始動できます.\n\n点滅しているロジックノードの1つをドラッグで選択して, 接続したいもう1つノードの上でドロップしてノードを接続します.
 		Next, connect the 'Axis 2 [$[action_up]]/[$[action_down]]' node from the seat to the engine's 'throttle in' node.\n\nThis will allow you to apply throttle power to the engine by pressing [$[action_up]] and [$[action_down]].\n\nClick on one of the flashing logic nodes to select it and then drag and release while hovering over the node you want to connect it to.	次に, 座席の「軸2 [$[action_up]]/[$[action_down]] 」ノードとエンジンの「スロットル」ノードを接続します.\n\nこれにより, [$[action_up]] と [$[action_down]] を押してエンジンのスロットルを調整できます.\n\n点滅しているロジックノードの1つをドラッグで選択して, 接続したいもう1つノードの上でドロップしてノードを接続します.
 		Next, connect the 'Axis 1 [$[action_left]]/[$[action_right]]' node from the seat to one rudder's 'rotation input' node.\n\nThis will allow you to apply a turning force by pressing [$[action_left]] or [$[action_right]].	次に, 座席の「軸1 [$[action_left]]/[$[action_right]] 」ノードと1つ目のラダーの「回転」ノードを接続します.\n\nこれにより, [$[action_left]] と [$[action_right]] を押して乗り物を進行方向を曲げられます.
@@ -399,7 +399,7 @@ id	description	en	local
 		Grab	掴む
 		Hold	持つ
 		Tether	繋ぐ
-		Structure	構造物
+		Structure	建物
 		Vehicle	乗り物
 		Return To Workbench	作業台に戻す
 		Deceased	死亡
@@ -413,9 +413,9 @@ id	description	en	local
 		SAVE SELECTION	選択を保存
 		SAVE VEHICLE	乗り物を保存
 		DISABLED	無効
-		X PLANE	X PLANE
-		Y PLANE	Y PLANE
-		Z PLANE	Z PLANE
+		X PLANE	X平面
+		Y PLANE	Y平面
+		Z PLANE	Z平面
 		none set	未設定
 		Fast-travel Location	テレポート場所
 		CLICK TO TRAVEL HERE	クリックしてここにテレポート
@@ -455,7 +455,7 @@ id	description	en	local
 		Hardcore mode with permadeath (save file will be deleted upon death).	ハードコアモードです. 一度でも死亡するとセーブデータは削除されます.
 		Custom difficulty settings.	カスタム難易度設定です.
 		Custom mode. A sandbox environment with an array of settings to customise your session. Career or Creative.	カスタムモードです. サンドボックスモードの環境で, 様々なゲーム設定を変更できます. キャリアモードまたはクリエイティブモードとして機能します.
-		Classic career mode. Expand your coastguard empire. Complete missions to earn money and unlock components.	クラッシックキャリアモードです. 自分の領土を広げよう. ミッションを完了してお金を稼いだり, パーツをアンロックしたりしよう.
+		Classic career mode. Expand your coastguard empire. Complete missions to earn money and unlock components.	クラッシックキャリアモードです. 自分の領土を広げよう. ミッションを完了してお金を稼いだり, 部品をアンロックしたりしよう.
 		Career mode. Expand your coastguard empire. Complete missions with survival style settings.	キャリアモードです. 自分の領土を広げよう. サバイバル設定でミッションに挑戦しよう.
 		Custom game mode settings.	カスタムゲームモード設定です.
 		PLEASE CHOOSE ANOTHER KEY	他のキーを割り当てて下さい.
@@ -595,7 +595,7 @@ id	description	en	local
 		CHOOSE BASE	拠点の選択
 		DELETE SAVE	セーブデータの削除
 		Are you sure you want to delete this game?	このセーブデータを削除しますか? 一度削除すると二度と元には戻りません.
-		COMPONENT STOCK	パーツの在庫
+		COMPONENT STOCK	部品の在庫
 		CASH REWARD	報酬金
 		RESEARCH POINTS	研究ポイント
 		Mission Failed	ミッション失敗
@@ -608,9 +608,9 @@ id	description	en	local
 		Official	公式
 		Saved	保存済み
 		Workshop	ワークショップ
-		Your saved addons.	保存したアドオン
-		Addons you've subscribed to on the Steam Workshop.	Steamワークショップでサブスクライブしたアドオン
-		Official addons created by the Stormworks Devs.	Stormworks開発チームが作成した公式アドオン
+		Your saved addons.	保存したアドオン.
+		Addons you've subscribed to on the Steam Workshop.	Steamワークショップでサブスクライブしたアドオン.
+		Official addons created by the Stormworks Devs.	Stormworks開発チームが作成した公式アドオン.
 		no objectives	目的なし
 		1 objective	1つの目的
 		requirements	必要物
@@ -639,7 +639,7 @@ id	description	en	local
 		Edit the current addon's locations.	アドオンのロケーションを編集します.
 		View the currently edited addon.	現在編集中のアドオンの概要を表示/編集します.
 		ADD CHARACTER	キャラクターを追加
-		You can customise outfits and whether this character is a survivor or NPC in the properties window. Survivors will follow you and can be picked up, but NPCs can not be interacted with.	プロパティウィンドウからキャラクターの装備や, NPCか生存者のどちらかを設定できます. 生存者はプレイヤーが誘導したり担いだりできますが, NPCはできません.
+		You can customise outfits and whether this character is a survivor or NPC in the properties window. Survivors will follow you and can be picked up, but NPCs can not be interacted with.	プロパティウィンドウからキャラクターの服装や, NPCか生存者のどちらかを設定できます. 生存者はプレイヤーが誘導したり担いだりできますが, NPCはできません.
 		ADD OBJECT	オブジェクトを追加
 		Objects can be picked up, thrown and moved around by the player. They can be used for delivery missions or just as decoration. You can customise the object type in the properties window.	オブジェクトはプレイヤーが持ち運んだり投げたりできます. 配達ミッションの配達物としても, 単なる飾りとしても使用できます. オブジェクトの種類はプロパティウィンドウから設定できます.
 		ADD ZONE	ゾーンを追加
@@ -696,7 +696,7 @@ id	description	en	local
 		COMPONENTS	コンポーネント
 		SET MISSION DEPENDENCIES	ミッションの関係性の設定
 		OTHER MISSIONS	他のミッション
-		This mission will only spawn in career mode if all of its dependencies are met. It will never spawn if its dependencies have failed to be met.	このミッションはキャリアモードで全ての条件が満たされる場合のみ発生します. 条件が満たされない場合は発生することはありません.
+		This mission will only spawn in career mode if all of its dependencies are met. It will never spawn if its dependencies have failed to be met.	このミッションはキャリアモードで全ての関係性が満たされる場合のみ発生します. 関係性が満たされない場合は発生することはありません.
 		TRIGGERS	トリガー
 		TRIGGER	トリガー
 		SET ACTION DEPENDENCIES	アクションの関係性の設定
@@ -731,7 +731,7 @@ id	description	en	local
 		EDIT MICROCONTROLLER	マイクロコントローラーの編集
 		Are you sure you want to open this microcontroller in the editor?\n\nAny unsaved changed currently open in the microcontroller editor will be lost.	このマイクロコントローラーをマイクロコントローラーエディターで開きますか?\n\n現在開いている未保存のマイクロコントローラーは失われます.
 		UPDATE MICROCONTROLLER	マイクロコントローラーの更新
-		Are you sure you want to update the selected microcontroller with this schematic?\n\n- If you have resized the schematic, some components may be removed to make room for the new microcontroller.\n- If you have moved or changed any logic inputs/outputs, some logic links may not be preserved.	選択したマイクロコントローラーを現在開いているマイクロコントローラーに更新しますか?\n\n- マイクロコントローラーのサイズを変更した場合, 新しいマイクロコントローラーのスペースを確保するためにいくつかのパーツが削除される場合があります.\n- ロジックノードを移動または変更した場合, ロジックの接続が切れる場合があります.
+		Are you sure you want to update the selected microcontroller with this schematic?\n\n- If you have resized the schematic, some components may be removed to make room for the new microcontroller.\n- If you have moved or changed any logic inputs/outputs, some logic links may not be preserved.	選択したマイクロコントローラーを現在開いているマイクロコントローラーに更新しますか?\n\n- マイクロコントローラーのサイズを変更した場合, 新しいマイクロコントローラーのスペースを確保するためにいくつかの部品が削除される場合があります.\n- ロジックノードを移動または変更した場合, ロジックの接続が切れる場合があります.
 		Enter a name for this vehicle	この乗り物の名前を入力して下さい.
 		Enter file name to export vehicle model to	乗り物のモデルを出力する先のファイル名を入力して下さい.
 		EXPORT 3D MODEL	3Dモデルにエクスポート
@@ -764,13 +764,13 @@ id	description	en	local
 		Please select at least 1 tag.	少なくとも1個はタグを選択して下さい.
 		Your vehicle is too small to be uploaded to the workshop.	この乗り物はSteamワークショップにアップロードするには小さ過ぎます.
 		Your custom thumbnail is not a 512x512 size PNG.	このカスタムサムネイルは512x512のPNGファイルではありません.
-		You are missing some components in this vehicle, they have been removed:\n	この乗り物のパーツのいくつかがありません. 以下の不足分は取り除かれます:\n
-		Some components do not fit or may be overlapping, they have been removed:\n	いくつかのパーツは合わないか重なり合っています. 以下のパーツは取り除かれます:\n
+		You are missing some components in this vehicle, they have been removed:\n	この乗り物の部品のいくつかがありません. 以下の不足分は取り除かれます:\n
+		Some components do not fit or may be overlapping, they have been removed:\n	いくつかの部品は合わないか重なり合っています. 以下の部品は取り除かれます:\n
 		INCOMPATIBLE DIFFICULTY	作成モードの不一致
 		This vehicle was built with the 'Advanced Vehicles' difficulty option enabled.\n\nYou are currently playing with Advanced Vehicles disabled, so this vehicle may not function correctly or at all without modification.	この乗り物では「本格作成モード」が有効になっています.\n\n現在は「本格作成モード」は無効になっていますので, この乗り物を編集しないと乗り物の機能が正しく動作しないまたは全く動作しない可能性があります.
 		This vehicle was built with the 'Advanced Vehicles' difficulty option disabled.\n\nYou are currently playing with Advanced Vehicles enabled, so this vehicle may not function correctly or at all without modification.	この乗り物では「本格作成モード」が無効になっています.\n\n現在は「本格作成モード」は有効になっていますので, この乗り物を編集しないと乗り物の機能が正しく動作しないまたは全く動作しない可能性があります.
-		SOME COMPONENTS DID NOT FIT	いくつかのパーツが不一致
-		Some components have been updated and no longer fit on this vehicle. You will still be able to edit this vehicle but these components have been removed:\n	いくつかのパーツが更新された影響でこの乗り物に合わなくなっています. この乗り物の編集は可能ですが, 以下のパーツは削除されました:\n
+		SOME COMPONENTS DID NOT FIT	いくつかの部品が不一致
+		Some components have been updated and no longer fit on this vehicle. You will still be able to edit this vehicle but these components have been removed:\n	いくつかの部品が更新された影響でこの乗り物に合わなくなっています. この乗り物の編集は可能ですが, 以下の部品は削除されました:\n
 		Your microcontroller has errors that must be fixed in order to upload to the workshop:\n\n	このマイクロコントローラーにはエラーがあり, Steamワークショップにアップロードするにはエラーを修正する必要があります:\n\n
 		ERROR	エラー
 		An error occurred.	エラーが発生しました.
@@ -788,7 +788,7 @@ id	description	en	local
 		(double-click to expand)	(ダブルクリックで拡張)
 		No description set for microcontroller component.	このマイクロコントローラーには説明がありません.
 		Results for	結果
-		COMPONENT INVENTORY	パーツインべントリ
+		COMPONENT INVENTORY	部品インべントリ
 		Group: None	グループ: なし
 		Group: Category	グループ: カテゴリー別
 		Group: A to Z	グループ: AからZ
@@ -821,7 +821,7 @@ id	description	en	local
 		Design the physical layout of your microcontroller and customise inputs and outputs.	マイクロコントローラーの大きさやノードを編集します.
 		LOGIC	ロジック
 		Edit the logic behaviour of your microcontroller.	マイクロコントローラーの処理ロジックを編集します.
-		Browse microcontroller components [tab]. Drag components to your hotbar with [LMB] for quick access. Double click a component to hide the inventory. Double click a hotbar slot or select it when the inventory is open to replace it with another component. [0-9] can be used to select hotbar slots.	[tab] でマイクロコントローラーのパーツ一覧を閲覧します. [LMB] でパーツをドラッグしてホットバーに移動させるとそのパーツに素早くアクセスできます. パーツをダブルクリックしてパーツ一覧を閉じます. ホットバーのスロットでダブルクリックまたはパーツ一覧が開いている時にホットバーのスロットを選択すると, 別のパーツに置き換えられます. [0-9] でもホットバーのスロットを選択できます.
+		Browse microcontroller components [tab]. Drag components to your hotbar with [LMB] for quick access. Double click a component to hide the inventory. Double click a hotbar slot or select it when the inventory is open to replace it with another component. [0-9] can be used to select hotbar slots.	[tab] でマイクロコントローラーの部品一覧を閲覧します. [LMB] で部品をドラッグしてホットバーに移動させるとその部品に素早くアクセスできます. 部品をダブルクリックして部品一覧を閉じます. ホットバーのスロットでダブルクリックまたは部品一覧が開いている時にホットバーのスロットを選択すると, 別の部品に置き換えられます. [0-9] でもホットバーのスロットを選択できます.
 		input	入力
 		output	出力
 		Name	名前
@@ -830,7 +830,7 @@ id	description	en	local
 		No description set.	説明がありません.
 		Width	幅
 		Length	高さ
-		Don't show in inventory	パーツ一覧で非表示
+		Don't show in inventory	部品一覧で非表示
 		Add Node	ノードを追加
 		NODES	ノード
 		Use [lmb] to toggle pixels.	[lmb] でピクセルを切り替えます.
@@ -944,11 +944,11 @@ id	description	en	local
 		Mission Markers for the First Person HUD.	一人称視点の時ミッションマーカーを表示します.
 		Starting Money	開始資金
 		CUSTOMISE GAME MODE	ゲーム設定
-		Unlock All Components	全てのパーツをアンロック
+		Unlock All Components	全ての部品をアンロック
 		Unlock All Islands	全ての島をアンロック
 		All purchasable islands are pre-purchased.	全ての島を購入している状態で始まります.
 		Infinite Stock	在庫無制限
-		Infinite money and components are available.	資金とパーツが無制限で使用できます.
+		Infinite money and components are available.	資金と部品が無制限で使用できます.
 		Creative Tools	クリエイティブツール
 		Enable time/weather control menu, addon editor, mission spawn menu.	時刻/天候操作メニューとアドオンエディターとミッション手動開始メニューが使用できるようになります.
 		Day/Night Cycle (minutes)	1日の時間 (分)
@@ -1176,7 +1176,7 @@ id	description	en	local
 		crash and burn	墜落炎上
 		take on me	連れて行って
 		STOCK	在庫
-		Unknown Component	未知のパーツ
+		Unknown Component	未知の部品
 		RESEARCH	研究
 		REWARD RECEIVED	報酬の受領
 		RESEARCH COMPLETE	研究完了
@@ -1192,7 +1192,7 @@ id	description	en	local
 		Total loot found	発見した宝箱の数
 		Final money	最終資金
 		Your rogue mode save has been permanently deleted. Click below to return to the main menu.	このローグモードのセーブデータは削除されました. 以下をクリックしてメインメニューに戻ります.
-		COMPONENT	パーツ
+		COMPONENT	部品
 		No missions available. Sleep in a bed to fast-forward to the next mission.	ミッションは発生していません. ベッドで寝て次のミッションまで早送りできます.
 		MISSION SELECTOR	ミッションセレクター
 		Save name	保存名
@@ -1272,514 +1272,514 @@ id	description	en	local
 		LOGIC OUTPUT	ロジック出力
 		LOGIC INPUT	ロジック入力
 		Connect outputs to one or more inputs. Drag over an existing connection to remove it.	1またはそれ以上の入力と出力を繋ぎます. 既に接続してあるノード同士をドラッグして切断します.
-		NODE	NODE
-		On/Off	On/Off
-		This logic node doesn't have a description yet	This logic node doesn't have a description yet
-		change drag plane	change drag plane
-		Reset Camera	Reset Camera
-		Orbit Mode	Orbit Mode
-		Free Mode	Free Mode
-		Brush	Brush
-		Additive	Additive
-		Replace Colour	Replace Colour
-		Plane Fill	Plane Fill
-		Custom Colors	Custom Colors
-		Add To Custom Color	Add To Custom Color
-		PAINT MODE	PAINT MODE
-		Change paint mode settings.	Change paint mode settings.
-		MOVE GRID	MOVE GRID
-		Move the selection grid.	Move the selection grid.
-		RESIZE GRID	RESIZE GRID
-		Resize the selection grid.	Resize the selection grid.
-		RESET GRID	RESET GRID
-		Reset the selection grid to its default size.	Reset the selection grid to its default size.
-		MOVE/CUT	MOVE/CUT
-		Cut the contents of the selection grid from your vehicle. Logic links to other parts of your vehicle will be preserved the first time you paste.	Cut the contents of the selection grid from your vehicle. Logic links to other parts of your vehicle will be preserved the first time you paste.
-		CUT	CUT
-		Copy the current selection to the clipboard and remove it.	Copy the current selection to the clipboard and remove it.
-		COPY	COPY
-		Copy the current selection to the clipboard.	Copy the current selection to the clipboard.
-		Copy the contents of the selection grid.	Copy the contents of the selection grid.
-		LOAD CONTENT	LOAD CONTENT
-		Load a subassembly into the selection grid.	Load a subassembly into the selection grid.
-		PASTE	PASTE
-		Paste the contents of the clipboard.	Paste the contents of the clipboard.
-		Paste the contents of the selection grid onto your vehicle. Pasted components will have their own bodies and must be merged to attach them to your vehicle.	Paste the contents of the selection grid onto your vehicle. Pasted components will have their own bodies and must be merged to attach them to your vehicle.
-		CLEAR EXTERNAL LOGIC	CLEAR EXTERNAL LOGIC
-		Sever any logic links that extend outside the selection. This will happen automatically when pasting a cut selection for the first time.	Sever any logic links that extend outside the selection. This will happen automatically when pasting a cut selection for the first time.
-		Reset the selection grid to its initial position/orientation.	Reset the selection grid to its initial position/orientation.
-		SAVE CONTENT	SAVE CONTENT
-		Save the current selection grid as a new vehicle.	Save the current selection grid as a new vehicle.
-		CLEAR CONTENT	CLEAR CONTENT
-		Clear the contents of the selection grid to make a new selection.	Clear the contents of the selection grid to make a new selection.
-		DATA	DATA
-		Edit number and on/off logic nodes.	Edit number and on/off logic nodes.
-		COMPOSITE	COMPOSITE
-		Edit composite data logic nodes.	Edit composite data logic nodes.
-		POWER	POWER
-		Edit power logic nodes.	Edit power logic nodes.
-		Use pipes with Advanced Vehicle difficulty	Use pipes with Advanced Vehicle difficulty
-		FLUID	FLUID
-		Edit fluid transfer nodes.	Edit fluid transfer nodes.
-		ELECTRIC	ELECTRIC
-		Edit electrical transfer nodes.	Edit electrical transfer nodes.
-		Show/Hide Move Widget	Show/Hide Move Widget
-		SYMMETRY	SYMMETRY
-		Select the symmetry plane that should be used when adding and removing components.	Select the symmetry plane that should be used when adding and removing components.
-		SECTION PLANE	SECTION PLANE
-		Toggle section planes to see inside areas.	Toggle section planes to see inside areas.
-		CAMERA	CAMERA
-		Change camera settings.	Change camera settings.
-		CENTRE OF MASS	CENTRE OF MASS
-		Toggle visibility of the vehicle's centre of mass.	Toggle visibility of the vehicle's centre of mass.
-		DIRECTION ARROWS	DIRECTION ARROWS
-		Toggle visibility of the directional arrows shown on components.	Toggle visibility of the directional arrows shown on components.
-		ROTATION LABELS	ROTATION LABELS
-		Toggle visibility of the rotation hotkey hints when placing components.	Toggle visibility of the rotation hotkey hints when placing components.
-		GRID LINES	GRID LINES
-		Toggle visibility of the editor grid lines.	Toggle visibility of the editor grid lines.
-		MEASUREMENTS	MEASUREMENTS
-		Toggle visibility of measurements when placing blocks.	Toggle visibility of measurements when placing blocks.
-		WORLD VIEW	WORLD VIEW
-		Toggle visibility of the world immediately surrounding the workbench.	Toggle visibility of the world immediately surrounding the workbench.
-		EDITOR WARNINGS	EDITOR WARNINGS
-		Toggle visibility of editor warnings.	Toggle visibility of editor warnings.
-		This component doesn't have a description yet	This component doesn't have a description yet
-		Stock	Stock
-		Exit the editor. This will refund any money spent.	Exit the editor. This will refund any money spent.
-		SPAWN	SPAWN
-		Spawn your vehicle in the world.	Spawn your vehicle in the world.
-		Discard any changes and start a new vehicle. This will refund any money spent.	Discard any changes and start a new vehicle. This will refund any money spent.
-		Load a saved vehicle. You will need enough inventory and money to fully construct a loaded vehicle.	Load a saved vehicle. You will need enough inventory and money to fully construct a loaded vehicle.
-		Save your vehicle for later.	Save your vehicle for later.
-		Upload your vehicle to the Steam Workshop, or update a previous upload.	Upload your vehicle to the Steam Workshop, or update a previous upload.
-		UNDO	UNDO
-		Undo your most recent change.	Undo your most recent change.
-		REDO	REDO
-		Redo the previous undo.	Redo the previous undo.
-		SELECT	SELECT
-		Select components to change their properties. Selectable components will highlight in blue.	Select components to change their properties. Selectable components will highlight in blue.
-		ERASE	ERASE
-		Erase components from your vehicle.	Erase components from your vehicle.
-		PAINT	PAINT
-		Change the colours of placed components.	Change the colours of placed components.
-		MOVE	MOVE
-		Move your vehicle within the bounds of the edit grid.	Move your vehicle within the bounds of the edit grid.
-		Hook up logic connections between components.	Hook up logic connections between components.
-		MERGE	MERGE
-		Merge two vehicle bodies. Different bodies are denoted by different colours. Click on a body to select it, then click an adjacent one to merge them.	Merge two vehicle bodies. Different bodies are denoted by different colours. Click on a body to select it, then click an adjacent one to merge them.
-		SELECTION GRID	SELECTION GRID
-		Select parts of your vehicle to cut, copy, paste, rotate, flip and move them around. Export a selection as a new vehicle, or import a saved subassembly to place on your vehicle.	Select parts of your vehicle to cut, copy, paste, rotate, flip and move them around. Export a selection as a new vehicle, or import a saved subassembly to place on your vehicle.
-		MICROCONTROLLER EDITOR	MICROCONTROLLER EDITOR
-		Create and edit microcontrollers to build compact logic circuits for your vehicle.	Create and edit microcontrollers to build compact logic circuits for your vehicle.
-		INVENTORY	INVENTORY
-		Browse all components in your inventory [tab]. Drag components to your hotbar with [LMB] for quick access. Double click a component to hide the inventory. Double click a hotbar slot or select it when the inventory is open to replace it with another component. [0-9] can be used to select hotbar slots.	Browse all components in your inventory [tab]. Drag components to your hotbar with [LMB] for quick access. Double click a component to hide the inventory. Double click a hotbar slot or select it when the inventory is open to replace it with another component. [0-9] can be used to select hotbar slots.
-		Advanced Presets	Advanced Presets
-		Presets	Presets
-		Your saved vehicles.	Your saved vehicles.
-		Vehicles you've subscribed to on the Steam Workshop.	Vehicles you've subscribed to on the Steam Workshop.
-		Some basic vehicles to get you started.	Some basic vehicles to get you started.
-		Preset subassemblies to paste onto your vehicles.	Preset subassemblies to paste onto your vehicles.
-		Upload a new vehicle to the steam workshop, or select one of your existing workshop vehicles to edit and overwrite it	Upload a new vehicle to the steam workshop, or select one of your existing workshop vehicles to edit and overwrite it
-		VEHICLE NAME	VEHICLE NAME
-		Vehicle Type	Vehicle Type
-		Vehicle Functionality	Vehicle Functionality
-		Misc.	Misc.
-		tags	tags
-		Vehicle (Made by ###)	Vehicle (Made by ###)
-		SERVER: ### FPS	SERVER: ### FPS
-		### Degrees	### Degrees
-		Last updated ###	Last updated ###
-		Functions	Functions
-		Matrices	Matrices
-		Callbacks	Callbacks
-		Examples	Examples
-		Television	Television
-		Crate	Crate
-		Basketball	Basketball
-		Collectable	Collectable
-		Chair	Chair
-		Food Trolley	Food Trolley
-		Medical Trolley	Medical Trolley
-		Office Chair	Office Chair
-		Book	Book
-		Bottle	Bottle
-		Frying Pan	Frying Pan
-		Mug	Mug
-		Saucepan	Saucepan
-		Stool	Stool
-		Telescope	Telescope
-		Log	Log
-		Bin	Bin
-		Book 2	Book 2
-		Loot	Loot
-		Barrel	Barrel
-		Blue Barrel	Blue Barrel
-		Buoyancy Ring	Buoyancy Ring
-		Container	Container
-		Gas Canister	Gas Canister
-		Pallet	Pallet
-		Storage Bin	Storage Bin
-		Fire Extinguisher	Fire Extinguisher
-		Tool Trolley	Tool Trolley
-		Cafetiere	Cafetiere
-		Tool Drawer	Tool Drawer
-		Glass	Glass
-		Microwave	Microwave
-		Plate	Plate
-		Box (Closed)	Box (Closed)
-		Box (Open)	Box (Open)
-		Desk Lamp	Desk Lamp
-		Eraser Board	Eraser Board
-		Folder	Folder
-		Funnel	Funnel
-		Lamp	Lamp
-		Microscope	Microscope
-		Notebook	Notebook
-		Pen Marker	Pen Marker
-		Pencil	Pencil
-		Scales	Scales
-		Beaker	Beaker
-		Cylinder	Cylinder
-		Flask	Flask
-		Tub 1	Tub 1
-		Tub 2	Tub 2
-		File Stack	File Stack
-		Toxic Barrel	Toxic Barrel
-		Debris	Debris
-		Schematic	Schematic
-		Clothing	Clothing
-		Unknown	Unknown
-		Tag	Tag
-		Marker Text	Marker Text
-		Spawn Relative to Sea Floor	Spawn Relative to Sea Floor
-		Zone Type	Zone Type
-		Box	Box
-		Radius	Radius
-		Type	Type
-		Outfit	Outfit
-		Civilian	Civilian
-		Worker	Worker
-		Fishing	Fishing
-		Waiter	Waiter
-		Swimsuit	Swimsuit
-		Military	Military
-		Office	Office
-		Medical	Medical
-		Wetsuit	Wetsuit
-		Survivor	Survivor
+		NODE	ノード
+		On/Off	オン/オフ
+		This logic node doesn't have a description yet	このロジックノードには説明がありません.
+		change drag plane	ドラッグ平面の変更
+		Reset Camera	カメラのリセット
+		Orbit Mode	軌道カメラ
+		Free Mode	フリーカメラ
+		Brush	ブラシ
+		Additive	発光ブラシ
+		Replace Colour	色の置き換え
+		Plane Fill	面の塗りつぶし
+		Custom Colors	カスタムカラー
+		Add To Custom Color	カスタムカラーの追加
+		PAINT MODE	着色モード
+		Change paint mode settings.	着色モードの設定を変更します.
+		MOVE GRID	グリッドの移動
+		Move the selection grid.	選択グリッドを移動します.
+		RESIZE GRID	グリッドのリサイズ
+		Resize the selection grid.	選択グリッドの大きさを変更します.
+		RESET GRID	グリッドのリセット
+		Reset the selection grid to its default size.	選択グリッドの大きさをデフォルトのものに戻します.
+		MOVE/CUT	移動/切り取り
+		Cut the contents of the selection grid from your vehicle. Logic links to other parts of your vehicle will be preserved the first time you paste.	乗り物から選択グリッド範囲内の部分を切り取ります. 最初に行う貼り付け貼り付けでは, 他の部分とのロジック接続は維持されます.
+		CUT	切り取り
+		Copy the current selection to the clipboard and remove it.	選択グリッド範囲内のものをクリップボードにコピーし, 乗り物から選択グリッド範囲内のものを削除します.
+		COPY	コピー
+		Copy the current selection to the clipboard.	選択グリッド範囲内のものをクリップボードにコピーします.
+		Copy the contents of the selection grid.	選択グリッドグリッド範囲内のものをコピーします.
+		LOAD CONTENT	乗り物の読み込み
+		Load a subassembly into the selection grid.	別の乗り物を選択グリッドに読み込みます.
+		PASTE	貼り付け
+		Paste the contents of the clipboard.	クリップボードにあるコンテンツを貼り付けます.
+		Paste the contents of the selection grid onto your vehicle. Pasted components will have their own bodies and must be merged to attach them to your vehicle.	選択グリッドのコンテンツを乗り物に貼り付けます. 貼り付けたコンテンツは別オブジェクトとなっており, 乗り物に取り付ける場合は結合する必要があります.
+		CLEAR EXTERNAL LOGIC	ロジック接続の削除
+		Sever any logic links that extend outside the selection. This will happen automatically when pasting a cut selection for the first time.	選択グリッド範囲外に繋がるロジック接続を切断します. これは切り取ったものを最初に貼り付ける時に自動で行われます.
+		Reset the selection grid to its initial position/orientation.	選択グリットを元の大きさと位置に戻します.
+		SAVE CONTENT	コンテンツの保存
+		Save the current selection grid as a new vehicle.	選択グリッド範囲内のコンテンツを新しい乗り物として保存します.
+		CLEAR CONTENT	コンテンツの削除
+		Clear the contents of the selection grid to make a new selection.	選択グリッド範囲内のコンテンツを削除して新しく選択します.
+		DATA	データ信号
+		Edit number and on/off logic nodes.	数値信号とオン/オフ信号のノードを編集します.
+		COMPOSITE	複合信号
+		Edit composite data logic nodes.	複合信号のノードを編集します.
+		POWER	動力
+		Edit power logic nodes.	動力ノードを編集します.
+		Use pipes with Advanced Vehicle difficulty	本格作成モードではパイプを使用して下さい.
+		FLUID	液体
+		Edit fluid transfer nodes.	液体ノードを編集します.
+		ELECTRIC	電力
+		Edit electrical transfer nodes.	電力ノードを編集します.
+		Show/Hide Move Widget	移動ウィジェットを表示/非表示にします.
+		SYMMETRY	対称モード
+		Select the symmetry plane that should be used when adding and removing components.	対称面を設定して面対称で編集します.
+		SECTION PLANE	断面モード
+		Toggle section planes to see inside areas.	切断面を設定して断面を見ながら編集します.
+		CAMERA	カメラ
+		Change camera settings.	カメラ設定を変更します.
+		CENTRE OF MASS	重心
+		Toggle visibility of the vehicle's centre of mass.	重心を表示/非表示にします.
+		DIRECTION ARROWS	方向矢印
+		Toggle visibility of the directional arrows shown on components.	部品の向きを表す矢印を表示/非表示にします.
+		ROTATION LABELS	回転ガイド
+		Toggle visibility of the rotation hotkey hints when placing components.	部品置く時の回転ガイドを表示/非表示にます.
+		GRID LINES	グリッド線
+		Toggle visibility of the editor grid lines.	グリッド線を表示/非表示にします.
+		MEASUREMENTS	メジャー表示
+		Toggle visibility of measurements when placing blocks.	部品を置く時のメジャーを表示/非表示にします.
+		WORLD VIEW	ワールドビュー
+		Toggle visibility of the world immediately surrounding the workbench.	作業台の周りの風景を表示/非表示にします.
+		EDITOR WARNINGS	エディター警告
+		Toggle visibility of editor warnings.	エディター警告を表示/非表示にします.
+		This component doesn't have a description yet	この部品には説明文がありません.
+		Stock	在庫
+		Exit the editor. This will refund any money spent.	エディターを閉じます. 使用した資金は返金されます.
+		SPAWN	スポーン
+		Spawn your vehicle in the world.	ワールドにこの乗り物をスポーンさせます.
+		Discard any changes and start a new vehicle. This will refund any money spent.	現在の乗り物を破棄して新しい乗り物を作成します. 使用した資金は返金されます.
+		Load a saved vehicle. You will need enough inventory and money to fully construct a loaded vehicle.	保存した乗り物を読み込みます. 部品や資金が不足していると読み込まれる乗り物が不完全なものになる場合があります.
+		Save your vehicle for later.	乗り物を保存して後で読み込めるようにします.
+		Upload your vehicle to the Steam Workshop, or update a previous upload.	Steamワークショップにアップロードしたり, Steamワークショップ上の既存の乗り物を更新したりします.
+		UNDO	元に戻す
+		Undo your most recent change.	直近の編集を元に戻します.
+		REDO	取り消し
+		Redo the previous undo.	直近の元に戻す操作を取り消します.
+		SELECT	選択
+		Select components to change their properties. Selectable components will highlight in blue.	部品を選択してプロパティを変更します. 選択可能な部品は青色で強調表示されます.
+		ERASE	削除
+		Erase components from your vehicle.	乗り物から部品を削除します.
+		PAINT	着色
+		Change the colours of placed components.	設置した部品の色を変更します.
+		MOVE	移動
+		Move your vehicle within the bounds of the edit grid.	編集領域内で乗り物を移動させます.
+		Hook up logic connections between components.	部品間でロジック接続を行います.
+		MERGE	結合
+		Merge two vehicle bodies. Different bodies are denoted by different colours. Click on a body to select it, then click an adjacent one to merge them.	乗り物オブジェクトを結合します. 異なるオブジェクトはそれぞれ別の色で表示されます. 結合したい2つのオブジェクトを選択して下さい. オブジェクトの結合には2つのオブジェクトが隣り合っている必要があります.
+		SELECTION GRID	選択グリッド
+		Select parts of your vehicle to cut, copy, paste, rotate, flip and move them around. Export a selection as a new vehicle, or import a saved subassembly to place on your vehicle.	乗り物の一部分を選択して切り取り, コピー, 貼り付け, 回転, 反転, 移動を行います. 新しい乗り物として保存したり, 既存の乗り物を追加で読み込むこともできます.
+		MICROCONTROLLER EDITOR	マイクロコントローラーエディター
+		Create and edit microcontrollers to build compact logic circuits for your vehicle.	マイクロコントローラーの作成や編集を行い, コンパクトな論理システムの作成ができます.
+		INVENTORY	部品一覧
+		Browse all components in your inventory [tab]. Drag components to your hotbar with [LMB] for quick access. Double click a component to hide the inventory. Double click a hotbar slot or select it when the inventory is open to replace it with another component. [0-9] can be used to select hotbar slots.	[tab] で部品一覧を閲覧します. [LMB] で部品をドラッグしてホットバーに移動させるとその部品に素早くアクセスできます. 部品をダブルクリックして部品一覧を閉じます. ホットバーのスロットでダブルクリックまたは部品一覧が開いている時にホットバーのスロットを選択すると, 別の部品に置き換えられます.
+		Advanced Presets	本格作成モードプリセット
+		Presets	プリセット
+		Your saved vehicles.	保存した乗り物.
+		Vehicles you've subscribed to on the Steam Workshop.	Steamワークショップでサブスクライブした乗り物.
+		Some basic vehicles to get you started.	作る始めに参考になる基本的な乗り物.
+		Preset subassemblies to paste onto your vehicles.	乗り物に搭載できる機能部品.
+		Upload a new vehicle to the steam workshop, or select one of your existing workshop vehicles to edit and overwrite it	Steamワークショップに新規アップロードするか, 既存の乗り物を選んでそれに上書きします.
+		VEHICLE NAME	乗り物の名前
+		Vehicle Type	乗り物の種類
+		Vehicle Functionality	乗り物の名前
+		Misc.	その他
+		tags	タグ
+		Vehicle (Made by ###)	乗り物 (### 製)
+		SERVER: ### FPS	サーバー: ### FPS
+		### Degrees	### 度
+		Last updated ###	最終更新: ###
+		Functions	関数
+		Matrices	行列
+		Callbacks	コールバック関数
+		Examples	例
+		Television	テレビ
+		Crate	木箱
+		Basketball	バスケットボール
+		Collectable	収集物
+		Chair	椅子
+		Food Trolley	料理用ワゴン
+		Medical Trolley	医療用ワゴン
+		Office Chair	事務椅子
+		Book	本
+		Bottle	瓶
+		Frying Pan	フライパン
+		Mug	マグカップ
+		Saucepan	片手鍋
+		Stool	スツール
+		Telescope	望遠鏡
+		Log	丸太
+		Bin	ゴミ箱
+		Book 2	本2
+		Loot	宝箱
+		Barrel	樽
+		Blue Barrel	青い樽
+		Buoyancy Ring	救命浮輪
+		Container	コンテナ
+		Gas Canister	ガスボンベ
+		Pallet	パレット
+		Storage Bin	収納箱
+		Fire Extinguisher	消火器
+		Tool Trolley	ツールワゴン
+		Cafetiere	コーヒープレス
+		Tool Drawer	工具箱
+		Glass	グラス
+		Microwave	電子レンジ
+		Plate	皿
+		Box (Closed)	段ボール (未開封)
+		Box (Open)	段ボール (開封済み)
+		Desk Lamp	卓上照明
+		Eraser Board	ホワイトボード消し
+		Folder	フォルダー
+		Funnel	漏斗
+		Lamp	ランプ
+		Microscope	顕微鏡
+		Notebook	ノート
+		Pen Marker	マーカーペン
+		Pencil	鉛筆
+		Scales	定規
+		Beaker	ビーカー
+		Cylinder	注射器
+		Flask	フラスコ
+		Tub 1	鉢1
+		Tub 2	鉢2
+		File Stack	書類の山
+		Toxic Barrel	放射性物質が入った樽
+		Debris	残骸
+		Schematic	設計図
+		Clothing	衣類
+		Unknown	不明
+		Tag	タグ
+		Marker Text	マーカーテキスト
+		Spawn Relative to Sea Floor	海底を基準としてスポーン
+		Zone Type	ゾーンの種類
+		Box	四角
+		Radius	円
+		Type	種類
+		Outfit	服装
+		Civilian	市民の服
+		Worker	作業服
+		Fishing	漁師の服
+		Waiter	ウエイター
+		Swimsuit	水着
+		Military	軍服
+		Office	事務員の服
+		Medical	白衣
+		Wetsuit	ウエットスーツ
+		Survivor	生存者
 		NPC	NPC
-		Is Static	Is Static
-		Is Lit	Is Lit
-		Is Explosion	Is Explosion
-		Fire Size	Fire Size
-		Loot Type	Loot Type
-		Crate (floats)	Crate (floats)
-		Chest (sinks)	Chest (sinks)
-		Button's Display Name	Button's Display Name
-		Zone	Zone
-		Object	Object
-		Flare	Flare
-		Fire	Fire
-		Vehicle Button	Vehicle Button
-		Mission Component	Mission Component
-		Addons you've uploaded to the Steam Workshop.	Addons you've uploaded to the Steam Workshop.
-		No description	No description
-		SELECT LOCATION	SELECT LOCATION
-		Location	Location
-		Delete Location	Delete Location
-		Select Location	Select Location
-		Edit Objects	Edit Objects
-		Add Unique Location	Add Unique Location
-		MISSION LOCATIONS	MISSION LOCATIONS
-		Edit Mission	Edit Mission
-		Add Mission	Add Mission
-		Colour	Colour
-		PROPERTIES	PROPERTIES
-		on/off	on/off
-		number	number
-		fluid	fluid
-		electric	electric
-		composite	composite
-		Police Outfit	Police Outfit
-		Scientist Outfit	Scientist Outfit
-		MISSION	MISSION
-		CLICK FOR MORE DETAILS	CLICK FOR MORE DETAILS
-		Set Waypoint	Set Waypoint
-		Remove Waypoint	Remove Waypoint
-		Center Waypoint	Center Waypoint
-		Center Active Mission	Center Active Mission
-		Mark Active Mission	Mark Active Mission
-		Center Player	Center Player
-		Wake	Wake
-		Sleep	Sleep
-		(all players must be sleeping to fast-forward)	(all players must be sleeping to fast-forward)
-		PURCHASE ISLAND	PURCHASE ISLAND
-		Bank	Bank
-		Total	Total
-		Police Hat	Police Hat
-		NEW ADDON	NEW ADDON
-		Add/Remove Components	Add/Remove Components
-		Mission Dependencies	Mission Dependencies
-		Set Mission Depencies	Set Mission Depencies
-		A mission will only spawn in career mode if all of its dependencies are met.	A mission will only spawn in career mode if all of its dependencies are met.
-		No depenencies set.	No depenencies set.
-		Components	Components
-		Requirements	Requirements
-		Requirements must be met for this mission to spawn in career mode.	Requirements must be met for this mission to spawn in career mode.
-		Small Boat	Small Boat
-		Large Boat	Large Boat
-		Plane	Plane
-		Helicopter	Helicopter
-		Fire Equipment	Fire Equipment
-		Influences the overall reward value generated for this mission in career mode.	Influences the overall reward value generated for this mission in career mode.
-		Easy	Easy
-		Hard	Hard
-		Expert	Expert
-		This mission will only spawn in career mode if the environment is within these parameters.	This mission will only spawn in career mode if the environment is within these parameters.
-		Fog Intensity	Fog Intensity
-		Rain Intensity	Rain Intensity
-		Wind Intensity	Wind Intensity
-		Inactive until triggered	Inactive until triggered
-		Hide markers	Hide markers
-		Has time limit	Has time limit
-		Timer paused	Timer paused
-		Time Limit (h:m:s)	Time Limit (h:m:s)
-		Delete Objective	Delete Objective
-		Set Objective Dependencies	Set Objective Dependencies
-		Add Objective	Add Objective
-		Delete Trigger	Delete Trigger
-		Configure Trigger	Configure Trigger
-		Configure Action	Configure Action
-		Add Trigger	Add Trigger
-		NEW VEHICLE	NEW VEHICLE
-		NEW MICROCONTROLLER	NEW MICROCONTROLLER
-		Hold ### to enable multi-linking	Hold ### to enable multi-linking
-		Press ### to focus on hovered blocks	Press ### to focus on hovered blocks
-		Press ### to focus on hovered logic nodes	Press ### to focus on hovered logic nodes
-		Press ### to focus on highlighted components	Press ### to focus on highlighted components
-		Hold ### to change drag plane	Hold ### to change drag plane
-		Press ### to rotate selection	Press ### to rotate selection
-		Press ### to flip selection	Press ### to flip selection
-		Press ### to show/hide vehicle	Press ### to show/hide vehicle
-		Hold ### to eyedrop component	Hold ### to eyedrop component
-		Hold ### to eyedrop color	Hold ### to eyedrop color
-		Hold ### to select component	Hold ### to select component
-		Hold ### to expand to component	Hold ### to expand to component
-		Hold ### to place multiple	Hold ### to place multiple
-		Remove Vehicle from Zone	Remove Vehicle from Zone
-		Create Structure	Create Structure
-		Create Vehicle	Create Vehicle
-		Edit Structure in Zone	Edit Structure in Zone
-		Edit Vehicle in Zone	Edit Vehicle in Zone
-		Too Many Structures in Zone	Too Many Structures in Zone
-		Too Many Vehicles in Zone	Too Many Vehicles in Zone
-		Ladder	Ladder
-		Collect Present	Collect Present
-		Collect Loot	Collect Loot
-		Pick Up	Pick Up
-		Default State	Default State
-		Hold Duration	Hold Duration
-		Min Value	Min Value
-		Max Value	Max Value
-		Start Value	Start Value
-		Output Label	Output Label
-		Output A Label	Output A Label
-		Output B Label	Output B Label
-		Color Mode	Color Mode
+		Is Static	固定
+		Is Lit	最初から出火
+		Is Explosion	爆発性
+		Fire Size	炎の大きさ
+		Loot Type	宝箱の種類
+		Crate (floats)	木箱 (水に浮く)
+		Chest (sinks)	宝箱 (水に沈む)
+		Button's Display Name	ボタンの表示名
+		Zone	ゾーン
+		Object	オブジェクト
+		Flare	フレア
+		Fire	炎
+		Vehicle Button	乗り物のボタン
+		Mission Component	ミッションのコンポーネント
+		Addons you've uploaded to the Steam Workshop.	Steamワークショップにアップロードしたアドオン.
+		No description	説明がありません.
+		SELECT LOCATION	ロケーションの選択
+		Location	ロケーション
+		Delete Location	ロケーションの削除
+		Select Location	ロケーションの選択
+		Edit Objects	オブジェクトの編集
+		Add Unique Location	ロケーションの追加
+		MISSION LOCATIONS	ミッションのロケーション
+		Edit Mission	ミッションの編集
+		Add Mission	ミッションの追加
+		Colour	色
+		PROPERTIES	プロパティ
+		on/off	オン/オフ
+		number	数値
+		fluid	液体
+		electric	電力
+		composite	複合信号
+		Police Outfit	警官の服
+		Scientist Outfit	科学者の服
+		MISSION	ミッション
+		CLICK FOR MORE DETAILS	クリックして詳細の確認
+		Set Waypoint	ウェイポイントの設定
+		Remove Waypoint	ウェイポイントの削除
+		Center Waypoint	ウェイポイントの位置に移動
+		Center Active Mission	追跡しているミッションの位置に移動
+		Mark Active Mission	追跡しているミッションをマーク
+		Center Player	プレイヤーの位置に移動
+		Wake	起きる
+		Sleep	寝る
+		(all players must be sleeping to fast-forward)	(時間を早送りするにはプレイヤー全員が寝て下さい.)
+		PURCHASE ISLAND	島の購入
+		Bank	所持金
+		Total	合計
+		Police Hat	警官の帽子
+		NEW ADDON	新規ミッション
+		Add/Remove Components	コンポーネントの追加/削除
+		Mission Dependencies	ミッションの関係性
+		Set Mission Depencies	ミッションの関係性の設定
+		A mission will only spawn in career mode if all of its dependencies are met.	キャリアモードでは全ての関係性が満たされないとミッションが発生しません.
+		No depenencies set.	関係性なし
+		Components	コンポーネント
+		Requirements	要件
+		Requirements must be met for this mission to spawn in career mode.	キャリアモードでは要件を満たさないとミッションが発生しません.
+		Small Boat	小型船
+		Large Boat	大型船
+		Plane	飛行機
+		Helicopter	ヘリコプター
+		Fire Equipment	消化設備
+		Influences the overall reward value generated for this mission in career mode.	キャリアモードでのミッション成功時の報酬に影響します.
+		Easy	イージー
+		Hard	ハード
+		Expert	エキスパート
+		This mission will only spawn in career mode if the environment is within these parameters.	このミッションは以下の気象条件を満たす場合のみ発生します.
+		Fog Intensity	霧
+		Rain Intensity	雨
+		Wind Intensity	風
+		Inactive until triggered	トリガーされるまで無効
+		Hide markers	マーカーの非表示
+		Has time limit	時間制限あり
+		Timer paused	タイマー一時停止
+		Time Limit (h:m:s)	時間制限 (h:m:s)
+		Delete Objective	目的の削除
+		Set Objective Dependencies	目的の関係性の設定
+		Add Objective	目的の追加
+		Delete Trigger	トリガーの削除
+		Configure Trigger	トリガーの設定
+		Configure Action	アクションの設定
+		Add Trigger	トリガーの追加
+		NEW VEHICLE	新規乗り物
+		NEW MICROCONTROLLER	新規マイクロコントローラー
+		Hold ### to enable multi-linking	### を押し続けて連続でノードを接続します.
+		Press ### to focus on hovered blocks	### を押してカーソルを合わせた部品にフォーカスします.
+		Press ### to focus on hovered logic nodes	### を押してカーソルを合わせたロジックノードにフォーカスします.
+		Press ### to focus on highlighted components	### を押して強調表示された部品にフォーカスします.
+		Hold ### to change drag plane	### を押し続けてドラッグ平面を変更します.
+		Press ### to rotate selection	### を押して選択したものを回転させます.
+		Press ### to flip selection	### を押して選択したものを反転させます.
+		Press ### to show/hide vehicle	### を押して乗り物を表示/非表示にします.
+		Hold ### to eyedrop component	### を押しながら部品をクリックしてその部品をコピーします.
+		Hold ### to eyedrop color	### を押しながら部品をクリックしてその部品の色をコピーします.
+		Hold ### to select component	### を押し続けて部品を選択します.
+		Hold ### to expand to component	### を押し続けて部品を拡張します.
+		Hold ### to place multiple	### を押し続けて複数設置します.
+		Remove Vehicle from Zone	乗り物を編集領域から削除
+		Create Structure	建物の作成
+		Create Vehicle	乗り物の作成
+		Edit Structure in Zone	編集領域内の建物の編集
+		Edit Vehicle in Zone	編集領域内の乗り物の編集
+		Too Many Structures in Zone	編集領域内の建物が多過ぎます.
+		Too Many Vehicles in Zone	編集領域内の乗り物が多過ぎます.
+		Ladder	梯子を登る/降りる
+		Collect Present	プレゼントを入手する
+		Collect Loot	宝箱を入手する
+		Pick Up	持ち運ぶ
+		Default State	初期の状態
+		Hold Duration	長押し時間
+		Min Value	最小値
+		Max Value	最大値
+		Start Value	初期値
+		Output Label	出力のラベル
+		Output A Label	出力Aのラベル
+		Output B Label	出力Bのラベル
+		Color Mode	カラーモード
 		RGB	RGB
 		HSV	HSV
-		Composite Channels	Composite Channels
-		Red/Hue	Red/Hue
-		Green/Sat	Green/Sat
-		Blue/Val	Blue/Val
-		Instrument 1	Instrument 1
-		Instrument 2	Instrument 2
-		Instrument 3	Instrument 3
-		Instrument 4	Instrument 4
-		Display Name	Display Name
-		Dial	Dial
-		Indicator	Indicator
-		Gauge	Gauge
-		Arrow Button	Arrow Button
-		Flip Switch	Flip Switch
-		Seven Segment	Seven Segment
-		Radial Segment	Radial Segment
-		Bar Segment	Bar Segment
-		Max Power	Max Power
-		RPS Limiter	RPS Limiter
-		Blade Count	Blade Count
-		2 Blades	2 Blades
-		3 Blades	3 Blades
-		4 Blades	4 Blades
-		5 Blades	5 Blades
-		6 Blades	6 Blades
-		7 Blades	7 Blades
-		8 Blades	8 Blades
-		Blade Pitch	Blade Pitch
-		positive	positive
-		neutral	neutral
-		Min Throttle	Min Throttle
-		Max Throttle	Max Throttle
-		Decimal Point Position	Decimal Point Position
-		Decimals Disabled	Decimals Disabled
-		Sound Type	Sound Type
-		Warning 1	Warning 1
-		Warning 2	Warning 2
-		Warning 3	Warning 3
-		Beep 1	Beep 1
-		Beep 2	Beep 2
-		Seatbelt	Seatbelt
-		Volume	Volume
-		Roll	Roll
-		Pitch	Pitch
-		Yaw	Yaw
-		Preview	Preview
-		Blink On Duration	Blink On Duration
-		Blink Off Duration	Blink Off Duration
-		Delay Timer	Delay Timer
-		Low Threshold	Low Threshold
-		High Threshold	High Threshold
-		Output Value	Output Value
-		Proportional Gain	Proportional Gain
-		Integral Gain	Integral Gain
-		Derivative Gain	Derivative Gain
-		Reset Value	Reset Value
-		Charge Time	Charge Time
-		Discharge Time	Discharge Time
-		Sensor Mode	Sensor Mode
-		Absolute	Absolute
-		Directional	Directional
-		Horizontal	Horizontal
-		Vertical	Vertical
-		Function	Function
-		Inverse Sine	Inverse Sine
-		Inverse Cosine	Inverse Cosine
-		Inverse Tangent	Inverse Tangent
-		Exponent	Exponent
-		No properties exposed.	No properties exposed.
-		Speed	Speed
-		Max Power	Max Power
-		Gear Ratio	Gear Ratio
-		Parachute Size	Parachute Size
-		Label	Label
-		Mode	Mode
-		Sticky	Sticky
-		Toggle	Toggle
-		Push	Push
-		Trim	Trim
-		Trim Axis 1	Trim Axis 1
-		Trim Axis 2	Trim Axis 2
-		Trim Axis 3	Trim Axis 3
-		Trim Axis 4	Trim Axis 4
-		Spring Strength	Spring Strength
-		Ratio Off	Ratio Off
-		Ratio On	Ratio On
-		Fluid Type	Fluid Type
-		Fresh Water	Fresh Water
-		Sea Water	Sea Water
-		Empty	Empty
-		Allow Fresh Water	Allow Fresh Water
-		Allow Sea Water	Allow Sea Water
-		Allow Diesel	Allow Diesel
-		Allow Jet Fuel	Allow Jet Fuel
-		Allow Air	Allow Air
-		Allow Exhaust	Allow Exhaust
-		Allow Crude Oil	Allow Crude Oil
-		Grip	Grip
-		Tyre Tread	Tyre Tread
-		All Round	All Round
-		High Speed	High Speed
-		High Grip	High Grip
+		Composite Channels	複合信号のチャンネル
+		Red/Hue	赤/色相
+		Green/Sat	緑/彩度
+		Blue/Val	青/明度
+		Instrument 1	計器1
+		Instrument 2	計器2
+		Instrument 3	計器3
+		Instrument 4	計器4
+		Display Name	表示名
+		Dial	ダイヤル
+		Indicator	表示灯
+		Gauge	ゲージ
+		Arrow Button	矢印ボタン
+		Flip Switch	フリップスイッチ
+		Seven Segment	7セグメント
+		Radial Segment	円状セグメント
+		Bar Segment	棒状セグメント
+		Max Power	最大出力
+		RPS Limiter	RPS制限
+		Blade Count	ブレードの数
+		2 Blades	2枚
+		3 Blades	3枚
+		4 Blades	4枚
+		5 Blades	5枚
+		6 Blades	6枚
+		7 Blades	7枚
+		8 Blades	8枚
+		Blade Pitch	ブレッドのピッチ
+		positive	正立
+		neutral	中立
+		Min Throttle	最小スロットル
+		Max Throttle	最大スロットル
+		Decimal Point Position	小数点の位置
+		Decimals Disabled	小数点なし
+		Sound Type	音の種類
+		Warning 1	警告音1
+		Warning 2	警告音2
+		Warning 3	警告音3
+		Beep 1	ビープ音1
+		Beep 2	ビープ音2
+		Seatbelt	シートベルト装着サイン音
+		Volume	音量
+		Roll	ロール
+		Pitch	ピッチ
+		Yaw	よー
+		Preview	プレビュー
+		Blink On Duration	オンの時間
+		Blink Off Duration	オフの時間
+		Delay Timer	遅延時間
+		Low Threshold	閾値下限
+		High Threshold	閾値上限
+		Output Value	出力値
+		Proportional Gain	比例ゲイン
+		Integral Gain	積分ゲイン
+		Derivative Gain	微分ゲイン
+		Reset Value	リセット後の数値
+		Charge Time	オンになるまでの時間
+		Discharge Time	オフになるまでの時間
+		Sensor Mode	センサーのモード
+		Absolute	絶対値出力
+		Directional	進行方向基準
+		Horizontal	水平方向のみ
+		Vertical	垂直方向のみ
+		Function	関数
+		Inverse Sine	逆正弦
+		Inverse Cosine	逆余弦
+		Inverse Tangent	逆正接
+		Exponent	指数
+		No properties exposed.	利用できるプロパティはありません.
+		Speed	速度
+		Max Power	最大出力
+		Gear Ratio	ギア比
+		Parachute Size	パラシュートの大きさ
+		Label	表示名
+		Mode	モード
+		Sticky	維持
+		Toggle	切り替え
+		Push	押し
+		Trim	トリム
+		Trim Axis 1	軸1のトリム
+		Trim Axis 2	軸2のトリム
+		Trim Axis 3	軸3のトリム
+		Trim Axis 4	軸4のトリム
+		Spring Strength	バネの強さ
+		Ratio Off	オフの時のギア比
+		Ratio On	オンの時のギア比
+		Fluid Type	液体の種類
+		Fresh Water	淡水
+		Sea Water	海水
+		Empty	空
+		Allow Fresh Water	淡水を通す
+		Allow Sea Water	海水を通す
+		Allow Diesel	軽油を通す
+		Allow Jet Fuel	ジェット燃料を通す
+		Allow Air	空気を通す
+		Allow Exhaust	排気を通す
+		Allow Crude Oil	原油を通す
+		Grip	グリップ力
+		Tyre Tread	溝の種類
+		All Round	バランス
+		High Speed	スピード重視
+		High Grip	グリップ力重視
 		Stiffness	Stiffness
-		Damping	Damping
-		Tyre Radius	Tyre Radius
-		Tyre Pressure	Tyre Pressure
-		Track Tension	Track Tension
-		VIDEO	VIDEO
-		Edit video transfer nodes.	Edit video transfer nodes.
-		video	video
-		Edit audio transfer nodes.	Edit audio transfer nodes.
-		audio	audio
-		ROPE	ROPE
-		Edit rope transfer nodes.	Edit rope transfer nodes.
-		rope	rope
-		ROPE	ROPE
-		sail	sail
-		Edit rope transfer nodes.	Edit rope transfer nodes.
-		LUA SCRIPTING OVERVIEW	LUA SCRIPTING OVERVIEW
-		Lua scripting gives you the tools to create advanced logic components using the Lua scripting language. Stormworks provides a number of functions to allow your script to interface with your vehicle's logic system, as well as drawing to in-game monitors.\n\nThis guide outlines the functions that are available for use in your scripts but it is not a comprehensive tutorial on using the Lua language.	Lua scripting gives you the tools to create advanced logic components using the Lua scripting language. Stormworks provides a number of functions to allow your script to interface with your vehicle's logic system, as well as drawing to in-game monitors.\n\nThis guide outlines the functions that are available for use in your scripts but it is not a comprehensive tutorial on using the Lua language.
-		SCRIPT BASICS	SCRIPT BASICS
-		The tick function will be called once every logic tick and should be used for reading composite data and any required processing. Screen functions will have no effect if called within onTick.	The tick function will be called once every logic tick and should be used for reading composite data and any required processing. Screen functions will have no effect if called within onTick.
-		The draw function will be called any time this script is drawn by a monitor. Note that it can be called multiple times if this microcontroller is connected to multiple monitors whereas onTick is only called once. Composite input/output functions will have no effect if called within onDraw.	The draw function will be called any time this script is drawn by a monitor. Note that it can be called multiple times if this microcontroller is connected to multiple monitors whereas onTick is only called once. Composite input/output functions will have no effect if called within onDraw.
-		COMPOSITE INPUT/OUTPUT	COMPOSITE INPUT/OUTPUT
-		PROPERTIES	PROPERTIES
-		Read the values of property components within this microcontroller directly. The label passed to each function should match the label that has been set for the property you're trying to access (case-sensitive).	Read the values of property components within this microcontroller directly. The label passed to each function should match the label that has been set for the property you're trying to access (case-sensitive).
-		Read values from the composite input. Index ranges from 1 - 32.	Read values from the composite input. Index ranges from 1 - 32.
-		Set values on the composite output. Index ranges from 1 - 32.	Set values on the composite output. Index ranges from 1 - 32.
-		DRAWING	DRAWING
-		Set the current draw colour. Values range from 0 - 255.	Set the current draw colour. Values range from 0 - 255.
-		Set the current draw colour and transparency. Values range from 0 - 255.	Set the current draw colour and transparency. Values range from 0 - 255.
-		Clear the screen with the current colour.	Clear the screen with the current colour.
-		Draw line from (x1, y1) to (x2, y2).	Draw line from (x1, y1) to (x2, y2).
-		Draw circle at (x, y) with radius.	Draw circle at (x, y) with radius.
-		Draw filled circle at (x, y) with radius.	Draw filled circle at (x, y) with radius.
-		Draw rectangle at (x, y) with width and height.	Draw rectangle at (x, y) with width and height.
-		Draw filled rectangle at (x, y) with width and height.	Draw filled rectangle at (x, y) with width and height.
-		Draw triangle between (x1, y1), (x2, y2) and (x3, y3).	Draw triangle between (x1, y1), (x2, y2) and (x3, y3).
-		Draw filled triangle between (x1, y1), (x2, y2) and (x3, y3).	Draw filled triangle between (x1, y1), (x2, y2) and (x3, y3).
-		Draw text at (x, y). Each character is 4 pixels wide and 5 pixels tall.	Draw text at (x, y). Each character is 4 pixels wide and 5 pixels tall.
-		Draw text within the rectangle at (x, y) with width and height. Text alignment can be specified using the last two parameters and ranges from -1 to 1 (left to right, top to bottom). If either of the alignment parameters are omitted, the text will be drawn top-left by default. Text will automatically wrap at spaces when possible, and will overflow the top/bottom of the specified rectangle if too large.	Draw text within the rectangle at (x, y) with width and height. Text alignment can be specified using the last two parameters and ranges from -1 to 1 (left to right, top to bottom). If either of the alignment parameters are omitted, the text will be drawn top-left by default. Text will automatically wrap at spaces when possible, and will overflow the top/bottom of the specified rectangle if too large.
-		Draw the world map centred on map coordinate (x,y) with zoom level ranging from 0.1 to 50.	Draw the world map centred on map coordinate (x,y) with zoom level ranging from 0.1 to 50.
-		Set the colours used for rendering the map. Values range from 0 - 255, alpha is optional.	Set the colours used for rendering the map. Values range from 0 - 255, alpha is optional.
-		Get the width/height of the screen currently being rendered to.	Get the width/height of the screen currently being rendered to.
-		MAP	MAP
-		Convert pixel coordinates into world coordinates.	Convert pixel coordinates into world coordinates.
-		Convert world coordinates into pixel coordinates.	Convert world coordinates into pixel coordinates.
-		LUA FUNCTIONS	LUA FUNCTIONS
-		The following global lua functions are available:\n\n- pairs\n- ipairs\n- next\n- tostring\n- tonumber\n\nand additional functions are available through the following lua libraries:\n\n- math\n- table\n- string\n\nFor full documentation of the functions provided by these libraries, visit https://www.lua.org/manual/.	The following global lua functions are available:\n\n- pairs\n- ipairs\n- next\n- tostring\n- tonumber\n\nand additional functions are available through the following lua libraries:\n\n- math\n- table\n- string\n\nFor full documentation of the functions provided by these libraries, visit https://www.lua.org/manual/.
-		TELEMETRY FUNCTIONS	TELEMETRY FUNCTIONS
-		The following global async functions are available:\n\n- httpGet\n\nHTTP requests are sent to the localhost on the specified port. Responses are caught with the httpReply(port, request_body, response_body) callback function.\n\nasync.httpGet(port, request_body)\n\nExample of a HTTP request sent to port 80:	The following global async functions are available:\n\n- httpGet\n\nHTTP requests are sent to the localhost on the specified port. Responses are caught with the httpReply(port, request_body, response_body) callback function.\n\nasync.httpGet(port, request_body)\n\nExample of a HTTP request sent to port 80:
-		META FROM THE DEVS	META FROM THE DEVS
-		This scripting API is very powerful and as such there are some important reminders to take note of:\n\n- Your script has a max execution time of 1000 milliseconds, however it is still possible to create scripts that significantly slow down the game. It is your responsibility to ensure your script runs efficiently.\n\n- Random number functions are provided by the Lua math library. Use of randomness in your scripts is likely to cause desync in multiplayer, so use these functions at your own risk.\n\n- When your vehicle despawns and respawns, your script will be executed 'fresh' and any state stored within the script will be lost. We recommend keeping your script as stateless as possible, and making use of existing logic components (e.g. memory register) to store values that you wish to persist.\n\n- Your scripts run as a 'black box' with only the logic inputs/outputs being synced in multiplayer. Keep in mind that complex logic in your script may behave differently for different players in a multiplayer session.\n\n- A number of safeguards are in place to sandbox your script, however it is still possible to write scripts that will potentially crash your game. If you crash your game with a script, it's likely that you're doing something (very) wrong. This is your own responsibility. If you suspect you have encountered a legitimate bug, please report it on the Stormworks issue tracker (accessible from the pause-menu).\n\n- Malicious and harmful scripts will not be tolerated on the Stormworks Steam Workshop.\n\nFinally, enjoy the almost limitless possibilities that these scripts provide. This short wiki aims to give a good overview of how scripting in Stormworks works, however if you have any questions that are not covered here, please feel free to join us on Discord (accessible from the pause-menu)!	This scripting API is very powerful and as such there are some important reminders to take note of:\n\n- Your script has a max execution time of 1000 milliseconds, however it is still possible to create scripts that significantly slow down the game. It is your responsibility to ensure your script runs efficiently.\n\n- Random number functions are provided by the Lua math library. Use of randomness in your scripts is likely to cause desync in multiplayer, so use these functions at your own risk.\n\n- When your vehicle despawns and respawns, your script will be executed 'fresh' and any state stored within the script will be lost. We recommend keeping your script as stateless as possible, and making use of existing logic components (e.g. memory register) to store values that you wish to persist.\n\n- Your scripts run as a 'black box' with only the logic inputs/outputs being synced in multiplayer. Keep in mind that complex logic in your script may behave differently for different players in a multiplayer session.\n\n- A number of safeguards are in place to sandbox your script, however it is still possible to write scripts that will potentially crash your game. If you crash your game with a script, it's likely that you're doing something (very) wrong. This is your own responsibility. If you suspect you have encountered a legitimate bug, please report it on the Stormworks issue tracker (accessible from the pause-menu).\n\n- Malicious and harmful scripts will not be tolerated on the Stormworks Steam Workshop.\n\nFinally, enjoy the almost limitless possibilities that these scripts provide. This short wiki aims to give a good overview of how scripting in Stormworks works, however if you have any questions that are not covered here, please feel free to join us on Discord (accessible from the pause-menu)!
-		TOUCHSCREEN DATA	TOUCHSCREEN DATA
-		The composite output from the monitors contains data that can be interpreted in your script to create touchscreens. The layout of the composite data is as follows:\n\nNumber Channels\n1: monitorResolutionX\n2: monitorResolutionY\n3: input1X\n4: input1Y\n5: input2X\n6: input2Y\n\nOn/Off Channels:\n1: isInput1Pressed\n2: isInput2Pressed\n\nThis is an example of a script that outputs a signal on composite channel 1 if the player is pressing the screen within a specific rectangle:	The composite output from the monitors contains data that can be interpreted in your script to create touchscreens. The layout of the composite data is as follows:\n\nNumber Channels\n1: monitorResolutionX\n2: monitorResolutionY\n3: input1X\n4: input1Y\n5: input2X\n6: input2Y\n\nOn/Off Channels:\n1: isInput1Pressed\n2: isInput2Pressed\n\nThis is an example of a script that outputs a signal on composite channel 1 if the player is pressing the screen within a specific rectangle:
-		Check Errors	Check Errors
-		Script	Script
-		Help	Help
-		Burn Rate	Burn Rate
-		Infrared	Infrared
-		Default to Active	Default to Active
-		sec	sec
+		Damping	剛性
+		Tyre Radius	タイヤの大きさ
+		Tyre Pressure	空気圧
+		Track Tension	トラックの張力
+		VIDEO	映像
+		Edit video transfer nodes.	映像ノードを編集します.
+		video	映像
+		Edit audio transfer nodes.	音声ノードを編集します.
+		audio	音声
+		ROPE	ロープ
+		Edit rope transfer nodes.	ロープノードを編集します.
+		rope	ロープ
+		ROPE	ロープ
+		sail	帆
+		Edit rope transfer nodes.	ロープノードを編集します.
+		LUA SCRIPTING OVERVIEW	LUAスクリプトの概要
+		Lua scripting gives you the tools to create advanced logic components using the Lua scripting language. Stormworks provides a number of functions to allow your script to interface with your vehicle's logic system, as well as drawing to in-game monitors.\n\nThis guide outlines the functions that are available for use in your scripts but it is not a comprehensive tutorial on using the Lua language.	LuaスクリプトではLua言語を用いて高度な論理システムを作成できます. Stormworksでは乗り物の論理システムと連動させたり, ゲーム内のモニターに描画したりするための関数を多数用意しています.\n\nこのガイドではStormworksで使用できる関数の概要を説明しますが, Lua言語自体のチュートリアルは説明しません.
+		SCRIPT BASICS	スクリプトの基本
+		The tick function will be called once every logic tick and should be used for reading composite data and any required processing. Screen functions will have no effect if called within onTick.	onTick関数は1論理チック当たりに1回呼び出され, 複合信号の読み書きや, 必要な処理に使用します. この関数内でscreen関数は呼び出せません.
+		The draw function will be called any time this script is drawn by a monitor. Note that it can be called multiple times if this microcontroller is connected to multiple monitors whereas onTick is only called once. Composite input/output functions will have no effect if called within onDraw.	　onDraw関数はモニターに何かを描画する度に呼び出されます. onTick関数が1論理チック当たりに1回しか呼び出されないのに対して, onDraw関数は接続されているモニターの数だけ呼び出されます. この関数で複合信号を読み書きする関数は呼び出せません.
+		COMPOSITE INPUT/OUTPUT	複合信号の読み書き
+		PROPERTIES	プロパティの読み取り
+		Read the values of property components within this microcontroller directly. The label passed to each function should match the label that has been set for the property you're trying to access (case-sensitive).	マイクロコントローラーのプロパティを直接読み取れます(複合信号などを通して接続する必要はありません.). プロパティの読み取りの関数に渡すプロパティ名は, 読み取りたいプロパティ名と完全に一致させて下さい (大文字と小文字を区別します.).
+		Read values from the composite input. Index ranges from 1 - 32.	入力された複合信号の数値を読み取ります. インデックの範囲は1から32です.
+		Set values on the composite output. Index ranges from 1 - 32.	出力する複合信号に数値を設定します. インデックの範囲は1から32です.
+		DRAWING	モニターへの描画
+		Set the current draw colour. Values range from 0 - 255.	描画する色を設定します. 次にこの関数が呼ばれるまでこの色は継続されます. それぞれの値の範囲は 0 から 255 です.
+		Set the current draw colour and transparency. Values range from 0 - 255.	描画する色と透明度を設定します. 次にこの関数が呼ばれるまでこの色と透明度は継続されます. それぞれの値の範囲は 0 から 255 です.
+		Clear the screen with the current colour.	現在の色でモニター全体を塗りつぶします.
+		Draw line from (x1, y1) to (x2, y2).	(x1, y1) から (x2, y2) に線を描画します.
+		Draw circle at (x, y) with radius.	(x, y) を中心に指定された半径の円を描画します.
+		Draw filled circle at (x, y) with radius.	(x, y) を中心に指定された半径の円を塗りつぶして描画します.
+		Draw rectangle at (x, y) with width and height.	(x, y) を始点に指定された幅と高さの矩形を描画します.
+		Draw filled rectangle at (x, y) with width and height.	(x, y) を始点に指定された幅と高さの矩形塗りつぶしてを描画します.
+		Draw triangle between (x1, y1), (x2, y2) and (x3, y3).	(x1, y1) と (x2, y2) と (x3, y3) を頂点とする三角形を描画します.
+		Draw filled triangle between (x1, y1), (x2, y2) and (x3, y3).	(x1, y1) と (x2, y2) と (x3, y3) を頂点とする三角形を塗りつぶして描画します.
+		Draw text at (x, y). Each character is 4 pixels wide and 5 pixels tall.	(x, y) を始点にテキストを描画します. 1文字につき幅 4 ピクセル, 高さ 5 ピクセルです.
+		Draw text within the rectangle at (x, y) with width and height. Text alignment can be specified using the last two parameters and ranges from -1 to 1 (left to right, top to bottom). If either of the alignment parameters are omitted, the text will be drawn top-left by default. Text will automatically wrap at spaces when possible, and will overflow the top/bottom of the specified rectangle if too large.	(x, y) を始点に指定された幅と高さの矩形の中にテキストを描画します. 最後の2つの引数でテキストの基準位置をしていします. 範囲は -1 から 1 です (左から右, 上からした).  この引数が省略された場合, デフォルトで左上が基準となります. テキストは矩形の範囲内に収まるように自動的に折り返され, それでも入りきらない場合は, テキストの上下がはみ出ます.
+		Draw the world map centred on map coordinate (x,y) with zoom level ranging from 0.1 to 50.	(x, y) 座標を中心として指定された縮尺でワールドマップを描画します. 縮尺の範囲は 0.1 から 50 です.
+		Set the colours used for rendering the map. Values range from 0 - 255, alpha is optional.	マップ描画に使用される色を設定します. それぞれの値の範囲は 0 から 255 です. アルファ値は任意の引数です.
+		Get the width/height of the screen currently being rendered to.	描画しているモニターの幅/高さを取得します.
+		MAP	座標変換
+		Convert pixel coordinates into world coordinates.	モニター上の座標をマップ上の座標に変換します.
+		Convert world coordinates into pixel coordinates.	マップ上の座標をモニター上の座標に変換します.
+		LUA FUNCTIONS	Lua関数
+		The following global lua functions are available:\n\n- pairs\n- ipairs\n- next\n- tostring\n- tonumber\n\nand additional functions are available through the following lua libraries:\n\n- math\n- table\n- string\n\nFor full documentation of the functions provided by these libraries, visit https://www.lua.org/manual/.	次のLua関数を使用できます:\n\n- pairs\n- ipairs\n- next\n- tostring\n- tonumber\n\nまた, 次のLuaライブラリ関数を使用できます:\n\n- math\n- table\n- string\n\nこれらの関数のリファレンスドキュメントはこちらのページを参照して下さい. https://www.lua.org/manual/ (英語マニュアル)
+		TELEMETRY FUNCTIONS	http通信関数
+		The following global async functions are available:\n\n- httpGet\n\nHTTP requests are sent to the localhost on the specified port. Responses are caught with the httpReply(port, request_body, response_body) callback function.\n\nasync.httpGet(port, request_body)\n\nExample of a HTTP request sent to port 80:	これらの非同期関数を使用できます:\n\n- httpGet\n\n指定されたポートからローカルホストに向けてhttpリクエストを送信します. レスポンスはコールバック関数 httpReply(ポート番号, リクエスト本文, レスポンス本文) を使用して捕捉できます.\n\nasync.httpGet(port, request_body)\n\n次は 80 番ポートからhttpリクエストを送信する例です:
+		META FROM THE DEVS	Stormworks開発者からのコメント
+		This scripting API is very powerful and as such there are some important reminders to take note of:\n\n- Your script has a max execution time of 1000 milliseconds, however it is still possible to create scripts that significantly slow down the game. It is your responsibility to ensure your script runs efficiently.\n\n- Random number functions are provided by the Lua math library. Use of randomness in your scripts is likely to cause desync in multiplayer, so use these functions at your own risk.\n\n- When your vehicle despawns and respawns, your script will be executed 'fresh' and any state stored within the script will be lost. We recommend keeping your script as stateless as possible, and making use of existing logic components (e.g. memory register) to store values that you wish to persist.\n\n- Your scripts run as a 'black box' with only the logic inputs/outputs being synced in multiplayer. Keep in mind that complex logic in your script may behave differently for different players in a multiplayer session.\n\n- A number of safeguards are in place to sandbox your script, however it is still possible to write scripts that will potentially crash your game. If you crash your game with a script, it's likely that you're doing something (very) wrong. This is your own responsibility. If you suspect you have encountered a legitimate bug, please report it on the Stormworks issue tracker (accessible from the pause-menu).\n\n- Malicious and harmful scripts will not be tolerated on the Stormworks Steam Workshop.\n\nFinally, enjoy the almost limitless possibilities that these scripts provide. This short wiki aims to give a good overview of how scripting in Stormworks works, however if you have any questions that are not covered here, please feel free to join us on Discord (accessible from the pause-menu)!	スクリプトAPIは非常に強力であるため, 重要な注意事項があります.\n\n- スクリプトの最大実行時間は 1000 ミリ秒ですが, ゲームを遅延させるスクリプトを組むことも可能です. 各自の責任でスクリプトの最適化を行って下さい.\n\n- 乱数関数はmathライブラリで提供されますが, マルチプレイでの同期が上手くいかない場合があります. そのため, 乱数関数の使用は自己責任となります. \n\n- 乗り物がアンロードされた後, 再ロードにスクリプトは初期化され, 新しく実行し直されるため, スクリプト内で保持している情報は失われます. 安全に情報を保持したい場合は, できる限り既存の論理部品 (メモリレジスタなど) で情報を保持するようにして下さい. \n\n- スクリプトは「ブラックボックス」として動作し, マルチプレイではロジックの入出力のみが同期されます. 複雑なスクリプトの場合, プレイヤー毎に異なる動作をする場合があります. \n\n- スクリプト実行にあたって, 危険なコードが実行されないようにいくつもの安全策が施されていますが, それでもなおゲームを強制終了させるコードを組むことが可能です. もしスクリプト実行時にゲームが強制終了してしまった場合は, 何か (大きな) 間違いを犯している可能性があります. これはあなた自身の責任です. 明らかにStormworks側の不具合が原因と思われる場合は, ポーズメニューから不具合の報告を行って下さい. \n\n- 悪意のあるスクリプトはSteamワークショップで禁止されています.\n\n最後に, スクリプトの無限の可能性をお楽しみ下さい. この短いマニュアルではStormworksでのスクリプトの動作いついての概要を説明することを目的としていますが, 何か不明な点がある場合は, お気軽に公式Discordサーバーにご参加ください (ポーズメニューあからアクセスできます).
+		TOUCHSCREEN DATA	タッチスクリーン情報
+		The composite output from the monitors contains data that can be interpreted in your script to create touchscreens. The layout of the composite data is as follows:\n\nNumber Channels\n1: monitorResolutionX\n2: monitorResolutionY\n3: input1X\n4: input1Y\n5: input2X\n6: input2Y\n\nOn/Off Channels:\n1: isInput1Pressed\n2: isInput2Pressed\n\nThis is an example of a script that outputs a signal on composite channel 1 if the player is pressing the screen within a specific rectangle:	モニターからの複合信号には, スクリプトで処理することでタッチパネルとして動作する情報が含まれています. 複合信号の構成は以下の通りです:\n\n数値チャンネル:\n1: モニターの横の解像度\n2: モニターの縦の解像度\n3: 主入力のx座標\n4: 主入力のy座標\n5: 副入力のx座標\n6: 副入力のy座標\n\nオン/オフチャンネル\n1: 主入力がタッチされているかどうか\n2: 副入力がタッチされているかどうか\n\n次はプレイヤーが特定の矩形内をタッチている場合複合信号のオン/オフ信号1チャンネルｍにオン信号を出力するスクリプトの例です:
+		Check Errors	構文の確認
+		Script	スクリプト
+		Help	ヘルプ
+		Burn Rate	燃焼速度
+		Infrared	赤外線モード
+		Default to Active	初期状態でオン
+		sec	秒
 		rps	rps
-		Muzzle Velocity	Muzzle Velocity
-		Helicopters	Helicopters
-		Planes	Planes
-		Heavy Aircraft	Heavy Aircraft
-		Jets	Jets
-		Afterburner	Afterburner
-		VTOL	VTOL
-		Large Jets	Large Jets
-		Jet Ducting	Jet Ducting
-		Solid Rockets	Solid Rockets
-		Doors	Doors
-		Docking Doors	Docking Doors
-		Custom Doors	Custom Doors
-		Large Boats	Large Boats
-		Shipping	Shipping
-		Navigation	Navigation
-		Radar and Sonar	Radar and Sonar
-		Rescue Equipment	Rescue Equipment
-		Diving Equipment	Diving Equipment
-		Deep Sea Diving	Deep Sea Diving
-		Firefighting Equipment	Firefighting Equipment
-		Advanced Rescue Equipment	Advanced Rescue Equipment
-		Arctic Rescue	Arctic Rescue
-		Sensors	Sensors
-		Advanced Sensors	Advanced Sensors
-		Weather Sensors	Weather Sensors
-		Buttons	Buttons
-		Keypads	Keypads
+		Muzzle Velocity	射出速度
+		Helicopters	ヘリコプター
+		Planes	飛行機
+		Heavy Aircraft	重航空機
+		Jets	ジェット
+		Afterburner	アフターバーナー
+		VTOL	垂直離着陸機
+		Large Jets	大きなジェット
+		Jet Ducting	ジェット配管
+		Solid Rockets	固形燃料ロケット
+		Doors	ドア
+		Docking Doors	ドッキングドア
+		Custom Doors	カスタムドア
+		Large Boats	大型船
+		Shipping	運送
+		Navigation	ナビゲーション
+		Radar and Sonar	レーダーとソナー
+		Rescue Equipment	救命装備
+		Diving Equipment	ダイビング装備
+		Deep Sea Diving	深海ダイビング
+		Firefighting Equipment	消防装備
+		Advanced Rescue Equipment	発展型救命装備
+		Arctic Rescue	北極での救命
+		Sensors	センサー
+		Advanced Sensors	発展型センサー
+		Weather Sensors	天候センサー
+		Buttons	ボタン
+		Keypads	キーパッド
 		Displays	Displays
 		Advanced Displays	Advanced Displays
 		Video Equipment	Video Equipment
