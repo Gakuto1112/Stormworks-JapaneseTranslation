@@ -1277,7 +1277,7 @@ id	description	en	local
 		This logic node doesn't have a description yet	このロジックノードには説明がありません.
 		change drag plane	ドラッグ平面の変更
 		Reset Camera	カメラのリセット
-		Orbit Mode	軌道カメラ
+		Orbit Mode	オービットカメラ
 		Free Mode	フリーカメラ
 		Brush	ブラシ
 		Additive	発光ブラシ
