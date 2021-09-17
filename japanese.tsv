@@ -381,7 +381,7 @@ id	description	en	local
 		[no vehicle button set]	[乗り物のボタンなし]
 		[no objective set]	[目的なし]
 		[no buttons set]	[ボタンなし]
-		[no flares set]	[フレアなし]
+		[no flares set]	[発煙筒なし]
 		[no fires set]	[炎なし]
 		[no message set]	[メッセージなし]
 		[no objectives set]	[目的なし]
@@ -650,8 +650,8 @@ id	description	en	local
 		You can set a vehicle to be static in the properties window. Static vehicles are fixed in place, making them useful for adding buildings or cranes to missions.	プロパティウィンドウで乗り物を固定することができます. 固定された乗り物はその場から動かず, ミッションで建物やクレーンなどを追加するのに役立ちます.
 		ADD VEHICLE BUTTON	乗り物のボタンを追加
 		Vehicle buttons allow your mission to interact with a named button on a vehicle. You must parent the button to a vehicle, and set the 'button display name' in the properties window to be the name of a button on the parent vehicle.	乗り物のボタンを設定すると, ミッションが乗り物の名前が付いているボタンを操作できるようになります. 乗り物側でボタンの表示名を設定する必要があります.
-		ADD FLARE	フレアを追加
-		Flares emit a plume of coloured smoke that can be used to get the player's attention in an emergency situation. The colour of the flare can be customised in the properties window.	フレアは緊急時においてプレイヤーが発見しやすいように色付きの煙を放出します. フレアの色はプロパティウィンドウから設定できます.
+		ADD FLARE	発煙筒を追加
+		Flares emit a plume of coloured smoke that can be used to get the player's attention in an emergency situation. The colour of the flare can be customised in the properties window.	発煙筒は緊急時においてプレイヤーが発見しやすいように色付きの煙を放出します. 発煙筒の色はプロパティウィンドウから設定できます.
 		ADD FIRE	炎を追加
 		Fires can be extinguished using water cannons and will spread to other nearby fires. The size of the fire and whether or not it is initially lit can be customised in the properties window.	炎は放水銃や消火器を使って消火できます. 炎は時間経過と共に規模が拡大し, 付近の乗り物にも延焼する場合があります. 炎の大きさと, 初めから燃えているかどうかはプロパティウィンドウから設定できます.
 		ADD LOOT	宝箱を追加
@@ -1479,7 +1479,7 @@ id	description	en	local
 		Button's Display Name	ボタンの表示名
 		Zone	ゾーン
 		Object	オブジェクト
-		Flare	フレア
+		Flare	発煙筒
 		Fire	炎
 		Vehicle Button	乗り物のボタン
 		Mission Component	ミッションのコンポーネント
@@ -1809,7 +1809,7 @@ id	description	en	local
 		Begin Research	研究の開始
 		Attach	取り付ける
 		Detach	取り外す
-		Apply First Aid	医療キットを使用する
+		Apply First Aid	治療セットを使用する
 		Revive	蘇生する
 		Cannot Equip In Active Slot	現在のスロットに装着できません
 		Keep Vehicle Active	常に読み込む
@@ -1863,12 +1863,12 @@ id	description	en	local
 		Parachute	パラシュート
 		Thermal Clothing	防寒着
 		Binoculars	双眼鏡
-		Cable	ケーブル
+		Cable	電気ケーブル
 		Compass	コンパス
 		Defibrillator	自動体外式除細動器
-		First Aid Kit	医療キット
+		First Aid Kit	治療セット
 		Flaregun	照明銃
-		Flaregun Ammo	照明弾
+		Flaregun Ammo	照明銃の弾薬箱
 		Flashlight	懐中電灯
 		Hose	ホース
 		Night Vision Binoculars	暗視ゴーグル
@@ -1877,8 +1877,8 @@ id	description	en	local
 		Radio Signal Locator	信号探知機
 		Remote Control Unit	遠隔操作端末
 		Rope	ロープ
-		Strobe Light	ストロボ
-		Strobe Light (infrared)	ストロボ (赤外線)
+		Strobe Light	ストロボライト
+		Strobe Light (infrared)	ストロボライト (赤外線)
 		Transponder	遭難信号発信機
 		Underwater Welding Torch	水中用溶接機
 		Welding Torch	溶接機
@@ -1887,8 +1887,8 @@ id	description	en	local
 		[$[action_equipment_use]] Revive incapaciated player	[$[action_equipment_use]] 蘇生する
 		[$[action_equipment_use]] Spray water	[$[action_equipment_use]] 放水する
 		[$[action_equipment_use]] Heal self / target	[$[action_equipment_use]] 自身/ターゲットを治療する
-		[$[action_equipment_use]] Throw flare	[$[action_equipment_use]] フレアを投げる
-		[$[action_equipment_use]] Fire flare [$[action_equipment_secondary]] Unload	[$[action_equipment_use]] フレアを撃つ [$[action_equipment_secondary]] 弾を取り出す
+		[$[action_equipment_use]] Throw flare	[$[action_equipment_use]] 発煙筒を投げる
+		[$[action_equipment_use]] Fire flare [$[action_equipment_secondary]] Unload	[$[action_equipment_use]] 発煙筒を撃つ [$[action_equipment_secondary]] 弾を取り出す
 		[$[action_equipment_use]] Reload flaregun	[$[action_equipment_use]] 照明銃を補充する
 		[$[action_equipment_use]] Toggle flashlight	[$[action_equipment_use]] 懐中電灯のオン/オフ
 		[$[action_equipment_secondary]] Toggle hose nozzle	[$[action_equipment_secondary]] 液体を出す/止める
@@ -1896,8 +1896,8 @@ id	description	en	local
 		[$[action_equipment_use]] Recover oxygen	[$[action_equipment_use]] 酸素を吸う
 		[$[action_equipment_use]] Transmit [$[action_equipment_secondary]] Cycle frequency	[$[action_equipment_use]] 発信する [$[action_equipment_secondary]] チャンネルを変更する
 		[$[action_equipment_use]] Toggle control [$[action_equipment_secondary]] cycle frequency	[$[action_equipment_use]] 使用する/やめる [$[action_equipment_secondary]] チャンネルを変更する
-		[$[action_equipment_use]] Toggle strobe [$[action_equipment_secondary]] Toggle MOB mode	[$[action_equipment_use]] ストロボのオン/オフ [$[action_equipment_secondary]] 船外作業モードのオン/オフ
-		[$[action_equipment_use]] Toggle strobe [$[action_equipment_secondary]] Toggle MOB mode	[$[action_equipment_use]] ストロボのオン/オフ [$[action_equipment_secondary]] 船外作業モードのオン/オフ
+		[$[action_equipment_use]] Toggle strobe [$[action_equipment_secondary]] Toggle MOB mode	[$[action_equipment_use]] ストロボライトのオン/オフ [$[action_equipment_secondary]] 船外作業モードのオン/オフ
+		[$[action_equipment_use]] Toggle strobe [$[action_equipment_secondary]] Toggle MOB mode	[$[action_equipment_use]] ストロボライトのオン/オフ [$[action_equipment_secondary]] 船外作業モードのオン/オフ
 		[$[action_equipment_use]] Toggle transmit [$[action_equipment_secondary]] Toggle MOB mode	[$[action_equipment_use]] 発信する/止める [$[action_equipment_secondary]] 船外作業モードのオン/オフ
 		[$[action_equipment_use]] Repair	[$[action_equipment_use]] 修理する
 		[$[action_equipment_use]] Repair	[$[action_equipment_use]] 修理する
@@ -1970,7 +1970,7 @@ id	description	en	local
 		Nuclear Power	原子力
 		Load Coal	石炭を入れる
 		Unload Coal	石炭を取り出す
-		Clean Radiation	放射能の除去
+		Clean Radiation	放射線汚染の除去
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
@@ -2053,12 +2053,12 @@ def_aircraft_engine_node_10_desc		Output value giving data info on engine temper
 def_aircraft_engine_node_11_label		Electric	電力
 def_aircraft_engine_node_11_desc		Electrical power connection.	電力網から電力を供給します.
 def_aircraft_propeller_name		Aircraft Propeller	航空機のプロペラ
-def_aircraft_propeller_desc		The amount of thrust produced is directly linked to how much torque it receives from a connected engine.	得られる推進力の大きさはこのプロペラを回すエンジンからのトルクに依存します.
+def_aircraft_propeller_desc		The amount of thrust produced is directly linked to how much torque it receives from a connected engine.	得られる推進力の大きさはこのプロペラを回すエンジンの動力の大きさに依存します.
 def_aircraft_propeller_s_desc		A large propeller that can be used to generate thrust.	推進力を得られる大きなプロペラです.
 def_aircraft_propeller_node_0_label		Power Received	動力
 def_aircraft_propeller_node_0_desc		Receives power generated by an engine.	エンジンからの動力を受け取ります.
 def_aircraft_propeller_node_1_label		Collective	コレクティブ
-def_aircraft_propeller_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	-1から1の数値入力でプロペラのピッチ量を変化させます.
+def_aircraft_propeller_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	プロペラのコレクティブ (プロペラが産み出す浮力の量) を制御する-1から1の範囲の数値信号です.
 def_air_exchanger_name		Air-Liquid Heat Exchanger 1x2	気体-液体熱交換器 (1x2)
 def_air_exchanger_desc		An intercooler that averages heat between air and a liquid at a rate proportional to the component's size.	熱を交換できる能力は熱交換器の大きさに比例します.
 def_air_exchanger_s_desc		A heat exchanger that averages heat between air and a liquid.	吸入する気体と液体の温度を均一にする熱交換器です.
@@ -2158,7 +2158,7 @@ def_artificial_horizon_node_1_label		Electric	電力
 def_artificial_horizon_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_azimuth_thruster_name		Azimuth Thruster	アジマススラスター
 def_azimuth_thruster_desc		The thruster can be attached to a robotic pivot to provide steering as well as propulsion. This propeller will only operate underwater.
-def_azimuth_thruster_s_desc		An azimuth thruster for boats.	電動回転軸を取り付けることで舵取りができる推進システムです. 水中でのみ動作します.
+def_azimuth_thruster_s_desc		An azimuth thruster for boats.	電動回転軸を取り付けることで舵取りもできるスクリューです. 水中でのみ動作します.
 def_azimuth_thruster_node_0_label		RPS	動力
 def_azimuth_thruster_node_0_desc		Receives power generated by an engine.	エンジンからの動力を受け取ります.
 def_battery_large_name		Electric Battery Large	電池 (大)
@@ -2559,7 +2559,7 @@ def_dial_name		Dial	ダイヤル
 def_dial_desc		The dial's face represents values ranging from -1 to 1 by default. This can be configured by selecting it with the select tool. Values outside this range will cause the needle to wrap around, but can be scaled to fit using additional logic components if necessary. An on/off signal can be used to toggle the backlight.	ダイヤルの表示面は最小値から最大値の間の値を針の回転によって表示します. 入力される数値が設定範囲から超えると針が振り切れます. 必要に応じて針が振り切れないような論理システムを組んで下さい. ダイヤルの最小値と最大値はプロパティウィンドウから設定できます.
 def_dial_s_desc		A dial with a rotating needle for displaying numerical values.	入力されている数値を回転する針によって表示するダイヤルです.
 def_dial_node_0_label		Value to Display	表示する数値
-def_dial_node_0_desc		The numerical value to display, ideally scaled to be within a -1 to 1 range.	表示する数値信号を入力します.
+def_dial_node_0_desc		The numerical value to display, ideally scaled to be within a -1 to 1 range.	表示する数値信号です.
 def_dial_node_1_label		Backlight	バックライト
 def_dial_node_1_desc		Enables the backlight when receiving an on signal.	オン信号を受け取っている間はバックライトが点灯します.
 def_dial_node_2_label		Electric	電力
@@ -2582,14 +2582,14 @@ def_distance_sensor_node_1_label		Electric	電力
 def_distance_sensor_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_door_name		Sliding Door (Electric)	ドア (引き戸, 電動)
 def_door_desc
-def_door_s_desc		Sliding door that can be opened and closed using an on/off signal.	オン/オフ信号で開閉ができる引き戸です.
+def_door_s_desc		Sliding door that can be opened and closed using an on/off signal.	オン/オフ信号で開閉ができる引き戸式のドアです.
 def_door_node_0_label		Open/Close	開閉
 def_door_node_0_desc		Opens the door when receiving an on signal, and closes it when receiving an off signal.	オン信号を受け取っている間はドアを開け, オフ信号を受け取っている間はドアを閉めます.
 def_door_node_1_label		Electric	電力
 def_door_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_door_dock_large_name		Hinged Dock Door	ドア (押し戸, ドッキング)
 def_door_dock_large_desc
-def_door_dock_large_s_desc		Hinged door that can be opened and closed using an on/off signal.	オン/オフ信号で開閉ができる押し戸です.
+def_door_dock_large_s_desc		Hinged door that can be opened and closed using an on/off signal.	オン/オフ信号で開閉ができる押し戸式のドアです.
 def_door_dock_large_node_0_label		Open/Close	開閉
 def_door_dock_large_node_0_desc		Opens the door when receiving an on signal, and closes it when receiving an off signal.	オン信号を受け取っている間はドアを開け, オフ信号を受け取っている間はドアを閉めます.
 def_door_dock_large_node_1_label		Magnet Toggle	コネクター起動
@@ -2612,7 +2612,7 @@ def_door_dock_large_node_9_label		Composite input	複合信号受信
 def_door_dock_large_node_9_desc		Composite data input.	相手のコネクターへ複合信号を受信します.
 def_door_dock_small_name		Hinged Dock Hatch	ハッチ (押し戸, ドッキング)
 def_door_dock_small_desc
-def_door_dock_small_s_desc		Hinged door that can be opened and closed using an on/off signal.	オン/オフ信号で開閉ができる押し戸です.
+def_door_dock_small_s_desc		Hinged door that can be opened and closed using an on/off signal.	オン/オフ信号で開閉ができる押し戸式のハッチです.
 def_door_dock_small_node_0_label		Open/Close	開閉
 def_door_dock_small_node_0_desc		Opens the door when receiving an on signal, and closes it when receiving an off signal.	オン信号を受け取っている間はハッチを開け, オフ信号を受け取っている間はハッチを閉めます.
 def_door_dock_small_node_1_label		Magnet Toggle	コネクター起動
@@ -2658,12 +2658,12 @@ def_door_manual_large_node_0_label		Lock	施錠
 def_door_manual_large_node_0_desc		Locks the door when receiving an on signal.	オン信号を受け取っている間はドアを施錠します.
 def_door_manual_sliding_small_name		Sliding Hatch	ハッチ (引き戸)
 def_door_manual_sliding_small_desc
-def_door_manual_sliding_small_s_desc		Sliding door that can be opened and closed by hand and locked using an on/off signal.	手動で開閉ができる引き戸で, オン/オフ信号で施錠もできます.
+def_door_manual_sliding_small_s_desc		Sliding door that can be opened and closed by hand and locked using an on/off signal.	手動で開閉ができる引き戸式のハッチで, オン/オフ信号で施錠もできます.
 def_door_manual_sliding_small_node_0_label		Lock	施錠
 def_door_manual_sliding_small_node_0_desc		Locks the door when receiving an on signal.	オン信号を受け取っている間はハッチを施錠します.
 def_door_manual_small_name		Hinged Hatch	ハッチ (押し戸)
 def_door_manual_small_desc
-def_door_manual_small_s_desc		Hinged door that can be opened and closed by hand and locked using an on/off signal.	手動で開閉ができる押し戸で, オン/オフ信号で施錠もできます.
+def_door_manual_small_s_desc		Hinged door that can be opened and closed by hand and locked using an on/off signal.	手動で開閉ができる押し戸式のハッチで, オン/オフ信号で施錠もできます.
 def_door_manual_small_node_0_label		Lock	施錠
 def_door_manual_small_node_0_desc		Locks the door when receiving an on signal.	オン信号を受け取っている間はハッチを施錠します.
 def_door_panel_corner_name		Door Panel Corner	カスタムドア (角)
@@ -2757,11 +2757,11 @@ def_fan_small_desc		The amount of force generated by the fan is directly linked 
 def_fan_small_s_desc		A small ducted fan used for propulsion.	推進力として使用する小型のダクテッドファンです.
 def_fan_small_node_0_label		RPS	動力
 def_fan_small_node_0_desc			エンジンからの動力を受け取ります.
-def_flare_launcher_name		Flare Launcher	フレア投擲機
-def_flare_launcher_desc		Set the flare canister type and launch velocity in the component properties.	投擲するフレアの種類と投擲速度はプロパティウィンドウから設定できます.
-def_flare_launcher_s_desc		Single-use flare launcher for signalling and illumination.	信号弾や照明弾として使用する単発のフレア投擲機です.
+def_flare_launcher_name		Flare Launcher	発煙筒投擲機
+def_flare_launcher_desc		Set the flare canister type and launch velocity in the component properties.	投擲する発煙筒の種類と投擲速度はプロパティウィンドウから設定できます.
+def_flare_launcher_s_desc		Single-use flare launcher for signalling and illumination.	信号弾や照明弾として使用する単発の発煙筒投擲機です.
 def_flare_launcher_node_0_label		Launch	投擲
-def_flare_launcher_node_0_desc			オン信号を受け取るとフレアを投擲します.
+def_flare_launcher_node_0_desc			オン信号を受け取ると発煙筒を投擲します.
 def_fluid_exhaust_name		Fluid Exhaust	排気口
 def_fluid_exhaust_desc		Fluid can flow in and out of the port as part of a fluid system.	流体をこの排気口から吸入/排出できます.
 def_fluid_exhaust_s_desc		An exhaust port for fluid systems.	流体の排出に使用する排気口です.
@@ -3069,10 +3069,10 @@ def_gate_float_register_node_3_desc		Resets the stored value to 0.	オン信号�
 def_gate_float_sin_name		Trigonometry	三角関数
 def_gate_float_sin_desc		The available functions are sin, cos, tan, asin, acos and atan. If an invalid number is input, the output will be 0. Sin, cos and tan accept inputs measured in turns. Asin, acos and atan output values measured in turns. The function can be set by selecting this component with the select tool.	正弦, 余弦, 正接, 逆正弦, 逆余弦, 逆正接が利用できます. 謝った数値が入力された場合は0が出力されます. 正弦, 余弦, 正接の入力と逆正弦, 逆余弦, 逆正接の出力の単位は回転数です. どの関数を使用するかはプロパティウィンドウから設定できます.
 def_gate_float_sin_s_desc		Provides a set of basic trigonometry functions.	三角関数を演算する論理部品です.
-def_gate_float_sin_node_0_label		f(x)	f(x)
-def_gate_float_sin_node_0_desc		f(x), where f is the selected function and x is the input.	設定した関数のxの時の数値を出力します.
-def_gate_float_sin_node_1_label		Input Number	入力x
-def_gate_float_sin_node_1_desc		The input to the function.	関数に入力する数値xです.
+def_gate_float_sin_node_0_label		f(x)	出力
+def_gate_float_sin_node_0_desc		f(x), where f is the selected function and x is the input.	設定された三角関数に入力を代入した数値を出力します.
+def_gate_float_sin_node_1_label		Input Number	入力
+def_gate_float_sin_node_1_desc		The input to the function.	三角関数に入力する数値です.
 def_gate_float_subtract_name		Subtract	減算
 def_gate_float_subtract_desc			「A」ノードの数値から「B」ノードの数値を減算した数値を出力します.
 def_gate_float_subtract_s_desc		Takes two number inputs, subtracts the second from first, and outputs the result.	2つの数値を減算して出力する論理部品です.
@@ -3086,510 +3086,510 @@ def_gate_float_switch_name		Numerical Junction	数値分岐
 def_gate_float_switch_desc		The junction can be switched using an on/off signal. When the signal is on, the number is passed through to the first output and a value of 0 is passed to the second. When the signal is off, the number is passed through to the second output with the first being set to 0.	オン/オフ信号でどちらから出力するかを選択します. 選択された出力からは入力された数値がそのまま出力されます. 選択されなかった出力からは0が出力されます.
 def_gate_float_switch_s_desc		Acts as a junction for two number signals.	1つの数値入力を2つの出力のどちらから出力するかを選択できる論理部品です.
 def_gate_float_switch_node_0_label		Switch Signal	選択信号
-def_gate_float_switch_node_0_desc		Controls which of the two output paths the input value will be sent to.	どちらの出力を選択するかを決めるオン/オフ信号です.
+def_gate_float_switch_node_0_desc		Controls which of the two output paths the input value will be sent to.	どちらの出力から出力するかを決めるオン/オフ信号です.
 def_gate_float_switch_node_1_label		Value to Pass Through	分岐させる数値
 def_gate_float_switch_node_1_desc		The value to pass through the junction.	分岐させる数値です.
 def_gate_float_switch_node_2_label		On Path	オンの出力
 def_gate_float_switch_node_2_desc		Receives the input value when the switch signal is set to on.	「選択信号」ノードがオン信号を受け取っている時に「分岐させる数値」ノードの数値が出力される出力です.
 def_gate_float_switch_node_3_label		Off Path	オフの出力
 def_gate_float_switch_node_3_desc		Receives the input value when the switch signal is set to off.	「選択信号」ノードがオフ信号を受け取っている時に「分岐させる数値」ノードの数値が出力される出力です.
-def_gate_float_switch_input_name		Numerical Switchbox	Numerical Switchbox
-def_gate_float_switch_input_desc		Which of the two inputs is sent to the output is determined by the on/off switch signal. When the signal is on, the first value is sent to the output. When it is off, the second output is sent.	Which of the two inputs is sent to the output is determined by the on/off switch signal. When the signal is on, the first value is sent to the output. When it is off, the second output is sent.
-def_gate_float_switch_input_s_desc		Acts as a switchbox for two number signals.	Acts as a switchbox for two number signals.
-def_gate_float_switch_input_node_0_label		Switch Signal	Switch Signal
-def_gate_float_switch_input_node_0_desc		Controls which of the two input values will be sent to the output.	Controls which of the two input values will be sent to the output.
-def_gate_float_switch_input_node_1_label		First Value (On)	First Value (On)
-def_gate_float_switch_input_node_1_desc		The value to output when the switch signal is on.	The value to output when the switch signal is on.
-def_gate_float_switch_input_node_2_label		Switched Value	Switched Value
+def_gate_float_switch_input_name		Numerical Switchbox	数値選択
+def_gate_float_switch_input_desc		Which of the two inputs is sent to the output is determined by the on/off switch signal. When the signal is on, the first value is sent to the output. When it is off, the second output is sent.	オン/オフ信号でどちらを出力するかを選択します. 選択された入力の数値がそのまま出力されます. 選択されなかった出力は無視されます.
+def_gate_float_switch_input_s_desc		Acts as a switchbox for two number signals.	2つの数値入力のどちらを出力するかを選択できる論理部品です.
+def_gate_float_switch_input_node_0_label		Switch Signal	選択信号
+def_gate_float_switch_input_node_0_desc		Controls which of the two input values will be sent to the output.	どちらの入力を出力するかを決めるオン/オフ信号です.
+def_gate_float_switch_input_node_1_label		First Value (On)	オンの入力
+def_gate_float_switch_input_node_1_desc		The value to output when the switch signal is on.	「選択信号」ノードがオン信号を受け取っている時に「選択された数値」ノードから出力される数値です.
+def_gate_float_switch_input_node_2_label		Switched Value	選択された数値
 def_gate_float_switch_input_node_2_desc		Outputs the first value when the switch signal is on, and the second value when it is off.	Outputs the first value when the switch signal is on, and the second value when it is off.
-def_gate_float_switch_input_node_3_label		Second Value (Off)	Second Value (Off)
-def_gate_float_switch_input_node_3_desc		The value to output when the switch signal is off.	The value to output when the switch signal is off.
-def_gate_float_threshold_name		Threshold Gate	Threshold Gate
-def_gate_float_threshold_desc		A lower and upper bound to the threshold must be set. The output is set to on if the input value is less than or equal to the upper bound, and greater than or equal to the lower bound. If it is outside this range, the output is set to off. The threshold bounds can be configured by selecting this component with the select tool.	A lower and upper bound to the threshold must be set. The output is set to on if the input value is less than or equal to the upper bound, and greater than or equal to the lower bound. If it is outside this range, the output is set to off. The threshold bounds can be configured by selecting this component with the select tool.
-def_gate_float_threshold_s_desc		Takes a value and compares it to a set threshold.	Takes a value and compares it to a set threshold.
-def_gate_float_threshold_node_0_label		Value to Test	Value to Test
-def_gate_float_threshold_node_0_desc		The value to test within the threshold.	The value to test within the threshold.
-def_gate_float_threshold_node_1_label		Within Threshold	Within Threshold
-def_gate_float_threshold_node_1_desc		Outputs an on signal when the input value is within the set threshold.	Outputs an on signal when the input value is within the set threshold.
-def_gate_function_large_name		Function (3 inputs)	Function (3 inputs)
-def_gate_function_large_desc		The function can be entered by selecting this component with the select tool. A full list of valid operations are also visible in the component's selection menu.	The function can be entered by selecting this component with the select tool. A full list of valid operations are also visible in the component's selection menu.
-def_gate_function_large_s_desc		Evaluates a mathematical function with up to 3 variable inputs.	Evaluates a mathematical function with up to 3 variable inputs.
-def_gate_function_large_node_0_label		Input 1 (x)	Input 1 (x)
-def_gate_function_large_node_0_desc		X input to the function.	X input to the function.
-def_gate_function_large_node_1_label		f(x,y,z)	f(x,y,z)
-def_gate_function_large_node_1_desc		Outputs the evaluation of the entered function.	Outputs the evaluation of the entered function.
-def_gate_function_large_node_2_label		Input 2 (y)	Input 2 (y)
-def_gate_function_large_node_2_desc		Y input to the function.	Y input to the function.
-def_gate_function_large_node_3_label		Input 3 (z)	Input 3 (z)
-def_gate_function_large_node_3_desc		Z input to the function.	Z input to the function.
-def_gate_function_small_name		Function (1 input)	Function (1 input)
-def_gate_function_small_desc		The function can be entered by selecting this component with the select tool. A full list of valid operations are also visible in the component's selection menu.	The function can be entered by selecting this component with the select tool. A full list of valid operations are also visible in the component's selection menu.
-def_gate_function_small_s_desc		Evaluates a mathematical function with 1 variable inputs	Evaluates a mathematical function with 1 variable inputs
-def_gate_function_small_node_0_label		f(x)	f(x)
-def_gate_function_small_node_0_desc		Outputs the evaluation of the entered function.	Outputs the evaluation of the entered function.
-def_gate_function_small_node_1_label		Input 1 (x)	Input 1 (x)
-def_gate_function_small_node_1_desc		X input to the function.	X input to the function.
-def_gate_jk_flipflop_name		JK Flip-Flop	JK Flip-Flop
-def_gate_jk_flipflop_desc		When both inputs are off, there is no change in state. If both Set and Reset are set to on, the state will be toggled.	When both inputs are off, there is no change in state. If both Set and Reset are set to on, the state will be toggled.
-def_gate_jk_flipflop_s_desc		A JK flip-flop that can be set and reset using two on/off inputs.	A JK flip-flop that can be set and reset using two on/off inputs.
-def_gate_jk_flipflop_node_0_label		Set	Set
-def_gate_jk_flipflop_node_0_desc		Sets the output to on.	Sets the output to on.
-def_gate_jk_flipflop_node_1_label		Reset	Reset
-def_gate_jk_flipflop_node_1_desc		Sets the output to off.	Sets the output to off.
-def_gate_jk_flipflop_node_2_label		Output	Output
-def_gate_jk_flipflop_node_2_desc		The internal state of the flip-flop.	The internal state of the flip-flop.
-def_gate_jk_flipflop_node_3_label		NOT Output	NOT Output
-def_gate_jk_flipflop_node_3_desc		The inverse of the internal state of the flip-flop.	The inverse of the internal state of the flip-flop.
-def_gate_pid_controller_name		PID Controller	PID Controller
-def_gate_pid_controller_desc		It takes the current measured output of a system or sensor, and a desired target measurement. It outputs a value that can be used as an input to the system to gradually correct its error. For example, the controller could input to an engine's throttle to maintain a desired speed or altitude. The control terms (proportional, integral and derivative) can be set by selecting the component with the select tool. The control terms must be carefully tuned for optimal output.	It takes the current measured output of a system or sensor, and a desired target measurement. It outputs a value that can be used as an input to the system to gradually correct its error. For example, the controller could input to an engine's throttle to maintain a desired speed or altitude. The control terms (proportional, integral and derivative) can be set by selecting the component with the select tool. The control terms must be carefully tuned for optimal output.
-def_gate_pid_controller_s_desc		A control loop feedback mechanism that measures and corrects the error in a system over time.	A control loop feedback mechanism that measures and corrects the error in a system over time.
-def_gate_pid_controller_node_0_label		Active	Active
-def_gate_pid_controller_node_0_desc		Sets whether or not the controller is active. When inactive, stored values are reset.	Sets whether or not the controller is active. When inactive, stored values are reset.
-def_gate_pid_controller_node_1_label		Control Output	Control Output
-def_gate_pid_controller_node_1_desc		The output computed by the controller.	The output computed by the controller.
-def_gate_pid_controller_node_2_label		Process Variable	Process Variable
-def_gate_pid_controller_node_2_desc		The current measured value of the system.	The current measured value of the system.
-def_gate_pid_controller_node_3_label		Setpoint	Setpoint
-def_gate_pid_controller_node_3_desc		The desired value to correct the process variable to.	The desired value to correct the process variable to.
-def_gate_push_to_toggle_name		Push to Toggle	Push to Toggle
-def_gate_push_to_toggle_desc		This can allow regular push buttons to act as toggle buttons.	This can allow regular push buttons to act as toggle buttons.
-def_gate_push_to_toggle_s_desc		This component has an internal on/off switch that is toggled every time a new on signal is sent to its input.	This component has an internal on/off switch that is toggled every time a new on signal is sent to its input.
-def_gate_push_to_toggle_node_0_label		Toggle Signal	Toggle Signal
-def_gate_push_to_toggle_node_0_desc		An on signal toggles the internal on/off switch.	An on signal toggles the internal on/off switch.
-def_gate_push_to_toggle_node_1_label		Internal State	Internal State
-def_gate_push_to_toggle_node_1_desc		The output of the internal on/off switch.	The output of the internal on/off switch.
-def_gate_sr_latch_name		SR Latch	SR Latch
-def_gate_sr_latch_desc		When both inputs are off, there is no change in state. If both Set and Reset are set to on, Reset will take precedence.	When both inputs are off, there is no change in state. If both Set and Reset are set to on, Reset will take precedence.
-def_gate_sr_latch_s_desc		An SR latch that can be set and reset using two on/off inputs.	An SR latch that can be set and reset using two on/off inputs.
-def_gate_sr_latch_node_0_label		Set	Set
-def_gate_sr_latch_node_0_desc		Sets the output to on.	Sets the output to on.
-def_gate_sr_latch_node_1_label		Reset	Reset
-def_gate_sr_latch_node_1_desc		Sets the output to off.	Sets the output to off.
-def_gate_sr_latch_node_2_label		Output	Output
-def_gate_sr_latch_node_2_desc		The internal state of the latch.	The internal state of the latch.
-def_gate_sr_latch_node_3_label		NOT Output	NOT Output
-def_gate_sr_latch_node_3_desc		The inverse of the internal state of the latch.	The inverse of the internal state of the latch.
-def_gate_torque_add_name		Power Add (Deprecated)	Power Add (Deprecated)
+def_gate_float_switch_input_node_3_label		Second Value (Off)	オフの入力
+def_gate_float_switch_input_node_3_desc		The value to output when the switch signal is off.	「選択信号」ノードがオフ信号を受け取っている時に「選択された数値」ノードから出力される数値です.
+def_gate_float_threshold_name		Threshold Gate	閾値
+def_gate_float_threshold_desc		A lower and upper bound to the threshold must be set. The output is set to on if the input value is less than or equal to the upper bound, and greater than or equal to the lower bound. If it is outside this range, the output is set to off. The threshold bounds can be configured by selecting this component with the select tool.	比較する範囲の上限と下限を設定する必要があります. 入力された数値が範囲内であればオン信号が出力されます. 範囲の上限と下限はプロパティウィンドウから設定できます.
+def_gate_float_threshold_s_desc		Takes a value and compares it to a set threshold.	入力された数値が設定された範囲内にあるかどうか調べられる論理部品です.
+def_gate_float_threshold_node_0_label		Value to Test	調べる数値
+def_gate_float_threshold_node_0_desc		The value to test within the threshold.	範囲内かどうか調べたい数値です.
+def_gate_float_threshold_node_1_label		Within Threshold	範囲内かどうか
+def_gate_float_threshold_node_1_desc		Outputs an on signal when the input value is within the set threshold.	 入力された数値が範囲内であればオン信号が出力されます.
+def_gate_function_large_name		Function (3 inputs)	関数 (3入力)
+def_gate_function_large_desc		The function can be entered by selecting this component with the select tool. A full list of valid operations are also visible in the component's selection menu.	関数はプロパティウィンドウから設定できます. 設定方法はそちらをご覧下さい.
+def_gate_function_large_s_desc		Evaluates a mathematical function with up to 3 variable inputs.	3つまでの変数を持つ関数を定義して計算できる論理部品です.
+def_gate_function_large_node_0_label		Input 1 (x)	入力x
+def_gate_function_large_node_0_desc		X input to the function.	関数に入力する数値xです.
+def_gate_function_large_node_1_label		f(x,y,z)	出力(x,y,z)
+def_gate_function_large_node_1_desc		Outputs the evaluation of the entered function.	設定された関数に(x,y,z)を代入した数値を出力します.
+def_gate_function_large_node_2_label		Input 2 (y)	入力y
+def_gate_function_large_node_2_desc		Y input to the function.	関数に入力する数値xです.
+def_gate_function_large_node_3_label		Input 3 (z)	入力z
+def_gate_function_large_node_3_desc		Z input to the function.	関数に入力する数値zです.
+def_gate_function_small_name		Function (1 input)	関数 (1入力)
+def_gate_function_small_desc		The function can be entered by selecting this component with the select tool. A full list of valid operations are also visible in the component's selection menu.	関数はプロパティウィンドウから設定できます. 設定方法はそちらをご覧下さい.
+def_gate_function_small_s_desc		Evaluates a mathematical function with 1 variable inputs	1つの変数を持つ関数を定義して計算できる論理部品です.
+def_gate_function_small_node_0_label		f(x)	出力x
+def_gate_function_small_node_0_desc		Outputs the evaluation of the entered function.	設定された関数に(x)を代入した数値を出力します.
+def_gate_function_small_node_1_label		Input 1 (x)	入力x
+def_gate_function_small_node_1_desc		X input to the function.	関数に入力する数値xです.
+def_gate_jk_flipflop_name		JK Flip-Flop	JKフリップフロップ
+def_gate_jk_flipflop_desc		When both inputs are off, there is no change in state. If both Set and Reset are set to on, the state will be toggled.	2つの入力が共にオフ信号の時の内部状態はそのままの状態で保持されます. 2つの入力が共にオン信号の時は内部状態が切り替わります.
+def_gate_jk_flipflop_s_desc		A JK flip-flop that can be set and reset using two on/off inputs.	2つのオン/オフ信号を用いて内部のオン/オフを保持できる論理部品です.
+def_gate_jk_flipflop_node_0_label		Set	セット
+def_gate_jk_flipflop_node_0_desc		Sets the output to on.	オン信号を受け取ると内部状態をオンにします.
+def_gate_jk_flipflop_node_1_label		Reset	リセット
+def_gate_jk_flipflop_node_1_desc		Sets the output to off.	オン信号を受け取ると内部状態をオフにします.
+def_gate_jk_flipflop_node_2_label		Output	出力
+def_gate_jk_flipflop_node_2_desc		The internal state of the flip-flop.	フリップフロップの内部状態を出力します.
+def_gate_jk_flipflop_node_3_label		NOT Output	出力の否定
+def_gate_jk_flipflop_node_3_desc		The inverse of the internal state of the flip-flop.	フリップフロップの内部状態を反転して出力します.
+def_gate_pid_controller_name		PID Controller	PID制御
+def_gate_pid_controller_desc		It takes the current measured output of a system or sensor, and a desired target measurement. It outputs a value that can be used as an input to the system to gradually correct its error. For example, the controller could input to an engine's throttle to maintain a desired speed or altitude. The control terms (proportional, integral and derivative) can be set by selecting the component with the select tool. The control terms must be carefully tuned for optimal output.	現在の測定値と目標値の2つの数値を入力します. 設定された制御項目 (比例ゲイン, 積分ゲイン, 微分ゲイン) に基づいて, 測定値が目標値に近づくようにする数値を出力します. 例えば, 狙った高度や速度を維持するためにエンジンのスロットルにこの出力を入力してエンジンを制御できます. 制御項目 (比例ゲイン, 積分ゲイン, 微分ゲイン) はプロパティウィンドウから設定できます.
+def_gate_pid_controller_s_desc		A control loop feedback mechanism that measures and corrects the error in a system over time.	システムの誤差をフィードバック制御で修正する論理部品です.
+def_gate_pid_controller_node_0_label		Active	起動
+def_gate_pid_controller_node_0_desc		Sets whether or not the controller is active. When inactive, stored values are reset.	オン信号を受け取っている時はPID制御を行います. オフ信号を受け取ると内部の数値はリセットされます.
+def_gate_pid_controller_node_1_label		Control Output	制御出力
+def_gate_pid_controller_node_1_desc		The output computed by the controller.	PID制御によって制御されたせ数値を出力します.
+def_gate_pid_controller_node_2_label		Process Variable	計測値
+def_gate_pid_controller_node_2_desc		The current measured value of the system.	制御したいシステムの現在の数値です.
+def_gate_pid_controller_node_3_label		Setpoint	目標値
+def_gate_pid_controller_node_3_desc		The desired value to correct the process variable to.	「計測値」ノードに入力される数値の, 近づけたい数値です.
+def_gate_push_to_toggle_name		Push to Toggle	押して切り替え
+def_gate_push_to_toggle_desc		This can allow regular push buttons to act as toggle buttons.	押しボタンを切り替えボタンとして動作させられます.
+def_gate_push_to_toggle_s_desc		This component has an internal on/off switch that is toggled every time a new on signal is sent to its input.	オン信号が入力される度に内部のオン/オフが切り替わる論理部品です.
+def_gate_push_to_toggle_node_0_label		Toggle Signal	切り替え信号
+def_gate_push_to_toggle_node_0_desc		An on signal toggles the internal on/off switch.	オン信号が入力される度に内部のオン/オフを切り替えます.
+def_gate_push_to_toggle_node_1_label		Internal State	内部状態
+def_gate_push_to_toggle_node_1_desc		The output of the internal on/off switch.	内部のオン/オフを出力します.
+def_gate_sr_latch_name		SR Latch	SRラッチ
+def_gate_sr_latch_desc		When both inputs are off, there is no change in state. If both Set and Reset are set to on, Reset will take precedence.	2つの入力が共にオフ信号の時の内部状態はそのままの状態で保持されます. 2つの入力が共にオン信号の時は「リセット」ノードの入力が優先されます.
+def_gate_sr_latch_s_desc		An SR latch that can be set and reset using two on/off inputs.	2つのオン/オフ信号を用いて内部のオン/オフを保持できる論理部品です.
+def_gate_sr_latch_node_0_label		Set	セット
+def_gate_sr_latch_node_0_desc		Sets the output to on.	オン信号を受け取ると内部状態をオンにします.
+def_gate_sr_latch_node_1_label		Reset	リセット
+def_gate_sr_latch_node_1_desc		Sets the output to off.	オン信号を受け取ると内部状態をオフにします.
+def_gate_sr_latch_node_2_label		Output	出力
+def_gate_sr_latch_node_2_desc		The internal state of the latch.	ラッチの内部状態を出力します.
+def_gate_sr_latch_node_3_label		NOT Output	出力の否定
+def_gate_sr_latch_node_3_desc		The inverse of the internal state of the latch.	ラッチの内部状態を反転して出力します.
+def_gate_torque_add_name		Power Add (Deprecated)	 動力加算 (非推奨)
 def_gate_torque_add_desc
-def_gate_torque_add_s_desc		Combines the outputs of two engines, allowing you to connect multiple engines to the same input.	Combines the outputs of two engines, allowing you to connect multiple engines to the same input.
-def_gate_torque_add_node_0_label		Combined Power	Combined Power
-def_gate_torque_add_node_0_desc		Outputs the combined power of engine 1 and 2.	Outputs the combined power of engine 1 and 2.
-def_gate_torque_multimeter_name		Power Meter (Deprecated)	Power Meter (Deprecated)
-def_gate_torque_multimeter_desc		To prevent a loss of power, it should be connected in series between the engine and its receiving component.	To prevent a loss of power, it should be connected in series between the engine and its receiving component.
-def_gate_torque_multimeter_s_desc		The power meter allows you to take a measurement of how much power is being output from an engine to a specific component.	The power meter allows you to take a measurement of how much power is being output from an engine to a specific component.
-def_gate_torque_multimeter_node_0_label		Relay	Relay
-def_gate_torque_multimeter_node_0_desc		Relays the power received from an engine.	Relays the power received from an engine.
-def_gate_train_junction_name		Train Junction Controller	Train Junction Controller
-def_gate_train_junction_desc		This can allow regular push buttons to act as toggle buttons.	This can allow regular push buttons to act as toggle buttons.
-def_gate_train_junction_s_desc		This component has an internal on/off switch that is toggled every time a new on signal is sent to its input.	This component has an internal on/off switch that is toggled every time a new on signal is sent to its input.
-def_gate_train_junction_node_0_label		Toggle Signal	Toggle Signal
-def_gate_train_junction_node_0_desc		An on signal toggles the internal on/off switch.	An on signal toggles the internal on/off switch.
-def_gate_train_junction_node_1_label		Internal State	Internal State
-def_gate_train_junction_node_1_desc		The output of the internal on/off switch.	The output of the internal on/off switch.
-def_gate_up_down_name		Up/Down	Up/Down
-def_gate_up_down_desc		The up input moves the value towards 1, and the down input moves it towards -1. This component can be used for converting on/off button presses into a standard number value that can be used to control any mechanical components that accept a standard number input.	The up input moves the value towards 1, and the down input moves it towards -1. This component can be used for converting on/off button presses into a standard number value that can be used to control any mechanical components that accept a standard number input.
-def_gate_up_down_s_desc		This component uses two on/off signals to move an internal value between -1 and 1.	This component uses two on/off signals to move an internal value between -1 and 1.
-def_gate_up_down_node_0_label		Up	Up
-def_gate_up_down_node_0_desc		Moves the internal value towards 1.	Moves the internal value towards 1.
-def_gate_up_down_node_1_label		Down	Down
-def_gate_up_down_node_1_desc		Moves the internal value towards -1.	Moves the internal value towards -1.
-def_gate_up_down_node_2_label		Up/Down Value	Up/Down Value
-def_gate_up_down_node_2_desc		The internally stored value between -1 an 1.	The internally stored value between -1 an 1.
-def_gauge_display_name		Gauge Display	Gauge Display
-def_gauge_display_desc		The primary needle is white and the secondary needle is red. The positions of the needles represent values ranging from -1 to 1 by default. This range can be configured by selecting the display with the select tool.	The primary needle is white and the secondary needle is red. The positions of the needles represent values ranging from -1 to 1 by default. This range can be configured by selecting the display with the select tool.
-def_gauge_display_s_desc		A display with two needles that can be positioned independently.	A display with two needles that can be positioned independently.
-def_gauge_display_node_0_label		Primary Display Value	Primary Display Value
-def_gauge_display_node_0_desc		The numerical value that sets the position of the white needle.	The numerical value that sets the position of the white needle.
-def_gauge_display_node_1_label		Secondary Display Value	Secondary Display Value
-def_gauge_display_node_1_desc		The numerical value that sets the position of the red needle.	The numerical value that sets the position of the red needle.
-def_gauge_display_node_2_label		Backlight	Backlight
-def_gauge_display_node_2_desc		Enables the backlight when receiving an on signal.	Enables the backlight when receiving an on signal.
-def_gauge_display_node_3_label		Electric	Electric
-def_gauge_display_node_3_desc		Electrical power connection.	Electrical power connection.
-def_generator_large_name		Large Generator	Large Generator
+def_gate_torque_add_s_desc		Combines the outputs of two engines, allowing you to connect multiple engines to the same input.	2つのエンジンの動力を加算します. 1つの動力入力に複数のエンジン出力を接続できます.
+def_gate_torque_add_node_0_label		Combined Power	加算した動力
+def_gate_torque_add_node_0_desc		Outputs the combined power of engine 1 and 2.	入力された2つのエンジンの動力を加算して出力します.
+def_gate_torque_multimeter_name		Power Meter (Deprecated)	動力計 (非推奨)
+def_gate_torque_multimeter_desc		To prevent a loss of power, it should be connected in series between the engine and its receiving component.	エンジンとエンジンの動力を使用する部品の間に挟んで, 動力の損失を防ぎます.
+def_gate_torque_multimeter_s_desc		The power meter allows you to take a measurement of how much power is being output from an engine to a specific component.	エンジンからの動力の大きさを測定できる論理部品です.
+def_gate_torque_multimeter_node_0_label		Relay	中継
+def_gate_torque_multimeter_node_0_desc		Relays the power received from an engine.	エンジンから受け取った動力を中継します.
+def_gate_train_junction_name		Train Junction Controller	列車分岐点制御
+def_gate_train_junction_desc		This can allow regular push buttons to act as toggle buttons.	押しボタンを切り替えボタンとして動作させられます.
+def_gate_train_junction_s_desc		This component has an internal on/off switch that is toggled every time a new on signal is sent to its input.	オン信号が入力される度に内部のオン/オフが切り替わる論理部品です.
+def_gate_train_junction_node_0_label		Toggle Signal	切り替え信号
+def_gate_train_junction_node_0_desc		An on signal toggles the internal on/off switch.	オン信号が入力される度に内部のオン/オフを切り替えます.
+def_gate_train_junction_node_1_label		Internal State	内部状態
+def_gate_train_junction_node_1_desc		The output of the internal on/off switch.	内部のオン/オフを出力します.
+def_gate_up_down_name		Up/Down	上げ下げ
+def_gate_up_down_desc		The up input moves the value towards 1, and the down input moves it towards -1. This component can be used for converting on/off button presses into a standard number value that can be used to control any mechanical components that accept a standard number input.	「上げる」または「下げる」ノードにオン信号を入力すると設定値の範囲内で数値信号が上下します. レバーと同じように振る舞います. 最小値, 最大値, 初期値, 数値変化の速度はプロパティウィンドウから設定できます.
+def_gate_up_down_s_desc		This component uses two on/off signals to move an internal value between -1 and 1.	2つのオン/オフ信号で数値信号が制御できる論理部品です.
+def_gate_up_down_node_0_label		Up	上げる
+def_gate_up_down_node_0_desc		Moves the internal value towards 1.	オン信号を受け取っている間は設定された速度で数値信号を上げます.
+def_gate_up_down_node_1_label		Down	下げる
+def_gate_up_down_node_1_desc		Moves the internal value towards -1.	オン信号を受け取っている間は設定された速度で数値信号を下げます.
+def_gate_up_down_node_2_label		Up/Down Value	出力
+def_gate_up_down_node_2_desc		The internally stored value between -1 an 1.	内部の数値信号を出力します.
+def_gauge_display_name		Gauge Display	ゲージ
+def_gauge_display_desc		The primary needle is white and the secondary needle is red. The positions of the needles represent values ranging from -1 to 1 by default. This range can be configured by selecting the display with the select tool.	「表示する数値1」ノードの数値は白い針で. 「表示する値2」ノードの数値は赤い針で表示されます. ゲージの最小値と最大値はプロパティウィンドウから設定できます.
+def_gauge_display_s_desc		A display with two needles that can be positioned independently.	入力されている2つの数値をそれぞれ2つの針によって表示するゲージです.
+def_gauge_display_node_0_label		Primary Display Value	表示する値1
+def_gauge_display_node_0_desc		The numerical value that sets the position of the white needle.	白い針で表示する数値信号です.
+def_gauge_display_node_1_label		Secondary Display Value	表示する値2
+def_gauge_display_node_1_desc		The numerical value that sets the position of the red needle.	赤い針で表示する数値信号です.
+def_gauge_display_node_2_label		Backlight	バックライト
+def_gauge_display_node_2_desc		Enables the backlight when receiving an on signal.	オン信号を受け取っている間はバックライトが点灯します.
+def_gauge_display_node_3_label		Electric	電力
+def_gauge_display_node_3_desc		Electrical power connection.	電力網から電力を供給します.
+def_generator_large_name		Large Generator	発電機 (大)
 def_generator_large_desc
-def_generator_large_s_desc		A large generator unit for converting mechanical power to electricity.	A large generator unit for converting mechanical power to electricity.
-def_generator_large_node_0_label		RPS	RPS
-def_generator_large_node_0_desc		The torque power input to convert to electric energy.	The torque power input to convert to electric energy.
-def_generator_large_node_1_label		Electric	Electric
-def_generator_large_node_1_desc		The electric connection to output electric energy.	The electric connection to output electric energy.
-def_generator_large_node_2_label		Output	Output
-def_generator_large_node_2_desc		Data output giving the electrical generation of the generator.	Data output giving the electrical generation of the generator.
-def_generator_medium_name		Medium Generator	Medium Generator
+def_generator_large_s_desc		A large generator unit for converting mechanical power to electricity.	動力を受け取って発電する大型の発電機です.
+def_generator_large_node_0_label		RPS	動力
+def_generator_large_node_0_desc		The torque power input to convert to electric energy.	エンジンからの動力を受け取ります.
+def_generator_large_node_1_label		Electric	電力
+def_generator_large_node_1_desc		The electric connection to output electric energy.	電力網に発電した電力を送ります.
+def_generator_large_node_2_label		Output	発電量
+def_generator_large_node_2_desc		Data output giving the electrical generation of the generator.	この発電機で発電している電力量を出力します.
+def_generator_medium_name		Medium Generator	発電機 (中)
 def_generator_medium_desc
-def_generator_medium_s_desc		A medium generator unit for converting mechanical power to electricity.	A medium generator unit for converting mechanical power to electricity.
-def_generator_medium_node_0_label		RPS	RPS
-def_generator_medium_node_0_desc		The torque power input to convert to electric energy.	The torque power input to convert to electric energy.
-def_generator_medium_node_1_label		Electric	Electric
-def_generator_medium_node_1_desc		The electric connection to output electric energy.	The electric connection to output electric energy.
-def_generator_medium_node_2_label		Output	Output
-def_generator_medium_node_2_desc		Data output giving the electrical generation of the generator.	Data output giving the electrical generation of the generator.
-def_generator_small_name		Small Generator	Small Generator
+def_generator_medium_s_desc		A medium generator unit for converting mechanical power to electricity.	動力を受け取って発電する中型の発電機です.
+def_generator_medium_node_0_label		RPS	動力
+def_generator_medium_node_0_desc		The torque power input to convert to electric energy.	エンジンからの動力を受け取ります.
+def_generator_medium_node_1_label		Electric	電力
+def_generator_medium_node_1_desc		The electric connection to output electric energy.	電力網に発電した電力を送ります.
+def_generator_medium_node_2_label		Output	発電量
+def_generator_medium_node_2_desc		Data output giving the electrical generation of the generator.	この発電機で発電している電力量を出力します.
+def_generator_small_name		Small Generator	発電機 (小)
 def_generator_small_desc
-def_generator_small_s_desc		A small generator unit for converting mechanical power to electricity.	A small generator unit for converting mechanical power to electricity.
-def_generator_small_node_0_label		RPS	RPS
-def_generator_small_node_0_desc		The torque power input to convert to electric energy.	The torque power input to convert to electric energy.
-def_generator_small_node_1_label		Electric	Electric
-def_generator_small_node_1_desc		The electric connection to output electric energy.	The electric connection to output electric energy.
-def_generator_small_node_2_label		Output	Output
-def_generator_small_node_2_desc		Data output giving the electrical generation of the generator.	Data output giving the electrical generation of the generator.
-def_giga_prop_small_name		Giant Propeller	Giant Propeller
-def_giga_prop_small_desc		Power received from an engine affects the forward and backward force generated. This propeller will only operate underwater.	Power received from an engine affects the forward and backward force generated. This propeller will only operate underwater.
-def_giga_prop_small_s_desc		A giant propeller for ships.	A giant propeller for ships.
-def_giga_prop_small_node_0_label		RPS	RPS
-def_giga_prop_small_node_0_desc		Receives power generated by an engine.	Receives power generated by an engine.
-def_gps_sensor_name		GPS Sensor	GPS Sensor
-def_gps_sensor_desc		The coordinates represent an offset from the centre of the world, measured in metres. You can check the world coordinates of any location by looking at your map.	The coordinates represent an offset from the centre of the world, measured in metres. You can check the world coordinates of any location by looking at your map.
-def_gps_sensor_s_desc		Outputs its x and y world coordinates according to its location on the map.	Outputs its x and y world coordinates according to its location on the map.
-def_gps_sensor_node_0_label		X Coordinate	X Coordinate
-def_gps_sensor_node_0_desc		The x coordinate of this component on the world map.	The x coordinate of this component on the world map.
-def_gps_sensor_node_1_label		Y Coordinate	Y Coordinate
-def_gps_sensor_node_1_desc		The y coordinate of this component on the world map.	The y coordinate of this component on the world map.
-def_gps_sensor_node_2_label		Electric	Electric
-def_gps_sensor_node_2_desc		Electrical power connection.	Electrical power connection.
-def_gyro_name		Gyro	Gyro
-def_gyro_desc		It outputs stabilised values that can be sent to rotors and engines to make them much easier to control. An on/off input allows you to activate and deactivate the internal auto-hover circuit. When auto-hover is enabled, the gyroscope will attempt to keep your helicopter steady.	It outputs stabilised values that can be sent to rotors and engines to make them much easier to control. An on/off input allows you to activate and deactivate the internal auto-hover circuit. When auto-hover is enabled, the gyroscope will attempt to keep your helicopter steady.
-def_gyro_s_desc		The gyroscope takes 4 standard value signals representing the desired yaw, pitch, roll and vertical motion of a helicopter.	The gyroscope takes 4 standard value signals representing the desired yaw, pitch, roll and vertical motion of a helicopter.
-def_gyro_node_0_label		Roll	Roll
-def_gyro_node_0_desc		Accepts a standard value between -1 and 1 representing the desired roll speed.	Accepts a standard value between -1 and 1 representing the desired roll speed.
-def_gyro_node_1_label		Stabilised Roll	Stabilised Roll
-def_gyro_node_1_desc		Outputs a standard value between -1 and 1 representing a stabilised roll speed.	Outputs a standard value between -1 and 1 representing a stabilised roll speed.
-def_gyro_node_2_label		Pitch	Pitch
-def_gyro_node_2_desc		Accepts a standard value between -1 and 1 representing the desired pitch speed.	Accepts a standard value between -1 and 1 representing the desired pitch speed.
-def_gyro_node_3_label		Stabilised Pitch	Stabilised Pitch
-def_gyro_node_3_desc		Outputs a standard value between -1 and 1 representing a stabilised pitch speed.	Outputs a standard value between -1 and 1 representing a stabilised pitch speed.
-def_gyro_node_4_label		Yaw	Yaw
-def_gyro_node_4_desc		Accepts a standard value between -1 and 1 representing the desired yaw speed.	Accepts a standard value between -1 and 1 representing the desired yaw speed.
-def_gyro_node_5_label		Stabilised Yaw	Stabilised Yaw
-def_gyro_node_5_desc		Outputs a standard value between -1 and 1 representing a stabilised yaw speed.	Outputs a standard value between -1 and 1 representing a stabilised yaw speed.
-def_gyro_node_6_label		Up/Down	Up/Down
-def_gyro_node_6_desc		Accepts a standard value between -1 and 1 representing the desired vertical speed.	Accepts a standard value between -1 and 1 representing the desired vertical speed.
-def_gyro_node_7_label		Stabilised Up/Down	Stabilised Up/Down
-def_gyro_node_7_desc		Outputs a standard value between 0 and 1 representing a stabilised upward thrust.	Outputs a standard value between 0 and 1 representing a stabilised upward thrust.
-def_gyro_node_8_label		Auto-hover	Auto-hover
-def_gyro_node_8_desc		Enables the gyroscope's auto-hover circuit when receiving an on signal.	Enables the gyroscope's auto-hover circuit when receiving an on signal.
-def_gyro_node_9_label		Electric	Electric
-def_gyro_node_9_desc		Electrical power connection.	Electrical power connection.
-def_handle_name		Handle	Handle
-def_handle_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] while attached will detach you depending on which you pressed to attach. The handle can be used to drag vehicles around. If a vehicle is too heavy to move, you will be detached automatically when you move outside the handle's interaction range.	Pressing [$[action_interact_left]]/[$[action_interact_right]] while attached will detach you depending on which you pressed to attach. The handle can be used to drag vehicles around. If a vehicle is too heavy to move, you will be detached automatically when you move outside the handle's interaction range.
-def_handle_s_desc		A handle that you can attach to by pressing [$[action_interact_left]] or [$[action_interact_right]].	A handle that you can attach to by pressing [$[action_interact_left]] or [$[action_interact_right]].
-def_hatch_name		Sliding Hatch (Electric)	Sliding Hatch (Electric)
+def_generator_small_s_desc		A small generator unit for converting mechanical power to electricity.	動力を受け取って発電する小型の発電機です.
+def_generator_small_node_0_label		RPS	動力
+def_generator_small_node_0_desc		The torque power input to convert to electric energy.	エンジンからの動力を受け取ります.
+def_generator_small_node_1_label		Electric	電力
+def_generator_small_node_1_desc		The electric connection to output electric energy.	電力網に発電した電力を送ります.
+def_generator_small_node_2_label		Output	出力
+def_generator_small_node_2_desc		Data output giving the electrical generation of the generator.	この発電機で発電している電力量を出力します.
+def_giga_prop_small_name		Giant Propeller	スクリュー (特大)
+def_giga_prop_small_desc		Power received from an engine affects the forward and backward force generated. This propeller will only operate underwater.	エンジンからの動力を受け取ると前後に推進力を発生させます. 水中でのみ動作します.
+def_giga_prop_small_s_desc		A giant propeller for ships.	船の特大型のスクリューです.
+def_giga_prop_small_node_0_label		RPS	動力
+def_giga_prop_small_node_0_desc		Receives power generated by an engine.	エンジンからの動力を受け取ります.
+def_gps_sensor_name		GPS Sensor	位置情報測定器
+def_gps_sensor_desc		The coordinates represent an offset from the centre of the world, measured in metres. You can check the world coordinates of any location by looking at your map.	出力される座標は世界の中心からの距離を示しメートル単位です. マップ画面にもカーソルを合わせた場所の座標が表示されます.
+def_gps_sensor_s_desc		Outputs its x and y world coordinates according to its location on the map.	この部品がある場所のワールドの座標を出力します.
+def_gps_sensor_node_0_label		X Coordinate	x座標
+def_gps_sensor_node_0_desc		The x coordinate of this component on the world map.	この部品がある場所のワールドのx座標を出力します.
+def_gps_sensor_node_1_label		Y Coordinate	y座標
+def_gps_sensor_node_1_desc		The y coordinate of this component on the world map.	この部品がある場所のワールドのy座標を出力します.
+def_gps_sensor_node_2_label		Electric	電力
+def_gps_sensor_node_2_desc		Electrical power connection.	電力網から電力を供給します.
+def_gyro_name		Gyro	ジャイロ
+def_gyro_desc		It outputs stabilised values that can be sent to rotors and engines to make them much easier to control. An on/off input allows you to activate and deactivate the internal auto-hover circuit. When auto-hover is enabled, the gyroscope will attempt to keep your helicopter steady.	ローターやエンジンにジャイロからの信号を入力することで安定した制御が行えます. 「ホバーモード」ノードへオン信号を入力すると自動的に乗り物を水平に保ちます.
+def_gyro_s_desc		The gyroscope takes 4 standard value signals representing the desired yaw, pitch, roll and vertical motion of a helicopter.	ヘリコプターのピッチ, ロール, ヨー, 上/下を簡単に制御できるジャイロです.
+def_gyro_node_0_label		Roll	ロール
+def_gyro_node_0_desc		Accepts a standard value between -1 and 1 representing the desired roll speed.	ジャイロのロール制御 (乗り物の左右方向の回転) を操作する-1から1の範囲の数値信号です.
+def_gyro_node_1_label		Stabilised Roll	制御したロール
+def_gyro_node_1_desc		Outputs a standard value between -1 and 1 representing a stabilised roll speed.	ジャイロによって制御されたロール信号が出力されます.
+def_gyro_node_2_label		Pitch	ピッチ
+def_gyro_node_2_desc		Accepts a standard value between -1 and 1 representing the desired pitch speed.	ジャイロのピッチ制御 (乗り物の前後方向の回転) を操作する-1から1の範囲の数値信号です.
+def_gyro_node_3_label		Stabilised Pitch	制御したピッチ
+def_gyro_node_3_desc		Outputs a standard value between -1 and 1 representing a stabilised pitch speed.	ジャイロによって制御されたピッチ信号が出力されます.
+def_gyro_node_4_label		Yaw	ヨー
+def_gyro_node_4_desc		Accepts a standard value between -1 and 1 representing the desired yaw speed.	ジャイロのヨー制御 (乗り物の水平方向の回転) を操作する-1から1の範囲の数値信号です.
+def_gyro_node_5_label		Stabilised Yaw	制御したヨー
+def_gyro_node_5_desc		Outputs a standard value between -1 and 1 representing a stabilised yaw speed.	ジャイロによって制御されたヨー信号が出力されます.
+def_gyro_node_6_label		Up/Down	上/下
+def_gyro_node_6_desc		Accepts a standard value between -1 and 1 representing the desired vertical speed.	ジャイロの上下制御を操作する-1から1の範囲の数値信号です.
+def_gyro_node_7_label		Stabilised Up/Down	制御した上/下
+def_gyro_node_7_desc		Outputs a standard value between 0 and 1 representing a stabilised upward thrust.	ジャイロによって制御された上/下信号が出力されます.
+def_gyro_node_8_label		Auto-hover	ホバーモード
+def_gyro_node_8_desc		Enables the gyroscope's auto-hover circuit when receiving an on signal.	オン信号を受け取っている時は自動的に乗り物を水平に保ちます.
+def_gyro_node_9_label		Electric	電力
+def_gyro_node_9_desc		Electrical power connection.	電力網から電力を供給します.
+def_handle_name		Handle	取っ手
+def_handle_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] while attached will detach you depending on which you pressed to attach. The handle can be used to drag vehicles around. If a vehicle is too heavy to move, you will be detached automatically when you move outside the handle's interaction range.	取っ手を掴んでいる時に [$[action_interact_left]]/[$[action_interact_right]] を押すと離すことができます. 軽い乗り物は取っ手を掴んでそのまま動かすことができます. プレイヤー取っ手の範囲外まで移動した場合は自動的に取っ手を離します.
+def_handle_s_desc		A handle that you can attach to by pressing [$[action_interact_left]] or [$[action_interact_right]].	[$[action_interact_left]] や [$[action_interact_right]] を押して掴むことができる取っ手です.
+def_hatch_name		Sliding Hatch (Electric)	ハッチ (引き戸, 電動)
 def_hatch_desc
-def_hatch_s_desc		Sliding hatch that can be opened and closed using an on/off signal.	Sliding hatch that can be opened and closed using an on/off signal.
-def_hatch_node_0_label		Hatch Open/Close	Hatch Open/Close
-def_hatch_node_0_desc		Opens the hatch when receiving an on signal, and closes it when receiving an off signal.	Opens the hatch when receiving an on signal, and closes it when receiving an off signal.
-def_hatch_node_1_label		Electric	Electric
-def_hatch_node_1_desc		Electrical power connection.	Electrical power connection.
-def_heater_name		Heater	Heater
-def_heater_desc		When enabled, the heater will warm any players within a 10m radius, allowing them to survive cold Arctic weather conditions.	When enabled, the heater will warm any players within a 10m radius, allowing them to survive cold Arctic weather conditions.
-def_heater_s_desc		A small heater that will provide warmth to nearby players.	A small heater that will provide warmth to nearby players.
-def_heater_node_0_label		Heating Element	Heating Element
-def_heater_node_0_desc		Enables the heating element when receiving an on signal.	Enables the heating element when receiving an on signal.
-def_heater_node_1_label		Electric	Electric
-def_heater_node_1_desc		Electrical power connection.	Electrical power connection.
-def_heat_exchanger_2_2_name		Air-Air Heat Exchanger 2x2	Air-Air Heat Exchanger 2x2
-def_heat_exchanger_2_2_desc		A heat exchanger that averages heat between two air systems at a rate proportional to the component's size.	A heat exchanger that averages heat between two air systems at a rate proportional to the component's size.
-def_heat_exchanger_2_2_s_desc		A heat exchanger that averages heat between two air systems.	A heat exchanger that averages heat between two air systems.
-def_heat_exchanger_2_2_node_0_label		Air A In	Air A In
-def_heat_exchanger_2_2_node_0_desc		Input air port.	Input air port.
-def_heat_exchanger_2_2_node_1_label		Air A Out	Air A Out
-def_heat_exchanger_2_2_node_1_desc		Output air port.	Output air port.
-def_heat_exchanger_2_2_node_2_label		Air B In	Air B In
-def_heat_exchanger_2_2_node_2_desc		Input air port.	Input air port.
-def_heat_exchanger_2_2_node_3_label		Air B Out	Air B Out
-def_heat_exchanger_2_2_node_3_desc		Output air port.	Output air port.
-def_heat_exchanger_2_2_node_4_label		Temp A	Temp A
-def_heat_exchanger_2_2_node_4_desc		Compartment temperature.	Compartment temperature.
-def_heat_exchanger_2_2_node_5_label		Temp B	Temp B
-def_heat_exchanger_2_2_node_5_desc		Compartment temperature.	Compartment temperature.
-def_heat_exchanger_5_5_name		Air-Air Heat Exchanger 2x5	Air-Air Heat Exchanger 2x5
-def_heat_exchanger_5_5_desc		A heat exchanger that averages heat between two air systems at a rate proportional to the component's size.	A heat exchanger that averages heat between two air systems at a rate proportional to the component's size.
-def_heat_exchanger_5_5_s_desc		A heat exchanger that averages heat between two air systems.	A heat exchanger that averages heat between two air systems.
-def_heat_exchanger_5_5_node_0_label		Air A In	Air A In
-def_heat_exchanger_5_5_node_0_desc		Input air port.	Input air port.
-def_heat_exchanger_5_5_node_1_label		Air A Out	Air A Out
-def_heat_exchanger_5_5_node_1_desc		Output air port.	Output air port.
-def_heat_exchanger_5_5_node_2_label		Air B In	Air B In
-def_heat_exchanger_5_5_node_2_desc		Input air port.	Input air port.
-def_heat_exchanger_5_5_node_3_label		Air B Out	Air B Out
-def_heat_exchanger_5_5_node_3_desc		Output air port.	Output air port.
-def_heat_exchanger_5_5_node_4_label		Temp A	Temp A
-def_heat_exchanger_5_5_node_4_desc		Compartment temperature.	Compartment temperature.
-def_heat_exchanger_5_5_node_5_label		Temp B	Temp B
-def_heat_exchanger_5_5_node_5_desc		Compartment temperature.	Compartment temperature.
-def_heat_exchanger_9_9_name		Air-Air Heat Exchanger 3x9	Air-Air Heat Exchanger 3x9
-def_heat_exchanger_9_9_desc		A heat exchanger that averages heat between two air systems at a rate proportional to the component's size.	A heat exchanger that averages heat between two air systems at a rate proportional to the component's size.
-def_heat_exchanger_9_9_s_desc		A heat exchanger that averages heat between two air systems.	A heat exchanger that averages heat between two air systems.
-def_heat_exchanger_9_9_node_0_label		Air A In	Air A In
-def_heat_exchanger_9_9_node_0_desc		Input air port.	Input air port.
-def_heat_exchanger_9_9_node_1_label		Air A Out	Air A Out
-def_heat_exchanger_9_9_node_1_desc		Output air port.	Output air port.
-def_heat_exchanger_9_9_node_2_label		Air B In	Air B In
-def_heat_exchanger_9_9_node_2_desc		Input air port.	Input air port.
-def_heat_exchanger_9_9_node_3_label		Air B Out	Air B Out
-def_heat_exchanger_9_9_node_3_desc		Output air port.	Output air port.
-def_heat_exchanger_9_9_node_4_label		Temp A	Temp A
-def_heat_exchanger_9_9_node_4_desc		Compartment temperature.	Compartment temperature.
-def_heat_exchanger_9_9_node_5_label		Temp B	Temp B
-def_heat_exchanger_9_9_node_5_desc		Compartment temperature.	Compartment temperature.
-def_heavy_rotor_name		Heavy Rotor	Heavy Rotor
-def_heavy_rotor_desc		Three standard number inputs control the rotor's swashplate, allowing you to affect the pitch, roll, and collective rotor angle. Power received from an engine affects the amount of up and down force that the rotor will generate.	Three standard number inputs control the rotor's swashplate, allowing you to affect the pitch, roll, and collective rotor angle. Power received from an engine affects the amount of up and down force that the rotor will generate.
-def_heavy_rotor_s_desc		A heavy duty rotor with thrust vectoring.	A heavy duty rotor with thrust vectoring.
-def_heavy_rotor_node_0_label		Roll	Roll
-def_heavy_rotor_node_0_desc		Standard value between -1 and 1 representing the desired roll amount.	Standard value between -1 and 1 representing the desired roll amount.
-def_heavy_rotor_node_1_label		Pitch	Pitch
-def_heavy_rotor_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	Standard value between -1 and 1 representing the desired pitch amount.
-def_heavy_rotor_node_2_label		RPS	RPS
-def_heavy_rotor_node_2_desc		Receives power generated by an engine.	Receives power generated by an engine.
-def_heavy_rotor_node_3_label		Collective	Collective
-def_heavy_rotor_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	Standard value between -1 and 1 representing the desired pitch amount.
-def_heavy_rotor_large_name		Heavy Large Rotor	Heavy Large Rotor
-def_heavy_rotor_large_desc		Three standard number inputs control the rotor's swashplate, allowing you to affect the pitch, roll, and collective rotor angle. Power received from an engine affects the amount of up and down force that the rotor will generate.	Three standard number inputs control the rotor's swashplate, allowing you to affect the pitch, roll, and collective rotor angle. Power received from an engine affects the amount of up and down force that the rotor will generate.
-def_heavy_rotor_large_s_desc		A large heavy duty rotor with thrust vectoring.	A large heavy duty rotor with thrust vectoring.
-def_heavy_rotor_large_node_0_label		Roll	Roll
-def_heavy_rotor_large_node_0_desc		Standard value between -1 and 1 representing the desired roll amount.	Standard value between -1 and 1 representing the desired roll amount.
-def_heavy_rotor_large_node_1_label		Pitch	Pitch
-def_heavy_rotor_large_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	Standard value between -1 and 1 representing the desired pitch amount.
-def_heavy_rotor_large_node_2_label		RPS	RPS
-def_heavy_rotor_large_node_2_desc		Receives power generated by an engine.	Receives power generated by an engine.
-def_heavy_rotor_large_node_3_label		Collective	Collective
-def_heavy_rotor_large_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	Standard value between -1 and 1 representing the desired pitch amount.
-def_huge_rotor_name		Huge Rotor	Huge Rotor
-def_huge_rotor_desc		Two standard number inputs control the rotor's swashplate, allowing you to affect the its pitch and roll. Power received from an engine affects the amount of up and down force that the rotor will generate. The output force of this rotor is decreased when underwater.	Two standard number inputs control the rotor's swashplate, allowing you to affect the its pitch and roll. Power received from an engine affects the amount of up and down force that the rotor will generate. The output force of this rotor is decreased when underwater.
-def_huge_rotor_s_desc		A large helicopter rotor with controllable pitch and roll.	A large helicopter rotor with controllable pitch and roll.
-def_huge_rotor_node_0_label		Roll	Roll
-def_huge_rotor_node_0_desc		Standard value between -1 and 1 representing the desired roll amount.	Standard value between -1 and 1 representing the desired roll amount.
-def_huge_rotor_node_1_label		Pitch	Pitch
-def_huge_rotor_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	Standard value between -1 and 1 representing the desired pitch amount.
-def_huge_rotor_node_2_label		RPS	RPS
-def_huge_rotor_node_2_desc		Receives power generated by an engine.	Receives power generated by an engine.
-def_huge_rotor_node_3_label		Collective	Collective
-def_huge_rotor_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	Standard value between -1 and 1 representing the desired pitch amount.
-def_humidity_sensor_name		Humidity Sensor	Humidity Sensor
-def_humidity_sensor_desc		The reading can be read from the sensor's number output and is measured from 0 (no fog) to 1 (max fog).	The reading can be read from the sensor's number output and is measured from 0 (no fog) to 1 (max fog).
-def_humidity_sensor_s_desc		A humidity sensor for measuring the current fog and visibility meteorological conditions.	A humidity sensor for measuring the current fog and visibility meteorological conditions.
-def_humidity_sensor_node_0_label		Humidity Factor	Humidity Factor
-def_humidity_sensor_node_0_desc		The level of humidity in the air, relating to the fog visibility.	The level of humidity in the air, relating to the fog visibility.
-def_impact_sensor_name		Impact Sensor	Impact Sensor
-def_impact_sensor_desc		Setting the impact threshold property will tune the sensitivity for impacts. When the instant change in velocity from an impact exceeds the threshold, and on signal is produced.	Setting the impact threshold property will tune the sensitivity for impacts. When the instant change in velocity from an impact exceeds the threshold, and on signal is produced.
-def_impact_sensor_s_desc		A sensor activated by a sudden change in velocity.	A sensor activated by a sudden change in velocity.
-def_impact_sensor_node_0_label		Output	Output
-def_impact_sensor_node_0_desc		Outputs an on signal when instant change in velocity exceeds the impact threshold.	Outputs an on signal when instant change in velocity exceeds the impact threshold.
-def_indicator_name		Indicator Light	Indicator Light
+def_hatch_s_desc		Sliding hatch that can be opened and closed using an on/off signal.	オン/オフ信号で開閉ができる引き戸式のハッチです.
+def_hatch_node_0_label		Hatch Open/Close	開閉
+def_hatch_node_0_desc		Opens the hatch when receiving an on signal, and closes it when receiving an off signal.	オン信号を受け取っている間はドアを開け, オフ信号を受け取っている間はドアを閉めます.
+def_hatch_node_1_label		Electric	電力
+def_hatch_node_1_desc		Electrical power connection.	電力網から電力を供給します.
+def_heater_name		Heater	暖房器具
+def_heater_desc		When enabled, the heater will warm any players within a 10m radius, allowing them to survive cold Arctic weather conditions.	起動すると10メートル以内のプレイヤーを温めます. 寒い地域での活動を容易にします.
+def_heater_s_desc		A small heater that will provide warmth to nearby players.	付近のプレイヤーに温かさを提供する暖房器具です.
+def_heater_node_0_label		Heating Element	起動
+def_heater_node_0_desc		Enables the heating element when receiving an on signal.	オン信号を受け取っている時は周囲のプレイヤーを温めます.
+def_heater_node_1_label		Electric	電力
+def_heater_node_1_desc		Electrical power connection.	電力網から電力を供給します.
+def_heat_exchanger_2_2_name		Air-Air Heat Exchanger 2x2	気体-気体熱交換器 (2x2)
+def_heat_exchanger_2_2_desc		A heat exchanger that averages heat between two air systems at a rate proportional to the component's size.	熱を交換できる能力は熱交換器の大きさに比例します.
+def_heat_exchanger_2_2_s_desc		A heat exchanger that averages heat between two air systems.	吸入する2つの気体の温度を均一にする熱交換器です.
+def_heat_exchanger_2_2_node_0_label		Air A In	気体1吸入
+def_heat_exchanger_2_2_node_0_desc		Input air port.	気体の吸入口です.
+def_heat_exchanger_2_2_node_1_label		Air A Out	気体1排出
+def_heat_exchanger_2_2_node_1_desc		Output air port.	気体の排出口です.
+def_heat_exchanger_2_2_node_2_label		Air B In	気体2吸入
+def_heat_exchanger_2_2_node_2_desc		Input air port.	気体の吸入口です.
+def_heat_exchanger_2_2_node_3_label		Air B Out	気体2排出
+def_heat_exchanger_2_2_node_3_desc		Output air port.	気体の排出口です.
+def_heat_exchanger_2_2_node_4_label		Temp A	気体1の温度
+def_heat_exchanger_2_2_node_4_desc		Compartment temperature.	熱交換器内の気体の温度を出力します.
+def_heat_exchanger_2_2_node_5_label		Temp B	気体2の温度
+def_heat_exchanger_2_2_node_5_desc		Compartment temperature.	熱交換器内の気体の温度を出力します.
+def_heat_exchanger_5_5_name		Air-Air Heat Exchanger 2x5	気体-気体熱交換器 (2x5)
+def_heat_exchanger_5_5_desc		A heat exchanger that averages heat between two air systems at a rate proportional to the component's size.	熱を交換できる能力は熱交換器の大きさに比例します.
+def_heat_exchanger_5_5_s_desc		A heat exchanger that averages heat between two air systems.	吸入する2つの気体の温度を均一にする熱交換器です.
+def_heat_exchanger_5_5_node_0_label		Air A In	気体1吸入
+def_heat_exchanger_5_5_node_0_desc		Input air port.	気体の吸入口です.
+def_heat_exchanger_5_5_node_1_label		Air A Out	気体1排出
+def_heat_exchanger_5_5_node_1_desc		Output air port.	気体の排出口です.
+def_heat_exchanger_5_5_node_2_label		Air B In	気体2吸入
+def_heat_exchanger_5_5_node_2_desc		Input air port.	気体の吸入口です.
+def_heat_exchanger_5_5_node_3_label		Air B Out	気体2排出
+def_heat_exchanger_5_5_node_3_desc		Output air port.	気体の排出口です.
+def_heat_exchanger_5_5_node_4_label		Temp A	気体1の温度
+def_heat_exchanger_5_5_node_4_desc		Compartment temperature.	熱交換器内の気体の温度を出力します.
+def_heat_exchanger_5_5_node_5_label		Temp B	気体2の温度
+def_heat_exchanger_5_5_node_5_desc		Compartment temperature.	熱交換器内の気体の温度を出力します.
+def_heat_exchanger_9_9_name		Air-Air Heat Exchanger 3x9	気体-気体熱交換器 (3x9)
+def_heat_exchanger_9_9_desc		A heat exchanger that averages heat between two air systems at a rate proportional to the component's size.	熱を交換できる能力は熱交換器の大きさに比例します.
+def_heat_exchanger_9_9_s_desc		A heat exchanger that averages heat between two air systems.	吸入する2つの気体の温度を均一にする熱交換器です.
+def_heat_exchanger_9_9_node_0_label		Air A In	気体1吸入
+def_heat_exchanger_9_9_node_0_desc		Input air port.	気体の吸入口です.
+def_heat_exchanger_9_9_node_1_label		Air A Out	気体1排出
+def_heat_exchanger_9_9_node_1_desc		Output air port.	気体の排出口です.
+def_heat_exchanger_9_9_node_2_label		Air B In	気体2吸入
+def_heat_exchanger_9_9_node_2_desc		Input air port.	気体の吸入口です.
+def_heat_exchanger_9_9_node_3_label		Air B Out	気体2排出
+def_heat_exchanger_9_9_node_3_desc		Output air port.	気体の排出口です.
+def_heat_exchanger_9_9_node_4_label		Temp A	気体1の温度
+def_heat_exchanger_9_9_node_4_desc		Compartment temperature.	熱交換器内の気体の温度を出力します.
+def_heat_exchanger_9_9_node_5_label		Temp B	気体2の温度
+def_heat_exchanger_9_9_node_5_desc		Compartment temperature.	熱交換器内の気体の温度を出力します.
+def_heavy_rotor_name		Heavy Rotor	ローター (重)
+def_heavy_rotor_desc		Three standard number inputs control the rotor's swashplate, allowing you to affect the pitch, roll, and collective rotor angle. Power received from an engine affects the amount of up and down force that the rotor will generate.	3つの数値信号でローター板を制御し, ピッチ, ロール, コレクティブを制御します. 得られる推進力の大きさはこのローターを回すエンジンの動力の大きさに依存します.
+def_heavy_rotor_s_desc		A heavy duty rotor with thrust vectoring.	推進力を得られる重量型のローターです.
+def_heavy_rotor_node_0_label		Roll	ロール
+def_heavy_rotor_node_0_desc		Standard value between -1 and 1 representing the desired roll amount.	ローターのロール (乗り物の左右方向の回転) を制御する-1から1の範囲の数値信号です.
+def_heavy_rotor_node_1_label		Pitch	ピッチ
+def_heavy_rotor_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	ローターのピッチ (乗り物の前後方向の回転) を制御する-1から1の範囲の数値信号です.
+def_heavy_rotor_node_2_label		RPS	動力
+def_heavy_rotor_node_2_desc		Receives power generated by an engine.	エンジンからの動力を受け取ります.
+def_heavy_rotor_node_3_label		Collective	コレクティブ
+def_heavy_rotor_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	ローターのコレクティブ (ローターが産み出す浮力の量) を制御する-1から1の範囲の数値信号です.
+def_heavy_rotor_large_name		Heavy Large Rotor	ローター (重, 大)
+def_heavy_rotor_large_desc		Three standard number inputs control the rotor's swashplate, allowing you to affect the pitch, roll, and collective rotor angle. Power received from an engine affects the amount of up and down force that the rotor will generate.	3つの数値信号でローター板を制御し, ピッチ, ロール, コレクティブを制御します. 得られる推進力の大きさはこのローターを回すエンジンの動力の大きさに依存します.
+def_heavy_rotor_large_s_desc		A large heavy duty rotor with thrust vectoring.	推進力を得られる大型で重量型のローターです.
+def_heavy_rotor_large_node_0_label		Roll	ロール
+def_heavy_rotor_large_node_0_desc		Standard value between -1 and 1 representing the desired roll amount.	ローターのロール (乗り物の左右方向の回転) を制御する-1から1の範囲の数値信号です.
+def_heavy_rotor_large_node_1_label		Pitch	ピッチ
+def_heavy_rotor_large_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	ローターのピッチ (乗り物の前後方向の回転) を制御する-1から1の範囲の数値信号です.
+def_heavy_rotor_large_node_2_label		RPS	動力
+def_heavy_rotor_large_node_2_desc		Receives power generated by an engine.	エンジンからの動力を受け取ります.
+def_heavy_rotor_large_node_3_label		Collective	コレクティブ
+def_heavy_rotor_large_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	ローターのコレクティブ (ローターが産み出す浮力の量) を制御する-1から1の範囲の数値信号です.
+def_huge_rotor_name		Huge Rotor	ローター (特大)
+def_huge_rotor_desc		Two standard number inputs control the rotor's swashplate, allowing you to affect the its pitch and roll. Power received from an engine affects the amount of up and down force that the rotor will generate. The output force of this rotor is decreased when underwater.	3つの数値信号でローター板を制御し, ピッチ, ロール, コレクティブを制御します. 得られる推進力の大きさはこのローターを回すエンジンの動力の大きさに依存します.
+def_huge_rotor_s_desc		A large helicopter rotor with controllable pitch and roll.	推進力を得られる特大型のローターです.
+def_huge_rotor_node_0_label		Roll	ロール
+def_huge_rotor_node_0_desc		Standard value between -1 and 1 representing the desired roll amount.	ローターのロール (乗り物の左右方向の回転) を制御する-1から1の範囲の数値信号です.
+def_huge_rotor_node_1_label		Pitch	ピッチ
+def_huge_rotor_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	ローターのピッチ (乗り物の前後方向の回転) を制御する-1から1の範囲の数値信号です.
+def_huge_rotor_node_2_label		RPS	動力
+def_huge_rotor_node_2_desc		Receives power generated by an engine.	エンジンからの動力を受け取ります.
+def_huge_rotor_node_3_label		Collective	コレクティブ
+def_huge_rotor_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	ローターのコレクティブ (ローターが産み出す浮力の量) を制御する-1から1の範囲の数値信号です.
+def_humidity_sensor_name		Humidity Sensor	湿度計
+def_humidity_sensor_desc		The reading can be read from the sensor's number output and is measured from 0 (no fog) to 1 (max fog).	数値信号の出力から測定数値を読み取れます. 範囲は0 (霧最小) から1 (霧最大) です.
+def_humidity_sensor_s_desc		A humidity sensor for measuring the current fog and visibility meteorological conditions.	現在の霧量を測定する湿度計です.
+def_humidity_sensor_node_0_label		Humidity Factor	霧量
+def_humidity_sensor_node_0_desc		The level of humidity in the air, relating to the fog visibility.	霧量を0 (霧最小) から1 (霧最大) の範囲出力します.
+def_impact_sensor_name		Impact Sensor	衝撃計
+def_impact_sensor_desc		Setting the impact threshold property will tune the sensitivity for impacts. When the instant change in velocity from an impact exceeds the threshold, and on signal is produced.	設定された閾値以上の速度の急激な変化があった場合はオン信号を出力します. 閾値はプロパティウィンドウから設定できます.
+def_impact_sensor_s_desc		A sensor activated by a sudden change in velocity.	急激な速度の変化を検出する衝撃計です.
+def_impact_sensor_node_0_label		Output	衝撃検出
+def_impact_sensor_node_0_desc		Outputs an on signal when instant change in velocity exceeds the impact threshold.	設定された閾値以上の速度の急激な変化があった場合はオン信号を出力します.
+def_indicator_name		Indicator Light	表示灯
 def_indicator_desc
-def_indicator_s_desc		A simple light that can be used as an indicator in logic systems.	A simple light that can be used as an indicator in logic systems.
-def_indicator_node_0_label		Indicator Light	Indicator Light
-def_indicator_node_0_desc		Switches the light on when receiving an on signal.	Switches the light on when receiving an on signal.
-def_indicator_node_1_label		Electric	Electric
-def_indicator_node_1_desc		Electrical power connection.	Electrical power connection.
-def_indicator_rgb_name		Indicator Light (RGB)	Indicator Light (RGB)
-def_indicator_rgb_desc		Three channels of the composite input can be used to set the red, green and blue components of the indicator's color using numbers between 0 and 1. The light can also operate in HSV mode, where the 3 inputs correspond to the hue, saturation and value (brightness) of the color between 0 and 1. The color mode and input channels can be customised by selecting this component with the select tool.	Three channels of the composite input can be used to set the red, green and blue components of the indicator's color using numbers between 0 and 1. The light can also operate in HSV mode, where the 3 inputs correspond to the hue, saturation and value (brightness) of the color between 0 and 1. The color mode and input channels can be customised by selecting this component with the select tool.
-def_indicator_rgb_s_desc		An advanced indicator that can be controlled using a microcontroller.	An advanced indicator that can be controlled using a microcontroller.
-def_indicator_rgb_node_0_label		Color Data	Color Data
-def_indicator_rgb_node_0_desc		Composite link containing the indicator's color data.	Composite link containing the indicator's color data.
-def_indicator_rgb_node_1_label		Electric	Electric
-def_indicator_rgb_node_1_desc		Electrical power connection.	Electrical power connection.
-def_instrument_display_name		Instrument Panel	Instrument Panel
-def_instrument_display_desc		The 4 instruments can be selected in the properties window. Each type of instrument has options for choosing the composite channels that they read from or write to. Composite signals are bridged from the input node to the output node to enable displays to be chained together. Instruments marked as '(On/Off)' require multiple on/off signals to control each of their segments individually.	The 4 instruments can be selected in the properties window. Each type of instrument has options for choosing the composite channels that they read from or write to. Composite signals are bridged from the input node to the output node to enable displays to be chained together. Instruments marked as '(On/Off)' require multiple on/off signals to control each of their segments individually.
-def_instrument_display_s_desc		A customisable panel that can have up to 4 different instruments, controlled by a composite signal from a microcontroller.	A customisable panel that can have up to 4 different instruments, controlled by a composite signal from a microcontroller.
-def_instrument_display_node_0_label		Out Signal	Out Signal
-def_instrument_display_node_0_desc		Output signal containing data set by buttons on the display.	Output signal containing data set by buttons on the display.
-def_instrument_display_node_1_label		In Signal	In Signal
-def_instrument_display_node_1_desc		Input signal containing data to be displayed.	Input signal containing data to be displayed.
-def_instrument_display_node_2_label		Electric	Electric
-def_instrument_display_node_2_desc		Electrical power connection.	Electrical power connection.
-def_instrument_display_node_3_label		Backlight	Backlight
-def_instrument_display_node_3_desc		Enables the backlight when receiving an on signal.	Enables the backlight when receiving an on signal.
-def_intercooler_name		Liquid-Liquid Heat Exchanger 2x2	Liquid-Liquid Heat Exchanger 2x2
-def_intercooler_desc		A heat exchanger that averages heat between two liquid systems at a rate proportional to the component's size.	A heat exchanger that averages heat between two liquid systems at a rate proportional to the component's size.
-def_intercooler_s_desc		A heat exchanger that averages heat between two liquid systems.	A heat exchanger that averages heat between two liquid systems.
-def_intercooler_node_0_label		Fluid A In	Fluid A In
-def_intercooler_node_0_desc		Input fluid port.	Input fluid port.
-def_intercooler_node_1_label		Fluid A Out	Fluid A Out
-def_intercooler_node_1_desc		Output fluid port.	Output fluid port.
-def_intercooler_node_2_label		Fluid B In	Fluid B In
-def_intercooler_node_2_desc		Input fluid port.	Input fluid port.
-def_intercooler_node_3_label		Fluid B Out	Fluid B Out
-def_intercooler_node_3_desc		Output fluid port.	Output fluid port.
-def_intercooler_node_4_label		Temp A	Temp A
-def_intercooler_node_4_desc		Compartment temperature.	Compartment temperature.
-def_intercooler_node_5_label		Temp B	Temp B
-def_intercooler_node_5_desc		Compartment temperature.	Compartment temperature.
-def_intercooler_large_name		Liquid-Liquid Heat Exchanger 5x5	Liquid-Liquid Heat Exchanger 5x5
-def_intercooler_large_desc		A heat exchanger that averages heat between two liquid systems at a rate proportional to the component's size.	A heat exchanger that averages heat between two liquid systems at a rate proportional to the component's size.
-def_intercooler_large_s_desc		A heat exchanger that averages heat between two liquid systems.	A heat exchanger that averages heat between two liquid systems.
-def_intercooler_large_node_0_label		Fluid A In	Fluid A In
-def_intercooler_large_node_0_desc		Input fluid port.	Input fluid port.
-def_intercooler_large_node_1_label		Fluid A Out	Fluid A Out
-def_intercooler_large_node_1_desc		Output fluid port.	Output fluid port.
-def_intercooler_large_node_2_label		Fluid B In	Fluid B In
-def_intercooler_large_node_2_desc		Input fluid port.	Input fluid port.
-def_intercooler_large_node_3_label		Fluid B Out	Fluid B Out
-def_intercooler_large_node_3_desc		Output fluid port.	Output fluid port.
-def_intercooler_large_node_4_label		Temp A	Temp A
-def_intercooler_large_node_4_desc		Compartment temperature.	Compartment temperature.
-def_intercooler_large_node_5_label		Temp B	Temp B
-def_intercooler_large_node_5_desc		Compartment temperature.	Compartment temperature.
-def_inventory_equipment_binoculars_name		Equipment inventory (Binoculars)	Equipment inventory (Binoculars)
-def_inventory_equipment_binoculars_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Hold [$[action_equipment_use]] to zoom in on faraway objects. This equipment can be stored on the belt when not in use.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Hold [$[action_equipment_use]] to zoom in on faraway objects. This equipment can be stored on the belt when not in use.
-def_inventory_equipment_binoculars_s_desc		A small equipment storage unit containing a pair of binoculars.	A small equipment storage unit containing a pair of binoculars.
-def_inventory_equipment_binoculars_node_0_label		Electric	Electric
-def_inventory_equipment_binoculars_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_equipment_cable_name		Equipment inventory (Cable)	Equipment inventory (Cable)
-def_inventory_equipment_cable_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to attach the cable to an unoccupied electrical cable anchor. Pressing [$[action_interact_left]]/[$[action_interact_right]] on an occupied electical cable anchor will retrieve the cable if the player has inventory space to hold it. This equipment can be stored on the back when not in use.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to attach the cable to an unoccupied electrical cable anchor. Pressing [$[action_interact_left]]/[$[action_interact_right]] on an occupied electical cable anchor will retrieve the cable if the player has inventory space to hold it. This equipment can be stored on the back when not in use.
-def_inventory_equipment_cable_s_desc		A large equipment storage unit containing 20m of electrical cable.	A large equipment storage unit containing 20m of electrical cable.
-def_inventory_equipment_cable_node_0_label		Electric	Electric
-def_inventory_equipment_cable_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_equipment_compass_name		Equipment inventory (Compass)	Equipment inventory (Compass)
-def_inventory_equipment_compass_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. When held, the red needle of the compass will point northwards. This equipment can be stored on the belt when not in use.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. When held, the red needle of the compass will point northwards. This equipment can be stored on the belt when not in use.
-def_inventory_equipment_compass_s_desc		A small equipment storage unit containing a compass.	A small equipment storage unit containing a compass.
-def_inventory_equipment_compass_node_0_label		Electric	Electric
-def_inventory_equipment_compass_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_equipment_defibrillator_name		Equipment inventory (Defibrillator)	Equipment inventory (Defibrillator)
-def_inventory_equipment_defibrillator_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] on an incapacitated survivor to revive them. Survivors who have been left incapacitated for too long will expire and not be revivable. This equipment requires electric charge to function, and will recharge when placed into a powered large equipment storage unit. This equipment can be stored on the back when not in use.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] on an incapacitated survivor to revive them. Survivors who have been left incapacitated for too long will expire and not be revivable. This equipment requires electric charge to function, and will recharge when placed into a powered large equipment storage unit. This equipment can be stored on the back when not in use.
-def_inventory_equipment_defibrillator_s_desc		A large equipment storage unit containing a defibrillator.	A large equipment storage unit containing a defibrillator.
-def_inventory_equipment_defibrillator_node_0_label		Electric	Electric
-def_inventory_equipment_defibrillator_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_equipment_fire_extinguisher_name		Equipment inventory (Fire Extinguisher)	Equipment inventory (Fire Extinguisher)
-def_inventory_equipment_fire_extinguisher_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Hold [$[action_equipment_use]] to spray a stream of water capable of extinguishing fires. This equipment has a limited water capacity and cannot be refilled. This equipment can be stored on the back when not in use.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Hold [$[action_equipment_use]] to spray a stream of water capable of extinguishing fires. This equipment has a limited water capacity and cannot be refilled. This equipment can be stored on the back when not in use.
-def_inventory_equipment_fire_extinguisher_s_desc		A large equipment storage unit containing a fire extinguisher.	A large equipment storage unit containing a fire extinguisher.
-def_inventory_equipment_fire_extinguisher_node_0_label		Electric	Electric
-def_inventory_equipment_fire_extinguisher_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_equipment_first_aid_name		Equipment inventory (First Aid Kit)	Equipment inventory (First Aid Kit)
-def_inventory_equipment_first_aid_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to heal yourself, or heal a survivor highlighted by your crosshair. This equipment has limited uses, picking up additional first aid kits will replenish these uses. This equipment can be stored on the belt when not in use.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to heal yourself, or heal a survivor highlighted by your crosshair. This equipment has limited uses, picking up additional first aid kits will replenish these uses. This equipment can be stored on the belt when not in use.
-def_inventory_equipment_first_aid_s_desc		A small equipment storage unit containing a first aid kit.	A small equipment storage unit containing a first aid kit.
-def_inventory_equipment_first_aid_node_0_label		Electric	Electric
-def_inventory_equipment_first_aid_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_equipment_flare_name		Equipment inventory (Flare)	Equipment inventory (Flare)
-def_inventory_equipment_flare_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to throw a red smoke flare which burns for a long time. This equipment has a limited uses, picking up additional flares will replenish these uses. This equipment can be stored on the belt when not in use.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to throw a red smoke flare which burns for a long time. This equipment has a limited uses, picking up additional flares will replenish these uses. This equipment can be stored on the belt when not in use.
-def_inventory_equipment_flare_s_desc		A small equipment storage unit containing flares.	A small equipment storage unit containing flares.
-def_inventory_equipment_flare_node_0_label		Electric	Electric
-def_inventory_equipment_flare_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_equipment_flaregun_name		Equipment inventory (Flaregun)	Equipment inventory (Flaregun)
-def_inventory_equipment_flaregun_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to fire a red illumination flare that burns for a short time. Press [$[action_equipment_secondary]] to unload any flaregun round in the gun. Using a box of flaregun ammo will allow the gun to be reloaded with additional flaregun rounds. This equipment can be stored on the belt when not in use.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to fire a red illumination flare that burns for a short time. Press [$[action_equipment_secondary]] to unload any flaregun round in the gun. Using a box of flaregun ammo will allow the gun to be reloaded with additional flaregun rounds. This equipment can be stored on the belt when not in use.
-def_inventory_equipment_flaregun_s_desc		A small equipment storage unit containing a flaregun preloaded with 1 flaregun round.	A small equipment storage unit containing a flaregun preloaded with 1 flaregun round.
-def_inventory_equipment_flaregun_node_0_label		Electric	Electric
-def_inventory_equipment_flaregun_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_equipment_flaregun_ammo_name		Equipment inventory (Flaregun Ammo)	Equipment inventory (Flaregun Ammo)
-def_inventory_equipment_flaregun_ammo_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to reload any unloaded flaregun in the players inventory. This equipment has a limited uses, picking up additional boxes of flaregun ammo will replenish these uses. This equipment can be stored on the belt when not in use.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to reload any unloaded flaregun in the players inventory. This equipment has a limited uses, picking up additional boxes of flaregun ammo will replenish these uses. This equipment can be stored on the belt when not in use.
-def_inventory_equipment_flaregun_ammo_s_desc		A small equipment storage unit containing a box flaregun ammo.	A small equipment storage unit containing a box flaregun ammo.
-def_inventory_equipment_flaregun_ammo_node_0_label		Electric	Electric
-def_inventory_equipment_flaregun_ammo_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_equipment_flashlight_name		Equipment inventory (Flashlight)	Equipment inventory (Flashlight)
-def_inventory_equipment_flashlight_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to toggle the flashlight on or off. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt when not in use.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to toggle the flashlight on or off. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt when not in use.
-def_inventory_equipment_flashlight_s_desc		A small equipment storage unit containing a flashlight.	A small equipment storage unit containing a flashlight.
-def_inventory_equipment_flashlight_node_0_label		Electric	Electric
-def_inventory_equipment_flashlight_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_equipment_geiger_counter_name		Equipment inventory (Radiation Detector)	Equipment inventory (Radiation Detector)
-def_inventory_equipment_geiger_counter_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to toggle radiation detection on or off. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to toggle radiation detection on or off. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt.
-def_inventory_equipment_geiger_counter_s_desc		A small equipment storage unit containing a radiation detector.	A small equipment storage unit containing a radiation detector.
-def_inventory_equipment_geiger_counter_node_0_label		Electric	Electric
-def_inventory_equipment_geiger_counter_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_equipment_hose_name		Equipment inventory (Hose)	Equipment inventory (Hose)
-def_inventory_equipment_hose_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to attach the hose to an unoccupied fluid hose anchor. Pressing [$[action_interact_left]]/[$[action_interact_right]] on an occupied fluid hose anchor will retrieve the hose if the player has inventory space to hold it. If the hose contains water, press [$[action_equipment_secondary]] to toggle open the hose valve and allow the water to flow freely. This equipment can be stored on the back when not in use.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to attach the hose to an unoccupied fluid hose anchor. Pressing [$[action_interact_left]]/[$[action_interact_right]] on an occupied fluid hose anchor will retrieve the hose if the player has inventory space to hold it. If the hose contains water, press [$[action_equipment_secondary]] to toggle open the hose valve and allow the water to flow freely. This equipment can be stored on the back when not in use.
-def_inventory_equipment_hose_s_desc		A large equipment storage unit containing 20m of fluid hosing.	A large equipment storage unit containing 20m of fluid hosing.
-def_inventory_equipment_hose_node_0_label		Electric	Electric
-def_inventory_equipment_hose_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_equipment_night_vision_binoculars_name		Equipment inventory (Night Vision Binoculars)	Equipment inventory (Night Vision Binoculars)
-def_inventory_equipment_night_vision_binoculars_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Hold [$[action_equipment_use]] to zoom in on faraway objects. The night vision effect provides improved visibility in low light conditions, but greatly hinders visibility in daylight. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt when not in use.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Hold [$[action_equipment_use]] to zoom in on faraway objects. The night vision effect provides improved visibility in low light conditions, but greatly hinders visibility in daylight. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt when not in use.
-def_inventory_equipment_night_vision_binoculars_s_desc		A small equipment storage unit containing a pair of night vision binoculars.	A small equipment storage unit containing a pair of night vision binoculars.
-def_inventory_equipment_night_vision_binoculars_node_0_label		Electric	Electric
-def_inventory_equipment_night_vision_binoculars_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_equipment_oxygen_mask_name		Equipment inventory (Oxygen Mask)	Equipment inventory (Oxygen Mask)
-def_inventory_equipment_oxygen_mask_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to recover your breath while underwater. This equipment has a limited air capacity, and will refill when placed into a powered small equipment storage unit. This equipment can be stored on the belt when not in use.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to recover your breath while underwater. This equipment has a limited air capacity, and will refill when placed into a powered small equipment storage unit. This equipment can be stored on the belt when not in use.
-def_inventory_equipment_oxygen_mask_s_desc		A small equipment storage unit containing an oxygen mask.	A small equipment storage unit containing an oxygen mask.
-def_inventory_equipment_oxygen_mask_node_0_label		Electric	Electric
-def_inventory_equipment_oxygen_mask_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_equipment_radio_name		Equipment inventory (Radio)	Equipment inventory (Radio)
-def_inventory_equipment_radio_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Hold [$[action_equipment_use]] transmit voice audio. Press [$[action_equipment_secondary]] to cycle between frequencies 0~8, or turn the radio off. When a frequncy is selected, the radio will transmit and receive voice audio on that frequency only. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt when not in use.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Hold [$[action_equipment_use]] transmit voice audio. Press [$[action_equipment_secondary]] to cycle between frequencies 0~8, or turn the radio off. When a frequncy is selected, the radio will transmit and receive voice audio on that frequency only. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt when not in use.
-def_inventory_equipment_radio_s_desc		A small equipment storage unit containing a handheld radio.	A small equipment storage unit containing a handheld radio.
-def_inventory_equipment_radio_node_0_label		Electric	Electric
-def_inventory_equipment_radio_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_equipment_radio_signal_locator_name		Equipment inventory (Radio Signal Locator)	Equipment inventory (Radio Signal Locator)
-def_inventory_equipment_radio_signal_locator_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to toggle the locator on or off. When active, the locator produces audible beeps that increase in frequency as the player nears an active transponder. The handheld locator has a shorter detection range than the vehicle mounted locator, but can narrow down the target location to a smaller area. This equipment requires electric charge to function, and will recharge when placed into a powered large equipment storage unit. This equipment can be stored on the back when not in use.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to toggle the locator on or off. When active, the locator produces audible beeps that increase in frequency as the player nears an active transponder. The handheld locator has a shorter detection range than the vehicle mounted locator, but can narrow down the target location to a smaller area. This equipment requires electric charge to function, and will recharge when placed into a powered large equipment storage unit. This equipment can be stored on the back when not in use.
-def_inventory_equipment_radio_signal_locator_s_desc		A large equipment storage unit containing a handheld transponder locator.	A large equipment storage unit containing a handheld transponder locator.
-def_inventory_equipment_radio_signal_locator_node_0_label		Electric	Electric
-def_inventory_equipment_radio_signal_locator_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_equipment_remote_control_name		Equipment inventory (Remote Control Unit)	Equipment inventory (Remote Control Unit)
-def_inventory_equipment_remote_control_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to toggle the remote control on or off. Press [$[action_equipment_secondary]] to cycle between frequencies 0~8. When active, the remote control uses the basic vehicle pilot seat input bindings and transmits them as composite radio data on the selected frequency. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt when not in use.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to toggle the remote control on or off. Press [$[action_equipment_secondary]] to cycle between frequencies 0~8. When active, the remote control uses the basic vehicle pilot seat input bindings and transmits them as composite radio data on the selected frequency. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt when not in use.
-def_inventory_equipment_remote_control_s_desc		A small equipment storage unit containing a remote control unit.	A small equipment storage unit containing a remote control unit.
-def_inventory_equipment_remote_control_node_0_label		Electric	Electric
-def_inventory_equipment_remote_control_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_equipment_rope_name		Equipment inventory (Rope)	Equipment inventory (Rope)
-def_inventory_equipment_rope_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to attach the rope to any rope anchor. Pressing [$[action_interact_left]]/[$[action_interact_right]] on an occupied rope anchor will retrieve the rope if the player has inventory space to hold it. This equipment can be stored on the back when not in use.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to attach the rope to any rope anchor. Pressing [$[action_interact_left]]/[$[action_interact_right]] on an occupied rope anchor will retrieve the rope if the player has inventory space to hold it. This equipment can be stored on the back when not in use.
-def_inventory_equipment_rope_s_desc		A large equipment storage unit containing 20m of rope.	A large equipment storage unit containing 20m of rope.
-def_inventory_equipment_rope_node_0_label		Electric	Electric
-def_inventory_equipment_rope_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_equipment_strobe_light_name		Equipment inventory (Strobe Light)	Equipment inventory (Strobe Light)
-def_inventory_equipment_strobe_light_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to toggle the strobe light on or off. Press [$[action_equipment_secondary]] to toggle MOB (man overboard) mode, which will automatically turn the strobe light on if the player is submerged in water. The strobe light will continue to function when unequipped or discarded. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to toggle the strobe light on or off. Press [$[action_equipment_secondary]] to toggle MOB (man overboard) mode, which will automatically turn the strobe light on if the player is submerged in water. The strobe light will continue to function when unequipped or discarded. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt.
-def_inventory_equipment_strobe_light_s_desc		A small equipment storage unit containing a strobe light.	A small equipment storage unit containing a strobe light.
-def_inventory_equipment_strobe_light_node_0_label		Electric	Electric
-def_inventory_equipment_strobe_light_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_equipment_strobe_light_infrared_name		Equipment inventory (Strobe Light, Infrared)	Equipment inventory (Strobe Light, Infrared)
-def_inventory_equipment_strobe_light_infrared_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to toggle the strobe light on or off. Press [$[action_equipment_secondary]] to toggle MOB (man overboard) mode, which will automatically turn the strobe light on if the player is submerged in water. The strobe light will continue to function when unequipped or discarded. The infrared strobe light flashes are only visible to infrared cameras. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to toggle the strobe light on or off. Press [$[action_equipment_secondary]] to toggle MOB (man overboard) mode, which will automatically turn the strobe light on if the player is submerged in water. The strobe light will continue to function when unequipped or discarded. The infrared strobe light flashes are only visible to infrared cameras. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt.
-def_inventory_equipment_strobe_light_infrared_s_desc		A small equipment storage unit containing an infrared strobe light.	A small equipment storage unit containing an infrared strobe light.
-def_inventory_equipment_strobe_light_infrared_node_0_label		Electric	Electric
-def_inventory_equipment_strobe_light_infrared_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_equipment_transponder_name		Equipment inventory (Transponder)	Equipment inventory (Transponder)
-def_inventory_equipment_transponder_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to toggle the transponder on or off. Press [$[action_equipment_secondary]] to toggle MOB (man overboard) mode, which will automatically turn the transponder on if the player is submerged in water. The transponder will continue to function when unequipped or discarded. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to toggle the transponder on or off. Press [$[action_equipment_secondary]] to toggle MOB (man overboard) mode, which will automatically turn the transponder on if the player is submerged in water. The transponder will continue to function when unequipped or discarded. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt.
-def_inventory_equipment_transponder_s_desc		A small equipment storage unit containing a handheld transponder.	A small equipment storage unit containing a handheld transponder.
-def_inventory_equipment_transponder_node_0_label		Electric	Electric
-def_inventory_equipment_transponder_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_equipment_underwater_welding_torch_name		Equipment inventory (Underwater Welding Torch)	Equipment inventory (Underwater Welding Torch)
-def_inventory_equipment_underwater_welding_torch_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Hold [$[action_equipment_use]] to repair damaged vehicle components highlighted by the players crosshair. The underwater welding torch holds less fuel than the standard welding torch, but can be operated while submerged in water. This equipment has a limited fuel capacity and cannot be refilled. This equipment can be stored on the back when not in use.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Hold [$[action_equipment_use]] to repair damaged vehicle components highlighted by the players crosshair. The underwater welding torch holds less fuel than the standard welding torch, but can be operated while submerged in water. This equipment has a limited fuel capacity and cannot be refilled. This equipment can be stored on the back when not in use.
-def_inventory_equipment_underwater_welding_torch_s_desc		A large equipment storage unit containing an underwater welding torch.	A large equipment storage unit containing an underwater welding torch.
-def_inventory_equipment_underwater_welding_torch_node_0_label		Electric	Electric
-def_inventory_equipment_underwater_welding_torch_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_equipment_welding_torch_name		Equipment inventory (Welding Torch)	Equipment inventory (Welding Torch)
-def_inventory_equipment_welding_torch_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Hold [$[action_equipment_use]] to repair damaged vehicle components highlighted by the players crosshair. This equipment has a limited fuel capacity and cannot be refilled. This equipment can be stored on the back when not in use.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Hold [$[action_equipment_use]] to repair damaged vehicle components highlighted by the players crosshair. This equipment has a limited fuel capacity and cannot be refilled. This equipment can be stored on the back when not in use.
-def_inventory_equipment_welding_torch_s_desc		A large equipment storage unit containing a welding torch.	A large equipment storage unit containing a welding torch.
-def_inventory_equipment_welding_torch_node_0_label		Electric	Electric
-def_inventory_equipment_welding_torch_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_medium_name		Large equipment inventory	Large equipment inventory
-def_inventory_medium_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Only large handheld equipment can be stored in this unit. When connected to an electric power source, any rechargable equipment stored in the unit will drain a small amount of electricity until recharged to 100% capacity.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Only large handheld equipment can be stored in this unit. When connected to an electric power source, any rechargable equipment stored in the unit will drain a small amount of electricity until recharged to 100% capacity.
-def_inventory_medium_s_desc		An empty large equipment storage unit.	An empty large equipment storage unit.
-def_inventory_medium_node_0_label		Electric	Electric
-def_inventory_medium_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_outfit_name		Outfit Inventory (Empty)	Outfit Inventory (Empty)
-def_inventory_outfit_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected outfit. Only specialist outfits can be stored in this unit. When connected to an electric power source, any rechargable outfits stored in the unit will drain a small amount of electricity until recharged to 100% capacity.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected outfit. Only specialist outfits can be stored in this unit. When connected to an electric power source, any rechargable outfits stored in the unit will drain a small amount of electricity until recharged to 100% capacity.
-def_inventory_outfit_s_desc		An empty outfit storage unit.	An empty outfit storage unit.
-def_inventory_outfit_node_0_label		Electric	Electric
-def_inventory_outfit_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_outfit_arctic_name		Outfit Inventory (Arctic)	Outfit Inventory (Arctic)
-def_inventory_outfit_arctic_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the outfit. When equipped, it will increase your temperature enough to survive in colder weather conditions. Its thermal effectiveness is reduced when wet.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the outfit. When equipped, it will increase your temperature enough to survive in colder weather conditions. Its thermal effectiveness is reduced when wet.
-def_inventory_outfit_arctic_s_desc		An outfit inventory unit containing specialist thermal clothing for surviving Arctic temperatures.	An outfit inventory unit containing specialist thermal clothing for surviving Arctic temperatures.
-def_inventory_outfit_arctic_node_0_label		Electric	Electric
-def_inventory_outfit_arctic_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_outfit_diving_name		Outfit Inventory (Diving)	Outfit Inventory (Diving)
-def_inventory_outfit_diving_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the outfit. When equipped, it will allow deep sea diving to a depth of 250m, and provides air for 10 minutes. The air tank can be refilled by storing the equipment in an outfit inventory unit.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the outfit. When equipped, it will allow deep sea diving to a depth of 250m, and provides air for 10 minutes. The air tank can be refilled by storing the equipment in an outfit inventory unit.
-def_inventory_outfit_diving_s_desc		An outfit inventory unit containing specialist diving equipment.	An outfit inventory unit containing specialist diving equipment.
-def_inventory_outfit_diving_node_0_label		Electric	Electric
-def_inventory_outfit_diving_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_outfit_firefighter_name		Outfit Inventory (Firefighter)	Outfit Inventory (Firefighter)
-def_inventory_outfit_firefighter_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store outfit. When equipped, it will absorb 95% of damage dealt by fires.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store outfit. When equipped, it will absorb 95% of damage dealt by fires.
-def_inventory_outfit_firefighter_s_desc		An outfit inventory unit containing specialist firefighting gear.	An outfit inventory unit containing specialist firefighting gear.
-def_inventory_outfit_firefighter_node_0_label		Electric	Electric
-def_inventory_outfit_firefighter_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_outfit_hazmat_name		Outfit Inventory (Hazmat)	Outfit Inventory (Hazmat)
-def_inventory_outfit_hazmat_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store outfit. When equipped, it will absorb 95% of incoming radiation.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store outfit. When equipped, it will absorb 95% of incoming radiation.
-def_inventory_outfit_hazmat_s_desc		An outfit inventory unit containing specialist hazmat gear.	An outfit inventory unit containing specialist hazmat gear.
-def_inventory_outfit_hazmat_node_0_label		Electric	Electric
-def_inventory_outfit_hazmat_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_outfit_parachute_name		Outfit Inventory (Parachute)	Outfit Inventory (Parachute)
-def_inventory_outfit_parachute_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the outfit. When selected, press [$[action_equipment_use]] while falling to deploy the parachute. It will then open when you are falling fast enough. Press [$[action_equipment_secondary]] to close the parachute. This parachute is single-use once equipped but can be refolded by storing it in an outfit inventory unit.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the outfit. When selected, press [$[action_equipment_use]] while falling to deploy the parachute. It will then open when you are falling fast enough. Press [$[action_equipment_secondary]] to close the parachute. This parachute is single-use once equipped but can be refolded by storing it in an outfit inventory unit.
-def_inventory_outfit_parachute_s_desc		An outfit inventory unit containing a single-use parachute.	An outfit inventory unit containing a single-use parachute.
-def_inventory_outfit_parachute_node_0_label		Electric	Electric
-def_inventory_outfit_parachute_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_outfit_scuba_name		Outfit Inventory (Scuba)	Outfit Inventory (Scuba)
-def_inventory_outfit_scuba_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the outfit. When equipped, it will allow diving to a depth of 50m, and provides air for 2 minutes. The air tank can be refilled by storing the gear in an outfit inventory unit.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the outfit. When equipped, it will allow diving to a depth of 50m, and provides air for 2 minutes. The air tank can be refilled by storing the gear in an outfit inventory unit.
-def_inventory_outfit_scuba_s_desc		An outfit inventory unit containing specialist scuba gear.	An outfit inventory unit containing specialist scuba gear.
-def_inventory_outfit_scuba_node_0_label		Electric	Electric
-def_inventory_outfit_scuba_node_0_desc		Electrical power connection.	Electrical power connection.
-def_inventory_small_name		Small equipment inventory	Small equipment inventory
-def_inventory_small_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Only small handheld equipment can be stored in this unit. When connected to an electric power source, any rechargable equipment stored in the unit will drain a small amount of electricity until recharged to 100% capacity.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Only small handheld equipment can be stored in this unit. When connected to an electric power source, any rechargable equipment stored in the unit will drain a small amount of electricity until recharged to 100% capacity.
-def_inventory_small_s_desc		An empty small equipment storage unit.	An empty small equipment storage unit.
-def_inventory_small_node_0_label		Electric	Electric
-def_inventory_small_node_0_desc		Electrical power connection.	Electrical power connection.
+def_indicator_s_desc		A simple light that can be used as an indicator in logic systems.	論理システムの表示灯として使用する小さなライトです.
+def_indicator_node_0_label		Indicator Light	点灯
+def_indicator_node_0_desc		Switches the light on when receiving an on signal.	オン信号を受け取っている時はライトを光らせます.
+def_indicator_node_1_label		Electric	電力
+def_indicator_node_1_desc		Electrical power connection.	電力網から電力を供給します.
+def_indicator_rgb_name		Indicator Light (RGB)	表示灯 (動的)
+def_indicator_rgb_desc		Three channels of the composite input can be used to set the red, green and blue components of the indicator's color using numbers between 0 and 1. The light can also operate in HSV mode, where the 3 inputs correspond to the hue, saturation and value (brightness) of the color between 0 and 1. The color mode and input channels can be customised by selecting this component with the select tool.	複合信号の数値チャンネルを3つ使用してRGB色 (赤, 緑, 青) をそれぞれ指定します. それぞれの数値信号の範囲は0から1です. また, HSVでも指定可能です. その場合は色相, 彩度, 明度を指定します. カラーモードと使用する複合信号の数値チャンネルはプロパティウィンドウから設定できます.
+def_indicator_rgb_s_desc		An advanced indicator that can be controlled using a microcontroller.	色を動的に変化させられる小さなライトです.
+def_indicator_rgb_node_0_label		Color Data	色の設定
+def_indicator_rgb_node_0_desc		Composite link containing the indicator's color data.	3つの数値チャンネルを使用してライトの色を設定します.
+def_indicator_rgb_node_1_label		Electric	電力
+def_indicator_rgb_node_1_desc		Electrical power connection.	電力網から電力を供給します.
+def_instrument_display_name		Instrument Panel	計器板
+def_instrument_display_desc		The 4 instruments can be selected in the properties window. Each type of instrument has options for choosing the composite channels that they read from or write to. Composite signals are bridged from the input node to the output node to enable displays to be chained together. Instruments marked as '(On/Off)' require multiple on/off signals to control each of their segments individually.	信号の入出力は複合信号で行います. 各計器では入出力する複合信号のチャンネルを設定できます. 入力された複合信号は必要に応じて書き換えられた後, そのまま出力され, 複数の計器板に連続で信号を接続できます. オン/オフ信号でセグメント表示を制御する場合は複数のオン/オフチャンネルを使用します (選択されたチャンネルから数えられます.).
+def_instrument_display_s_desc		A customisable panel that can have up to 4 different instruments, controlled by a composite signal from a microcontroller.	自由に変更可能な計器を4つまで搭載できる部品です.
+def_instrument_display_node_0_label		Out Signal	複合信号出力
+def_instrument_display_node_0_desc		Output signal containing data set by buttons on the display.	操作された計器の信号を含んだ複合信号が出力されます.
+def_instrument_display_node_1_label		In Signal	複合信号入力
+def_instrument_display_node_1_desc		Input signal containing data to be displayed.	計器に表示する信号を含んだ複合信号を入力します.
+def_instrument_display_node_2_label		Electric	電力
+def_instrument_display_node_2_desc		Electrical power connection.	電力網から電力を供給します.
+def_instrument_display_node_3_label		Backlight	バックライト
+def_instrument_display_node_3_desc		Enables the backlight when receiving an on signal.	オン信号を受け取っている間はバックライトが点灯します.
+def_intercooler_name		Liquid-Liquid Heat Exchanger 2x2	液体-液体熱交換器 (2x2)
+def_intercooler_desc		A heat exchanger that averages heat between two liquid systems at a rate proportional to the component's size.	熱を交換できる能力は熱交換器の大きさに比例します.
+def_intercooler_s_desc		A heat exchanger that averages heat between two liquid systems.	吸入する2つの液体の温度を均一にする熱交換器です.
+def_intercooler_node_0_label		Fluid A In	液体1吸入
+def_intercooler_node_0_desc		Input fluid port.	液体の吸入口です.
+def_intercooler_node_1_label		Fluid A Out	液体1排出
+def_intercooler_node_1_desc		Output fluid port.	液体の排出口です.
+def_intercooler_node_2_label		Fluid B In	液体2吸入
+def_intercooler_node_2_desc		Input fluid port.	液体の吸入口です.
+def_intercooler_node_3_label		Fluid B Out	液体2排出
+def_intercooler_node_3_desc		Output fluid port.	液体の排出口です.
+def_intercooler_node_4_label		Temp A	液体1の温度
+def_intercooler_node_4_desc		Compartment temperature.	熱交換器内の液体の温度を出力します.
+def_intercooler_node_5_label		Temp B	液体2の温度
+def_intercooler_node_5_desc		Compartment temperature.	熱交換器内の液体の温度を出力します.
+def_intercooler_large_name		Liquid-Liquid Heat Exchanger 5x5	液体-液体熱交換器 (5x5)
+def_intercooler_large_desc		A heat exchanger that averages heat between two liquid systems at a rate proportional to the component's size.	熱を交換できる能力は熱交換器の大きさに比例します.
+def_intercooler_large_s_desc		A heat exchanger that averages heat between two liquid systems.	吸入する2つの液体の温度を均一にする熱交換器です.
+def_intercooler_large_node_0_label		Fluid A In	液体1吸入
+def_intercooler_large_node_0_desc		Input fluid port.	液体の吸入口です.
+def_intercooler_large_node_1_label		Fluid A Out	液体1排出
+def_intercooler_large_node_1_desc		Output fluid port.	液体の排出口です.
+def_intercooler_large_node_2_label		Fluid B In	液体2吸入
+def_intercooler_large_node_2_desc		Input fluid port.	液体の吸入口です.
+def_intercooler_large_node_3_label		Fluid B Out	液体2排出
+def_intercooler_large_node_3_desc		Output fluid port.	液体の排出口です.
+def_intercooler_large_node_4_label		Temp A	液体1の温度
+def_intercooler_large_node_4_desc		Compartment temperature.	熱交換器内の液体の温度を出力します.
+def_intercooler_large_node_5_label		Temp B	液体2の温度
+def_intercooler_large_node_5_desc		Compartment temperature.	熱交換器内の液体の温度を出力します.
+def_inventory_equipment_binoculars_name		Equipment inventory (Binoculars)	保管庫 (小, 双眼鏡)
+def_inventory_equipment_binoculars_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Hold [$[action_equipment_use]] to zoom in on faraway objects. This equipment can be stored on the belt when not in use.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押してズームインし, 遠くを見ます. 使用していない時は腰のベルトに取り付けてられます.
+def_inventory_equipment_binoculars_s_desc		A small equipment storage unit containing a pair of binoculars.	双眼鏡が保管されている小型の保管庫です.
+def_inventory_equipment_binoculars_node_0_label		Electric	電力
+def_inventory_equipment_binoculars_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_cable_name		Equipment inventory (Cable)	保管庫 (中, 電気電気ケーブル)
+def_inventory_equipment_cable_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to attach the cable to an unoccupied electrical cable anchor. Pressing [$[action_interact_left]]/[$[action_interact_right]] on an occupied electical cable anchor will retrieve the cable if the player has inventory space to hold it. This equipment can be stored on the back when not in use.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押してアンカー (電力) に電気ケーブルを差し込みます. 既に電気ケーブルが接続されているアンカー (電力) に [$[action_interact_left]]/[$[action_interact_right]] を押すと電気ケーブルを取り外し, プレイヤーのインベントリに空きがあるならそこにしまいます. 使用していない時は背中に背負えます.
+def_inventory_equipment_cable_s_desc		A large equipment storage unit containing 20m of electrical cable.	20メートルの電気ケーブルが保管されている中型の保管庫です.
+def_inventory_equipment_cable_node_0_label		Electric	電力
+def_inventory_equipment_cable_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_compass_name		Equipment inventory (Compass)	保管庫 (小, コンパス)
+def_inventory_equipment_compass_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. When held, the red needle of the compass will point northwards. This equipment can be stored on the belt when not in use.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. 手に持つと, 針が北の向きを示し, 現在向いている方角を度数法で表示します. 使用していない時は腰のベルトに取り付けてられます.
+def_inventory_equipment_compass_s_desc		A small equipment storage unit containing a compass.	コンパスが保管されている小型の保管庫です.
+def_inventory_equipment_compass_node_0_label		Electric	電力
+def_inventory_equipment_compass_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_defibrillator_name		Equipment inventory (Defibrillator)	保管庫 (中, 自動体外式除細動器)
+def_inventory_equipment_defibrillator_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] on an incapacitated survivor to revive them. Survivors who have been left incapacitated for too long will expire and not be revivable. This equipment requires electric charge to function, and will recharge when placed into a powered large equipment storage unit. This equipment can be stored on the back when not in use.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押して意識不明のプレイヤーや生存者を蘇生します. 蘇生が遅れると助けることができなくなります. 使用できる回数には限りがあり, 使用後は通電している保管庫で充電する必要があります. 使用していない時は背中に背負えます.
+def_inventory_equipment_defibrillator_s_desc		A large equipment storage unit containing a defibrillator.	自動体外式除細動器が保管されている中型の保管庫です.
+def_inventory_equipment_defibrillator_node_0_label		Electric	電飾
+def_inventory_equipment_defibrillator_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_fire_extinguisher_name		Equipment inventory (Fire Extinguisher)	保管庫 (中, 消火器)
+def_inventory_equipment_fire_extinguisher_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Hold [$[action_equipment_use]] to spray a stream of water capable of extinguishing fires. This equipment has a limited water capacity and cannot be refilled. This equipment can be stored on the back when not in use.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押して消火剤を放出し, 消火活動を行います. 使用できる時間には限りがあり, 乗り物を作業台に戻すまで補充できません. 使用していない時は背中に背負えます.
+def_inventory_equipment_fire_extinguisher_s_desc		A large equipment storage unit containing a fire extinguisher.	消火器が保管されている中型の保管庫です.
+def_inventory_equipment_fire_extinguisher_node_0_label		Electric	電力
+def_inventory_equipment_fire_extinguisher_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_first_aid_name		Equipment inventory (First Aid Kit)	保管庫 (小, 治療セット)
+def_inventory_equipment_first_aid_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to heal yourself, or heal a survivor highlighted by your crosshair. This equipment has limited uses, picking up additional first aid kits will replenish these uses. This equipment can be stored on the belt when not in use.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押して自分自身または, 視点を合わせてるプレイヤーや生存者の体力を回復します. 使用回数には限りがあり, 乗り物を作業台に戻すまで補充できませんが, 追加の治療セットを拾うことはできます. 使用していない時は腰のベルトに取り付けてられます.
+def_inventory_equipment_first_aid_s_desc		A small equipment storage unit containing a first aid kit.	治療セットが保管されている小型の保管庫です.
+def_inventory_equipment_first_aid_node_0_label		Electric	電力
+def_inventory_equipment_first_aid_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_flare_name		Equipment inventory (Flare)	保管庫 (小, 発煙筒)
+def_inventory_equipment_flare_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to throw a red smoke flare which burns for a long time. This equipment has a limited uses, picking up additional flares will replenish these uses. This equipment can be stored on the belt when not in use.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押して発煙筒を投げ, 赤い煙が長時間発生します. 使用回数には限りがあり, 乗り物を作業台に戻すまで補充できませんが, 追加の発煙筒を拾うことはできます. 使用していない時は腰のベルトに取り付けてられます.
+def_inventory_equipment_flare_s_desc		A small equipment storage unit containing flares.	発煙筒が保管されている小型の保管庫です.
+def_inventory_equipment_flare_node_0_label		Electric	電力
+def_inventory_equipment_flare_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_flaregun_name		Equipment inventory (Flaregun)	保管庫 (小, 照明銃)
+def_inventory_equipment_flaregun_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to fire a red illumination flare that burns for a short time. Press [$[action_equipment_secondary]] to unload any flaregun round in the gun. Using a box of flaregun ammo will allow the gun to be reloaded with additional flaregun rounds. This equipment can be stored on the belt when not in use.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押して照明弾を発射し, 赤い光を短時間発生させます. [$[action_equipment_secondary]] を押して入れた弾を取り出します. 照明銃の弾薬箱を使用して追加の照明弾を補充できます. 使用していない時は腰のベルトに取り付けてられます.
+def_inventory_equipment_flaregun_s_desc		A small equipment storage unit containing a flaregun preloaded with 1 flaregun round.	1発の弾が入っている照明銃が保管されている小型の保管庫です.
+def_inventory_equipment_flaregun_node_0_label		Electric	電力
+def_inventory_equipment_flaregun_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_flaregun_ammo_name		Equipment inventory (Flaregun Ammo)	保管庫 (小, 照明銃の弾薬箱)
+def_inventory_equipment_flaregun_ammo_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to reload any unloaded flaregun in the players inventory. This equipment has a limited uses, picking up additional boxes of flaregun ammo will replenish these uses. This equipment can be stored on the belt when not in use.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押してインベントリの照明銃に弾を補充します. 使用回数には限りがあり, 乗り物を作業台に戻すまで補充できませんが, 追加の照明銃の弾薬箱を拾うことはできます. 使用していない時は腰のベルトに取り付けてられます.
+def_inventory_equipment_flaregun_ammo_s_desc		A small equipment storage unit containing a box flaregun ammo.	照明銃の弾薬箱が保管されている小型の保管庫です.
+def_inventory_equipment_flaregun_ammo_node_0_label		Electric	電力
+def_inventory_equipment_flaregun_ammo_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_flashlight_name		Equipment inventory (Flashlight)	保管庫 (小, 懐中電灯)
+def_inventory_equipment_flashlight_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to toggle the flashlight on or off. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt when not in use.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押して懐中電灯のオン/オフを切り替えます. 使用できる時間には限りがあり, 使用後は通電している保管庫で充電する必要があります. 使用していない時は腰のベルトに取り付けてられます.
+def_inventory_equipment_flashlight_s_desc		A small equipment storage unit containing a flashlight.	懐中電灯が保管されている小型の保管庫です.
+def_inventory_equipment_flashlight_node_0_label		Electric	電力
+def_inventory_equipment_flashlight_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_geiger_counter_name		Equipment inventory (Radiation Detector)	保管庫 (小, 放射線測定器)
+def_inventory_equipment_geiger_counter_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to toggle radiation detection on or off. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押して放射線測定器のオン/オフを切り替えます. 使用できる時間には限りがあり, 使用後は通電している保管庫で充電する必要があります. 使用していない時は腰のベルトに取り付けてられます.
+def_inventory_equipment_geiger_counter_s_desc		A small equipment storage unit containing a radiation detector.	放射線測定器が保管されている小型の保管庫です.
+def_inventory_equipment_geiger_counter_node_0_label		Electric	電力
+def_inventory_equipment_geiger_counter_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_hose_name		Equipment inventory (Hose)	保管庫 (中, ホース)
+def_inventory_equipment_hose_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to attach the hose to an unoccupied fluid hose anchor. Pressing [$[action_interact_left]]/[$[action_interact_right]] on an occupied fluid hose anchor will retrieve the hose if the player has inventory space to hold it. If the hose contains water, press [$[action_equipment_secondary]] to toggle open the hose valve and allow the water to flow freely. This equipment can be stored on the back when not in use.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します.　$[action_equipment_use]] を押してアンカー (流体) にホースを差し込みます. 既にホースが接続されているアンカー (流体) に [$[action_interact_left]]/[$[action_interact_right]] を押すとホースを取り外し, プレイヤーのインベントリに空きがあるならそこにしまいます. ホースに通水している時は [$[action_equipment_secondary]] を押して放水できます. 使用していない時は背中に背負えます.
+def_inventory_equipment_hose_s_desc		A large equipment storage unit containing 20m of fluid hosing.	20メートルのホースが保管されている中型の保管庫です.
+def_inventory_equipment_hose_node_0_label		Electric	電力
+def_inventory_equipment_hose_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_night_vision_binoculars_name		Equipment inventory (Night Vision Binoculars)	保管庫 (小, 暗視ゴーグル)
+def_inventory_equipment_night_vision_binoculars_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Hold [$[action_equipment_use]] to zoom in on faraway objects. The night vision effect provides improved visibility in low light conditions, but greatly hinders visibility in daylight. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt when not in use.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押してズームインし, 遠くを見ます. 暗視ゴーグルでは暗い所がよく見えるようになりますが, 逆に明るい所は見えにくくなります. 使用できる時間には限りがあり, 使用後は通電している保管庫で充電する必要があります. 使用していない時は腰のベルトに取り付けてられます.
+def_inventory_equipment_night_vision_binoculars_s_desc		A small equipment storage unit containing a pair of night vision binoculars.	暗視ゴーグルが保管されている小型の保管庫です.
+def_inventory_equipment_night_vision_binoculars_node_0_label		Electric	電力
+def_inventory_equipment_night_vision_binoculars_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_oxygen_mask_name		Equipment inventory (Oxygen Mask)	保管庫 (小, 酸素マスク)
+def_inventory_equipment_oxygen_mask_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to recover your breath while underwater. This equipment has a limited air capacity, and will refill when placed into a powered small equipment storage unit. This equipment can be stored on the belt when not in use.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押して水中でも酸素を吸入できます. 使用できる時間には限りがあり, 使用後は通電している保管庫で補充する必要があります. 使用していない時は腰のベルトに取り付けてられます.
+def_inventory_equipment_oxygen_mask_s_desc		A small equipment storage unit containing an oxygen mask.	酸素マスクが保管されている小型の保管庫です.
+def_inventory_equipment_oxygen_mask_node_0_label		Electric	電力
+def_inventory_equipment_oxygen_mask_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_radio_name		Equipment inventory (Radio)	保管庫 (小, トランシーバー)
+def_inventory_equipment_radio_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Hold [$[action_equipment_use]] transmit voice audio. Press [$[action_equipment_secondary]] to cycle between frequencies 0~8, or turn the radio off. When a frequncy is selected, the radio will transmit and receive voice audio on that frequency only. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt when not in use.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押して発信します. [$[action_equipment_secondary]] を押して0から8チャンネルの範囲でチャンネルを切り替えます. 設定されたチャンネルでのみ発信/受信ができます. 使用できる時間には限りがあり, 使用後は通電している保管庫で充電する必要があります. 使用していない時は腰のベルトに取り付けてられます.
+def_inventory_equipment_radio_s_desc		A small equipment storage unit containing a handheld radio.	トランシーバーが保管されている小型の保管庫です.
+def_inventory_equipment_radio_node_0_label		Electric	電力
+def_inventory_equipment_radio_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_radio_signal_locator_name		Equipment inventory (Radio Signal Locator)	保管庫 (中, 信号探知機)
+def_inventory_equipment_radio_signal_locator_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to toggle the locator on or off. When active, the locator produces audible beeps that increase in frequency as the player nears an active transponder. The handheld locator has a shorter detection range than the vehicle mounted locator, but can narrow down the target location to a smaller area. This equipment requires electric charge to function, and will recharge when placed into a powered large equipment storage unit. This equipment can be stored on the back when not in use.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押して信号探知機のオン/オフを切り替えます. 遭難信号を探知すると発信源までのおおよその距離を音で知らせます. 手持ちの信号探知機は乗り物に搭載するものよりも探知範囲が狭く, 発信源の特定に使用できます. 使用できる時間には限りがあり, 使用後は通電している保管庫で充電する必要があります. 使用していない時は背中に背負えます.
+def_inventory_equipment_radio_signal_locator_s_desc		A large equipment storage unit containing a handheld transponder locator.	信号探知機が保管されている中型の保管庫です.
+def_inventory_equipment_radio_signal_locator_node_0_label		Electric	電力
+def_inventory_equipment_radio_signal_locator_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_remote_control_name		Equipment inventory (Remote Control Unit)	保管庫 (小, 遠隔操作端末)
+def_inventory_equipment_remote_control_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to toggle the remote control on or off. Press [$[action_equipment_secondary]] to cycle between frequencies 0~8. When active, the remote control uses the basic vehicle pilot seat input bindings and transmits them as composite radio data on the selected frequency. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt when not in use.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押して遠隔操作端末のオン/オフを切り替えます. [$[action_equipment_secondary]] を押して0から8チャンネルの範囲でチャンネルを切り替えます. オンの時は通常の操縦席の操作を設定されたチャンネルで発信します. 使用できる時間には限りがあり, 使用後は通電している保管庫で充電する必要があります. 使用していない時は腰のベルトに取り付けてられます.
+def_inventory_equipment_remote_control_s_desc		A small equipment storage unit containing a remote control unit.	遠隔操作端末が保管されている小型の保管庫です.
+def_inventory_equipment_remote_control_node_0_label		Electric	電力
+def_inventory_equipment_remote_control_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_rope_name		Equipment inventory (Rope)	保管庫 (中, ロープ)
+def_inventory_equipment_rope_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to attach the rope to any rope anchor. Pressing [$[action_interact_left]]/[$[action_interact_right]] on an occupied rope anchor will retrieve the rope if the player has inventory space to hold it. This equipment can be stored on the back when not in use.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押してアンカー (ロープ) にロープを差し込みます. 既にロープが接続されているアンカー (ロープ) に [$[action_interact_left]]/[$[action_interact_right]] を押すとロープを取り外し, プレイヤーのインベントリに空きがあるならそこにしまいます. 使用していない時は背中に背負えます.
+def_inventory_equipment_rope_s_desc		A large equipment storage unit containing 20m of rope.	20メートルのロープが保管されている中型の保管庫です.
+def_inventory_equipment_rope_node_0_label		Electric	電力
+def_inventory_equipment_rope_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_strobe_light_name		Equipment inventory (Strobe Light)	保管庫 (小, ストロボライト)
+def_inventory_equipment_strobe_light_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to toggle the strobe light on or off. Press [$[action_equipment_secondary]] to toggle MOB (man overboard) mode, which will automatically turn the strobe light on if the player is submerged in water. The strobe light will continue to function when unequipped or discarded. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押してストロボライトのオン/オフを切り替えます. [$[action_equipment_secondary]] 押して船外作業モードのオン/オフを切り替えます. 船外作業モードは水の中に入った時に自動でストロボライトをオンにするモードです. 使用できる時間には限りがあり, 使用後は通電している保管庫で充電する必要があります. 使用していない時は腰のベルトに取り付けてられます.
+def_inventory_equipment_strobe_light_s_desc		A small equipment storage unit containing a strobe light.	ストロボライトが保管されている小型の保管庫です.
+def_inventory_equipment_strobe_light_node_0_label		Electric	電力
+def_inventory_equipment_strobe_light_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_strobe_light_infrared_name		Equipment inventory (Strobe Light, Infrared)	保管庫 (小, ストロボライト (赤外線))
+def_inventory_equipment_strobe_light_infrared_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to toggle the strobe light on or off. Press [$[action_equipment_secondary]] to toggle MOB (man overboard) mode, which will automatically turn the strobe light on if the player is submerged in water. The strobe light will continue to function when unequipped or discarded. The infrared strobe light flashes are only visible to infrared cameras. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押してストロボライトのオン/オフを切り替えます. [$[action_equipment_secondary]] 押して船外作業モードのオン/オフを切り替えます. 船外作業モードは水の中に入った時に自動でストロボライトをオンにするモードです. このストロボライトは赤外線カメラを通してでのみ, 光を見ることができます. 使用できる時間には限りがあり, 使用後は通電している保管庫で充電する必要があります. 使用していない時は腰のベルトに取り付けてられます.
+def_inventory_equipment_strobe_light_infrared_s_desc		A small equipment storage unit containing an infrared strobe light.	ストロボライト (赤外線) が保管されている保管庫です.
+def_inventory_equipment_strobe_light_infrared_node_0_label		Electric	電力
+def_inventory_equipment_strobe_light_infrared_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_transponder_name		Equipment inventory (Transponder)	保管庫 (小, 遭難信号発信機)
+def_inventory_equipment_transponder_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to toggle the transponder on or off. Press [$[action_equipment_secondary]] to toggle MOB (man overboard) mode, which will automatically turn the transponder on if the player is submerged in water. The transponder will continue to function when unequipped or discarded. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押して遭難信号発信機のオン/オフを切り替えます. [$[action_equipment_secondary]] 押して船外作業モードのオン/オフを切り替えます. 船外作業モードは水の中に入った時に自動で遭難信号発信機をオンにするモードです. 使用できる時間には限りがあり, 使用後は通電している保管庫で充電する必要があります. 使用していない時は腰のベルトに取り付けてられます.
+def_inventory_equipment_transponder_s_desc		A small equipment storage unit containing a handheld transponder.	遭難信号発信機が保管されている小型の保管庫です.
+def_inventory_equipment_transponder_node_0_label		Electric	電力
+def_inventory_equipment_transponder_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_underwater_welding_torch_name		Equipment inventory (Underwater Welding Torch)	保管庫 (中, 水中用溶接機)
+def_inventory_equipment_underwater_welding_torch_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Hold [$[action_equipment_use]] to repair damaged vehicle components highlighted by the players crosshair. The underwater welding torch holds less fuel than the standard welding torch, but can be operated while submerged in water. This equipment has a limited fuel capacity and cannot be refilled. This equipment can be stored on the back when not in use.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押し続けて, 視点を合わせている損傷した部品を修理します. 通常の溶接機よりも使用時間は短いですが, 水中で修理できます. 使用できる時間には限りがあり, 乗り物を作業台に戻すまで補充できません. 使用していない時は背中に背負えます.
+def_inventory_equipment_underwater_welding_torch_s_desc		A large equipment storage unit containing an underwater welding torch.	水中用溶接機が保管された中型の保管庫です.
+def_inventory_equipment_underwater_welding_torch_node_0_label		Electric	電力
+def_inventory_equipment_underwater_welding_torch_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_welding_torch_name		Equipment inventory (Welding Torch)	保管庫 (中, 溶接機)
+def_inventory_equipment_welding_torch_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Hold [$[action_equipment_use]] to repair damaged vehicle components highlighted by the players crosshair. This equipment has a limited fuel capacity and cannot be refilled. This equipment can be stored on the back when not in use.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押し続けて, 視点を合わせている損傷した部品を修理します. 集中での修理は水中用溶接機を使用して下さい. 使用できる時間には限りがあり, 乗り物を作業台に戻すまで補充できません. 使用していない時は背中に背負えます.
+def_inventory_equipment_welding_torch_s_desc		A large equipment storage unit containing a welding torch.	溶接機が保管されている中型の保管庫です.
+def_inventory_equipment_welding_torch_node_0_label		Electric	電力
+def_inventory_equipment_welding_torch_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_medium_name		Large equipment inventory	保管庫 (中)
+def_inventory_medium_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Only large handheld equipment can be stored in this unit. When connected to an electric power source, any rechargable equipment stored in the unit will drain a small amount of electricity until recharged to 100% capacity.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. 大型の携帯品のみ収納できます. この保管庫が通電している場合, 充電可能な携帯品が保管された時に充電します.
+def_inventory_medium_s_desc		An empty large equipment storage unit.	何も保管されていない中型の保管庫です.
+def_inventory_medium_node_0_label		Electric	電力
+def_inventory_medium_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_outfit_name		Outfit Inventory (Empty)	保管庫 (大)
+def_inventory_outfit_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected outfit. Only specialist outfits can be stored in this unit. When connected to an electric power source, any rechargable outfits stored in the unit will drain a small amount of electricity until recharged to 100% capacity.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫の装備品を装備したり, 装備している装備品を保管庫へ収納します. 装備品のみ収納できます. この保管庫が通電している場合, 充電可能な装備品が保管された時に充電します.
+def_inventory_outfit_s_desc		An empty outfit storage unit.	何も保管されていない大型の保管庫です.
+def_inventory_outfit_node_0_label		Electric	電力
+def_inventory_outfit_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_arctic_name		Outfit Inventory (Arctic)	保管庫 (大, 防寒着)
+def_inventory_outfit_arctic_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the outfit. When equipped, it will increase your temperature enough to survive in colder weather conditions. Its thermal effectiveness is reduced when wet.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫の装備品を装備したり, 装備している装備品を保管庫へ収納します. 寒い地域での活動を容易にします. 濡れていると防寒性能が低下します.
+def_inventory_outfit_arctic_s_desc		An outfit inventory unit containing specialist thermal clothing for surviving Arctic temperatures.	防寒着が保管されている保管庫です.
+def_inventory_outfit_arctic_node_0_label		Electric	電力
+def_inventory_outfit_arctic_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_diving_name		Outfit Inventory (Diving)	保管庫 (大, ダイビング装備)
+def_inventory_outfit_diving_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the outfit. When equipped, it will allow deep sea diving to a depth of 250m, and provides air for 10 minutes. The air tank can be refilled by storing the equipment in an outfit inventory unit.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫の装備品を装備したり, 装備している装備品を保管庫へ収納します. 水深250メートルまでの潜水を可能にし, 10分間空気を提供します. 使用後は通電している保管庫で空気の補充ができます.
+def_inventory_outfit_diving_s_desc		An outfit inventory unit containing specialist diving equipment.	ダイビング装備が保管されている保管庫です.
+def_inventory_outfit_diving_node_0_label		Electric	電力
+def_inventory_outfit_diving_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_firefighter_name		Outfit Inventory (Firefighter)	保管庫 (大, 防火服)
+def_inventory_outfit_firefighter_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store outfit. When equipped, it will absorb 95% of damage dealt by fires.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫の装備品を装備したり, 装備している装備品を保管庫へ収納します. 炎によるダメージを95%軽減します.
+def_inventory_outfit_firefighter_s_desc		An outfit inventory unit containing specialist firefighting gear.	防火服が保管されている大型の保管庫です.
+def_inventory_outfit_firefighter_node_0_label		Electric	電力
+def_inventory_outfit_firefighter_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_hazmat_name		Outfit Inventory (Hazmat)	保管庫 (大, 防護服)
+def_inventory_outfit_hazmat_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store outfit. When equipped, it will absorb 95% of incoming radiation.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫の装備品を装備したり, 装備している装備品を保管庫へ収納します. 被曝によるダメージを95%軽減します.
+def_inventory_outfit_hazmat_s_desc		An outfit inventory unit containing specialist hazmat gear.	防護服が保管されている大型の保管庫です.
+def_inventory_outfit_hazmat_node_0_label		Electric	電力
+def_inventory_outfit_hazmat_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_parachute_name		Outfit Inventory (Parachute)	保管庫 (大, パラシュート)
+def_inventory_outfit_parachute_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the outfit. When selected, press [$[action_equipment_use]] while falling to deploy the parachute. It will then open when you are falling fast enough. Press [$[action_equipment_secondary]] to close the parachute. This parachute is single-use once equipped but can be refolded by storing it in an outfit inventory unit.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫の装備品を装備したり, 装備している装備品を保管庫へ収納します. 落下中に [$[action_equipment_use]] を押してパラシュートを開きます. 一定の速度以上で落下している場合は自動的に開きます. [$[action_equipment_secondary]] を押してパラシュートを閉じます. このパラシュートは1回限りで, 一度使用すると保管庫にしまうまで再使用できません.
+def_inventory_outfit_parachute_s_desc		An outfit inventory unit containing a single-use parachute.	パラシュートが保管されている大型の保管庫です.
+def_inventory_outfit_parachute_node_0_label		Electric	電力
+def_inventory_outfit_parachute_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_scuba_name		Outfit Inventory (Scuba)	保管庫 (大, スキューバ装備)
+def_inventory_outfit_scuba_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the outfit. When equipped, it will allow diving to a depth of 50m, and provides air for 2 minutes. The air tank can be refilled by storing the gear in an outfit inventory unit.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫の装備品を装備したり, 装備している装備品を保管庫へ収納します. 水深50メートルまでの潜水を可能にし, 2分間空気を提供します. 使用後は通電している保管庫で空気の補充ができます.
+def_inventory_outfit_scuba_s_desc		An outfit inventory unit containing specialist scuba gear.	スキューバ装備が保管されている保管庫です.
+def_inventory_outfit_scuba_node_0_label		Electric	電力
+def_inventory_outfit_scuba_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_small_name		Small equipment inventory	保管庫 (小)
+def_inventory_small_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Only small handheld equipment can be stored in this unit. When connected to an electric power source, any rechargable equipment stored in the unit will drain a small amount of electricity until recharged to 100% capacity.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. 小型の携帯品のみ収納できます. この保管庫が通電している場合, 充電可能な携帯品が保管された時に充電します.
+def_inventory_small_s_desc		An empty small equipment storage unit.	何も保管されていない小型の保管庫です.
+def_inventory_small_node_0_label		Electric	電力
+def_inventory_small_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
 def_jet_engine_combustion_chamber_name		Jet Combustion Chamber	Jet Combustion Chamber
 def_jet_engine_combustion_chamber_desc		This is part of a set of modular jet engine components. Combustion will begin when the internal pressure is high enough.	This is part of a set of modular jet engine components. Combustion will begin when the internal pressure is high enough.
 def_jet_engine_combustion_chamber_s_desc		A combustion chamber that burns jet fuel to sustain a jet engine.	A combustion chamber that burns jet fuel to sustain a jet engine.
