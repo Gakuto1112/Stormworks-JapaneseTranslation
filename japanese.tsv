@@ -5982,7 +5982,7 @@ def_window_2x1_s_desc		Basic window piece.	基本的な窓の部品です.
 def_window_2x2_name		Window 2x2	窓 (平面, 2x2)
 def_window_2x2_desc		Sits flush with walls and ceilings.	壁や天井に適合します.
 def_window_2x2_s_desc		Basic window piece.	基本的な窓の部品です.
-def_window_3x2_name		Window 2x3	窓 (平面, 3x3)
+def_window_3x2_name		Window 2x3	窓 (平面, 2x3)
 def_window_3x2_desc		Sits flush with walls and ceilings.	壁や天井に適合します.
 def_window_3x2_s_desc		Basic window piece.	基本的な窓の部品です.
 def_window_angle_l_2x3x3_name		Window Angle 2x3x3	窓 (斜め, 2x3x3)
