@@ -3441,7 +3441,7 @@ def_gun_drum_xsmall_s_desc		A machine gun ammo box.	機関銃の弾薬箱です.
 def_gun_drum_xsmall_node_0_label		Ammo count	弾薬数
 def_gun_drum_xsmall_node_0_desc		Outputs the total ammo count stored in the box.	弾薬箱に貯蔵されている弾薬の数を出力します.
 def_gun_l_name		Battle Cannon	大砲 (小)
-def_gun_l_desc		Battle cannons provide powerful, consistent firepower in a compact form.	この大砲は小型ながら協力で安定した火力を発揮します. 発射するには武器DLCを有効にする必要があります.
+def_gun_l_desc		Battle cannons provide powerful, consistent firepower in a compact form.	この大砲は小型ながら協力で安定した火力を発揮します. 英語名は 「Battle cannon」 です. 発射するには武器DLCを有効にする必要があります.
 def_gun_l_s_desc		A battle cannon.	小型の大砲の砲身です.
 def_gun_l_node_0_label		Trigger	発射
 def_gun_l_node_0_desc		When true: fires a loaded shell.	オン信号を受け取ると装填した砲弾を発射します.
@@ -3465,7 +3465,7 @@ def_gun_m_barrel_name		Heavy Autocannon Barrel Extension	機関砲の延長砲�
 def_gun_m_barrel_desc		Barrel extensions increase weapon accuracy, but add additional weight.	砲身を延長すると射撃精度が上がりますが, 重量が増加します.
 def_gun_m_barrel_s_desc		A heavy autocannon barrel extension.	大型機関砲の砲身を延長するための延長部品です.
 def_gun_rocket_launcher_name		Rocket Launcher	ロケットランチャー
-def_gun_rocket_launcher_desc		Rocket launchers fire powerful high explosive rockets, but cannot be reloaded once empty. Rockets are vulnerable to bullets while in flight.	ロケットランチャーは強力な爆発性ロケットを発射しますが, 一度発射すると再装填できません. 飛行中のロケットは銃弾で打ち落とせます.
+def_gun_rocket_launcher_desc		Rocket launchers fire powerful high explosive rockets, but cannot be reloaded once empty. Rockets are vulnerable to bullets while in flight.	ロケットランチャーは強力な爆発性ロケットを発射しますが, 一度発射すると再装填できません. 飛行中のロケットは銃弾で打ち落とせます. 発射するには武器DLCを有効にする必要があります.
 def_gun_rocket_launcher_s_desc		A 4-shot rocket launcher.	4連装のロケットランチャーです.
 def_gun_rocket_launcher_node_0_label		Trigger	発射
 def_gun_rocket_launcher_node_0_desc		When true: fires a loaded rocket.	オン信号を受け取ると装填したロケットを発射します.
@@ -3498,7 +3498,7 @@ def_gun_v_barrel_name		Rotary Autocannon Barrel Extension	機関砲の延長砲�
 def_gun_v_barrel_desc		Barrel extensions increase weapon accuracy, but add additional weight.	砲身を延長すると射撃精度が上がりますが, 重量が増加します.
 def_gun_v_barrel_s_desc		A rotary autocannon barrel extension.	中型機関砲の砲身を延長するための延長部品です.
 def_gun_xl_name		Artillery Cannon	大砲 (中)
-def_gun_xl_desc		Artillery cannons fire high caliber explosive and armor-piercing shells over great distances.	この大砲は大口径の砲弾を遠くまで発射します. 発射するには武器DLCを有効にする必要があります.
+def_gun_xl_desc		Artillery cannons fire high caliber explosive and armor-piercing shells over great distances.	この大砲は大口径の砲弾を遠くまで発射します. 英語名は 「Artillery cannon」です. 発射するには武器DLCを有効にする必要があります.
 def_gun_xl_s_desc		An artillery cannon.	中型の大砲の砲身です.
 def_gun_xl_node_0_label		Trigger	発射
 def_gun_xl_node_0_desc		When true: fires a loaded shell.	オン信号を受け取ると装填した砲弾を発射します.
@@ -3510,14 +3510,14 @@ def_gun_xl_barrel_name		Artillery Cannon Barrel Extension	大砲の延長砲身 
 def_gun_xl_barrel_desc		Barrel extensions increase weapon accuracy, but add additional weight.	砲身を延長すると射撃精度が上がりますが, 重量が増加します.
 def_gun_xl_barrel_s_desc		An artillery cannon barrel extension.	中型大砲の砲身を延長するための延長部品です.
 def_gun_xs_name		Machine Gun	機関銃
-def_gun_xs_desc		Machine guns are lightweight and compact, but require ammo boxes to be reloaded by hand.	機関銃は軽量で小型ですが, 弾薬を手動で装填する必要があります.
+def_gun_xs_desc		Machine guns are lightweight and compact, but require ammo boxes to be reloaded by hand.	機関銃は軽量で小型ですが, 弾薬を手動で装填する必要があります. 射撃するには武器DLCを有効にする必要があります.
 def_gun_xs_s_desc		A machine gun.	機関銃です.
 def_gun_xs_node_0_label		Trigger	射撃
 def_gun_xs_node_0_desc		When true: feeds, loads, and fires cartridges from a connected ammo box.	オン信号を受け取ると弾薬を補給, 装填しながら連続で射撃します.
 def_gun_xs_node_1_label		Loaded	装填済み
 def_gun_xs_node_1_desc		Returns true when a cartridge is loaded and ready to fire.	弾薬が装填され, 射撃の準備が完了するとオン信号を出力します.
 def_gun_xxl_name		Bertha Cannon	大砲 (大)
-def_gun_xxl_desc		The Bertha cannon fires devastating high explosive mortar shells, with a wide radius of destruction.	この大砲は破壊力のある爆発性の砲弾を発射し, 広い範囲を破壊することができます.
+def_gun_xxl_desc		The Bertha cannon fires devastating high explosive mortar shells, with a wide radius of destruction.	この大砲は破壊力のある爆発性の砲弾を発射し, 広い範囲を破壊することができます. 英語名は「Bertha cannon」です. 発射するには武器DLCを有効にする必要があります.
 def_gun_xxl_s_desc		A Bertha cannon.	大型の大砲の砲身です.
 def_gun_xxl_node_0_label		Trigger	発射
 def_gun_xxl_node_0_desc		When true: fires a loaded shell.	オン信号を受け取ると装填した砲弾を発射します.
@@ -4611,6 +4611,42 @@ def_multibody_suspension_b_desc
 def_multibody_suspension_b_s_desc
 def_multibody_suspension_b_node_0_label		RPS	動力
 def_multibody_suspension_b_node_0_desc		Power connection for transfering mechanical energy.	サスペンション間で動力の伝達ができます.
+def_multibody_turret_large_a_name		Turret Ring (Large)	タレット土台 (大)
+def_multibody_turret_large_a_desc		A turret ring rotates in the same way as a velocity pivot. The gap inside the turret ring creates a door seal, and can be used to extend a sealed volume through the turret ring.	電動回転軸 (速度) と同じように回転します. 土台の内側の穴は密閉可能であり, 密閉状態を維持しつつ, 密閉空間の拡張が可能です.
+def_multibody_turret_large_a_s_desc		A large turret ring that can rotate continuously.	継続的に回転が可能な大型のタレットの土台です.
+def_multibody_turret_large_a_node_0_label		Rotational Speed	回転速度
+def_multibody_turret_large_a_node_0_desc		The speed at which the turret should rotate.	タレットの回転速度を制御します.
+def_multibody_turret_large_a_node_1_label		Current Rotation	現在の回転数
+def_multibody_turret_large_a_node_1_desc		The turrets measured rotation expressed in fractions of full turns.	初期位置からの現在の回転数 (何回転したか) を出力します.
+def_multibody_turret_large_a_node_2_label		Electric	電力
+def_multibody_turret_large_a_node_2_desc		Electrical power connection.	電力網から電力を供給します.
+def_multibody_turret_large_b_name		Turret Ring (Large) b	タレット土台 (大)の部品
+def_multibody_turret_large_b_desc
+def_multibody_turret_large_b_s_desc
+def_multibody_turret_medium_a_name		Turret Ring (Medium)	タレット土台 (中)
+def_multibody_turret_medium_a_desc		A turret ring rotates in the same way as a velocity pivot. The gap inside the turret ring creates a door seal, and can be used to extend a sealed volume through the turret ring.	電動回転軸 (速度) と同じように回転します. 土台の内側の穴は密閉可能であり, 密閉状態を維持しつつ, 密閉空間の拡張が可能です.
+def_multibody_turret_medium_a_s_desc		A medium turret ring that can rotate continuously.	継続的に回転が可能な中型のタレットの土台です.
+def_multibody_turret_medium_a_node_0_label		Rotational Speed	回転速度
+def_multibody_turret_medium_a_node_0_desc		The speed at which the turret should rotate.	タレットの回転速度を制御します.
+def_multibody_turret_medium_a_node_1_label		Current Rotation	現在の回転数
+def_multibody_turret_medium_a_node_1_desc		The turrets measured rotation expressed in fractions of full turns.	初期位置からの現在の回転数 (何回転したか) を出力します.
+def_multibody_turret_medium_a_node_2_label		Electric	電力
+def_multibody_turret_medium_a_node_2_desc		Electrical power connection.	電力網から電力を供給します.
+def_multibody_turret_medium_b_name		Turret Ring (Medium) b	タレット土台 (中)の部品
+def_multibody_turret_medium_b_desc
+def_multibody_turret_medium_b_s_desc
+def_multibody_turret_small_a_name		Turret Ring (Small)	タレット土台 (小)
+def_multibody_turret_small_a_desc		A turret ring rotates in the same way as a velocity pivot. The gap inside the turret ring creates a door seal, and can be used to extend a sealed volume through the turret ring.	電動回転軸 (速度) と同じように回転します. 土台の内側の穴は密閉可能であり, 密閉状態を維持しつつ, 密閉空間の拡張が可能です.
+def_multibody_turret_small_a_s_desc		A small turret ring that can rotate continuously.	継続的に回転が可能な小型のタレットの土台です.
+def_multibody_turret_small_a_node_0_label		Rotational Speed	回転速度
+def_multibody_turret_small_a_node_0_desc		The speed at which the turret should rotate.	タレットの回転速度を制御します.
+def_multibody_turret_small_a_node_1_label		Current Rotation	現在の回転数
+def_multibody_turret_small_a_node_1_desc		The turrets measured rotation expressed in fractions of full turns.	初期位置からの現在の回転数 (何回転したか) を出力します.
+def_multibody_turret_small_a_node_2_label		Electric	電力
+def_multibody_turret_small_a_node_2_desc		Electrical power connection.	電力網から電力を供給します.
+def_multibody_turret_small_b_name		Turret Ring (Small) b	タレット土台 (小)の部品
+def_multibody_turret_small_b_desc
+def_multibody_turret_small_b_s_desc
 def_multibody_velocity_pivot_a_name		Velocity Pivot	回転軸 (大, 速度)
 def_multibody_velocity_pivot_a_desc		Inputting a value of 0 will cause it to stop. The pivot's current rotation can be read from its output. An output of 1 corresponds to one full turn, and -1 to a full turn in the opposite direction.	0が入力されると回転を停止します. また現在の回転数を出力します.
 def_multibody_velocity_pivot_a_s_desc		A pivot that will continuously rotate at a set input speed.	入力された速度で回転する大型の電動回転軸です.
@@ -4683,7 +4719,7 @@ def_radar_advanced_node_1_desc		Enable the Radar.	オン信号を受け取ると
 def_radar_advanced_node_2_label		Radar Data	検出した物体の情報
 def_radar_advanced_node_2_desc		Outputs data for up to 8 targets. (On/Off 1-8 : Target Found) (Values 1-4 : Target 1 (Distance, Azimuth Angle, Elevation Angle, Time Since Detection)) (Values 5-8 : Target 2) Ect... 	検出した物体の情報を最大8個出力します. (オン/オフチャンネル 1-8: 何かを検出している間はオン信号を出力します. 検出している物体の数だけ出力されます. 数値チャンネル 1-4: 1つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 5-8: 2つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 以降, 8つ目の物体まで続きます.)
 def_radar_advanced_node_3_label		Radar Rotation	向き
-def_radar_advanced_node_3_desc		Current radar rotation from forward in radians.	レーダーが探知する方向を弧度法で制御します.
+def_radar_advanced_node_3_desc		Current radar rotation from forward in turns.	レーダーが探知する方向を回転単位で制御します.
 def_radar_advanced_awacs_name		Radar (AWACS)	レーダー (AWACS)
 def_radar_advanced_awacs_desc		This sensor outputs the distance and relative angle to a detected object within its range and field of view using radio waves. (Max Effective Range : 500000m)	電波を利用して検出した物体の距離と相対的な角度を出力します. AWACSとは, 敵航空機を早期に探知して, 味方の指揮を取るためのレーダーを搭載した航空機のことで, これはそのレーダーです. 範囲は500キロメートルです.
 def_radar_advanced_awacs_s_desc		A long range radar that returns information about a detected object within its view.	検出した物体の情報を出力する長距離のレーダーです.
@@ -4694,7 +4730,7 @@ def_radar_advanced_awacs_node_1_desc		Enable the Radar.	オン信号を受け取
 def_radar_advanced_awacs_node_2_label		Radar Data	検出した物体の情報
 def_radar_advanced_awacs_node_2_desc		Outputs data for up to 8 targets. (On/Off 1-8 : Target Found) (Values 1-4 : Target 1 (Distance, Azimuth Angle, Elevation Angle, Time Since Detection)) (Values 5-8 : Target 2) Ect... 	検出した物体の情報を最大8個出力します. (オン/オフチャンネル 1-8: 何かを検出している間はオン信号を出力します. 検出している物体の数だけ出力されます. 数値チャンネル 1-4: 1つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 5-8: 2つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 以降, 8つ目の物体まで続きます.)
 def_radar_advanced_awacs_node_3_label		Radar Rotation	向き
-def_radar_advanced_awacs_node_3_desc		Current radar rotation from forward in radians.	レーダーが探知する方向を弧度法で制御します.
+def_radar_advanced_awacs_node_3_desc		Current radar rotation from forward in turns.	レーダーが探知する方向を回転単位で制御します.
 def_radar_advanced_dish_name		Radar (Dish)	レーダー (皿)
 def_radar_advanced_dish_desc		This sensor outputs the distance and relative angle to a detected object within its range and field of view using radio waves. (Max Effective Range : 200000m)	電波を利用して検出した物体の距離と相対的な角度を出力します. 範囲は20キロメートルです.
 def_radar_advanced_dish_s_desc		A radar that returns information about a detected object within its view.	検出した物体の情報を出力するレーダーです.
@@ -4705,7 +4741,7 @@ def_radar_advanced_dish_node_1_desc		Enable the Radar.	オン信号を受け取�
 def_radar_advanced_dish_node_2_label		Radar Data	検出した物体の情報
 def_radar_advanced_dish_node_2_desc		Outputs data for up to 8 targets. (On/Off 1-8 : Target Found) (Values 1-4 : Target 1 (Distance, Azimuth Angle, Elevation Angle, Time Since Detection)) (Values 5-8 : Target 2) Ect... 	検出した物体の情報を最大8個出力します. (オン/オフチャンネル 1-8: 何かを検出している間はオン信号を出力します. 検出している物体の数だけ出力されます. 数値チャンネル 1-4: 1つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 5-8: 2つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 以降, 8つ目の物体まで続きます.)
 def_radar_advanced_dish_node_3_label		Radar Rotation	向き
-def_radar_advanced_dish_node_3_desc		Current radar rotation from forward in radians.	レーダーが探知する方向を弧度法で制御します.
+def_radar_advanced_dish_node_3_desc		Current radar rotation from forward in turns.	レーダーが探知する方向を回転単位で制御します.
 def_radar_advanced_missile_name		Radar (Missile)	レーダー (ミサイル)
 def_radar_advanced_missile_desc		This sensor outputs the distance and relative angle to a detected object within its range and field of view using radio waves. This sensor is designed for missiles and its radar acts along the Z axis. (Max Effective Range : 20000m)	電波を利用して検出した物体の距離と相対的な角度を出力します. このレーダーはミサイルへの搭載を想定しており, レーダーはz軸方向に作用します. 範囲は20キロメートルです.
 def_radar_advanced_missile_s_desc		A short range radar that returns information about a detected object within its view.	検出した物体の情報を出力する短距離のレーダーです.
@@ -4716,7 +4752,7 @@ def_radar_advanced_missile_node_1_desc		Enable the Radar.	オン信号を受け�
 def_radar_advanced_missile_node_2_label		Radar Data	検出した物体の情報
 def_radar_advanced_missile_node_2_desc		Outputs data for up to 8 targets. (On/Off 1-8 : Target Found) (Values 1-4 : Target 1 (Distance, Azimuth Angle, Elevation Angle, Time Since Detection)) (Values 5-8 : Target 2) Ect... 	検出した物体の情報を最大8個出力します. (オン/オフチャンネル 1-8: 何かを検出している間はオン信号を出力します. 検出している物体の数だけ出力されます. 数値チャンネル 1-4: 1つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 5-8: 2つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 以降, 8つ目の物体まで続きます.)
 def_radar_advanced_missile_node_3_label		Radar Rotation	向き
-def_radar_advanced_missile_node_3_desc		Current radar rotation from forward in radians.	レーダーが探知する方向を弧度法で制御します.
+def_radar_advanced_missile_node_3_desc		Current radar rotation from forward in turns.	レーダーが探知する方向を回転単位で制御します.
 def_radar_advanced_phalanx_name		Radar (Phalanx)	レーダー (ファランクス)
 def_radar_advanced_phalanx_desc		This sensor outputs the distance and relative angle to a detected object within its range and field of view using radio waves. (Max Effective Range : 100000m)	電波を利用して検出した物体の距離と相対的な角度を出力します. ファランクスとは, レーダーにより小型高速の目標を自動で追撃するシステムのことです. 範囲は100キロメートルです.
 def_radar_advanced_phalanx_s_desc		A radar that returns information about a detected object within its view.	検出した物体の情報を出力するレーダーです.
@@ -4727,7 +4763,7 @@ def_radar_advanced_phalanx_node_1_desc		Enable the Radar.	オン信号を受け�
 def_radar_advanced_phalanx_node_2_label		Radar Data	検出した物体の情報
 def_radar_advanced_phalanx_node_2_desc		Outputs data for up to 8 targets. (On/Off 1-8 : Target Found) (Values 1-4 : Target 1 (Distance, Azimuth Angle, Elevation Angle, Time Since Detection)) (Values 5-8 : Target 2) Ect... 	検出した物体の情報を最大8個出力します. (オン/オフチャンネル 1-8: 何かを検出している間はオン信号を出力します. 検出している物体の数だけ出力されます. 数値チャンネル 1-4: 1つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 5-8: 2つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 以降, 8つ目の物体まで続きます.)
 def_radar_advanced_phalanx_node_3_label		Radar Rotation	向き
-def_radar_advanced_phalanx_node_3_desc		Current radar rotation from forward in radians.	レーダーが探知する方向を弧度法で制御します.
+def_radar_advanced_phalanx_node_3_desc		Current radar rotation from forward in turns.	レーダーが探知する方向を回転単位で制御します.
 def_radar_detector_name		Radar Detector	レーダー検出器
 def_radar_detector_desc		This sensor outputs an On signal when it detects a radio wave.	レーダーの電波を検出するとオン信号を出力します.
 def_radar_detector_s_desc		A sensor that can detect radar waves.	レーダーの電波を検出する検出器です.
@@ -6074,8 +6110,8 @@ def_warhead_body_medium_s_desc		A medium explosive warhead.	中型の爆発性�
 def_warhead_body_medium_node_0_label		Detonate	爆破
 def_warhead_body_medium_node_0_desc		Detonates the explosives in the warhead.	オン信号を受け取るとこの弾頭を爆破します.
 def_warhead_body_small_name		Warhead Body (Small)	弾頭 (小, 本体)
-def_warhead_body_small_desc			オン信号を受け取るか損傷を受けると爆発します. 取り扱い注意!
-def_warhead_body_small_s_desc			小型の爆発性の弾頭です.
+def_warhead_body_small_desc		Detonates from a logic signal, or when receiving damage. Be careful!	オン信号を受け取るか損傷を受けると爆発します. 取り扱い注意!
+def_warhead_body_small_s_desc		A small explosive warhead.	小型の爆発性の弾頭です.
 def_warhead_body_small_node_0_label		Detonate	爆破
 def_warhead_body_small_node_0_desc		Detonates the explosives in the warhead.	オン信号を受け取るとこの弾頭を爆破します.
 def_warhead_emp_name		Warhead (EMP)	弾頭 (電磁パルス)
