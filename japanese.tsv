@@ -5187,7 +5187,7 @@ def_rx_huge_v2_node_5_desc		Radio Send/Receive Frequency.	送受信する周波�
 def_rx_huge_v2_node_6_label		Signal Strength	信号強度
 def_rx_huge_v2_node_6_desc		Strength of connection signal.	信号受信時にその信号の強度を0から1の範囲で出力します. 0は受信していないことを示します.
 def_rx_huge_v2_node_7_label		Transmit Mode	送信
-def_rx_huge_v2_node_7_desc		Wether the Radio is transmitting or Receiving.	オン信号を受け取るとこのアンテナから情報を送信します. この間は信号の受信ができません. オフ信号を受け取ると信号の受信ができます.
+def_rx_huge_v2_node_7_desc		Wether the Radio is transmitting or Receiving.	オン信号を受け取るとこのアンテナから情報を送信します. この間は無線信号の受信ができません.
 def_rx_large_name		Radio RX Large (Deprecated)	無線通信アンテナ (大, 非推奨)
 def_rx_large_desc		Sends and receives data on the specified frequencies.	信号の送受信はそれぞれ指定された周波数で行います.
 def_rx_large_s_desc		A radio data transmitter and receiver.	信号の送受信を行う大型の無線通信アンテナです.
@@ -5221,7 +5221,7 @@ def_rx_large_v2_node_5_desc		Radio Send/Receive Frequency.	送受信する周波
 def_rx_large_v2_node_6_label		Signal Strength	信号強度
 def_rx_large_v2_node_6_desc		Strength of connection signal.	信号受信時にその信号の強度を0から1の範囲で出力します. 0は受信していないことを示します.
 def_rx_large_v2_node_7_label		Transmit Mode	送信
-def_rx_large_v2_node_7_desc		Wether the Radio is transmitting or Receiving.	オン信号を受け取るとこのアンテナから情報を送信します. この間は信号の受信ができません. オフ信号を受け取ると信号の受信ができます.
+def_rx_large_v2_node_7_desc		Wether the Radio is transmitting or Receiving.	オン信号を受け取るとこのアンテナから情報を送信します. この間は無線信号の受信ができません.
 def_rx_med_name		Radio RX Medium (Deprecated)	無線通信アンテナ (中, 非推奨)
 def_rx_med_desc		Sends and receives data on the specified frequencies.	信号の送受信はそれぞれ指定された周波数で行います.
 def_rx_med_s_desc		A radio data transmitter and receiver.	信号の送受信を行う中型の無線通信アンテナです.
@@ -5255,7 +5255,7 @@ def_rx_med_v2_node_5_desc		Radio Send/Receive Frequency.	送受信する周波�
 def_rx_med_v2_node_6_label		Signal Strength	信号強度
 def_rx_med_v2_node_6_desc		Strength of connection signal.	信号受信時にその信号の強度を0から1の範囲で出力します. 0は受信していないことを示します.
 def_rx_med_v2_node_7_label		Transmit Mode	送信
-def_rx_med_v2_node_7_desc		Wether the Radio is transmitting or Receiving.	オン信号を受け取るとこのアンテナから情報を送信します. この間は信号の受信ができません. オフ信号を受け取ると信号の受信ができます.
+def_rx_med_v2_node_7_desc		Wether the Radio is transmitting or Receiving.	オン信号を受け取るとこのアンテナから情報を送信します. この間は無線信号の受信ができません.
 def_rx_small_name		Radio RX Small (Deprecated)	無線通信アンテナ (小, 非推奨)
 def_rx_small_desc		Sends and receives data on the specified frequencies.	信号の送受信はそれぞれ指定された周波数で行います.
 def_rx_small_s_desc		A radio data transmitter and receiver.	信号の送受信を行う小型の無線通信アンテナです.
@@ -5285,7 +5285,7 @@ def_rx_small_v2_node_4_desc		Electrical input.	電力網から電力を供給し
 def_rx_small_v2_node_5_label		Frequency	周波数
 def_rx_small_v2_node_5_desc		Radio Send/Receive Frequency.	送受信する周波数を数値入力で指定します.
 def_rx_small_v2_node_6_label		Transmit Mode	送信
-def_rx_small_v2_node_6_desc		Wether the Radio is transmitting or Receiving.	信号受信時にその信号の強度を0から1の範囲で出力します. 0は受信していないことを示します.
+def_rx_small_v2_node_6_desc		Wether the Radio is transmitting or Receiving.	オン信号を受け取るとこのアンテナから情報を送信します. この間は無線信号の受信ができません.
 def_rx_video_r_name		Radio Video Recv	映像信号無線受信機
 def_rx_video_r_desc		Receives a video signal on the frequency specified.	指定された周波数で映像信号の受信を行います. 範囲は10キロメートルです. 電力の低下と共に範囲は小さくなります.
 def_rx_video_r_s_desc		A radio receiver for receiving video signals.	映像信号の受信を行う無線通信アンテナです.
