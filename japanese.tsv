@@ -5170,7 +5170,7 @@ def_rx_huge_node_4_desc			受信用の周波数を数値入力で指定します
 def_rx_huge_node_5_label		Signal Strength	信号強度
 def_rx_huge_node_5_desc			信号受信時にその信号の強度を0から1の範囲で出力します. 0は受信していないことを示します.
 def_rx_huge_v2_name		Radio RX Huge	無線通信アンテナ (特大)
-def_rx_huge_v2_desc		Sends and receives data on the specified frequency. Transmit Mode defaults to receive.	信号の送受信は指定された周波数で行います. 範囲は20キロメートルです. 電力の低下と共に範囲は小さくなります.
+def_rx_huge_v2_desc		Sends and receives data on the specified frequency. Transmit Mode defaults to receive. (Max Effective Range : 20000m)	信号の送受信は指定された周波数で行います. 範囲は20キロメートルです. 電力の低下と共に範囲は小さくなります.
 def_rx_huge_v2_s_desc		A radio data transmitter and receiver.	信号の送受信を行う特大型の無線通信アンテナです.
 def_rx_huge_v2_node_0_label		Audio Recv	音声信号受信
 def_rx_huge_v2_node_0_desc		Output for received audio data.	指定された周波数で他のアンテナから送信された音声信号を受信します.
@@ -5204,7 +5204,7 @@ def_rx_large_node_4_desc			受信用の周波数を数値入力で指定しま�
 def_rx_large_node_5_label		Signal Strength	信号強度
 def_rx_large_node_5_desc			信号受信時にその信号の強度を0から1の範囲で出力します. 0は受信していないことを示します.
 def_rx_large_v2_name		Radio RX Large	無線通信アンテナ (大)
-def_rx_large_v2_desc		Sends and receives data on the specified frequency. Transmit Mode defaults to receive.	信号の送受信は指定された周波数で行います. 範囲は4キロメートルです. 電力の低下と共に範囲は小さくなります.
+def_rx_large_v2_desc		Sends and receives data on the specified frequency. Transmit Mode defaults to receive. (Max Effective Range : 4000m)	信号の送受信は指定された周波数で行います. 範囲は4キロメートルです. 電力の低下と共に範囲は小さくなります.
 def_rx_large_v2_s_desc		A radio data transmitter and receiver.	信号の送受信を行う大型の無線通信アンテナです.
 def_rx_large_v2_node_0_label		Audio Recv	音声信号受信
 def_rx_large_v2_node_0_desc		Output for received audio data.	指定された周波数で他のアンテナから送信された音声信号を受信します.
@@ -5238,7 +5238,7 @@ def_rx_med_node_4_desc			受信用の周波数を数値入力で指定します.
 def_rx_med_node_5_label		Signal Strength	信号強度
 def_rx_med_node_5_desc			信号受信時にその信号の強度を0から1の範囲で出力します. 0は受信していないことを示します.
 def_rx_med_v2_name		Radio RX Medium	無線通信アンテナ (中)
-def_rx_med_v2_desc		Sends and receives data on the specified frequency. Transmit Mode defaults to receive.	信号の送受信は指定された周波数で行います. 範囲は1キロメートルです. 電力の低下と共に範囲は小さくなります.
+def_rx_med_v2_desc		Sends and receives data on the specified frequency. Transmit Mode defaults to receive. (Max Effective Range : 1000m)	信号の送受信は指定された周波数で行います. 範囲は1キロメートルです. 電力の低下と共に範囲は小さくなります.
 def_rx_med_v2_s_desc		A radio data transmitter and receiver.	信号の送受信を行う中型の無線通信アンテナです.
 def_rx_med_v2_node_0_label		Audio Recv	音声信号受信
 def_rx_med_v2_node_0_desc		Output for received audio data.	指定された周波数で他のアンテナから送信された音声信号を受信します.
@@ -5270,7 +5270,7 @@ def_rx_small_node_3_desc			送信用の周波数を数値入力で指定しま�
 def_rx_small_node_4_label		Frequency Recv	受信用周波数
 def_rx_small_node_4_desc			受信用の周波数を数値入力で指定します.
 def_rx_small_v2_name		Radio RX Small	無線通信アンテナ (小)
-def_rx_small_v2_desc		Sends and receives data on the specified frequency. Transmit Mode defaults to receive.	信号の送受信は指定された周波数で行います. 範囲は100メートルです. 電力の低下と共に範囲は小さくなります.
+def_rx_small_v2_desc		Sends and receives data on the specified frequency. Transmit Mode defaults to receive. (Max Effective Range : 100m)	信号の送受信は指定された周波数で行います. 範囲は100メートルです. 電力の低下と共に範囲は小さくなります.
 def_rx_small_v2_s_desc		A radio data transmitter and receiver.	信号の送受信を行う小型の無線通信アンテナです.
 def_rx_small_v2_node_0_label		Audio Recv	音声信号受信
 def_rx_small_v2_node_0_desc		Output for received audio data.	指定された周波数で他のアンテナから送信された音声信号を受信します.
@@ -5298,7 +5298,7 @@ def_rx_video_r_node_2_desc			受信する周波数を数値入力で指定しま
 def_rx_video_r_node_3_label		Signal Strength	信号強度
 def_rx_video_r_node_3_desc			信号受信時にその信号の強度を0から1の範囲で出力します. 0は受信していないことを示します.
 def_rx_video_x_name		Radio Video Xmit	映像信号無線送信機
-def_rx_video_x_desc		Sends a video signal on the frequency specified.	指定された周波数で映像信号の送信を行います. 範囲は10キロメートルです. 電力の低下と共に範囲は小さくなります.
+def_rx_video_x_desc		Sends a video signal on the frequency specified. (Max Effective Range : 10000m)	指定された周波数で映像信号の送信を行います. 範囲は10キロメートルです. 電力の低下と共に範囲は小さくなります.
 def_rx_video_x_s_desc		A radio transmitter for sending video signals.	映像信号の送信を行う無線通信アンテナです.
 def_rx_video_x_node_0_label		Video Send	映像信号送信
 def_rx_video_x_node_0_desc			指定された周波数で映像信号を送信します.
