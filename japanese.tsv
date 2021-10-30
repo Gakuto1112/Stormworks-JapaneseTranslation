@@ -791,7 +791,7 @@ id	description	en	local
 		COMPONENT INVENTORY	部品一覧
 		Group: None	グループ: なし
 		Group: Category	グループ: カテゴリー別
-		Group: A to Z	グループ: AからZ
+		Group: A to Z	グループ: アルファベット順
 		Backups	バックアップ
 		Your saved microcontrollers.	保存したマイクロコントローラー.
 		Microcontrollers you've subscribed to on the Steam Workshop.	Steamワークショップでサブスクライブしたマイクロコントローラー.
@@ -2023,6 +2023,8 @@ id	description	en	local
 		Vehicles	乗り物
 		Game	ゲーム
 		Designator	指定子
+		Group: Active	グループ: 有効アドオン優先
+		Group: Date	グループ: 最終更新日順
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
