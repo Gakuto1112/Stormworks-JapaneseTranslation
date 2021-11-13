@@ -3809,7 +3809,7 @@ def_inventory_equipment_pistol_ammo_s_desc		A small equipment storage unit conta
 def_inventory_equipment_pistol_ammo_node_0_label		Electric	電力
 def_inventory_equipment_pistol_ammo_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_radio_name		Equipment inventory (Radio)	保管庫 (小, トランシーバー)
-def_inventory_equipment_radio_desc		Hold [$[action_equipment_use]] transmit voice audio. Press [$[action_equipment_secondary]] to cycle between frequencies 0~8, or turn the radio off. When a frequncy is selected, the radio will transmit and receive voice audio on that frequency only. Requires electric charge to function, and will recharge when placed into a powered small equipment storage unit.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押して発信します. [$[action_equipment_secondary]] を押して0から8チャンネルの範囲でチャンネルを切り替えます. 設定されたチャンネルでのみ発信/受信ができます. 使用できる時間には限りがあり, 使用後は通電している保管庫で充電する必要があります. 使用していない時は腰のベルトに取り付けてられます.
+def_inventory_equipment_radio_desc		Hold [$[action_equipment_use]] transmit voice audio. Press [$[action_equipment_secondary]] to cycle between frequencies 0~8, or turn the radio off. When a frequncy is selected, the radio will transmit and receive voice audio on that frequency only. Requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. (Max Effective Range : 500m)	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押して発信します. [$[action_equipment_secondary]] を押して0から8チャンネルの範囲でチャンネルを切り替えます. 設定されたチャンネルでのみ発信/受信ができます. 範囲は500メートルです. 使用できる時間には限りがあり, 使用後は通電している保管庫で充電する必要があります. 使用していない時は腰のベルトに取り付けてられます.
 def_inventory_equipment_radio_s_desc		A small equipment storage unit containing a handheld radio.	トランシーバーが保管されている小型の保管庫です.
 def_inventory_equipment_radio_node_0_label		Electric	電力
 def_inventory_equipment_radio_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
@@ -3819,7 +3819,7 @@ def_inventory_equipment_radio_signal_locator_s_desc		A large equipment storage u
 def_inventory_equipment_radio_signal_locator_node_0_label		Electric	電力
 def_inventory_equipment_radio_signal_locator_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_remote_control_name		Equipment inventory (Remote Control Unit)	保管庫 (小, 遠隔操作端末)
-def_inventory_equipment_remote_control_desc		Press [$[action_equipment_use]] to toggle the remote control on or off. Press [$[action_equipment_secondary]] to cycle between frequencies 0~8. When active, the remote control uses the basic vehicle pilot seat input bindings and transmits them as composite radio data on the selected frequency. Requires electric charge to function, and will recharge when placed into a powered small equipment storage unit.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押して遠隔操作端末のオン/オフを切り替えます. [$[action_equipment_secondary]] を押して0から8チャンネルの範囲でチャンネルを切り替えます. オンの時は通常の操縦席の操作を設定されたチャンネルで発信します. 使用できる時間には限りがあり, 使用後は通電している保管庫で充電する必要があります. 使用していない時は腰のベルトに取り付けてられます.
+def_inventory_equipment_remote_control_desc		Press [$[action_equipment_use]] to toggle the remote control on or off. Press [$[action_equipment_secondary]] to cycle between frequencies 0~8. When active, the remote control uses the basic vehicle pilot seat input bindings and transmits them as composite radio data on the selected frequency. Requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. (Max Effective Range : 500m)	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]] を押して遠隔操作端末のオン/オフを切り替えます. [$[action_equipment_secondary]] を押して0から8チャンネルの範囲でチャンネルを切り替えます. オンの時は通常の操縦席の操作を設定されたチャンネルで発信します. 範囲は500メートルです. 使用できる時間には限りがあり, 使用後は通電している保管庫で充電する必要があります. 使用していない時は腰のベルトに取り付けてられます.
 def_inventory_equipment_remote_control_s_desc		A small equipment storage unit containing a remote control unit.	遠隔操作端末が保管されている小型の保管庫です.
 def_inventory_equipment_remote_control_node_0_label		Electric	電力
 def_inventory_equipment_remote_control_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
@@ -4077,7 +4077,7 @@ def_laser_distance_sensor_name		Laser Distance Sensor	距離計 (レーザー)
 def_laser_distance_sensor_desc		The reading can be read from the sensor's number output and is measured in metres (1 metre = 4 blocks).	測定結果はメートル単位 (1メートル = 4ブロック) で出力されます.
 def_laser_distance_sensor_s_desc		A laser distance sensor with a maximum measurement range of 4000m.	4キロメートルまでの長さを計測できるレーザーによる距離計です.
 def_laser_distance_sensor_node_0_label		Distance	距離計
-def_laser_distance_sensor_node_0_desc		The measured distance in metres, up to 2000m.	測定結果をメートル単位で出力します.
+def_laser_distance_sensor_node_0_desc		The measured distance in metres.	測定結果をメートル単位で出力します.
 def_laser_distance_sensor_node_1_label		Electric	電力
 def_laser_distance_sensor_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_laser_distance_sensor_node_2_label		Active	レーザー照射
@@ -6469,10 +6469,10 @@ def_winch_large_b_node_0_desc		Fluid connection for the end of the hose.	ウィ�
 def_window_1x1_name		Window 1x1	窓 (平面, 1x1)
 def_window_1x1_desc		Sits flush with walls and ceilings.	壁や天井に適合します.
 def_window_1x1_s_desc		Basic window piece.	基本的な窓の部品です.
-def_window_1x1_inv_pyramid_name		Window Inverse Pyramid 1x1	窓 (逆三角, 1x1)
+def_window_1x1_inv_pyramid_name		Window Inverse Pyramid 1x1	窓 (逆三角, 1x1x1)
 def_window_1x1_inv_pyramid_desc
 def_window_1x1_inv_pyramid_s_desc		Basic window piece.	基本的な窓の部品です.
-def_window_1x1_pyramid_name		Window Pyramid 1x1x1	窓 (三角, 1x1)
+def_window_1x1_pyramid_name		Window Pyramid 1x1x1	窓 (三角, 1x1x1)
 def_window_1x1_pyramid_desc
 def_window_1x1_pyramid_s_desc		Basic window piece.	基本的な窓の部品です.
 def_window_1x1_wedge_name		Window Angle 1x1x1	窓 (斜め, 1x1)
@@ -6484,6 +6484,12 @@ def_window_2x1_s_desc		Basic window piece.	基本的な窓の部品です.
 def_window_2x2_name		Window 2x2	窓 (平面, 2x2)
 def_window_2x2_desc		Sits flush with walls and ceilings.	壁や天井に適合します.
 def_window_2x2_s_desc		Basic window piece.	基本的な窓の部品です.
+def_window_2x2_inv_pyramid_name		Window Inverse Pyramid 2x2x2	窓 (逆三角, 2x2x2)
+def_window_2x2_inv_pyramid_desc
+def_window_2x2_inv_pyramid_s_desc		Basic window piece.	基本的な窓の部品です.
+def_window_2x2_pyramid_name		Window Pyramid 2x2x2	窓 (三角, 2x2x2)
+def_window_2x2_pyramid_desc
+def_window_2x2_pyramid_s_desc		Basic window piece.	基本的な窓の部品です.
 def_window_3x2_name		Window 2x3	窓 (平面, 2x3)
 def_window_3x2_desc		Sits flush with walls and ceilings.	壁や天井に適合します.
 def_window_3x2_s_desc		Basic window piece.	基本的な窓の部品です.
