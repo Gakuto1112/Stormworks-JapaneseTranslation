@@ -2023,6 +2023,7 @@ id	description	en	local
 		Vehicles	乗り物
 		Game	ゲーム
 		Designator	指定子
+		Fin Influence	翼の効力
 		Group: Active	グループ: 有効アドオン優先
 		Group: Date	グループ: 最終更新日順
 def_01_block_name		Block	ブロック
@@ -2460,7 +2461,7 @@ def_connector_hardpoint_a_node_7_label		Video Data Receive	映像信号受信
 def_connector_hardpoint_a_node_7_desc		Video data to receive from the connected connector.	相手のコネクターからの映像信号を受信します.
 def_connector_hardpoint_a_node_8_label		Electric	電力
 def_connector_hardpoint_a_node_8_desc		Electrical power connection.	電力網から電力を供給します.
-def_connector_hardpoint_b_name		Hardpoint Connector Attachment	ハードポイントコネクター接続部
+def_connector_hardpoint_b_name		Hardpoint Connector Attachment	ハードポイントコネクター接続部 (角)
 def_connector_hardpoint_b_desc		A hardpoint body will connect to a hardpoint attachment when correctly aligned, fixing the two components in place while transferring logic and fluid.	ハードポイントコネクター取り付けは本体が正しい配置されると自動的に接続されます.　接続中はコネクター間で信号や流体を伝達できます.
 def_connector_hardpoint_b_s_desc		A hardpoint connector for building detachable vehicle sections.	乗り物に取り付けるパーツを作成するためのハードポイントコネクターです.
 def_connector_hardpoint_b_node_0_label		Launched	発射
@@ -2477,6 +2478,23 @@ def_connector_hardpoint_b_node_5_label		Video Data Receive	映像信号受信
 def_connector_hardpoint_b_node_5_desc		Video data to receive from the connected connector.	相手のコネクターからの映像信号を受信します.
 def_connector_hardpoint_b_node_6_label		Electric	電力
 def_connector_hardpoint_b_node_6_desc		Electrical power connection.	電力網から電力を供給します.
+def_connector_hardpoint_b_round_name		Hardpoint Connector Attachment (Round)	ハードポイントコネクター接続部 (丸)
+def_connector_hardpoint_b_round_desc		A hardpoint body will connect to a hardpoint attachment when correctly aligned, fixing the two components in place while transferring logic and fluid.	ハードポイントコネクター取り付けは本体が正しい配置されると自動的に接続されます.　接続中はコネクター間で信号や流体を伝達できます.
+def_connector_hardpoint_b_round_s_desc		A hardpoint connector for building detachable vehicle sections.	乗り物に取り付けるパーツを作成するためのハードポイントコネクターです.
+def_connector_hardpoint_b_round_node_0_label		Launched	発射
+def_connector_hardpoint_b_round_node_0_desc		Outputs an on signal if the connector is sent a launch signal by the parent.	本体の「発射」ノードのオン信号で切り離された場合にオン信号を出力します.
+def_connector_hardpoint_b_round_node_1_label		Fluid	流体
+def_connector_hardpoint_b_round_node_1_desc		Fluid connection to link to another fluid connector.	本体と流体の伝達ができます.
+def_connector_hardpoint_b_round_node_2_label		Composite Data Send	複合信号送信
+def_connector_hardpoint_b_round_node_2_desc		Composite data to send to the connected connector.	相手のコネクターへ複合信号を送信します.
+def_connector_hardpoint_b_round_node_3_label		Composite Data Receive	複合信号受信
+def_connector_hardpoint_b_round_node_3_desc		Composite data to receive from the connected connector.	相手のコネクターからの複合信号を受信します.
+def_connector_hardpoint_b_round_node_4_label		Video Data Send	映像信号送信
+def_connector_hardpoint_b_round_node_4_desc		Video data to send to the connected connector.	相手のコネクターへ映像信号を送信します.
+def_connector_hardpoint_b_round_node_5_label		Video Data Receive	映像信号受信
+def_connector_hardpoint_b_round_node_5_desc		Video data to receive from the connected connector.	相手のコネクターからの映像信号を受信します.
+def_connector_hardpoint_b_round_node_6_label		Electric	電力
+def_connector_hardpoint_b_round_node_6_desc		Electrical power connection.	電力網から電力を供給します.
 def_connector_hinge_name		Hinge Connector	コネクター (辺)
 def_connector_hinge_desc		Two connectors will attach when they are within close proximity and both are switched on. They will connect along their long edge and hinge along this axis. An on/off output allows you to check whether or not this connector is currently attached to anything.	起動している2つのコネクターが近くにあると自動的に接続されます. このコネクターは辺に沿って接続され, この辺に沿って回転します. コネクターが接続されているかどうかはオン/オフ信号を通して確認できます.
 def_connector_hinge_s_desc		A small magnetic connector that can be used to attach two or more vehicles together.	他の乗り物を接続できる中型の磁気コネクターです.
@@ -2816,6 +2834,8 @@ def_flare_launcher_desc		Set the flare canister type and launch velocity in the 
 def_flare_launcher_s_desc		Single-use flare launcher for signalling and illumination.	信号弾や照明弾として使用する単発の発煙筒投擲機です.
 def_flare_launcher_node_0_label		Launch	投擲
 def_flare_launcher_node_0_desc			オン信号を受け取ると発煙筒を投擲します.
+def_flare_launcher_node_1_label		Launch Passthrough	空打ち
+def_flare_launcher_node_1_desc			「投擲」ノードの信号を受け取ったが, 内容物がないときにオン信号が出力されます.
 def_fluid_exhaust_name		Fluid Exhaust	排気口
 def_fluid_exhaust_desc		Fluid can flow in and out of the port as part of a fluid system.	流体をこの排気口から吸入/排出できます.
 def_fluid_exhaust_s_desc		An exhaust port for fluid systems.	流体の排出に使用する排気口です.
@@ -3307,60 +3327,88 @@ def_gun_belt_corner_s_desc		An autocannon ammo belt.	機関砲の弾帯の部品
 def_gun_belt_corner_flat_name		Autocannon Belt (Corner Flat)	機関砲の弾帯 (角短辺)
 def_gun_belt_corner_flat_desc		Autocannon belts can transfer all calibers of autocannon ammo.	機関砲の弾帯は全ての口径の機関砲の弾を輸送できます.
 def_gun_belt_corner_flat_s_desc		An autocannon ammo belt.	機関砲の弾帯の部品です.
+def_gun_belt_corner_flat_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_corner_flat_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_corner_flat_l_name		Battle Cannon Belt (Corner Inner)	大砲の弾帯 (小, 角内向き)
 def_gun_belt_corner_flat_l_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_corner_flat_l_s_desc		A battle cannon ammo belt.	小型の大砲の弾帯の部品です.
+def_gun_belt_corner_flat_l_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_corner_flat_l_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_corner_flat_reverse_l_name		Battle Cannon Belt (Corner Outer)	大砲の弾帯 (小, 角外向き)
 def_gun_belt_corner_flat_reverse_l_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_corner_flat_reverse_l_s_desc		A battle cannon ammo belt.	小型の大砲の弾帯の部品です.
+def_gun_belt_corner_flat_reverse_l_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_corner_flat_reverse_l_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_corner_flat_reverse_xl_name		Artillery Cannon Belt (Corner Outer)	大砲の弾帯 (中, 角外向き)
 def_gun_belt_corner_flat_reverse_xl_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_corner_flat_reverse_xl_s_desc		An artillery cannon ammo belt.	中型の大砲の弾帯の部品です.
+def_gun_belt_corner_flat_reverse_xl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_corner_flat_reverse_xl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_corner_flat_reverse_xxl_name		Bertha Cannon Belt (Corner Outer)	大砲の弾帯 (大, 角外向き)
 def_gun_belt_corner_flat_reverse_xxl_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window. Bertha shells are too large to be moved by hand.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 大型の砲弾は大きすぎて手で持ち運ぶことはできません. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_corner_flat_reverse_xxl_s_desc		A bertha cannon ammo belt.	大型の大砲の弾帯の部品です.
+def_gun_belt_corner_flat_reverse_xxl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_corner_flat_reverse_xxl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_corner_flat_xl_name		Artillery Cannon Belt (Corner Inner)	大砲の弾帯 (中, 角内向き)
 def_gun_belt_corner_flat_xl_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_corner_flat_xl_s_desc		An artillery cannon ammo belt.	中型の大砲の弾帯の部品です.
+def_gun_belt_corner_flat_xl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_corner_flat_xl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_corner_flat_xxl_name		Bertha Cannon Belt (Corner Inner)	大砲の弾帯 (大, 角内向き)
 def_gun_belt_corner_flat_xxl_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window. Bertha shells are too large to be moved by hand.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 大型の砲弾は大きすぎて手で持ち運ぶことはできません. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_corner_flat_xxl_s_desc		A bertha cannon ammo belt.	大型の大砲の弾帯の部品です.
+def_gun_belt_corner_flat_xxl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_corner_flat_xxl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_corner_l_name		Battle Cannon Belt (Corner)	大砲の弾帯 (小, 角)
 def_gun_belt_corner_l_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_corner_l_s_desc		A battle cannon ammo belt.	小型の大砲の弾帯の部品です.
+def_gun_belt_corner_l_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_corner_l_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_corner_xl_name		Artillery Cannon Belt (Corner)	大砲の弾帯 (中, 角)
 def_gun_belt_corner_xl_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_corner_xl_s_desc		An artillery cannon ammo belt.	中型の大砲の弾帯の部品です.
+def_gun_belt_corner_xl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_corner_xl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_corner_xxl_name		Bertha Cannon Belt (Corner)	大砲の弾帯 (大, 角)
 def_gun_belt_corner_xxl_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window. Bertha shells are too large to be moved by hand.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 大型の砲弾は大きすぎて手で持ち運ぶことはできません. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_corner_xxl_s_desc		A bertha cannon ammo belt.	大型の大砲の弾帯の部品です.
+def_gun_belt_corner_xxl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_corner_xxl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_junction_name		Autocannon Ammo Belt (Junction)	機関砲の弾帯 (分岐)
 def_gun_belt_junction_desc		Autocannon belts can transfer all calibers of autocannon ammo. Junction belts redirect the path of ammo transfer.	機関砲の弾帯は全ての口径の機関砲の弾を輸送できます. この弾帯は弾を2方向に分岐します.
 def_gun_belt_junction_s_desc		An autocannon ammo belt.	機関砲の弾帯の部品です.
-def_gun_belt_junction_node_0_label		Junction Switch	分岐の切り替え
-def_gun_belt_junction_node_0_desc		Switches the ammo transfer T-junction between the left and right sides.	オン信号を受け取るたびに砲弾の輸送方向を切り替えます.
+def_gun_belt_junction_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_junction_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
+def_gun_belt_junction_node_1_label		Junction Switch	分岐の切り替え
+def_gun_belt_junction_node_1_desc		Switches the ammo transfer T-junction between the left and right sides.	オン信号を受け取るたびに砲弾の輸送方向を切り替えます.
 def_gun_belt_junction_l_name		Battle Cannon Belt (Junction)	大砲の弾帯 (小, 分岐)
 def_gun_belt_junction_l_desc		Cannon ammo belts can store and transfer ammo shells. Junction belts redirect the path of ammo transfer. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. この弾帯は砲弾を2方向に分岐します. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_junction_l_s_desc		A battle cannon ammo belt.	小型の大砲の弾帯の部品です.
-def_gun_belt_junction_l_node_0_label		Junction Switch	分岐の切り替え
-def_gun_belt_junction_l_node_0_desc		Switches the ammo transfer T-junction between the left and right sides.	オン信号を受け取るたびに砲弾の輸送方向を切り替えます.
+def_gun_belt_junction_l_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_junction_l_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
+def_gun_belt_junction_l_node_1_label		Junction Switch	分岐の切り替え
+def_gun_belt_junction_l_node_1_desc		Switches the ammo transfer T-junction between the left and right sides.	オン信号を受け取るたびに砲弾の輸送方向を切り替えます.
 def_gun_belt_junction_xl_name		Artillery Cannon Belt (Junction)	大砲の弾帯 (中, 分岐)
 def_gun_belt_junction_xl_desc		Cannon ammo belts can store and transfer ammo shells. Junction belts redirect the path of ammo transfer. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. この弾帯は砲弾を2方向に分岐します. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_junction_xl_s_desc		An artillery cannon ammo belt.	中型の大砲の弾帯の部品です.
-def_gun_belt_junction_xl_node_0_label		Junction Switch	分岐の切り替え
-def_gun_belt_junction_xl_node_0_desc		Switches the ammo transfer T-junction between the left and right sides.	オン信号を受け取るたびに砲弾の輸送方向を切り替えます.
+def_gun_belt_junction_xl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_junction_xl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
+def_gun_belt_junction_xl_node_1_label		Junction Switch	分岐の切り替え
+def_gun_belt_junction_xl_node_1_desc		Switches the ammo transfer T-junction between the left and right sides.	オン信号を受け取るたびに砲弾の輸送方向を切り替えます.
 def_gun_belt_junction_xxl_name		Bertha Cannon Belt (Junction)	大砲の弾帯 (大, 分岐)
 def_gun_belt_junction_xxl_desc		Cannon ammo belts can store and transfer ammo shells. Junction belts redirect the path of ammo transfer. Spawned ammo type can be set in component properties window. Bertha shells are too large to be moved by hand.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. この弾帯は砲弾を2方向に分岐します. 大型の砲弾は大きすぎて手で持ち運ぶことはできません. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_junction_xxl_s_desc		A bertha cannon ammo belt.	大型の大砲の弾帯の部品です.
-def_gun_belt_junction_xxl_node_0_label		Junction Switch	分岐の切り替え
-def_gun_belt_junction_xxl_node_0_desc		Switches the ammo transfer T-junction between the left and right sides.	オン信号を受け取るたびに砲弾の輸送方向を切り替えます.
+def_gun_belt_junction_xxl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_junction_xxl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
+def_gun_belt_junction_xxl_node_1_label		Junction Switch	分岐の切り替え
+def_gun_belt_junction_xxl_node_1_desc		Switches the ammo transfer T-junction between the left and right sides.	オン信号を受け取るたびに砲弾の輸送方向を切り替えます.
 def_gun_belt_loader_name		Autocannon Belt (Feeder)	機関砲の弾帯 (輸送機)
 def_gun_belt_loader_desc		Autocannon belts can transfer all calibers of autocannon ammo. Feeder belts transfer ammo forwards using electric power.	機関砲の弾帯は全ての口径の機関砲の弾を輸送できます. 輸送機は電力を使用して弾を輸送します.
 def_gun_belt_loader_s_desc		An autocannon ammo belt.	機関砲の弾帯の部品です.
 def_gun_belt_loader_node_0_label		Feed	輸送
 def_gun_belt_loader_node_0_desc		Transfer cartridges in the direction of the arrow.	オン信号を受け取ると矢印の方向へ弾を輸送します.
-def_gun_belt_loader_node_1_label		Feed Successful	輸送成功
-def_gun_belt_loader_node_1_desc		Returns true if the driver was successful in transferring a cartridge.	弾の輸送に成功したらオン信号を出力します.
+def_gun_belt_loader_node_1_label		Contains Ammo	弾薬装填
+def_gun_belt_loader_node_1_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_loader_node_2_label		Electric	電力
 def_gun_belt_loader_node_2_desc		Electrical power connection.	電力網から電力を供給します.
 def_gun_belt_loader_l_name		Battle Cannon Belt (Feeder)	大砲の弾帯 (小, 輸送機)
@@ -3368,8 +3416,8 @@ def_gun_belt_loader_l_desc		Cannon ammo belts can store and transfer ammo shells
 def_gun_belt_loader_l_s_desc		A battle cannon ammo belt.	小型の大砲の弾帯の部品です.
 def_gun_belt_loader_l_node_0_label		Feed	輸送
 def_gun_belt_loader_l_node_0_desc		Transfer shells in the direction of the arrow.	オン信号を受け取ると矢印の方向へ砲弾を輸送します.
-def_gun_belt_loader_l_node_1_label		Feed Successful	輸送成功
-def_gun_belt_loader_l_node_1_desc		Returns true if the driver was successful in transferring a shell.	砲弾の輸送に成功したらオン信号を出力します.
+def_gun_belt_loader_l_node_1_label		Contains Ammo	弾薬装填
+def_gun_belt_loader_l_node_1_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_loader_l_node_2_label		Electric	電力
 def_gun_belt_loader_l_node_2_desc		Electrical power connection.	電力網から電力を供給します.
 def_gun_belt_loader_xl_name		Artillery Cannon Belt (Feeder)	大砲の弾帯 (中, 輸送機)
@@ -3377,8 +3425,8 @@ def_gun_belt_loader_xl_desc		Cannon ammo belts can store and transfer ammo shell
 def_gun_belt_loader_xl_s_desc		An artillery cannon ammo belt.	中型の大砲の弾帯の部品です.
 def_gun_belt_loader_xl_node_0_label		Feed	輸送
 def_gun_belt_loader_xl_node_0_desc		Transfer shells in the direction of the arrow.	オン信号を受け取ると矢印の方向へ砲弾を輸送します.
-def_gun_belt_loader_xl_node_1_label		Feed Successful	輸送成功
-def_gun_belt_loader_xl_node_1_desc		Returns true if the driver was successful in transferring a shell.	砲弾の輸送に成功したらオン信号を出力します.
+def_gun_belt_loader_xl_node_1_label		Contains Ammo	弾薬装填
+def_gun_belt_loader_xl_node_1_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_loader_xl_node_2_label		Electric	電力
 def_gun_belt_loader_xl_node_2_desc		Electrical power connection.	電力網から電力を供給します.
 def_gun_belt_loader_xxl_name		Bertha Cannon Belt (Feeder)	大砲の弾帯 (大, 輸送機)
@@ -3386,42 +3434,58 @@ def_gun_belt_loader_xxl_desc		Cannon ammo belts can store and transfer ammo shel
 def_gun_belt_loader_xxl_s_desc		A bertha cannon ammo belt.	大型の大砲の弾帯の部品です.
 def_gun_belt_loader_xxl_node_0_label		Feed	輸送
 def_gun_belt_loader_xxl_node_0_desc		Transfer shells in the direction of the arrow.	オン信号を受け取ると矢印の方向へ砲弾を輸送します.
-def_gun_belt_loader_xxl_node_1_label		Feed Successful	輸送成功
-def_gun_belt_loader_xxl_node_1_desc		Returns true if the driver was successful in transferring a shell.	オン信号を受け取ると矢印の方向へ砲弾を輸送します.
+def_gun_belt_loader_xxl_node_1_label		Contains Ammo	弾薬装填
+def_gun_belt_loader_xxl_node_1_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_loader_xxl_node_2_label		Electric	電力
 def_gun_belt_loader_xxl_node_2_desc		Electrical power connection.	電力網から電力を供給します.
 def_gun_belt_receiver_name		Autocannon Belt (Connector)	機関砲の弾帯 (コネクター)
 def_gun_belt_receiver_desc		Autocannon belts can transfer all calibers of autocannon ammo. Connector belts allow ammo transfers between vehicles.	機関砲の弾帯は全ての口径の機関砲の弾を輸送できます. 乗り物間での弾の輸送ができます.
 def_gun_belt_receiver_s_desc		An autocannon ammo belt.	機関砲の弾帯の部品です.
-def_gun_belt_receiver_node_0_label		Connected	接続済み
-def_gun_belt_receiver_node_0_desc			他のコネクターと接続されるとオン信号が出力されます.
+def_gun_belt_receiver_node_0_label		Contains Ammo	接続済み
+def_gun_belt_receiver_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
+def_gun_belt_receiver_node_1_label		Connected	接続済み
+def_gun_belt_receiver_node_1_desc			他のコネクターと接続されるとオン信号が出力されます.
 def_gun_belt_receiver_l_name		Battle Cannon Belt (Connector)	大砲の弾帯 (小, コネクター)
 def_gun_belt_receiver_l_desc		Cannon ammo belts can store and transfer ammo shells. Connector belts allow ammo transfers between vehicles. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 乗り物間での弾の輸送ができます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_receiver_l_s_desc		A battle cannon ammo belt.	小型の大砲の弾帯の部品です.
-def_gun_belt_receiver_l_node_0_label		Connected	接続済み
-def_gun_belt_receiver_l_node_0_desc		Returns true when two nearby receivers are aligned, and can transfer ammo between them.	他のコネクターと接続されるとオン信号が出力されます.
+def_gun_belt_receiver_l_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_receiver_l_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
+def_gun_belt_receiver_l_node_1_label		Connected	接続済み
+def_gun_belt_receiver_l_node_1_desc		Returns true when two nearby receivers are aligned, and can transfer ammo between them.	他のコネクターと接続されるとオン信号が出力されます.
 def_gun_belt_receiver_xl_name		Artillery Cannon Belt (Connector)	大砲の弾帯 (中, コネクター)
 def_gun_belt_receiver_xl_desc		Cannon ammo belts can store and transfer ammo shells. Connector belts allow ammo transfers between vehicles.Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 乗り物間での弾の輸送ができます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_receiver_xl_s_desc		An artillery cannon ammo belt.	中型の大砲の弾帯の部品です.
-def_gun_belt_receiver_xl_node_0_label		Connected	接続済み
-def_gun_belt_receiver_xl_node_0_desc		Returns true when two nearby receivers are aligned, and can transfer ammo between them.	他のコネクターと接続されるとオン信号が出力されます.
+def_gun_belt_receiver_xl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_receiver_xl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
+def_gun_belt_receiver_xl_node_1_label		Connected	接続済み
+def_gun_belt_receiver_xl_node_1_desc		Returns true when two nearby receivers are aligned, and can transfer ammo between them.	他のコネクターと接続されるとオン信号が出力されます.
 def_gun_belt_receiver_xxl_name		Bertha Cannon Belt (Connector)	大砲の弾帯 (大, コネクター)
 def_gun_belt_receiver_xxl_desc		Cannon ammo belts can store and transfer ammo shells. Connector belts allow ammo transfers between vehicles. Spawned ammo type can be set in component properties window. Bertha shells are too large to be moved by hand.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 乗り物間での弾の輸送ができます. 大型の砲弾は大きすぎて手で持ち運ぶことはできません. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_receiver_xxl_s_desc		A bertha cannon ammo belt.	大型の大砲の弾帯の部品です.
-def_gun_belt_receiver_xxl_node_0_label		Connected	接続済み
-def_gun_belt_receiver_xxl_node_0_desc		Returns true when two nearby receivers are aligned, and can transfer ammo between them.	他のコネクターと接続されるとオン信号が出力されます.
+def_gun_belt_receiver_xxl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_receiver_xxl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
+def_gun_belt_receiver_xxl_node_1_label		Connected	接続済み
+def_gun_belt_receiver_xxl_node_1_desc		Returns true when two nearby receivers are aligned, and can transfer ammo between them.	他のコネクターと接続されるとオン信号が出力されます.
 def_gun_belt_straight_name		Autocannon Belt (Straight)	機関砲の弾帯 (直線)
 def_gun_belt_straight_desc		Autocannon belts can transfer all calibers of autocannon ammo.	機関砲の弾帯は全ての口径の機関砲の弾を輸送できます.
 def_gun_belt_straight_s_desc		An autocannon ammo belt.	機関砲の弾帯の部品です.
+def_gun_belt_straight_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_straight_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_straight_l_name		Battle Cannon Belt (Straight)	大砲の弾帯 (小, 直線)
 def_gun_belt_straight_l_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_straight_l_s_desc		A battle cannon ammo belt.	小型の大砲の弾帯の部品です.
+def_gun_belt_straight_l_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_straight_l_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_straight_xl_name		Artillery Cannon Belt (Straight)	大砲の弾帯 (中, 直線)
 def_gun_belt_straight_xl_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_straight_xl_s_desc		An artillery cannon ammo belt.	中型の大砲の弾帯の部品です.
+def_gun_belt_straight_xl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_straight_xl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_straight_xxl_name		Bertha Cannon Belt (Straight)	大砲の弾帯 (大, 直線)
 def_gun_belt_straight_xxl_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window. Bertha shells are too large to be moved by hand.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 大型の砲弾は大きすぎて手で持ち運ぶことはできません. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_straight_xxl_s_desc		A bertha cannon ammo belt.	大型の大砲の弾帯の部品です.
+def_gun_belt_straight_xxl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_straight_xxl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_drum_large_name		Autocannon Ammo Drum (Large)	機関砲の弾薬ドラム (大)
 def_gun_drum_large_desc		Ammo drums store autocannon cartridges of the caliber specified in the component properties window. Differing calibers cannot be mixed within a single ammo drum.	弾薬ドラムは1種類の機関砲の弾を貯蔵できます. 異なる種類の弾は同時に貯蔵できません.
 def_gun_drum_large_s_desc		A large capacity autocannon ammo drum.	機関砲の弾を貯蔵する大型の弾薬ドラムです.
@@ -4712,7 +4776,7 @@ def_radar_node_5_desc		Returns if an object has been detected.	何かを検出�
 def_radar_node_6_label		Electric	電力
 def_radar_node_6_desc		Electrical power connection.	電力網から電力を供給します.
 def_radar_advanced_name		Radar (Basic)	レーダー (基本)
-def_radar_advanced_desc		This sensor outputs the distance and relative angle to a detected object within its range and field of view using radio waves. (Max Effective Range : 60000m)	電波を利用して検出した物体の距離と相対的な角度を出力します. 範囲は60キロメートルです.
+def_radar_advanced_desc		This sensor outputs the distance and relative angle to a detected object within its range and field of view using radio waves. Sensitivity is based on FOV, target size, and distance.	電波を利用して検出した物体の距離と相対的な角度を出力します. 精度は視野角, 対象の大きさ, 対象との距離に依存します.
 def_radar_advanced_s_desc		A radar that returns information about a detected object within its view.	検出した物体の情報を出力するレーダーです.
 def_radar_advanced_node_0_label		Electric	電力
 def_radar_advanced_node_0_desc		Electrical power connection.	電力網から電力を供給します.
@@ -4721,9 +4785,9 @@ def_radar_advanced_node_1_desc		Enable the Radar.	オン信号を受け取ると
 def_radar_advanced_node_2_label		Radar Data	検出した物体の情報
 def_radar_advanced_node_2_desc		Outputs data for up to 8 targets. (On/Off 1-8 : Target Found) (Values 1-4 : Target 1 (Distance, Azimuth Angle, Elevation Angle, Time Since Detection)) (Values 5-8 : Target 2) Ect... 	検出した物体の情報を最大8個出力します. (オン/オフチャンネル 1-8: 何かを検出している間はオン信号を出力します. 検出している物体の数だけ出力されます. 数値チャンネル 1-4: 1つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 5-8: 2つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 以降, 8つ目の物体まで続きます.)
 def_radar_advanced_node_3_label		Radar Rotation	向き
-def_radar_advanced_node_3_desc		Current radar rotation from forward in turns.	レーダーが探知する方向を回転単位で制御します.
+def_radar_advanced_node_3_desc		Current radar rotation from forward in turns.	レーダーの方向を回転単位で出力します.
 def_radar_advanced_awacs_name		Radar (AWACS)	レーダー (AWACS)
-def_radar_advanced_awacs_desc		This sensor outputs the distance and relative angle to a detected object within its range and field of view using radio waves. (Max Effective Range : 500000m)	電波を利用して検出した物体の距離と相対的な角度を出力します. AWACSとは, 敵航空機を早期に探知して, 味方の指揮を取るためのレーダーを搭載した航空機のことで, これはそのレーダーです. 範囲は500キロメートルです.
+def_radar_advanced_awacs_desc		This sensor outputs the distance and relative angle to a detected object within its range and field of view using radio waves. Sensitivity is based on FOV, target size, and distance.	電波を利用して検出した物体の距離と相対的な角度を出力します. AWACSとは, 敵航空機を早期に探知して, 味方の指揮を取るためのレーダーを搭載した航空機のことで, これはそのレーダーです. 精度は視野角, 対象の大きさ, 対象との距離に依存します.
 def_radar_advanced_awacs_s_desc		A long range radar that returns information about a detected object within its view.	検出した物体の情報を出力する長距離のレーダーです.
 def_radar_advanced_awacs_node_0_label		Electric	電力
 def_radar_advanced_awacs_node_0_desc		Electrical power connection.	電力網から電力を供給します.
@@ -4732,9 +4796,9 @@ def_radar_advanced_awacs_node_1_desc		Enable the Radar.	オン信号を受け取
 def_radar_advanced_awacs_node_2_label		Radar Data	検出した物体の情報
 def_radar_advanced_awacs_node_2_desc		Outputs data for up to 8 targets. (On/Off 1-8 : Target Found) (Values 1-4 : Target 1 (Distance, Azimuth Angle, Elevation Angle, Time Since Detection)) (Values 5-8 : Target 2) Ect... 	検出した物体の情報を最大8個出力します. (オン/オフチャンネル 1-8: 何かを検出している間はオン信号を出力します. 検出している物体の数だけ出力されます. 数値チャンネル 1-4: 1つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 5-8: 2つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 以降, 8つ目の物体まで続きます.)
 def_radar_advanced_awacs_node_3_label		Radar Rotation	向き
-def_radar_advanced_awacs_node_3_desc		Current radar rotation from forward in turns.	レーダーが探知する方向を回転単位で制御します.
+def_radar_advanced_awacs_node_3_desc		Current radar rotation from forward in turns.	レーダーの方向を回転単位で出力します.
 def_radar_advanced_dish_name		Radar (Dish)	レーダー (皿)
-def_radar_advanced_dish_desc		This sensor outputs the distance and relative angle to a detected object within its range and field of view using radio waves. (Max Effective Range : 200000m)	電波を利用して検出した物体の距離と相対的な角度を出力します. 範囲は20キロメートルです.
+def_radar_advanced_dish_desc		This sensor outputs the distance and relative angle to a detected object within its range and field of view using radio waves. Sensitivity is based on FOV, target size, and distance.	電波を利用して検出した物体の距離と相対的な角度を出力します. 精度は視野角, 対象の大きさ, 対象との距離に依存します.
 def_radar_advanced_dish_s_desc		A radar that returns information about a detected object within its view.	検出した物体の情報を出力するレーダーです.
 def_radar_advanced_dish_node_0_label		Electric	電力
 def_radar_advanced_dish_node_0_desc		Electrical power connection.	電力網から電力を供給します.
@@ -4743,9 +4807,9 @@ def_radar_advanced_dish_node_1_desc		Enable the Radar.	オン信号を受け取�
 def_radar_advanced_dish_node_2_label		Radar Data	検出した物体の情報
 def_radar_advanced_dish_node_2_desc		Outputs data for up to 8 targets. (On/Off 1-8 : Target Found) (Values 1-4 : Target 1 (Distance, Azimuth Angle, Elevation Angle, Time Since Detection)) (Values 5-8 : Target 2) Ect... 	検出した物体の情報を最大8個出力します. (オン/オフチャンネル 1-8: 何かを検出している間はオン信号を出力します. 検出している物体の数だけ出力されます. 数値チャンネル 1-4: 1つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 5-8: 2つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 以降, 8つ目の物体まで続きます.)
 def_radar_advanced_dish_node_3_label		Radar Rotation	向き
-def_radar_advanced_dish_node_3_desc		Current radar rotation from forward in turns.	レーダーが探知する方向を回転単位で制御します.
+def_radar_advanced_dish_node_3_desc		Current radar rotation from forward in turns.	レーダーの方向を回転単位で出力します.
 def_radar_advanced_missile_name		Radar (Missile)	レーダー (ミサイル)
-def_radar_advanced_missile_desc		This sensor outputs the distance and relative angle to a detected object within its range and field of view using radio waves. This sensor is designed for missiles and its radar acts along the Z axis. (Max Effective Range : 20000m)	電波を利用して検出した物体の距離と相対的な角度を出力します. このレーダーはミサイルへの搭載を想定しており, レーダーはz軸方向に作用します. 範囲は20キロメートルです.
+def_radar_advanced_missile_desc		This sensor outputs the distance and relative angle to a detected object within its range and field of view using radio waves. This sensor is designed for missiles and its radar acts along the Z axis. Sensitivity is based on FOV, target size, and distance.	電波を利用して検出した物体の距離と相対的な角度を出力します. このレーダーはミサイルへの搭載を想定しており, レーダーはz軸方向に作用します. 精度は視野角, 対象の大きさ, 対象との距離に依存します.
 def_radar_advanced_missile_s_desc		A short range radar that returns information about a detected object within its view.	検出した物体の情報を出力する短距離のレーダーです.
 def_radar_advanced_missile_node_0_label		Electric	電力
 def_radar_advanced_missile_node_0_desc		Electrical power connection.	電力網から電力を供給します.
@@ -4753,10 +4817,12 @@ def_radar_advanced_missile_node_1_label		Activate	起動
 def_radar_advanced_missile_node_1_desc		Enable the Radar.	オン信号を受け取るとレーダーを起動します.
 def_radar_advanced_missile_node_2_label		Radar Data	検出した物体の情報
 def_radar_advanced_missile_node_2_desc		Outputs data for up to 8 targets. (On/Off 1-8 : Target Found) (Values 1-4 : Target 1 (Distance, Azimuth Angle, Elevation Angle, Time Since Detection)) (Values 5-8 : Target 2) Ect... 	検出した物体の情報を最大8個出力します. (オン/オフチャンネル 1-8: 何かを検出している間はオン信号を出力します. 検出している物体の数だけ出力されます. 数値チャンネル 1-4: 1つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 5-8: 2つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 以降, 8つ目の物体まで続きます.)
-def_radar_advanced_missile_node_3_label		Radar Rotation	向き
-def_radar_advanced_missile_node_3_desc		Current radar rotation from forward in turns.	レーダーが探知する方向を回転単位で制御します.
+def_radar_advanced_missile_node_3_label		Missile Output	ミサイル出力
+def_radar_advanced_missile_node_3_desc		Outputs x and y data for the most immediate target. Link this directly into a rocket fins component.	最寄りの対象のXY座標を出力します. ミサイルの翼の部品と直接接続して下さい.
+def_radar_advanced_missile_node_4_label		Radar Rotation	向き
+def_radar_advanced_missile_node_4_desc		Current radar rotation from forward in turns.	レーダーの方向を回転単位で出力します.
 def_radar_advanced_phalanx_name		Radar (Phalanx)	レーダー (ファランクス)
-def_radar_advanced_phalanx_desc		This sensor outputs the distance and relative angle to a detected object within its range and field of view using radio waves. (Max Effective Range : 100000m)	電波を利用して検出した物体の距離と相対的な角度を出力します. ファランクスとは, レーダーにより小型高速の目標を自動で追撃するシステムのことです. 範囲は100キロメートルです.
+def_radar_advanced_phalanx_desc		This sensor outputs the distance and relative angle to a detected object within its range and field of view using radio waves. Sensitivity is based on FOV, target size, and distance.	電波を利用して検出した物体の距離と相対的な角度を出力します. ファランクスとは, レーダーにより小型高速の目標を自動で追撃するシステムのことです. 精度は視野角, 対象の大きさ, 対象との距離に依存します.
 def_radar_advanced_phalanx_s_desc		A radar that returns information about a detected object within its view.	検出した物体の情報を出力するレーダーです.
 def_radar_advanced_phalanx_node_0_label		Electric	電力
 def_radar_advanced_phalanx_node_0_desc		Electrical power connection.	電力網から電力を供給します.
@@ -4765,7 +4831,7 @@ def_radar_advanced_phalanx_node_1_desc		Enable the Radar.	オン信号を受け�
 def_radar_advanced_phalanx_node_2_label		Radar Data	検出した物体の情報
 def_radar_advanced_phalanx_node_2_desc		Outputs data for up to 8 targets. (On/Off 1-8 : Target Found) (Values 1-4 : Target 1 (Distance, Azimuth Angle, Elevation Angle, Time Since Detection)) (Values 5-8 : Target 2) Ect... 	検出した物体の情報を最大8個出力します. (オン/オフチャンネル 1-8: 何かを検出している間はオン信号を出力します. 検出している物体の数だけ出力されます. 数値チャンネル 1-4: 1つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 5-8: 2つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 以降, 8つ目の物体まで続きます.)
 def_radar_advanced_phalanx_node_3_label		Radar Rotation	向き
-def_radar_advanced_phalanx_node_3_desc		Current radar rotation from forward in turns.	レーダーが探知する方向を回転単位で制御します.
+def_radar_advanced_phalanx_node_3_desc		Current radar rotation from forward in turns.	レーダーの方向を回転単位で出力します.
 def_radar_detector_name		Radar Detector	レーダー検出器
 def_radar_detector_desc		This sensor outputs an On signal when it detects a radio wave.	レーダーの電波を検出するとオン信号を出力します.
 def_radar_detector_s_desc		A sensor that can detect radar waves.	レーダーの電波を検出する検出器です.
@@ -5641,7 +5707,7 @@ def_seat_hotas_node_62_label		Headset Audio	ヘッドセット音声信号入力
 def_seat_hotas_node_62_desc			ヘッドセットが選択されているときに, 使用しているプレイヤーへ音声を再生します.
 def_seat_medical_name		Medical Bed	医療用ベッド
 def_seat_medical_desc		You can get in and out of the medical bed by interacting with it using [$[action_use_seat]]. You can place a rescued survivor in any medical bed by using [$[action_use_seat]] while carrying them.	[$[action_use_seat]]　を押して寝たり起きたりします. 意識がある人を担いでいる時に [$[action_use_seat]] を押してその人を寝かせます. 医療用ベッドに寝ている人は体力の回復が早くなります. 医療用ベッドでは時間の早送りができません.
-def_seat_medical_s_desc		A bed equiped with medical monitoring equipment.	医療設備が付属しているベッド.
+def_seat_medical_s_desc		A bed equiped with medical monitoring equipment, slowly heals injured characters.	医療設備が付属しているベッドです. 患者をゆっくりと治療します.
 def_seat_medical_node_0_label		Occupied	使用中
 def_seat_medical_node_0_desc		Outputs an on signal if this bed is occupied by a character.	誰かが寝ているとオン信号を出力します.
 def_seat_padded_name		Padded Seat	座席 (簡易)
@@ -5707,19 +5773,15 @@ def_sign_na_name		Paintable Sign	描画可能な看板
 def_sign_na_desc		This block has a paintable surface where small grid squares can be painted individually.	この部品には9x9の細かいグリッドに分けられている面があり, その面に細かく描画ができます.
 def_sign_na_s_desc		Sign block for displaying painted detail.	着色モードで細かい描画が可能な看板です.
 def_ski_name		Ski	スキー板 (大)
-def_ski_desc		This component has low friction moving along its length, but grips laterally.	スキー板の長辺方向にはよく滑りますが, 短編方向には滑りにくいです.
+def_ski_desc		This component has low friction moving along its length, but grips laterally.	スキー板の長辺方向にはよく滑りますが, 短辺方向には滑りにくいです.
 def_ski_s_desc		A wide hinged ski.	大型の乗り物用スキー板です.
 def_ski_node_0_label		Steering	操舵
 def_ski_node_0_desc		Accepts a value between -1 and 1 that represents the extremes of the steering rotation.	-1から1の範囲の数値で操舵します.
-def_ski_node_1_label		Electric	電力
-def_ski_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_ski_small_name		Ski (Small)	スキー板 (小)
-def_ski_small_desc		This component has low friction moving along its length, but grips laterally.	スキー板の長辺方向にはよく滑りますが, 短編方向には滑りにくいです.
+def_ski_small_desc		This component has low friction moving along its length, but grips laterally.	スキー板の長辺方向にはよく滑りますが, 短辺方向には滑りにくいです.
 def_ski_small_s_desc		A small hinged ski.	小型の乗り物用スキー板です.
 def_ski_small_node_0_label		Steering	操舵
 def_ski_small_node_0_desc		Accepts a value between -1 and 1 that represents the extremes of the steering rotation.	-1から1の範囲の数値で操舵します.
-def_ski_small_node_1_label		Electric	電力
-def_ski_small_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_small_light_name		Light	照明
 def_small_light_desc
 def_small_light_s_desc		A basic light that can be controlled using an on/off signal.	オン/オフ信号で制御できる基本的な照明です.
@@ -5742,12 +5804,33 @@ def_solar_node_0_desc		The electric connection to output electric energy.	電力
 def_solid_rocket_huge_name		Solid Rocket Fuel (Huge)	固体燃料ロケットの燃料 (特大)
 def_solid_rocket_huge_desc		Fuel can be stacked to increase the burn duration of a rocket booster.	同じ大きさの固体燃料ロケットの燃料を複数設置して燃料時間を延長させられます.
 def_solid_rocket_huge_s_desc		A huge solid rocket fuel segment.	特大型の固体燃料ロケットの燃料部品の一部です.
+def_solid_rocket_huge_fins_name		Solid Rocket Fuel (Huge) (Fins)	固体燃料ロケットの燃料 (特大, 翼付き)
+def_solid_rocket_huge_fins_desc		Fuel can be stacked to increase the burn duration of a rocket booster. Link up to the instruction output of a missile radar for automatic guidance.	同じ大きさの固体燃料ロケットの燃料を複数設置して燃料時間を延長させられます. レーザー (ミサイル) の「ミサイル出力」ノードと接続してレーダー誘導型のミサイルを作成できます.
+def_solid_rocket_huge_fins_s_desc		A huge solid rocket fuel segment with in-built controllable fins.	特大型の固体燃料ロケットの燃料部品の一部です. 制御可能な翼が付いています.
+def_solid_rocket_huge_fins_node_0_label		Composite Input	翼制御
+def_solid_rocket_huge_fins_node_0_desc		Composite data for the control surfaces.	翼を制御する複合信号です.
+def_solid_rocket_huge_fins_node_1_label		Electric	電力
+def_solid_rocket_huge_fins_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_solid_rocket_large_name		Solid Rocket Fuel (Large)	固体燃料ロケットの燃料 (大)
 def_solid_rocket_large_desc		Fuel can be stacked to increase the burn duration of a rocket booster.	大型の固体燃料ロケットの燃料部品の一部です.
 def_solid_rocket_large_s_desc		A large solid rocket fuel segment.	同じ大きさの固体燃料ロケットの燃料を複数設置して燃料時間を延長させられます.
+def_solid_rocket_large_fins_name		Solid Rocket Fuel (Large) (Fins)	固体燃料ロケットの燃料 (大, 翼付き)
+def_solid_rocket_large_fins_desc		Fuel can be stacked to increase the burn duration of a rocket booster. Link up to the instruction output of a missile radar for automatic guidance.	同じ大きさの固体燃料ロケットの燃料を複数設置して燃料時間を延長させられます. レーザー (ミサイル) の「ミサイル出力」ノードと接続してレーダー誘導型のミサイルを作成できます.
+def_solid_rocket_large_fins_s_desc		A large solid rocket fuel segment with in-built controllable fins.	大型の固体燃料ロケットの燃料部品の一部です. 制御可能な翼が付いています.
+def_solid_rocket_large_fins_node_0_label		Composite Input	翼制御
+def_solid_rocket_large_fins_node_0_desc		Composite data for the control surfaces.	翼を制御する複合信号です.
+def_solid_rocket_large_fins_node_1_label		Electric	電力
+def_solid_rocket_large_fins_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_solid_rocket_medium_name		Solid Rocket Fuel (Medium)	固体燃料ロケットの燃料 (中)
 def_solid_rocket_medium_desc		Fuel can be stacked to increase the burn duration of a rocket booster.	中型の固体燃料ロケットの燃料部品の一部です.
 def_solid_rocket_medium_s_desc		A medium solid rocket fuel segment.	同じ大きさの固体燃料ロケットの燃料を複数設置して燃料時間を延長させられます.
+def_solid_rocket_medium_fins_name		Solid Rocket Fuel (Medium) (Fins)	固体燃料ロケットの燃料 (中, 翼付き)
+def_solid_rocket_medium_fins_desc		Fuel can be stacked to increase the burn duration of a rocket booster. Link up to the instruction output of a missile radar for automatic guidance.	同じ大きさの固体燃料ロケットの燃料を複数設置して燃料時間を延長させられます. レーザー (ミサイル) の「ミサイル出力」ノードと接続してレーダー誘導型のミサイルを作成できます.
+def_solid_rocket_medium_fins_s_desc		A medium solid rocket fuel segment with in-built controllable fins.	中型の固体燃料ロケットの燃料部品の一部です. 制御可能な翼が付いています.
+def_solid_rocket_medium_fins_node_0_label		Composite Input	翼制御
+def_solid_rocket_medium_fins_node_0_desc		Composite data for the control surfaces.	翼を制御する複合信号です.
+def_solid_rocket_medium_fins_node_1_label		Electric	電力
+def_solid_rocket_medium_fins_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_solid_rocket_nozzle_huge_name		Solid Rocket Booster (Huge)	固形燃料ロケットの噴出口 (特大)
 def_solid_rocket_nozzle_huge_desc		Additional fuel can be stacked on top of the booster to increase its burn duration. The burn rate can be set in the component's properties, with slower burn rates producing less thrust.	同じ大きさの固体燃料ロケットの燃料を複数設置して燃料時間を延長させられます. 燃焼速度はプロパティウィンドウから設定できます. 燃料速度を遅くすると燃焼時間は増えますが, 発生する推進力が小さくなります.
 def_solid_rocket_nozzle_huge_s_desc		A huge single-use solid rocket booster.	特大型の使い捨て固体燃料ロケットの噴出口です.
@@ -5777,6 +5860,13 @@ def_solid_rocket_nozzle_small_node_0_desc		Triggers the booster's combustion.	�
 def_solid_rocket_small_name		Solid Rocket Fuel (Small)	固体燃料ロケットの燃料 (小)
 def_solid_rocket_small_desc		Fuel can be stacked to increase the burn duration of a rocket booster.	同じ大きさの固体燃料ロケットの燃料を複数設置して燃料時間を延長させられます.
 def_solid_rocket_small_s_desc		A small solid rocket fuel segment.	小型の固体燃料ロケットの燃料部品の一部です.
+def_solid_rocket_small_fins_name		Solid Rocket Fuel (Small) (Fins)	固体燃料ロケットの燃料 (小, 翼付き)
+def_solid_rocket_small_fins_desc		Fuel can be stacked to increase the burn duration of a rocket booster. Link up to the instruction output of a missile radar for automatic guidance.	同じ大きさの固体燃料ロケットの燃料を複数設置して燃料時間を延長させられます. レーザー (ミサイル) の「ミサイル出力」ノードと接続してレーダー誘導型のミサイルを作成できます.
+def_solid_rocket_small_fins_s_desc		A small solid rocket fuel segment with in-built controllable fins.	小型の固体燃料ロケットの燃料部品の一部です. 制御可能な翼が付いています.
+def_solid_rocket_small_fins_node_0_label		Composite Input	翼制御
+def_solid_rocket_small_fins_node_0_desc		Composite data for the control surfaces.	翼を制御する複合信号です.
+def_solid_rocket_small_fins_node_1_label		Electric	電力
+def_solid_rocket_small_fins_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_speaker_name		Speaker (Small)	スピーカー
 def_speaker_desc		A small speaker capable of playing audio data to nearby players. (Range : 15)	音が聞こえる範囲は15メートルです.
 def_speaker_s_desc		A speaker capable of playing audio data to players within its range.	範囲内のプレイヤーに音声を再生できるスピーカーです.
