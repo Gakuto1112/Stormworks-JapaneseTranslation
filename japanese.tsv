@@ -3491,7 +3491,7 @@ def_gun_belt_loader_xxl_node_2_desc		Electrical power connection.	電力網か�
 def_gun_belt_receiver_name		Autocannon Belt (Connector)	機関砲の弾帯 (コネクター)
 def_gun_belt_receiver_desc		Autocannon belts can transfer all calibers of autocannon ammo. Connector belts allow ammo transfers between vehicles.	機関砲の弾帯は全ての口径の機関砲の弾を輸送できます. 乗り物間での弾の輸送ができます.
 def_gun_belt_receiver_s_desc		An autocannon ammo belt.	機関砲の弾帯の部品です.
-def_gun_belt_receiver_node_0_label		Contains Ammo	接続済み
+def_gun_belt_receiver_node_0_label		Contains Ammo	弾薬装填
 def_gun_belt_receiver_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_receiver_node_1_label		Connected	接続済み
 def_gun_belt_receiver_node_1_desc			他のコネクターと接続されるとオン信号が出力されます.
