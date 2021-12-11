@@ -1109,14 +1109,14 @@ id	description	en	local
 		Penguin	ペンギン
 		Seal	アザラシ
 		Whale	クジラ
-		Beer	Beer
+		Beer	ビール
 		Pilot	パイロット
 		Umbrella	傘
 		Diving Helmet	ダイビングヘルメット
 		Witch	魔女
 		Pumpkin	カボチャ
 		Santa	サンタクロース
-		Antlers	アントラーズ
+		Antlers	トナカイ
 		Aviators	アビエイターサングラス
 		Goggles	ゴーグル
 		Eye patch	眼帯
@@ -2026,6 +2026,54 @@ id	description	en	local
 		Fin Influence	翼の効力
 		Group: Active	グループ: 有効アドオン優先
 		Group: Date	グループ: 最終更新日順
+		Xmas Tree	クリスマスツリー柄
+		Xmas Stormworks	クリスマスStormworks柄
+		Xmas Stormworks	クリスマスStromworks柄
+		Xmas Reindeer	トナカイ柄
+		Xmas Elf	エルフ
+		Xmas Nutcracker	くるみ割り人形
+		Xmas Elf	エルフ
+		Xmas Winter Hat	ニット帽
+		Xmas Tree	クリスマスツリー
+		Xmas Tophat/Scarf	シルクハットとスカーフ
+		Xmas Pudding	プリン
+		Xmas Party Hat	パーティ帽子
+		Xmas Elf Costume	エルフの衣装
+		Ushanka	ウシャンカ
+		Sheriff Hat	シェリフハット
+		Raf Sidecap	空軍ギャリソンキャップ
+		Raf Officer Hat	空軍士官帽
+		Navy Sidecap	海軍ギャリソンキャップ
+		Navy Officer Hat	海軍士官帽
+		Mask	マスク
+		k6 3 Helmet	K6-3ヘルメット
+		WZ 063 Helmet	WZ-063ヘルメット
+		Helmet Visor	ヘルメットバイザー
+		Heli Helmet	航空ヘルメット
+		Headset	ヘッドセット
+		Cap	キャップ
+		Boonie Hat	ブーニーハット
+		Bomb Disposal Helmet	爆弾処理用ヘルメット
+		Beret	べーれー帽
+		Balaclava	目出し帽
+		Army Sidecap	陸軍ギャリソンキャップ
+		Army Officer	陸軍士官帽
+		Suit Bowtie	蝶ネクタイ
+		Suit	スーツ
+		Safety Vest	安全ベスト
+		Raf Suit	空軍の服
+		Plate Vest	防弾チョッキ
+		Navy Uniform	海軍の制服
+		Navy Suit	海軍の服
+		Messenger Bag	メッセンジャーの鞄
+		Chest rig	チェストリグ
+		Bomb Disposal Outfit	爆弾処理用の服
+		Black Hawk Vest	ブラックホークベスト
+		Backpack	リュック
+		Assault Pack	アサルトパック
+		Army Uniform	陸軍の制服
+		Army Suit	陸軍の服
+		Armour Vest	装甲服
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
@@ -3324,6 +3372,8 @@ def_gps_sensor_node_2_desc		Electrical power connection.	電力網から電力�
 def_gun_belt_corner_name		Autocannon Ammo (Corner)	機関砲の弾帯 (角長辺)
 def_gun_belt_corner_desc		Autocannon belts can transfer all calibers of autocannon ammo.	機関砲の弾帯は全ての口径の機関砲の弾を輸送できます.
 def_gun_belt_corner_s_desc		An autocannon ammo belt.	機関砲の弾帯の部品です.
+def_gun_belt_corner_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_corner_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_corner_flat_name		Autocannon Belt (Corner Flat)	機関砲の弾帯 (角短辺)
 def_gun_belt_corner_flat_desc		Autocannon belts can transfer all calibers of autocannon ammo.	機関砲の弾帯は全ての口径の機関砲の弾を輸送できます.
 def_gun_belt_corner_flat_s_desc		An autocannon ammo belt.	機関砲の弾帯の部品です.
@@ -3489,12 +3539,12 @@ def_gun_belt_straight_xxl_node_0_desc		Returns true if the belt contains a shell
 def_gun_drum_large_name		Autocannon Ammo Drum (Large)	機関砲の弾薬ドラム (大)
 def_gun_drum_large_desc		Ammo drums store autocannon cartridges of the caliber specified in the component properties window. Differing calibers cannot be mixed within a single ammo drum.	弾薬ドラムは1種類の機関砲の弾を貯蔵できます. 異なる種類の弾は同時に貯蔵できません.
 def_gun_drum_large_s_desc		A large capacity autocannon ammo drum.	機関砲の弾を貯蔵する大型の弾薬ドラムです.
-def_gun_drum_large_node_0_label		ammo count	弾薬数
+def_gun_drum_large_node_0_label		Ammo Count	弾薬数
 def_gun_drum_large_node_0_desc		Outputs the total ammo count stored in the drum.	弾薬ドラムに貯蔵されている弾薬の数を出力します.
 def_gun_drum_medium_name		Autocannon Ammo Drum (Medium)	機関砲の弾薬ドラム (中)
 def_gun_drum_medium_desc		Ammo drums store autocannon cartridges of the caliber specified in the component properties window. Differing calibers cannot be mixed within a single ammo drum.	弾薬ドラムは1種類の機関砲の弾を貯蔵できます. 異なる種類の弾は同時に貯蔵できません.
 def_gun_drum_medium_s_desc		A medium capacity autocannon ammo drum.	機関砲の弾を貯蔵する中型の弾薬ドラムです.
-def_gun_drum_medium_node_0_label		ammo count	弾薬数
+def_gun_drum_medium_node_0_label		Ammo Count	弾薬数
 def_gun_drum_medium_node_0_desc		Outputs the total ammo count stored in the drum.	弾薬ドラムに貯蔵されている弾薬の数を出力します.
 def_gun_drum_small_name		Autocannon Ammo Drum (Small)	機関砲の弾薬ドラム (小)
 def_gun_drum_small_desc		Ammo drums store autocannon cartridges of the caliber specified in the component properties window. Differing calibers cannot be mixed within a single ammo drum.	弾薬ドラムは1種類の機関砲の弾を貯蔵できます. 異なる種類の弾は同時に貯蔵できません.
