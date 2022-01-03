@@ -2029,6 +2029,7 @@ id	description	en	local
 		Xmas Tree	クリスマスツリー柄
 		Xmas Stormworks	クリスマスStormworks柄
 		Xmas Stormworks	クリスマスStromworks柄
+		Xmas Stormworks	クリスマスStromworks柄
 		Xmas Reindeer	トナカイ柄
 		Xmas Elf	エルフ
 		Xmas Nutcracker	くるみ割り人形
@@ -3568,6 +3569,24 @@ def_gun_l_node_2_desc		When true: opens the breech to allow shells to be loaded.
 def_gun_l_barrel_name		Battle Cannon Barrel Extension	大砲の延長砲身 (小)
 def_gun_l_barrel_desc		Barrel extensions increase weapon accuracy, but add additional weight.	砲身を延長すると射撃精度が上がりますが, 重量が増加します.
 def_gun_l_barrel_s_desc		A battle cannon barrel extension.	小型大砲の砲身を延長するための延長部品です.
+def_gun_l_barrel_1_name		Battle Cannon Barrel Extension	大砲の延長砲身 (小)
+def_gun_l_barrel_1_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
+def_gun_l_barrel_1_s_desc		A battle cannon barrel extension.	小型大砲の砲身を延長するための延長部品です.
+def_gun_l_barrel_2_name		Battle Cannon Barrel Extension	大砲の延長砲身 (小)
+def_gun_l_barrel_2_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
+def_gun_l_barrel_2_s_desc		A battle cannon barrel extension.	小型大砲の砲身を延長するための延長部品です.
+def_gun_l_barrel_3_name		Battle Cannon Barrel Extension	大砲の延長砲身 (小)
+def_gun_l_barrel_3_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
+def_gun_l_barrel_3_s_desc		A battle cannon barrel extension.	小型大砲の砲身を延長するための延長部品です.
+def_gun_l_muzzle_name		Battle Cannon Muzzle Break	大砲のマズルブレーキ (小)
+def_gun_l_muzzle_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_l_muzzle_s_desc		A battle cannon muzzle break.	小型大砲のマズルブレーキです.
+def_gun_l_muzzle_1_name		Battle Cannon Muzzle Break	大砲のマズルブレーキ (小)
+def_gun_l_muzzle_1_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_l_muzzle_1_s_desc		A battle cannon muzzle break.	小型大砲のマズルブレーキです.
+def_gun_l_muzzle_2_name		Battle Cannon Muzzle Break	大砲のマズルブレーキ (小)
+def_gun_l_muzzle_2_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_l_muzzle_2_s_desc		A battle cannon muzzle break.	小型大砲のマズルブレーキです.
 def_gun_m_name		Heavy Autocannon	機関砲 (大)
 def_gun_m_desc		Heavy autocannons bridge the gap between fast-firing autocannons and high-caliber cannons. Autocannons require electric power to load ammo from connected belts or drums.	この大型の機関砲は高速射撃ができる小型の機関砲と高威力の大砲の中間に位置する砲台です. 弾薬を装填するために電力が必要となります. 射撃するには武器DLCを有効にする必要があります.
 def_gun_m_s_desc		A heavy autocannon.	大型の機関砲です.
@@ -3580,6 +3599,24 @@ def_gun_m_node_2_desc		Electrical power connection.	電力網から電力を供�
 def_gun_m_barrel_name		Heavy Autocannon Barrel Extension	機関砲の延長砲身 (大)
 def_gun_m_barrel_desc		Barrel extensions increase weapon accuracy, but add additional weight.	砲身を延長すると射撃精度が上がりますが, 重量が増加します.
 def_gun_m_barrel_s_desc		A heavy autocannon barrel extension.	大型機関砲の砲身を延長するための延長部品です.
+def_gun_m_barrel_1_name		Heavy Autocannon Barrel Extension	機関砲の延長砲身 (大)
+def_gun_m_barrel_1_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
+def_gun_m_barrel_1_s_desc		A heavy autocannon barrel extension.	大型機関砲のマズルブレーキです.
+def_gun_m_barrel_2_name		Heavy Autocannon Barrel Extension	機関砲の延長砲身 (大)
+def_gun_m_barrel_2_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
+def_gun_m_barrel_2_s_desc		A heavy autocannon barrel extension.	大型機関砲のマズルブレーキです.
+def_gun_m_barrel_3_name		Heavy Autocannon Barrel Extension	機関砲の延長砲身 (大)
+def_gun_m_barrel_3_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
+def_gun_m_barrel_3_s_desc		A heavy autocannon barrel extension.	大型機関砲のマズルブレーキです.
+def_gun_m_muzzle_name		Heavy Autocannon Muzzle Break	機関砲のマズルブレーキ (大)
+def_gun_m_muzzle_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_m_muzzle_s_desc		A heavy autocannon muzzle break.	大型機関砲のマズルブレーキです.
+def_gun_m_muzzle_1_name		Heavy Autocannon Muzzle Break	機関砲のマズルブレーキ (大)
+def_gun_m_muzzle_1_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_m_muzzle_1_s_desc		A heavy autocannon muzzle break.	大型機関砲のマズルブレーキです.
+def_gun_m_muzzle_2_name		Heavy Autocannon Muzzle Break	機関砲のマズルブレーキ (大)
+def_gun_m_muzzle_2_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_m_muzzle_2_s_desc		A heavy autocannon muzzle break.	大型機関砲のマズルブレーキです.
 def_gun_rocket_launcher_name		Rocket Launcher	ロケットランチャー
 def_gun_rocket_launcher_desc		Rocket launchers fire powerful high explosive rockets, but cannot be reloaded once empty. Rockets are vulnerable to bullets while in flight.	ロケットランチャーは強力な爆発性ロケットを発射しますが, 一度発射すると再装填できません. 飛行中のロケットは銃弾で打ち落とせます. 発射するには武器DLCを有効にする必要があります.
 def_gun_rocket_launcher_s_desc		A 4-shot rocket launcher.	4連装のロケットランチャーです.
@@ -3599,8 +3636,20 @@ def_gun_s_node_1_desc		Returns true when a cartridge is loaded and ready to fire
 def_gun_s_node_2_label		Electric	電力
 def_gun_s_node_2_desc		Electrical power connection.	電力網から電力を供給します.
 def_gun_s_barrel_name		Light Autocannon Barrel Extension	機関砲の延長砲身 (小)
-def_gun_s_barrel_desc		Barrel extensions increase weapon accuracy, but add additional weight.	砲身を延長すると射撃精度が上がりますが, 重量が増加します.
+def_gun_s_barrel_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
 def_gun_s_barrel_s_desc		A light autocannon barrel extension.	小型機関砲の砲身を延長するための延長部品です.
+def_gun_s_muzzle_name		Light Autocannon Muzzle Break	機関砲のマズルブレーキ (小)
+def_gun_s_muzzle_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_s_muzzle_s_desc		A light autocannon muzzle break.	小型機関砲のマズルブレーキです.
+def_gun_s_muzzle_1_name		Light Autocannon Muzzle Break	機関砲のマズルブレーキ (小)
+def_gun_s_muzzle_1_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_s_muzzle_1_s_desc		A light autocannon muzzle break.	小型機関砲のマズルブレーキです.
+def_gun_s_muzzle_2_name		Light Autocannon Muzzle Break	機関砲のマズルブレーキ (小)
+def_gun_s_muzzle_2_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_s_muzzle_2_s_desc		A light autocannon muzzle break.	小型機関砲のマズルブレーキです.
+def_gun_s_muzzle_3_name		Light Autocannon Muzzle Break	機関砲のマズルブレーキ (小)
+def_gun_s_muzzle_3_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_s_muzzle_3_s_desc		A light autocannon muzzle break.	小型機関砲のマズルブレーキです.
 def_gun_v_name		Rotary Autocannon	機関砲 (中)
 def_gun_v_desc		Rotary autocannons have a tremendous rate of fire, but can overheat quickly. Autocannons require electric power to load ammo from connected belts or drums.	この中型の機関砲は高速射撃が可能ですが, すぐに過熱します. 弾薬を装填するために電力が必要となります. 射撃するには武器DLCを有効にする必要があります.
 def_gun_v_s_desc		A rotary autocannon.	中型の機関砲です.
@@ -3623,8 +3672,26 @@ def_gun_xl_node_1_desc		Returns true when a shell is loaded and ready to fire.	�
 def_gun_xl_node_2_label		Open Breech	砲尾の開閉
 def_gun_xl_node_2_desc		When true: opens the breech to allow shells to be loaded.	オン信号を受け取ると砲尾が開き, 砲弾を手動で装填できます.
 def_gun_xl_barrel_name		Artillery Cannon Barrel Extension	大砲の延長砲身 (中)
-def_gun_xl_barrel_desc		Barrel extensions increase weapon accuracy, but add additional weight.	砲身を延長すると射撃精度が上がりますが, 重量が増加します.
+def_gun_xl_barrel_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
 def_gun_xl_barrel_s_desc		An artillery cannon barrel extension.	中型大砲の砲身を延長するための延長部品です.
+def_gun_xl_barrel_1_name		Artillery Cannon Barrel Extension	大砲の延長砲身 (中)
+def_gun_xl_barrel_1_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
+def_gun_xl_barrel_1_s_desc		An artillery cannon barrel extension.	中型大砲の砲身を延長するための延長部品です.
+def_gun_xl_barrel_2_name		Artillery Cannon Barrel Extension	大砲の延長砲身 (中)
+def_gun_xl_barrel_2_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
+def_gun_xl_barrel_2_s_desc		An artillery cannon barrel extension.	中型大砲の砲身を延長するための延長部品です.
+def_gun_xl_barrel_3_name		Artillery Cannon Barrel Extension	大砲の延長砲身 (中)
+def_gun_xl_barrel_3_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
+def_gun_xl_barrel_3_s_desc		An artillery cannon barrel extension.	中型大砲の砲身を延長するための延長部品です.
+def_gun_xl_muzzle_name		Artillery Cannon Muzzle Break	大砲のマズルブレーキ (中)
+def_gun_xl_muzzle_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_xl_muzzle_s_desc		A artillery cannon muzzle break.	中型大砲のマズルブレーキです.
+def_gun_xl_muzzle_1_name		Artillery Cannon Muzzle Break	大砲のマズルブレーキ (中)
+def_gun_xl_muzzle_1_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_xl_muzzle_1_s_desc		A artillery cannon muzzle break.	中型大砲のマズルブレーキです.
+def_gun_xl_muzzle_2_name		Artillery Cannon Muzzle Break	大砲のマズルブレーキ (中)
+def_gun_xl_muzzle_2_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_xl_muzzle_2_s_desc		A artillery cannon muzzle break.	中型大砲のマズルブレーキです.
 def_gun_xs_name		Machine Gun	機関銃
 def_gun_xs_desc		Machine guns are lightweight and compact, but require ammo boxes to be reloaded by hand.	機関銃は軽量で小型ですが, 弾薬を手動で装填する必要があります. 射撃するには武器DLCを有効にする必要があります.
 def_gun_xs_s_desc		A machine gun.	機関銃です.
@@ -3642,7 +3709,7 @@ def_gun_xxl_node_1_desc		Returns true when a shell is loaded and ready to fire.	
 def_gun_xxl_node_2_label		Open Breech	砲尾の開閉
 def_gun_xxl_node_2_desc		When true: opens the breech to allow shells to be loaded.	オン信号を受け取ると砲尾が開き, 砲弾を手動で装填できます.
 def_gun_xxl_barrel_name		Bertha Cannon Barrel Extension	大砲の延長砲身 (大)
-def_gun_xxl_barrel_desc		Barrel extensions increase weapon accuracy, but add additional weight.	砲身を延長すると射撃精度が上がりますが, 重量が増加します.
+def_gun_xxl_barrel_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
 def_gun_xxl_barrel_s_desc		A Bertha cannon barrel extension.	大型大砲の砲身を延長するための延長部品です.
 def_gyro_name		Gyro	ジャイロ
 def_gyro_desc		It outputs stabilised values that can be sent to rotors and engines to make them much easier to control. An on/off input allows you to activate and deactivate the internal auto-hover circuit. When auto-hover is enabled, the gyroscope will attempt to keep your helicopter steady.	ローターやエンジンにジャイロからの信号を入力することで安定した制御が行えます. 「ホバーモード」ノードへオン信号を入力すると自動的に乗り物を水平に保ちます.
@@ -3913,7 +3980,7 @@ def_inventory_equipment_oxygen_mask_s_desc		A small equipment storage unit conta
 def_inventory_equipment_oxygen_mask_node_0_label		Electric	電力
 def_inventory_equipment_oxygen_mask_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_pistol_name		Equipment inventory (Pistol)	保管庫 (小, 拳銃)
-def_inventory_equipment_pistol_desc		Press [$[action_equipment_use]] to fire, and [$[action_equipment_secondary]] to reload. The pistol is compact enough for a belt holster, and can be accurate when recoil is carefully managed.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]]を押して発砲します. [$[action_equipment_secondary]]を押して弾薬を補充します. 拳銃はベルトに取り付けられるほど小型であり, 反動を制御できれば正確な射撃が可能です. 使用していない時は腰のベルトに取り付けてられます.
+def_inventory_equipment_pistol_desc		Press [$[action_equipment_use]] to fire, and [$[action_equipment_secondary]] to reload. The pistol is compact enough for a belt holster, and can be accurate when recoil is carefully managed.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. [$[action_equipment_use]]を押して発砲します. [$[action_equipment_secondary]]を押して弾薬を補充します. 拳銃はベルトに取り付けられるほど小型であり, 射撃時の反動を制御できれば正確な射撃が可能です. 使用していない時は腰のベルトに取り付けてられます.
 def_inventory_equipment_pistol_s_desc		A small equipment storage unit containing a pistol.	拳銃が保管されている小型の保管庫です.
 def_inventory_equipment_pistol_node_0_label		Electric	電力
 def_inventory_equipment_pistol_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
