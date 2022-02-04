@@ -29,3 +29,5 @@ C:\Users\user\AppData\Roaming\Stormworks\data\languages
 * この翻訳データを適用してもなお、日本語に翻訳されない箇所が一部あります。これは、ゲームから翻訳データが提供されておらず、翻訳が不可能な場所です。
 * この日本語訳が適用された状態で作成されたスクリーンショットや実況動画などの作品におけるクレジット表記は不要です。（表記して頂けると嬉しいですが...）
 * 明らかな誤字脱字や提案がありましたら、[Steamワークショップのページ](https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581)か[Issues](https://github.com/Gakuto1112/Stormworks-JapaneseTranslation/issues)で報告して下さい。（全ての希望には応えられない場合があります。）
+## お願い
+上記でも書きましたが、Steamワークショップで直接アップデート出来るのが本来の望ましい状態です。この不具合について[バグレポート](https://geometa.co.uk/support/stormworks/5174)を行いました。星を付与して賛同して頂けると幸いです。賛同者が多ければ（星の数が多ければ）、バグが修正される可能性が上がります。（ゲーム内からバグ報告フォームにジャンプしないと星を付与できない模様です。）
