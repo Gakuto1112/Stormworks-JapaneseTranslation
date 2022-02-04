@@ -1209,8 +1209,8 @@ id	description	en	local
 		UNSAVED PROGRESS	未保存の進捗
 		Do you want to save your game before quitting?	メインメニューに戻る前に保存しますか?
 		Autosaved progress may be lost if you start a new game.	自動保存された進捗は新規ゲームを開始すると失われる場合があります.
-		Save and Quit	保存してメインメニューに戻る
-		Quit Without Saving	保存せずにメインメニューに戻る
+		Save and Quit	保存する
+		Quit Without Saving	保存しない
 		RETURN TO ADDON EDITOR	アドオンエディターに戻る
 		You are currently testing a mission.\n\nReturning to the addon editor will despawn all vehicles and objects associated with the mission.\n\nAre you sure you want to return to the addon editor?	現在ミッションのテスト中です.\n\nアドオンエディターに戻るとミッションに関連する乗り物やオブジェクトは全てデスポーンします.\n\nアドオンエディターに戻りますか?
 		Are you sure you want to disconnect from this server?	このサーバーから切断しますか?
@@ -3106,9 +3106,9 @@ def_gate_float_add_s_desc		Takes two number inputs, adds them together, and outp
 def_gate_float_add_node_0_label		A	A
 def_gate_float_add_node_0_desc		The first value to be added.	加算する数値です.
 def_gate_float_add_node_1_label		A + B	A + B
-def_gate_float_add_node_1_desc		Outputs the result of A + B.	加算する数値です.
+def_gate_float_add_node_1_desc		Outputs the result of A + B.	2つの数値を加算した数値を出力します.
 def_gate_float_add_node_2_label		B	B
-def_gate_float_add_node_2_desc		The second value to be added.	2つの数値を加算した数値を出力します.
+def_gate_float_add_node_2_desc		The second value to be added.	加算する数値です.
 def_gate_float_clamp_name		Clamp	クランプ
 def_gate_float_clamp_desc		The upper and lower values to clamp to can be configured by selecting this component with the select tool.	範囲の上限と下限はプロパティウィンドウから設定できます.
 def_gate_float_clamp_s_desc		The clamp takes a number input and clamps it to a set range.	入力された数値を設定された範囲内に収めて出力する論理部品です.
