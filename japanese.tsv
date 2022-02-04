@@ -1035,26 +1035,26 @@ id	description	en	local
 		Randomise	ランダム
 		Complete	完了
 		Gender	性別
-		Skin Colour	肌の色
+		Skin Color	肌の色
 		Hair Style	髪型
-		Hair Colour	髪の色
+		Hair Color	髪の色
 		Eyebrows	眉毛
 		Moustache	口髭
 		Beard	髭
 		Shirt	服
-		Shirt Colour	服の色
+		Shirt Color	服の色
 		Trousers	ズボン
-		Trouser Colour	ズボンの色
+		Trouser Color	ズボン
 		Shoes	靴
-		Shoe Colour	靴の色
+		Shoe Color	靴の色
 		Hat	帽子
-		Hat Colour	帽子の色
+		Hat Color	帽子の色
 		Glasses	眼鏡
-		Glasses Colour	眼鏡の色
+		Glasses Color	眼鏡の色
 		Mask	マスク
-		Mask Colour	マスクの色
+		Mask Color	マスクの色
 		Clothes	衣服
-		Clothing Colour	衣服の色
+		Clothing Color	衣服の色
 		Character	キャラクター
 		Hair	髪
 		Base Clothes	基本の衣服
@@ -1220,17 +1220,17 @@ id	description	en	local
 		Camera Roll	カメラの回転
 		Hide Player	プレイヤーを非常時
 		Contrast	コントラスト
-		Colour Mode	カラーモード
+		Color Mode	カラーモード
 		Time of Day	時刻
 		Border	枠
 		Logo	Stormworksロゴ
-		Logo Colour	Stormworksロゴの色
+		Logo Color	Stormworksロゴの色
 		Vignette	ビネット
 		Vignette Distance	ビネットの距離
 		Vignette Strength	ビネットの強さ
 		Film Grain	フィルムゲイン
 		Film Grain Strength	フィルムゲインの強さ
-		Colourise	色彩
+		Colorise	色彩
 		Top Left	上部左
 		Top Middle	上部中央
 		Top Right	上部右
@@ -1251,7 +1251,7 @@ id	description	en	local
 		Cross Process 2	クロス現象2
 		Cross Process 3	クロス現象3
 		Grey/Green	灰色/緑色
-		Original Colour	通常の色
+		Original Color	通常の色
 		rotate camera	カメラ回転
 		move camera	カメラ移動
 		crane up	カメラ上昇
@@ -1281,7 +1281,7 @@ id	description	en	local
 		Free Mode	フリーカメラ
 		Brush	ブラシ
 		Additive	発光ブラシ
-		Replace Colour	色の置き換え
+		Replace Color	色の置き換え
 		Plane Fill	面の塗りつぶし
 		Custom Colors	カスタムカラー
 		Add To Custom Color	カスタムカラーの追加
@@ -1362,12 +1362,12 @@ id	description	en	local
 		ERASE	削除
 		Erase components from your vehicle.	乗り物から部品を削除します.
 		PAINT	着色
-		Change the colours of placed components.	設置した部品の色を変更します.
+		Change the colors of placed components.	設置した部品の色を変更します.
 		MOVE	移動
 		Move your vehicle within the bounds of the edit grid.	編集領域内で乗り物を移動させます.
 		Hook up logic connections between components.	部品間でロジック接続を行います.
 		MERGE	結合
-		Merge two vehicle bodies. Different bodies are denoted by different colours. Click on a body to select it, then click an adjacent one to merge them.	乗り物オブジェクトを結合します. 異なるオブジェクトはそれぞれ別の色で表示されます. 結合したい2つのオブジェクトを選択して下さい. オブジェクトの結合には2つのオブジェクトが隣り合っている必要があります.
+		Merge two vehicle bodies. Different bodies are denoted by different colors. Click on a body to select it, then click an adjacent one to merge them.	乗り物オブジェクトを結合します. 異なるオブジェクトはそれぞれ別の色で表示されます. 結合したい2つのオブジェクトを選択して下さい. オブジェクトの結合には2つのオブジェクトが隣り合っている必要があります.
 		SELECTION GRID	選択グリッド
 		Select parts of your vehicle to cut, copy, paste, rotate, flip and move them around. Export a selection as a new vehicle, or import a saved subassembly to place on your vehicle.	乗り物の一部分を選択して切り取り, コピー, 貼り付け, 回転, 反転, 移動を行います. 新しい乗り物として保存したり, 既存の乗り物を追加で読み込むこともできます.
 		MICROCONTROLLER EDITOR	マイクロコントローラーエディター
@@ -1494,7 +1494,7 @@ id	description	en	local
 		MISSION LOCATIONS	ミッションのロケーション
 		Edit Mission	ミッションの編集
 		Add Mission	ミッションの追加
-		Colour	色
+		Color	色
 		PROPERTIES	プロパティ
 		on/off	オン/オフ
 		number	数値
@@ -1718,8 +1718,8 @@ id	description	en	local
 		Read values from the composite input. Index ranges from 1 - 32.	入力された複合信号の数値を読み取ります. インデックの範囲は1から32です.
 		Set values on the composite output. Index ranges from 1 - 32.	出力する複合信号に数値を設定します. インデックの範囲は1から32です.
 		DRAWING	ディスプレイへの描画
-		Set the current draw colour. Values range from 0 - 255.	描画する色を設定します. 次にこの関数が呼ばれるまでこの色は継続されます. それぞれの値の範囲は 0 から 255 です.
-		Set the current draw colour and transparency. Values range from 0 - 255.	描画する色と透明度を設定します. 次にこの関数が呼ばれるまでこの色と透明度は継続されます. それぞれの値の範囲は 0 から 255 です.
+		Set the current draw color. Values range from 0 - 255.	描画する色を設定します. 次にこの関数が呼ばれるまでこの色は継続されます. それぞれの値の範囲は 0 から 255 です.
+		Set the current draw color and transparency. Values range from 0 - 255.	描画する色と透明度を設定します. 次にこの関数が呼ばれるまでこの色と透明度は継続されます. それぞれの値の範囲は 0 から 255 です.
 		Clear the screen with the current colour.	現在の色でディスプレイ全体を塗りつぶします.
 		Draw line from (x1, y1) to (x2, y2).	(x1, y1) から (x2, y2) に線を描画します.
 		Draw circle at (x, y) with radius.	(x, y) を中心に指定された半径の円を描画します.
@@ -1731,7 +1731,7 @@ id	description	en	local
 		Draw text at (x, y). Each character is 4 pixels wide and 5 pixels tall.	(x, y) を始点にテキストを描画します. 1文字につき幅 4 ピクセル, 高さ 5 ピクセルです.
 		Draw text within the rectangle at (x, y) with width and height. Text alignment can be specified using the last two parameters and ranges from -1 to 1 (left to right, top to bottom). If either of the alignment parameters are omitted, the text will be drawn top-left by default. Text will automatically wrap at spaces when possible, and will overflow the top/bottom of the specified rectangle if too large.	(x, y) を始点に指定された幅と高さの矩形の中にテキストを描画します. 最後の2つの引数でテキストの基準位置をしていします. 範囲は -1 から 1 です (左から右, 上からした).  この引数が省略された場合, デフォルトで左上が基準となります. テキストは矩形の範囲内に収まるように自動的に折り返され, それでも入りきらない場合は, テキストの上下がはみ出ます.
 		Draw the world map centred on map coordinate (x,y) with zoom level ranging from 0.1 to 50.	(x, y) 座標を中心として指定された縮尺でワールドマップを描画します. 縮尺の範囲は 0.1 から 50 です.
-		Set the colours used for rendering the map. Values range from 0 - 255, alpha is optional.	マップ描画に使用される色を設定します. それぞれの値の範囲は 0 から 255 です. アルファ値は任意の引数です.
+		Set the colors used for rendering the map. Values range from 0 - 255, alpha is optional.	マップ描画に使用される色を設定します. それぞれの値の範囲は 0 から 255 です. アルファ値は任意の引数です.
 		Get the width/height of the screen currently being rendered to.	描画しているディスプレイの幅/高さを取得します.
 		MAP	座標変換
 		Convert pixel coordinates into world coordinates.	ディスプレイ上の座標をマップ上の座標に変換します.
@@ -2024,12 +2024,19 @@ id	description	en	local
 		Game	ゲーム
 		Designator	指定子
 		Fin Influence	翼の効力
+		Closed	閉店
 		Group: Active	グループ: 有効アドオン優先
 		Group: Date	グループ: 最終更新日順
-		Xmas Tree	クリスマスツリー柄
-		Xmas Stormworks	クリスマスStormworks柄
+		Spawn Whirlpool	渦潮を発生させる
+		Cancel Whirlpool	渦潮を止める
+		Spawn Tornado	竜巻を発生させる
+		Cancel Tornado	竜巻を止める
+		Spawn Meteor	隕石を飛来させる
+		Spawn Meteor Shower	隕石群を飛来させる
+		Spawn Volcanic Eruption	火山を噴火させる
+		Xmas Tree	クリスマスツリー
 		Xmas Stormworks	クリスマスStromworks柄
-		Xmas Stormworks	クリスマスStromworks柄
+		Xmas Stormworks
 		Xmas Reindeer	トナカイ柄
 		Xmas Elf	エルフ
 		Xmas Nutcracker	くるみ割り人形
@@ -2075,6 +2082,7 @@ id	description	en	local
 		Army Uniform	陸軍の制服
 		Army Suit	陸軍の服
 		Armour Vest	装甲服
+		Use	使用する
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
@@ -3006,7 +3014,7 @@ def_fluid_valve_variable_node_2_desc		Valve gate control for opening and closing
 def_fluid_valve_variable_node_3_label		Electric	電力
 def_fluid_valve_variable_node_3_desc		Electrical power connection.	電力網から電力を供給します.
 def_foghorn_name		Foghorn	霧笛
-def_foghorn_desc		It has an audible range of 500m.	音が聞こえる範囲は500メートルです.
+def_foghorn_desc		It has an audible range of 1500m.	音が聞こえる範囲は1500メートルです.
 def_foghorn_s_desc		A ship's foghorn that will sound when receiving an on signal.	オン信号を受け取ると鳴る, 船の霧笛です.
 def_foghorn_node_0_label		Horn	霧笛
 def_foghorn_node_0_desc		Sounds the horn when recieving an on signal.	オン信号を受け取ると霧笛がなります.
@@ -3567,7 +3575,7 @@ def_gun_l_node_1_desc		Returns true when a shell is loaded and ready to fire.	�
 def_gun_l_node_2_label		Open Breech	砲尾の開閉
 def_gun_l_node_2_desc		When true: opens the breech to allow shells to be loaded.	オン信号を受け取ると砲尾が開き, 砲弾を手動で装填できます.
 def_gun_l_barrel_name		Battle Cannon Barrel Extension	大砲の延長砲身 (小)
-def_gun_l_barrel_desc		Barrel extensions increase weapon accuracy, but add additional weight.	砲身を延長すると射撃精度が上がりますが, 重量が増加します.
+def_gun_l_barrel_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
 def_gun_l_barrel_s_desc		A battle cannon barrel extension.	小型大砲の砲身を延長するための延長部品です.
 def_gun_l_barrel_1_name		Battle Cannon Barrel Extension	大砲の延長砲身 (小)
 def_gun_l_barrel_1_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
@@ -5889,6 +5897,13 @@ def_sign_node_1_desc		Electrical power connection.	電力網から電力を供�
 def_sign_na_name		Paintable Sign	描画可能な看板
 def_sign_na_desc		This block has a paintable surface where small grid squares can be painted individually.	この部品には9x9の細かいグリッドに分けられている面があり, その面に細かく描画ができます.
 def_sign_na_s_desc		Sign block for displaying painted detail.	着色モードで細かい描画が可能な看板です.
+def_siren_name		Siren	サイレン
+def_siren_desc		It has an audible range of 3000m.	音が聞こえる範囲は3000メートルです.
+def_siren_s_desc		A warning siren with a large audible range.	広範囲に響き渡る警報サイレンです.
+def_siren_node_0_label		Horn	サイレン
+def_siren_node_0_desc		Sounds the horn when recieving an on signal.	オン信号を受け取るとサイレンがなります.
+def_siren_node_1_label		Electric	電力
+def_siren_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_ski_name		Ski	スキー板 (大)
 def_ski_desc		This component has low friction moving along its length, but grips laterally.	スキー板の長辺方向にはよく滑りますが, 短辺方向には滑りにくいです.
 def_ski_s_desc		A wide hinged ski.	大型の乗り物用スキー板です.
