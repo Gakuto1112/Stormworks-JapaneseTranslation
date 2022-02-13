@@ -1218,7 +1218,7 @@ id	description	en	local
 		Field of View	視野角
 		Roll With Player	プレイヤーと回転を同期
 		Camera Roll	カメラの回転
-		Hide Player	プレイヤーを非常時
+		Hide Player	プレイヤーを非表示
 		Contrast	コントラスト
 		Color Mode	カラーモード
 		Time of Day	時刻
