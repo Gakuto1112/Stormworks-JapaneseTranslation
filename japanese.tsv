@@ -1555,15 +1555,15 @@ id	description	en	local
 		NEW VEHICLE	新規乗り物
 		NEW MICROCONTROLLER	新規マイクロコントローラー
 		Hold ### to enable multi-linking	### を押し続けて連続でノードを接続します.
-		Press ### to focus on hovered blocks	### を押してカーソルを合わせた部品にフォーカスします.
-		Press ### to focus on hovered logic nodes	### を押してカーソルを合わせたロジックノードにフォーカスします.
-		Press ### to focus on highlighted components	### を押して強調表示された部品にフォーカスします.
-		Hold ### to change drag plane	### を押し続けてドラッグ平面を変更します.
+		Press ### to focus on hovered blocks	### を押してカーソルを合わせた部品に注目します.
+		Press ### to focus on hovered logic nodes	### を押してカーソルを合わせたノードに注目します.
+		Press ### to focus on highlighted components	### を押して強調表示された部品に注目します.
+		Hold ### to change drag plane	### を押し続けてブロックが伸びる方向を変更します.
 		Press ### to rotate selection	### を押して選択したものを回転させます.
 		Press ### to flip selection	### を押して選択したものを反転させます.
 		Press ### to show/hide vehicle	### を押して乗り物を表示/非表示にします.
-		Hold ### to eyedrop component	### を押しながら部品をクリックしてその部品をコピーします.
-		Hold ### to eyedrop color	### を押しながら部品をクリックしてその部品の色をコピーします.
+		Hold ### to eyedrop component	### を押しながら部品をクリックしてその部品を選択します.
+		Hold ### to eyedrop color	### を押しながら部品をクリックしてその部品の色を選択します.
 		Hold ### to select component	### を押し続けて部品を選択します.
 		Hold ### to expand to component	### を押し続けて部品を拡張します.
 		Hold ### to place multiple	### を押し続けて複数設置します.
@@ -1905,9 +1905,9 @@ id	description	en	local
 		[$[action_equipment_use]] Toggle control [$[action_equipment_secondary]] cycle frequency	[$[action_equipment_use]] 使用する/やめる [$[action_equipment_secondary]] チャンネルを変更する
 			
 		[$[action_equipment_use]] Toggle strobe [$[action_equipment_secondary]] Toggle MOB mode	[$[action_equipment_use]] ストロボライトのオン/オフ [$[action_equipment_secondary]] 船外作業モードのオン/オフ
-		[$[action_equipment_use]] Toggle strobe [$[action_equipment_secondary]] Toggle MOB mode	[$[action_equipment_use]] ストロボライトのオン/オフ [$[action_equipment_secondary]] 船外作業モードのオン/オフ
+		[$[action_equipment_use]] Toggle infrared strobe [$[action_equipment_secondary]] Toggle MOB mode	[$[action_equipment_use]] 赤外線ストロボライトのオン/オフ [$[action_equipment_secondary]] 船外作業モードのオン/オフ
 		[$[action_equipment_use]] Toggle transmit [$[action_equipment_secondary]] Toggle MOB mode	[$[action_equipment_use]] 発信する/止める [$[action_equipment_secondary]] 船外作業モードのオン/オフ
-		[$[action_equipment_use]] Repair	[$[action_equipment_use]] 修理する
+			
 		[$[action_equipment_use]] Repair	[$[action_equipment_use]] 修理する
 		Detailed	詳細表示
 		Simple	通常表示
@@ -2015,12 +2015,12 @@ id	description	en	local
 		[$[action_equipment_use]] Detonate	[$[action_equipment_use]] 爆破
 		[$[action_equipment_use]] Fire [$[action_equipment_secondary]] Reload	[$[action_equipment_use]] 発砲 [$[action_equipment_secondary]] 弾の補充
 		[$[action_equipment_use]] Reload	[$[action_equipment_use]] 弾の補充
-		[$[action_equipment_use]] Fire [$[action_equipment_secondary]] Reload	[$[action_equipment_use]] 発砲 [$[action_equipment_secondary]] 弾の補充
-		[$[action_equipment_use]] Reload	[$[action_equipment_use]] 弾の補充
-		[$[action_equipment_use]] Fire [$[action_equipment_secondary]] Reload	[$[action_equipment_use]] 発砲 [$[action_equipment_secondary]] 弾の補充
-		[$[action_equipment_use]] Reload	[$[action_equipment_use]] 弾の補充
-		[$[action_equipment_use]] Fire [$[action_equipment_secondary]] Reload	[$[action_equipment_use]] 発砲 [$[action_equipment_secondary]] 弾の補充
-		[$[action_equipment_use]] Reload	[$[action_equipment_use]] 弾の補充
+			
+			
+			
+			
+			
+			
 		[$[action_equipment_use]] Throw	[$[action_equipment_use]] 投擲
 		Camera Shake	画面の振動
 		Trigger	トリガーボタン
@@ -2046,13 +2046,13 @@ id	description	en	local
 		Spawn Volcanic Eruption	火山を噴火させる
 		Xmas Tree	クリスマスツリー
 		Xmas Stormworks	クリスマスStromworks柄
-		Xmas Stormworks	クリスマスStromworks柄
+		Xmas Stormworks 2	クリスマスStromworks柄2
 		Xmas Reindeer	トナカイ柄
 		Xmas Elf	エルフ
 		Xmas Nutcracker	くるみ割り人形
-		Xmas Elf	エルフ
+		Xmas Elf Hat	エルフの帽子
 		Xmas Winter Hat	ニット帽
-		Xmas Tree	クリスマスツリー
+		Xmas Tree Hat	クリスマスツリーの帽子
 		Xmas Tophat/Scarf	シルクハットとスカーフ
 		Xmas Pudding	プリン
 		Xmas Party Hat	パーティ帽子
@@ -2262,8 +2262,8 @@ def_air_filter_s_desc		Port used to allow air in and out of a fluid system.	空�
 def_air_filter_node_0_label		Air	気体
 def_air_filter_node_0_desc		Allows fluid to flow in and out of an enclosed volume.	この気体口から吸入/排出を行う気体です.
 def_altimeter_name		Altimeter	高度計
-def_altimeter_desc		Outputs distance above sea-level in meters.	
-def_altimeter_s_desc		An altitude sensor.	海面からの高さをメートル単位で出力します.
+def_altimeter_desc		Outputs distance above sea-level in meters.	海面からの高さをメートル単位で出力します.
+def_altimeter_s_desc		An altitude sensor.	高度計です.
 def_altimeter_node_0_label		Altitude	高度
 def_altimeter_node_0_desc		The measured altitude of the component in metres above sea-level.	海面からこの部品までの高さををメートル単位で出力します.
 def_angular_speed_sensor_name		Angular Speed Sensor	角速度計
@@ -2279,8 +2279,8 @@ def_artificial_horizon_node_0_desc		Enables the backlight when receiving an on s
 def_artificial_horizon_node_1_label		Electric	電力
 def_artificial_horizon_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_azimuth_thruster_name		Azimuth Thruster	アジマススラスター
-def_azimuth_thruster_desc		The thruster can be attached to a robotic pivot to provide steering as well as propulsion. This propeller will only operate underwater.	
-def_azimuth_thruster_s_desc		An azimuth thruster for boats.	電動回転軸を取り付けることで舵取りもできるスクリューです. 水中でのみ動作します.
+def_azimuth_thruster_desc		The thruster can be attached to a robotic pivot to provide steering as well as propulsion. This propeller will only operate underwater.	電動回転軸を取り付けることで舵取りもできます. 水中でのみ動作します.
+def_azimuth_thruster_s_desc		An azimuth thruster for boats.	ボート向けのアジマススラスターです.
 def_azimuth_thruster_node_0_label		RPS	動力
 def_azimuth_thruster_node_0_desc		Receives power generated by an engine.	エンジンからの動力を受け取ります.
 def_battery_large_name		Electric Battery Large	電池 (大)
@@ -2441,8 +2441,8 @@ def_camera_gimbal_laser_node_10_desc		x, y, z output for the laser target in cha
 def_camera_gimbal_laser_node_11_label		Laser Wavelength	レーザーの波長
 def_camera_gimbal_laser_node_11_desc		The specific light wavelength to emit (whole number).	照射するレーザーの波長を制御します. 入力する数値は整数です.
 def_camera_med_name		Camera Medium	カメラ (中)
-def_camera_med_desc		Has infrared mode as well as variable field of view.	
-def_camera_med_s_desc		A camera with video output feed.	映像を出力する中型のカメラです. 赤外線モードが搭載されており, 拡大/縮小もできます.
+def_camera_med_desc		Has infrared mode as well as variable field of view.	赤外線モードが搭載されており, 拡大/縮小もできます.
+def_camera_med_s_desc		A camera with video output feed.	映像を出力する中型のカメラです.
 def_camera_med_node_0_label		Camera Feed	カメラの映像
 def_camera_med_node_0_desc			カメラで捉えた映像を出力します.
 def_camera_med_node_1_label		Electric	電力
@@ -2616,8 +2616,8 @@ def_connector_slider_gripper_node_0_desc		Releases the connector when receiving 
 def_connector_slider_gripper_node_1_label		Brake	ブレーキ
 def_connector_slider_gripper_node_1_desc		Enables the gripper's brake to keep it in place on the track.	オン信号を受け取るとはブレーキがかかり, コネクターがレール上を移動するのを防げます.
 def_connector_slider_track_name		Sliding Connector Track	コネクター (レール土台)
-def_connector_slider_track_desc		Gripper connectors will attach to the track when aligned and close enough, and will detach when they slide off the end.	
-def_connector_slider_track_s_desc		A connector that can be used to build a track for grippers to attach to.	コネクター (レール) が接続できるレールを作成できるレールです. コネクターレールが近くにあると自動的に接続されます. レールから外れるかコネクター (レール) の「コネクターの切り離し」ノードへオン信号が入力される接続が解除されます.
+def_connector_slider_track_desc		Gripper connectors will attach to the track when aligned and close enough, and will detach when they slide off the end.	コネクターレールが近くにあると自動的に接続されます. レールから外れるかコネクター (レール) の「コネクターの切り離し」ノードへオン信号が入力される接続が解除されます.
+def_connector_slider_track_s_desc		A connector that can be used to build a track for grippers to attach to.	コネクター (レール) が接続できるレールを作成できるレールです.
 def_connector_small_name		Small Connector	コネクター (点)
 def_connector_small_desc		Two small connectors will attach when they are within close proximity and both are switched on. An on/off output allows you to check whether or not this connector is currently attached to anything.	起動している2つのコネクターが近くにあると自動的に接続されます. このコネクターは点に沿って接続され, この点に沿って回転します. コネクターが接続されているかどうかはオン/オフ信号を通して確認できます.
 def_connector_small_s_desc		A small magnetic connector that can be used to attach two or more vehicles together.	他の乗り物を接続できる小型の磁気コネクターです.
@@ -2653,42 +2653,42 @@ def_connector_water_node_5_desc		Video data to send to the connected connector.	
 def_connector_water_node_6_label		Video Data Receive	映像信号受信
 def_connector_water_node_6_desc		Video data to receive from the connected connector.	相手のコネクターからの映像信号を受信します.
 def_control_fin_large_name		Control Fin Large	可動翼 (頂点, 大)
-def_control_fin_large_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	
+def_control_fin_large_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号を入力して翼の向きを制御します.
 def_control_fin_large_s_desc		The fin can be attached to the surface of a vehicle to direct its motion.	乗り物に取り付けて, 乗り物の動きを制御できる大型の可動翼です.
 def_control_fin_large_node_0_label		Rotation	翼の向き
 def_control_fin_large_node_0_desc		Accepts a value between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号の入力から翼の向きを制御します.
 def_control_fin_large_node_1_label		Electric	電力
 def_control_fin_large_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_control_fin_medium_name		Control Fin Medium	可動翼 (頂点, 中)
-def_control_fin_medium_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	
+def_control_fin_medium_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号を入力して翼の向きを制御します.
 def_control_fin_medium_s_desc		The fin can be attached to the surface of a vehicle to direct its motion.	乗り物に取り付けて, 乗り物の動きを制御できる中型の可動翼です.
 def_control_fin_medium_node_0_label		Rotation	翼の向き
 def_control_fin_medium_node_0_desc		Accepts a value between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号の入力から翼の向きを制御します.
 def_control_fin_medium_node_1_label		Electric	電力
 def_control_fin_medium_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_control_fin_small_name		Control Fin Small	可動翼 (頂点, 小)
-def_control_fin_small_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	
+def_control_fin_small_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号を入力して翼の向きを制御します.
 def_control_fin_small_s_desc		The fin can be attached to the surface of a vehicle to direct its motion.	乗り物に取り付けて, 乗り物の動きを制御できる小型の可動翼です.
 def_control_fin_small_node_0_label		Rotation	翼の向き
 def_control_fin_small_node_0_desc		Accepts a value between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号の入力から翼の向きを制御します.
 def_control_fin_small_node_1_label		Electric	電力
 def_control_fin_small_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_control_surface_large_name		Control Surface (Large)	可動翼 (平面, 大)
-def_control_surface_large_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	
+def_control_surface_large_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号を入力して翼の向きを制御します.
 def_control_surface_large_s_desc		The control surface can be attached to a surface of the vehicle to apply force as air or water is flowing over it.	乗り物に取り付けて, 乗り物の動きを制御できる大型の可動翼です.
 def_control_surface_large_node_0_label		Rotation	翼の向き
 def_control_surface_large_node_0_desc		Accepts a value between -1 and 1 that represent the two extremes of the rudder's rotation.	-1から1の数値信号の入力から翼の向きを制御します.
 def_control_surface_large_node_1_label		Electric	電力
 def_control_surface_large_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_control_surface_medium_name		Control Surface (Medium)	可動翼 (平面, 中)
-def_control_surface_medium_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	
+def_control_surface_medium_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号を入力して翼の向きを制御します.
 def_control_surface_medium_s_desc		The control surface can be attached to a surface of the vehicle to apply force as air or water is flowing over it.	乗り物に取り付けて, 乗り物の動きを制御できる中型の可動翼です.
 def_control_surface_medium_node_0_label		Rotation	翼の向き
 def_control_surface_medium_node_0_desc		Accepts a value between -1 and 1 that represent the two extremes of the rudder's rotation.	-1から1の数値信号の入力から翼の向きを制御します.
 def_control_surface_medium_node_1_label		Electric	電力
 def_control_surface_medium_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_control_surface_small_name		Control Surface (Small)	可動翼 (平面, 小)
-def_control_surface_small_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	
+def_control_surface_small_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号を入力して翼の向きを制御します.
 def_control_surface_small_s_desc		The control surface can be attached to a surface of the vehicle to apply force as air or water is flowing over it.	乗り物に取り付けて, 乗り物の動きを制御できる小型の可動翼です.
 def_control_surface_small_node_0_label		Rotation	翼の向き
 def_control_surface_small_node_0_desc		Accepts a value between -1 and 1 that represent the two extremes of the rudder's rotation.	-1から1の数値信号の入力から翼の向きを制御します.
@@ -3031,9 +3031,9 @@ def_foghorn_node_0_desc		Sounds the horn when recieving an on signal.	オン信�
 def_foghorn_node_1_label		Electric	電力
 def_foghorn_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_friction_block_name		Friction Pad	摩擦パッド
-def_friction_block_desc		High friction pad that grips any surface it touches.	
+def_friction_block_desc		High friction pad that grips any surface it touches.	どんな接触面とでも大きな摩擦が生じます.
 def_friction_block_s_desc		Friction pad that grips to surfaces.	接触面と大きな摩擦が生じるパッドです.
-def_gate_bool_and_name		And	論理積 (And)
+def_gate_bool_and_name		And	論理積 (AND)
 def_gate_bool_and_desc		The output will only be switched on if both inputs are on.	2つの入力の両方がオン信号を受け取る時のみオン信号を出力します.
 def_gate_bool_and_s_desc		A logic gate that outputs the logical AND of two input signals.	2つのオン/オフ信号の入力の論理積 (AND) を出力する論理部品です.
 def_gate_bool_and_node_0_label		A	A
@@ -3596,15 +3596,15 @@ def_gun_l_barrel_2_s_desc		A battle cannon barrel extension.	小型大砲の砲�
 def_gun_l_barrel_3_name		Battle Cannon Barrel Extension	大砲の延長砲身 (小)
 def_gun_l_barrel_3_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
 def_gun_l_barrel_3_s_desc		A battle cannon barrel extension.	小型大砲の砲身を延長するための延長部品です.
-def_gun_l_muzzle_name		Battle Cannon Muzzle Break	大砲のマズルブレーキ (小)
-def_gun_l_muzzle_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
-def_gun_l_muzzle_s_desc		A battle cannon muzzle break.	小型大砲のマズルブレーキです.
-def_gun_l_muzzle_1_name		Battle Cannon Muzzle Break	大砲のマズルブレーキ (小)
-def_gun_l_muzzle_1_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
-def_gun_l_muzzle_1_s_desc		A battle cannon muzzle break.	小型大砲のマズルブレーキです.
-def_gun_l_muzzle_2_name		Battle Cannon Muzzle Break	大砲のマズルブレーキ (小)
-def_gun_l_muzzle_2_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
-def_gun_l_muzzle_2_s_desc		A battle cannon muzzle break.	小型大砲のマズルブレーキです.
+def_gun_l_muzzle_name		Battle Cannon Muzzle Brake	大砲のマズルブレーキ (小)
+def_gun_l_muzzle_desc		A muzzle brake will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_l_muzzle_s_desc		A battle cannon muzzle brake.	小型大砲のマズルブレーキです.
+def_gun_l_muzzle_1_name		Battle Cannon Muzzle Brake	大砲のマズルブレーキ (小)
+def_gun_l_muzzle_1_desc		A muzzle brake will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_l_muzzle_1_s_desc		A battle cannon muzzle brake.	小型大砲のマズルブレーキです.
+def_gun_l_muzzle_2_name		Battle Cannon Muzzle Brake	大砲のマズルブレーキ (小)
+def_gun_l_muzzle_2_desc		A muzzle brake will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_l_muzzle_2_s_desc		A battle cannon muzzle brake.	小型大砲のマズルブレーキです.
 def_gun_m_name		Heavy Autocannon	機関砲 (大)
 def_gun_m_desc		Heavy autocannons bridge the gap between fast-firing autocannons and high-caliber cannons. Autocannons require electric power to load ammo from connected belts or drums.	この大型の機関砲は高速射撃ができる小型の機関砲と高威力の大砲の中間に位置する砲台です. 弾薬を装填するために電力が必要となります. 射撃するには武器DLCを有効にする必要があります.
 def_gun_m_s_desc		A heavy autocannon.	大型の機関砲です.
@@ -3626,15 +3626,15 @@ def_gun_m_barrel_2_s_desc		A heavy autocannon barrel extension.	大型機関砲�
 def_gun_m_barrel_3_name		Heavy Autocannon Barrel Extension	機関砲の延長砲身 (大)
 def_gun_m_barrel_3_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
 def_gun_m_barrel_3_s_desc		A heavy autocannon barrel extension.	大型機関砲のマズルブレーキです.
-def_gun_m_muzzle_name		Heavy Autocannon Muzzle Break	機関砲のマズルブレーキ (大)
-def_gun_m_muzzle_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
-def_gun_m_muzzle_s_desc		A heavy autocannon muzzle break.	大型機関砲のマズルブレーキです.
-def_gun_m_muzzle_1_name		Heavy Autocannon Muzzle Break	機関砲のマズルブレーキ (大)
-def_gun_m_muzzle_1_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
-def_gun_m_muzzle_1_s_desc		A heavy autocannon muzzle break.	大型機関砲のマズルブレーキです.
-def_gun_m_muzzle_2_name		Heavy Autocannon Muzzle Break	機関砲のマズルブレーキ (大)
-def_gun_m_muzzle_2_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
-def_gun_m_muzzle_2_s_desc		A heavy autocannon muzzle break.	大型機関砲のマズルブレーキです.
+def_gun_m_muzzle_name		Heavy Autocannon Muzzle Brake	機関砲のマズルブレーキ (大)
+def_gun_m_muzzle_desc		A muzzle brake will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_m_muzzle_s_desc		A heavy autocannon muzzle brake.	大型機関砲のマズルブレーキです.
+def_gun_m_muzzle_1_name		Heavy Autocannon Muzzle Brake	機関砲のマズルブレーキ (大)
+def_gun_m_muzzle_1_desc		A muzzle brake will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_m_muzzle_1_s_desc		A heavy autocannon muzzle brake.	大型機関砲のマズルブレーキです.
+def_gun_m_muzzle_2_name		Heavy Autocannon Muzzle Brake	機関砲のマズルブレーキ (大)
+def_gun_m_muzzle_2_desc		A muzzle brake will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_m_muzzle_2_s_desc		A heavy autocannon muzzle brake.	大型機関砲のマズルブレーキです.
 def_gun_rocket_launcher_name		Rocket Launcher	ロケットランチャー
 def_gun_rocket_launcher_desc		Rocket launchers fire powerful high explosive rockets, but cannot be reloaded once empty. Rockets are vulnerable to bullets while in flight.	ロケットランチャーは強力な爆発性ロケットを発射しますが, 一度発射すると再装填できません. 飛行中のロケットは銃弾で打ち落とせます. 発射するには武器DLCを有効にする必要があります.
 def_gun_rocket_launcher_s_desc		A 4-shot rocket launcher.	4連装のロケットランチャーです.
@@ -3656,18 +3656,18 @@ def_gun_s_node_2_desc		Electrical power connection.	電力網から電力を供�
 def_gun_s_barrel_name		Light Autocannon Barrel Extension	機関砲の延長砲身 (小)
 def_gun_s_barrel_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
 def_gun_s_barrel_s_desc		A light autocannon barrel extension.	小型機関砲の砲身を延長するための延長部品です.
-def_gun_s_muzzle_name		Light Autocannon Muzzle Break	機関砲のマズルブレーキ (小)
-def_gun_s_muzzle_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
-def_gun_s_muzzle_s_desc		A light autocannon muzzle break.	小型機関砲のマズルブレーキです.
-def_gun_s_muzzle_1_name		Light Autocannon Muzzle Break	機関砲のマズルブレーキ (小)
-def_gun_s_muzzle_1_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
-def_gun_s_muzzle_1_s_desc		A light autocannon muzzle break.	小型機関砲のマズルブレーキです.
-def_gun_s_muzzle_2_name		Light Autocannon Muzzle Break	機関砲のマズルブレーキ (小)
-def_gun_s_muzzle_2_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
-def_gun_s_muzzle_2_s_desc		A light autocannon muzzle break.	小型機関砲のマズルブレーキです.
-def_gun_s_muzzle_3_name		Light Autocannon Muzzle Break	機関砲のマズルブレーキ (小)
-def_gun_s_muzzle_3_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
-def_gun_s_muzzle_3_s_desc		A light autocannon muzzle break.	小型機関砲のマズルブレーキです.
+def_gun_s_muzzle_name		Light Autocannon Muzzle Brake	機関砲のマズルブレーキ (小)
+def_gun_s_muzzle_desc		A muzzle brake will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_s_muzzle_s_desc		A light autocannon muzzle brake.	小型機関砲のマズルブレーキです.
+def_gun_s_muzzle_1_name		Light Autocannon Muzzle Brake	機関砲のマズルブレーキ (小)
+def_gun_s_muzzle_1_desc		A muzzle brake will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_s_muzzle_1_s_desc		A light autocannon muzzle brake.	小型機関砲のマズルブレーキです.
+def_gun_s_muzzle_2_name		Light Autocannon Muzzle Brake	機関砲のマズルブレーキ (小)
+def_gun_s_muzzle_2_desc		A muzzle brake will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_s_muzzle_2_s_desc		A light autocannon muzzle brake.	小型機関砲のマズルブレーキです.
+def_gun_s_muzzle_3_name		Light Autocannon Muzzle Brake	機関砲のマズルブレーキ (小)
+def_gun_s_muzzle_3_desc		A muzzle brake will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_s_muzzle_3_s_desc		A light autocannon muzzle brake.	小型機関砲のマズルブレーキです.
 def_gun_v_name		Rotary Autocannon	機関砲 (中)
 def_gun_v_desc		Rotary autocannons have a tremendous rate of fire, but can overheat quickly. Autocannons require electric power to load ammo from connected belts or drums.	この中型の機関砲は高速射撃が可能ですが, すぐに過熱します. 弾薬を装填するために電力が必要となります. 射撃するには武器DLCを有効にする必要があります.
 def_gun_v_s_desc		A rotary autocannon.	中型の機関砲です.
@@ -3701,15 +3701,15 @@ def_gun_xl_barrel_2_s_desc		An artillery cannon barrel extension.	中型大砲�
 def_gun_xl_barrel_3_name		Artillery Cannon Barrel Extension	大砲の延長砲身 (中)
 def_gun_xl_barrel_3_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
 def_gun_xl_barrel_3_s_desc		An artillery cannon barrel extension.	中型大砲の砲身を延長するための延長部品です.
-def_gun_xl_muzzle_name		Artillery Cannon Muzzle Break	大砲のマズルブレーキ (中)
-def_gun_xl_muzzle_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
-def_gun_xl_muzzle_s_desc		A artillery cannon muzzle break.	中型大砲のマズルブレーキです.
-def_gun_xl_muzzle_1_name		Artillery Cannon Muzzle Break	大砲のマズルブレーキ (中)
-def_gun_xl_muzzle_1_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
-def_gun_xl_muzzle_1_s_desc		A artillery cannon muzzle break.	中型大砲のマズルブレーキです.
-def_gun_xl_muzzle_2_name		Artillery Cannon Muzzle Break	大砲のマズルブレーキ (中)
-def_gun_xl_muzzle_2_desc		A muzzle break will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
-def_gun_xl_muzzle_2_s_desc		A artillery cannon muzzle break.	中型大砲のマズルブレーキです.
+def_gun_xl_muzzle_name		Artillery Cannon Muzzle Brake	大砲のマズルブレーキ (中)
+def_gun_xl_muzzle_desc		A muzzle brake will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_xl_muzzle_s_desc		A artillery cannon muzzle brake.	中型大砲のマズルブレーキです.
+def_gun_xl_muzzle_1_name		Artillery Cannon Muzzle Brake	大砲のマズルブレーキ (中)
+def_gun_xl_muzzle_1_desc		A muzzle brake will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_xl_muzzle_1_s_desc		A artillery cannon muzzle brake.	中型大砲のマズルブレーキです.
+def_gun_xl_muzzle_2_name		Artillery Cannon Muzzle Brake	大砲のマズルブレーキ (中)
+def_gun_xl_muzzle_2_desc		A muzzle brake will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
+def_gun_xl_muzzle_2_s_desc		A artillery cannon muzzle brake.	中型大砲のマズルブレーキです.
 def_gun_xs_name		Machine Gun	機関銃
 def_gun_xs_desc		Machine guns are lightweight and compact, but require ammo boxes to be reloaded by hand.	機関銃は軽量で小型ですが, 弾薬を手動で装填する必要があります. 射撃するには武器DLCを有効にする必要があります.
 def_gun_xs_s_desc		A machine gun.	機関銃です.
@@ -6109,10 +6109,10 @@ def_steam_coal_firebox_l_node_5_desc		Port for supplying air to the fire.	火炎
 def_steam_coal_firebox_l_node_6_label		Exhaust	排煙
 def_steam_coal_firebox_l_node_6_desc		Port for removing exhaust from burnt coal.	燃焼室からの煙が排出されます.
 def_steam_coal_funnel_name		Steam Coal Funnel	石炭排出口
-def_steam_coal_funnel_desc		Can be toggled to slowly move coal out of the connected system.	オン信号を受け取ると中の石炭をゆっくり輩出します.
+def_steam_coal_funnel_desc		Can be toggled to slowly move coal out of the connected system.	オン信号を受け取ると中の石炭をゆっくり排出します.
 def_steam_coal_funnel_s_desc		A funnel moving coal.	石炭を排出する排出口です.
-def_steam_coal_funnel_node_0_label		Open	輩出
-def_steam_coal_funnel_node_0_desc			オン信号を受け取ると中の石炭をゆっくり輩出します.
+def_steam_coal_funnel_node_0_label		Open	排出
+def_steam_coal_funnel_node_0_desc			オン信号を受け取ると中の石炭をゆっくり排出します.
 def_steam_coal_hopper_name		Steam Coal Hopper	石炭ホッパー (小)
 def_steam_coal_hopper_desc		Pouring coal into the receptacle will add it to the connected system.	上部に石炭を落とすと自動的に内部に取り込みます.
 def_steam_coal_hopper_s_desc		A hopper that can accept coal.	石炭を中に入れる小型のホッパーです.
@@ -6334,40 +6334,40 @@ def_tyre_small_name		Small Tyre	装飾用タイヤ (小)
 def_tyre_small_desc		Useful for creating tyre stacks and fenders.	タイヤの山や緩衝部分の作成に便利です.
 def_tyre_small_s_desc		A small decorative tyre.	小型の装飾用タイヤです.
 def_warhead_body_large_name		Warhead Body (Large)	弾頭 (大, 本体)
-def_warhead_body_large_desc		Detonates from a logic signal, or when receiving damage. Be careful!	オン信号を受け取るか損傷を受けると爆発します. 取り扱い注意!
+def_warhead_body_large_desc		Detonates from an impact, or when receiving damage. Be careful!	衝撃か損傷を受けると爆発します. 取り扱い注意!
 def_warhead_body_large_s_desc		A large explosive warhead.	大型の爆発性の弾頭です.
-def_warhead_body_large_node_0_label		Detonate	爆破
-def_warhead_body_large_node_0_desc		Detonates the explosives in the warhead.	オン信号を受け取るとこの弾頭を爆破します.
+def_warhead_body_large_node_0_label		Arm	武装
+def_warhead_body_large_node_0_desc		Arm the explosives in the warhead to detonate when the internal impact sensor reaches its threshold.	オン信号を受け取るとこの弾頭を武装状態にし, 内部の衝撃計が閾値を超えると爆発します.
 def_warhead_body_medium_name		Warhead Body (Medium)	弾頭 (中, 本体)
-def_warhead_body_medium_desc		Detonates from a logic signal, or when receiving damage. Be careful!	オン信号を受け取るか損傷を受けると爆発します. 取り扱い注意!
+def_warhead_body_medium_desc		Detonates from an impact, or when receiving damage. Be careful!	衝撃か損傷を受けると爆発します. 取り扱い注意!
 def_warhead_body_medium_s_desc		A medium explosive warhead.	中型の爆発性の弾頭です.
-def_warhead_body_medium_node_0_label		Detonate	爆破
-def_warhead_body_medium_node_0_desc		Detonates the explosives in the warhead.	オン信号を受け取るとこの弾頭を爆破します.
+def_warhead_body_medium_node_0_label		Arm	武装
+def_warhead_body_medium_node_0_desc		Arm the explosives in the warhead to detonate when the internal impact sensor reaches its threshold.	オン信号を受け取るとこの弾頭を武装状態にし, 内部の衝撃計が閾値を超えると爆発します.
 def_warhead_body_small_name		Warhead Body (Small)	弾頭 (小, 本体)
-def_warhead_body_small_desc		Detonates from a logic signal, or when receiving damage. Be careful!	オン信号を受け取るか損傷を受けると爆発します. 取り扱い注意!
+def_warhead_body_small_desc		Detonates from an impact, or when receiving damage. Be careful!	衝撃か損傷を受けると爆発します. 取り扱い注意!
 def_warhead_body_small_s_desc		A small explosive warhead.	小型の爆発性の弾頭です.
-def_warhead_body_small_node_0_label		Detonate	爆破
-def_warhead_body_small_node_0_desc		Detonates the explosives in the warhead.	オン信号を受け取るとこの弾頭を爆破します.
+def_warhead_body_small_node_0_label		Arm	武装
+def_warhead_body_small_node_0_desc		Arm the explosives in the warhead to detonate when the internal impact sensor reaches its threshold.	オン信号を受け取るとこの弾頭を武装状態にし, 内部の衝撃計が閾値を超えると爆発します.
 def_warhead_emp_name		Warhead (EMP)	弾頭 (電磁パルス)
-def_warhead_emp_desc		Detonates from a logic signal, creating an EMP to temporarily shut down nearby electronic systems.	オン信号を受け取ると電磁パルスを放出します. 付近の電力網を一時的に使用不可にします.
+def_warhead_emp_desc		Detonates from an impact, creating an EMP to temporarily shut down nearby electronic systems.	衝撃を受けると電磁パルスを放出し, 付近の電力網を一時的に使用不可にします.
 def_warhead_emp_s_desc		A electromagnetic-pulse warhead.	電磁パルスを放出する弾頭です.
-def_warhead_emp_node_0_label		Detonate	放出
-def_warhead_emp_node_0_desc		Detonates the EMP charge in the warhead.	オン信号を受け取ると電磁パルスを放出します.
+def_warhead_emp_node_0_label		Arm	武装
+def_warhead_emp_node_0_desc		Arm the EMP charge in the warhead to detonate when the internal impact sensor reaches its threshold.	オン信号を受け取るとこの弾頭を武装状態にし, 内部の衝撃計が閾値を超えると電磁パルスを放出します.
 def_warhead_large_name		Warhead (Large)	弾頭 (大, 先端)
-def_warhead_large_desc		Detonates from a logic signal, or when receiving damage. Be careful!	オン信号を受け取るか損傷を受けると爆発します. 取り扱い注意!
+def_warhead_large_desc		Detonates from an impact, or when receiving damage. Be careful!	衝撃か損傷を受けると爆発します. 取り扱い注意!
 def_warhead_large_s_desc		A large explosive warhead.	大型の爆発性の弾頭です.
-def_warhead_large_node_0_label		Detonate	爆破
-def_warhead_large_node_0_desc		Detonates the explosives in the warhead.	オン信号を受け取るとこの弾頭を爆破します.
+def_warhead_large_node_0_label		Arm	武装
+def_warhead_large_node_0_desc		Arm the explosives in the warhead to detonate when the internal impact sensor reaches its threshold.	オン信号を受け取るとこの弾頭を武装状態にし, 内部の衝撃計が閾値を超えると爆発します.
 def_warhead_medium_name		Warhead (Medium)	弾頭 (中, 先端)
-def_warhead_medium_desc		Detonates from a logic signal, or when receiving damage. Be careful!	オン信号を受け取るか損傷を受けると爆発します. 取り扱い注意!
+def_warhead_medium_desc		Detonates from an impact, or when receiving damage. Be careful!	衝撃か損傷を受けると爆発します. 取り扱い注意!
 def_warhead_medium_s_desc		A medium explosive warhead.	中型の爆発性の弾頭です.
-def_warhead_medium_node_0_label		Detonate	爆破
-def_warhead_medium_node_0_desc		Detonates the explosives in the warhead.	オン信号を受け取るとこの弾頭を爆破します.
+def_warhead_medium_node_0_label		Arm	武装
+def_warhead_medium_node_0_desc		Arm the explosives in the warhead to detonate when the internal impact sensor reaches its threshold.	オン信号を受け取るとこの弾頭を武装状態にし, 内部の衝撃計が閾値を超えると爆発します.
 def_warhead_small_name		Warhead (Small)	弾頭 (小, 先端)
-def_warhead_small_desc		Detonates from a logic signal, or when receiving damage. Be careful!	オン信号を受け取るか損傷を受けると爆発します. 取り扱い注意!
+def_warhead_small_desc		Detonates from an impact, or when receiving damage. Be careful!	衝撃か損傷を受けると爆発します. 取り扱い注意!
 def_warhead_small_s_desc		A small explosive warhead.	小型の爆発性の弾頭です.
-def_warhead_small_node_0_label		Detonate	爆破
-def_warhead_small_node_0_desc		Detonates the explosives in the warhead.	オン信号を受け取るとこの弾頭を爆破します.
+def_warhead_small_node_0_label		Arm	武装
+def_warhead_small_node_0_desc		Arm the explosives in the warhead to detonate when the internal impact sensor reaches its threshold.	オン信号を受け取るとこの弾頭を武装状態にし, 内部の衝撃計が閾値を超えると爆発します.
 def_watercannon_name		Fluid Cannon	放水銃
 def_watercannon_desc		The cannon is a turret and can rotate on 2 axis.	この放水銃は2軸に沿って回転します.
 def_watercannon_s_desc		A fluid cannon that fires pressurized water for putting out fires.	高圧の水を噴射して消化活動を行う放水銃です.
@@ -6398,7 +6398,7 @@ def_water_hose_b_s_desc
 def_water_hose_b_node_0_label		Fluid	流体
 def_water_hose_b_node_0_desc		Fluid connection for the end of the hose.	ウィンチを通して流体が自由に移動します.
 def_water_inlet_name		Fluid Port	流体口
-def_water_inlet_desc		Place the port inside of an enclosed volume to connect to that volume, or outside of the vehicle to connect to the ocean.	
+def_water_inlet_desc		Place the port inside of an enclosed volume to connect to that volume, or outside of the vehicle to connect to the ocean.	密閉空間内に設置してその空間内の流体を出し入れしたり, 乗り物の側面に設置して外と流体を出し入れしたりします.
 def_water_inlet_s_desc		Port used to allow fluid in and out of a fluid system.	流体の吸入や排出を行う流体口です.
 def_water_inlet_node_0_label		Fluid	流体
 def_water_inlet_node_0_desc		Allows fluid to flow in and out of an enclosed volume or the ocean.	この流体口から吸入/排出を行う流体です.
@@ -6434,7 +6434,7 @@ def_water_nozzle_node_1_desc		Adjustable spray angle from 0 (focused) to 1 (spre
 def_water_nozzle_node_2_label		Electric	電力
 def_water_nozzle_node_2_desc		Electrical power connection.	電力網から電力を供給します.
 def_water_outlet_name		Fluid Port (Deprecated)	流体口 (非推奨)
-def_water_outlet_desc		Place the port inside of an enclosed volume to connect to that volume, or outside of the vehicle to connect to the ocean.	
+def_water_outlet_desc		Place the port inside of an enclosed volume to connect to that volume, or outside of the vehicle to connect to the ocean.	密閉空間内に設置してその空間内の流体を出し入れしたり, 乗り物の側面に設置して外と流体を出し入れしたりします.
 def_water_outlet_s_desc		Port used to allow fluid in and out of a fluid system.	流体の吸入や排出を行う流体口です.
 def_water_outlet_node_0_label		Fluid	流体
 def_water_outlet_node_0_desc		Allows fluid to flow in and out of an enclosed volume or the ocean.	この流体口から吸入/排出を行う流体です.
@@ -6464,7 +6464,7 @@ def_water_spawner_name		Fluid Spawner	液体発生器
 def_water_spawner_desc		The fluid spawner for helping with custom fluid tanks, so they can be spawned full, without a need to fill after spawning.	密閉空間の中に設置すると, 設定された種類の液体を設定された量で満たされた状態でスポーンします.
 def_water_spawner_s_desc		A component to mark an enclosed area to be spawned with fluid inside.	この密閉空間の中は液体で満たされると印を付けるブロックです.
 def_water_suction_duct_name		Fluid Slot Port	流体口 (スロット)
-def_water_suction_duct_desc		Place the port inside of an enclosed volume to connect to that volume, or outside of the vehicle to connect to the ocean.	
+def_water_suction_duct_desc		Place the port inside of an enclosed volume to connect to that volume, or outside of the vehicle to connect to the ocean.	密閉空間内に設置してその空間内の流体を出し入れしたり, 乗り物の側面に設置して外と流体を出し入れしたりします.
 def_water_suction_duct_s_desc		Port used to allow fluid in and out of a fluid system.	流体の吸入や排出を行う流体口です.
 def_water_suction_duct_node_0_label		Fluid	流体
 def_water_suction_duct_node_0_desc		Allows fluid to flow in and out of an enclosed volume or the ocean.	この流体口から吸入/排出を行う流体です.
