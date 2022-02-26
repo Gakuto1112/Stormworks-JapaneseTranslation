@@ -22,7 +22,7 @@ C:\Users\user\AppData\Roaming\Stormworks\data\languages
 * リストに日本語データがない場合は「**Refresh**」を押してリストを更新して下さい。それでも表示されていない場合は正しいディレクトリに翻訳データが置かれているか確かめて下さい。
 * ~~リストに警告が表示されていますが、翻訳を適用するにあたっては問題ありません。~~ （**2022/2/4更新**）警告が表示されないように修正しました。
 ### 翻訳データの更新
-ゲームのアップデートや翻訳の修正などでの更新版がリリースされる場合があります。更新する場合は上記の手順でファイルを置き換えて下さい。また、定期的にこのページや[Steamワークショップのページ](https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581)にアクセスして更新されていないか確認に来て下さい。また、更新時は[DiscordのStormworks日本サーバー](https://discord.gg/GBqesHHGBR)や[私のTwitter](https://twitter.com/Gakuto1112)でお知らせします。
+ゲームのアップデートや翻訳の修正などでの更新版がリリースされる場合があります。更新する場合は上記の手順でファイルを置き換えて下さい。また、定期的にこのページや[Steamワークショップのページ](https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581)にアクセスして更新されていないか確認に来て下さい。また、更新時は[DiscordのStormworks日本サーバー](https://discord.gg/GBqesHHGBR)や[私のTwitter](https://twitter.com/Gakuto1112)でお知らせします。（Twitterは、私の個人的なツイートも含まれます。ご了承下さい。）
 ## 注意事項
 ファイルをダウンロードした時点で以下の注意事項に同意したものとみなします。
 * このデータを使用して発生したいかなる損害の責任は負いかねます。
