@@ -1387,7 +1387,7 @@ id	description	en	local
 		Misc.	その他
 		tags	タグ
 		Vehicle (Made by ###)	乗り物 (### 製)
-		SERVER: ### FPS	サーバー: ### FPS
+		SERVER: ### TPS	サーバー: ### TPS
 		### Degrees	### 度
 		Last updated ###	最終更新: ###
 		Addon	アドオン
@@ -2093,6 +2093,7 @@ id	description	en	local
 		Army Suit	陸軍の服
 		Armour Vest	装甲服
 		Use	使用する
+		You were disconnected due to adverse network conditions.	ネットワークの環境が悪いため切断されました.
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
