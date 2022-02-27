@@ -686,7 +686,7 @@ id	description	en	local
 		OVERWRITE ADDON	アドオンの上書き
 		Are you sure you want to overwrite this addon?	このアドオンを上書きしますか?
 		UPLOAD ADDON	アドオンのアップロード
-		NEW ADDON	アドオンの新規作成
+		NEW ADDON	新規アドオン
 		Are you sure you want to upload this addon to the workshop?\n\n This will make it available to all Stormworks players.	このアドオンをSteamワークショップにアップロードしますか?\n\nアップロード後このアドオンは全てのプレイヤーに公開されます.
 		Are you sure you want to overwrite this workshop playlist?	このプレイリストを更新しますか?
 		Are you sure you want to test this mission in the world?\n\nYour mission will be automatically despawned when you return to the addon editor.	このミッションをワールドでテストしますか?\n\nテスト後ミッションエディターを再度開くとミッションは自動で削除します.
@@ -879,7 +879,6 @@ id	description	en	local
 		Zoom	ズーム
 		Camera Mode	カメラモード
 		Toggle Controls UI	操作メモの切り替え
-		Toggle Controller Input	コントローラー入力のオン/オフ
 		Emote Wheel	エモートメニュー
 		Player List	プレイヤー一覧
 		Quick Chat	クイックチャット
@@ -1518,7 +1517,7 @@ id	description	en	local
 		Bank	所持金
 		Total	合計
 		Police Hat	警官の帽子
-		NEW ADDON	新規ミッション
+		NEW ADDON	新規アドオン
 		Add/Remove Components	コンポーネントの追加/削除
 		Mission Dependencies	ミッションの関係性
 		Set Mission Depencies	ミッションの関係性の設定
