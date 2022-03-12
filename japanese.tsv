@@ -455,7 +455,7 @@ id	description	en	local
 		Hardcore mode with permadeath (save file will be deleted upon death).	ハードコアモードです. 一度でも死亡するとセーブデータは削除されます.
 		Custom difficulty settings.	カスタム難易度設定です.
 		Custom mode. A sandbox environment with an array of settings to customise your session. Career or Creative.	カスタムモードです. サンドボックスモードの環境で, 様々なゲーム設定を変更できます. キャリアモードまたはクリエイティブモードとして機能します.
-		Classic career mode. Expand your coastguard empire. Complete missions to earn money and unlock components.	クラッシックキャリアモードです. 自分の領土を広げよう. ミッションを完了してお金を稼いだり, 部品をアンロックしたりしよう.
+		Classic mode. Career mode with research tree, third person, and teleport.	クラシックモードです. 研究要素, 三人称視点, テレポートのあるキャリアモードです.
 		Career mode. Expand your coastguard empire. Complete missions with survival style settings.	キャリアモードです. 自分の領土を広げよう. サバイバル設定でミッションに挑戦しよう.
 		Custom game mode settings.	カスタムゲームモード設定です.
 		PLEASE CHOOSE ANOTHER KEY	他のキーを割り当てて下さい.
@@ -912,7 +912,7 @@ id	description	en	local
 		Custom	カスタム
 		Game Mode	ゲームモード
 		Career	キャリア
-		Classic Career	クラッシックキャリア
+		Classic	クラッシック
 		Custom	カスタム
 		CUSTOMISE DIFFICULTY	難易度設定
 		First Person Only	一人称視点のみ
@@ -1253,8 +1253,8 @@ id	description	en	local
 		Original Color	通常の色
 		rotate camera	カメラ回転
 		move camera	カメラ移動
-		crane up	カメラ上昇
-		crane down	カメラ下降
+		Crane up	カメラ上昇
+		Crane down	カメラ下降
 		reset	リセット
 		hide ui	UIの非表示
 		pause/unpause	一時停止/再開
@@ -2092,6 +2092,29 @@ id	description	en	local
 		Army Suit	陸軍の服
 		Armour Vest	装甲服
 		Use	使用する
+		Keyboard	キーボード
+		Gamepad	ゲームコントローラー
+		Move X	横方向に移動
+		Move Y	縦方向に移動
+		View X	横方向に視点変更
+		View Y	縦方向に視点変更
+		HOTAS	多入力操縦席
+		Pause	一時停止
+		Slow	カメラを遅く
+		Fast	カメラを速く
+		Very Fast	カメラをとても速く
+		Navigate X	横方向に移動
+		Navigate Y	縦方向に移動
+		Navigate Up	上に移動
+		Navigate Down	下に移動
+		Navigate Left	左に移動
+		Navigate Right	右に移動
+		Select/Confirm	選択/確認
+		Context	コンテクスト
+		Tab Left	左のタブへ
+		Tab Right	右のタブへ
+		Free View	自由視点移動
+		Hotkey	ホットキー
 		You were disconnected due to adverse network conditions.	ネットワークの環境が悪いため切断されました.
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
