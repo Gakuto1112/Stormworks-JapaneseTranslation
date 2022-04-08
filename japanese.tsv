@@ -3411,7 +3411,7 @@ def_gps_sensor_node_1_label		Y Coordinate	y座標
 def_gps_sensor_node_1_desc		The y coordinate of this component on the world map.	この部品がある場所のワールドのy座標を出力します.
 def_gps_sensor_node_2_label		Electric	電力
 def_gps_sensor_node_2_desc		Electrical power connection.	電力網から電力を供給します.
-def_gun_belt_corner_name		Autocannon Ammo (Corner)	機関砲の弾帯 (角長辺)
+def_gun_belt_corner_name		Autocannon Belt (Corner)	機関砲の弾帯 (角長辺)
 def_gun_belt_corner_desc		Autocannon belts can transfer all calibers of autocannon ammo.	機関砲の弾帯は全ての口径の機関砲の弾を輸送できます.
 def_gun_belt_corner_s_desc		An autocannon ammo belt.	機関砲の弾帯の部品です.
 def_gun_belt_corner_node_0_label		Contains Ammo	弾薬装填
@@ -3466,7 +3466,7 @@ def_gun_belt_corner_xxl_desc		Cannon ammo belts can store and transfer ammo shel
 def_gun_belt_corner_xxl_s_desc		A bertha cannon ammo belt.	大型の大砲の弾帯の部品です.
 def_gun_belt_corner_xxl_node_0_label		Contains Ammo	弾薬装填
 def_gun_belt_corner_xxl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
-def_gun_belt_junction_name		Autocannon Ammo Belt (Junction)	機関砲の弾帯 (分岐)
+def_gun_belt_junction_name		Autocannon Belt (Junction)	機関砲の弾帯 (分岐)
 def_gun_belt_junction_desc		Autocannon belts can transfer all calibers of autocannon ammo. Junction belts redirect the path of ammo transfer.	機関砲の弾帯は全ての口径の機関砲の弾を輸送できます. この弾帯は弾を2方向に分岐します.
 def_gun_belt_junction_s_desc		An autocannon ammo belt.	機関砲の弾帯の部品です.
 def_gun_belt_junction_node_0_label		Contains Ammo	弾薬装填
