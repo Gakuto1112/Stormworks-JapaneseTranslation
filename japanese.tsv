@@ -471,7 +471,7 @@ id	description	en	local
 		Meters	メートル
 		Motion Blur	モーションブラー
 		Ocean Reflections	海面反射
-		Bloom	流血表現
+		Bloom	ブルーム
 		Wildlife	野生生物の表示
 		Shadow Quality	影の品質
 		Shadow Resolution	影の解像度
@@ -1377,7 +1377,7 @@ id	description	en	local
 		Presets	プリセット
 		Your saved vehicles.	保存した乗り物.
 		Vehicles you've subscribed to on the Steam Workshop.	Steamワークショップでサブスクライブした乗り物.
-		Some basic vehicles to get you started.	作る始めに参考になる基本的な乗り物.
+		Some basic vehicles to get you started.	作り始めに参考になる基本的な乗り物.
 		Preset subassemblies to paste onto your vehicles.	乗り物に搭載できる機能部品.
 		Upload a new vehicle to the steam workshop, or select one of your existing workshop vehicles to edit and overwrite it	Steamワークショップに新規アップロードするか, 既存の乗り物を選んでそれに上書きします.
 		VEHICLE NAME	乗り物の名前
@@ -2115,7 +2115,47 @@ id	description	en	local
 		Tab Right	右のタブへ
 		Free View	自由視点移動
 		Hotkey	ホットキー
+		Body Warmer	ダウンベスト
+		Cardigan	カーディガン
+		Hoodie Down	フード付き服 (被らない)
+		Hoodie Up	フード付き服 (被る)
+		Leggings	ズボン
+		Puffer Jacket	ダウンジャケット
+		Raincoat	レインコート
+		Varsity Jacket	ヴァーシティージャケット (スカジャン)
+		Shirt Beautiful OB	Beautiful OB のTシャツ
+		Shirt Camodo	Camodo のTシャツ
+		Shirt CC2	Carrier Command 2 のTシャツ
+		Shirt Frantic	Frantic のTシャツ
+		Shirt GQ	GQ のTシャツ
+		Shirt Lynx Highland	Lynx Highland のTシャツ
+		Shirt MrNJersy	MrNJersy のTシャツ
+		Shirt ND	ND のTシャツ
+		Shirt Raptor	Raptor のTシャツ
+		Shirt Rubber Duck	ラバーダック のTシャツ
+		Shirt Spycakes	Spycakes のTシャツ
+		Shirt Stormworks	Stormworks のTシャツ
+		Hoodie Beautiful OB	Beautiful OB のフード付き服
+		Hoodie Camodo	Camodo のフード付き服
+		Hoodie CC2	Carrier Command 2 のフード付き服
+		Hoodie Frantic	Frantic のフード付き服
+		Hoodie GQ	GQ のフード付き服
+		Hoodie Lynx Highland	Lynx Highland のフード付き服
+		Hoodie MrNJersy	MrNJersy のフード付き服
+		Hoodie ND	ND のフード付き服
+		Hoodie Raptor	Raptor のフード付き服
+		Hoodie Rubber Duck	ラバーダック のフード付き服
+		Hoodie Spycakes	Spycakes のフード付き服
+		Hoodie Stormworks	Stormworks のフード付き服
 		You were disconnected due to adverse network conditions.	ネットワークの環境が悪いため切断されました.
+		Physics	物理演算
+		Physics Detail	物理演算の精度
+		Gameplay	ゲームプレイ
+		Fish Spawn Rate	魚の出現率
+		Color Palette	カラーパレット
+		Blood Effects	流血表現
+		Accessibility	アクセシビリティ
+		Auto	自動
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
@@ -5402,10 +5442,10 @@ def_rx_huge_v2_node_0_label		Audio Recv	音声信号受信
 def_rx_huge_v2_node_0_desc		Output for received audio data.	指定された周波数で他のアンテナから送信された音声信号を受信します.
 def_rx_huge_v2_node_1_label		Audio Send	音声信号送信
 def_rx_huge_v2_node_1_desc		Input for audio data to send.	指定された周波数で音声信号を送信します.
-def_rx_huge_v2_node_2_label		Data Send	複合信号送信
-def_rx_huge_v2_node_2_desc		Output for received composite data.	指定された周波数で複合信号を送信します.
-def_rx_huge_v2_node_3_label		Data Recv	複合信号受信
-def_rx_huge_v2_node_3_desc		Input for composite data to send.	指定された周波数で他のアンテナから送信された複合信号を受信します.
+def_rx_huge_v2_node_2_label		Data Recv	複合信号受信
+def_rx_huge_v2_node_2_desc		Output for received composite data.	指定された周波数で他のアンテナから送信された複合信号を受信します.
+def_rx_huge_v2_node_3_label		Data Send	複合信号送信
+def_rx_huge_v2_node_3_desc		Input for composite data to send.	指定された周波数で複合信号を送信します.
 def_rx_huge_v2_node_4_label		Electric	電力
 def_rx_huge_v2_node_4_desc		Electrical input.	電力網から電力を供給します. 電力の大きさによって送受信できる範囲が変化します.
 def_rx_huge_v2_node_5_label		Frequency	周波数
@@ -5436,10 +5476,10 @@ def_rx_large_v2_node_0_label		Audio Recv	音声信号受信
 def_rx_large_v2_node_0_desc		Output for received audio data.	指定された周波数で他のアンテナから送信された音声信号を受信します.
 def_rx_large_v2_node_1_label		Audio Send	音声信号送信
 def_rx_large_v2_node_1_desc		Input for audio data to send.	指定された周波数で音声信号を送信します.
-def_rx_large_v2_node_2_label		Data Send	複合信号送信
-def_rx_large_v2_node_2_desc		Output for received composite data.	指定された周波数で複合信号を送信します.
-def_rx_large_v2_node_3_label		Data Recv	複合信号受信
-def_rx_large_v2_node_3_desc		Input for composite data to send.	指定された周波数で他のアンテナから送信された複合信号を受信します.
+def_rx_large_v2_node_2_label		Data Recv	複合信号受信
+def_rx_large_v2_node_2_desc		Output for received composite data.	指定された周波数で他のアンテナから送信された複合信号を受信します.
+def_rx_large_v2_node_3_label		Data Send	複合信号送信
+def_rx_large_v2_node_3_desc		Input for composite data to send.	指定された周波数で複合信号を送信します.
 def_rx_large_v2_node_4_label		Electric	電力
 def_rx_large_v2_node_4_desc		Electrical input.	電力網から電力を供給します. 電力の大きさによって送受信できる範囲が変化します.
 def_rx_large_v2_node_5_label		Frequency	周波数
@@ -5470,10 +5510,10 @@ def_rx_med_v2_node_0_label		Audio Recv	音声信号受信
 def_rx_med_v2_node_0_desc		Output for received audio data.	指定された周波数で他のアンテナから送信された音声信号を受信します.
 def_rx_med_v2_node_1_label		Audio Send	音声信号送信
 def_rx_med_v2_node_1_desc		Input for audio data to send.	指定された周波数で音声信号を送信します.
-def_rx_med_v2_node_2_label		Data Send	複合信号送信
-def_rx_med_v2_node_2_desc		Output for received composite data.	指定された周波数で複合信号を送信します.
-def_rx_med_v2_node_3_label		Data Recv	複合信号受信
-def_rx_med_v2_node_3_desc		Input for composite data to send.	指定された周波数で他のアンテナから送信された複合信号を受信します.
+def_rx_med_v2_node_2_label		Data Recv	複合信号受信
+def_rx_med_v2_node_2_desc		Output for received composite data.	指定された周波数で他のアンテナから送信された複合信号を受信します.
+def_rx_med_v2_node_3_label		Data Send	複合信号送信
+def_rx_med_v2_node_3_desc		Input for composite data to send.	指定された周波数で複合信号を送信します.
 def_rx_med_v2_node_4_label		Electric	電力
 def_rx_med_v2_node_4_desc		Electrical input.	電力網から電力を供給します. 電力の大きさによって送受信できる範囲が変化します.
 def_rx_med_v2_node_5_label		Frequency	周波数
@@ -5502,10 +5542,10 @@ def_rx_small_v2_node_0_label		Audio Recv	音声信号受信
 def_rx_small_v2_node_0_desc		Output for received audio data.	指定された周波数で他のアンテナから送信された音声信号を受信します.
 def_rx_small_v2_node_1_label		Audio Send	音声信号送信
 def_rx_small_v2_node_1_desc		Input for audio data to send.	指定された周波数で音声信号を送信します.
-def_rx_small_v2_node_2_label		Data Send	複合信号送信
-def_rx_small_v2_node_2_desc		Output for received composite data.	指定された周波数で複合信号を送信します.
-def_rx_small_v2_node_3_label		Data Recv	複合信号受信
-def_rx_small_v2_node_3_desc		Input for composite data to send.	指定された周波数で他のアンテナから送信された複合信号を受信します.
+def_rx_small_v2_node_2_label		Data Recv	複合信号受信
+def_rx_small_v2_node_2_desc		Output for received composite data.	指定された周波数で他のアンテナから送信された複合信号を受信します.
+def_rx_small_v2_node_3_label		Data Send	複合信号送信
+def_rx_small_v2_node_3_desc		Input for composite data to send.	指定された周波数で複合信号を送信します.
 def_rx_small_v2_node_4_label		Electric	電力
 def_rx_small_v2_node_4_desc		Electrical input.	電力網から電力を供給します. 電力の大きさによって送受信できる範囲が変化します.
 def_rx_small_v2_node_5_label		Frequency	周波数
