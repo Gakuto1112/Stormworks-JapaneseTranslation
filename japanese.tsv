@@ -6516,9 +6516,9 @@ def_water_pump_large_name		Large Fluid Pump	流体ポンプ (大)
 def_water_pump_large_desc		Connect to an inlet and outlet to create a pumping system to move fluid around a vehicle.	流体を流せる向きは決まっています.
 def_water_pump_large_s_desc		A large fluid pump.	電力で流体を流す大型ポンプです.
 def_water_pump_large_node_0_label		Fluid In	流体注入
-def_water_pump_large_node_0_desc		Connect to an inlet component to take fluid into the system.	オン信号を受け取ると流体を流します.
+def_water_pump_large_node_0_desc		Connect to an inlet component to take fluid into the system.	ポンプで流す流体を注入します.
 def_water_pump_large_node_1_label		Fluid Out	流体排出
-def_water_pump_large_node_1_desc		Connect to an outlet component to release fluid from the system.	ポンプで流す流体を注入します.
+def_water_pump_large_node_1_desc		Connect to an outlet component to release fluid from the system.	オン信号を受け取ると流体を流します.
 def_water_pump_large_node_2_label		On/Off	起動
 def_water_pump_large_node_2_desc		Controls whether or not the fluid is being pumped.	ポンプで流した流体を排出します.
 def_water_pump_large_node_3_label		Electric	電力
