@@ -4145,7 +4145,7 @@ def_inventory_equipment_welding_torch_desc		Hold [$[action_equipment_use]] to re
 def_inventory_equipment_welding_torch_s_desc		A large equipment storage unit containing a welding torch.	溶接機が保管されている中型の保管庫です.
 def_inventory_equipment_welding_torch_node_0_label		Electric	電力
 def_inventory_equipment_welding_torch_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
-def_inventory_medium_name		Large equipment inventory	保管庫 (中)
+def_inventory_medium_name		Large equipment inventory (Empty)	保管庫 (中)
 def_inventory_medium_desc		Only large handheld equipment can be stored in this unit. When connected to an electric power source, any rechargable equipment stored in the unit will drain a small amount of electricity until recharged to 100% capacity.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. 大型の携帯品のみ収納できます. この保管庫が通電している場合, 充電可能な携帯品が保管された時に充電します.
 def_inventory_medium_s_desc		An empty large equipment storage unit.	何も保管されていない中型の保管庫です.
 def_inventory_medium_node_0_label		Electric	電力
@@ -4185,7 +4185,7 @@ def_inventory_outfit_scuba_desc		When equipped, it will allow diving to a depth 
 def_inventory_outfit_scuba_s_desc		An outfit inventory unit containing specialist scuba gear.	スキューバ装備が保管されている保管庫です.
 def_inventory_outfit_scuba_node_0_label		Electric	電力
 def_inventory_outfit_scuba_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
-def_inventory_small_name		Small equipment inventory	保管庫 (小)
+def_inventory_small_name		Small equipment inventory (Empty)	保管庫 (小)
 def_inventory_small_desc		Only small handheld equipment can be stored in this unit. When connected to an electric power source, any rechargable equipment stored in the unit will drain a small amount of electricity until recharged to 100% capacity.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫から携帯品を取り出したり, 手に持つ携帯品を保管庫へ収納します. 小型の携帯品のみ収納できます. この保管庫が通電している場合, 充電可能な携帯品が保管された時に充電します.
 def_inventory_small_s_desc		An empty small equipment storage unit.	何も保管されていない小型の保管庫です.
 def_inventory_small_node_0_label		Electric	電力
@@ -4795,7 +4795,7 @@ def_multibody_door_hinge_a_s_desc		A powered robotic hinge for custom sealable d
 def_multibody_door_hinge_a_node_0_label		Rotation Target	向き
 def_multibody_door_hinge_a_node_0_desc		The standard value setting the orientation within the range of motion.	蝶番が向く方向を-1から1の範囲で制御します.
 def_multibody_door_hinge_a_node_1_label		Current Rotation	現在の向き
-def_multibody_door_hinge_a_node_1_desc		The hinge's measured rotation between 0 and 0.25.	蝶番が現在向いている向きを出力します.
+def_multibody_door_hinge_a_node_1_desc		The hinge's measured rotation between -0.25 and 0.25.	蝶番が現在向いている向きを-0.25から0.25の範囲で出力します.
 def_multibody_door_hinge_a_node_2_label		Electric	電力
 def_multibody_door_hinge_a_node_2_desc		Electrical power connection.	電力網から電力を供給します.
 def_multibody_door_hinge_b_name		Robotic door hinge child	電動蝶番 (ドア) の部品
@@ -4819,7 +4819,7 @@ def_multibody_robotic_hinge_01_a_s_desc		A powered robotic hinge that will orien
 def_multibody_robotic_hinge_01_a_node_0_label		Rotation Target	向き
 def_multibody_robotic_hinge_01_a_node_0_desc		The standard value setting the orientation within the range of motion.	蝶番が向く方向を-1から1の範囲で制御します.
 def_multibody_robotic_hinge_01_a_node_1_label		Current Rotation	現在の向き
-def_multibody_robotic_hinge_01_a_node_1_desc		The hinge's measured rotation between -0.25 and 0.25.	蝶番が現在向いている向きを出力します.
+def_multibody_robotic_hinge_01_a_node_1_desc		The hinge's measured rotation between -0.25 and 0.25.	蝶番が現在向いている向きを-0.25から0.25の範囲で出力します.
 def_multibody_robotic_hinge_01_a_node_2_label		Electric	電力
 def_multibody_robotic_hinge_01_a_node_2_desc		Electrical power connection.	電力網から電力を供給します.
 def_multibody_robotic_hinge_01_a_node_3_label		RPS	動力
@@ -4870,7 +4870,7 @@ def_multibody_suspension_a_desc		Power can be passed through the suspension, all
 def_multibody_suspension_a_s_desc		A shock absorber that can be used to improve handling of land-based vehicles.	陸上の乗り物の操縦を改善する衝撃吸収装置です.
 def_multibody_suspension_a_node_0_label		RPS	動力
 def_multibody_suspension_a_node_0_desc		Power connection for transfering mechanical energy.	サスペンション間で動力の伝達ができます.
-def_multibody_suspension_b_name		suspension b	サスペンションの部品
+def_multibody_suspension_b_name		multibody_suspension_b	サスペンションの部品
 def_multibody_suspension_b_desc			
 def_multibody_suspension_b_s_desc			
 def_multibody_suspension_b_node_0_label		RPS	動力
@@ -5320,7 +5320,6 @@ def_rotor_coaxial_large_node_2_desc		Receives power generated by an engine.	エ�
 def_rotor_coaxial_large_node_3_label		Collective	コレクティブ
 def_rotor_coaxial_large_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	ローターのコレクティブ (ローターが発生させる浮力の量) を制御する-1から1の範囲の数値信号です.
 def_rotor_coaxial_large_node_4_label		RPS	動力中継
-def_rotor_coaxial_large_node_4_desc			上部のローターなどにエンジンの動力を中継します.
 def_rotor_coaxial_light_name		Rotor (Light)	ローター (軽)
 def_rotor_coaxial_light_desc		Two standard number inputs control the rotor's swashplate, allowing you to affect the its pitch and roll. Power received from an engine affects the amount of up and down force that the rotor will generate. The output force of this rotor is decreased when underwater.	3つの数値信号でローター板を制御し, ピッチ, ロール, コレクティブを制御します. 得られる推進力の大きさはこのローターを回すエンジンの動力の大きさに依存します. 水中では推進力が低下します.
 def_rotor_coaxial_light_s_desc		A helicopter rotor with controllable pitch and roll.	推進力を得られる軽量型のローターです.
@@ -5333,7 +5332,6 @@ def_rotor_coaxial_light_node_2_desc		Receives power generated by an engine.	エ�
 def_rotor_coaxial_light_node_3_label		Collective	コレクティブ
 def_rotor_coaxial_light_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	ローターのコレクティブ (ローターが発生させる浮力の量) を制御する-1から1の範囲の数値信号です.
 def_rotor_coaxial_light_node_4_label		RPS	動力中継
-def_rotor_coaxial_light_node_4_desc			上部のローターなどにエンジンの動力を中継します.
 def_rotor_coaxial_light_end_name		Rotor End (Light)	ローター (軽, 終端)
 def_rotor_coaxial_light_end_desc		Two standard number inputs control the rotor's swashplate, allowing you to affect the its pitch and roll. Power received from an engine affects the amount of up and down force that the rotor will generate. The output force of this rotor is decreased when underwater.	3つの数値信号でローター板を制御し, ピッチ, ロール, コレクティブを制御します. 得られる推進力の大きさはこのローターを回すエンジンの動力の大きさに依存します. 水中では推進力が低下します.
 def_rotor_coaxial_light_end_s_desc		A helicopter rotor with controllable pitch and roll.	推進力を得られる軽量型のローターです.
@@ -5357,7 +5355,6 @@ def_rotor_coaxial_prop_node_2_desc		Receives power generated by an engine.	エ�
 def_rotor_coaxial_prop_node_3_label		Collective	コレクティブ
 def_rotor_coaxial_prop_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	プロペラのコレクティブ (プロペラが発生させる浮力の量) を制御する-1から1の範囲の数値信号です.
 def_rotor_coaxial_prop_node_4_label		RPS	動力中継
-def_rotor_coaxial_prop_node_4_desc			上部のプロペラなどにエンジンの動力を中継します.
 def_rotor_coaxial_prop_end_name		Rotor Propeller End (Large)	プロペラ (大, 終端)
 def_rotor_coaxial_prop_end_desc		Two standard number inputs control the rotor's swashplate, allowing you to affect the its pitch and roll. Power received from an engine affects the amount of up and down force that the rotor will generate. The output force of this rotor is decreased when underwater.	3つの数値信号でプロペラ板を制御し, ピッチ, ロール, コレクティブを制御します. 得られる推進力の大きさはこのプロペラを回すエンジンの動力の大きさに依存します. 水中では推進力が低下します.
 def_rotor_coaxial_prop_end_s_desc		A helicopter rotor with controllable pitch and roll.	推進力を得られる大型のプロペラです.
@@ -5381,7 +5378,6 @@ def_rotor_coaxial_prop_small_node_2_desc		Receives power generated by an engine.
 def_rotor_coaxial_prop_small_node_3_label		Collective	コレクティブ
 def_rotor_coaxial_prop_small_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	プロペラのコレクティブ (プロペラが発生させる浮力の量) を制御する-1から1の範囲の数値信号です.
 def_rotor_coaxial_prop_small_node_4_label		RPS	動力中継
-def_rotor_coaxial_prop_small_node_4_desc			上部のプロペラなどにエンジンの動力を中継します.
 def_rotor_coaxial_prop_small_end_name		Rotor Propeller End (Small)	プロペラ (小, 終端)
 def_rotor_coaxial_prop_small_end_desc		Two standard number inputs control the rotor's swashplate, allowing you to affect the its pitch and roll. Power received from an engine affects the amount of up and down force that the rotor will generate. The output force of this rotor is decreased when underwater.	3つの数値信号でプロペラ板を制御し, ピッチ, ロール, コレクティブを制御します. 得られる推進力の大きさはこのプロペラを回すエンジンの動力の大きさに依存します. 水中では推進力が低下します.
 def_rotor_coaxial_prop_small_end_s_desc		A helicopter rotor with controllable pitch and roll.	推進力を得られる小型のプロペラです.
@@ -5405,7 +5401,6 @@ def_rotor_coaxial_small_node_2_desc		Receives power generated by an engine.	エ�
 def_rotor_coaxial_small_node_3_label		Collective	コレクティブ
 def_rotor_coaxial_small_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	ローターのコレクティブ (ローターが発生させる浮力の量) を制御する-1から1の範囲の数値信号です.
 def_rotor_coaxial_small_node_4_label		RPS	動力中継
-def_rotor_coaxial_small_node_4_desc			上部のローターなどにエンジンの動力を中継します.
 def_rudder_name		Rudder	舵 (水平)
 def_rudder_desc		It takes a number input between -1 and 1 that represent the two extremes of the rudder's rotation.	向きの制御は-1から1の範囲の数値信号で行います.
 def_rudder_s_desc		The rudder can be attached to the underside of a boat to control its yaw, allowing you to steer left and right.	船の底に取り付けて船のヨーを制御し, 船の舵取りを可能にします.
