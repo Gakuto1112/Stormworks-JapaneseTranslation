@@ -5082,7 +5082,7 @@ def_radar_large_node_7_label		Target Found	検出
 def_radar_large_node_7_desc		Returns if an object has been detected.	何かを検出している間はオン信号を出力します.
 def_radar_large_node_8_label		Electric	電力
 def_radar_large_node_8_desc		Electrical power connection.	電力網から電力を供給します.
-def_radar_sonar_name		Sonar (Large)	ソナー (大)
+def_radar_sonar_name		Sonar (Large) (Deprecated)	ソナー (大, 非推奨)
 def_radar_sonar_desc		This sensor outputs the distance and angle to a detected underwater object within its range and field of view using sound waves. (Range : 3000) (Max FOV : 0.125)	音波を利用して検出した物体の距離と角度を出力します. 出力値は複合信号を通じて出力されます. 範囲は3キロメートル, 最大視野角は0.125回転です.
 def_radar_sonar_s_desc		A short range Sonar that returns information about a detected underwater object within its view.	検出した水中の物体の情報を出力する短距離のソナーです.
 def_radar_sonar_node_0_label		FOV	視野角
@@ -5099,7 +5099,7 @@ def_radar_sonar_node_5_label		Target Found	検出
 def_radar_sonar_node_5_desc		Returns if an object has been detected.	何かを検出している間はオン信号を出力します.
 def_radar_sonar_node_6_label		Electric	電力
 def_radar_sonar_node_6_desc		Electrical power connection.	電力網から電力を供給します.
-def_radar_sonar_small_name		Sonar (Small)	ソナー (小)
+def_radar_sonar_small_name		Sonar (Small) (Deprecated)	ソナー (小, 非推奨)
 def_radar_sonar_small_desc		This sensor outputs the distance and angle to a detected underwater object within its range and field of view using sound waves. (Range : 1000) (Max FOV : 0.125)	音波を利用して検出した物体の距離と角度を出力します. 出力値は複合信号を通じて出力されます. 範囲は1キロメートル, 最大視野角は0.125回転です.
 def_radar_sonar_small_s_desc		A short range Sonar that returns information about a detected underwater object within its view.	検出した水中の物体の情報を出力する短距離のソナーです.
 def_radar_sonar_small_node_0_label		FOV	視野角
