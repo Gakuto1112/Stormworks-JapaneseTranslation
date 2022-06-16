@@ -1933,28 +1933,28 @@ id	description	en	local
 		Plane Pilot	飛行機のパイロット
 		Gunner	狙撃手
 		Light Autocannon Ammo (Kinetic)	小型機関砲弾 (運動エネルギー弾)
-		Light Autocannon Ammo (High Explosive)	小型機関砲弾 (爆発弾)
-		Light Autocannon Ammo (Fragmentation)	小型機関砲弾 (散弾)
+		Light Autocannon Ammo (High Explosive)	小型機関砲弾 (榴弾)
+		Light Autocannon Ammo (Fragmentation)	小型機関砲弾 (破片榴弾)
 		Light Autocannon Ammo (Armor Piercing)	小型機関砲弾 (徹甲弾)
 		Light Autocannon Ammo (Incendiary)	小型機関砲弾 (焼夷弾)
 		Rotary Autocannon Ammo (Kinetic)	中型機関砲弾 (運動エネルギー弾)
-		Rotary Autocannon Ammo (High Explosive)	中型機関砲弾 (爆発弾)
-		Rotary Autocannon Ammo (Fragmentation)	中型機関砲弾 (散弾)
+		Rotary Autocannon Ammo (High Explosive)	中型機関砲弾 (榴弾)
+		Rotary Autocannon Ammo (Fragmentation)	中型機関砲弾 (破片榴弾)
 		Rotary Autocannon Ammo (Armor Piercing)	中型機関砲弾 (徹甲弾)
 		Rotary Autocannon Ammo (Incendiary)	中型機関砲弾 (焼夷弾)
 		Heavy Autocannon Ammo (Kinetic)	大型機関砲弾 (運動エネルギー弾)
-		Heavy Autocannon Ammo (High Explosive)	大型機関砲弾 (爆発弾)
-		Heavy Autocannon Ammo (Fragmentation)	大型機関砲弾 (散弾)
+		Heavy Autocannon Ammo (High Explosive)	大型機関砲弾 (榴弾)
+		Heavy Autocannon Ammo (Fragmentation)	大型機関砲弾 (破片榴弾)
 		Heavy Autocannon Ammo (Armor Piercing)	大型機関砲弾 (徹甲弾)
 		Heavy Autocannon Ammo (Incendiary)	大型機関砲弾 (焼夷弾)
 		Battle Cannon Shell (Kinetic)	小型大砲砲弾 (運動エネルギー弾)
-		Battle Cannon Shell (High Explosive)	小型大砲砲弾 (爆発弾)
-		Battle Cannon Shell (Fragmentation)	小型大砲砲弾 (散弾)
+		Battle Cannon Shell (High Explosive)	小型大砲砲弾 (榴弾)
+		Battle Cannon Shell (Fragmentation)	小型大砲砲弾 (破片榴弾)
 		Battle Cannon Shell (Armor Piercing)	小型大砲砲弾 (徹甲弾)
 		Battle Cannon Shell (Incendiary)	小型大砲砲弾 (焼夷弾)
 		Artillery Cannon Shell (Kinetic)	中型大砲砲弾 (運動エネルギー弾)
-		Artillery Cannon Shell (High Explosive)	中型大砲砲弾 (爆発弾)
-		Artillery Cannon Shell (Fragmentation)	中型大砲砲弾 (散弾)
+		Artillery Cannon Shell (High Explosive)	中型大砲砲弾 (榴弾)
+		Artillery Cannon Shell (Fragmentation)	中型大砲砲弾 (破片榴弾)
 		Artillery Cannon Shell (Armor Piercing)	中型大砲砲弾 (徹甲弾)
 		Artillery Cannon Shell (Incendiary)	中型大砲砲弾 (焼夷弾)
 		C-4 Explosive	C4爆弾
@@ -1982,8 +1982,8 @@ id	description	en	local
 		Clean Radiation	放射線汚染の除去
 		Weapons	武器
 		Machine Gun Ammo Box (Kinetic)	機関銃の弾薬箱 (運動エネルギー弾)
-		Machine Gun Ammo Box (High Explosive)	機関銃の弾薬箱 (爆発弾)
-		Machine Gun Ammo Box (Fragmentation)	機関銃の弾薬箱 (散弾)
+		Machine Gun Ammo Box (High Explosive)	機関銃の弾薬箱 (榴弾)
+		Machine Gun Ammo Box (Fragmentation)	機関銃の弾薬箱 (破片榴弾)
 		Machine Gun Ammo Box (Armor Piercing)	機関銃の弾薬箱 (徹甲弾)
 		Machine Gun Ammo Box (Incendiary)	機関銃の弾薬箱 (焼夷弾)
 		Ammo Caliber	口径
@@ -1997,13 +1997,13 @@ id	description	en	local
 		Ammo Type	弾薬の種類
 		Unloaded	なし
 		Kinetic	運動エネルギー弾
-		High Explosive	爆発弾
-		Fragmentation	散弾
+		High Explosive	榴弾
+		Fragmentation	破片榴弾
 		Armor Piercing	徹甲弾
 		Incendiary	焼夷弾
 		K	運動エネルギー弾
-		HE	爆発弾
-		FRAG	散弾
+		HE	榴弾
+		FRAG	破片榴弾
 		AP	徹甲弾
 		I	焼夷弾
 		SMG	短機関銃
