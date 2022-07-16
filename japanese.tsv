@@ -3095,7 +3095,7 @@ def_fluid_valve_variable_node_3_desc		Electrical power connection.	電力網か�
 def_foghorn_name		Foghorn	霧笛
 def_foghorn_desc		It has an audible range of 1500m.	音が聞こえる範囲は1500メートルです.
 def_foghorn_s_desc		A ship's foghorn that will sound when receiving an on signal.	オン信号を受け取ると鳴る, 船の霧笛です.
-def_foghorn_node_0_label		Horn	霧笛
+def_foghorn_node_0_label		Horn	鳴動
 def_foghorn_node_0_desc		Sounds the horn when recieving an on signal.	オン信号を受け取ると霧笛がなります.
 def_foghorn_node_1_label		Electric	電力
 def_foghorn_node_1_desc		Electrical power connection.	電力網から電力を供給します.
@@ -6276,6 +6276,63 @@ def_steam_nuclear_fuel_assembly_node_1_desc			挿入された燃料棒の温度�
 def_steam_nuclear_fuel_rod_name		Nuclear Fuel Rod	核燃料棒
 def_steam_nuclear_fuel_rod_desc		Can be inserted into a fuel assembly to start the nuclear fission process.	核燃料集合体に挿入して核分裂反応を発生させます.
 def_steam_nuclear_fuel_rod_s_desc		A Radioactive Fuel Rod.	放射性物質を含む燃料棒です.
+def_steam_piston_name		Steam Piston (Small)	蒸気ピストン (小)
+def_steam_piston_desc		Steam pressurized through the outer coupling extends the piston and steam pressurized through the inner coupling retracts the piston. Altenating pressure to the couplings based on the piston position will allow the crankpin to rotate continuously.	外側から加圧するとピストンが伸び, 内側から加圧するとピストンが縮みます. 蒸気圧力を調整することでピストンが連続的に動作されられます.
+def_steam_piston_s_desc		A steam powered piston that converts steam pressure into torque.	蒸気圧を動力に変換する小型の蒸気ピストンです.
+def_steam_piston_node_0_label		RPS	動力
+def_steam_piston_node_0_desc		Power connection A.	生み出した動力を他の動力を必要とする部品に向けて出力します.
+def_steam_piston_node_1_label		RPS	動力
+def_steam_piston_node_1_desc		Power connection B.	生み出した動力を他の動力を必要とする部品に向けて出力します.
+def_steam_piston_node_2_label		Steam In	蒸気注入
+def_steam_piston_node_2_desc			ピストンに圧力を与え, ピストンを動かします.
+def_steam_piston_node_3_label		Steam Out	蒸気排出
+def_steam_piston_node_3_desc			ピストンを動かすために, 蒸気の排出が必要です.
+def_steam_piston_node_4_label		Steam In	蒸気注入
+def_steam_piston_node_4_desc			ピストンに圧力を与え, ピストンを動かします.
+def_steam_piston_node_5_label		Steam Out	蒸気排出
+def_steam_piston_node_5_desc			ピストンを動かすために, 蒸気の排出が必要です.
+def_steam_piston_node_6_label		RPS	秒間回転数
+def_steam_piston_node_6_desc			動力の秒間回転数 (RPS) を出力します.
+def_steam_piston_node_7_label		Piston Position	ピストンの位置
+def_steam_piston_node_7_desc			現在のピストンの位置を0から1の間で出力します.
+def_steam_piston_3x3_name		Steam Piston (Medium)	蒸気ピストン (中)
+def_steam_piston_3x3_desc		Steam pressurized through the outer coupling extends the piston and steam pressurized through the inner coupling retracts the piston. Altenating pressure to the couplings based on the piston position will allow the crankpin to rotate continuously.	外側から加圧するとピストンが伸び, 内側から加圧するとピストンが縮みます. 蒸気圧力を調整することでピストンが連続的に動作されられます.
+def_steam_piston_3x3_s_desc		A steam powered piston that converts steam pressure into torque.	蒸気圧を動力に変換する中型の蒸気ピストンです.
+def_steam_piston_3x3_node_0_label		RPS	動力
+def_steam_piston_3x3_node_0_desc		Power connection A.	生み出した動力を他の動力を必要とする部品に向けて出力します.
+def_steam_piston_3x3_node_1_label		RPS	動力
+def_steam_piston_3x3_node_1_desc		Power connection B.	生み出した動力を他の動力を必要とする部品に向けて出力します.
+def_steam_piston_3x3_node_2_label		Steam In	蒸気注入
+def_steam_piston_3x3_node_2_desc			ピストンに圧力を与え, ピストンを動かします.
+def_steam_piston_3x3_node_3_label		Steam Out	蒸気排出
+def_steam_piston_3x3_node_3_desc			ピストンを動かすために, 蒸気の排出が必要です.
+def_steam_piston_3x3_node_4_label		Steam In	蒸気注入
+def_steam_piston_3x3_node_4_desc			ピストンに圧力を与え, ピストンを動かします.
+def_steam_piston_3x3_node_5_label		Steam Out	蒸気排出
+def_steam_piston_3x3_node_5_desc			ピストンを動かすために, 蒸気の排出が必要です.
+def_steam_piston_3x3_node_6_label		RPS	秒間回転数
+def_steam_piston_3x3_node_6_desc			動力の秒間回転数 (RPS) を出力します.
+def_steam_piston_3x3_node_7_label		Piston Position	ピストンの位置
+def_steam_piston_3x3_node_7_desc			現在のピストンの位置を0から1の間で出力します.
+def_steam_piston_5x5_name		Steam Piston (Large)	蒸気ピストン (大)
+def_steam_piston_5x5_desc		Steam pressurized through the outer coupling extends the piston and steam pressurized through the inner coupling retracts the piston. Altenating pressure to the couplings based on the piston position will allow the crankpin to rotate continuously.	外側から加圧するとピストンが伸び, 内側から加圧するとピストンが縮みます. 蒸気圧力を調整することでピストンが連続的に動作されられます.
+def_steam_piston_5x5_s_desc		A steam powered piston that converts steam pressure into torque.	蒸気圧を動力に変換する大型の蒸気ピストンです.
+def_steam_piston_5x5_node_0_label		RPS	動力
+def_steam_piston_5x5_node_0_desc		Power connection A.	生み出した動力を他の動力を必要とする部品に向けて出力します.
+def_steam_piston_5x5_node_1_label		RPS	動力
+def_steam_piston_5x5_node_1_desc		Power connection B.	生み出した動力を他の動力を必要とする部品に向けて出力します.
+def_steam_piston_5x5_node_2_label		Steam In	蒸気注入
+def_steam_piston_5x5_node_2_desc			ピストンに圧力を与え, ピストンを動かします.
+def_steam_piston_5x5_node_3_label		Steam Out	蒸気排出
+def_steam_piston_5x5_node_3_desc			ピストンを動かすために, 蒸気の排出が必要です.
+def_steam_piston_5x5_node_4_label		Steam In	蒸気注入
+def_steam_piston_5x5_node_4_desc			ピストンに圧力を与え, ピストンを動かします.
+def_steam_piston_5x5_node_5_label		Steam Out	蒸気排出
+def_steam_piston_5x5_node_5_desc			ピストンを動かすために, 蒸気の排出が必要です.
+def_steam_piston_5x5_node_6_label		RPS	秒間回転数
+def_steam_piston_5x5_node_6_desc			動力の秒間回転数 (RPS) を出力します.
+def_steam_piston_5x5_node_7_label		Piston Position	ピストンの位置
+def_steam_piston_5x5_node_7_desc			現在のピストンの位置を0から1の間で出力します.
 def_steam_turbine_name		Steam Turbine	蒸気タービン
 def_steam_turbine_desc		Produces torque based on the force generated by steam passing through the turbine.	供給された蒸気で動力を生み出します. 動力の大きさは供給される蒸気の量に依存します.
 def_steam_turbine_s_desc		A steam powered turbine.	蒸気で動かすタービンです.
@@ -6287,6 +6344,13 @@ def_steam_turbine_node_2_label		RPS	動力
 def_steam_turbine_node_2_desc			タービンの動力を他の動力を必要とする部品に向けて出力します.
 def_steam_turbine_node_3_label		RPS	動力
 def_steam_turbine_node_3_desc			タービンの動力を他の動力を必要とする部品に向けて出力します.
+def_steam_whistle_name		Steam Whistle	蒸気笛
+def_steam_whistle_desc		When open, the steam whistle produces sound as steam flows through the pipe connection. The whistle pitch can be set in the component properties menu.	弁が開放され, 蒸気が排出されると蒸気笛が大きな音を出します. 笛の音の高さはプロパティウィンドウから設定できます.
+def_steam_whistle_s_desc		A steam powered signal whistle.	蒸気による信号笛です.
+def_steam_whistle_node_0_label		Fluid	蒸気注入
+def_steam_whistle_node_0_desc		Allows steam to flow out.	笛を鳴らすために蒸気を排出します.
+def_steam_whistle_node_1_label		Open	開放
+def_steam_whistle_node_1_desc		Opens the steam whistle, allowing steam to flow through.	弁を開けて蒸気が排出されるようにします. このとき, 大きな音が鳴ります.
 def_tail_rotor_name		Rotor (Tail)	テールローター
 def_tail_rotor_desc		A standard number input allows you to control how much force the rotor generates.	1つの数値信号でローター版を制御し, ローターが発生させる推進力の大きさを制御します.
 def_tail_rotor_s_desc		A basic helicopter tail rotor.	ヘリコプターなどのテールローターです.
