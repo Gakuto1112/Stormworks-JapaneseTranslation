@@ -35,11 +35,13 @@ C:\Users\user\AppData\Roaming\Stormworks\data\languages
 
 [Steamワークショップ](https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581)よりダウンロードする場合は、自動で更新されます。
 
-こちらからダウンロードする場合は、定期的にこのページや[Steamワークショップのページ](https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581)にアクセスして更新されていないか確認し、更新があった場合は、上記の手順でファイルを置き換えて下さい。また、更新時は[DiscordのStormworks日本サーバー](https://discord.gg/GBqesHHGBR)や[私のTwitter](https://twitter.com/Gakuto1112)でお知らせします。（Twitterは、私の個人的なツイートも含まれます。ご了承下さい。）
+こちらからダウンロードする場合は、定期的にこのページや[Steamワークショップのページ](https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581)にアクセスして更新されていないか確認し、更新があった場合は、上記の手順でファイルを置き換えて下さい。また、更新時は[DiscordのStormworks日本サーバー](https://discord.gg/GBqesHHGBR)や~~私のTwitter~~でお知らせします。~~（Twitterは、私の個人的なツイートも含まれます。ご了承下さい。）~~ 
+
+→ 流石にちょっと関係ないことが多過ぎなので、Twitterでの報告はやめにします。
 
 ## 注意事項
 ファイルをダウンロードした時点で以下の注意事項に同意したものとみなします。
 * このデータを使用して発生したいかなる損害の責任は負いかねます。
 * この翻訳データを適用してもなお、日本語に翻訳されない箇所が一部あります。これは、ゲームから翻訳データが提供されておらず、翻訳が不可能な場所です。
 * この日本語訳が適用された状態で作成されたスクリーンショットや実況動画などの作品におけるクレジット表記は不要です。（表記して頂けると嬉しいですが...）
-* 明らかな誤字脱字や提案がありましたら、[Steamワークショップのページ](https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581)か[Issues](https://github.com/Gakuto1112/Stormworks-JapaneseTranslation/issues)で報告して下さい。（全ての希望には応えられない場合があります。）
+* 明らかな誤字脱字や提案がありましたら、[Steamワークショップのページ](https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581)か[Issues](https://github.com/Gakuto1112/Stormworks-JapaneseTranslation/issues)か[DiscordのStormworks日本サーバー](https://discord.gg/GBqesHHGBR)の#翻訳 チャンネルで報告して下さい。（全ての希望には応えられない場合があります。）
