@@ -2374,16 +2374,16 @@ def_battery_small_node_0_desc		Energy storage for the electrical system.	電力�
 def_battery_small_node_1_label		Charge	蓄電量
 def_battery_small_node_1_desc		Data output giving the charge of the battery from 0 to 1.	電池の蓄電量を0から1の範囲で出力します.
 def_button_key_name		Key Button	キーボタン
-def_button_key_desc		Once activated, pressing the button again will deactivate it instantly. The hold duration can be customised by selecting this component with the select tool. The external input can be used to simulate holding the button down using the output of another component. The button's default state can be configured by selecting it with the select component.	一方で, オフにするには長押しする必要はありません. 外部入力でボタンのオン/オフを制御することができ, 複数のボタンを同時に制御できます. 長押しする時間, ボタンの初期状態はプロパティウィンドウから設定できます.
+def_button_key_desc		Once activated, interacting with the button again will deactivate it instantly. The hold duration can be customised by selecting this component with the select tool. The external input can be used to simulate interacting with the button down using the output of another component. The button's default state can be configured by selecting it with the select component.	一方で, オフにするには長押しする必要はありません. 外部入力でボタンのオン/オフを制御することができ, 複数のボタンを同時に制御できます. 長押しする時間, ボタンの初期状態はプロパティウィンドウから設定できます.
 def_button_key_s_desc		A button that must be held down for a set duration before activating.	オンにするには設定した時間押し続ける必要があるボタンです.
 def_button_key_node_0_label		Activated	オン
-def_button_key_node_0_desc		Outputs an on signal when [e] has been held on the button for the set duration.	[e] を設定した時間押し続けるとオン信号を出力します.
+def_button_key_node_0_desc		Outputs an on signal when interacting with the button for the set duration.	ボタンを設定した時間押し続けるとオン信号を出力します.
 def_button_key_node_1_label		External Input	外部入力
 def_button_key_node_1_desc		Allows an external on/off signal to hold the button down.	外部からのオン/オフ信号の入力でボタンのオン/オフを制御できます.
 def_button_key_node_2_label		Electric	電力
 def_button_key_node_2_desc		Electrical power connection.	電力網から電力を供給します.
 def_button_keypad_large_name		Large Keypad	キーパッド (大)
-def_button_keypad_large_desc		Pressing the keypad will show a menu where the 2 numbers can be entered, along with a button for quickly inputting waypoint coordinates. A short pulse will be emitted from the keypad's pulse node when the confirm button is clicked and the stored numbers will be continuously output from the other output nodes. An on/off signal controls whether or not the keypad's backlight is enabled.	キーパッドを使用すると2つの数値を入力できるダイヤログが表示されます. ウェイポイントが設定してある場合, ウェイポイントのx座標を出力1へ, y座標を出力2へ自動で入力することもできます. 数値が変更されると短いオン信号と変更された数値信号が出力されます. オン/オフ信号でバックライトを制御できます.
+def_button_keypad_large_desc		Interacting with the keypad will show a menu where the 2 numbers can be entered, along with a button for quickly inputting waypoint coordinates. A short pulse will be emitted from the keypad's pulse node when the confirm button is clicked and the stored numbers will be continuously output from the other output nodes. An on/off signal controls whether or not the keypad's backlight is enabled.	キーパッドを使用すると2つの数値を入力できるダイヤログが表示されます. ウェイポイントが設定してある場合, ウェイポイントのx座標を出力1へ, y座標を出力2へ自動で入力することもできます. 数値が変更されると短いオン信号と変更された数値信号が出力されます. オン/オフ信号でバックライトを制御できます.
 def_button_keypad_large_s_desc		A keypad that allows 2 numbers to be input.	2つの数値信号をキーボードから入力できるキーパッドです.
 def_button_keypad_large_node_0_label		Output A	出力1
 def_button_keypad_large_node_0_desc		Outputs the first stored value.	キーボードで入力した数値を出力します.
@@ -2396,7 +2396,7 @@ def_button_keypad_large_node_3_desc		Emits a short pulse when a value is entered
 def_button_keypad_large_node_4_label		Electric	電力
 def_button_keypad_large_node_4_desc		Electrical power connection.	電力網から電力を供給します.
 def_button_keypad_small_name		Small Keypad	キーパッド (小)
-def_button_keypad_small_desc		Pressing the keypad will show a menu where the number can be entered. The stored numbers will be continuously output from the other output node. An on/off signal controls whether or not the keypad's backlight is enabled.	キーパッドを使用すると1つの数値を入力できるダイヤログが表示されます. オン/オフ信号でバックライトを制御できます.
+def_button_keypad_small_desc		Interacting with the keypad will show a menu where the number can be entered. The stored numbers will be continuously output from the other output node. An on/off signal controls whether or not the keypad's backlight is enabled.	キーパッドを使用すると1つの数値を入力できるダイヤログが表示されます. オン/オフ信号でバックライトを制御できます.
 def_button_keypad_small_s_desc		A keypad that allows a number to be input.	1つの数値信号をキーボードから入力できるキーパッドです.
 def_button_keypad_small_node_0_label		Output	出力
 def_button_keypad_small_node_0_desc		Outputs the stored value.	キーボードで入力した数値を出力します.
@@ -2408,25 +2408,25 @@ def_button_lock_name		Lockable Button	施錠可能ボタン
 def_button_lock_desc		An on signal must be sent to the button's unlock node to allow player interaction. The button's default state can be configured by selecting it with the select component.	「解錠」ノードへオン信号が入力されている時はプレイヤーがボタンを操作できます. ボタンの初期状態はプロパティウィンドウから設定できます.
 def_button_lock_s_desc		A toggle button that can only be interacted with when unlocked.	解錠されている時のみ操作できる切り替えボタンです.
 def_button_lock_node_0_label		Toggled	オン
-def_button_lock_node_0_desc		Outputs an on/off signal that can be toggled by pressing [e] on the button when unlocked.	ボタンが解錠中の時に [e] を押すと出力するオン/オフ信号を切り替えられます.
+def_button_lock_node_0_desc		Outputs an on/off signal that can be toggled by interacting with [$[action_interact_left]]/[$[action_interact_right]] when unlocked.	ボタンが解錠中の時に [$[action_interact_left]]/[$[action_interact_right]] を押すと出力するオン/オフ信号を切り替えられます.
 def_button_lock_node_1_label		Unlock	解錠
 def_button_lock_node_1_desc		Allows the button to be interacted with when receiving an on signal.	オン信号を受け取るとはボタンが解錠され操作できるようになります.
 def_button_lock_node_2_label		Electric	電力
 def_button_lock_node_2_desc		Electrical power connection.	電力網から電力を供給します.
 def_button_push_name		Push Button	押しボタン
 def_button_push_desc		An external on/off signal can also be used to control whether or not the button is pressed, allowing you to chain multiple buttons together to unify their outputs.	外部入力でボタンのオン/オフを制御することができ, 複数のボタンを同時に制御できます.
-def_button_push_s_desc		A button that outputs an on signal when you are pressing [e] on it, and an off signal when you are not.	[e] を押している間のみオン信号を出力するボタンです.
+def_button_push_s_desc		A button that outputs an on signal when you interact with [$[action_interact_left]]/[$[action_interact_right]], and an off signal when not interacting.	[$[action_interact_left]]/[$[action_interact_right]] を押している間のみオン信号を出力するボタンです.
 def_button_push_node_0_label		Pressed	オン
-def_button_push_node_0_desc		Outputs an on signal when you are pressing [e] on the button, and an off signal otherwise.	[e] を押している間のみオン信号を出力します.
+def_button_push_node_0_desc		Outputs an on signal when you interact wtih [$[action_interact_left]]/[$[action_interact_right]], and an off signal otherwise.	[e] を押している間のみオン信号を出力します.
 def_button_push_node_1_label		External Input	外部入力
 def_button_push_node_1_desc		Allows an external on/off signal to control whether or not the button is pressed.	外部からのオン/オフ信号の入力でボタンのオン/オフを制御できます.
 def_button_push_node_2_label		Electric	電力
 def_button_push_node_2_desc		Electrical power connection.	電力網から電力を供給します.
 def_button_push_2side_name		Push Button (2 Sided)	押しボタン (2面)
 def_button_push_2side_desc		An external on/off signal can also be used to control whether or not the button is pressed, allowing you to chain multiple buttons together to unify their outputs.	外部入力でボタンのオン/オフを制御することができ, 複数のボタンを同時に制御できます.
-def_button_push_2side_s_desc		A button that outputs an on signal when you are pressing [e] on it, and an off signal when you are not.	[e] を押している間のみオン信号を出力するボタンです. ボタンは両面に付いています.
+def_button_push_2side_s_desc		A button that outputs an on signal when interacting with [$[action_interact_left]]/[$[action_interact_right]].	[$[action_interact_left]]/[$[action_interact_right]] を押している間のみオン信号を出力するボタンです. ボタンは両面に付いています.
 def_button_push_2side_node_0_label		Pressed	オン
-def_button_push_2side_node_0_desc		Outputs an on signal when you are pressing [e] on the button, and an off signal otherwise.	[e] を押している間のみオン信号を出力します.
+def_button_push_2side_node_0_desc		Outputs an on signal when you interact with [$[action_interact_left]]/[$[action_interact_right]], and an off signal otherwise.	[$[action_interact_left]]/[$[action_interact_right]] を押している間のみオン信号を出力します.
 def_button_push_2side_node_1_label		External Input	外部入力
 def_button_push_2side_node_1_desc		Allows an external on/off signal to control whether or not the button is pressed.	外部からのオン/オフ信号の入力でボタンのオン/オフを制御できます.
 def_button_push_2side_node_2_label		Electric	電力
@@ -2444,18 +2444,18 @@ def_button_throttle_lever_node_3_label		Electric	電力
 def_button_throttle_lever_node_3_desc		Electrical power connection.	電力網から電力を供給します.
 def_button_toggle_name		Toggle Button	切り替えボタン
 def_button_toggle_desc		An external on/off signal can also be used to control whether or not the button is pressed, allowing you to chain multiple buttons together to unify their outputs. The button's default state can be configured by selecting it with the select component.	外部入力でボタンのオン/オフを制御することができ, 複数のボタンを同時に制御できます. ボタンの初期状態はプロパティウィンドウから設定できます.
-def_button_toggle_s_desc		A button that toggles between sending an on or off signal when you press [e] on it.	[e] を押す度にオン/オフを切り替えるボタンです.
+def_button_toggle_s_desc		A button that toggles between sending an on or off signal when you press [$[action_interact_left]]/[$[action_interact_right]] on it.	[$[action_interact_left]]/[$[action_interact_right]] を押す度にオン/オフを切り替えるボタンです.
 def_button_toggle_node_0_label		Toggled	オン
-def_button_toggle_node_0_desc		Outputs an on/off signal that can be toggled by pressing [e] on the button.	[e] を押すたびに出力するオン/オフ信号を切り替えます.
+def_button_toggle_node_0_desc		Outputs an on/off signal that can be toggled by interacting with [$[action_interact_left]]/[$[action_interact_right]].	[$[action_interact_left]]/[$[action_interact_right]] を押すたびに出力するオン/オフ信号を切り替えます.
 def_button_toggle_node_1_label		External Input	外部入力
 def_button_toggle_node_1_desc		Allows an external on/off signal to control whether or not the button is pressed.	外部からのオン/オフ信号の入力でボタンのオン/オフを制御できます.
 def_button_toggle_node_2_label		Electric	  電力
 def_button_toggle_node_2_desc		Electrical power connection.	電力網から電力を供給します.
 def_button_toggle_2side_name		Toggle Button (2 Sided)	切り替えボタン (2面)
 def_button_toggle_2side_desc		An external on/off signal can also be used to control whether or not the button is pressed, allowing you to chain multiple buttons together to unify their outputs. The button's default state can be configured by selecting it with the select component.	外部入力でボタンのオン/オフを制御することができ, 複数のボタンを同時に制御できます. ボタンの初期状態はプロパティウィンドウから設定できます.
-def_button_toggle_2side_s_desc		A button that toggles between sending an on or off signal when you press [e] on it.	[e] を押す度にオン/オフを切り替えるボタンです. ボタンは両面に付いています.
+def_button_toggle_2side_s_desc		A button that toggles between sending an on or off signal when you press [$[action_interact_left]]/[$[action_interact_right]] on it.	[$[action_interact_left]]/[$[action_interact_right]] を押す度にオン/オフを切り替えるボタンです. ボタンは両面に付いています.
 def_button_toggle_2side_node_0_label		Toggled	オン
-def_button_toggle_2side_node_0_desc		Outputs an on/off signal that can be toggled by pressing [e] on the button.	[e] を押すたびに出力するオン/オフ信号を切り替えます.
+def_button_toggle_2side_node_0_desc		Outputs an on/off signal that can be toggled by interacting with [$[action_interact_left]]/[$[action_interact_right]].	[$[action_interact_left]]/[$[action_interact_right]] を押すたびに出力するオン/オフ信号を切り替えます.
 def_button_toggle_2side_node_1_label		External Input	外部入力
 def_button_toggle_2side_node_1_desc		Allows an external on/off signal to control whether or not the button is pressed.	外部からのオン/オフ信号の入力でボタンのオン/オフを制御できます.
 def_button_toggle_2side_node_2_label		Electric	電力
@@ -3822,8 +3822,8 @@ def_gyro_node_8_desc		Enables the gyroscope's auto-hover circuit when receiving 
 def_gyro_node_9_label		Electric	電力
 def_gyro_node_9_desc		Electrical power connection.	電力網から電力を供給します.
 def_handle_name		Handle	取っ手
-def_handle_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] while attached will detach you depending on which you pressed to attach. The handle can be used to drag vehicles around. If a vehicle is too heavy to move, you will be detached automatically when you move outside the handle's interaction range.	取っ手を掴んでいる時に [$[action_interact_left]]/[$[action_interact_right]] を押すと離すことができます. 軽い乗り物は取っ手を掴んでそのまま動かすことができます. プレイヤー取っ手の範囲外まで移動した場合は自動的に取っ手を離します.
-def_handle_s_desc		A handle that you can attach to by pressing [$[action_interact_left]] or [$[action_interact_right]].	[$[action_interact_left]] や [$[action_interact_right]] を押して掴むことができる取っ手です.
+def_handle_desc		Interacting with [$[action_interact_left]] or [$[action_interact_right]] again will detach that hand. The handle can be used to drag vehicles around. If a vehicle is too heavy to move, you will be detached automatically when you move outside the handle's interaction range.	取っ手を掴んでいる時に [$[action_interact_left]]/[$[action_interact_right]] を押すと離すことができます. 軽い乗り物は取っ手を掴んでそのまま動かすことができます. プレイヤーが取っ手の範囲外まで移動した場合は自動的に手を離します.
+def_handle_s_desc		A handle that you can attach to by interacting with [$[action_interact_left]] or [$[action_interact_right]].	[$[action_interact_left]] や [$[action_interact_right]] を押して掴むことができる取っ手です.
 def_hatch_name		Sliding Hatch (Electric)	ハッチ (引き戸, 電動)
 def_hatch_desc			
 def_hatch_s_desc		Sliding hatch that can be opened and closed using an on/off signal.	オン/オフ信号で開閉ができる引き戸式のハッチです.
@@ -3997,7 +3997,7 @@ def_inventory_equipment_c4_detonator_s_desc		A small equipment storage unit cont
 def_inventory_equipment_c4_detonator_node_0_label		Electric	電力
 def_inventory_equipment_c4_detonator_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_cable_name		Equipment inventory (Cable)	保管庫 (中, 電気電気ケーブル)
-def_inventory_equipment_cable_desc		Press [$[action_equipment_use]] to attach the cable to an unoccupied electrical cable anchor. Pressing [$[action_interact_left]]/[$[action_interact_right]] on an occupied electical cable anchor will retrieve the cable if the player has inventory space to hold it.	[$[action_equipment_use]] を押してアンカー (電力) に電気ケーブルを差し込みます. 既に電気ケーブルが接続されているアンカー (電力) に [$[action_interact_left]]/[$[action_interact_right]] を押すと電気ケーブルを取り外し, プレイヤーのインベントリに空きがあるならそこにしまいます.
+def_inventory_equipment_cable_desc		Press [$[action_equipment_use]] to attach the cable to an unoccupied electrical cable anchor. Interacting with [$[action_interact_left]]/[$[action_interact_right]] on an occupied electical cable anchor will retrieve the cable if the player has inventory space to hold it.	[$[action_equipment_use]] を押してアンカー (電力) に電気ケーブルを差し込みます. 既に電気ケーブルが接続されているアンカー (電力) に [$[action_interact_left]]/[$[action_interact_right]] を押すと電気ケーブルを取り外し, プレイヤーのインベントリに空きがあるならそこにしまいます.
 def_inventory_equipment_cable_s_desc		A large equipment storage unit containing 20m of electrical cable.	20メートルの電気ケーブルが保管されている中型の保管庫です.
 def_inventory_equipment_cable_node_0_label		Electric	電力
 def_inventory_equipment_cable_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
@@ -4057,7 +4057,7 @@ def_inventory_equipment_grenade_s_desc		A small equipment storage unit containin
 def_inventory_equipment_grenade_node_0_label		Electric	電力
 def_inventory_equipment_grenade_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_hose_name		Equipment inventory (Hose)	保管庫 (中, ホース)
-def_inventory_equipment_hose_desc		Press [$[action_equipment_use]] to attach the hose to an unoccupied fluid hose anchor. Pressing [$[action_interact_left]]/[$[action_interact_right]] on an occupied fluid hose anchor will retrieve the hose if the player has inventory space to hold it. If the hose contains water, press [$[action_equipment_secondary]] to toggle open the hose valve and allow the water to flow freely.	$[action_equipment_use]] を押してアンカー (流体) にホースを差し込みます. 既にホースが接続されているアンカー (流体) に [$[action_interact_left]]/[$[action_interact_right]] を押すとホースを取り外し, プレイヤーのインベントリに空きがあるならそこにしまいます. ホースに通水している時は [$[action_equipment_secondary]] を押して放水できます.
+def_inventory_equipment_hose_desc		Press [$[action_equipment_use]] to attach the hose to an unoccupied fluid hose anchor. Interacting with [$[action_interact_left]]/[$[action_interact_right]] on an occupied fluid hose anchor will retrieve the hose if the player has inventory space to hold it. If the hose contains water, press [$[action_equipment_secondary]] to toggle open the hose valve and allow the water to flow freely.	$[action_equipment_use]] を押してアンカー (流体) にホースを差し込みます. 既にホースが接続されているアンカー (流体) に [$[action_interact_left]]/[$[action_interact_right]] を押すとホースを取り外し, プレイヤーのインベントリに空きがあるならそこにしまいます. ホースに通水している時は [$[action_equipment_secondary]] を押して放水できます.
 def_inventory_equipment_hose_s_desc		A large equipment storage unit containing 20m of fluid hosing.	20メートルのホースが保管されている中型の保管庫です.
 def_inventory_equipment_hose_node_0_label		Electric	電力
 def_inventory_equipment_hose_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
@@ -4107,7 +4107,7 @@ def_inventory_equipment_rifle_ammo_s_desc		A small equipment storage unit contai
 def_inventory_equipment_rifle_ammo_node_0_label		Electric	電力
 def_inventory_equipment_rifle_ammo_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_rope_name		Equipment inventory (Rope)	保管庫 (中, ロープ)
-def_inventory_equipment_rope_desc		Press [$[action_equipment_use]] to attach the rope to any rope anchor. Pressing [$[action_interact_left]]/[$[action_interact_right]] on an occupied rope anchor will retrieve the rope if the player has inventory space to hold it.	[$[action_equipment_use]] を押してアンカー (ロープ) にロープを差し込みます. 既にロープが接続されているアンカー (ロープ) に [$[action_interact_left]]/[$[action_interact_right]] を押すとロープを取り外し, プレイヤーのインベントリに空きがあるならそこにしまいます.
+def_inventory_equipment_rope_desc		Press [$[action_equipment_use]] to attach the rope to any rope anchor. Interacting with [$[action_interact_left]]/[$[action_interact_right]] on an occupied rope anchor will retrieve the rope if the player has inventory space to hold it.	[$[action_equipment_use]] を押してアンカー (ロープ) にロープを差し込みます. 既にロープが接続されているアンカー (ロープ) に [$[action_interact_left]]/[$[action_interact_right]] を押すとロープを取り外し, プレイヤーのインベントリに空きがあるならそこにしまいます.
 def_inventory_equipment_rope_s_desc		A large equipment storage unit containing 20m of rope.	20メートルのロープが保管されている中型の保管庫です.
 def_inventory_equipment_rope_node_0_label		Electric	電力
 def_inventory_equipment_rope_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
@@ -4122,7 +4122,7 @@ def_inventory_equipment_smg_ammo_s_desc		A small equipment storage unit containi
 def_inventory_equipment_smg_ammo_node_0_label		Electric	電力
 def_inventory_equipment_smg_ammo_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_speargun_name		Equipment inventory (Speargun)	保管庫 (中, 銃槍)
-def_inventory_equipment_speargun_desc		Press [$[action_equipment_use]] to fire, and [$[action_equipment_secondary]] to reload. The speargun can be fired underwater, the heavier spears travelling through the water more effectively than bullets.	[$[action_equipment_use]]を押して発砲します. [$[action_equipment_secondary]]を押して弾薬を補充します. 銃槍は水中でも発射でき, 弾が飛んでいきます.
+def_inventory_equipment_speargun_desc		Press [$[action_equipment_use]] to fire, and [$[action_equipment_secondary]] to reload. The speargun can be fired underwater and spears travel through the water more effectively than bullets.	[$[action_equipment_use]]を押して発砲します. [$[action_equipment_secondary]]を押して弾薬を補充します. 銃槍は水中でも発射でき, 通常の弾よりもよく飛んでいきます.
 def_inventory_equipment_speargun_s_desc		A large equipment storage unit containing a speargun.	銃槍が保管されている中型の保管庫です.
 def_inventory_equipment_speargun_node_0_label		Electric	電力
 def_inventory_equipment_speargun_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
@@ -4162,7 +4162,7 @@ def_inventory_medium_s_desc		An empty large equipment storage unit.	何も保管
 def_inventory_medium_node_0_label		Electric	電力
 def_inventory_medium_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
 def_inventory_outfit_name		Outfit Inventory (Empty)	保管庫 (大)
-def_inventory_outfit_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected outfit. Only specialist outfits can be stored in this unit. When connected to an electric power source, any rechargable outfits stored in the unit will drain a small amount of electricity until recharged to 100% capacity.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫の装備品を装備したり, 装備している装備品を保管庫へ収納します. 装備品のみ収納できます. この保管庫が通電している場合, 充電可能な装備品が保管された時に充電します.
+def_inventory_outfit_desc		Interacting with [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected outfit. Only specialist outfits can be stored in this unit. When connected to an electric power source, any rechargable outfits stored in the unit will drain a small amount of electricity until recharged to 100% capacity.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫の装備品を装備したり, 装備している装備品を保管庫へ収納します. 装備品のみ収納できます. この保管庫が通電している場合, 充電可能な装備品が保管された時に充電します.
 def_inventory_outfit_s_desc		An empty outfit storage unit.	何も保管されていない大型の保管庫です.
 def_inventory_outfit_node_0_label		Electric	電力
 def_inventory_outfit_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
@@ -4196,6 +4196,31 @@ def_inventory_outfit_scuba_desc		When equipped, it will allow diving to a depth 
 def_inventory_outfit_scuba_s_desc		An outfit inventory unit containing specialist scuba gear.	スキューバ装備が保管されている保管庫です.
 def_inventory_outfit_scuba_node_0_label		Electric	電力
 def_inventory_outfit_scuba_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_wep_armor_vest_name		Outfit Inventory (Armor Vest)	保管庫 (大, 防具 (重量))
+def_inventory_outfit_wep_armor_vest_desc		When equipped, damage from projectiles to the body and head is greatly reduced.  Wearing the outfit significantly limits movement speed.	飛び道具による体と頭のダメージを大幅に軽減します. 装備中は移動速度が中程度低下します.
+def_inventory_outfit_wep_armor_vest_s_desc		An outfit inventory unit containing specialist millitary clothing for projectile protection.	軍事用防具が保管されている保管庫です.
+def_inventory_outfit_wep_armor_vest_node_0_label		Electric	電力
+def_inventory_outfit_wep_armor_vest_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_wep_black_hawk_vest_name		Outfit Inventory (Black Hawk Vest)	保管庫 (大, 防弾チョッキ)
+def_inventory_outfit_wep_black_hawk_vest_desc		When equipped, damage from projectiles to the body is reduced slightly.	飛び道具による体のダメージを少し軽減します.
+def_inventory_outfit_wep_black_hawk_vest_s_desc		An outfit inventory unit containing specialist millitary clothing for projectile protection.	軍事用防具が保管されている保管庫です.
+def_inventory_outfit_wep_black_hawk_vest_node_0_label		Electric	電力
+def_inventory_outfit_wep_black_hawk_vest_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_wep_bomb_disposal_name		Outfit Inventory (Bomb Disposal)	保管庫 (大, 爆弾処理装備)
+def_inventory_outfit_wep_bomb_disposal_desc		When equipped, damage from explosives is drastically reduced. Damage from projectiles to the body and head is slightly reduced. Wearing the outfit greatly limits movement speed.	爆破物によるダメージを大幅に軽減します. また, 飛び道具による体と頭のダメージを少し軽減します. 装備中は移動速度が大幅に低下します.
+def_inventory_outfit_wep_bomb_disposal_s_desc		An outfit inventory unit containing specialist millitary clothing for explosive protection.	特殊な軍事用対爆防具が保管されている保管庫です.
+def_inventory_outfit_wep_bomb_disposal_node_0_label		Electric	電力
+def_inventory_outfit_wep_bomb_disposal_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_wep_chest_rig_name		Outfit Inventory (Chest Rig)	保管庫 (大, 防具 (軽量))
+def_inventory_outfit_wep_chest_rig_desc		When equipped, damage from projectiles to the body is reduced slightly and damage to the head is significantly reduced.	飛び道具による体のダメージを少し軽減し, 頭のダメージを中程度軽減します.
+def_inventory_outfit_wep_chest_rig_s_desc		An outfit inventory unit containing specialist millitary clothing for projectile protection.	軍事用防具が保管されている保管庫です.
+def_inventory_outfit_wep_chest_rig_node_0_label		Electric	電力
+def_inventory_outfit_wep_chest_rig_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.	
+def_inventory_outfit_wep_plate_vest_name		Outfit Inventory (Plate Vest)	保管庫 (大, 防具 (中量))
+def_inventory_outfit_wep_plate_vest_desc		When equipped, damage from projectiles to the body is reduced significantly and damage to the head is greatly reduced.  Wearing the outfit significantly limits movement speed.	飛び道具による体のダメージを中程度軽減し, 頭のダメージを大幅に軽減します. 装備中は移動速度が少し低下します.
+def_inventory_outfit_wep_plate_vest_s_desc		An outfit inventory unit containing specialist millitary clothing for projectile protection.	軍事用防具が保管されている保管庫です.
+def_inventory_outfit_wep_plate_vest_node_0_label		Electric	電力
+def_inventory_outfit_wep_plate_vest_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
 def_inventory_small_name		Small equipment inventory (Empty)	保管庫 (小)
 def_inventory_small_desc		Only small handheld equipment can be stored in this unit. When connected to an electric power source, any rechargable equipment stored in the unit will drain a small amount of electricity until recharged to 100% capacity.	小型の携帯品のみ収納できます. この保管庫が通電している場合, 充電可能な携帯品が保管された時に充電します.
 def_inventory_small_s_desc		An empty small equipment storage unit.	何も保管されていない小型の保管庫です.
@@ -4316,7 +4341,7 @@ def_jet_engine_turbine_small_node_2_desc		The rotations per second generated by 
 def_jet_engine_turbine_small_node_3_label		Electric	電力
 def_jet_engine_turbine_small_node_3_desc		The electric connection to output electric energy.	電力網に発電した電力を送ります.
 def_ladder_small_name		Ladder	梯子
-def_ladder_small_desc		You can attach to the ladder by pressing [$[action_use_seat]], then detach again by pressing either [$[action_use_seat]] or [$[action_jump]]. You will automatically detach from the ladder when you reach the top.	[$[action_use_seat]] を押して梯子の登り下りをし, [$[action_use_seat]] や [$[action_jump]] を押して梯子から離れます. 頂上に達すると自動で梯子から離れます.
+def_ladder_small_desc		You can attach to the ladder by interacting with [$[action_use_seat]], then detach again with either [$[action_use_seat]] or [$[action_jump]]. You will automatically detach from the ladder when you reach the top.	[$[action_use_seat]] を押して梯子の登り下りをし, [$[action_use_seat]] や [$[action_jump]] を押して梯子から離れます. 頂上に達すると自動で梯子から離れます.
 def_ladder_small_s_desc		Single ladder rung. Multiple rungs can placed on top of each other to form a ladder of abitrary length.	一段の梯子です. 梯子を複数重ねて設置することで, 任意の長さの梯子になります.
 def_landing_float_name		Landing Float	浮き
 def_landing_float_desc		Ideal for attaching to helicopters to allow them to land on the ocean.	航空機が水上に着地するのに使用します.
