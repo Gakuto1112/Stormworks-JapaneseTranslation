@@ -708,7 +708,7 @@ id	description	en	local
 		OUTPUT	出力
 		INPUT	入力
 		IN STOCK	在庫あり
-		EACH	各
+		EACH	/ 個
 		OUT OF STOCK	在庫切れ
 		Cost	コスト
 		Locked	ロック済み
@@ -2162,6 +2162,24 @@ id	description	en	local
 		Kraken	クラーケン
 		Fuel	燃料
 		Fill Level	充填量
+		Camera Forward	カメラを前へ移動
+		Camera Back	カメラを後へ移動
+		Camera Left	カメラを左へ移動
+		Camera Right	カメラを右へ移動
+		Camera Up	カメラを上へ移動
+		Camera Down	カメラを下へ移動
+		Camera Zoom In	カメラを拡大
+		Camera Zoom Out	カメラを縮小
+		Camera Set Origin	カメラの基準を設定
+		Rotate X	X軸で回転
+		Rotate Y	Y軸で回転
+		Rotate Z	Z軸で回転
+		Flip X	X軸で反転
+		Flip Y	Y軸で反転
+		Flip Z	Z軸で反転
+		Show Rotation UI	回転ヒントを表示
+		Show/Hide Vehicle (Selection Grid)	乗り物の選択グリッドの表示/非表示
+		Toggle Eraser	削除ツールの切り替え
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
@@ -3074,13 +3092,20 @@ def_fluid_valve_on_off_name		Fluid On/Off Valve	流体弁 (オン/オフ)
 def_fluid_valve_on_off_desc		Controls flow from one side of the valve to the other. Fluid can flow in both directions.	流体は双方向から流せます.
 def_fluid_valve_on_off_s_desc		An on/off fluid valve.	オン/オフ信号で開閉できる流体の弁です.
 def_fluid_valve_on_off_node_0_label		Fluid In	流体1
-def_fluid_valve_on_off_node_0_desc		Fluid input connection for the valve.	「弁の制御」ノードがオン信号を受け取ると流体が流れます.
+def_fluid_valve_on_off_node_0_desc		Fluid input connection for the valve.	弁が開くと流体が流れます.
 def_fluid_valve_on_off_node_1_label		Fluid Out	流体2
-def_fluid_valve_on_off_node_1_desc		Fluid output connection for the valve.	「弁の制御」ノードがオン信号を受け取ると流体が流れます.
+def_fluid_valve_on_off_node_1_desc		Fluid output connection for the valve.	弁が開くと流体が流れます.
 def_fluid_valve_on_off_node_2_label		Valve Control	弁の制御
 def_fluid_valve_on_off_node_2_desc		Valve gate control for opening and closing the valve.	オン信号を受け取ると間は弁を開け, オフ信号を受け取ると弁を閉めます.
 def_fluid_valve_on_off_node_3_label		Electric	電力
 def_fluid_valve_on_off_node_3_desc		Electrical power connection.	電力網から電力を供給します.
+def_fluid_valve_on_off_manual_name		Fluid On/Off Valve (Manual)	流体弁 (手動オン/オフ)
+def_fluid_valve_on_off_manual_desc		Interacting with [$[action_interact_left]]/[$[action_interact_right]] will open / close the valve. Controls flow from one side of the valve to the other. Fluid can flow in both directions.	[$[action_interact_left]]/[$[action_interact_right]] で弁を開閉します. 流体は双方向から流せます.
+def_fluid_valve_on_off_manual_s_desc		An on/off fluid valve with a manual handle.	手動で開閉するためのハンドルが付いた流体の弁です.
+def_fluid_valve_on_off_manual_node_0_label		Fluid In	流体1
+def_fluid_valve_on_off_manual_node_0_desc		Fluid input connection for the valve.	弁が開くと流体が流れます.
+def_fluid_valve_on_off_manual_node_1_label		Fluid Out	流体2
+def_fluid_valve_on_off_manual_node_1_desc		Fluid output connection for the valve.	弁が開くと流体が流れます.
 def_fluid_valve_variable_name		Fluid Variable Valve	流体弁 (流量)
 def_fluid_valve_variable_desc		Controls flow from one side of the valve to the other. Fluid can flow in both directions.	流体は双方向から流せます.
 def_fluid_valve_variable_s_desc		A variable fluid valve.	流体の流量を調整できる一方通行の弁です.
@@ -4215,7 +4240,7 @@ def_inventory_outfit_wep_chest_rig_name		Outfit Inventory (Chest Rig)	保管庫 
 def_inventory_outfit_wep_chest_rig_desc		When equipped, damage from projectiles to the body is reduced slightly and damage to the head is significantly reduced.	飛び道具による体のダメージを少し軽減し, 頭のダメージを中程度軽減します.
 def_inventory_outfit_wep_chest_rig_s_desc		An outfit inventory unit containing specialist millitary clothing for projectile protection.	軍事用防具が保管されている保管庫です.
 def_inventory_outfit_wep_chest_rig_node_0_label		Electric	電力
-def_inventory_outfit_wep_chest_rig_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.	
+def_inventory_outfit_wep_chest_rig_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
 def_inventory_outfit_wep_plate_vest_name		Outfit Inventory (Plate Vest)	保管庫 (大, 防具 (中量))
 def_inventory_outfit_wep_plate_vest_desc		When equipped, damage from projectiles to the body is reduced significantly and damage to the head is greatly reduced.  Wearing the outfit significantly limits movement speed.	飛び道具による体のダメージを中程度軽減し, 頭のダメージを大幅に軽減します. 装備中は移動速度が少し低下します.
 def_inventory_outfit_wep_plate_vest_s_desc		An outfit inventory unit containing specialist millitary clothing for projectile protection.	軍事用防具が保管されている保管庫です.
@@ -4437,7 +4462,7 @@ def_linear_matic_a_node_2_label		Electric	電力
 def_linear_matic_a_node_2_desc		Electrical power connection.	電力網から電力を供給します.
 def_linear_matic_a_node_3_label		Fluid	流体
 def_linear_matic_a_node_3_desc		Fluid connection for transfering fluid.	ピストン間で流体の伝達ができます.
-def_linear_matic_b_name		Linear Matic B	空圧ピストンの部品
+def_linear_matic_b_name		Pneumatic Piston	空圧ピストンの部品
 def_linear_matic_b_desc			
 def_linear_matic_b_s_desc			
 def_linear_matic_b_node_0_label		Fluid	液体
@@ -4675,7 +4700,7 @@ def_monitor_1_name		Monitor 1x1	ディスプレイ (1x1)
 def_monitor_1_desc		Displays video data.	カメラやLuaスクリプトで描画した映像を表示します. ディスプレイの向きは固定です.
 def_monitor_1_s_desc		A video screen.	1x1の大きさのディスプレイです.
 def_monitor_1_node_0_label		Video Signal	映像入力
-def_monitor_1_node_0_desc			このディスプレイに表示する映像信号です.
+def_monitor_1_node_0_desc			このディスプレイに表示する映像信号です.
 def_monitor_1_node_1_label		Touch Output	タッチ情報
 def_monitor_1_node_1_desc			ディスプレイの解像度やプレイヤーがタッチした時の情報を出力します. Luaスクリプトでタッチ操作を実装するのに使用します.
 def_monitor_1_node_2_label		Electric	電力
@@ -4686,7 +4711,7 @@ def_monitor_1x2_name		Monitor 1x2	ディスプレイ (1x2)
 def_monitor_1x2_desc		Displays video data.	カメラやLuaスクリプトで描画した映像を表示します. ディスプレイの向きは固定です.
 def_monitor_1x2_s_desc		A video screen.	1x2の大きさのディスプレイです.
 def_monitor_1x2_node_0_label		Video Signal	映像入力
-def_monitor_1x2_node_0_desc			このディスプレイに表示する映像信号です.
+def_monitor_1x2_node_0_desc			このディスプレイに表示する映像信号です.
 def_monitor_1x2_node_1_label		Touch Output	タッチ情報
 def_monitor_1x2_node_1_desc			ディスプレイの解像度やプレイヤーがタッチした時の情報を出力します. Luaスクリプトでタッチ操作を実装するのに使用します.
 def_monitor_1x2_node_2_label		Electric	電力
@@ -4697,7 +4722,7 @@ def_monitor_1x3_name		Monitor 1x3	ディスプレイ (1x3)
 def_monitor_1x3_desc		Displays video data.	カメラやLuaスクリプトで描画した映像を表示します. ディスプレイの向きは固定です.
 def_monitor_1x3_s_desc		A video screen.	1x3の大きさのディスプレイです.
 def_monitor_1x3_node_0_label		Video Signal	映像入力
-def_monitor_1x3_node_0_desc			このディスプレイに表示する映像信号です.
+def_monitor_1x3_node_0_desc			このディスプレイに表示する映像信号です.
 def_monitor_1x3_node_1_label		Touch Output	タッチ情報
 def_monitor_1x3_node_1_desc			ディスプレイの解像度やプレイヤーがタッチした時の情報を出力します. Luaスクリプトでタッチ操作を実装するのに使用します.
 def_monitor_1x3_node_2_label		Electric	電力
@@ -4708,7 +4733,7 @@ def_monitor_2_name		Monitor 2x2	ディスプレイ (2x2)
 def_monitor_2_desc		Displays video data.	カメラやLuaスクリプトで描画した映像を表示します. ディスプレイの向きは固定です.
 def_monitor_2_s_desc		A video screen.	2x2の大きさのディスプレイです.
 def_monitor_2_node_0_label		Video Signal	映像入力
-def_monitor_2_node_0_desc			このディスプレイに表示する映像信号です.
+def_monitor_2_node_0_desc			このディスプレイに表示する映像信号です.
 def_monitor_2_node_1_label		Touch Output	タッチ情報
 def_monitor_2_node_1_desc			ディスプレイの解像度やプレイヤーがタッチした時の情報を出力します. Luaスクリプトでタッチ操作を実装するのに使用します.
 def_monitor_2_node_2_label		Electric	電力
@@ -4719,7 +4744,7 @@ def_monitor_2x3_name		Monitor 2x3	ディスプレイ (2x3)
 def_monitor_2x3_desc		Displays video data.	カメラやLuaスクリプトで描画した映像を表示します. ディスプレイの向きは固定です.
 def_monitor_2x3_s_desc		A video screen.	2x3の大きさのディスプレイです.
 def_monitor_2x3_node_0_label		Video Signal	映像入力
-def_monitor_2x3_node_0_desc			このディスプレイに表示する映像信号です.
+def_monitor_2x3_node_0_desc			このディスプレイに表示する映像信号です.
 def_monitor_2x3_node_1_label		Touch Output	タッチ情報
 def_monitor_2x3_node_1_desc			ディスプレイの解像度やプレイヤーがタッチした時の情報を出力します. Luaスクリプトでタッチ操作を実装するのに使用します.
 def_monitor_2x3_node_2_label		Electric	電力
@@ -4730,7 +4755,7 @@ def_monitor_3_name		Monitor 3x3	ディスプレイ (3x3)
 def_monitor_3_desc		Displays video data.	カメラやLuaスクリプトで描画した映像を表示します. ディスプレイの向きは固定です.
 def_monitor_3_s_desc		A video screen.	3x3の大きさのディスプレイです.
 def_monitor_3_node_0_label		Video Signal	映像入力
-def_monitor_3_node_0_desc			このディスプレイに表示する映像信号です.
+def_monitor_3_node_0_desc			このディスプレイに表示する映像信号です.
 def_monitor_3_node_1_label		Touch Output	タッチ情報
 def_monitor_3_node_1_desc			ディスプレイの解像度やプレイヤーがタッチした時の情報を出力します. Luaスクリプトでタッチ操作を実装するのに使用します.
 def_monitor_3_node_2_label		Electric	電力
@@ -4741,7 +4766,7 @@ def_monitor_5_name		Monitor 5x3	ディスプレイ (5x3)
 def_monitor_5_desc		Displays video data.	カメラやLuaスクリプトで描画した映像を表示します. ディスプレイの向きは固定です.
 def_monitor_5_s_desc		A video screen.	5x3の大きさのディスプレイです.
 def_monitor_5_node_0_label		Video Signal	映像入力
-def_monitor_5_node_0_desc			このディスプレイに表示する映像信号です.
+def_monitor_5_node_0_desc			このディスプレイに表示する映像信号です.
 def_monitor_5_node_1_label		Touch Output	タッチ情報
 def_monitor_5_node_1_desc			ディスプレイの解像度やプレイヤーがタッチした時の情報を出力します. Luaスクリプトでタッチ操作を実装するのに使用します.
 def_monitor_5_node_2_label		Electric	電力
@@ -4752,7 +4777,7 @@ def_monitor_9_name		Monitor 9x5	ディスプレイ (9x5)
 def_monitor_9_desc		Displays video data.	カメラやLuaスクリプトで描画した映像を表示します. ディスプレイの向きは固定です.
 def_monitor_9_s_desc		A video screen.	9x5の大きさのディスプレイです.
 def_monitor_9_node_0_label		Video Signal	映像入力
-def_monitor_9_node_0_desc			このディスプレイに表示する映像信号です.
+def_monitor_9_node_0_desc			このディスプレイに表示する映像信号です.
 def_monitor_9_node_1_label		Touch Output	タッチ情報
 def_monitor_9_node_1_desc			ディスプレイの解像度やプレイヤーがタッチした時の情報を出力します. Luaスクリプトでタッチ操作を実装するのに使用します.
 def_monitor_9_node_2_label		Electric	電力
@@ -4808,7 +4833,7 @@ def_motor_small_node_1_label		Electric	電力
 def_motor_small_node_1_desc		The electric energy input to be converted into mechanical force.	電力網から電力を供給します.
 def_motor_small_node_2_label		Throttle	スロットル
 def_motor_small_node_2_desc		The throttle input to control how much electric energy is converted to force.	モーターが電力を動力に変換する量を調整する数値で, 範囲は0から1です.
-def_multibody_compact_pivot_b_name		compact_pivot_b	電動回転軸 (小) の部品
+def_multibody_compact_pivot_b_name		Compact Pivot	電動回転軸 (小) の部品
 def_multibody_compact_pivot_b_desc			
 def_multibody_compact_pivot_b_s_desc			
 def_multibody_compact_pivot_robotic_a_name		Compact Robotic Pivot	電動回転軸 (小, 方向)
@@ -4834,19 +4859,19 @@ def_multibody_door_hinge_a_node_1_label		Current Rotation	現在の向き
 def_multibody_door_hinge_a_node_1_desc		The hinge's measured rotation between -0.25 and 0.25.	蝶番が現在向いている向きを-0.25から0.25の範囲で出力します.
 def_multibody_door_hinge_a_node_2_label		Electric	電力
 def_multibody_door_hinge_a_node_2_desc		Electrical power connection.	電力網から電力を供給します.
-def_multibody_door_hinge_b_name		Robotic door hinge child	電動蝶番 (ドア) の部品
+def_multibody_door_hinge_b_name		Robotic Door Hinge	電動蝶番 (ドア) の部品
 def_multibody_door_hinge_b_desc			
 def_multibody_door_hinge_b_s_desc			
 def_multibody_piston_suspension_a_name		Piston Suspension	ピストン型サスペンション
 def_multibody_piston_suspension_a_desc		A dampened hydraulic sprung piston.	衝撃を吸収する油圧式のピストン型のサスペンションです.
 def_multibody_piston_suspension_a_s_desc		A shock absorber that can be used to improve handling of land-based vehicles.	陸上の乗り物の操縦を改善する衝撃吸収装置です.
-def_multibody_piston_suspension_b_name		Piston Suspension B	ピストン型サスペンションの部品
+def_multibody_piston_suspension_b_name		Piston Suspension	ピストン型サスペンションの部品
 def_multibody_piston_suspension_b_desc			
 def_multibody_piston_suspension_b_s_desc			
 def_multibody_pivot_a_name		Pivot	回転軸
 def_multibody_pivot_a_desc		The pivot can rotate to 0.25 turns in both directions.	-0.25回転から0.25回転の範囲で回転します.
 def_multibody_pivot_a_s_desc		A basic pivot that can move freely.	自由に回転する回転軸です.
-def_multibody_pivot_b_name		pivot_b	回転軸の部品
+def_multibody_pivot_b_name		Pivot	回転軸の部品
 def_multibody_pivot_b_desc			
 def_multibody_pivot_b_s_desc			
 def_multibody_robotic_hinge_01_a_name		Robotic Hinge	電動蝶番
@@ -4862,7 +4887,7 @@ def_multibody_robotic_hinge_01_a_node_3_label		RPS	動力
 def_multibody_robotic_hinge_01_a_node_3_desc		Power connection for transfering mechanical energy.	蝶番間で動力の伝達ができます.
 def_multibody_robotic_hinge_01_a_node_4_label		Fluid	流体
 def_multibody_robotic_hinge_01_a_node_4_desc		Fluid connection for transfering fluid.	蝶番間で流体の伝達ができます.
-def_multibody_robotic_hinge_01_b_name		Robotic hinge child	電動蝶番の部品
+def_multibody_robotic_hinge_01_b_name		Robotic Hinge	電動蝶番の部品
 def_multibody_robotic_hinge_01_b_desc			
 def_multibody_robotic_hinge_01_b_s_desc			
 def_multibody_robotic_hinge_01_b_node_0_label		RPS	動力
@@ -4891,12 +4916,12 @@ def_multibody_robotic_pivot_01_a_fluid_node_2_label		Electric	電力
 def_multibody_robotic_pivot_01_a_fluid_node_2_desc		Electrical power connection.	電力網から電力を供給します.
 def_multibody_robotic_pivot_01_a_fluid_node_3_label		Fluid	流体
 def_multibody_robotic_pivot_01_a_fluid_node_3_desc		Fluid connection for transfering fluids.	回転軸間で流体の伝達ができます.
-def_multibody_robotic_pivot_01_b_name		robotic pivot b	回転軸 (大, 方向, 流体) の部品
+def_multibody_robotic_pivot_01_b_name		Robotic Pivot	回転軸 (大, 方向, 流体) の部品
 def_multibody_robotic_pivot_01_b_desc			
 def_multibody_robotic_pivot_01_b_s_desc			
 def_multibody_robotic_pivot_01_b_node_0_label		RPS	動力
 def_multibody_robotic_pivot_01_b_node_0_desc		Power connection for transfering mechanical energy.	回転軸間で動力の伝達ができます.
-def_multibody_robotic_pivot_01_b_fluid_name		robotic pivot b	回転軸 (大, 方向, 流体) の部品
+def_multibody_robotic_pivot_01_b_fluid_name		Robotic Pivot	回転軸 (大, 方向, 流体) の部品
 def_multibody_robotic_pivot_01_b_fluid_desc			
 def_multibody_robotic_pivot_01_b_fluid_s_desc			
 def_multibody_robotic_pivot_01_b_fluid_node_0_label		Fluid	流体
@@ -4906,7 +4931,7 @@ def_multibody_suspension_a_desc		Power can be passed through the suspension, all
 def_multibody_suspension_a_s_desc		A shock absorber that can be used to improve handling of land-based vehicles.	陸上の乗り物の操縦を改善する衝撃吸収装置です.
 def_multibody_suspension_a_node_0_label		RPS	動力
 def_multibody_suspension_a_node_0_desc		Power connection for transfering mechanical energy.	サスペンション間で動力の伝達ができます.
-def_multibody_suspension_b_name		multibody_suspension_b	サスペンションの部品
+def_multibody_suspension_b_name		Suspension	サスペンションの部品
 def_multibody_suspension_b_desc			
 def_multibody_suspension_b_s_desc			
 def_multibody_suspension_b_node_0_label		RPS	動力
@@ -4920,7 +4945,7 @@ def_multibody_turret_large_a_node_1_label		Current Rotation	現在の回転数
 def_multibody_turret_large_a_node_1_desc		The turrets measured rotation expressed in fractions of full turns.	初期位置からの現在の回転数 (何回転したか) を出力します.
 def_multibody_turret_large_a_node_2_label		Electric	電力
 def_multibody_turret_large_a_node_2_desc		Electrical power connection.	電力網から電力を供給します.
-def_multibody_turret_large_b_name		Turret Ring (Large) b	タレット土台 (大)の部品
+def_multibody_turret_large_b_name		Turret Ring (Large)	タレット土台 (大)の部品
 def_multibody_turret_large_b_desc			
 def_multibody_turret_large_b_s_desc			
 def_multibody_turret_medium_a_name		Turret Ring (Medium)	タレット土台 (中)
@@ -4932,7 +4957,7 @@ def_multibody_turret_medium_a_node_1_label		Current Rotation	現在の回転数
 def_multibody_turret_medium_a_node_1_desc		The turrets measured rotation expressed in fractions of full turns.	初期位置からの現在の回転数 (何回転したか) を出力します.
 def_multibody_turret_medium_a_node_2_label		Electric	電力
 def_multibody_turret_medium_a_node_2_desc		Electrical power connection.	電力網から電力を供給します.
-def_multibody_turret_medium_b_name		Turret Ring (Medium) b	タレット土台 (中)の部品
+def_multibody_turret_medium_b_name		Turret Ring (Medium)	タレット土台 (中)の部品
 def_multibody_turret_medium_b_desc			
 def_multibody_turret_medium_b_s_desc			
 def_multibody_turret_small_a_name		Turret Ring (Small)	タレット土台 (小)
@@ -4944,7 +4969,7 @@ def_multibody_turret_small_a_node_1_label		Current Rotation	現在の回転数
 def_multibody_turret_small_a_node_1_desc		The turrets measured rotation expressed in fractions of full turns.	初期位置からの現在の回転数 (何回転したか) を出力します.
 def_multibody_turret_small_a_node_2_label		Electric	電力
 def_multibody_turret_small_a_node_2_desc		Electrical power connection.	電力網から電力を供給します.
-def_multibody_turret_small_b_name		Turret Ring (Small) b	タレット土台 (小)の部品
+def_multibody_turret_small_b_name		Turret Ring (Small)	タレット土台 (小)の部品
 def_multibody_turret_small_b_desc			
 def_multibody_turret_small_b_s_desc			
 def_multibody_velocity_pivot_a_name		Velocity Pivot	回転軸 (大, 速度)
@@ -4956,7 +4981,7 @@ def_multibody_velocity_pivot_a_node_1_label		Current Rotation	現在の回転数
 def_multibody_velocity_pivot_a_node_1_desc		The pivot's measured rotation expressed in fractions of full turns.	初期位置からの現在の回転数 (何回転したか) を出力します.
 def_multibody_velocity_pivot_a_node_2_label		Electric	電力
 def_multibody_velocity_pivot_a_node_2_desc		Electrical power connection.	電力網から電力を供給します.
-def_multibody_velocity_pivot_b_name		robotic pivot b	回転軸 (大, 速度) の部品
+def_multibody_velocity_pivot_b_name		Robotic Pivot	回転軸 (大, 速度) の部品
 def_multibody_velocity_pivot_b_desc			
 def_multibody_velocity_pivot_b_s_desc			
 def_no_sleep_name		Keep Active Block	常時読み込みブロック
@@ -6398,7 +6423,12 @@ def_torque_clutch_node_1_desc		Power connection A.	クラッチを通して伝�
 def_torque_clutch_node_2_label		Clutch Pressure	クラッチ圧力
 def_torque_clutch_node_2_desc		A number between 0 and 1 representing the clutch engagement factor.	動力を伝える割合を0から1の範囲で制御します.
 def_torque_clutch_node_3_label		Electric	電力
-def_torque_clutch_node_3_desc		The electric connection to power the component.	電力網から電力を供給します
+def_torque_clutch_node_3_desc		The electric connection to power the component.	電力網から電力を供給します.
+def_torque_crank_name		Torque Crank	手動クランク
+def_torque_crank_desc		Holding [$[action_interact_left]]/[$[action_interact_right]] turns the crank, generating a small amount of mechanical power.	[$[action_interact_left]]/[$[action_interact_right]] を押し続けてクランクを回し, 弱い動力を生み出します.
+def_torque_crank_s_desc		A hand crank to produce mechanical power.	動力を生み出す手動クランクです.
+def_torque_crank_node_0_label		RPS	動力
+def_torque_crank_node_0_desc		Connection to the power system.	クランクの動力を他の動力を必要とする部品に向けて出力します.
 def_torque_gearbox_name		Gearbox (Deprecated)	ギアボックス (非推奨)
 def_torque_gearbox_desc		The ratio can be toggled between two values which can be set in the properties.	動力の大きさと回転速度は反比例の関係にあります. つまり, 動力を大きすると回転速度は小さくなり, 逆に回転速度を大きくすると動力は小さくなります. オン/オフ信号でギア比を変更できます. オン/オフ時のギア比はプロパティウィンドウから設定できます.
 def_torque_gearbox_s_desc		Gearbox for changing the torque and speed across power connections.	動力の大きさと回転速度を変換するギアボックスです.
@@ -6674,11 +6704,18 @@ def_water_pump_large_s_desc		A large fluid pump.	電力で流体を流す大型�
 def_water_pump_large_node_0_label		Fluid In	流体注入
 def_water_pump_large_node_0_desc		Connect to an inlet component to take fluid into the system.	ポンプで流す流体を注入します.
 def_water_pump_large_node_1_label		Fluid Out	流体排出
-def_water_pump_large_node_1_desc		Connect to an outlet component to release fluid from the system.	オン信号を受け取ると流体を流します.
+def_water_pump_large_node_1_desc		Connect to an outlet component to release fluid from the system.	ポンプで流した流体を排出します.
 def_water_pump_large_node_2_label		On/Off	起動
-def_water_pump_large_node_2_desc		Controls whether or not the fluid is being pumped.	ポンプで流した流体を排出します.
+def_water_pump_large_node_2_desc		Controls whether or not the fluid is being pumped.	オン信号を受け取ると流体を流します.
 def_water_pump_large_node_3_label		Electric	電力
 def_water_pump_large_node_3_desc		Electrical power connection.	電力網から電力を供給します.
+def_water_pump_manual_name		Fluid Pump (Manual)	流体ポンプ (手動)
+def_water_pump_manual_desc		Hold [$[action_interact_left]]/[$[action_interact_right]] to create pressure in the pump. Connect to an inlet and outlet to create a pumping system to move fluid around a vehicle.	[$[action_interact_left]]/[$[action_interact_right]] を押し続けて流体を流します.
+def_water_pump_manual_s_desc		A small fluid pump with a manual handle.	手動で回すためのハンドルが付いた小型ポンプです.
+def_water_pump_manual_node_0_label		Fluid In	流体注入
+def_water_pump_manual_node_0_desc		Connect to an inlet component to take fluid into the system.	ポンプで流す流体を注入します.
+def_water_pump_manual_node_1_label		Fluid Out	流体排出
+def_water_pump_manual_node_1_desc		Connect to an outlet component to release fluid from the system.	ポンプで流した流体を排出します.
 def_water_spawner_name		Fluid Spawner	液体発生器
 def_water_spawner_desc		The fluid spawner for helping with custom fluid tanks, so they can be spawned full, without a need to fill after spawning.	密閉空間の中に設置すると, 設定された種類の液体を設定された量で満たされた状態でスポーンします.
 def_water_spawner_s_desc		A component to mark an enclosed area to be spawned with fluid inside.	この密閉空間の中は液体で満たされると印を付けるブロックです.
