@@ -2062,17 +2062,15 @@ id	description	en	local
 		Raf Officer Hat	空軍士官帽
 		Navy Sidecap	海軍ギャリソンキャップ
 		Navy Officer Hat	海軍士官帽
-		Mask	マスク
 		k6 3 Helmet	K6-3ヘルメット
 		WZ 063 Helmet	WZ-063ヘルメット
 		Helmet Visor	ヘルメットバイザー
 		Heli Helmet	航空ヘルメット
-		Headset	ヘッドセット
+		Helmet Headset	ヘッドセット付きヘルメット
 		Cap	キャップ
 		Boonie Hat	ブーニーハット
 		Bomb Disposal Helmet	爆弾処理用ヘルメット
 		Beret	ベーレー帽
-		Balaclava	目出し帽
 		Army Sidecap	陸軍ギャリソンキャップ
 		Army Officer	陸軍士官帽
 		Suit Bowtie	蝶ネクタイ
@@ -2162,6 +2160,8 @@ id	description	en	local
 		Kraken	クラーケン
 		Fuel	燃料
 		Fill Level	充填量
+		Sea Monsters	海のモンスター	
+		Lightning	雷
 		Camera Forward	カメラを前へ移動
 		Camera Back	カメラを後へ移動
 		Camera Left	カメラを左へ移動
