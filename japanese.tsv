@@ -2160,7 +2160,7 @@ id	description	en	local
 		Kraken	クラーケン
 		Fuel	燃料
 		Fill Level	充填量
-		Sea Monsters	海のモンスター	
+		Sea Monsters	海のモンスター
 		Lightning	雷
 		Camera Forward	カメラを前へ移動
 		Camera Back	カメラを後へ移動
@@ -2180,6 +2180,7 @@ id	description	en	local
 		Show Rotation UI	回転ヒントを表示
 		Show/Hide Vehicle (Selection Grid)	乗り物の選択グリッドの表示/非表示
 		Toggle Eraser	削除ツールの切り替え
+		You were disconnected.	切断されました.
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
@@ -3947,7 +3948,7 @@ def_humidity_sensor_s_desc		A humidity sensor for measuring the current fog and 
 def_humidity_sensor_node_0_label		Humidity Factor	霧量
 def_humidity_sensor_node_0_desc		The level of humidity in the air, relating to the fog visibility.	霧量を0 (霧最小) から1 (霧最大) の範囲で出力します.
 def_impact_sensor_name		Impact Sensor	衝撃計
-def_impact_sensor_desc		Setting the impact threshold property will tune the sensitivity for impacts. When the instant change in velocity from an impact exceeds the threshold, and on signal is produced.	設定された閾値以上の速度の急激な変化があった場合はオン信号を出力します. 閾値はプロパティウィンドウから設定できます.
+def_impact_sensor_desc		Setting the impact threshold property will tune the sensitivity for impacts. When the instant change in velocity from an impact exceeds the threshold, an on signal is produced.	設定された閾値以上の速度の急激な変化があった場合はオン信号を出力します. 閾値はプロパティウィンドウから設定できます.
 def_impact_sensor_s_desc		A sensor activated by a sudden change in velocity.	急激な速度の変化を検出する衝撃計です.
 def_impact_sensor_node_0_label		Output	衝撃検出
 def_impact_sensor_node_0_desc		Outputs an on signal when instant change in velocity exceeds the impact threshold.	設定された閾値以上の速度の急激な変化があった場合はオン信号を出力します.
@@ -5080,6 +5081,19 @@ def_radar_advanced_missile_node_3_label		Missile Output	ミサイル出力
 def_radar_advanced_missile_node_3_desc		Outputs x and y data for the most immediate target. Link this directly into a rocket fins component.	最寄りの対象のXY座標を出力します. ミサイルの翼の部品と直接接続して下さい.
 def_radar_advanced_missile_node_4_label		Radar Rotation	向き
 def_radar_advanced_missile_node_4_desc		Current radar rotation from forward in turns.	レーダーの方向を回転単位で出力します.
+def_radar_advanced_missile_laser_name		Laser Sensor (Missile)	レーザーセンサー (ミサイル)
+def_radar_advanced_missile_laser_desc		This sensor outputs the distance and relative angle to a detected object within its range and field of view using radio waves. This sensor is designed for missiles and its radar acts along the Z axis. Sensitivity is based on FOV, target size, and distance.	波を利用して検出した物体の距離と相対的な角度を出力します. このレーザーはミサイルへの搭載を想定しており, レーザーはz軸方向に作用します. 精度は視野角, 対象の大きさ, 対象との距離に依存します.
+def_radar_advanced_missile_laser_s_desc		A short range radar that returns information about a detected object within its view.	検出した物体の情報を出力する短距離のレーダーです.
+def_radar_advanced_missile_laser_node_0_label		Electric	電力
+def_radar_advanced_missile_laser_node_0_desc		Electrical power connection.	電力網から電力を供給します.
+def_radar_advanced_missile_laser_node_1_label		Activate	起動
+def_radar_advanced_missile_laser_node_1_desc		Enable the Laser Sensor.	オン信号を受け取るとレーザーセンサーを起動します.
+def_radar_advanced_missile_laser_node_2_label		Sensor Data	センサー情報
+def_radar_advanced_missile_laser_node_2_desc		Outputs data for up to 8 targets. On/Off 1-8 : Target 1 Found, Target 2 Found, etc... Values 1-32 : Target 1 Distance, Target 1 Azimuth Angle, Target 1 Elevation Angle, Target 1 Time Since Detection, Target 2 Distance, Target 2 Azimuth Angle, Target 2 Elevation Angle, Target 2 Time Since Detection, etc...	検出した物体の情報を最大8個出力します. オン/オフチャンネル 1-8: 何かを検出している間はオン信号を出力します. 検出している物体の数だけ出力されます. 数値チャンネル 1-4: 1つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 5-8: 2つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 以降, 8つ目の物体まで続きます.
+def_radar_advanced_missile_laser_node_3_label		Missile Output	ミサイル出力
+def_radar_advanced_missile_laser_node_3_desc		Outputs x and y data for the most immediate target. Link this directly into a rocket fins component.	最寄りの対象のXY座標を出力します. ミサイルの翼の部品と直接接続して下さい.
+def_radar_advanced_missile_laser_node_4_label		Frequency	周波数
+def_radar_advanced_missile_laser_node_4_desc		Target laser frequency to scan for.	スキャンするレーザーの周波数を指定します.
 def_radar_advanced_phalanx_name		Radar (Phalanx)	レーダー (ファランクス)
 def_radar_advanced_phalanx_desc		This sensor outputs the distance and relative angle to a detected object within its range and field of view using radio waves. Sensitivity is based on FOV, target size, and distance.	電波を利用して検出した物体の距離と相対的な角度を出力します. ファランクスとは, レーダーにより小型高速の目標を自動で追撃するシステムのことです. 精度は視野角, 対象の大きさ, 対象との距離に依存します.
 def_radar_advanced_phalanx_s_desc		A radar that returns information about a detected object within its view.	検出した物体の情報を出力するレーダーです.
@@ -6327,7 +6341,7 @@ def_steam_nuclear_fuel_rod_name		Nuclear Fuel Rod	核燃料棒
 def_steam_nuclear_fuel_rod_desc		Can be inserted into a fuel assembly to start the nuclear fission process.	核燃料集合体に挿入して核分裂反応を発生させます.
 def_steam_nuclear_fuel_rod_s_desc		A Radioactive Fuel Rod.	放射性物質を含む燃料棒です.
 def_steam_piston_name		Steam Piston (Small)	蒸気ピストン (小)
-def_steam_piston_desc		Steam pressurized through the outer coupling extends the piston and steam pressurized through the inner coupling retracts the piston. Altenating pressure to the couplings based on the piston position will allow the crankpin to rotate continuously.	外側から加圧するとピストンが伸び, 内側から加圧するとピストンが縮みます. 蒸気圧力を調整することでピストンが連続的に動作されられます.
+def_steam_piston_desc		Steam pressurized through the outer coupling extends the piston and steam pressurized through the inner coupling retracts the piston. Alternating pressure to the couplings based on the piston position will allow the crankpin to rotate continuously.	外側から加圧するとピストンが伸び, 内側から加圧するとピストンが縮みます. 蒸気圧力を調整することでピストンが連続的に動作されられます.
 def_steam_piston_s_desc		A steam powered piston that converts steam pressure into torque.	蒸気圧を動力に変換する小型の蒸気ピストンです.
 def_steam_piston_node_0_label		RPS	動力
 def_steam_piston_node_0_desc		Power connection A.	生み出した動力を他の動力を必要とする部品に向けて出力します.
@@ -6346,7 +6360,7 @@ def_steam_piston_node_6_desc			動力の秒間回転数 (RPS) を出力します
 def_steam_piston_node_7_label		Piston Position	ピストンの位置
 def_steam_piston_node_7_desc			現在のピストンの位置を0から1の間で出力します.
 def_steam_piston_3x3_name		Steam Piston (Medium)	蒸気ピストン (中)
-def_steam_piston_3x3_desc		Steam pressurized through the outer coupling extends the piston and steam pressurized through the inner coupling retracts the piston. Altenating pressure to the couplings based on the piston position will allow the crankpin to rotate continuously.	外側から加圧するとピストンが伸び, 内側から加圧するとピストンが縮みます. 蒸気圧力を調整することでピストンが連続的に動作されられます.
+def_steam_piston_3x3_desc		Steam pressurized through the outer coupling extends the piston and steam pressurized through the inner coupling retracts the piston. Alternating pressure to the couplings based on the piston position will allow the crankpin to rotate continuously.	外側から加圧するとピストンが伸び, 内側から加圧するとピストンが縮みます. 蒸気圧力を調整することでピストンが連続的に動作されられます.
 def_steam_piston_3x3_s_desc		A steam powered piston that converts steam pressure into torque.	蒸気圧を動力に変換する中型の蒸気ピストンです.
 def_steam_piston_3x3_node_0_label		RPS	動力
 def_steam_piston_3x3_node_0_desc		Power connection A.	生み出した動力を他の動力を必要とする部品に向けて出力します.
@@ -6365,7 +6379,7 @@ def_steam_piston_3x3_node_6_desc			動力の秒間回転数 (RPS) を出力し�
 def_steam_piston_3x3_node_7_label		Piston Position	ピストンの位置
 def_steam_piston_3x3_node_7_desc			現在のピストンの位置を0から1の間で出力します.
 def_steam_piston_5x5_name		Steam Piston (Large)	蒸気ピストン (大)
-def_steam_piston_5x5_desc		Steam pressurized through the outer coupling extends the piston and steam pressurized through the inner coupling retracts the piston. Altenating pressure to the couplings based on the piston position will allow the crankpin to rotate continuously.	外側から加圧するとピストンが伸び, 内側から加圧するとピストンが縮みます. 蒸気圧力を調整することでピストンが連続的に動作されられます.
+def_steam_piston_5x5_desc		Steam pressurized through the outer coupling extends the piston and steam pressurized through the inner coupling retracts the piston. Alternating pressure to the couplings based on the piston position will allow the crankpin to rotate continuously.	外側から加圧するとピストンが伸び, 内側から加圧するとピストンが縮みます. 蒸気圧力を調整することでピストンが連続的に動作されられます.
 def_steam_piston_5x5_s_desc		A steam powered piston that converts steam pressure into torque.	蒸気圧を動力に変換する大型の蒸気ピストンです.
 def_steam_piston_5x5_node_0_label		RPS	動力
 def_steam_piston_5x5_node_0_desc		Power connection A.	生み出した動力を他の動力を必要とする部品に向けて出力します.
