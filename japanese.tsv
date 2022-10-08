@@ -3003,7 +3003,7 @@ def_fluid_filter_node_0_label		Fluid A	流体1
 def_fluid_filter_node_0_desc		Fluid connection.	「流体1」と「流体2」ノード間は指定された流体しか通れません.
 def_fluid_filter_node_1_label		Fluid B	流体2
 def_fluid_filter_node_1_desc		Fluid connection.	「流体1」と「流体2」ノード間は指定された流体しか通れません.
-def_fluid_heat_sink_name		Fluid Heat Sink	放熱器 (小)
+def_fluid_heat_sink_name		Fluid Heat Sink	放熱器 (大)
 def_fluid_heat_sink_desc		Fluid inside the cooler will lose temperature.	放熱器内の流体は冷えていきます.
 def_fluid_heat_sink_s_desc		Heat sink type cooler for fluid.	流体を冷やす放熱器です.
 def_fluid_heat_sink_node_0_label		Fluid A	流体1
@@ -3022,7 +3022,7 @@ def_fluid_pressure_node_0_label		Fluid	流体
 def_fluid_pressure_node_0_desc		Fluid to measure the pressure of.	圧力を測定する流体です.
 def_fluid_pressure_node_1_label		Pressure	流体圧力
 def_fluid_pressure_node_1_desc		The pressure reading of the fluid.	測定した流体圧力を出力します.
-def_fluid_radiator_name		Fluid Heat Radiator	放熱器 (大)
+def_fluid_radiator_name		Fluid Heat Radiator	放熱器 (小)
 def_fluid_radiator_desc		Fluid inside the cooler will lose temperature.	放熱器内の流体は冷えていきます.
 def_fluid_radiator_s_desc		Radiator type cooler for fluid.	流体を冷やす放熱器です.
 def_fluid_radiator_node_0_label		Fluid A	流体1
