@@ -1,5 +1,5 @@
 # Stormworks日本語訳データ配布ページ
-対応ゲームバージョン ： **1.5.16**
+対応ゲームバージョン ： **1.5.17**
 
 ## はじめに
 （**2022/3/12更新**）
@@ -35,7 +35,7 @@ C:\Users\user\AppData\Roaming\Stormworks\data\languages
 
 [Steamワークショップ](https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581)よりダウンロードする場合は、自動で更新されます。
 
-こちらからダウンロードする場合は、定期的にこのページや[Steamワークショップのページ](https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581)にアクセスして更新されていないか確認し、更新があった場合は、上記の手順でファイルを置き換えて下さい。また、更新時は[DiscordのStormworks日本サーバー](https://discord.gg/GBqesHHGBR)や~~私のTwitter~~でお知らせします。~~（Twitterは、私の個人的なツイートも含まれます。ご了承下さい。）~~ 
+こちらからダウンロードする場合は、定期的にこのページや[Steamワークショップのページ](https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581)にアクセスして更新されていないか確認し、更新があった場合は、上記の手順でファイルを置き換えて下さい。また、更新時は[DiscordのStormworks日本サーバー](https://discord.gg/GBqesHHGBR)や~~私のTwitter~~でお知らせします。~~（Twitterは、私の個人的なツイートも含まれます。ご了承下さい。）~~
 
 → 流石にちょっと関係ないことが多過ぎなので、Twitterでの報告はやめにします。
 
