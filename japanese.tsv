@@ -405,8 +405,8 @@ id	description	en	local
 		Deceased	死亡
 		Stop Following	誘導をやめる
 		Follow	誘導する
-		Purchase Island\n$	島を購入\n$
-		Purchase Island to Use	先に島を購入して下さい.
+		Purchase Base\n$	拠点を購入
+		Purchase Base to Use	先に拠点を購入して下さい.
 		Not Available	利用不可
 		Not Available When Carrying Someone	誰かを担いでいる時は使用できません.
 		Spawning...	プレイヤー準備中...
@@ -419,7 +419,7 @@ id	description	en	local
 		none set	未設定
 		Fast-travel Location	テレポート場所
 		CLICK TO TRAVEL HERE	クリックしてここにテレポート
-		Island for sale	販売中の島
+		Base for sale	販売中の拠点
 		You are here	現在地
 		CLICK TO TAKE TO WORKBENCH	クリックして作業台に移動させる
 		Waypoint	ウェイポイント
@@ -748,7 +748,7 @@ id	description	en	local
 		There was an error	エラーが発生しました.
 		UPLOAD COMPLETE	アップロード完了
 		Upload complete.	アップロードが完了しました.
-		The vehicle you are trying to load is too large for this edit area.\n\nYou will need to purchase an island with a larger workbench to load this vehicle. Check the map screen for islands for sale.	読み込もうとしている乗り物がこの編集領域に対して大き過ぎます.\n\nこの乗り物を読み込むためにより大きな編集領域を持つ作業台がある島を購入する必要があります. マップを開いて販売中の島を確認して下さい.
+		The vehicle you are trying to load is too large for this edit area.\n\nYou will need to purchase an island with a larger workbench to load this vehicle. Check the map screen for bases for sale.	読み込もうとしている乗り物がこの編集領域に対して大き過ぎます.\n\nこの乗り物を読み込むためにより大きな編集領域を持つ作業台がある拠点を購入する必要があります. マップを開いて販売中の拠点を確認して下さい.
 		The vehicle you are trying to load is too large for this edit area.	読み込もうとしている乗り物がこの編集領域に対して大き過ぎます.
 		The vehicle file you are trying to load could not be found.	読み込もうとしている乗り物のデータが見つかりませんでした.
 		Your vehicle has failed to upload to the Steam workshop.	この乗り物のSteamワークショップへのアップロードに失敗しました.
@@ -944,10 +944,10 @@ id	description	en	local
 		Starting Money	開始資金
 		CUSTOMISE GAME MODE	ゲーム設定
 		Unlock All Components	全ての部品をアンロック
-		Unlock All Islands	全ての島をアンロック
-		All purchasable islands are pre-purchased.	全ての島を購入している状態で始まります.
+		Unlock All Bases	全ての拠点を開放
+		All purchasable bases are pre-purchased.	全ての拠点が使用可能な状態で始まります.
 		Infinite Stock	在庫無制限
-		Infinite money and components are available.	資金と部品が無制限で使用できます.
+		Infinite money, resources and components are available.	資金, 資源, 部品が無制限で使用できます.
 		Creative Tools	クリエイティブツール
 		Enable time/weather control menu, addon editor, mission spawn menu.	時刻/天候操作メニューとアドオンエディターとミッション手動開始メニューが使用できるようになります.
 		Day/Night Cycle (minutes)	1日の時間 (分)
@@ -1150,7 +1150,7 @@ id	description	en	local
 		Infinite Ammo	弾無限
 		Infinite Fuel	燃料無限
 		Infinite Electric	電力無限
-		Infinite Money	資金無限
+		Infinite Resources	資源無限
 		Sunrise/Sunset Time	日の出/日の入りの時刻
 		Day/Night Duration	1日の時間
 		Current Time	現在の時刻
@@ -1513,7 +1513,7 @@ id	description	en	local
 		Wake	起きる
 		Sleep	寝る
 		(all players must be sleeping to fast-forward)	(時間を早送りするにはプレイヤー全員が寝て下さい.)
-		PURCHASE ISLAND	島の購入
+		PURCHASE BASE	拠点の購入
 		Bank	所持金
 		Total	合計
 		Police Hat	警官の帽子
@@ -1881,14 +1881,14 @@ id	description	en	local
 		Transponder	遭難信号発信機
 		Underwater Welding Torch	水中用溶接機
 		Welding Torch	溶接機
-
-
-
+			
+			
+			
 		[$[action_equipment_use]] Open parachute [$[action_equipment_secondary]] Close parachute	[$[action_equipment_use]] パラシュートを開く [$[action_equipment_secondary]] パラシュートを閉じる
-
+			
 		[$[action_equipment_use]] Zoom in	[$[action_equipment_use]] 拡大する
-
-
+			
+			
 		[$[action_equipment_use]] Revive incapaciated player	[$[action_equipment_use]] 蘇生する
 		[$[action_equipment_use]] Spray water	[$[action_equipment_use]] 放水する
 		[$[action_equipment_use]] Heal self / target	[$[action_equipment_use]] 自身/ターゲットを治療する
@@ -1900,13 +1900,13 @@ id	description	en	local
 		[$[action_equipment_use]] Zoom in	[$[action_equipment_use]] 拡大する
 		[$[action_equipment_use]] Recover oxygen	[$[action_equipment_use]] 酸素を吸う
 		[$[action_equipment_use]] Transmit [$[action_equipment_secondary]] Cycle frequency	[$[action_equipment_use]] 発信する [$[action_equipment_secondary]] チャンネルを変更する
-
+			
 		[$[action_equipment_use]] Toggle control [$[action_equipment_secondary]] cycle frequency	[$[action_equipment_use]] 使用する/やめる [$[action_equipment_secondary]] チャンネルを変更する
-
+			
 		[$[action_equipment_use]] Toggle strobe [$[action_equipment_secondary]] Toggle MOB mode	[$[action_equipment_use]] ストロボライトのオン/オフ [$[action_equipment_secondary]] 船外作業モードのオン/オフ
 		[$[action_equipment_use]] Toggle infrared strobe [$[action_equipment_secondary]] Toggle MOB mode	[$[action_equipment_use]] 赤外線ストロボライトのオン/オフ [$[action_equipment_secondary]] 船外作業モードのオン/オフ
 		[$[action_equipment_use]] Toggle transmit [$[action_equipment_secondary]] Toggle MOB mode	[$[action_equipment_use]] 発信する/止める [$[action_equipment_secondary]] 船外作業モードのオン/オフ
-
+			
 		[$[action_equipment_use]] Repair	[$[action_equipment_use]] 修理する
 		Detailed	詳細表示
 		Simple	通常表示
@@ -1964,21 +1964,21 @@ id	description	en	local
 		Pistol	拳銃
 		Pistol Ammo	拳銃の弾薬
 		Grenade	手榴弾
-		Enable weapons DLC	武器DLCを有効にする
+		Search and Destroy DLC	Search and Destroy DLCを有効にする
 		Modular Engines	組み立て式エンジン
 		Medium Modular Engines	中型組み立て式エンジン
 		Heavy Modular Engines	大型組み立て式エンジン
 		Hazmat Outfit	防護服
 		Radiation Detector	放射線測定器
-
-
+			
+			
 		[$[action_equipment_use]] Toggle detector	[$[action_equipment_use]] 測定器の音/オフ
 		Hazmat	ハザード
 		Coal	石炭
 		Steam Power	蒸気機関
 		Nuclear Power	原子力
-		Load Coal	石炭を入れる
-		Unload Coal	石炭を取り出す
+		Load	入れる
+		Unload	取り出す
 		Clean Radiation	放射線汚染の除去
 		Weapons	武器
 		Machine Gun Ammo Box (Kinetic)	機関銃の弾薬箱 (運動エネルギー弾)
@@ -2014,12 +2014,12 @@ id	description	en	local
 		[$[action_equipment_use]] Detonate	[$[action_equipment_use]] 爆破
 		[$[action_equipment_use]] Fire [$[action_equipment_secondary]] Reload	[$[action_equipment_use]] 発砲 [$[action_equipment_secondary]] 弾の補充
 		[$[action_equipment_use]] Reload	[$[action_equipment_use]] 弾の補充
-
-
-
-
-
-
+			
+			
+			
+			
+			
+			
 		[$[action_equipment_use]] Throw	[$[action_equipment_use]] 投擲
 		Camera Shake	画面の振動
 		Trigger	トリガーボタン
@@ -2162,6 +2162,31 @@ id	description	en	local
 		Fill Level	充填量
 		Sea Monsters	海のモンスター
 		Lightning	雷
+		Ender Airfield	エンダー飛行場
+		Large airstrip with a dangerous clifftop runway.	危険な崖上にある大型の滑走路です.
+		Uran Wind Power Plant Docks	ウラン風力発電所の港
+		Large indutrial docks area with multiple boat workbenches at the collapsed nuclear power station.	破壊された原子力発電所にある, 複数の作業台を備えた, 産業用の大型の港です.
+		Clarke Airfield	クラーク飛行場
+		Large airstrip on the salt flats with access to the launch site.	塩類平原にある大きな飛行場です. 発射場へのアクセスも可能です.
+		FJ Warner Docks	F. J. ワーナー港
+		A beachside port with a large hangar and a view of the salt flats.	大きな格納庫と鉄道ターミナルがあります. 塩類平原を一望できます.
+		Serpentine Trainyard	サーペンタイン操車場
+		A train assembly yard with two rail workbenches.	鉄道用の作業台が2つある操車場です.
+		Brainz Train Yard	ブレインズ操車場
+		Large train maintenance yard on the northern coast.	北側の海岸にある大きな列車整備場です.
+		Mauve Train Yard	モーブ操車場
+		A central train yard situated adjacent to the Robert Barnsley Observatory.	ロバート・バーンズリー天文台に隣接する中央操車場です.
+		JSI Dock	JSI港
+		A commerce dock on the south of Sharkspoonful Island.	シャークスポーンフル島の南側にある商業用の港です.
+		North Meier Outpost	ノースマイヤー前哨基地
+		A small dock and workbench situated on the arid mainland, perfect for starting out.	乾燥した大地にある小さな港です. この大地の開拓を始めるのに最適です.
+		Place Animal in	動物を入れる
+		Pet	撫でる
+		Dog Whistle	犬笛
+		[$[action_equipment_use]] Use whistle	[$[action_equipment_use]] 犬笛を吹く
+		Aggressive Animals	狂暴な動物
+		Industrial Frontier DLC	Industrial Frontier DLCを有効にする
+		Open Store Page	ストアページを開く
 		Camera Forward	カメラを前へ移動
 		Camera Back	カメラを後へ移動
 		Camera Left	カメラを左へ移動
@@ -2180,6 +2205,18 @@ id	description	en	local
 		Show Rotation UI	回転ヒントを表示
 		Show/Hide Vehicle (Selection Grid)	乗り物の選択グリッドの表示/非表示
 		Toggle Eraser	削除ツールの切り替え
+		Iron Ore	鉄鉱石
+		Aluminium Ore	アルミニウム鉱石
+		Gold Ore	金鉱石
+		Gold Rich Dirt	砂金
+		Uranium Ore	ウラン鉱石
+		Iron Ingot	鉄の延べ棒
+		Steel Ingot	鋼鉄の延べ棒
+		Aluminium Ingot	アルミニウムの延べ棒
+		Impure Gold Ingot	純度の低い金の延べ棒
+		Gold Ingot	金の延べ棒
+		Uranium Ingot	ウランの延べ棒
+		Industrial Equipment	工業装備
 		You were disconnected.	切断されました.
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
@@ -2345,7 +2382,7 @@ def_air_exchanger_9_5_node_4_desc		Compartment air temperature.	熱交換器内�
 def_air_exchanger_9_5_node_5_label		Temp B	液体の温度
 def_air_exchanger_9_5_node_5_desc		Compartment water temperature.	熱交換器内の液体の温度を出力します.
 def_air_filter_name		Air Filter	気体口 (フィルター)
-def_air_filter_desc
+def_air_filter_desc			
 def_air_filter_s_desc		Port used to allow air in and out of a fluid system.	空気の吸入や排出を行う気体口です.
 def_air_filter_node_0_label		Air	気体
 def_air_filter_node_0_desc		Allows fluid to flow in and out of an enclosed volume.	この気体口から吸入/排出を行う気体です.
@@ -2540,7 +2577,7 @@ def_camera_med_node_2_desc		Controls whether or not the infrared mode is switche
 def_camera_med_node_3_label		Field of View	視野角
 def_camera_med_node_3_desc		Controls the level of zoom of the camera.	カメラをズームイン/アウトします.
 def_camera_small_name		Camera Small	カメラ (小)
-def_camera_small_desc
+def_camera_small_desc			
 def_camera_small_s_desc		A camera with video output feed.	映像を出力する小型のカメラです.
 def_camera_small_node_0_label		Camera Feed	カメラの映像
 def_camera_small_node_0_desc			カメラで捉えた映像を出力します.
@@ -2808,14 +2845,14 @@ def_distance_sensor_node_0_desc		The measured distance in metres.	測定結果�
 def_distance_sensor_node_1_label		Electric	電力
 def_distance_sensor_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_door_name		Sliding Door (Electric)	ドア (引き戸, 電動)
-def_door_desc
+def_door_desc			
 def_door_s_desc		Sliding door that can be opened and closed using an on/off signal.	オン/オフ信号で開閉ができる引き戸式のドアです.
 def_door_node_0_label		Open/Close	開閉
 def_door_node_0_desc		Opens the door when receiving an on signal, and closes it when receiving an off signal.	オン信号を受け取るとドアを開け, オフ信号を受け取るとドアを閉めます.
 def_door_node_1_label		Electric	電力
 def_door_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_door_dock_large_name		Hinged Dock Door	ドア (押し戸, ドッキング)
-def_door_dock_large_desc
+def_door_dock_large_desc			
 def_door_dock_large_s_desc		Hinged door that can be opened and closed using an on/off signal.	オン/オフ信号で開閉ができる押し戸式のドアです.
 def_door_dock_large_node_0_label		Open/Close	開閉
 def_door_dock_large_node_0_desc		Opens the door when receiving an on signal, and closes it when receiving an off signal.	オン信号を受け取るとドアを開け, オフ信号を受け取るとドアを閉めます.
@@ -2838,7 +2875,7 @@ def_door_dock_large_node_8_desc		Composite data output.	相手のコネクター
 def_door_dock_large_node_9_label		Composite input	複合信号受信
 def_door_dock_large_node_9_desc		Composite data input.	相手のコネクターへ複合信号を受信します.
 def_door_dock_small_name		Hinged Dock Hatch	ハッチ (押し戸, ドッキング)
-def_door_dock_small_desc
+def_door_dock_small_desc			
 def_door_dock_small_s_desc		Hinged door that can be opened and closed using an on/off signal.	オン/オフ信号で開閉ができる押し戸式のハッチです.
 def_door_dock_small_node_0_label		Open/Close	開閉
 def_door_dock_small_node_0_desc		Opens the door when receiving an on signal, and closes it when receiving an off signal.	オン信号を受け取るとハッチを開け, オフ信号を受け取るとハッチを閉めます.
@@ -2874,22 +2911,22 @@ def_door_frame_straight_name		Door Frame Edge	カスタムドア枠 (辺)
 def_door_frame_straight_desc		To create a valid frame, there must be a continuous loop of frame parts in a consistent orientation with no other parts inside the frame.	枠内に他のブロックがない状態にして, 全ての枠の部品が同じ向きで設置されていないと正しいドア枠として認識されません.
 def_door_frame_straight_s_desc		A straight edge for building openings to sealed fluid compartments.	機密可能なカスタムドアを作成する辺の部品です.
 def_door_manual_name		Sliding Door	ドア (引き戸)
-def_door_manual_desc
+def_door_manual_desc			
 def_door_manual_s_desc		Sliding door that can be opened and closed by hand and locked using an on/off signal.	手動で開閉ができる引き戸で, オン/オフ信号で施錠もできます.
 def_door_manual_node_0_label		Lock	施錠
 def_door_manual_node_0_desc		Locks the door when receiving an on signal.	オン信号を受け取るとドアを施錠します.
 def_door_manual_large_name		Hinged Door	ドア (押し戸)
-def_door_manual_large_desc
+def_door_manual_large_desc			
 def_door_manual_large_s_desc		Hinged door that can be opened and closed by hand and locked using an on/off signal.	手動で開閉ができる押し戸で, オン/オフ信号で施錠もできます.
 def_door_manual_large_node_0_label		Lock	施錠
 def_door_manual_large_node_0_desc		Locks the door when receiving an on signal.	オン信号を受け取るとドアを施錠します.
 def_door_manual_sliding_small_name		Sliding Hatch	ハッチ (引き戸)
-def_door_manual_sliding_small_desc
+def_door_manual_sliding_small_desc			
 def_door_manual_sliding_small_s_desc		Sliding door that can be opened and closed by hand and locked using an on/off signal.	手動で開閉ができる引き戸式のハッチで, オン/オフ信号で施錠もできます.
 def_door_manual_sliding_small_node_0_label		Lock	施錠
 def_door_manual_sliding_small_node_0_desc		Locks the door when receiving an on signal.	オン信号を受け取るとハッチを施錠します.
 def_door_manual_small_name		Hinged Hatch	ハッチ (押し戸)
-def_door_manual_small_desc
+def_door_manual_small_desc			
 def_door_manual_small_s_desc		Hinged door that can be opened and closed by hand and locked using an on/off signal.	手動で開閉ができる押し戸式のハッチで, オン/オフ信号で施錠もできます.
 def_door_manual_small_node_0_label		Lock	施錠
 def_door_manual_small_node_0_desc		Locks the door when receiving an on signal.	オン信号を受け取るとハッチを施錠します.
@@ -3196,7 +3233,7 @@ def_gate_float_abs_node_0_desc		The absolute value of the input.	入力を絶対
 def_gate_float_abs_node_1_label		Input Number	入力
 def_gate_float_abs_node_1_desc		The number to get the absolute value of.	絶対値に変換したい数値です.
 def_gate_float_add_name		Add	加算
-def_gate_float_add_desc
+def_gate_float_add_desc			
 def_gate_float_add_s_desc		Takes two number inputs, adds them together, and outputs the result.	2つの数値を加算して出力する論理部品です.
 def_gate_float_add_node_0_label		A	A
 def_gate_float_add_node_0_desc		The first value to be added.	加算する数値です.
@@ -3224,7 +3261,7 @@ def_gate_float_counter_node_0_desc		The speed the count rises by.	加算して�
 def_gate_float_counter_node_1_label		Count	カウント
 def_gate_float_counter_node_1_desc		The current count.	現在保持している値の出力です.
 def_gate_float_counter_ping_pong_name		Counter (Ping Pong)	カウンター (往復)
-def_gate_float_counter_ping_pong_desc
+def_gate_float_counter_ping_pong_desc			
 def_gate_float_counter_ping_pong_s_desc		A counter which oscillates between -1 and +1 with a set speed.	設定された速度で-1と1の間を往復するような値を出力する論理部品です.
 def_gate_float_counter_ping_pong_node_0_label		Speed	往復速度
 def_gate_float_counter_ping_pong_node_0_desc		The speed the count changes by.	往復速度を決める入力値です.
@@ -3258,7 +3295,7 @@ def_gate_float_greater_than_node_1_desc		The value to be compared to.	比較さ�
 def_gate_float_greater_than_node_2_label		A GREATER THAN B	A は B より大きい
 def_gate_float_greater_than_node_2_desc		Outputs an on signal if A is greater than B. Outputs an off signal if A is less than or equal to B.	「A」ノードの数値が「B」ノードの数値より大きい場合はオン信号を出力します.
 def_gate_float_invert_name		Numerical Inverter	符号反転
-def_gate_float_invert_desc
+def_gate_float_invert_desc			
 def_gate_float_invert_s_desc		The inverter takes a number as input, multiplies it by -1, and outputs the result.	入力された数値の符号を反転, つまり-1をかけて出力する論理部品です.
 def_gate_float_invert_node_0_label		Number to Invert	符号を反転させる数値
 def_gate_float_invert_node_0_desc		The number that will be inverted.	符号を反転させる数値です.
@@ -3283,7 +3320,7 @@ def_gate_float_modulo_node_1_desc		Outputs the remainder when A is divided by B.
 def_gate_float_modulo_node_2_label		B	B
 def_gate_float_modulo_node_2_desc		The value to modulo A by.	剰余算する値です.
 def_gate_float_multiply_name		Multiply	乗算
-def_gate_float_multiply_desc
+def_gate_float_multiply_desc			
 def_gate_float_multiply_s_desc		Takes two number inputs, multiplies them together, and outputs the result.	2つの数値を乗算して出力する論理部品です.
 def_gate_float_multiply_node_0_label		A	A
 def_gate_float_multiply_node_0_desc		The value to be multiplied.	乗算する数値です.
@@ -3406,7 +3443,7 @@ def_gate_sr_latch_node_2_desc		The internal state of the latch.	ラッチの内�
 def_gate_sr_latch_node_3_label		NOT Output	出力の否定
 def_gate_sr_latch_node_3_desc		The inverse of the internal state of the latch.	ラッチの内部状態を反転して出力します.
 def_gate_torque_add_name		Power Add (Deprecated)	 動力加算 (非推奨)
-def_gate_torque_add_desc
+def_gate_torque_add_desc			
 def_gate_torque_add_s_desc		Combines the outputs of two engines, allowing you to connect multiple engines to the same input.	2つのエンジンの動力を加算します. 1つの動力入力に複数のエンジン出力を接続できます.
 def_gate_torque_add_node_0_label		Combined Power	加算した動力
 def_gate_torque_add_node_0_desc		Outputs the combined power of engine 1 and 2.	入力された2つのエンジンの動力を加算して出力します.
@@ -3443,7 +3480,7 @@ def_gauge_display_node_2_desc		Enables the backlight when receiving an on signal
 def_gauge_display_node_3_label		Electric	電力
 def_gauge_display_node_3_desc		Electrical power connection.	電力網から電力を供給します.
 def_generator_large_name		Large Generator	発電機 (大)
-def_generator_large_desc
+def_generator_large_desc			
 def_generator_large_s_desc		A large generator unit for converting mechanical power to electricity.	動力を受け取って発電する大型の発電機です.
 def_generator_large_node_0_label		RPS	動力
 def_generator_large_node_0_desc		The torque power input to convert to electric energy.	エンジンからの動力を受け取ります.
@@ -3452,7 +3489,7 @@ def_generator_large_node_1_desc		The electric connection to output electric ener
 def_generator_large_node_2_label		Output	発電量
 def_generator_large_node_2_desc		Data output giving the electrical generation of the generator.	この発電機で発電している電力量を出力します.
 def_generator_medium_name		Medium Generator	発電機 (中)
-def_generator_medium_desc
+def_generator_medium_desc			
 def_generator_medium_s_desc		A medium generator unit for converting mechanical power to electricity.	動力を受け取って発電する中型の発電機です.
 def_generator_medium_node_0_label		RPS	動力
 def_generator_medium_node_0_desc		The torque power input to convert to electric energy.	エンジンからの動力を受け取ります.
@@ -3461,7 +3498,7 @@ def_generator_medium_node_1_desc		The electric connection to output electric ene
 def_generator_medium_node_2_label		Output	発電量
 def_generator_medium_node_2_desc		Data output giving the electrical generation of the generator.	この発電機で発電している電力量を出力します.
 def_generator_small_name		Small Generator	発電機 (小)
-def_generator_small_desc
+def_generator_small_desc			
 def_generator_small_s_desc		A small generator unit for converting mechanical power to electricity.	動力を受け取って発電する小型の発電機です.
 def_generator_small_node_0_label		RPS	動力
 def_generator_small_node_0_desc		The torque power input to convert to electric energy.	エンジンからの動力を受け取ります.
@@ -3851,7 +3888,7 @@ def_handle_name		Handle	取っ手
 def_handle_desc		Interacting with [$[action_interact_left]] or [$[action_interact_right]] again will detach that hand. The handle can be used to drag vehicles around. If a vehicle is too heavy to move, you will be detached automatically when you move outside the handle's interaction range.	取っ手を掴んでいる時に [$[action_interact_left]]/[$[action_interact_right]] を押すと離すことができます. 軽い乗り物は取っ手を掴んでそのまま動かすことができます. プレイヤーが取っ手の範囲外まで移動した場合は自動的に手を離します.
 def_handle_s_desc		A handle that you can attach to by interacting with [$[action_interact_left]] or [$[action_interact_right]].	[$[action_interact_left]] や [$[action_interact_right]] を押して掴むことができる取っ手です.
 def_hatch_name		Sliding Hatch (Electric)	ハッチ (引き戸, 電動)
-def_hatch_desc
+def_hatch_desc			
 def_hatch_s_desc		Sliding hatch that can be opened and closed using an on/off signal.	オン/オフ信号で開閉ができる引き戸式のハッチです.
 def_hatch_node_0_label		Hatch Open/Close	開閉
 def_hatch_node_0_desc		Opens the hatch when receiving an on signal, and closes it when receiving an off signal.	オン信号を受け取るとドアを開け, オフ信号を受け取るとドアを閉めます.
@@ -3953,7 +3990,7 @@ def_impact_sensor_s_desc		A sensor activated by a sudden change in velocity.	急
 def_impact_sensor_node_0_label		Output	衝撃検出
 def_impact_sensor_node_0_desc		Outputs an on signal when instant change in velocity exceeds the impact threshold.	設定された閾値以上の速度の急激な変化があった場合はオン信号を出力します.
 def_indicator_name		Indicator Light	表示灯
-def_indicator_desc
+def_indicator_desc			
 def_indicator_s_desc		A simple light that can be used as an indicator in logic systems.	論理システムの表示灯として使用する小さな表示灯です.
 def_indicator_node_0_label		Indicator Light	点灯
 def_indicator_node_0_desc		Switches the light on when receiving an on signal.	オン信号を受け取るとはライトを光らせます.
@@ -4035,8 +4072,13 @@ def_inventory_equipment_compass_node_0_desc		Electrical power connection.	電力
 def_inventory_equipment_defibrillator_name		Equipment inventory (Defibrillator)	保管庫 (中, 自動体外式除細動器)
 def_inventory_equipment_defibrillator_desc		Press [$[action_equipment_use]] on an incapacitated survivor to revive them. Requires electric charge to function, and will recharge when placed into a powered large equipment storage unit.	[$[action_equipment_use]] を押して意識不明のプレイヤーや生存者を蘇生します. 蘇生が遅れると助けることができなくなります. 使用できる回数には限りがあり, 使用後は通電している保管庫で充電する必要があります.
 def_inventory_equipment_defibrillator_s_desc		A large equipment storage unit containing a defibrillator.	自動体外式除細動器が保管されている中型の保管庫です.
-def_inventory_equipment_defibrillator_node_0_label		Electric	電飾
+def_inventory_equipment_defibrillator_node_0_label		Electric	電力
 def_inventory_equipment_defibrillator_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_dog_whistle_name		Equipment inventory (Dog Whistle)	保管庫 (小, 犬笛)
+def_inventory_equipment_dog_whistle_desc		Hold [$[action_equipment_use]] to sound the whistle. Nearby dogs will respond to certain whistle patterns.\n1 long burst = Wait.\n2 short bursts = Follow.	[$[action_equipment_use]]を長押しして笛を吹きます. 付近の犬が笛のパターンに応じて反応します to sound the whistle. Nearby dogs will respond to certain whistle patterns.\n1回長く吹く = 待て\n2回短く吹く = ついてこい
+def_inventory_equipment_dog_whistle_s_desc		A small equipment storage unit containing a dog whistle.	犬笛が保管されている小型の保管庫です.
+def_inventory_equipment_dog_whistle_node_0_label		Electric	電力
+def_inventory_equipment_dog_whistle_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_fire_extinguisher_name		Equipment inventory (Fire Extinguisher)	保管庫 (中, 消火器)
 def_inventory_equipment_fire_extinguisher_desc		Hold [$[action_equipment_use]] to spray a stream of water capable of extinguishing fires. This equipment has a limited water capacity and cannot be refilled.	[$[action_equipment_use]] を押して消火剤を放出し, 消火活動を行います. 使用できる時間には限りがあり, 乗り物を作業台に戻すまで補充できません.
 def_inventory_equipment_fire_extinguisher_s_desc		A large equipment storage unit containing a fire extinguisher.	消火器が保管されている中型の保管庫です.
@@ -4279,19 +4321,19 @@ def_jet_engine_compressor_node_3_desc		The temperature of air transferred by the
 def_jet_engine_compressor_node_4_label		RPS	秒間エンジン回転数
 def_jet_engine_compressor_node_4_desc		The rotations per second generated by the compressor.	1秒間あたりのエンジンの回転数 (RPS) を出力します.
 def_jet_engine_duct_angle_name		Jet Duct Angle	ダクト (角)
-def_jet_engine_duct_angle_desc
+def_jet_engine_duct_angle_desc			
 def_jet_engine_duct_angle_s_desc		An angled section of ducting for use in jet engines.	ジェットエンジンで使用するダクトの角部分です.
 def_jet_engine_duct_cross_name		Jet Duct Cross	ダクト (交差)
-def_jet_engine_duct_cross_desc
+def_jet_engine_duct_cross_desc			
 def_jet_engine_duct_cross_s_desc		An cross section of ducting for use in jet engines.	ジェットエンジンで使用するダクトの交差部分です.
 def_jet_engine_duct_diagonal_name		Jet Duct Diagonal	ダクト (斜め)
-def_jet_engine_duct_diagonal_desc
+def_jet_engine_duct_diagonal_desc			
 def_jet_engine_duct_diagonal_s_desc		A diagonal section of ducting for use in jet engines.	ジェットエンジンで使用するダクトの斜め部分です.
 def_jet_engine_duct_straight_name		Jet Duct Straight	ダクト (直線)
-def_jet_engine_duct_straight_desc
+def_jet_engine_duct_straight_desc			
 def_jet_engine_duct_straight_s_desc		An straight section of ducting for use in jet engines.	ジェットエンジンで使用するダクトの直線部分です.
 def_jet_engine_duct_t_name		Jet Duct T	ダクト (T字)
-def_jet_engine_duct_t_desc
+def_jet_engine_duct_t_desc			
 def_jet_engine_duct_t_s_desc		A T-shaped section of ducting for use in jet engines.	ジェットエンジンで使用するダクトのT字部分です.
 def_jet_engine_exhaust_afterburner_name		Jet Exhaust Afterburner	排気口 (アフターバーナー)
 def_jet_engine_exhaust_afterburner_desc		This is part of a set of modular jet engine components. Thrust will be produced at the back of the exhaust proportional to the internal RPS of the engine. Additional thrust is produced when the afterburner is active, at the cost of increased fuel consumption.	ジェットエンジンを構成する部品の1つです. アフターバーナーが起動している時は追加の燃料を消費して更なる推進力を発生させます. 得られる推進力の大きさはこのエンジンの動力の大きさに依存します.
@@ -4389,7 +4431,7 @@ def_large_rotor_node_2_desc		Receives power generated by an engine.	エンジン
 def_large_rotor_node_3_label		Collective	コレクティブ
 def_large_rotor_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	ローターのコレクティブ (ローターが発生させる浮力の量) を制御する-1から1の範囲の数値信号です.
 def_laser_beacon_name		Laser Beacon	レーザー照射器
-def_laser_beacon_desc
+def_laser_beacon_desc			
 def_laser_beacon_s_desc		A beacon that produces a laser point light, visible by laser point sensors.	レーザー受光器が補足可能なレーザーを照射するレーザー照射器です.
 def_laser_beacon_node_0_label		Beacon Light	レーザー照射
 def_laser_beacon_node_0_desc		Switches the beacon on when receiving an on signal.	オン信号を受け取るとレーザーを照射します.
@@ -4440,14 +4482,14 @@ def_linear_compact_base_node_0_desc			-1から1の範囲で土台の移動速度
 def_linear_compact_base_node_1_label		Electric	電力
 def_linear_compact_base_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_linear_compact_head_name		Compact Linear Track Head	レール土台 (小) の部品
-def_linear_compact_head_desc
-def_linear_compact_head_s_desc
+def_linear_compact_head_desc			
+def_linear_compact_head_s_desc			
 def_linear_compact_module_name		Compact Linear Track Extension	レール (小)
 def_linear_compact_module_desc		A Compact Linear Track Base must be attached somewhere along the track for it to function.	これとは別にレール土台 (小) を1つ以上取り付ける必要があります.
 def_linear_compact_module_s_desc		An extension piece that can be used to build compact linear tracks.	小型のレールを作成するための拡張部品です.
 def_linear_head_name		Linear Track Head	レール土台 (大) の部品
-def_linear_head_desc
-def_linear_head_s_desc
+def_linear_head_desc			
+def_linear_head_s_desc			
 def_linear_head_node_0_label		RPS	動力
 def_linear_head_node_0_desc		Power connection for transfering mechanical energy.	レール間で動力の伝達ができます.
 def_linear_head_node_1_label		Fluid	流体
@@ -4464,8 +4506,8 @@ def_linear_matic_a_node_2_desc		Electrical power connection.	電力網から電�
 def_linear_matic_a_node_3_label		Fluid	流体
 def_linear_matic_a_node_3_desc		Fluid connection for transfering fluid.	ピストン間で流体の伝達ができます.
 def_linear_matic_b_name		Pneumatic Piston	空圧ピストンの部品
-def_linear_matic_b_desc
-def_linear_matic_b_s_desc
+def_linear_matic_b_desc			
+def_linear_matic_b_s_desc			
 def_linear_matic_b_node_0_label		Fluid	液体
 def_linear_matic_b_node_0_desc			ピストン間で流体の伝達ができます.
 def_linear_module_name		Linear Track Extension	レール (大)
@@ -4499,8 +4541,18 @@ def_mic_node_2_desc		Activate the microphone.	オン信号を受け取るとマ�
 def_mic_node_3_label		Transmit	音声出力中
 def_mic_node_3_desc		If the microphone is currently transmitting.	マイクが音声を出力している間 (=マイクがプレイヤーの声を認識している間) はオン信号を出力します.
 def_microprocessor_name		Microprocessor	マイクロコントローラー
-def_microprocessor_desc
-def_microprocessor_s_desc
+def_microprocessor_desc			
+def_microprocessor_s_desc			
+def_mineral_converter_name		Mineral Converter	鉱物運搬機
+def_mineral_converter_desc		Transports minerals through the connected system.	接続されている部品へ鉱物を輸送します.
+def_mineral_converter_s_desc		A basic mineral duct.	基本的な鉱物ダクトです.
+def_mineral_converter_node_0_label		Mineral Level	鉱物の量
+def_mineral_converter_node_0_desc			ダクトの中の石炭の量を出力します.
+def_mineral_drill_name		Mineral Drill	鉱物ドリル
+def_mineral_drill_desc		The mineral drill can be driven by torque to mine ore deposits in the world. Extracted minerals can be transferred to an attached hopper.	動力で稼働し, 鉱脈を採掘できます. 採掘されたドリルは付属のホッパーに移動します.
+def_mineral_drill_s_desc		A vehicle mounted drill for mining ore deposits.	鉱脈を採掘する, 搭載型のドリルです.
+def_mineral_drill_node_0_label		Drill Shaft	動力
+def_mineral_drill_node_0_desc			エンジンからの動力を受け取ります.
 def_modular_engine_air_manifold_name		Modular Engine Air Manifold	吸入口 (空気)
 def_modular_engine_air_manifold_desc		Attach a manifold to a cylinder to provide a connection for air to that cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	これを気筒に取り付けることでその組み立て式エンジンに空気を供給できます. 隣接している気筒はこの吸入口からの空気を共有できます.
 def_modular_engine_air_manifold_s_desc		A modular engine air manifold.	組み立て式エンジンの部品です. エンジンに供給する空気の吸入口です.
@@ -4509,7 +4561,7 @@ def_modular_engine_air_manifold_node_0_desc			吸入口が空気を吸入する�
 def_modular_engine_air_manifold_node_1_label		Air	空気
 def_modular_engine_air_manifold_node_1_desc			エンジンを動かすために供給される空気です.
 def_modular_engine_air_ram_name		Air Ram	気体口 (ラム)
-def_modular_engine_air_ram_desc
+def_modular_engine_air_ram_desc			
 def_modular_engine_air_ram_s_desc		Port used to allow air in and out of a fluid system.	空気の吸入や排出を行う気体口です.
 def_modular_engine_air_ram_node_0_label		Air	気体
 def_modular_engine_air_ram_node_0_desc		Allows fluid to flow in and out of an enclosed volume.	この気体口から吸入/排出を行う気体です.
@@ -4835,8 +4887,8 @@ def_motor_small_node_1_desc		The electric energy input to be converted into mech
 def_motor_small_node_2_label		Throttle	スロットル
 def_motor_small_node_2_desc		The throttle input to control how much electric energy is converted to force.	モーターが電力を動力に変換する量を調整する数値で, 範囲は0から1です.
 def_multibody_compact_pivot_b_name		Compact Pivot	電動回転軸 (小) の部品
-def_multibody_compact_pivot_b_desc
-def_multibody_compact_pivot_b_s_desc
+def_multibody_compact_pivot_b_desc			
+def_multibody_compact_pivot_b_s_desc			
 def_multibody_compact_pivot_robotic_a_name		Compact Robotic Pivot	電動回転軸 (小, 方向)
 def_multibody_compact_pivot_robotic_a_desc		The pivot has a range of motion of 0.25 turns in both directions. A standard input value sets the target orientation within the pivot's range of motion. The pivot's speed can be configured by selecting it with the select tool.	この回転軸は-0.25回転から0.25回転の範囲で回転でき, 数値信号で向く方向を指定します. 回転速度はプロパティウィンドウから設定できます.
 def_multibody_compact_pivot_robotic_a_s_desc		A small robotic pivot that will orientate towards the input value within its range of motion.	回転できる範囲内で入力された方向へ向く小型の電動回転軸です.
@@ -4861,20 +4913,20 @@ def_multibody_door_hinge_a_node_1_desc		The hinge's measured rotation between -0
 def_multibody_door_hinge_a_node_2_label		Electric	電力
 def_multibody_door_hinge_a_node_2_desc		Electrical power connection.	電力網から電力を供給します.
 def_multibody_door_hinge_b_name		Robotic Door Hinge	電動蝶番 (ドア) の部品
-def_multibody_door_hinge_b_desc
-def_multibody_door_hinge_b_s_desc
+def_multibody_door_hinge_b_desc			
+def_multibody_door_hinge_b_s_desc			
 def_multibody_piston_suspension_a_name		Piston Suspension	ピストン型サスペンション
 def_multibody_piston_suspension_a_desc		A dampened hydraulic sprung piston.	衝撃を吸収する油圧式のピストン型のサスペンションです.
 def_multibody_piston_suspension_a_s_desc		A shock absorber that can be used to improve handling of land-based vehicles.	陸上の乗り物の操縦を改善する衝撃吸収装置です.
 def_multibody_piston_suspension_b_name		Piston Suspension	ピストン型サスペンションの部品
-def_multibody_piston_suspension_b_desc
-def_multibody_piston_suspension_b_s_desc
+def_multibody_piston_suspension_b_desc			
+def_multibody_piston_suspension_b_s_desc			
 def_multibody_pivot_a_name		Pivot	回転軸
 def_multibody_pivot_a_desc		The pivot can rotate to 0.25 turns in both directions.	-0.25回転から0.25回転の範囲で回転します.
 def_multibody_pivot_a_s_desc		A basic pivot that can move freely.	自由に回転する回転軸です.
 def_multibody_pivot_b_name		Pivot	回転軸の部品
-def_multibody_pivot_b_desc
-def_multibody_pivot_b_s_desc
+def_multibody_pivot_b_desc			
+def_multibody_pivot_b_s_desc			
 def_multibody_robotic_hinge_01_a_name		Robotic Hinge	電動蝶番
 def_multibody_robotic_hinge_01_a_desc		The hinge has a range of motion of 0.25 turns in both directions. A standard input value sets the target orientation within the pivot's range of motion. The measured rotation of the hinge can be read from its output. The hinge's speed can be configured by selecting it with the select tool.	この蝶番は-0.25回転から0.25回転の範囲で回転でき, 数値信号で向く方向を指定します. また現在向いている向きを出力します. 回転速度はプロパティウィンドウから設定できます.
 def_multibody_robotic_hinge_01_a_s_desc		A powered robotic hinge that will orientate towards the input value within its range of motion.	回転できる範囲内で入力された方向へ向く, 電力で動く蝶番です.
@@ -4889,8 +4941,8 @@ def_multibody_robotic_hinge_01_a_node_3_desc		Power connection for transfering m
 def_multibody_robotic_hinge_01_a_node_4_label		Fluid	流体
 def_multibody_robotic_hinge_01_a_node_4_desc		Fluid connection for transfering fluid.	蝶番間で流体の伝達ができます.
 def_multibody_robotic_hinge_01_b_name		Robotic Hinge	電動蝶番の部品
-def_multibody_robotic_hinge_01_b_desc
-def_multibody_robotic_hinge_01_b_s_desc
+def_multibody_robotic_hinge_01_b_desc			
+def_multibody_robotic_hinge_01_b_s_desc			
 def_multibody_robotic_hinge_01_b_node_0_label		RPS	動力
 def_multibody_robotic_hinge_01_b_node_0_desc		Power connection for transfering mechanical energy.	蝶番間で動力の伝達ができます.
 def_multibody_robotic_hinge_01_b_node_1_label		Fluid	流体
@@ -4918,13 +4970,13 @@ def_multibody_robotic_pivot_01_a_fluid_node_2_desc		Electrical power connection.
 def_multibody_robotic_pivot_01_a_fluid_node_3_label		Fluid	流体
 def_multibody_robotic_pivot_01_a_fluid_node_3_desc		Fluid connection for transfering fluids.	回転軸間で流体の伝達ができます.
 def_multibody_robotic_pivot_01_b_name		Robotic Pivot	回転軸 (大, 方向, 流体) の部品
-def_multibody_robotic_pivot_01_b_desc
-def_multibody_robotic_pivot_01_b_s_desc
+def_multibody_robotic_pivot_01_b_desc			
+def_multibody_robotic_pivot_01_b_s_desc			
 def_multibody_robotic_pivot_01_b_node_0_label		RPS	動力
 def_multibody_robotic_pivot_01_b_node_0_desc		Power connection for transfering mechanical energy.	回転軸間で動力の伝達ができます.
 def_multibody_robotic_pivot_01_b_fluid_name		Robotic Pivot	回転軸 (大, 方向, 流体) の部品
-def_multibody_robotic_pivot_01_b_fluid_desc
-def_multibody_robotic_pivot_01_b_fluid_s_desc
+def_multibody_robotic_pivot_01_b_fluid_desc			
+def_multibody_robotic_pivot_01_b_fluid_s_desc			
 def_multibody_robotic_pivot_01_b_fluid_node_0_label		Fluid	流体
 def_multibody_robotic_pivot_01_b_fluid_node_0_desc		Fluid connection for transfering fluids.	回転軸間で流体の伝達ができます.
 def_multibody_suspension_a_name		Suspension	サスペンション
@@ -4933,8 +4985,8 @@ def_multibody_suspension_a_s_desc		A shock absorber that can be used to improve 
 def_multibody_suspension_a_node_0_label		RPS	動力
 def_multibody_suspension_a_node_0_desc		Power connection for transfering mechanical energy.	サスペンション間で動力の伝達ができます.
 def_multibody_suspension_b_name		Suspension	サスペンションの部品
-def_multibody_suspension_b_desc
-def_multibody_suspension_b_s_desc
+def_multibody_suspension_b_desc			
+def_multibody_suspension_b_s_desc			
 def_multibody_suspension_b_node_0_label		RPS	動力
 def_multibody_suspension_b_node_0_desc		Power connection for transfering mechanical energy.	サスペンション間で動力の伝達ができます.
 def_multibody_turret_large_a_name		Turret Ring (Large)	タレット土台 (大)
@@ -4947,8 +4999,8 @@ def_multibody_turret_large_a_node_1_desc		The turrets measured rotation expresse
 def_multibody_turret_large_a_node_2_label		Electric	電力
 def_multibody_turret_large_a_node_2_desc		Electrical power connection.	電力網から電力を供給します.
 def_multibody_turret_large_b_name		Turret Ring (Large)	タレット土台 (大)の部品
-def_multibody_turret_large_b_desc
-def_multibody_turret_large_b_s_desc
+def_multibody_turret_large_b_desc			
+def_multibody_turret_large_b_s_desc			
 def_multibody_turret_medium_a_name		Turret Ring (Medium)	タレット土台 (中)
 def_multibody_turret_medium_a_desc		A turret ring rotates in the same way as a velocity pivot. The gap inside the turret ring creates a door seal, and can be used to extend a sealed volume through the turret ring.	電動回転軸 (速度) と同じように回転します. 土台の内側の穴は密閉可能であり, 密閉状態を維持しつつ, 密閉空間の拡張が可能です.
 def_multibody_turret_medium_a_s_desc		A medium turret ring that can rotate continuously.	継続的に回転が可能な中型のタレットの土台です.
@@ -4959,8 +5011,8 @@ def_multibody_turret_medium_a_node_1_desc		The turrets measured rotation express
 def_multibody_turret_medium_a_node_2_label		Electric	電力
 def_multibody_turret_medium_a_node_2_desc		Electrical power connection.	電力網から電力を供給します.
 def_multibody_turret_medium_b_name		Turret Ring (Medium)	タレット土台 (中)の部品
-def_multibody_turret_medium_b_desc
-def_multibody_turret_medium_b_s_desc
+def_multibody_turret_medium_b_desc			
+def_multibody_turret_medium_b_s_desc			
 def_multibody_turret_small_a_name		Turret Ring (Small)	タレット土台 (小)
 def_multibody_turret_small_a_desc		A turret ring rotates in the same way as a velocity pivot. The gap inside the turret ring creates a door seal, and can be used to extend a sealed volume through the turret ring.	電動回転軸 (速度) と同じように回転します. 土台の内側の穴は密閉可能であり, 密閉状態を維持しつつ, 密閉空間の拡張が可能です.
 def_multibody_turret_small_a_s_desc		A small turret ring that can rotate continuously.	継続的に回転が可能な小型のタレットの土台です.
@@ -4971,8 +5023,8 @@ def_multibody_turret_small_a_node_1_desc		The turrets measured rotation expresse
 def_multibody_turret_small_a_node_2_label		Electric	電力
 def_multibody_turret_small_a_node_2_desc		Electrical power connection.	電力網から電力を供給します.
 def_multibody_turret_small_b_name		Turret Ring (Small)	タレット土台 (小)の部品
-def_multibody_turret_small_b_desc
-def_multibody_turret_small_b_s_desc
+def_multibody_turret_small_b_desc			
+def_multibody_turret_small_b_s_desc			
 def_multibody_velocity_pivot_a_name		Velocity Pivot	回転軸 (大, 速度)
 def_multibody_velocity_pivot_a_desc		Inputting a value of 0 will cause it to stop. The pivot's current rotation can be read from its output. An output of 1 corresponds to one full turn, and -1 to a full turn in the opposite direction.	0が入力されると回転を停止します. また現在の回転数を出力します.
 def_multibody_velocity_pivot_a_s_desc		A pivot that will continuously rotate at a set input speed.	入力された速度で回転する大型の電動回転軸です.
@@ -4983,8 +5035,8 @@ def_multibody_velocity_pivot_a_node_1_desc		The pivot's measured rotation expres
 def_multibody_velocity_pivot_a_node_2_label		Electric	電力
 def_multibody_velocity_pivot_a_node_2_desc		Electrical power connection.	電力網から電力を供給します.
 def_multibody_velocity_pivot_b_name		Robotic Pivot	回転軸 (大, 速度) の部品
-def_multibody_velocity_pivot_b_desc
-def_multibody_velocity_pivot_b_s_desc
+def_multibody_velocity_pivot_b_desc			
+def_multibody_velocity_pivot_b_s_desc			
 def_no_sleep_name		Keep Active Block	常時読み込みブロック
 def_no_sleep_desc		When on a vehicle, the vehicle will not despawn when out of range.	使用し過ぎると負荷により遅延が発生する場合があります.
 def_no_sleep_s_desc		A keep alive marking block.	乗り物に設置すると, その乗り物が読み込み範囲外に移動しても常に読み込まれた状態になります.
@@ -5197,40 +5249,40 @@ def_radiation_detector_s_desc		A sensor to detect radiation.	放射線を検出�
 def_radiation_detector_node_0_label		Radiation	秒間放射線量
 def_radiation_detector_node_0_desc		The detected radiation dose rate.	秒間放射線量を出力します.
 def_railing_extension_angle_name		Railing Segment Extension Incline	手すり (直線, 傾斜)
-def_railing_extension_angle_desc
+def_railing_extension_angle_desc			
 def_railing_extension_angle_s_desc		Inclined railing extension segment.	手すりの傾斜直線部分です.
 def_railing_segment_angle_name		Railing Segment Incline	手すり (ポール, 傾斜)
-def_railing_segment_angle_desc
+def_railing_segment_angle_desc			
 def_railing_segment_angle_s_desc		Inclined railing segment with a vertical pole.	ポールが付いてる, 手すりの傾斜直線部分です.
 def_railing_segment_angle_end_name		Railing Segment End Incline	手すり (終端, 傾斜)
-def_railing_segment_angle_end_desc
+def_railing_segment_angle_end_desc			
 def_railing_segment_angle_end_s_desc		Inclined railing end segment with a vertical pole.	手すりの傾斜終端部分です.
 def_railing_segment_corner_name		Railing Segment Corner	手すり (角)
-def_railing_segment_corner_desc
+def_railing_segment_corner_desc			
 def_railing_segment_corner_s_desc		Corner railing segment.	手すりの角部分です.
 def_railing_segment_corner_diag_name		Railing Segment Corner Diagonal	手すり (斜め角)
-def_railing_segment_corner_diag_desc
+def_railing_segment_corner_diag_desc			
 def_railing_segment_corner_diag_s_desc		Corner railing that connects a straight segment to the diagonal extension segment.	直線の手すりと斜めの手すりを繋ぐ手すりです.
 def_railing_segment_curve_name		Railing Segment Curve	手すり (丸角)
-def_railing_segment_curve_desc
+def_railing_segment_curve_desc			
 def_railing_segment_curve_s_desc		Curved corner railing segment.	丸まっている手すりの角部分です.
 def_railing_segment_end_name		Railing Segment End	手すり (終端)
-def_railing_segment_end_desc
+def_railing_segment_end_desc			
 def_railing_segment_end_s_desc		End railing segment.	手すりの終点部分です.
 def_railing_segment_end_diag_name		Railing Segment End Diagonal	手すり (斜め, 終点)
-def_railing_segment_end_diag_desc
+def_railing_segment_end_diag_desc			
 def_railing_segment_end_diag_s_desc		Diagonal railing end segment with a vertical pole.	手すりの斜め終点部分です.
 def_railing_segment_extension_name		Railing Segment Extension	手すり (直線)
-def_railing_segment_extension_desc
+def_railing_segment_extension_desc			
 def_railing_segment_extension_s_desc		Straight railing extension segment.	手すりの直線部分です.
 def_railing_segment_extension_diag_name		Railing Segment Extension Diagonal	手すり (斜め)
-def_railing_segment_extension_diag_desc
+def_railing_segment_extension_diag_desc			
 def_railing_segment_extension_diag_s_desc		Diagonal railing extension segment.	手すりの斜め部分です.
 def_railing_segment_middle_name		Railing Segment Middle	手すり (直線, ポール)
-def_railing_segment_middle_desc
+def_railing_segment_middle_desc			
 def_railing_segment_middle_s_desc		Straight railing extension segment with a vertical pole.	ポールが付いてる, 手すりの直線部分です.
 def_railing_segment_middle_diag_name		Railing Segment Middle Diagonal	手すり (斜め, ポール)
-def_railing_segment_middle_diag_desc
+def_railing_segment_middle_diag_desc			
 def_railing_segment_middle_diag_s_desc		Diagonal railing extension segment with a vertical pole.	ポールが付いてる, 手すりの斜め直線部分です.
 def_rain_sensor_name		Rain Sensor	雨量計
 def_rain_sensor_desc		The reading can be read from the sensor's number output and is measured from 0 (no rain) to 1 (max rain).	数値信号の出力から測定数値を読み取れます. 範囲は0 (雨最小) から1 (雨最大) です.
@@ -6063,7 +6115,7 @@ def_ski_small_s_desc		A small hinged ski.	小型の乗り物用スキー板で�
 def_ski_small_node_0_label		Steering	操舵
 def_ski_small_node_0_desc		Accepts a value between -1 and 1 that represents the extremes of the steering rotation.	-1から1の範囲の数値で操舵します.
 def_small_light_name		Light	照明
-def_small_light_desc
+def_small_light_desc			
 def_small_light_s_desc		A basic light that can be controlled using an on/off signal.	オン/オフ信号で制御できる基本的な照明です.
 def_small_light_node_0_label		Light Switch	点灯
 def_small_light_node_0_desc		Controls whether or not the light is switched on.	オン信号を受け取ると照明が点灯します.
@@ -6217,10 +6269,10 @@ def_speaker_medium_node_1_desc		Electrical power connection.	電力網から電�
 def_speaker_medium_node_2_label		Is Transmit	再生中
 def_speaker_medium_node_2_desc		If the speaker is currently transmitting.	音声を再生している間はオン信号を出力します.
 def_stair_segment_name		Stair Step	階段
-def_stair_segment_desc
+def_stair_segment_desc			
 def_stair_segment_s_desc		A single step that can be stacked to create a staircase.	重ねて設置すると階段を作成できる階段の一部分です.
 def_stair_top_name		Stair Top	階段 (上端)
-def_stair_top_desc
+def_stair_top_desc			
 def_stair_top_s_desc		A single step that can be used at the top of a staircase to make it flush with a platform.	平らな床と接合する階段の上端部分です.
 def_steam_boiler_name		Steam Boiler	蒸気ボイラー
 def_steam_boiler_desc		The boiler should be connected to a firebox to supply heat for evaporation. Allowing too much pressure to build up in the boiler may cause an explosion; control your boiler's heat to restrict steam generation and keep the pressure below the threshold (10).	ボイラーは燃焼室や原子炉と接続してそれらからの熱で水を沸騰させます. ボイラーの圧力が10を超えると爆発します.
@@ -6239,25 +6291,25 @@ def_steam_boiler_node_5_label		Temperature	温度
 def_steam_boiler_node_5_desc			ボイラーの中の温度を出力します. 100度を超えると蒸気が発生し始めます.
 def_steam_boiler_node_6_label		Pressure	圧力
 def_steam_boiler_node_6_desc			ボイラーの中の圧力を出力します. 10を超えるとボイラーが爆発します.
-def_steam_coal_duct_name		Steam Coal Duct	石炭ダクト (小)
-def_steam_coal_duct_desc		Transports coal through the connected system.	接続されている部品へ石炭を輸送します.
-def_steam_coal_duct_s_desc		A basic coal duct.	基本的な小型の石炭ダクトです.
-def_steam_coal_duct_node_0_label		Coal Level	石炭の量
+def_steam_coal_duct_name		Mineral Duct	鉱物ダクト (小)
+def_steam_coal_duct_desc		Transports minerals through the connected system.	接続されている部品へ鉱物を輸送します.
+def_steam_coal_duct_s_desc		A basic mineral duct.	基本的な小型の鉱物ダクトです.
+def_steam_coal_duct_node_0_label		Mineral Level	鉱物の量
 def_steam_coal_duct_node_0_desc			ダクトの中の石炭の量を出力します.
-def_steam_coal_duct_l_name		Steam Coal Duct Large	石炭ダクト (大)
-def_steam_coal_duct_l_desc		Transports coal through the connected system.	接続されている部品へ石炭を輸送します.
-def_steam_coal_duct_l_s_desc		A basic coal duct.	基本的な中型の石炭ダクトです.
-def_steam_coal_duct_l_node_0_label		Coal Level	石炭の量
+def_steam_coal_duct_l_name		Mineral Duct Large	鉱物ダクト (大)
+def_steam_coal_duct_l_desc		Transports minerals through the connected system.	接続されている部品へ鉱物を輸送します.
+def_steam_coal_duct_l_s_desc		A basic mineral duct.	基本的な中型の鉱物ダクトです.
+def_steam_coal_duct_l_node_0_label		Mineral Level	鉱物の量
 def_steam_coal_duct_l_node_0_desc			ダクトの中の石炭の量を出力します.
-def_steam_coal_duct_m_name		Steam Coal Duct Medium	石炭ダクト (中)
-def_steam_coal_duct_m_desc		Transports coal through the connected system.	接続されている部品へ石炭を輸送します.
-def_steam_coal_duct_m_s_desc		A basic coal duct.	基本的な大型の石炭ダクトです.
-def_steam_coal_duct_m_node_0_label		Coal Level	石炭の量
+def_steam_coal_duct_m_name		Mineral Duct Medium	鉱物ダクト (中)
+def_steam_coal_duct_m_desc		Transports minerals through the connected system.	接続されている部品へ鉱物を輸送します.
+def_steam_coal_duct_m_s_desc		A basic mineral duct.	基本的な大型の鉱物ダクトです.
+def_steam_coal_duct_m_node_0_label		Mineral Level	鉱物の量
 def_steam_coal_duct_m_node_0_desc			ダクトの中の石炭の量を出力します.
-def_steam_coal_firebox_name		Steam Coal Firebox	石炭燃焼室 (小)
-def_steam_coal_firebox_desc		Produces large amounts of heat. Can be supplied with a coal duct. Consumes 1 coal to ignite the fire.	ボイラーなどで使用する熱を大量に発生させます. 石炭ダクトで石炭を供給できます. 点火時に石炭を1個消費します.
+def_steam_coal_firebox_name		Firebox	石炭燃焼室 (小)
+def_steam_coal_firebox_desc		Produces large amounts of heat. Can be supplied with a mineral duct. Consumes 1 coal to ignite the fire.	ボイラーなどで使用する熱を大量に発生させます. 鉱物ダクトで石炭を供給できます. 点火時に石炭を1個消費します.
 def_steam_coal_firebox_s_desc		A coal powered firebox.	石炭を燃焼させる小型の燃焼室です.
-def_steam_coal_firebox_node_0_label		Coal Level	石炭の量
+def_steam_coal_firebox_node_0_label		Mineral Level	石炭の量
 def_steam_coal_firebox_node_0_desc			燃焼室の中の石炭の量を出力します.
 def_steam_coal_firebox_node_1_label		Temperature	温度
 def_steam_coal_firebox_node_1_desc		Temperature of the coolant that is being heated.	燃焼室の中の温度を出力します.
@@ -6271,10 +6323,10 @@ def_steam_coal_firebox_node_5_label		Air	空気
 def_steam_coal_firebox_node_5_desc		Port for supplying air to the fire.	火炎室を動かすために供給される空気です.
 def_steam_coal_firebox_node_6_label		Exhaust	排煙
 def_steam_coal_firebox_node_6_desc		Port for removing exhaust from burnt coal.	燃焼室からの煙が排出されます.
-def_steam_coal_firebox_l_name		Steam Coal Firebox Large	石炭燃焼室 (大)
-def_steam_coal_firebox_l_desc		Produces large amounts of heat. Can be supplied with a coal duct. Consumes 1 coal to ignite the fire.	ボイラーなどで使用する熱を大量に発生させます. 石炭ダクトで石炭を供給できます. 点火時に石炭を1個消費します.
+def_steam_coal_firebox_l_name		Firebox Large	石炭燃焼室 (大)
+def_steam_coal_firebox_l_desc		Produces large amounts of heat. Can be supplied with a mineral duct. Consumes 1 coal to ignite the fire.	ボイラーなどで使用する熱を大量に発生させます. 鉱物ダクトで石炭を供給できます. 点火時に石炭を1個消費します.
 def_steam_coal_firebox_l_s_desc		A coal powered firebox.	石炭を燃焼させる大型の燃焼室です.
-def_steam_coal_firebox_l_node_0_label		Coal Level	石炭の量
+def_steam_coal_firebox_l_node_0_label		Mineral Level	石炭の量
 def_steam_coal_firebox_l_node_0_desc			燃焼室の中の石炭の量を出力します.
 def_steam_coal_firebox_l_node_1_label		Temperature	温度
 def_steam_coal_firebox_l_node_1_desc		Temperature of the coolant that is being heated.	燃焼室の中の温度を出力します.
@@ -6288,26 +6340,26 @@ def_steam_coal_firebox_l_node_5_label		Air	空気
 def_steam_coal_firebox_l_node_5_desc		Port for supplying air to the fire.	火炎室を動かすために供給される空気です.
 def_steam_coal_firebox_l_node_6_label		Exhaust	排煙
 def_steam_coal_firebox_l_node_6_desc		Port for removing exhaust from burnt coal.	燃焼室からの煙が排出されます.
-def_steam_coal_funnel_name		Steam Coal Funnel	石炭排出口
-def_steam_coal_funnel_desc		Can be toggled to slowly move coal out of the connected system.	オン信号を受け取ると中の石炭をゆっくり排出します.
-def_steam_coal_funnel_s_desc		A funnel moving coal.	石炭を排出する排出口です.
+def_steam_coal_funnel_name		Mineral Funnel	鉱物排出口
+def_steam_coal_funnel_desc		Can be toggled to slowly move minerals out of the connected system.	オン信号を受け取ると中の鉱物をゆっくり排出します.
+def_steam_coal_funnel_s_desc		A funnel for moving minerals.	鉱物を排出する排出口です.
 def_steam_coal_funnel_node_0_label		Open	排出
-def_steam_coal_funnel_node_0_desc			オン信号を受け取ると中の石炭をゆっくり排出します.
-def_steam_coal_hopper_name		Steam Coal Hopper	石炭ホッパー (小)
-def_steam_coal_hopper_desc		Pouring coal into the receptacle will add it to the connected system.	上部に石炭を落とすと自動的に内部に取り込みます.
-def_steam_coal_hopper_s_desc		A hopper that can accept coal.	石炭を中に入れる小型のホッパーです.
-def_steam_coal_hopper_node_0_label		Coal Level	石炭の量
-def_steam_coal_hopper_node_0_desc			ホッパーの中の石炭の量を出力します.
-def_steam_coal_hopper_l_name		Steam Coal Hopper Large	石炭ホッパー (大)
-def_steam_coal_hopper_l_desc		Pouring coal into the receptacle will add it to the connected system.	上部に石炭を落とすと自動的に内部に取り込みます.
-def_steam_coal_hopper_l_s_desc		A hopper that can accept coal.	石炭を中に入れる大型のホッパーです.
-def_steam_coal_hopper_l_node_0_label		Coal Level	石炭の量
-def_steam_coal_hopper_l_node_0_desc			ホッパーの中の石炭の量を出力します.
-def_steam_coal_hopper_m_name		Steam Coal Hopper Medium	石炭ホッパー (中)
-def_steam_coal_hopper_m_desc		Pouring coal into the receptacle will add it to the connected system.	上部に石炭を落とすと自動的に内部に取り込みます.
-def_steam_coal_hopper_m_s_desc		A hopper that can accept coal.	石炭を中に入れる中型のホッパーです.
-def_steam_coal_hopper_m_node_0_label		Coal Level	石炭の量
-def_steam_coal_hopper_m_node_0_desc			ホッパーの中の石炭の量を出力します.
+def_steam_coal_funnel_node_0_desc			オン信号を受け取ると中の鉱物をゆっくり排出します.
+def_steam_coal_hopper_name		Mineral Hopper	鉱物ホッパー (小)
+def_steam_coal_hopper_desc		Pouring minerals into the receptacle will add it to the connected system.	上部に鉱物を落とすと自動的に内部に取り込みます.
+def_steam_coal_hopper_s_desc		A hopper that can accept minerals.	鉱物を中に入れる小型のホッパーです.
+def_steam_coal_hopper_node_0_label		Mineral Level	鉱物の量
+def_steam_coal_hopper_node_0_desc			ホッパーの中の鉱物の量を出力します.
+def_steam_coal_hopper_l_name		Mineral Hopper Large	鉱物ホッパー (大)
+def_steam_coal_hopper_l_desc		Pouring minerals into the receptacle will add it to the connected system.	上部に鉱物を落とすと自動的に内部に取り込みます.
+def_steam_coal_hopper_l_s_desc		A hopper that can accept minerals.	鉱物を中に入れる大型のホッパーです.
+def_steam_coal_hopper_l_node_0_label		Mineral Level	鉱物の量
+def_steam_coal_hopper_l_node_0_desc			ホッパーの中の鉱物の量を出力します.
+def_steam_coal_hopper_m_name		Mineral Hopper Medium	鉱物ホッパー (中)
+def_steam_coal_hopper_m_desc		Pouring minerals into the receptacle will add it to the connected system.	上部に鉱物を落とすと自動的に内部に取り込みます.
+def_steam_coal_hopper_m_s_desc		A hopper that can accept minerals.	鉱物を中に入れる中型のホッパーです.
+def_steam_coal_hopper_m_node_0_label		Mineral Level	鉱物の量
+def_steam_coal_hopper_m_node_0_desc			ホッパーの中の鉱物の量を出力します.
 def_steam_condenser_name		Steam Condenser	復水器
 def_steam_condenser_desc		The condenser should be continously cooled to function efficiently.	復水器を効率的に動作させるには, 継続的な冷却を行って下さい.
 def_steam_condenser_s_desc		A condenser for converting steam back to water.	蒸気を水に戻す復水器です.
