@@ -2218,6 +2218,13 @@ id	description	en	local
 		Uranium Ingot	ウランの延べ棒
 		Industrial Equipment	工業装備
 		You were disconnected.	切断されました.
+		Noclip	すり抜け
+		Override Wind Direction	風向を上書き
+		LOCK SETTINGS	設定をロック
+		Air	空気
+		Exhaust	排気
+		Oil	原油
+		Steam	蒸気
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
@@ -3148,9 +3155,9 @@ def_fluid_valve_variable_name		Fluid Variable Valve	流体弁 (流量)
 def_fluid_valve_variable_desc		Controls flow from one side of the valve to the other. Fluid can flow in both directions.	流体は双方向から流せます.
 def_fluid_valve_variable_s_desc		A variable fluid valve.	流体の流量を調整できる一方通行の弁です.
 def_fluid_valve_variable_node_0_label		Fluid In	流体1
-def_fluid_valve_variable_node_0_desc		Fluid input connection for the valve.	制御されている終了で流体が流れます.
+def_fluid_valve_variable_node_0_desc		Fluid input connection for the valve.	制御されている流量で流体が流れます.
 def_fluid_valve_variable_node_1_label		Fluid Out	流体2
-def_fluid_valve_variable_node_1_desc		Fluid output connection for the valve.	制御されている終了で流体が流れます.
+def_fluid_valve_variable_node_1_desc		Fluid output connection for the valve.	制御されている流量で流体が流れます.
 def_fluid_valve_variable_node_2_label		Valve Control	流量制御
 def_fluid_valve_variable_node_2_desc		Valve gate control for opening and closing the valve.	数値信号で弁の流量を制御します.
 def_fluid_valve_variable_node_3_label		Electric	電力
