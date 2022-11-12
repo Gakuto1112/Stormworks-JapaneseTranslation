@@ -405,8 +405,8 @@ id	description	en	local
 		Deceased	死亡
 		Stop Following	誘導をやめる
 		Follow	誘導する
-		Purchase Base\n$	拠点を購入
-		Purchase Base to Use	先に拠点を購入して下さい.
+		Purchase Property\n$	物件を購入\n$
+		Purchase Property to Use	先にこの物件を購入して下さい.
 		Not Available	利用不可
 		Not Available When Carrying Someone	誰かを担いでいる時は使用できません.
 		Spawning...	プレイヤー準備中...
@@ -419,7 +419,7 @@ id	description	en	local
 		none set	未設定
 		Fast-travel Location	テレポート場所
 		CLICK TO TRAVEL HERE	クリックしてここにテレポート
-		Base for sale	販売中の拠点
+		Property for sale	販売中の物件
 		You are here	現在地
 		CLICK TO TAKE TO WORKBENCH	クリックして作業台に移動させる
 		Waypoint	ウェイポイント
@@ -944,8 +944,8 @@ id	description	en	local
 		Starting Money	開始資金
 		CUSTOMISE GAME MODE	ゲーム設定
 		Unlock All Components	全ての部品をアンロック
-		Unlock All Bases	全ての拠点を開放
-		All purchasable bases are pre-purchased.	全ての拠点が使用可能な状態で始まります.
+		Unlock All Properties	全ての物件を開放
+		All purchasable properties are pre-purchased.	全ての物件が使用可能な状態になります.
 		Infinite Stock	在庫無制限
 		Infinite money, resources and components are available.	資金, 資源, 部品が無制限で使用できます.
 		Creative Tools	クリエイティブツール
@@ -1513,7 +1513,7 @@ id	description	en	local
 		Wake	起きる
 		Sleep	寝る
 		(all players must be sleeping to fast-forward)	(時間を早送りするにはプレイヤー全員が寝て下さい.)
-		PURCHASE BASE	拠点の購入
+		PURCHASE PROPERTY	物件の購入
 		Bank	所持金
 		Total	合計
 		Police Hat	警官の帽子
@@ -2225,6 +2225,106 @@ id	description	en	local
 		Exhaust	排気
 		Oil	原油
 		Steam	蒸気
+		Creature	生物
+		ADD CREATURE	生物の追加
+		Add a creature object. The creature type can be set in the properties window.	生物オブジェクトを追加します. 生物の種類はプロパティウィンドウから設定できます.
+		Badger	アナグマ
+		Grizzly Bear	グリズリー (熊)
+		Black Bear	ブラックベア
+		Polar Bear	シロクマ
+		Barnevelder Chicken	バルネフェルダー (鶏)
+		Marans Chicken	マラン (鶏)
+		Orpington Fowl Chicken	オーピントン (鶏)
+		Sussex Fowl Chicken	サセックス (鶏)
+		Angus Cow	アンガス (牛)
+		Hereford Cow	ヘレフォード (牛)
+		Highland Cow	ハイランド (牛)
+		Holstein Cow	ホルスタイン (牛)
+		Sasquatch	ビッグフット
+		Yeti	イエティ
+		Red Deer F	アカシカ (メス)
+		Red Deer M	アカシカ (オス)
+		Sika Deer F	ニホンジカ (メス)
+		Sika Deer M	ニホンジカ (オス)
+		Beagle	ビーグル (犬)
+		Border Collie	ボーダー・コリー (犬)
+		Boxer	ボクサー (犬)
+		Corgi	コーギー (犬)
+		Dachshund	ダックスフント (犬)
+		Dalmatian	ダルメシアン (犬)
+		Dobermann	ドーベルマン (犬)
+		German Shepherd	ジャーマンシェパード (犬)
+		Greyhound	グレイハウンド (犬)
+		Jack Russell	ジャック・ラッセル・テリア (犬)
+		Labrador	ラブラドール・レトリバー (犬)
+		Newfoundland	ニューファンドランド (犬)
+		Pug	パグ (犬)
+		Shiba	シバ (犬)
+		Husky	ハスキー (犬)
+		St Bernard	セント・バーナード (犬)
+		Vizsla	ビズラ (犬)
+		Yorkshire Terrier	ヨークシャー・テリア (犬)
+		Red Fox	アカギツネ
+		Arctic Fox	ホッキョクギツネ
+		Alpine Goat	アルパイン (山羊)
+		Bengal Goat	ブラックベンガル (山羊)
+		Oberhasli Goat	オバーハスリー (山羊)
+		Saanen Goat	ザーネン (山羊)
+		Arctic Hare	ホッキョクウサギ
+		Irish Hare	ユキウサギ
+		Moutain Hare	ヤマウサギ
+		Clydesdale Horse	クライズデール (馬)
+		Friesian Horse	フリージアン (馬)
+		Haflinger Horse	ハフリンガー (馬)
+		Welara Horse	ウェラーラ (馬)
+		Muntjac F	ホエジカ (メス)
+		Muntjac M	ホエジカ (オス)
+		Gentoo Penguin	ジェンツーペンギン
+		Angeln Saddleback Pig	アンゲルンサドルバック (豚)
+		Old Spot Pig	オールド・スポット (豚)
+		Tamworth Pig	タムワース (豚)
+		Yorkshire Pig	ヨークシャー (豚)
+		Polar Seal	ホッキョクアシカ
+		Black Nose Sheep	ブラックノーズ (羊)
+		Highland Sheep	ハイランド (羊)
+		Mule Sheep	ミュール (羊)
+		Scottish Wildcat	ヤマネコ
+		Arctic Wolf	ホッキョクオオカミ
+		Coastal Wolf	コースタルオオカミ
+		Plains Wolf	シンリンオオカミ
+		Zombie M	ゾンビ (男)
+		Zombie M a	ゾンビ (男, A)
+		Zombie M b	ゾンビ (男, B)
+		Zombie M c	ゾンビ (男, C)
+		Zombie M d	ゾンビ (男, D)
+		Zombie M e	ゾンビ (男, E)
+		Zombie M f	ゾンビ (男, F)
+		Zombie M g	ゾンビ (男, G)
+		Zombie M Nurse	ゾンビ (男, 看護師)
+		Zombie M Arctic	ゾンビ (男, 北極)
+		Zombie M Firefighter	ゾンビ (男, 消防士)
+		Zombie M Pilot	ゾンビ (男, パイロット)
+		Zombie M Police	ゾンビ (男, 景観)
+		Zombie M Ranger	ゾンビ (男, レンジャー)
+		Zombie M Scuba	ゾンビ (男, スキューバ)
+		Zombie M Tree Surgeon	ゾンビ (男, 樹木医)
+		Zombie F	ゾンビ (女)
+		Zombie F a	ゾンビ (女, A)
+		Zombie F b	ゾンビ (女, B)
+		Zombie F c	ゾンビ (女, C)
+		Zombie F d	ゾンビ (女, D)
+		Zombie F e	ゾンビ (女, E)
+		Zombie F f	ゾンビ (女, F)
+		Zombie F Arctic	ゾンビ (女, 北極)
+		Zombie F Firefighter	ゾンビ (女, 消防士)
+		Zombie F Hazmat	ゾンビ (女, 危険作業員)
+		Zombie F Pilot	ゾンビ (女, パイロット)
+		Zombie F Pirate	ゾンビ (女, 海賊)
+		Zombie F Police	ゾンビ (女, 警官)
+		Zombie F Safari	ゾンビ (女, サファリ)
+		Zombie F SAR	ゾンビ (女, レスキュー)
+		Zombie F Scuba	ゾンビ (女, スキューバ)
+		Zombie F Surgeon	ゾンビ (女, 外科医)
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
@@ -2826,6 +2926,13 @@ def_control_surface_small_node_0_label		Rotation	翼の向き
 def_control_surface_small_node_0_desc		Accepts a value between -1 and 1 that represent the two extremes of the rudder's rotation.	-1から1の数値信号の入力から翼の向きを制御します.
 def_control_surface_small_node_1_label		Electric	電力
 def_control_surface_small_node_1_desc		Electrical power connection.	電力網から電力を供給します.
+def_desalinator_name		Desalinator	淡水化装置
+def_desalinator_desc		The valve can be configured to select which fluids may pass across the two directional valve.	 
+def_desalinator_s_desc		The fluid filter only allows certain types of fluid across the valve.	海水を脱塩して淡水にする装置です.
+def_desalinator_node_0_label		Fluid In	流体注入
+def_desalinator_node_0_desc		Seawater connection.	海水を注入します.
+def_desalinator_node_1_label		Fluid Out	流体排出
+def_desalinator_node_1_desc		Freshwater connection.	処理された淡水が排水されます.
 def_dial_name		Dial	ダイヤル
 def_dial_desc		The dial's face represents values ranging from -1 to 1 by default. This can be configured by selecting it with the select tool. Values outside this range will cause the needle to wrap around, but can be scaled to fit using additional logic components if necessary. An on/off signal can be used to toggle the backlight.	ダイヤルの表示面は最小値から最大値の間の値を針の回転によって表示します. 入力される数値が設定範囲から超えると針が振り切れます. 必要に応じて針が振り切れないような論理システムを組んで下さい. ダイヤルの最小値と最大値はプロパティウィンドウから設定できます.
 def_dial_s_desc		A dial with a rotating needle for displaying numerical values.	入力されている数値を回転する針によって表示するダイヤルです.
