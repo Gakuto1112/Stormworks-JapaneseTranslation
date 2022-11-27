@@ -409,7 +409,7 @@ id	description	en	local
 		Purchase Property to Use	先にこの物件を購入して下さい.
 		Not Available	利用不可
 		Not Available When Carrying Someone	誰かを担いでいる時は使用できません.
-		Spawning...	プレイヤー準備中...
+		Spawning...	読み込み中...
 		SAVE SELECTION	選択を保存
 		SAVE VEHICLE	乗り物を保存
 		DISABLED	無効
@@ -2325,6 +2325,25 @@ id	description	en	local
 		Zombie F SAR	ゾンビ (女, レスキュー)
 		Zombie F Scuba	ゾンビ (女, スキューバ)
 		Zombie F Surgeon	ゾンビ (女, 外科医)
+		Airhorn	エアホーン
+		Bullhorn 1	ブルホーン1
+		Bullhorn 2	ブルホーン2
+		HiLo	サイレン (救急車風)
+		Piercer	サイレン
+		QSiren	サイレン (消防車風)
+		Wail	サイレン (日パトカー風1)
+		Wail Rumbler	サイレン (日パトカー風2)
+		Yelp	サイレン (米パトカー風1)
+		Yelp Rumbler	サイレン (米パトカー風2)
+		Ship Bell	船の鐘
+		Train Bell	列車の鐘1
+		Train Bell 2	列車の鐘2
+		Horn 1	ホーン1
+		Horn 2	ホーン2
+		Horn 3	ホーン3
+		Klaxon Small	クラクション (小)
+		Klaxon Large	クラクション (大)
+		Press [ctrl] + [c] to copy object / Press [ctrl] + [v] to paste object	[ctrl] + [c] で押してオブジェクトをコピー / [ctrl] + [v] でオブジェクトの貼り付け
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
@@ -7331,7 +7350,6 @@ def_window_2x2_inv_pyramid_name		Window Inverse Pyramid 2x2x2	窓 (逆三角, 2x
 def_window_2x2_inv_pyramid_desc			
 def_window_2x2_inv_pyramid_s_desc		Basic window piece.	基本的な窓の部品です.
 def_window_2x2_pyramid_name		Window Pyramid 2x2x2	窓 (三角, 2x2x2)
-def_window_2x2_pyramid_desc			
 def_window_2x2_pyramid_s_desc		Basic window piece.	基本的な窓の部品です.
 def_window_3x2_name		Window 2x3	窓 (平面, 2x3)
 def_window_3x2_desc		Sits flush with walls and ceilings.	壁や天井に適合します.
@@ -7364,7 +7382,6 @@ def_window_corner_name		Window Corner 3x4	窓 (角, 3x4)
 def_window_corner_desc		Corner windows are triangular in shape, making them useful for creating corners between angled windows.	この窓は三角形の形になっているので, 曲面窓の角を作るのに便利です.
 def_window_corner_s_desc		Basic window piece.	基本的な窓の部品です.
 def_window_corner_2_name		Window Pyramid 3x3x3	窓 (三角, 3x3x3)
-def_window_corner_2_desc			
 def_window_corner_2_s_desc		Basic window piece.	基本的な窓の部品です.
 def_window_corner_full_1x1_name		Window Corner Full 1x1	窓 (完全角, 1x1)
 def_window_corner_full_1x1_desc		Corner windows are triangular in shape, making them useful for creating corners between angled windows.	この窓は三角形の形になっているので, 曲面窓の角を作るのに便利です.
