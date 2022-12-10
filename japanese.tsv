@@ -2343,6 +2343,9 @@ id	description	en	local
 		Horn 3	ホーン3
 		Klaxon Small	クラクション (小)
 		Klaxon Large	クラクション (大)
+		Particle Effects	パーティクル数
+		Full	全て
+		Reduced	少なめ
 		Press [ctrl] + [c] to copy object / Press [ctrl] + [v] to paste object	[ctrl] + [c] で押してオブジェクトをコピー / [ctrl] + [v] でオブジェクトの貼り付け
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
