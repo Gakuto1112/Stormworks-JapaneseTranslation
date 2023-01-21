@@ -2949,8 +2949,8 @@ def_control_surface_small_node_0_desc		Accepts a value between -1 and 1 that rep
 def_control_surface_small_node_1_label		Electric	電力
 def_control_surface_small_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_desalinator_name		Desalinator	淡水化装置
-def_desalinator_desc		The valve can be configured to select which fluids may pass across the two directional valve.	 
-def_desalinator_s_desc		The fluid filter only allows certain types of fluid across the valve.	海水を脱塩して淡水にする装置です.
+def_desalinator_desc		A pipe with a fine desalination filter that slowly converts seawater to freshwater and allows free flow of freshwater.	海水に脱塩処理を施し, ゆっくりと淡水に変えます. 
+def_desalinator_s_desc		A pipe that slowly converts seawater to freshwater.	海水を淡水にする装置です.
 def_desalinator_node_0_label		Fluid In	流体注入
 def_desalinator_node_0_desc		Seawater connection.	海水を注入します.
 def_desalinator_node_1_label		Fluid Out	流体排出
@@ -6857,6 +6857,7 @@ def_trans_block_angle_name		Pipe Angle (Enclosed)	配管 (角, ブロック)
 def_trans_block_angle_desc			
 def_trans_block_angle_s_desc		An angled pipe for transferring to components from an engine.	動力や流体を輸送するパイプの角部分です. ブロックの形をしており, 壁や床などに埋め込むことができます.
 def_trans_block_corner_name		Pipe Angle Corner (Enclosed)	配管 (角分岐, ブロック)
+def_trans_block_corner_desc			 
 def_trans_block_corner_s_desc		A T-shaped pipe segment that can be used to branch piping into three directions.	動力や流体を輸送するパイプの角分岐部分です. ブロックの形をしており, 壁や床などに埋め込むことができます.
 def_trans_block_cross_name		Pipe Cross (Enclosed)	配管 (十字, ブロック)
 def_trans_block_cross_desc			
@@ -6871,24 +6872,31 @@ def_trans_block_straight_name		Pipe Straight (Enclosed)	配管 (直線, ブロ�
 def_trans_block_straight_desc			
 def_trans_block_straight_s_desc		A straight section of pipe for transferring to components from an engine.	動力や流体を輸送するパイプの直線部分です. ブロックの形をしており, 壁や床などに埋め込むことができます.
 def_trans_block_t_name		Pipe T-Piece (Enclosed)	配管 (T字, ブロック)
+def_trans_block_t_desc			 
 def_trans_block_t_s_desc		A T-shaped pipe segment that can be used to branch piping into three directions.	動力や流体を輸送するパイプのT字部分です. ブロックの形をしており, 壁や床などに埋め込むことができます.
 def_trans_block_t_corner_name		Pipe T-Piece Corner (Enclosed)	配管 (角T字, ブロック)
 def_trans_block_t_corner_desc			
 def_trans_block_t_corner_s_desc		A T-shaped pipe segment that can be used to branch piping into four directions.	動力や流体を輸送するパイプの角T字部分です. ブロックの形をしており, 壁や床などに埋め込むことができます.
 def_trans_corner_name		Pipe Angle Corner	配管 (角分岐, パイプ)
+def_trans_corner_desc			 
 def_trans_corner_s_desc		A T-shaped pipe segment that can be used to branch piping into three directions.	動力や流体を輸送するパイプの角分岐部分です.
 def_trans_cross_name		Pipe Cross	配管 (十字, パイプ)
+def_trans_cross_desc			 
 def_trans_cross_s_desc		An X-shaped pipe segment that can be used to branch piping into four directions.	動力や流体を輸送するパイプの十字部分です.
 def_trans_cross_corner_name		Pipe Cross Corner	配管 (角十字, パイプ)
+def_trans_cross_corner_desc			 
 def_trans_cross_corner_s_desc		An X-shaped pipe segment that can be used to branch piping into five directions.	動力や流体を輸送するパイプの角十字部分です.
 def_trans_omni_name		Pipe Omni	配管 (全方向, パイプ)
+def_trans_omni_desc			 
 def_trans_omni_s_desc		An omnidirectional pipe segment.	動力や流体を輸送するパイプの全方向分岐部分です.
 def_trans_straight_name		Pipe Straight	配管 (直線, パイプ)
 def_trans_straight_desc			
 def_trans_straight_s_desc		A straight section of pipe for transferring to components from an engine.	動力や流体を輸送するパイプの直線部分です.
 def_trans_t_name		Pipe T-Piece	配管 (T字, パイプ)
+def_trans_t_desc			 
 def_trans_t_s_desc		A T-shaped pipe segment that can be used to branch piping into three directions.	動力や流体を輸送するパイプのT字部分です.
 def_trans_t_corner_name		Pipe T-Piece Corner	配管 (角T字, パイプ)
+def_trans_t_corner_desc			 
 def_trans_t_corner_s_desc		A T-shaped pipe segment that can be used to branch piping into four directions.	動力や流体を輸送するパイプの角T字部分です.
 def_turbine_name		Turbine Engine	タービンエンジン
 def_turbine_desc		An on/off signal controls engine startup. The throttle input takes a standard value between -1 and 1 and controls the forward and backward force of connected components. The engine's maximum power output is split between connected components.	オン/オフ信号でエンジンを始動し, 数値信号によるスロットルで出力を調整します. エンジンの最大出力は接続された部品で分割されます.
@@ -7034,7 +7042,7 @@ def_water_nozzle_name		Fluid Nozzle	放水口
 def_water_nozzle_desc		The angle of spray can be adjusted.	放水口の広さは制御できます.
 def_water_nozzle_s_desc		A fluid nozzle that fires pressurized water for putting out fires.	高圧の水を噴射して消化活動を行う放水口です.
 def_water_nozzle_node_0_label		Fluid Supply	水注入
-def_water_nozzle_node_0_desc		The fluid input to output from the nozzle. Filters to water only.	放水口から放出する水を供給します. 淡水か海水以外は注入できません.
+def_water_nozzle_node_0_desc		The fluid input to output from the nozzle.	放水口から放出する流体を供給します.
 def_water_nozzle_node_1_label		Spray Angle	放水口の広さ
 def_water_nozzle_node_1_desc		Adjustable spray angle from 0 (focused) to 1 (spread).	放水口の広さを0 (狭い) から1 (広い) の範囲で制御します.
 def_water_nozzle_node_2_label		Electric	電力
@@ -7345,6 +7353,7 @@ def_window_2x2_inv_pyramid_name		Window Inverse Pyramid 2x2x2	窓 (逆三角, 2x
 def_window_2x2_inv_pyramid_desc			
 def_window_2x2_inv_pyramid_s_desc		Basic window piece.	基本的な窓の部品です.
 def_window_2x2_pyramid_name		Window Pyramid 2x2x2	窓 (三角, 2x2x2)
+def_window_2x2_pyramid_desc			
 def_window_2x2_pyramid_s_desc		Basic window piece.	基本的な窓の部品です.
 def_window_3x2_name		Window 2x3	窓 (平面, 2x3)
 def_window_3x2_desc		Sits flush with walls and ceilings.	壁や天井に適合します.
@@ -7377,6 +7386,7 @@ def_window_corner_name		Window Corner 3x4	窓 (角, 3x4)
 def_window_corner_desc		Corner windows are triangular in shape, making them useful for creating corners between angled windows.	この窓は三角形の形になっているので, 曲面窓の角を作るのに便利です.
 def_window_corner_s_desc		Basic window piece.	基本的な窓の部品です.
 def_window_corner_2_name		Window Pyramid 3x3x3	窓 (三角, 3x3x3)
+def_window_corner_2_desc			
 def_window_corner_2_s_desc		Basic window piece.	基本的な窓の部品です.
 def_window_corner_full_1x1_name		Window Corner Full 1x1	窓 (完全角, 1x1)
 def_window_corner_full_1x1_desc		Corner windows are triangular in shape, making them useful for creating corners between angled windows.	この窓は三角形の形になっているので, 曲面窓の角を作るのに便利です.
