@@ -2347,6 +2347,30 @@ id	description	en	local
 		Full	全て
 		Reduced	少なめ
 		Press [ctrl] + [c] to copy object / Press [ctrl] + [v] to paste object	[ctrl] + [c] で押してオブジェクトをコピー / [ctrl] + [v] でオブジェクトの貼り付け
+		Airline Attendant	フライトアテンダント
+		Fishing Overalls	漁師のオーバーオール
+		Guard	警備員
+		Harness	装具
+		Nurse	看護師
+		Overalls	オーバーオール
+		Park Ranger	自然保護官
+		Pilot	操縦士
+		Police Coat	警察のコート
+		Royal Guard	近衛兵
+		Safari	サファリ
+		Sar Uniform	捜索救難隊の制服
+		Surgeon	手術服
+		Submarine Sweater	サブマリンセーター
+		Western	西洋の服
+		Adventure Hat	冒険家の帽子
+		Chainsaw Helmet	チェーンソー防護ヘルメット
+		Head Mirror	額帯鏡
+		Park Ranger Hat	自然保護官の帽子
+		Pilot Hat	操縦士の帽子
+		Pith Helmet	ピスヘルメット
+		Ski Headwear	スキーのヘッドウェア
+		Straw Hat	麦わら帽子
+		Welding Goggles	溶接ゴーグル
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
@@ -4211,7 +4235,7 @@ def_inventory_equipment_defibrillator_s_desc		A large equipment storage unit con
 def_inventory_equipment_defibrillator_node_0_label		Electric	電力
 def_inventory_equipment_defibrillator_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_dog_whistle_name		Equipment inventory (Dog Whistle)	保管庫 (小, 犬笛)
-def_inventory_equipment_dog_whistle_desc		Hold [$[action_equipment_use]] to sound the whistle. Nearby dogs will respond to certain whistle patterns.\n1 long burst = Wait.\n2 short bursts = Follow.	[$[action_equipment_use]]を長押しして笛を吹きます. 付近の犬が笛のパターンに応じて反応します to sound the whistle. Nearby dogs will respond to certain whistle patterns.\n1回長く吹く = 待て\n2回短く吹く = ついてこい
+def_inventory_equipment_dog_whistle_desc		Hold [$[action_equipment_use]] to sound the whistle. Nearby dogs will respond to certain whistle patterns. 1 long burst = Wait. 2 short bursts = Follow.	[$[action_equipment_use]]を長押しして笛を吹きます. 付近の犬が笛のパターンに応じて反応します.\n\n1回長く吹く = 待て\n2回短く吹く = ついてこい
 def_inventory_equipment_dog_whistle_s_desc		A small equipment storage unit containing a dog whistle.	犬笛が保管されている小型の保管庫です.
 def_inventory_equipment_dog_whistle_node_0_label		Electric	電力
 def_inventory_equipment_dog_whistle_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
