@@ -5213,6 +5213,13 @@ def_passenger_seat_node_0_desc		Outputs an on signal if this seat is occupied by
 def_physics_flooder_name		Physics Flooder	物理演算充填指示器
 def_physics_flooder_desc		Floods an enclosed volume with massless physics, allowing for physics shape optimisation without comprimising vehicle integrity.	密閉された空間が質量がないブロックで埋め尽くされているとシステムが見なすことで乗り物の機能を失うことなく処理の軽量化ができます.
 def_physics_flooder_s_desc		A device that floods an enclosed volume with physics for optimisation.	処理の最適化のために, 密閉空間が質量がないブロックで埋め尽くされていると見なすように印を付けるブロックです.
+def_physics_sensor_name		Physics Sensor	物理センサー
+def_physics_sensor_desc		Outputs physics information to a composite logic node. Requires Electric for GPS position functionality. This component is directed along its local Y axis.	複合信号から物理情報を出力します. GPSを利用するには電力が必要です. この部品は自身から見たY軸に基づいて出力されます.
+def_physics_sensor_s_desc		Sensor component that outputs various physics measurements such as position and velocity.	現在位置や速度などの様々な物理量を出力するセンサー部品です.
+def_physics_sensor_node_0_label		Composite Output	複合出力
+def_physics_sensor_node_0_desc		Outputs x position, y position, z position, euler rotation x, euler rotation y, euler rotation z, linear velocity x, linear velocity y, linear velocity z, angular velocity x, angular velocity y, angular velocity z, absolute linear velocity, and absolute angular velocity to the respective order composite channels.	順にx座標, y座標, z座標, x軸オイラー回転, y軸オイラー回転, z軸オイラー回転, x軸直線速度, y軸直線速度, z軸直線速度, x軸角速度, y軸角速度, z軸角速度, 絶対直線速度, 絶対角速度を出力します.
+def_physics_sensor_node_1_label		Electric	電力
+def_physics_sensor_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_player_sensor_name		Player Sensor	人間検出器
 def_player_sensor_desc		If the sensor is facing into a sealed room, only players inside that room will be detected. Likewise, players inside sealed rooms will not be detected if the sensor is placed on the outside. The size of the area and types of players to detect can be changed by selecting this component with the select tool.	密閉空間内に設置した場合, たとえ検出器の範囲内であったとしても, その密閉空間外にいる人は検出されません. 検出範囲の大きさ, 形, 検出対象はプロパティウィンドウで設定できます.
 def_player_sensor_s_desc		A sensor that outputs the number of players detected within an area.	範囲内の人の数を出力する検出器です.
