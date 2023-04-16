@@ -2734,7 +2734,7 @@ def_camera_gimbal_laser_node_10_desc		x, y, z output for the laser target in cha
 def_camera_gimbal_laser_node_11_label		Laser Wavelength	レーザーの波長
 def_camera_gimbal_laser_node_11_desc		The specific light wavelength to emit (whole number).	照射するレーザーの波長を制御します. 入力する数値は整数です.
 def_camera_med_name		Camera Medium	カメラ (中)
-def_camera_med_desc		Has infrared mode as well as variable field of view.	赤外線モードが搭載されており, 拡大/縮小もできます.
+def_camera_med_desc		Has infrared mode as well as variable field of view. Can be pivoted up to 45° using composite input.	赤外線モードや, 拡大/縮小機能が搭載されています. 複合信号で視点方向を45度まで変更できます.
 def_camera_med_s_desc		A camera with video output feed.	映像を出力する中型のカメラです.
 def_camera_med_node_0_label		Camera Feed	カメラの映像
 def_camera_med_node_0_desc			カメラで捉えた映像を出力します.
@@ -2744,15 +2744,19 @@ def_camera_med_node_2_label		Infrared Mode	赤外線モード
 def_camera_med_node_2_desc		Controls whether or not the infrared mode is switched on.	オン信号を受け取ると赤外線モードになります. 赤外線モードでは, 明るい所が見えにくく, 映像も不鮮明になりますが, 真っ暗な場所でも見えるようになります.
 def_camera_med_node_3_label		Field of View	視野角
 def_camera_med_node_3_desc		Controls the level of zoom of the camera.	カメラをズームイン/アウトします.
+def_camera_med_node_4_label		Pivot	視点方向
+def_camera_med_node_4_desc		Inputs for camera X/Y pivot. (Value 1 : Pivot X) (Value 2 : Pivot Y)	カメラの視点方向を入力します (1: x軸, 2: y軸).
 def_camera_small_name		Camera Small	カメラ (小)
-def_camera_small_desc			
+def_camera_small_desc		Can be pivoted up to 45° using composite input.	複合信号で視点方向を45度まで変更できます.
 def_camera_small_s_desc		A camera with video output feed.	映像を出力する小型のカメラです.
 def_camera_small_node_0_label		Camera Feed	カメラの映像
 def_camera_small_node_0_desc			カメラで捉えた映像を出力します.
 def_camera_small_node_1_label		Electric	電力
 def_camera_small_node_1_desc			電力網から電力を供給します.
+def_camera_small_node_2_label		Pivot	視点方向
+def_camera_small_node_2_desc		Inputs for camera X/Y pivot. (Value 1 : Pivot X) (Value 2 : Pivot Y)	カメラの視点方向を入力します (1: x軸, 2: y軸).
 def_catalytic_converter_name		Catalytic Converter	触媒
-def_catalytic_converter_desc		Catalytic converter that removes fumes and decreases the number of exhaust particles emitted from an exhaust.	排気ガスをこの触媒に通すことによって, 煙の量を減らすことができます. 触媒を複数設定すると更に減ります. 触媒には設置する方向があります.
+def_catalytic_converter_desc		Catalytic converter that removes fumes and decreases the number of exhaust particles emitted from an exhaust.	排気ガスをこの触媒に通すことによって, 煙の量を減らすことができます. 触媒を複数設置すると更に減ります. 触媒には設置する方向があります.
 def_catalytic_converter_s_desc		Reduces particles from exhausts.	排気ガスを綺麗にする触媒です.
 def_catalytic_converter_node_0_label		Exhaust In	排気吸引
 def_catalytic_converter_node_0_desc			エンジンなどからの排気を吸引します.
@@ -4659,7 +4663,7 @@ def_laser_beacon_node_1_desc		Electrical power connection.	電力網から電力
 def_laser_beacon_node_2_label		Wavelength	レーザーの波長
 def_laser_beacon_node_2_desc		The specific light wavelength to emit (whole number).	照射するレーザーの波長を制御します. 入力する数値は整数です.
 def_laser_distance_sensor_name		Laser Distance Sensor	距離計 (レーザー)
-def_laser_distance_sensor_desc		The reading can be read from the sensor's number output and is measured in metres (1 metre = 4 blocks).	測定結果はメートル単位 (1メートル = 4ブロック) で出力されます.
+def_laser_distance_sensor_desc		The reading can be read from the sensor's number output and is measured in metres (1 metre = 4 blocks). Can be pivoted up to 45° using composite input.	測定結果はメートル単位 (1メートル = 4ブロック) で出力されます. 複合信号で照射方向を45度まで変更できます.
 def_laser_distance_sensor_s_desc		A laser distance sensor with a maximum measurement range of 4000m.	4キロメートルまでの長さを計測できるレーザーによる距離計です.
 def_laser_distance_sensor_node_0_label		Distance	距離計
 def_laser_distance_sensor_node_0_desc		The measured distance in metres.	測定結果をメートル単位で出力します.
@@ -4669,6 +4673,8 @@ def_laser_distance_sensor_node_2_label		Active	レーザー照射
 def_laser_distance_sensor_node_2_desc		Controls whether or not the laser is active.	オン信号を受け取るとレーザーを照射します.
 def_laser_distance_sensor_node_3_label		Wavelength	レーザーの波長
 def_laser_distance_sensor_node_3_desc		The specific light wavelength to emit (whole number).	照射するレーザーの波長を制御します. 入力する数値は整数です.
+def_laser_distance_sensor_node_4_label		Pivot	照射方向
+def_laser_distance_sensor_node_4_desc		Inputs for laser X/Y pivot. (Value 1 : Pivot X) (Value 2 : Pivot Y)	レーザーの照射方向を入力します (1: x軸, 2: y軸).
 def_laser_point_sensor_name		Laser Point Sensor	レーザー受光器
 def_laser_point_sensor_desc		The closest point to the center of the sensor's field of view will be reported. It outputs a value of -1 to 1 on composite number channel 1 for the x position, and a value of -1 to 1 on composite number channel 2 for the y position. Composite on/off channel 1 is set to on when a point is visible. The -1 to 1 values map to an fov of -cos(0.5) to cos(0.5) in both the x and y directions.	複数のレーザーを捉えた場合は最も近いもののみ出力します. 複合信号の数値チャンネルの1チャンネルにレーザーの照射元のx方向を-1から1の数値で, 2チャンネルにレーザーの照射元のy方向を-1から1の数値で出力し, オン/オフチャンネルの1チャンネルはレーザーを捉えた時にオン信号を出力します. 数値信号の-1から1は cos(-0.5) から cos(0.5) の値に対応します.
 def_laser_point_sensor_s_desc		A sensor that outputs a relative x and y position of a laser point that it can see within its field of view.	捉えたレーザーの相対的な照射元を出力するレーザー受光器です.
@@ -6006,19 +6012,23 @@ def_searchlight_node_1_desc		Standard value between -1 and 1 representing the ta
 def_searchlight_node_2_label		Electric	電力
 def_searchlight_node_2_desc		Electrical power connection.	電力網から電力を供給します.
 def_searchlight_small_name		Small Spotlight (Block)	スポットライト (小, ブロック)
-def_searchlight_small_desc		It has a range of 60m.	光が届く範囲は60メートルです.
+def_searchlight_small_desc		It has a range of 60m. Can be pivoted up to 45° using composite input.	光が届く範囲は60メートルです. 複合信号で照射方向を45度まで変更できます.
 def_searchlight_small_s_desc		A small spotlight that can be controlled using an on/off signal.	オン/オフ信号で制御する小型のスポットライトです.
 def_searchlight_small_node_0_label		Light Switch	点灯
 def_searchlight_small_node_0_desc		Controls whether or not the light is switched on.	オン信号を受け取るとスポットライトが点灯します.
 def_searchlight_small_node_1_label		Electric	電力
 def_searchlight_small_node_1_desc		Electrical power connection.	電力網から電力を供給します.
+def_searchlight_small_node_2_label		Pivot	照射方向
+def_searchlight_small_node_2_desc		Inputs for spotlight X/Y pivot. (Value 1 : Pivot X) (Value 2 : Pivot Y)	ライトの照射方向を入力します (1: x軸, 2: y軸).
 def_searchlight_small_2_name		Small Spotlight (Mounted)	スポットライト (小, 搭載型)
-def_searchlight_small_2_desc		It has a range of 60m.	光が届く範囲は60メートルです.
+def_searchlight_small_2_desc		It has a range of 60m. Can be pivoted up to 45° using composite input.	光が届く範囲は60メートルです. 複合信号で照射方向を45度まで変更できます.
 def_searchlight_small_2_s_desc		A small spotlight that can be controlled using an on/off signal.	オン/オフ信号で制御する小型のスポットライトです.
 def_searchlight_small_2_node_0_label		Light Switch	点灯
 def_searchlight_small_2_node_0_desc		Controls whether or not the light is switched on.	オン信号を受け取るとスポットライトが点灯します.
 def_searchlight_small_2_node_1_label		Electric	電力
 def_searchlight_small_2_node_1_desc		Electrical power connection.	電力網から電力を供給します.
+def_searchlight_small_2_node_2_label		Pivot	照射方向
+def_searchlight_small_2_node_2_desc		Inputs for spotlight X/Y pivot. (Value 1 : Pivot X) (Value 2 : Pivot Y)	ライトの照射方向を入力します (1: x軸, 2: y軸).
 def_seat_name		Pilot Seat	パイロット席
 def_seat_desc		It provides 4 number outputs that produce a standard value ranging from -1 to 1, and 6 on/off outputs. You can get in and out of the pilot seat by interacting with it using [$[action_use_seat]].	キーボードなどで-1から1の範囲を操作できる数値信号を4個, オン/オフ信号を7個提供し, 座っている人の視点方向も出力されます.  [$[action_use_seat]] を押して座ったり立ったりします. キーの挙動などはプロパティウィンドウから設定できます.
 def_seat_s_desc		The pilot seat lets you translate keyboard presses into output signals that can control logic components.	座っているプレイヤーのキーボード入力などで乗り物を操作できる座席です.
