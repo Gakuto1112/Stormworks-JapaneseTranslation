@@ -2386,6 +2386,8 @@ id	description	en	local
 		Missing required diesel to fill tanks to requested level	タンクに指定した量を満たすことができるだけの軽油がありません.
 		Missing required jet fuel to fill tanks to requested level	タンクに指定した量を満たすことができるだけのジェット燃料がありません.
 		Missing required uranium ingots to fill fuel rods to requested level	燃料棒に指定した量を満たすことができるだけのウランの延べ棒がありません.
+		too short to attach	短すぎます
+		Move closer to attach	更に近づいてください
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
