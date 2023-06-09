@@ -2388,6 +2388,11 @@ id	description	en	local
 		Missing required uranium ingots to fill fuel rods to requested level	燃料棒に指定した量を満たすことができるだけのウランの延べ棒がありません.
 		too short to attach	短すぎます
 		Move closer to attach	更に近づいてください
+		ERROR: You are VAC banned	エラー: あなたのSteamアカウントは接続禁止処分を受けています
+		VAC banned users are not permitted to play Stormworks online. You have been VAC banned for using a modified version of the game for the purposes of cheating, greifing, copyright infringement, or another illegal purpose.	VACから接続禁止処分を受けているプレイヤーはStormworksのオンラインプレイに参加できません. あなたは過去にチート行為, 迷惑行為, ゲームの無断複製 (海賊版, 割れ), その他違法行為を行ったため, VACから接続禁止処分を受けました.
+		Buffalo	バイソン
+		Bighorn Sheep	オオツノヒツジ
+		Roadrunner	ミチバシリ
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
