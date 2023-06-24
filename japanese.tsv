@@ -25,6 +25,7 @@ id	description	en	local
 		You are not whitelisted on this server	あなたはこのサーバーへの接続が許可されていません.
 		You are missing a required DLC	必須のDLCがありません.
 		You are banned from this server	あなたはこのサーバーから接続禁止を受けています.
+		Server already has your account connected - please retry	あなたは既にこのサーバーに接続しています. 再試行してください.
 		no errors detected	エラーは見つかりませんでした.
 		Variables	変数
 		Input 1	入力1
@@ -2146,6 +2147,7 @@ id	description	en	local
 		Hoodie Spycakes	Spycakes のフード付き服
 		Hoodie Stormworks	Stormworks のフード付き服
 		You were disconnected due to adverse network conditions.	ネットワークの環境が悪いため切断されました.
+		You were disconnected due to steam failing to authorize. Please restart Steam.	Steamアカウントの認証に失敗したため切断されました. Steamを再起動してください.
 		Physics	物理演算
 		Physics Detail	物理演算の精度
 		Gameplay	ゲームプレイ
@@ -2388,8 +2390,8 @@ id	description	en	local
 		Missing required uranium ingots to fill fuel rods to requested level	燃料棒に指定した量を満たすことができるだけのウランの延べ棒がありません.
 		too short to attach	短すぎます
 		Move closer to attach	更に近づいてください
-		ERROR: You are VAC banned	エラー: あなたのSteamアカウントは接続禁止処分を受けています
-		VAC banned users are not permitted to play Stormworks online. You have been VAC banned for using a modified version of the game for the purposes of cheating, greifing, copyright infringement, or another illegal purpose.	VACから接続禁止処分を受けているプレイヤーはStormworksのオンラインプレイに参加できません. あなたは過去にチート行為, 迷惑行為, ゲームの無断複製 (海賊版, 割れ), その他違法行為を行ったため, VACから接続禁止処分を受けました.
+		ERROR: You are banned	エラー: あなたは接続禁止処分を受けています
+		Banned users are not permitted to play Stormworks online. You have been banned for using a modified version of the game for the purposes of cheating, greifing, piracy, or another illegal purpose.	接続禁止処分を受けているプレイヤーはStormworksのオンラインプレイに参加できません. あなたは過去にチート行為, 迷惑行為, ゲームの無断複製 (海賊版, 割れ), その他違法行為を行ったため, 接続禁止処分を受けました.
 		Buffalo	バイソン
 		Bighorn Sheep	オオツノヒツジ
 		Roadrunner	ミチバシリ
@@ -2999,7 +3001,7 @@ def_control_surface_small_node_0_desc		Accepts a value between -1 and 1 that rep
 def_control_surface_small_node_1_label		Electric	電力
 def_control_surface_small_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_desalinator_name		Desalinator	淡水化装置
-def_desalinator_desc		A pipe with a fine desalination filter that slowly converts seawater to freshwater and allows free flow of freshwater.	海水に脱塩処理を施し, ゆっくりと淡水に変えます. 
+def_desalinator_desc		A pipe with a fine desalination filter that slowly converts seawater to freshwater and allows free flow of freshwater.	海水に脱塩処理を施し, ゆっくりと淡水に変えます.
 def_desalinator_s_desc		A pipe that slowly converts seawater to freshwater.	海水を淡水にする装置です.
 def_desalinator_node_0_label		Fluid In	流体注入
 def_desalinator_node_0_desc		Seawater connection.	海水を注入します.
@@ -5303,6 +5305,13 @@ def_oil_rig_drill_grabber_node_1_label		Rod Clamped	掘削棒接続済み
 def_oil_rig_drill_grabber_node_1_desc		Returns true when a drill rod is attached.	掘削棒が接続されていればオン信号を出力します.
 def_oil_rig_drill_grabber_node_2_label		Slider Velocity	昇降速度
 def_oil_rig_drill_grabber_node_2_desc		Slides an attached drill rod up or down the clamp.	掘削棒の昇降速度を制御します.
+def_oil_rig_drill_grabber_end_name		Oil Rig Drill Clamp (End)	油井留め具 (終端)
+def_oil_rig_drill_grabber_end_desc			
+def_oil_rig_drill_grabber_end_s_desc		A clamp for moving drill rods into place.	動いている掘削棒を留めておく油井掘削の部品です.
+def_oil_rig_drill_grabber_end_node_0_label		Clamp Rod	掘削棒接続
+def_oil_rig_drill_grabber_end_node_0_desc		Attach a drill rod to the clamp.	オン信号を受け取ると掘削棒を接続します.
+def_oil_rig_drill_grabber_end_node_1_label		Rod Clamped	掘削棒接続済み
+def_oil_rig_drill_grabber_end_node_1_desc		Returns true when a drill rod is attached.	掘削棒が接続されていればオン信号を出力します.
 def_oil_rig_drill_storage_name		Oil Rig Rod Storage	油田掘削棒の格納庫
 def_oil_rig_drill_storage_desc		Contains a single drill rod when spawned.	乗り物をスポーンした後に掘削棒が1本格納されます.
 def_oil_rig_drill_storage_s_desc		A storage rack for drill rods.	掘削棒の格納ラックです.
@@ -5315,9 +5324,9 @@ def_oil_rig_drill_swivel_node_0_label		Clamp Rod	掘削棒接続
 def_oil_rig_drill_swivel_node_0_desc		Attach a drill rod to the swivel.	オン信号を受け取ると掘削棒と軸受けを接続します.
 def_oil_rig_drill_swivel_node_1_label		Rod Clamped	掘削棒接続済み
 def_oil_rig_drill_swivel_node_1_desc		Returns true when a drill rod is attached.	掘削棒が接続されていればオン信号を出力します.
-def_oil_rig_drill_swivel_node_2_label		Fluid In	液体注入
+def_oil_rig_drill_swivel_node_2_label		Fluid In	流体注入
 def_oil_rig_drill_swivel_node_2_desc		Fluid port to transfer drilling slurry through an attached rod linked to a well.	ここから液体を注入して, 接続された掘削棒に液体を供給します.
-def_oil_rig_drill_swivel_node_3_label		Fluid Out	液体排出
+def_oil_rig_drill_swivel_node_3_label		Fluid Out	流体排出
 def_oil_rig_drill_swivel_node_3_desc		Fluid port to transfer drilling slurry from an attached rod linked to a well.	接続された掘削棒からの廃液が排出されます.
 def_oil_rig_pumpjack_name		Oil Rig Pumpjack	オイルポンプジャック
 def_oil_rig_pumpjack_desc		Pulling the piston of the pumpjack with enough force will lift the piston, pulling fluid through the pump. A mechanical force capable of repeatedly cycling the piston is required to pump fluid effectively.	十分な動力でピストンを引くことで液体を組み上げられます. 効率よく液体を汲み出すには繰り返しピストンを動かす動力が必要です.
@@ -6396,6 +6405,17 @@ def_seat_stretcher_desc		You can get in and out of the stretcher by interacting 
 def_seat_stretcher_s_desc		A strecher that connects below an attachment point.	オブジェクトの下部に取り付けられるストレッチャーです.
 def_seat_stretcher_node_0_label		Occupied	使用中
 def_seat_stretcher_node_0_desc		Outputs an on signal if this bed is occupied by a character.	誰かが寝ているとオン信号を出力します.
+def_separator_name		Centrifugal Separator	遠心分離器
+def_separator_desc		Provide torque to begin spinning the separator, fluid output ports will separate with increased effectiveness based on the spin speed.	動力を与えると回転します. 回転速度が速いほど流体の分離速度が速くなります.
+def_separator_s_desc		A tank that can be spun to separate contained fluids.	自身を回転させ中の流体を分離できるタンクです.
+def_separator_node_0_label		Torque	動力
+def_separator_node_0_desc		Torque Input.	エンジンからの動力を受け取ります.
+def_separator_node_1_label		Fluid In	流体注入
+def_separator_node_1_desc		Input fluid port.	分離したい流体を注入します.
+def_separator_node_2_label		Fluid Out	流体排出
+def_separator_node_2_desc		Main output fluid port.	分離処理が完了した流体が排出されます.
+def_separator_node_3_label		Dense Fluid Out	分離流体排出
+def_separator_node_3_desc		Output port that will filter the denser fluid when the centrifuge is operating at high speed.	遠心分離で得られた密度の高い流体が排出されます.
 def_sign_name		Paintable Indicator	描画可能な表示灯
 def_sign_desc		This block has a paintable surface where small grid squares can be painted individually. Use additive painting mode to paint the backlight grid. The backlight can be enabled by using an on signal and a name can be set with the select tool that will be visible when the indicator is looked at by a player.	この部品には9x9の細かいグリッドに分けられている面があり, その面に細かく描画ができます. 表示灯は発光ブラシ描画します.
 def_sign_s_desc		A backlit indicator for displaying painted detail.	着色モードで細かい描画が可能な表示灯です.
@@ -7041,7 +7061,7 @@ def_trans_block_angle_name		Pipe Angle (Enclosed)	配管 (角, ブロック)
 def_trans_block_angle_desc			
 def_trans_block_angle_s_desc		An angled pipe for transferring to components from an engine.	動力や流体を輸送するパイプの角部分です. ブロックの形をしており, 壁や床などに埋め込むことができます.
 def_trans_block_corner_name		Pipe Angle Corner (Enclosed)	配管 (角分岐, ブロック)
-def_trans_block_corner_desc			 
+def_trans_block_corner_desc			
 def_trans_block_corner_s_desc		A T-shaped pipe segment that can be used to branch piping into three directions.	動力や流体を輸送するパイプの角分岐部分です. ブロックの形をしており, 壁や床などに埋め込むことができます.
 def_trans_block_cross_name		Pipe Cross (Enclosed)	配管 (十字, ブロック)
 def_trans_block_cross_desc			
@@ -7056,31 +7076,31 @@ def_trans_block_straight_name		Pipe Straight (Enclosed)	配管 (直線, ブロ�
 def_trans_block_straight_desc			
 def_trans_block_straight_s_desc		A straight section of pipe for transferring to components from an engine.	動力や流体を輸送するパイプの直線部分です. ブロックの形をしており, 壁や床などに埋め込むことができます.
 def_trans_block_t_name		Pipe T-Piece (Enclosed)	配管 (T字, ブロック)
-def_trans_block_t_desc			 
+def_trans_block_t_desc			
 def_trans_block_t_s_desc		A T-shaped pipe segment that can be used to branch piping into three directions.	動力や流体を輸送するパイプのT字部分です. ブロックの形をしており, 壁や床などに埋め込むことができます.
 def_trans_block_t_corner_name		Pipe T-Piece Corner (Enclosed)	配管 (角T字, ブロック)
 def_trans_block_t_corner_desc			
 def_trans_block_t_corner_s_desc		A T-shaped pipe segment that can be used to branch piping into four directions.	動力や流体を輸送するパイプの角T字部分です. ブロックの形をしており, 壁や床などに埋め込むことができます.
 def_trans_corner_name		Pipe Angle Corner	配管 (角分岐, パイプ)
-def_trans_corner_desc			 
+def_trans_corner_desc			
 def_trans_corner_s_desc		A T-shaped pipe segment that can be used to branch piping into three directions.	動力や流体を輸送するパイプの角分岐部分です.
 def_trans_cross_name		Pipe Cross	配管 (十字, パイプ)
-def_trans_cross_desc			 
+def_trans_cross_desc			
 def_trans_cross_s_desc		An X-shaped pipe segment that can be used to branch piping into four directions.	動力や流体を輸送するパイプの十字部分です.
 def_trans_cross_corner_name		Pipe Cross Corner	配管 (角十字, パイプ)
-def_trans_cross_corner_desc			 
+def_trans_cross_corner_desc			
 def_trans_cross_corner_s_desc		An X-shaped pipe segment that can be used to branch piping into five directions.	動力や流体を輸送するパイプの角十字部分です.
 def_trans_omni_name		Pipe Omni	配管 (全方向, パイプ)
-def_trans_omni_desc			 
+def_trans_omni_desc			
 def_trans_omni_s_desc		An omnidirectional pipe segment.	動力や流体を輸送するパイプの全方向分岐部分です.
 def_trans_straight_name		Pipe Straight	配管 (直線, パイプ)
 def_trans_straight_desc			
 def_trans_straight_s_desc		A straight section of pipe for transferring to components from an engine.	動力や流体を輸送するパイプの直線部分です.
 def_trans_t_name		Pipe T-Piece	配管 (T字, パイプ)
-def_trans_t_desc			 
+def_trans_t_desc			
 def_trans_t_s_desc		A T-shaped pipe segment that can be used to branch piping into three directions.	動力や流体を輸送するパイプのT字部分です.
 def_trans_t_corner_name		Pipe T-Piece Corner	配管 (角T字, パイプ)
-def_trans_t_corner_desc			 
+def_trans_t_corner_desc			
 def_trans_t_corner_s_desc		A T-shaped pipe segment that can be used to branch piping into four directions.	動力や流体を輸送するパイプの角T字部分です.
 def_turbine_name		Turbine Engine	タービンエンジン
 def_turbine_desc		An on/off signal controls engine startup. The throttle input takes a standard value between -1 and 1 and controls the forward and backward force of connected components. The engine's maximum power output is split between connected components.	オン/オフ信号でエンジンを始動し, 数値信号によるスロットルで出力を調整します. エンジンの最大出力は接続された部品で分割されます.
