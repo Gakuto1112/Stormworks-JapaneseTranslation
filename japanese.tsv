@@ -2395,6 +2395,10 @@ id	description	en	local
 		Buffalo	バイソン
 		Bighorn Sheep	オオツノヒツジ
 		Roadrunner	ミチバシリ
+		Mountain Lion	ピューマ
+		Crocodile	ワニ
+		Coyote	コヨーテ
+		Merch Store	Stormworksグッズストア
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
@@ -2743,7 +2747,7 @@ def_camera_gimbal_laser_node_10_desc		x, y, z output for the laser target in cha
 def_camera_gimbal_laser_node_11_label		Laser Wavelength	レーザーの波長
 def_camera_gimbal_laser_node_11_desc		The specific light wavelength to emit (whole number).	照射するレーザーの波長を制御します. 入力する数値は整数です.
 def_camera_med_name		Camera Medium	カメラ (中)
-def_camera_med_desc		Has infrared mode as well as variable field of view. Can be pivoted up to 45° using composite input.	赤外線モードや, 拡大/縮小機能が搭載されています. 複合信号で視点方向を45度まで変更できます.
+def_camera_med_desc		Has infrared mode as well as variable field of view. Can be pivoted up to 0.125 turns using composite input.	赤外線モードや, 拡大/縮小機能が搭載されています. 複合信号で視点方向を0.125回転単位まで変更できます.
 def_camera_med_s_desc		A camera with video output feed.	映像を出力する中型のカメラです.
 def_camera_med_node_0_label		Camera Feed	カメラの映像
 def_camera_med_node_0_desc			カメラで捉えた映像を出力します.
@@ -2756,7 +2760,7 @@ def_camera_med_node_3_desc		Controls the level of zoom of the camera.	カメラ�
 def_camera_med_node_4_label		Pivot	視点方向
 def_camera_med_node_4_desc		Inputs for camera X/Y pivot. (Value 1 : Pivot X) (Value 2 : Pivot Y)	カメラの視点方向を入力します (1: x軸, 2: y軸).
 def_camera_small_name		Camera Small	カメラ (小)
-def_camera_small_desc		Can be pivoted up to 45° using composite input.	複合信号で視点方向を45度まで変更できます.
+def_camera_small_desc		Can be pivoted up to 0.125 turns using composite input.	複合信号で視点方向を0.125回転単位まで変更できます.
 def_camera_small_s_desc		A camera with video output feed.	映像を出力する小型のカメラです.
 def_camera_small_node_0_label		Camera Feed	カメラの映像
 def_camera_small_node_0_desc			カメラで捉えた映像を出力します.
@@ -4672,7 +4676,7 @@ def_laser_beacon_node_1_desc		Electrical power connection.	電力網から電力
 def_laser_beacon_node_2_label		Wavelength	レーザーの波長
 def_laser_beacon_node_2_desc		The specific light wavelength to emit (whole number).	照射するレーザーの波長を制御します. 入力する数値は整数です.
 def_laser_distance_sensor_name		Laser Distance Sensor	距離計 (レーザー)
-def_laser_distance_sensor_desc		The reading can be read from the sensor's number output and is measured in metres (1 metre = 4 blocks). Can be pivoted up to 45° using composite input.	測定結果はメートル単位 (1メートル = 4ブロック) で出力されます. 複合信号で照射方向を45度まで変更できます.
+def_laser_distance_sensor_desc		The reading can be read from the sensor's number output and is measured in metres (1 metre = 4 blocks). Can be pivoted up to 0.125 turns using composite input.	測定結果はメートル単位 (1メートル = 4ブロック) で出力されます. 複合信号で照射方向を0.125回転単位まで変更できます.
 def_laser_distance_sensor_s_desc		A laser distance sensor with a maximum measurement range of 4000m.	4キロメートルまでの長さを計測できるレーザーによる距離計です.
 def_laser_distance_sensor_node_0_label		Distance	距離計
 def_laser_distance_sensor_node_0_desc		The measured distance in metres.	測定結果をメートル単位で出力します.
@@ -6028,7 +6032,7 @@ def_searchlight_node_1_desc		Standard value between -1 and 1 representing the ta
 def_searchlight_node_2_label		Electric	電力
 def_searchlight_node_2_desc		Electrical power connection.	電力網から電力を供給します.
 def_searchlight_small_name		Small Spotlight (Block)	スポットライト (小, ブロック)
-def_searchlight_small_desc		It has a range of 60m. Can be pivoted up to 45° using composite input.	光が届く範囲は60メートルです. 複合信号で照射方向を45度まで変更できます.
+def_searchlight_small_desc		It has a range of 60m. Can be pivoted up to 0.125 turns using composite input.	光が届く範囲は60メートルです. 複合信号で照射方向を0.125回転単位まで変更できます.
 def_searchlight_small_s_desc		A small spotlight that can be controlled using an on/off signal.	オン/オフ信号で制御する小型のスポットライトです.
 def_searchlight_small_node_0_label		Light Switch	点灯
 def_searchlight_small_node_0_desc		Controls whether or not the light is switched on.	オン信号を受け取るとスポットライトが点灯します.
@@ -6037,7 +6041,7 @@ def_searchlight_small_node_1_desc		Electrical power connection.	電力網から�
 def_searchlight_small_node_2_label		Pivot	照射方向
 def_searchlight_small_node_2_desc		Inputs for spotlight X/Y pivot. (Value 1 : Pivot X) (Value 2 : Pivot Y)	ライトの照射方向を入力します (1: x軸, 2: y軸).
 def_searchlight_small_2_name		Small Spotlight (Mounted)	スポットライト (小, 搭載型)
-def_searchlight_small_2_desc		It has a range of 60m. Can be pivoted up to 45° using composite input.	光が届く範囲は60メートルです. 複合信号で照射方向を45度まで変更できます.
+def_searchlight_small_2_desc		It has a range of 60m. Can be pivoted up to 0.125 turns using composite input.	光が届く範囲は60メートルです. 複合信号で照射方向を0.125回転単位まで変更できます.
 def_searchlight_small_2_s_desc		A small spotlight that can be controlled using an on/off signal.	オン/オフ信号で制御する小型のスポットライトです.
 def_searchlight_small_2_node_0_label		Light Switch	点灯
 def_searchlight_small_2_node_0_desc		Controls whether or not the light is switched on.	オン信号を受け取るとスポットライトが点灯します.
