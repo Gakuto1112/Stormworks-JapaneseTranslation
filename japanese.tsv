@@ -786,7 +786,7 @@ id	description	en	local
 		EXPORT COMPLETE	エクスポート完了
 		SUCCESS	成功
 		The action was completed successfully.	このアクションは正常に完了しました.
-		(double-click to expand)	(ダブルクリックで拡張)
+		(double-click to expand)	(ダブルクリックで部品一覧を開く)
 		No description set for microcontroller component.	このマイクロコントローラーには説明がありません.
 		Results for	結果
 		COMPONENT INVENTORY	部品一覧
@@ -5368,7 +5368,7 @@ def_physics_sensor_name		Physics Sensor	物理センサー
 def_physics_sensor_desc		Outputs physics information to a composite logic node. Requires Electric for GPS position functionality. This component is directed along its local Y axis.	複合信号から物理情報を出力します. GPSを利用するには電力が必要です. この部品は自身から見たY軸に基づいて出力されます.
 def_physics_sensor_s_desc		Sensor component that outputs various physics measurements such as position and velocity.	現在位置や速度などの様々な物理量を出力するセンサー部品です.
 def_physics_sensor_node_0_label		Composite Output	複合出力
-def_physics_sensor_node_0_desc		Outputs x position, y position, z position, euler rotation x, euler rotation y, euler rotation z, linear velocity x, linear velocity y, linear velocity z, angular velocity x, angular velocity y, angular velocity z, absolute linear velocity, and absolute angular velocity to the respective order composite channels.	順にx座標, y座標, z座標, x軸オイラー回転, y軸オイラー回転, z軸オイラー回転, x軸直線速度, y軸直線速度, z軸直線速度, x軸角速度, y軸角速度, z軸角速度, 絶対直線速度, 絶対角速度を出力します.
+def_physics_sensor_node_0_desc		Outputs [1] x position, [2] y position, [3] z position, [4] euler rotation x, [5] euler rotation y, [6] euler rotation z, [7] linear velocity x, [8] linear velocity y, [9] linear velocity z, [10] angular velocity x, [11] angular velocity y, [12] angular velocity z, [13] absolute linear velocity, [14] absolute angular velocity, [15] local z tilt, [16] local x tilt and [17] compass heading (-0.5 to 0.5) to the respective composite channels.	複合信号の各チャンネルに値を出力します: [1] x座標, [2] y座標, [3] z座標, [4] x軸オイラー回転, [5] y軸オイラー回転, [6] z軸オイラー回転, [7] x軸直線速度, [8] y軸直線速度, [9] z軸直線速度, [10] x軸角速度, [11] y軸角速度, [12] z軸角速度, [13] 絶対直線速度, [14] 絶対角速度, [15] ローカル座標系でのz軸傾き, [16] ローカル座標系でのx軸傾き, [17] コンパスの向き (-0.5 から 0.5)
 def_physics_sensor_node_1_label		Electric	電力
 def_physics_sensor_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_player_sensor_name		Player Sensor	人間検出器
