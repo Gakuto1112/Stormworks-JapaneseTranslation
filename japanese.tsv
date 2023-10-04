@@ -3657,7 +3657,7 @@ def_gate_pid_controller_s_desc		A control loop feedback mechanism that measures 
 def_gate_pid_controller_node_0_label		Active	起動
 def_gate_pid_controller_node_0_desc		Sets whether or not the controller is active. When inactive, stored values are reset.	オン信号を受け取るとPID制御を行います. オフ信号を受け取ると内部の数値はリセットされます.
 def_gate_pid_controller_node_1_label		Control Output	制御出力
-def_gate_pid_controller_node_1_desc		The output computed by the controller.	PID制御によって制御されたせ数値を出力します.
+def_gate_pid_controller_node_1_desc		The output computed by the controller.	PID制御によって制御された数値を出力します.
 def_gate_pid_controller_node_2_label		Process Variable	計測値
 def_gate_pid_controller_node_2_desc		The current measured value of the system.	制御したいシステムの現在の数値です.
 def_gate_pid_controller_node_3_label		Setpoint	目標値
