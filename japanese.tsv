@@ -6414,8 +6414,8 @@ def_seat_stretcher_node_0_desc		Outputs an on signal if this bed is occupied by 
 def_separator_name		Centrifugal Separator	遠心分離器
 def_separator_desc		Provide torque to begin spinning the separator, fluid output ports will separate with increased effectiveness based on the spin speed.	動力を与えると回転します. 回転速度が速いほど流体の分離速度が速くなります.
 def_separator_s_desc		A tank that can be spun to separate contained fluids.	自身を回転させ中の流体を分離できるタンクです.
-def_separator_node_0_label		Torque	動力
-def_separator_node_0_desc		Torque Input.	エンジンからの動力を受け取ります.
+def_separator_node_0_label		RPS	動力
+def_separator_node_0_desc		RPS input node for spinning the centrifuge.	エンジンからの動力を受け取ります.
 def_separator_node_1_label		Fluid In	流体注入
 def_separator_node_1_desc		Input fluid port.	分離したい流体を注入します.
 def_separator_node_2_label		Fluid Out	流体排出
