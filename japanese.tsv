@@ -592,7 +592,7 @@ id	description	en	local
 		Password	パスワード
 		Max Players	定員数
 		Host	ホスト
-		Submit	作成
+		Submit	OK
 		CHOOSE BASE	拠点の選択
 		DELETE SAVE	セーブデータの削除
 		Are you sure you want to delete this game?	このセーブデータを削除しますか? 一度削除すると二度と元には戻りません.
