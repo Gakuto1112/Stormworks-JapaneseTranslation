@@ -4044,7 +4044,7 @@ def_gun_drum_xsmall_s_desc		A machine gun ammo box.	機関銃の弾薬箱です.
 def_gun_drum_xsmall_node_0_label		Ammo count	弾薬数
 def_gun_drum_xsmall_node_0_desc		Outputs the total ammo count stored in the box.	弾薬箱に貯蔵されている弾薬の数を出力します.
 def_gun_l_name		Battle Cannon	大砲 (小)
-def_gun_l_desc		Battle cannons provide powerful, consistent firepower in a compact form.	この大砲は小型ながら協力で安定した火力を発揮します. 英語名は 「Battle cannon」 です. 発射するには武器DLCを有効にする必要があります.
+def_gun_l_desc		Battle cannons provide powerful, consistent firepower in a compact form.	この大砲は小型ながら強力で安定した火力を発揮します. 英語名は 「Battle cannon」 です. 発射するには武器DLCを有効にする必要があります.
 def_gun_l_s_desc		A battle cannon.	小型の大砲の砲身です.
 def_gun_l_node_0_label		Trigger	発射
 def_gun_l_node_0_desc		When true: fires a loaded shell.	オン信号を受け取ると装填した砲弾を発射します.
