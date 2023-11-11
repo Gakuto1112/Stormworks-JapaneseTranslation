@@ -2621,7 +2621,7 @@ def_barometer_name		Barometer	気圧計
 def_barometer_desc		Returns the pressure in atmospheres of the compartment or current altitude.	現在の高度の気圧または密閉空間内の圧力を出力します.
 def_barometer_s_desc		Measures the current air pressure.	大気圧を測定する気圧計です.
 def_barometer_node_0_label		Pressure	圧力
-def_barometer_node_0_desc			 
+def_barometer_node_0_desc			
 def_battery_large_name		Electric Battery Large	電池 (大)
 def_battery_large_desc			出力される電力の電圧は蓄電量の低下とともに低下します.
 def_battery_large_s_desc		A large battery array for storing electrical charge.	電力を蓄えられる大型の電池です.
@@ -3500,7 +3500,7 @@ def_gas_measure_node_0_desc		Returns the number of litres of gas in an enclosed 
 def_gas_measure_node_1_label		Fluid Capacity	貯蔵容量
 def_gas_measure_node_1_desc		Returns the total capacity of an enclosed volume in litres, or 0 if not enclosed.	密閉空間内に貯蔵できる最大の気体の量をリットル単位で出力します. 0が出力される場合、センサーが面している空間は密閉されていないことを表します.
 def_gas_measure_node_2_label		Composite Data	複合データ
-def_gas_measure_node_2_desc		Outputs the volumes of individual gas types on their respective channel. The data can be directly merged with a Liquid meter. The Air fluid type is equivalent to the sum of the oxygen, carbon dioxide and nitrogen values. Channels: 4-Air, 5-CO2, 8-Steam, 11-Oxygen, 12-Nitrogen, 13-Hydrogen.	それぞれの気体の量を出力します. 内圧計が使用する複合信号のチャンネルは, 貯水量計が使用するチャンネルと重複しないようになっています. "空気"は酸素と二酸化炭素と窒素を合計した量を示します. チャンネル: [4] 空気, [5] 二酸化炭素, [8] 蒸気, [11] 酸素, [12] 窒素, [13] 水素 
+def_gas_measure_node_2_desc		Outputs the volumes of individual gas types on their respective channel. The data can be directly merged with a Liquid meter. The Air fluid type is equivalent to the sum of the oxygen, carbon dioxide and nitrogen values. Channels: 4-Air, 5-CO2, 8-Steam, 11-Oxygen, 12-Nitrogen, 13-Hydrogen.	それぞれの気体の量を出力します. 内圧計が使用する複合信号のチャンネルは, 貯水量計が使用するチャンネルと重複しないようになっています. "空気"は酸素と二酸化炭素と窒素を合計した量を示します. チャンネル: [4] 空気, [5] 二酸化炭素, [8] 蒸気, [11] 酸素, [12] 窒素, [13] 水素
 def_gate_bool_and_name		And	論理積 (AND)
 def_gate_bool_and_desc		The output will only be switched on if both inputs are on.	2つの入力の両方がオン信号を受け取る時のみオン信号を出力します.
 def_gate_bool_and_s_desc		A logic gate that outputs the logical AND of two input signals.	2つのオン/オフ信号の入力の論理積 (AND) を出力する論理部品です.
@@ -4602,7 +4602,7 @@ def_inventory_outfit_diving_s_desc		An outfit inventory unit containing speciali
 def_inventory_outfit_diving_node_0_label		Electric	電力
 def_inventory_outfit_diving_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
 def_inventory_outfit_diving_node_1_label		Fluid In	流体注入
-def_inventory_outfit_diving_node_1_desc			 
+def_inventory_outfit_diving_node_1_desc			
 def_inventory_outfit_firefighter_name		Outfit Inventory (Firefighter)	保管庫 (大, 防火服)
 def_inventory_outfit_firefighter_desc		When equipped, it will absorb 95% of damage dealt by fires.	炎によるダメージを95%軽減します.
 def_inventory_outfit_firefighter_s_desc		An outfit inventory unit containing specialist firefighting gear.	防火服が保管されている大型の保管庫です.
@@ -4624,21 +4624,21 @@ def_inventory_outfit_scuba_s_desc		An outfit inventory unit containing specialis
 def_inventory_outfit_scuba_node_0_label		Electric	電力
 def_inventory_outfit_scuba_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
 def_inventory_outfit_scuba_node_1_label		Fluid In	流体注入
-def_inventory_outfit_scuba_node_1_desc			 
+def_inventory_outfit_scuba_node_1_desc			
 def_inventory_outfit_space_suit_name		Outfit Inventory (Space)	保管庫 (大, 宇宙服)
 def_inventory_outfit_space_suit_desc		When equipped, it will protect against low temperatures, low pressures and provide oxygen.	装備すると低温低圧環境下で生存可能になり, 生存のための酸素が供給されます.
 def_inventory_outfit_space_suit_s_desc		An outfit inventory unit containing specialist Space Exploration gear required for surviving in space.	宇宙服が保管されている保管庫です.
 def_inventory_outfit_space_suit_node_0_label		Electric	電力
 def_inventory_outfit_space_suit_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
 def_inventory_outfit_space_suit_node_1_label		Fluid In	流体注入
-def_inventory_outfit_space_suit_node_1_desc			 
+def_inventory_outfit_space_suit_node_1_desc			
 def_inventory_outfit_space_suit_exploration_name		Outfit Inventory (Space Exploration)	保管庫 (大, 宇宙探査服)
 def_inventory_outfit_space_suit_exploration_desc		When equipped, it will protect against low temperatures, low pressures and provide oxygen.	装備すると低温低圧環境下で生存可能になり, 生存のための酸素が供給されます.
 def_inventory_outfit_space_suit_exploration_s_desc		An outfit inventory unit containing specialist Space Exploration gear required for surviving in space.	宇宙探査服が保管されている保管庫です.
 def_inventory_outfit_space_suit_exploration_node_0_label		Electric	電力
 def_inventory_outfit_space_suit_exploration_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
 def_inventory_outfit_space_suit_exploration_node_1_label		Fluid In	流体注入
-def_inventory_outfit_space_suit_exploration_node_1_desc			 
+def_inventory_outfit_space_suit_exploration_node_1_desc			
 def_inventory_outfit_wep_armor_vest_name		Outfit Inventory (Armor Vest)	保管庫 (大, 防具 (重量))
 def_inventory_outfit_wep_armor_vest_desc		When equipped, damage from projectiles to the body and head is greatly reduced.  Wearing the outfit significantly limits movement speed.	飛び道具による体と頭のダメージを大幅に軽減します. 装備中は移動速度が中程度低下します.
 def_inventory_outfit_wep_armor_vest_s_desc		An outfit inventory unit containing specialist millitary clothing for projectile protection.	軍事用防具が保管されている保管庫です.
@@ -4977,7 +4977,7 @@ def_mineral_converter_s_desc		A basic mineral duct.	基本的な鉱物ダクト�
 def_mineral_converter_node_0_label		Mineral Level	鉱物の量
 def_mineral_converter_node_0_desc			ダクトの中の石炭の量を出力します.
 def_mineral_converter_node_1_label		water	水
-def_mineral_converter_node_1_desc			 
+def_mineral_converter_node_1_desc			
 def_mineral_drill_name		Mineral Drill	鉱物ドリル
 def_mineral_drill_desc		The mineral drill can be driven by torque to mine ore deposits in the world. Extracted minerals can be transferred to an attached hopper.	動力で稼働し, 鉱脈を採掘できます. 採掘されたドリルは付属のホッパーに移動します.
 def_mineral_drill_s_desc		A vehicle mounted drill for mining ore deposits.	鉱脈を採掘する, 搭載型のドリルです.
@@ -5827,6 +5827,8 @@ def_rope_hook_desc		Draw a rope logic link between two Rope Anchors to form a ro
 def_rope_hook_s_desc		An anchor point for a basic rope.	ロープが取り付けられるアンカーです.
 def_rope_hook_node_0_label		Rope Node	ロープ
 def_rope_hook_node_0_desc			他方のアンカー (ロープ) のロープノードと接続するとロープを接続した状態でスポーンします.
+def_rope_hook_node_1_label		Detach Rope	ロープ切り離し
+def_rope_hook_node_1_desc			オン信号を受け取ると接続されているロープを切り離します. 切り離したロープは消滅します.
 def_rope_hook_composite_name		Electrical Cable Anchor	アンカー (電力)
 def_rope_hook_composite_desc		Draw a rope logic link between two Electrical Cable Anchors to form a cable. Limited to only one link but can transfer Data and Electric across the link.	アンカー (電力) のロープノード同士を接続すると電気ケーブルを接続した状態でスポーンします.
 def_rope_hook_composite_s_desc		An anchor point for a basic data/electric cable.	電気ケーブルが取り付けられるアンカーです. 電気ケーブルを通して電力や信号の伝達ができます.
@@ -6711,7 +6713,7 @@ def_seat_space_node_15_desc			ヘッドセットが選択されているとき�
 def_seat_space_node_16_label		Headset Audio	ヘッドセット音声信号入力
 def_seat_space_node_16_desc			ヘッドセットが選択されているときに, 使用しているプレイヤーへ音声を再生します.
 def_seat_space_node_17_label		Fluid In	流体システム
-def_seat_space_node_17_desc			 
+def_seat_space_node_17_desc			
 def_seat_stretcher_name		Stretcher	ストレッチャー
 def_seat_stretcher_desc		You can get in and out of the stretcher by interacting with it using [$[action_use_seat]]. You can place a rescued survivor in any stretcher by using [$[action_use_seat]] while carrying them.	[$[action_use_seat]]　を押して寝たり起きたりします. 意識がある人を担いでいる時に [$[action_use_seat]] を押してその人を寝かせます.
 def_seat_stretcher_s_desc		A strecher that connects below an attachment point.	オブジェクトの下部に取り付けられるストレッチャーです.
@@ -7560,7 +7562,7 @@ def_water_measure_node_0_desc		Returns the number of litres of liquid in an encl
 def_water_measure_node_1_label		Fluid Capacity	貯水容量
 def_water_measure_node_1_desc		Returns the total capacity of an enclosed volume in litres, or 0 if not enclosed.	密閉空間内に入る流体の量を出力します. 密閉空間外に設置されている場合は0を出力します.
 def_water_measure_node_2_label		Composite Data	複合信号
-def_water_measure_node_2_desc		Outputs the volumes of individual liquid types on their respective channel. The data can be directly merged with a Gas meter. Channels: 1-Water, 2-Diesel, 3-Jet Fuel, 6-Oil, 7-Seawater, 9-Slurry, 10-Saturated Slurry	それぞれの液体の量を出力します. 貯水量計が使用する複合信号のチャンネルは, 内圧計が使用するチャンネルと重複しないようになっています. チャンネル: [1] 水, [2] 軽油, [3] ジェット燃料, [6] 原油, [7] 海水, [9] スラリー液, [10] 飽和スラリー液 
+def_water_measure_node_2_desc		Outputs the volumes of individual liquid types on their respective channel. The data can be directly merged with a Gas meter. Channels: 1-Water, 2-Diesel, 3-Jet Fuel, 6-Oil, 7-Seawater, 9-Slurry, 10-Saturated Slurry	それぞれの液体の量を出力します. 貯水量計が使用する複合信号のチャンネルは, 内圧計が使用するチャンネルと重複しないようになっています. チャンネル: [1] 水, [2] 軽油, [3] ジェット燃料, [6] 原油, [7] 海水, [9] スラリー液, [10] 飽和スラリー液
 def_water_nozzle_name		Fluid Nozzle	放水口
 def_water_nozzle_desc		The angle of spray can be adjusted.	放水口の広さは制御できます.
 def_water_nozzle_s_desc		A fluid nozzle that fires pressurized water for putting out fires.	高圧の水を噴射して消化活動を行う放水口です.
