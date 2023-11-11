@@ -5103,7 +5103,7 @@ def_modular_engine_flywheel_5x5_s_desc		A modular engine crankshaft flywheel.	�
 def_modular_engine_flywheel_5x5_node_0_label		RPS	秒間エンジン回転数
 def_modular_engine_flywheel_5x5_node_0_desc		Output value giving data info on engine speed.	1秒間あたりのエンジンの回転数 (RPS) を出力します.
 def_modular_engine_gearbox_1x1_name		Gearbox 1x1	ギアボックス (1x1)
-def_modular_engine_gearbox_1x1_desc		The ratio can be toggled between two values which can be set in the properties.	動力の大きさと回転速度は反比例の関係にあります. つまり, 動力を大きすると回転速度は小さくなり, 逆に回転速度を大きくすると動力は小さくなります. オン/オフ信号でギア比を変更できます. オン/オフ時のギア比はプロパティウィンドウから設定できます.
+def_modular_engine_gearbox_1x1_desc		The ratio can be toggled between two values which can be set in the properties.	動力の大きさと回転速度は反比例の関係にあります. つまり, 動力を大きくすると回転速度は小さくなり, 逆に回転速度を大きくすると動力は小さくなります. オン/オフ信号でギア比を変更できます. オン/オフ時のギア比はプロパティウィンドウから設定できます.
 def_modular_engine_gearbox_1x1_s_desc		Gearbox for changing the torque and speed across power connections.	動力の大きさと回転速度を変換するギアボックスです.
 def_modular_engine_gearbox_1x1_node_0_label		RPS A	動力1
 def_modular_engine_gearbox_1x1_node_0_desc		Power connection A.	ギアボックスで変換する動力です.
@@ -5114,7 +5114,7 @@ def_modular_engine_gearbox_1x1_node_2_desc		Toggle between the two gear ratios.	
 def_modular_engine_gearbox_1x1_node_3_label		Electric	電力
 def_modular_engine_gearbox_1x1_node_3_desc		The electric connection to power the component.	電力網から電力を供給します.
 def_modular_engine_gearbox_3x3_name		Gearbox 3x3	ギアボックス (3x3)
-def_modular_engine_gearbox_3x3_desc		The ratio can be toggled between two values which can be set in the properties.	動力の大きさと回転速度は反比例の関係にあります. つまり, 動力を大きすると回転速度は小さくなり, 逆に回転速度を大きくすると動力は小さくなります. オン/オフ信号でギア比を変更できます. オン/オフ時のギア比はプロパティウィンドウから設定できます.
+def_modular_engine_gearbox_3x3_desc		The ratio can be toggled between two values which can be set in the properties.	動力の大きさと回転速度は反比例の関係にあります. つまり, 動力を大きくすると回転速度は小さくなり, 逆に回転速度を大きくすると動力は小さくなります. オン/オフ信号でギア比を変更できます. オン/オフ時のギア比はプロパティウィンドウから設定できます.
 def_modular_engine_gearbox_3x3_s_desc		Gearbox for changing the torque and speed across power connections.	動力の大きさと回転速度を変換するギアボックスです.
 def_modular_engine_gearbox_3x3_node_0_label		RPS A	動力1
 def_modular_engine_gearbox_3x3_node_0_desc		Power connection A.	ギアボックスで変換する動力です.
@@ -5125,7 +5125,7 @@ def_modular_engine_gearbox_3x3_node_2_desc		Toggle between the two gear ratios.	
 def_modular_engine_gearbox_3x3_node_3_label		Electric	電力
 def_modular_engine_gearbox_3x3_node_3_desc		The electric connection to power the component.	電力網から電力を供給します.
 def_modular_engine_gearbox_5x5_name		Gearbox 5x5	ギアボックス (5x5)
-def_modular_engine_gearbox_5x5_desc		The ratio can be toggled between two values which can be set in the properties.	動力の大きさと回転速度は反比例の関係にあります. つまり, 動力を大きすると回転速度は小さくなり, 逆に回転速度を大きくすると動力は小さくなります. オン/オフ信号でギア比を変更できます. オン/オフ時のギア比はプロパティウィンドウから設定できます.
+def_modular_engine_gearbox_5x5_desc		The ratio can be toggled between two values which can be set in the properties.	動力の大きさと回転速度は反比例の関係にあります. つまり, 動力を大きくすると回転速度は小さくなり, 逆に回転速度を大きくすると動力は小さくなります. オン/オフ信号でギア比を変更できます. オン/オフ時のギア比はプロパティウィンドウから設定できます.
 def_modular_engine_gearbox_5x5_s_desc		Gearbox for changing the torque and speed across power connections.	動力の大きさと回転速度を変換するギアボックスです.
 def_modular_engine_gearbox_5x5_node_0_label		RPS A	動力1
 def_modular_engine_gearbox_5x5_node_0_desc		Power connection A.	ギアボックスで変換する動力です.
@@ -7155,7 +7155,7 @@ def_torque_crank_s_desc		A hand crank to produce mechanical power.	動力を生�
 def_torque_crank_node_0_label		RPS	動力
 def_torque_crank_node_0_desc		Connection to the power system.	クランクの動力を他の動力を必要とする部品に向けて出力します.
 def_torque_gearbox_name		Gearbox (Deprecated)	ギアボックス (旧式)
-def_torque_gearbox_desc		The ratio can be toggled between two values which can be set in the properties.	動力の大きさと回転速度は反比例の関係にあります. つまり, 動力を大きすると回転速度は小さくなり, 逆に回転速度を大きくすると動力は小さくなります. オン/オフ信号でギア比を変更できます. オン/オフ時のギア比はプロパティウィンドウから設定できます.
+def_torque_gearbox_desc		The ratio can be toggled between two values which can be set in the properties.	動力の大きさと回転速度は反比例の関係にあります. つまり, 動力を大きくすると回転速度は小さくなり, 逆に回転速度を大きくすると動力は小さくなります. オン/オフ信号でギア比を変更できます. オン/オフ時のギア比はプロパティウィンドウから設定できます.
 def_torque_gearbox_s_desc		Gearbox for changing the torque and speed across power connections.	動力の大きさと回転速度を変換するギアボックスです.
 def_torque_gearbox_node_0_label		RPS A	動力1
 def_torque_gearbox_node_0_desc		Power connection A.	ギアボックスで変換する動力です.
@@ -7166,7 +7166,7 @@ def_torque_gearbox_node_2_desc		Toggle between the two gear ratios.	オン/オ�
 def_torque_gearbox_node_3_label		Electric	電力
 def_torque_gearbox_node_3_desc		The electric connection to power the component.	電力網から電力を供給します.
 def_torque_gearbox_2_name		Gearbox (Deprecated)	ギアボックス (旧式)
-def_torque_gearbox_2_desc		The ratio can be toggled between two values which can be set in the properties. This gearbox operates up to a torque difference of 4000.	動力の大きさと回転速度は反比例の関係にあります. つまり, 動力を大きすると回転速度は小さくなり, 逆に回転速度を大きくすると動力は小さくなります. オン/オフ信号でギア比を変更できます. このギアボックスは動力の大きさの差が4000までの変換ができます. オン/オフ時のギア比はプロパティウィンドウから設定できます.
+def_torque_gearbox_2_desc		The ratio can be toggled between two values which can be set in the properties. This gearbox operates up to a torque difference of 4000.	動力の大きさと回転速度は反比例の関係にあります. つまり, 動力を大きくすると回転速度は小さくなり, 逆に回転速度を大きくすると動力は小さくなります. オン/オフ信号でギア比を変更できます. このギアボックスは動力の大きさの差が4000までの変換ができます. オン/オフ時のギア比はプロパティウィンドウから設定できます.
 def_torque_gearbox_2_s_desc		Gearbox for changing the torque and speed across power connections.	動力の大きさと回転速度を変換するギアボックスです.
 def_torque_gearbox_2_node_0_label		RPS A	動力1
 def_torque_gearbox_2_node_0_desc		Power connection A.	ギアボックスで変換する動力です.
