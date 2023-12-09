@@ -2419,6 +2419,7 @@ id	description	en	local
 		Missing required solid propellant to fuel solid rockets to requested level	指定された容量まで燃料を補給するだけの個体推進剤が足りません.
 		30 Dollar Train Yard	30ドル操車場
 		A train yard adjacent to the Monkey Brain Launch site and Clarke Airfield.	モンキー・ブレイン発射場とクラーク飛行場に隣接する操車場です.
+		Threshold (+/-)	閾値 (+/-)
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
@@ -3034,6 +3035,16 @@ def_control_surface_small_node_0_label		Rotation	翼の向き
 def_control_surface_small_node_0_desc		Accepts a value between -1 and 1 that represent the two extremes of the rudder's rotation.	-1から1の数値信号の入力から翼の向きを制御します.
 def_control_surface_small_node_1_label		Electric	電力
 def_control_surface_small_node_1_desc		Electrical power connection.	電力網から電力を供給します.
+def_data_logger_bool_name		Data Logger (Bool)	データ監視ブロック (オンオフ信号)
+def_data_logger_bool_desc		Link to the bool output node of another component to record data for unit tests.	オンオフ信号出力と接続してデータを記録します.
+def_data_logger_bool_s_desc		A bool data logging block for unit tests.	単体テストのためにオンオフ信号を監視できるブロックです.
+def_data_logger_bool_node_0_label		Bool In	オンオフ信号入力
+def_data_logger_bool_node_0_desc			監視を行うオンオフ信号の出力と接続します.
+def_data_logger_number_name		Data Logger (Number)	データ監視ブロック (数値信号)
+def_data_logger_number_desc		Link to the number output node of another component to record data for unit tests.	数値信号出力と接続してデータを記録します.
+def_data_logger_number_s_desc		A number data logging block for unit tests.	単体テストのために数値信号を監視できるブロックです.
+def_data_logger_number_node_0_label		Number In	数値信号入力
+def_data_logger_number_node_0_desc			監視を行う数値信号の出力と接続します.
 def_desalinator_name		Desalinator	淡水化装置
 def_desalinator_desc		A pipe with a fine desalination filter that slowly converts seawater to freshwater and allows free flow of freshwater.	海水に脱塩処理を施し, ゆっくりと淡水に変えます.
 def_desalinator_s_desc		A pipe that slowly converts seawater to freshwater.	海水を淡水にする装置です.
