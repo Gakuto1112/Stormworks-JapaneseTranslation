@@ -5824,7 +5824,7 @@ def_relief_valve_gas_node_0_desc			弁を通過する気体を入出力します
 def_relief_valve_gas_node_1_label		Fluid B	気体B
 def_relief_valve_gas_node_1_desc			弁を通過する気体を入出力します.
 def_relief_valve_liquid_name		Liquid Relief Valve	液体減圧弁
-def_relief_valve_liquid_desc		The valve allows liquids to pass across the two directional valve.	流体システムに設定する液体減圧弁です.
+def_relief_valve_liquid_desc		The valve allows liquids to pass across the two directional valve.	流体が弁を通過することができます.
 def_relief_valve_liquid_s_desc		A relief valve for liquids in a system.	流体システムに設置する液体減圧弁です.
 def_relief_valve_liquid_node_0_label		Fluid A	気体A
 def_relief_valve_liquid_node_0_desc			弁を通過する気体を入出力します.
