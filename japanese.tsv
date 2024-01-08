@@ -7885,6 +7885,28 @@ def_winch_large_b_desc
 def_winch_large_b_s_desc			
 def_winch_large_b_node_0_label		Fluid	流体
 def_winch_large_b_node_0_desc		Fluid connection for the end of the hose.	ウィンチを通して流体が自由に移動します.
+def_winch_pulley_name		Pulley	滑車 (直線)
+def_winch_pulley_desc		Draw a rope logic link between two rope nodes to form a cable. Ropes will slide based on difference in force applied to each rope.	滑車部品にある2つのロープノードにロープを接続します. ロープの力が変化すると反対側のロープの長さが変化します.
+def_winch_pulley_s_desc		A pulley that changes attached rope lengths based on forces applied to ropes.	ロープにかかる力に基づいて接続されたロープの長さを変化させる滑車です.
+def_winch_pulley_node_0_label		Rope 1 Length	ロープ1の長さ
+def_winch_pulley_node_0_desc		The current length of rope 1 in metres.	ロープ1の長さをメートル単位で出力します.
+def_winch_pulley_node_1_label		Rope 2 Length	ロープ2の長さ
+def_winch_pulley_node_1_desc		The current length of rope 2 in metres.	ロープ2の長さをメートル単位で出力します.
+def_winch_pulley_node_2_label		Rope 2	ロープ2
+def_winch_pulley_node_2_desc			
+def_winch_pulley_node_3_label		Rope 1	ロープ1
+def_winch_pulley_node_3_desc			
+def_winch_pulley_corner_name		Pulley (Corner)	滑車 (角)
+def_winch_pulley_corner_desc		Draw a rope logic link between two rope nodes to form a cable. Ropes will slide based on difference in force applied to each rope.	滑車部品にある2つのロープノードにロープを接続します. ロープの力が変化すると反対側のロープの長さが変化します.
+def_winch_pulley_corner_s_desc		A pulley that changes attached rope lengths based on forces applied to ropes.	ロープにかかる力に基づいて接続されたロープの長さを変化させる滑車です.
+def_winch_pulley_corner_node_0_label		Rope 1 Length	ロープ1の長さ
+def_winch_pulley_corner_node_0_desc		The current length of rope 1 in metres.	ロープ1の長さをメートル単位で出力します.
+def_winch_pulley_corner_node_1_label		Rope 2 Length	ロープ2の長さ
+def_winch_pulley_corner_node_1_desc		The current length of rope 2 in metres.	ロープ2の長さをメートル単位で出力します.
+def_winch_pulley_corner_node_2_label		Rope 2	ロープ2
+def_winch_pulley_corner_node_2_desc			
+def_winch_pulley_corner_node_3_label		Rope 1	ロープ1
+def_winch_pulley_corner_node_3_desc			
 def_window_1x1_name		Window 1x1	窓 (平面, 1x1)
 def_window_1x1_desc		Sits flush with walls and ceilings.	壁や天井に適合します.
 def_window_1x1_s_desc		Basic window piece.	基本的な窓の部品です.
