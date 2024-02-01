@@ -2391,7 +2391,7 @@ id	description	en	local
 		Exploration Space Suit	宇宙探査服
 		Oxygen	酸素
 		Nitrogen	窒素
-		Solid Propellant	個体推進剤
+		Solid Propellant	固体推進剤
 		Hydrogen	水素
 		Space DLC	宇宙DLC
 		Moon	月
@@ -2409,6 +2409,53 @@ id	description	en	local
 		Gila Monster	アメリカドクトカゲ
 		Desert Tortoise	サバクゴファーガメ
 		Merch Store	Stormworksグッズストア
+		Fish	魚
+		Fishing Rod	釣り竿	
+		[$[action_equipment_use]] Cast [$[action_equipment_secondary]] Reel in	[$[action_equipment_use]] キャスト [$[action_equipment_secondary]] リールを巻く
+		Fishing Lure	ルアー
+		Anchovy	カタクチイワシ
+		Anglerfish	アンコウ
+		Arctic Char	ホッキョクイワナ
+		Ballan Lizardfish	バランエソ
+		Ballan Wrasse	バランベラ
+		Barreleye Fish	デメニギス
+		Black Bream	クロダイ
+		Black Dragonfish	ナンヨウミツマタヤリウ
+		Clownfish	クマノミ
+		Cod	タラ
+		Dolphinfish	シイラ
+		Gulper Eel	フクロウナギ
+		Haddock	コダラ
+		Hake	メルルーサ
+		Herring	ニシン
+		John Dory	マトウダイ
+		Labrus	ラブルス
+		Lanternfish	ハダカイワシ
+		Mackerel	サバ
+		Midshipman	イサリビガマアンコウ
+		Perch	パーチ
+		Pike	パイク
+		Pinecone Fish	マツカサウオ
+		Pollock	スケトウダラ
+		Red Mullet	ウミヒゴイ
+		Rockfish	メバル
+		Sablefish	ギンダラ
+		Salmon	サケ
+		Sardine	イワシ
+		Scad	アジ
+		Sea Bream	タイ
+		Sea Halibut	オヒョウ
+		Sea Piranha	ピラニア
+		Seabass	シーバス
+		Slimehead	マルヒウチダイ
+		Snapper	フエダイ
+		Golden Snapper	ゴウシュウキンメ
+		Snook	スヌーク
+		Spadefish	マンジュウダイ
+		Trout	マス
+		Tubeshoulders Fish	ハナメイワシ
+		Viperfish	ハナメイワシ
+		Yellowfin Tuna	キハダ
 		Main	メイン
 		Arctic	北極
 		Sawyer	ソーヤー島
@@ -2416,7 +2463,7 @@ id	description	en	local
 		Meier	マイヤー
 		Moon	月
 		Stabilization Threshold	安定閾値
-		Missing required solid propellant to fuel solid rockets to requested level	指定された容量まで燃料を補給するだけの個体推進剤が足りません.
+		Missing required solid propellant to fuel solid rockets to requested level	指定された容量まで燃料を補給するだけの固体推進剤が足りません.
 		30 Dollar Train Yard	30ドル操車場
 		A train yard adjacent to the Monkey Brain Launch site and Clarke Airfield.	モンキー・ブレイン発射場とクラーク飛行場に隣接する操車場です.
 		Threshold (+/-)	閾値 (+/-)
@@ -4454,6 +4501,11 @@ def_inventory_equipment_first_aid_desc		Press [$[action_equipment_use]] to heal 
 def_inventory_equipment_first_aid_s_desc		A small equipment storage unit containing a first aid kit.	治療セットが保管されている小型の保管庫です.
 def_inventory_equipment_first_aid_node_0_label		Electric	電力
 def_inventory_equipment_first_aid_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_fishing_rod_name		Equipment inventory (Fishing Rod)	保管庫 (中, 釣り竿)
+def_inventory_equipment_fishing_rod_desc		Hold [$[action_equipment_use]] to repair damaged vehicle components highlighted by the players crosshair. This equipment has a limited fuel capacity and cannot be refilled.	[$[action_equipment_use]] を押して釣り竿をキャストします. その後, [$[action_equipment_secondary]] を押してリールを巻きます.
+def_inventory_equipment_fishing_rod_s_desc		A large equipment storage unit containing a welding torch.	釣り竿が保管されている中型の保管庫です.
+def_inventory_equipment_fishing_rod_node_0_label		Electric	電力
+def_inventory_equipment_fishing_rod_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_flare_name		Equipment inventory (Flare)	保管庫 (小, 発煙筒)
 def_inventory_equipment_flare_desc		Press [$[action_equipment_use]] to throw a red smoke flare which burns for a long time.	[$[action_equipment_use]] を押して発煙筒を投げ, 赤い煙が長時間発生します.
 def_inventory_equipment_flare_s_desc		A small equipment storage unit containing flares.	発煙筒が保管されている小型の保管庫です.
@@ -6787,7 +6839,7 @@ def_ski_small_s_desc		A small hinged ski.	小型の乗り物用スキー板で�
 def_ski_small_node_0_label		Steering	操舵
 def_ski_small_node_0_desc		Accepts a value between -1 and 1 that represents the extremes of the steering rotation.	-1から1の範囲の数値で操舵します.
 def_slurry_filter_name		Slurry Filter	スラリー液フィルター
-def_slurry_filter_desc		A pipe with a solids filter that consumes fresh water to slowly convert saturated slurry to slurry and allows free flow of slurry.	淡水を消費して飽和スラリー液をスラリ液へ戻す個体フィルターが内部に備え付けてあります. フィルター間でスラリー液は自由に移動します.
+def_slurry_filter_desc		A pipe with a solids filter that consumes fresh water to slowly convert saturated slurry to slurry and allows free flow of slurry.	淡水を消費して飽和スラリー液をスラリ液へ戻す固体フィルターが内部に備え付けてあります. フィルター間でスラリー液は自由に移動します.
 def_slurry_filter_s_desc		A filter that slowly desaturates slurry.	ゆっくりとスラリー液を浄化するフィルターです.
 def_slurry_filter_node_0_label		Water In	淡水注入
 def_slurry_filter_node_0_desc		Water Input.	炭水を注入します.
@@ -6979,23 +7031,23 @@ def_steam_boiler_node_5_label		Temperature	温度
 def_steam_boiler_node_5_desc			ボイラーの中の温度を出力します. 100度を超えると蒸気が発生し始めます.
 def_steam_boiler_node_6_label		Pressure	圧力
 def_steam_boiler_node_6_desc			ボイラーの中の圧力を出力します. 10を超えるとボイラーが爆発します.
-def_steam_coal_duct_name		Mineral Duct	鉱物ダクト (小)
-def_steam_coal_duct_desc		Transports minerals through the connected system.	接続されている部品へ鉱物を輸送します.
-def_steam_coal_duct_s_desc		A basic mineral duct.	基本的な小型の鉱物ダクトです.
-def_steam_coal_duct_node_0_label		Mineral Level	鉱物の量
-def_steam_coal_duct_node_0_desc			ダクトの中の石炭の量を出力します.
-def_steam_coal_duct_l_name		Mineral Duct Large	鉱物ダクト (大)
-def_steam_coal_duct_l_desc		Transports minerals through the connected system.	接続されている部品へ鉱物を輸送します.
-def_steam_coal_duct_l_s_desc		A basic mineral duct.	基本的な中型の鉱物ダクトです.
-def_steam_coal_duct_l_node_0_label		Mineral Level	鉱物の量
-def_steam_coal_duct_l_node_0_desc			ダクトの中の石炭の量を出力します.
-def_steam_coal_duct_m_name		Mineral Duct Medium	鉱物ダクト (中)
-def_steam_coal_duct_m_desc		Transports minerals through the connected system.	接続されている部品へ鉱物を輸送します.
-def_steam_coal_duct_m_s_desc		A basic mineral duct.	基本的な大型の鉱物ダクトです.
-def_steam_coal_duct_m_node_0_label		Mineral Level	鉱物の量
-def_steam_coal_duct_m_node_0_desc			ダクトの中の石炭の量を出力します.
+def_steam_coal_duct_name		Duct	物資ダクト (小)
+def_steam_coal_duct_desc		Transports resources through the connected system.	接続されている部品へ物資を輸送します.
+def_steam_coal_duct_s_desc		A basic resource duct.	基本的な小型の物資ダクトです.
+def_steam_coal_duct_node_0_label		Fill Level	物資の量
+def_steam_coal_duct_node_0_desc			ダクトの中の物資の量を出力します.
+def_steam_coal_duct_l_name		Duct Large	物資ダクト (大)
+def_steam_coal_duct_l_desc		Transports resources through the connected system.	接続されている部品へ物資を輸送します.
+def_steam_coal_duct_l_s_desc		A basic resource duct.	基本的な中型の物資ダクトです.
+def_steam_coal_duct_l_node_0_label		Fill Level	物資の量
+def_steam_coal_duct_l_node_0_desc			ダクトの中の物資の量を出力します.
+def_steam_coal_duct_m_name		Duct Medium	物資ダクト (中)
+def_steam_coal_duct_m_desc		Transports resources through the connected system.	接続されている部品へ物資を輸送します.
+def_steam_coal_duct_m_s_desc		A basic resource duct.	基本的な大型の物資ダクトです.
+def_steam_coal_duct_m_node_0_label		Fill Level	物資の量
+def_steam_coal_duct_m_node_0_desc			ダクトの中の物資の量を出力します.
 def_steam_coal_firebox_name		Firebox	石炭燃焼室 (小)
-def_steam_coal_firebox_desc		Produces large amounts of heat. Can be supplied with a mineral duct. Consumes 1 coal to ignite the fire.	ボイラーなどで使用する熱を大量に発生させます. 鉱物ダクトで石炭を供給できます. 点火時に石炭を1個消費します.
+def_steam_coal_firebox_desc		Produces large amounts of heat. Can be supplied with a mineral duct. Consumes 1 coal to ignite the fire.	ボイラーなどで使用する熱を大量に発生させます. 物資ダクトで石炭を供給できます. 点火時に石炭を1個消費します.
 def_steam_coal_firebox_s_desc		A coal powered firebox.	石炭を燃焼させる小型の燃焼室です.
 def_steam_coal_firebox_node_0_label		Coal Level	石炭の量
 def_steam_coal_firebox_node_0_desc			燃焼室の中の石炭の量を出力します.
@@ -7012,7 +7064,7 @@ def_steam_coal_firebox_node_5_desc		Port for supplying air to the fire.	火炎�
 def_steam_coal_firebox_node_6_label		Exhaust	排煙
 def_steam_coal_firebox_node_6_desc		Port for removing exhaust from burnt coal.	燃焼室からの煙が排出されます.
 def_steam_coal_firebox_l_name		Firebox Large	石炭燃焼室 (大)
-def_steam_coal_firebox_l_desc		Produces large amounts of heat. Can be supplied with a mineral duct. Consumes 1 coal to ignite the fire.	ボイラーなどで使用する熱を大量に発生させます. 鉱物ダクトで石炭を供給できます. 点火時に石炭を1個消費します.
+def_steam_coal_firebox_l_desc		Produces large amounts of heat. Can be supplied with a duct. Consumes 1 coal to ignite the fire.	ボイラーなどで使用する熱を大量に発生させます. 物資ダクトで石炭を供給できます. 点火時に石炭を1個消費します.
 def_steam_coal_firebox_l_s_desc		A coal powered firebox.	石炭を燃焼させる大型の燃焼室です.
 def_steam_coal_firebox_l_node_0_label		Coal Level	石炭の量
 def_steam_coal_firebox_l_node_0_desc			燃焼室の中の石炭の量を出力します.
@@ -7028,26 +7080,33 @@ def_steam_coal_firebox_l_node_5_label		Air	空気
 def_steam_coal_firebox_l_node_5_desc		Port for supplying air to the fire.	火炎室を動かすために供給される空気です.
 def_steam_coal_firebox_l_node_6_label		Exhaust	排煙
 def_steam_coal_firebox_l_node_6_desc		Port for removing exhaust from burnt coal.	燃焼室からの煙が排出されます.
-def_steam_coal_funnel_name		Mineral Funnel	鉱物排出口
-def_steam_coal_funnel_desc		Can be toggled to slowly move minerals out of the connected system.	オン信号を受け取ると中の鉱物をゆっくり排出します.
-def_steam_coal_funnel_s_desc		A funnel for moving minerals.	鉱物を排出する排出口です.
+def_steam_coal_funnel_name		Funnel Duct	物資排出口
+def_steam_coal_funnel_desc		Can be toggled to slowly move resources out of the connected system.	オン信号を受け取ると中の物資をゆっくり排出します.
+def_steam_coal_funnel_s_desc		A funnel for moving resources.	物資を排出する排出口です.
 def_steam_coal_funnel_node_0_label		Open	排出
-def_steam_coal_funnel_node_0_desc			オン信号を受け取ると中の鉱物をゆっくり排出します.
-def_steam_coal_hopper_name		Mineral Hopper	鉱物ホッパー (小)
-def_steam_coal_hopper_desc		Pouring minerals into the receptacle will add it to the connected system.	上部に鉱物を落とすと自動的に内部に取り込みます.
-def_steam_coal_hopper_s_desc		A hopper that can accept minerals.	鉱物を中に入れる小型のホッパーです.
-def_steam_coal_hopper_node_0_label		Mineral Level	鉱物の量
-def_steam_coal_hopper_node_0_desc			ホッパーの中の鉱物の量を出力します.
-def_steam_coal_hopper_l_name		Mineral Hopper Large	鉱物ホッパー (大)
-def_steam_coal_hopper_l_desc		Pouring minerals into the receptacle will add it to the connected system.	上部に鉱物を落とすと自動的に内部に取り込みます.
-def_steam_coal_hopper_l_s_desc		A hopper that can accept minerals.	鉱物を中に入れる大型のホッパーです.
-def_steam_coal_hopper_l_node_0_label		Mineral Level	鉱物の量
-def_steam_coal_hopper_l_node_0_desc			ホッパーの中の鉱物の量を出力します.
-def_steam_coal_hopper_m_name		Mineral Hopper Medium	鉱物ホッパー (中)
-def_steam_coal_hopper_m_desc		Pouring minerals into the receptacle will add it to the connected system.	上部に鉱物を落とすと自動的に内部に取り込みます.
-def_steam_coal_hopper_m_s_desc		A hopper that can accept minerals.	鉱物を中に入れる中型のホッパーです.
-def_steam_coal_hopper_m_node_0_label		Mineral Level	鉱物の量
-def_steam_coal_hopper_m_node_0_desc			ホッパーの中の鉱物の量を出力します.
+def_steam_coal_funnel_node_0_desc			オン信号を受け取ると中の物資をゆっくり排出します.
+def_steam_coal_hopper_name		Hopper	物資ホッパー (小)
+def_steam_coal_hopper_desc		Pouring resources into the receptacle will add it to the connected system.	上部に物資を落とすと自動的に内部に取り込みます.
+def_steam_coal_hopper_s_desc		A hopper that can accept bulk minerals, ingots, and fish.	物資を中に入れる小型のホッパーです. 鉱物, 延べ棒, 魚を扱うことができます.
+def_steam_coal_hopper_node_0_label		Fill Level	物資の量
+def_steam_coal_hopper_node_0_desc			ホッパーの中の物資の量を出力します.
+def_steam_coal_hopper_l_name		Hopper Large	物資ホッパー (大)
+def_steam_coal_hopper_l_desc		Pouring resources into the receptacle will add it to the connected system.	上部に物資を落とすと自動的に内部に取り込みます.
+def_steam_coal_hopper_l_s_desc		A hopper that can accept bulk minerals, ingots, and fish.	物資を中に入れる大型のホッパーです. 鉱物, 延べ棒, 魚を扱うことができます.
+def_steam_coal_hopper_l_node_0_label		Fill Level	物資の量
+def_steam_coal_hopper_l_node_0_desc			ホッパーの中の物資の量を出力します.
+def_steam_coal_hopper_m_name		Hopper Medium	物資ホッパー (中)
+def_steam_coal_hopper_m_desc		Pouring resources into the receptacle will add it to the connected system.	上部に物資を落とすと自動的に内部に取り込みます.
+def_steam_coal_hopper_m_s_desc		A hopper that can accept bulk minerals, ingots, and fish.	物資を中に入れる中型のホッパーです. 鉱物, 延べ棒, 魚を扱うことができます.
+def_steam_coal_hopper_m_node_0_label		Fill Level	物資の量
+def_steam_coal_hopper_m_node_0_desc			ホッパーの中の物資の量を出力します.
+def_steam_coal_vacuum_name		Vacuum Duct	物資ダクト (吸引)
+def_steam_coal_vacuum_desc		Can be toggled to move resources through the vacuum. The vacuum can transport resources from ducts and hoppers immediately in front of the vacuum nozzle.	吸引機能はオンオフできます. 吸引口の目の前にあるダクトやホッパーから物資を輸送できます.
+def_steam_coal_vacuum_s_desc		A vacuum for moving resources.	物資を吸引して輸送するダクトです.
+def_steam_coal_vacuum_node_0_label		Active	吸引
+def_steam_coal_vacuum_node_0_desc			オン信号を受け取ると, 目の前のダクトやホッパーから物資を吸引します.
+def_steam_coal_vacuum_node_1_label		Electric	電力
+def_steam_coal_vacuum_node_1_desc		Electrical input.	電力網から電力を供給します.
 def_steam_condenser_name		Steam Condenser	復水器
 def_steam_condenser_desc		The condenser should be continously cooled to function efficiently.	復水器を効率的に動作させるには, 継続的な冷却を行って下さい.
 def_steam_condenser_s_desc		A condenser for converting steam back to water.	蒸気を水に戻す復水器です.
