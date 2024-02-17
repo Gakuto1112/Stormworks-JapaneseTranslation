@@ -1386,7 +1386,7 @@ id	description	en	local
 		Vehicle Functionality	乗り物の名前
 		Misc.	その他
 		tags	タグ
-		Vehicle (Made by ###)	乗り物 (### 製)
+		 (Made by ###)	 (### 製)
 		SERVER: ### TPS	サーバー: ### TPS
 		### Degrees	### 度
 		Last updated ###	最終更新: ###
@@ -2410,7 +2410,7 @@ id	description	en	local
 		Desert Tortoise	サバクゴファーガメ
 		Merch Store	Stormworksグッズストア
 		Fish	魚
-		Fishing Rod	釣り竿	
+		Fishing Rod	釣り竿
 		[$[action_equipment_use]] Cast [$[action_equipment_secondary]] Reel in	[$[action_equipment_use]] キャスト [$[action_equipment_secondary]] リールを巻く
 		Fishing Lure	ルアー
 		Anchovy	カタクチイワシ
@@ -4970,7 +4970,7 @@ def_liquid_rocket_node_4_label		Gimbal Z	z角度
 def_liquid_rocket_node_4_desc			ロケットが飛ぶz方向の向きです.
 def_liquid_rocket_node_5_label		Gimbal X	x角度
 def_liquid_rocket_node_5_desc			ロケットが飛ぶx方向の向きです.
-def_liquid_rocket_node_6_label		Thottle	スロットル
+def_liquid_rocket_node_6_label		Throttle	スロットル
 def_liquid_rocket_node_6_desc			ロケットの出力の強さを制御します.
 def_liquid_rocket_large_name		Liquid Fuel Rocket (Large)	液化燃料ロケット (大)
 def_liquid_rocket_large_desc		Fuel with liquid oxygen and hydrogen.	液体酸素と液体窒素を燃料にします.
@@ -4987,7 +4987,7 @@ def_liquid_rocket_large_node_4_label		Gimbal Z	z角度
 def_liquid_rocket_large_node_4_desc			ロケットが飛ぶz方向の向きです.
 def_liquid_rocket_large_node_5_label		Gimbal X	x角度
 def_liquid_rocket_large_node_5_desc			ロケットが飛ぶx方向の向きです.
-def_liquid_rocket_large_node_6_label		Thottle	スロットル
+def_liquid_rocket_large_node_6_label		Throttle	スロットル
 def_liquid_rocket_large_node_6_desc			ロケットの出力の強さを制御します.
 def_liquid_rocket_small_name		Liquid Fuel Rocket (Small)	液化燃料ロケット (小)
 def_liquid_rocket_small_desc		Fuel with liquid oxygen and hydrogen.	液体酸素と液体窒素を燃料にします.
@@ -5004,7 +5004,7 @@ def_liquid_rocket_small_node_4_label		Gimbal Z	z角度
 def_liquid_rocket_small_node_4_desc			ロケットが飛ぶz方向の向きです.
 def_liquid_rocket_small_node_5_label		Gimbal X	x角度
 def_liquid_rocket_small_node_5_desc			ロケットが飛ぶx方向の向きです.
-def_liquid_rocket_small_node_6_label		Thottle	スロットル
+def_liquid_rocket_small_node_6_label		Throttle	スロットル
 def_liquid_rocket_small_node_6_desc			ロケットの出力の強さを制御します.
 def_magall_name		Mag All	コネクター (マグオール)
 def_magall_desc		While the connector is active the end will glow and it will stick to most surfaces that it touches. The connection will break if enough stress (200) is applied.	起動している状態でオブジェクトや地形に触れると自動的に接続されます. 200以上の負荷がかかると接続が切れてしまいます.
@@ -5017,6 +5017,9 @@ def_magall_node_2_label		Force	負荷
 def_magall_node_2_desc		Outputs the current force stress on the connector.	コネクターにかかる負荷を出力します. 負荷が大き過ぎると接続が切れてしまいます.
 def_magall_node_3_label		Electric	電力
 def_magall_node_3_desc		Electrical power connection.	電力網から電力を供給します.
+def_map_icon_name		Map Icon Block	マップアイコンブロック
+def_map_icon_desc		When on a vehicle, the vehicle will show on the map and other vehicles in the group will be hidden. The custom name set here will be the name set on the map.	乗り物に設置するとマップ上にアイコンが表示され, 通常の乗り物アイコンは表示されなくなります. 設定した乗り物名はマップ上でも表示されます.
+def_map_icon_s_desc		A vehicle tracking block.	乗り物をマップから追跡できるブロックです.
 def_mic_name		Microphone	マイク
 def_mic_desc		A simple microphone that picks up voice data from nearby players. (Range : 15)	プレイヤーの声を認識する範囲は15メートルです.
 def_mic_s_desc		A microphone for transmitting player voice data.	プレイヤーの声を音声信号として出力できるマイクです.
@@ -6757,8 +6760,8 @@ def_seat_racing_node_15_desc			ヘッドセットが選択されているとき�
 def_seat_racing_node_16_label		Headset Audio	ヘッドセット音声信号入力
 def_seat_racing_node_16_desc			ヘッドセットが選択されているときに, 座っているプレイヤーへ音声を再生します.
 def_seat_space_name		Space Seat	宇宙用運転席
-def_seat_space_desc		You can get in and out of the position by interacting with it using [$[action_use_seat]].	キーボードなどで-1から1の範囲を操作できる数値信号を4個, オン/オフ信号を7個提供し, 使用している人の視点方向も出力されます. [$[action_use_seat]] を使用したり使用をやめたりします. キーの挙動などはプロパティウィンドウから設定できます.
-def_seat_space_s_desc		A compact control handle.	小型の操作ハンドルです.
+def_seat_space_desc		It provides 4 number outputs that produce a standard value ranging from -1 to 1, and 6 on/off outputs. You can get in and out of the space seat by interacting with it using [$[action_use_seat]].	キーボードなどで-1から1の範囲を操作できる数値信号を4個, オン/オフ信号を6個提供し, 使用している人の視点方向も出力されます. [$[action_use_seat]] を使用したり使用をやめたりします. キーの挙動などはプロパティウィンドウから設定できます.
+def_seat_space_s_desc		The space seat lets you translate keyboard presses into output signals that can control logic components.	キー押下で論理システムを制御できるように信号を出力します.
 def_seat_space_node_0_label		Occupied	使用中
 def_seat_space_node_0_desc		Outputs an on signal if the handle is occupied by a character.	誰かが使用しているとオン信号を出力します.
 def_seat_space_node_1_label		Trigger [$[action_trigger]]	トリガーボタン [$[action_trigger]]
