@@ -456,7 +456,7 @@ id	description	en	local
 		Hardcore mode with permadeath (save file will be deleted upon death).	ハードコアモードです. 一度でも死亡するとセーブデータは削除されます.
 		Custom difficulty settings.	カスタム難易度設定です.
 		Custom mode. A sandbox environment with an array of settings to customise your session. Career or Creative.	カスタムモードです. サンドボックスモードの環境で, 様々なゲーム設定を変更できます. キャリアモードまたはクリエイティブモードとして機能します.
-		Classic mode. Career mode with research tree, third person, and teleport.	クラシックモードです. 研究要素, 三人称視点, テレポートのあるキャリアモードです.
+		Classic mode. Career mode with research tree and third person.	クラシックモードです. 研究要素, 三人称視点が利用可能なキャリアモードです.
 		Career mode. Expand your coastguard empire. Complete missions with survival style settings.	キャリアモードです. 自分の領土を広げよう. サバイバル設定でミッションに挑戦しよう.
 		Custom game mode settings.	カスタムゲームモード設定です.
 		PLEASE CHOOSE ANOTHER KEY	他のキーを割り当てて下さい.
@@ -4502,8 +4502,8 @@ def_inventory_equipment_first_aid_s_desc		A small equipment storage unit contain
 def_inventory_equipment_first_aid_node_0_label		Electric	電力
 def_inventory_equipment_first_aid_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_fishing_rod_name		Equipment inventory (Fishing Rod)	保管庫 (中, 釣り竿)
-def_inventory_equipment_fishing_rod_desc		Hold [$[action_equipment_use]] to repair damaged vehicle components highlighted by the players crosshair. This equipment has a limited fuel capacity and cannot be refilled.	[$[action_equipment_use]] を押して釣り竿をキャストします. その後, [$[action_equipment_secondary]] を押してリールを巻きます.
-def_inventory_equipment_fishing_rod_s_desc		A large equipment storage unit containing a welding torch.	釣り竿が保管されている中型の保管庫です.
+def_inventory_equipment_fishing_rod_desc		Hold and release [$[action_equipment_use]] to load and cast the fishing line. Hold [$[action_equipment_secondary]] to reel in the fishing line.	[$[action_equipment_use]] を長押しし, 離すことで釣り竿をキャストします. その後, [$[action_equipment_secondary]] を押してリールを巻きます.
+def_inventory_equipment_fishing_rod_s_desc		A large equipment storage unit containing a fishing rod.	釣り竿が保管されている中型の保管庫です.
 def_inventory_equipment_fishing_rod_node_0_label		Electric	電力
 def_inventory_equipment_fishing_rod_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_flare_name		Equipment inventory (Flare)	保管庫 (小, 発煙筒)
@@ -4964,14 +4964,12 @@ def_liquid_rocket_node_1_label		Hydrogen	液体水素
 def_liquid_rocket_node_1_desc			液体水素を注入します.
 def_liquid_rocket_node_2_label		Ignition	点火
 def_liquid_rocket_node_2_desc			オン信号を受け取るとロケットに点火します.
-def_liquid_rocket_node_3_label		Electric	電力
-def_liquid_rocket_node_3_desc			電力網から電力を供給します.
-def_liquid_rocket_node_4_label		Gimbal Z	z角度
-def_liquid_rocket_node_4_desc			ロケットが飛ぶz方向の向きです.
-def_liquid_rocket_node_5_label		Gimbal X	x角度
-def_liquid_rocket_node_5_desc			ロケットが飛ぶx方向の向きです.
-def_liquid_rocket_node_6_label		Throttle	スロットル
-def_liquid_rocket_node_6_desc			ロケットの出力の強さを制御します.
+def_liquid_rocket_node_3_label		Gimbal Z	z角度
+def_liquid_rocket_node_3_desc			ロケットが飛ぶz方向の向きです.
+def_liquid_rocket_node_4_label		Gimbal X	x角度
+def_liquid_rocket_node_4_desc			ロケットが飛ぶx方向の向きです.
+def_liquid_rocket_node_5_label		Throttle	スロットル
+def_liquid_rocket_node_5_desc			ロケットの出力の強さを制御します.
 def_liquid_rocket_large_name		Liquid Fuel Rocket (Large)	液化燃料ロケット (大)
 def_liquid_rocket_large_desc		Fuel with liquid oxygen and hydrogen.	液体酸素と液体窒素を燃料にします.
 def_liquid_rocket_large_s_desc		A liquid fuel rocket engine.	液化燃料で動作するロケットです.
@@ -4981,14 +4979,12 @@ def_liquid_rocket_large_node_1_label		Hydrogen	液体水素
 def_liquid_rocket_large_node_1_desc			液体水素を注入します.
 def_liquid_rocket_large_node_2_label		Ignition	点火
 def_liquid_rocket_large_node_2_desc			オン信号を受け取るとロケットに点火します.
-def_liquid_rocket_large_node_3_label		Electric	電力
-def_liquid_rocket_large_node_3_desc			電力網から電力を供給します.
-def_liquid_rocket_large_node_4_label		Gimbal Z	z角度
-def_liquid_rocket_large_node_4_desc			ロケットが飛ぶz方向の向きです.
-def_liquid_rocket_large_node_5_label		Gimbal X	x角度
-def_liquid_rocket_large_node_5_desc			ロケットが飛ぶx方向の向きです.
-def_liquid_rocket_large_node_6_label		Throttle	スロットル
-def_liquid_rocket_large_node_6_desc			ロケットの出力の強さを制御します.
+def_liquid_rocket_large_node_3_label		Gimbal Z	z角度
+def_liquid_rocket_large_node_3_desc			ロケットが飛ぶz方向の向きです.
+def_liquid_rocket_large_node_4_label		Gimbal X	x角度
+def_liquid_rocket_large_node_4_desc			ロケットが飛ぶx方向の向きです.
+def_liquid_rocket_large_node_5_label		Throttle	スロットル
+def_liquid_rocket_large_node_5_desc			ロケットの出力の強さを制御します.
 def_liquid_rocket_small_name		Liquid Fuel Rocket (Small)	液化燃料ロケット (小)
 def_liquid_rocket_small_desc		Fuel with liquid oxygen and hydrogen.	液体酸素と液体窒素を燃料にします.
 def_liquid_rocket_small_s_desc		A liquid fuel rocket engine.	液化燃料で動作するロケットです.
@@ -4998,14 +4994,12 @@ def_liquid_rocket_small_node_1_label		Hydrogen	液体水素
 def_liquid_rocket_small_node_1_desc			液体水素を注入します.
 def_liquid_rocket_small_node_2_label		Ignition	点火
 def_liquid_rocket_small_node_2_desc			オン信号を受け取るとロケットに点火します.
-def_liquid_rocket_small_node_3_label		Electric	電力
-def_liquid_rocket_small_node_3_desc			電力網から電力を供給します.
-def_liquid_rocket_small_node_4_label		Gimbal Z	z角度
-def_liquid_rocket_small_node_4_desc			ロケットが飛ぶz方向の向きです.
-def_liquid_rocket_small_node_5_label		Gimbal X	x角度
-def_liquid_rocket_small_node_5_desc			ロケットが飛ぶx方向の向きです.
-def_liquid_rocket_small_node_6_label		Throttle	スロットル
-def_liquid_rocket_small_node_6_desc			ロケットの出力の強さを制御します.
+def_liquid_rocket_small_node_3_label		Gimbal Z	z角度
+def_liquid_rocket_small_node_3_desc			ロケットが飛ぶz方向の向きです.
+def_liquid_rocket_small_node_4_label		Gimbal X	x角度
+def_liquid_rocket_small_node_4_desc			ロケットが飛ぶx方向の向きです.
+def_liquid_rocket_small_node_5_label		Throttle	スロットル
+def_liquid_rocket_small_node_5_desc			ロケットの出力の強さを制御します.
 def_magall_name		Mag All	コネクター (マグオール)
 def_magall_desc		While the connector is active the end will glow and it will stick to most surfaces that it touches. The connection will break if enough stress (200) is applied.	起動している状態でオブジェクトや地形に触れると自動的に接続されます. 200以上の負荷がかかると接続が切れてしまいます.
 def_magall_s_desc		A small connector that will attach to most surfaces.	殆どのオブジェクトや地形に接続できるコネクターです.
@@ -6186,9 +6180,9 @@ def_rx_directional_node_6_desc		Strength of connection signal.	信号受信時�
 def_rx_directional_node_7_label		Transmit Mode	送信
 def_rx_directional_node_7_desc		Whether the radio is transmitting or receiving.	オン信号を受け取るとこのアンテナから情報を送信します. この間は無線信号の受信ができません.
 def_rx_directional_node_8_label		Target Pitch	目標ピッチ
-def_rx_directional_node_8_desc		Target dish pitch in turns.	アンテナのピッチ角を回転単位で指定します.
+def_rx_directional_node_8_desc		Target dish pitch in turns. Max 0.1	アンテナのピッチ角を回転単位で指定します. 最大値は0.1です.
 def_rx_directional_node_9_label		Target Yaw	目標ヨー
-def_rx_directional_node_9_desc		Target dish yaw in turns. Max 0.1	アンテナのヨー角を回転単位で指定します. 最大値は0.1です.
+def_rx_directional_node_9_desc		Target dish yaw in turns.	アンテナのヨー角を回転単位で指定します.
 def_rx_directional_node_10_label		Video Send	映像信号送信
 def_rx_directional_node_10_desc		Input for video data to send.	指定された周波数で映像信号を送信します.
 def_rx_directional_node_11_label		Video Recv	映像信号受信
@@ -6213,9 +6207,9 @@ def_rx_directional_large_node_6_desc		Strength of connection signal.	信号受�
 def_rx_directional_large_node_7_label		Transmit Mode	送信
 def_rx_directional_large_node_7_desc		Whether the radio is transmitting or receiving.	オン信号を受け取るとこのアンテナから情報を送信します. この間は無線信号の受信ができません.
 def_rx_directional_large_node_8_label		Target Pitch	目標ピッチ
-def_rx_directional_large_node_8_desc		Target dish pitch in turns.	アンテナのピッチ角を回転単位で指定します.
+def_rx_directional_large_node_8_desc		Target dish pitch in turns. Max 0.1	アンテナのピッチ角を回転単位で指定します. 最大値は0.1です.
 def_rx_directional_large_node_9_label		Target Yaw	目標ヨー
-def_rx_directional_large_node_9_desc		Target dish yaw in turns. Max 0.1	アンテナのヨー角を回転単位で指定します. 最大値は0.1です.
+def_rx_directional_large_node_9_desc		Target dish yaw in turns.	アンテナのヨー角を回転単位で指定します.
 def_rx_directional_large_node_10_label		Video Send	映像信号送信
 def_rx_directional_large_node_10_desc		Input for video data to send.	指定された周波数で映像信号を送信します.
 def_rx_directional_large_node_11_label		Video Recv	映像信号受信
