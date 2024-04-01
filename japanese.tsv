@@ -229,7 +229,7 @@ id	description	en	local
 		Seabed Rock Formation 2	海底の岩礁2
 		Two small rock formations on the ocean bed.	2つの小さな海底の岩礁です.
 		Seabed Rock Formation 3	海底の岩礁3
-		Multiple scattered rock stacks on the ocean bed.	いくつもの海食柱が点在している海底の岩礁です。
+		Multiple scattered rock stacks on the ocean bed.	いくつもの海食柱が点在している海底の岩礁です. 
 		Seabed Rock Formation 4	海底の岩礁4
 		A flat rocky formation with central mound on the ocean bed.	中央に塚がある平らな海底の岩礁です.
 		Seabed Rock Formation 5	海底の岩礁5
@@ -969,7 +969,7 @@ id	description	en	local
 		[###] is a reserved key	[###] は予約されているキーです.
 		Mission '###' must be renamed to something other than '###'	ミッション「###」は「###」以外に名前を変更する必要があります.
 		Objective ### in mission '###' has no name	目的 ### (ミッション「###」) は名前がありません.
-		Objective ### in mission '###' has no description	目的 ### (ミッション「###」) は説明がありません。
+		Objective ### in mission '###' has no description	目的 ### (ミッション「###」) は説明がありません. 
 		Objective ### in mission '###' has unfulfilled component dependencies	目的 ### (ミッション「###」) の関係性が満たされません.
 		### is already bound to [###]	### は既に [###] に割り当てられています.
 		### is bound to [###]	### は [###] に割り当てられています.
@@ -3554,7 +3554,7 @@ def_gas_measure_s_desc		A device to measure how much gas is within an enclosed v
 def_gas_measure_node_0_label		Gas Level	気体量
 def_gas_measure_node_0_desc		Returns the number of litres of gas in an enclosed volume.	密閉空間内の気体の量をリットル単位で出力します.
 def_gas_measure_node_1_label		Fluid Capacity	貯蔵容量
-def_gas_measure_node_1_desc		Returns the total capacity of an enclosed volume in litres, or 0 if not enclosed.	密閉空間内に貯蔵できる最大の気体の量をリットル単位で出力します. 0が出力される場合、センサーが面している空間は密閉されていないことを表します.
+def_gas_measure_node_1_desc		Returns the total capacity of an enclosed volume in litres, or 0 if not enclosed.	密閉空間内に貯蔵できる最大の気体の量をリットル単位で出力します. 0が出力される場合, センサーが面している空間は密閉されていないことを表します.
 def_gas_measure_node_2_label		Composite Data	複合データ
 def_gas_measure_node_2_desc		Outputs the volumes of individual gas types on their respective channel. The data can be directly merged with a Liquid meter. The Air fluid type is equivalent to the sum of the oxygen, carbon dioxide and nitrogen values. Channels: 4-Air, 5-CO2, 8-Steam, 11-Oxygen, 12-Nitrogen, 13-Hydrogen.	それぞれの気体の量を出力します. 内圧計が使用する複合信号のチャンネルは, 貯水量計が使用するチャンネルと重複しないようになっています. "空気"は酸素と二酸化炭素と窒素を合計した量を示します. チャンネル: [4] 空気, [5] 二酸化炭素, [8] 蒸気, [11] 酸素, [12] 窒素, [13] 水素
 def_gate_bool_and_name		And	論理積 (AND)
