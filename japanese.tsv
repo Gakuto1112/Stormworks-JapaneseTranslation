@@ -944,8 +944,8 @@ id	description	en	local
 		Mission Markers for the First Person HUD.	一人称視点の時ミッションマーカーを表示します.
 		Starting Money	開始資金
 		CUSTOMISE GAME MODE	ゲーム設定
-		Unlock All Components	全ての部品をアンロック
-		Unlock All Properties	全ての物件を開放
+		Unlock All Components	全部品を解放
+		Unlock All Properties	全物件を開放
 		All purchasable properties are pre-purchased.	全ての物件が使用可能な状態になります.
 		Infinite Stock	在庫無制限
 		Infinite money, resources and components are available.	資金, 資源, 部品が無制限で使用できます.
@@ -1135,23 +1135,23 @@ id	description	en	local
 		Skeleton	ガイコツ
 		CUSTOM OPTIONS	ゲーム設定
 		Override Time	時間設定を上書き
-		Clean All Vehicles	全ての乗り物を削除
+		Clean All Vehicles	全ての乗り物を除去
 		Vehicle Cleanup	全ての乗り物の削除
 		Respawning	リスポーン
 		Vehicle Spawning	乗り物のスポーン
 		Teleport	任意の場所にテレポート
 		No-Clip	すり抜け
 		Name Plates	他のプレイヤー名表示
-		Allow 	許可 :
-		3D Waypoints	3Dウェイポイント
+		Allow 	許可: 
+		3D Waypoints	ワールドにウェイポイントを表示
 		Map Vehicles	マップに乗り物を表示
 		Map Players	マップにプレイヤーを表示
 		Engine Overheating	エンジンの過熱
 		Disable Weapons	武器の無効化
-		Infinite Ammo	弾無限
-		Infinite Fuel	燃料無限
-		Infinite Electric	電力無限
-		Infinite Resources	資源無限
+		Infinite Ammo	弾薬の無限化
+		Infinite Fuel	燃料の無限化
+		Infinite Electric	電力の無限化
+		Infinite Resources	資源の無限化
 		Sunrise/Sunset Time	日の出/日の入りの時刻
 		Day/Night Duration	1日の時間
 		Current Time	現在の時刻
@@ -1164,7 +1164,7 @@ id	description	en	local
 		Snow	雪
 		Spawn Tsunami	津波を発生させる
 		Cancel Tsunami	津波を止める
-		Reveal the Map	マップの全て表示する
+		Reveal the Map	マップの全領域を表示
 		TRIM	トリム
 		wave	手振り
 		yes	はい
@@ -1922,7 +1922,7 @@ id	description	en	local
 		Artillery Shell	大砲砲弾
 		Temperature	気温
 		Auto Refuel	燃料の自動補給
-		Third Person Vehicle	三人称視点の乗り物
+		Third Person Vehicle	搭乗時に三人称視点を許可
 		BLUEPRINT UNLOCK	設計図のアンロック
 		BLUEPRINT	設計図
 		AI	AI
@@ -1977,7 +1977,7 @@ id	description	en	local
 		Nuclear Power	原子力
 		Load	入れる
 		Unload	取り出す
-		Clean Radiation	放射線汚染の除去
+		Clean Radiation	放射線汚染を除去
 		Weapons	武器
 		Machine Gun Ammo Box (Kinetic)	機関銃の弾薬箱 (運動エネルギー弾)
 		Machine Gun Ammo Box (High Explosive)	機関銃の弾薬箱 (榴弾)
