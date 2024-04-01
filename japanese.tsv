@@ -2040,7 +2040,7 @@ id	description	en	local
 		Cancel Tornado	竜巻を止める
 		Spawn Meteor	隕石を飛来させる
 		Spawn Meteor Shower	隕石群を飛来させる
-		Spawn Volcanic Eruption	火山を噴火させる
+		Spawn Eruption	火山を噴火させる
 		Xmas Tree	クリスマスツリー
 		Xmas Stormworks	クリスマスStromworks柄
 		Xmas Stormworks 2	クリスマスStromworks柄2
@@ -2467,6 +2467,7 @@ id	description	en	local
 		30 Dollar Train Yard	30ドル操車場
 		A train yard adjacent to the Monkey Brain Launch site and Clarke Airfield.	モンキー・ブレイン発射場とクラーク飛行場に隣接する操車場です.
 		Threshold (+/-)	閾値 (+/-)
+		Clean Oil Spills	原油流出を除去
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
@@ -2656,7 +2657,7 @@ def_astronomy_sensor_name		Astronomy Sensor	軌道センサー
 def_astronomy_sensor_desc		Outputs relative position data based on the optimal target trajectory between the earth and moon.	地球と月の間の対象の最適な軌道に基づいた相対座標を出力します.
 def_astronomy_sensor_s_desc		A sensor that provides raw space navigation data.	宇宙航行データを出力するセンサーです.
 def_astronomy_sensor_node_0_label		Data	データ
-def_astronomy_sensor_node_0_desc		Outputs [1] x position relative to earth-moon trajectory -1 to 1, [2] y position realtive to earth-moon trajectory 0 (earth) to 1 (moon), [3] z position relative to earth-moon trajectory -1 to 1, [4] euler rotation x, [5] euler rotation y, [6] euler rotation z, [7] angular velocity x, [8] angular velocity y, [9] angular velocity z, [10] local z tilt and [11] local x tilt to the respective composite channels.	複合信号の各チャンネルに値を出力します: [1] 地球と月の軌道の相対x座標 (-1 - 1), [2] 地球と月の軌道の相対y座標 (-1 - 1), [3] 地球と月の軌道の相対z座標 (-1 - 1), [4] x軸オイラー回転, [5] y軸オイラー回転, [6] z軸オイラー回転, [7] x軸角速度, [8] y軸角速度, [9] z軸角度, [10] ローカル座標系でのz軸傾き, [11] ローカル座標系でのx軸傾き
+def_astronomy_sensor_node_0_desc		Outputs [1] x position in metres, [2] y position in metres (earth sea level is 0), [3] z position in metres, [4] euler rotation x, [5] euler rotation y, [6] euler rotation z, [7] angular velocity x, [8] angular velocity y, [9] angular velocity z, [10] local z tilt and [11] local x tilt to the respective composite channels.	複合信号の各チャンネルに値を出力します: [1] メートル単位でのx座標, [2] メートル単位でのy座標 (地球の海面が0メートル), [3] メートル単位でのz座標, [4] x軸オイラー回転, [5] y軸オイラー回転, [6] z軸オイラー回転, [7] x軸角速度, [8] y軸角速度, [9] z軸角度, [10] ローカル座標系でのz軸傾き, [11] ローカル座標系でのx軸傾き
 def_azimuth_thruster_name		Azimuth Thruster	アジマススラスター
 def_azimuth_thruster_desc		The thruster can be attached to a robotic pivot to provide steering as well as propulsion. This propeller will only operate underwater.	電動回転軸を取り付けることで舵取りもできます. 水中でのみ動作します.
 def_azimuth_thruster_s_desc		An azimuth thruster for boats.	ボート向けのアジマススラスターです.
@@ -7012,7 +7013,7 @@ def_stair_top_name		Stair Top	階段 (上端)
 def_stair_top_desc			
 def_stair_top_s_desc		A single step that can be used at the top of a staircase to make it flush with a platform.	平らな床と接合する階段の上端部分です.
 def_steam_boiler_name		Steam Boiler	蒸気ボイラー
-def_steam_boiler_desc		The boiler should be connected to a firebox to supply heat for evaporation. Allowing too much pressure to build up in the boiler may cause an explosion; control your boiler's heat to restrict steam generation and keep the pressure below the threshold (10).	ボイラーは燃焼室や原子炉と接続してそれらからの熱で水を沸騰させます. ボイラーの圧力が10を超えると爆発します.
+def_steam_boiler_desc		The boiler should be connected to a firebox to supply heat for evaporation. Control the rate of evaporation to maintain consistent output steam pressure.	ボイラーは燃焼室や原子炉と接続してそれらからの熱で水を沸騰させます. 蒸気の生産を安定させるには沸騰速度を制御する必要があります.
 def_steam_boiler_s_desc		A boiler for evaporating water into steam.	水を沸騰させて蒸気を発生させるボイラーです.
 def_steam_boiler_node_0_label		Coolant A	冷却媒体1
 def_steam_boiler_node_0_desc		Port for supplying hot fluid to heat the contents of the boiler.	燃焼室や原子炉などで温めた冷却媒体でボイラーを加熱します.
@@ -7026,8 +7027,6 @@ def_steam_boiler_node_4_label		Fluid Volume	流体の量
 def_steam_boiler_node_4_desc			ボイラーの中の流体の量を出力します.
 def_steam_boiler_node_5_label		Temperature	温度
 def_steam_boiler_node_5_desc			ボイラーの中の温度を出力します. 100度を超えると蒸気が発生し始めます.
-def_steam_boiler_node_6_label		Pressure	圧力
-def_steam_boiler_node_6_desc			ボイラーの中の圧力を出力します. 10を超えるとボイラーが爆発します.
 def_steam_coal_duct_name		Duct	物資ダクト (小)
 def_steam_coal_duct_desc		Transports resources through the connected system.	接続されている部品へ物資を輸送します.
 def_steam_coal_duct_s_desc		A basic resource duct.	基本的な小型の物資ダクトです.
