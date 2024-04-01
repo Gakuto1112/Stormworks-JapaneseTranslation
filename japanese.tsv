@@ -851,7 +851,7 @@ id	description	en	local
 		Left	左に移動
 		Right	右に移動
 		Forward	前進
-		Backward	交代
+		Backward	後退
 		Jump/Swim Up	ジャンプ/浮上
 		Crouch/Swim Down	しゃがむ/潜水
 		Trim Menu	トリムメニュー
