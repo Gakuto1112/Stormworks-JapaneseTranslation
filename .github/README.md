@@ -1,4 +1,4 @@
-# Stormworks日本語訳データ配布ページ
+# Stormworks-JapaneseTranslation
 対応ゲームバージョン ： **1.10.8**
 
 ## はじめに
