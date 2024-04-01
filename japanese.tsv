@@ -4472,7 +4472,7 @@ def_inventory_equipment_c4_detonator_desc		Press [$[action_equipment_use]] to de
 def_inventory_equipment_c4_detonator_s_desc		A small equipment storage unit containing a C-4 remote detonator.	C4爆弾起爆装置が保管されている小型の保管庫です.
 def_inventory_equipment_c4_detonator_node_0_label		Electric	電力
 def_inventory_equipment_c4_detonator_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
-def_inventory_equipment_cable_name		Equipment inventory (Cable)	保管庫 (中, 電気電気ケーブル)
+def_inventory_equipment_cable_name		Equipment inventory (Cable)	保管庫 (中, 電気ケーブル)
 def_inventory_equipment_cable_desc		Press [$[action_equipment_use]] to attach the cable to an unoccupied electrical cable anchor. Interacting with [$[action_interact_left]]/[$[action_interact_right]] on an occupied electical cable anchor will retrieve the cable if the player has inventory space to hold it.	[$[action_equipment_use]] を押してアンカー (電力) に電気ケーブルを差し込みます. 既に電気ケーブルが接続されているアンカー (電力) に [$[action_interact_left]]/[$[action_interact_right]] を押すと電気ケーブルを取り外し, プレイヤーのインベントリに空きがあるならそこにしまいます.
 def_inventory_equipment_cable_s_desc		A large equipment storage unit containing 20m of electrical cable.	20メートルの電気ケーブルが保管されている中型の保管庫です.
 def_inventory_equipment_cable_node_0_label		Electric	電力
