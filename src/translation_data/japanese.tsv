@@ -168,7 +168,7 @@ id	description	en	local
 		Brinkfield	ブリンクフィールド原子力発電所
 		Nuclear power plant with dock, reactor rooms and underground disposal pool.	港がある原子力発電所です. 原子炉と地下に核廃棄プールがあります.
 		Fishing Village	漁村
-		Small fishing village with mountain, multiple sea stacks and a rocky peninsula.	山の麓にある小さな漁村です.　いくつもの海食柱や岩の多い半島があります.
+		Small fishing village with mountain, multiple sea stacks and a rocky peninsula.	山の麓にある小さな漁村です. いくつもの海食柱や岩の多い半島があります.
 		Wind Turbine	洋上風力発電所
 		Large offshore wind turbine.	大きな洋上風力発電所です.
 		Small Oil Rig	小さな石油採掘所
@@ -1708,7 +1708,7 @@ id	description	en	local
 		Lua scripting gives you the tools to create advanced logic components using the Lua scripting language. Stormworks provides a number of functions to allow your script to interface with your vehicle's logic system, as well as drawing to in-game monitors.\n\nThis guide outlines the functions that are available for use in your scripts but it is not a comprehensive tutorial on using the Lua language.	LuaスクリプトではLua言語を用いて高度な論理システムを作成できます. Stormworksでは乗り物の論理システムと連動させたり, ゲーム内のディスプレイに描画したりするための関数を多数用意しています.\n\nこのガイドではStormworksで使用できる関数の概要を説明しますが, Lua言語自体のチュートリアルは説明しません.
 		SCRIPT BASICS	スクリプトの基本
 		The tick function will be called once every logic tick and should be used for reading composite data and any required processing. Screen functions will have no effect if called within onTick.	onTick関数は1論理チック当たりに1回呼び出され, 複合信号の読み書きや, 必要な処理に使用します. この関数内でscreen関数は呼び出せません.
-		The draw function will be called any time this script is drawn by a monitor. Note that it can be called multiple times if this microcontroller is connected to multiple monitors whereas onTick is only called once. Composite input/output functions will have no effect if called within onDraw.	　onDraw関数はディスプレイに何かを描画する度に呼び出されます. onTick関数が1論理チック当たりに1回しか呼び出されないのに対して, onDraw関数は接続されているディスプレイの数だけ呼び出されます. この関数で複合信号を読み書きする関数は呼び出せません.
+		The draw function will be called any time this script is drawn by a monitor. Note that it can be called multiple times if this microcontroller is connected to multiple monitors whereas onTick is only called once. Composite input/output functions will have no effect if called within onDraw.	onDraw関数はディスプレイに何かを描画する度に呼び出されます. onTick関数が1論理チック当たりに1回しか呼び出されないのに対して, onDraw関数は接続されているディスプレイの数だけ呼び出されます. この関数で複合信号を読み書きする関数は呼び出せません.
 		COMPOSITE INPUT/OUTPUT	複合信号の読み書き
 		PROPERTIES	プロパティの読み取り
 		Read the values of property components within this microcontroller directly. The label passed to each function should match the label that has been set for the property you're trying to access (case-sensitive).	マイクロコントローラーのプロパティを直接読み取れます(複合信号などを通して接続する必要はありません.). プロパティの読み取りの関数に渡すプロパティ名は, 読み取りたいプロパティ名と完全に一致させて下さい (大文字と小文字を区別します.).
@@ -2918,7 +2918,7 @@ def_connector_hardpoint_a_node_7_desc		Video data to receive from the connected 
 def_connector_hardpoint_a_node_8_label		Electric	電力
 def_connector_hardpoint_a_node_8_desc		Electrical power connection.	電力網から電力を供給します.
 def_connector_hardpoint_b_name		Hardpoint Connector Attachment	ハードポイントコネクター接続部 (角)
-def_connector_hardpoint_b_desc		A hardpoint body will connect to a hardpoint attachment when correctly aligned, fixing the two components in place while transferring logic and fluid.	ハードポイントコネクター取り付けは本体が正しい配置されると自動的に接続されます.　接続中はコネクター間で信号や流体を伝達できます.
+def_connector_hardpoint_b_desc		A hardpoint body will connect to a hardpoint attachment when correctly aligned, fixing the two components in place while transferring logic and fluid.	ハードポイントコネクター取り付けは本体が正しい配置されると自動的に接続されます. 接続中はコネクター間で信号や流体を伝達できます.
 def_connector_hardpoint_b_s_desc		A hardpoint connector for building detachable vehicle sections.	乗り物に取り付けるパーツを作成するためのハードポイントコネクターです.
 def_connector_hardpoint_b_node_0_label		Launched	発射
 def_connector_hardpoint_b_node_0_desc		Outputs an on signal if the connector is sent a launch signal by the parent.	本体の「発射」ノードのオン信号で切り離された場合にオン信号を出力します.
@@ -2935,7 +2935,7 @@ def_connector_hardpoint_b_node_5_desc		Video data to receive from the connected 
 def_connector_hardpoint_b_node_6_label		Electric	電力
 def_connector_hardpoint_b_node_6_desc		Electrical power connection.	電力網から電力を供給します.
 def_connector_hardpoint_b_round_name		Hardpoint Connector Attachment (Round)	ハードポイントコネクター接続部 (丸)
-def_connector_hardpoint_b_round_desc		A hardpoint body will connect to a hardpoint attachment when correctly aligned, fixing the two components in place while transferring logic and fluid.	ハードポイントコネクター取り付けは本体が正しい配置されると自動的に接続されます.　接続中はコネクター間で信号や流体を伝達できます.
+def_connector_hardpoint_b_round_desc		A hardpoint body will connect to a hardpoint attachment when correctly aligned, fixing the two components in place while transferring logic and fluid.	ハードポイントコネクター取り付けは本体が正しい配置されると自動的に接続されます. 接続中はコネクター間で信号や流体を伝達できます.
 def_connector_hardpoint_b_round_s_desc		A hardpoint connector for building detachable vehicle sections.	乗り物に取り付けるパーツを作成するためのハードポイントコネクターです.
 def_connector_hardpoint_b_round_node_0_label		Launched	発射
 def_connector_hardpoint_b_round_node_0_desc		Outputs an on signal if the connector is sent a launch signal by the parent.	本体の「発射」ノードのオン信号で切り離された場合にオン信号を出力します.
@@ -6437,7 +6437,7 @@ def_seat_node_15_desc			ヘッドセットが選択されているときに, 座
 def_seat_node_16_label		Headset Audio	ヘッドセット音声信号入力
 def_seat_node_16_desc			ヘッドセットが選択されているときに, 座っているプレイヤーへ音声を再生します.
 def_seat_bed_name		Bed	ベッド
-def_seat_bed_desc		You can get in and out of the bed by interacting with it using [$[action_use_seat]]. You can place a rescued survivor in any bed by using [$[action_use_seat]] while carrying them.	[$[action_use_seat]]　を押して寝たり起きたりします. 意識がある人を担いでいる時に [$[action_use_seat]] を押してその人を寝かせます.
+def_seat_bed_desc		You can get in and out of the bed by interacting with it using [$[action_use_seat]]. You can place a rescued survivor in any bed by using [$[action_use_seat]] while carrying them.	[$[action_use_seat]] を押して寝たり起きたりします. 意識がある人を担いでいる時に [$[action_use_seat]] を押してその人を寝かせます.
 def_seat_bed_s_desc		A bed.	ベッドです.
 def_seat_bed_node_0_label		Occupied	使用中
 def_seat_bed_node_0_desc		Outputs an on signal if this bed is occupied by a character.	誰かが寝ているとオン信号を出力します.
@@ -6703,7 +6703,7 @@ def_seat_hotas_node_61_desc			ヘッドセットが選択されているとき�
 def_seat_hotas_node_62_label		Headset Audio	ヘッドセット音声信号入力
 def_seat_hotas_node_62_desc			ヘッドセットが選択されているときに, 使用しているプレイヤーへ音声を再生します.
 def_seat_medical_name		Medical Bed	医療用ベッド
-def_seat_medical_desc		You can get in and out of the medical bed by interacting with it using [$[action_use_seat]]. You can place a rescued survivor in any medical bed by using [$[action_use_seat]] while carrying them.	[$[action_use_seat]]　を押して寝たり起きたりします. 意識がある人を担いでいる時に [$[action_use_seat]] を押してその人を寝かせます. 医療用ベッドに寝ている人は体力の回復が早くなります. 医療用ベッドでは時間の早送りができません.
+def_seat_medical_desc		You can get in and out of the medical bed by interacting with it using [$[action_use_seat]]. You can place a rescued survivor in any medical bed by using [$[action_use_seat]] while carrying them.	[$[action_use_seat]] を押して寝たり起きたりします. 意識がある人を担いでいる時に [$[action_use_seat]] を押してその人を寝かせます. 医療用ベッドに寝ている人は体力の回復が早くなります. 医療用ベッドでは時間の早送りができません.
 def_seat_medical_s_desc		A bed equiped with medical monitoring equipment, slowly heals injured characters.	医療設備が付属しているベッドです. 患者をゆっくりと治療します.
 def_seat_medical_node_0_label		Occupied	使用中
 def_seat_medical_node_0_desc		Outputs an on signal if this bed is occupied by a character.	誰かが寝ているとオン信号を出力します.
@@ -6794,7 +6794,7 @@ def_seat_space_node_16_desc			ヘッドセットが選択されているとき�
 def_seat_space_node_17_label		Fluid In	流体システム
 def_seat_space_node_17_desc			
 def_seat_stretcher_name		Stretcher	ストレッチャー
-def_seat_stretcher_desc		You can get in and out of the stretcher by interacting with it using [$[action_use_seat]]. You can place a rescued survivor in any stretcher by using [$[action_use_seat]] while carrying them.	[$[action_use_seat]]　を押して寝たり起きたりします. 意識がある人を担いでいる時に [$[action_use_seat]] を押してその人を寝かせます.
+def_seat_stretcher_desc		You can get in and out of the stretcher by interacting with it using [$[action_use_seat]]. You can place a rescued survivor in any stretcher by using [$[action_use_seat]] while carrying them.	[$[action_use_seat]] を押して寝たり起きたりします. 意識がある人を担いでいる時に [$[action_use_seat]] を押してその人を寝かせます.
 def_seat_stretcher_s_desc		A strecher that connects below an attachment point.	オブジェクトの下部に取り付けられるストレッチャーです.
 def_seat_stretcher_node_0_label		Occupied	使用中
 def_seat_stretcher_node_0_desc		Outputs an on signal if this bed is occupied by a character.	誰かが寝ているとオン信号を出力します.
