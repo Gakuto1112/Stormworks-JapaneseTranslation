@@ -22,7 +22,7 @@ async function test1(): Promise<void> {
                 errorFound = true;
             }
         }
-        else warn(line, "Cannot find local string.");
+        else warn(line, `Cannot find local string at line ${line}.`);
     });
     
     if(errorFound) {
