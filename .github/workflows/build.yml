@@ -122,7 +122,7 @@ jobs:
           name: japanese
           path: ./
       - name: Zip artifact
-        run: zip -r ./japanese.zip ./japanese/
+        run: zip -r ./japanese.zip ./
       - name: Upload artifact as release asset
         run: gh release upload ${{ github.event.release.tag_name }} ./japanese.zip --repo ${{ github.repository }}
         env:
