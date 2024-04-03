@@ -1,5 +1,7 @@
 {
-    "build": {},
+    "build": {
+        "separator": " | "
+    },
     "test": {
         "prohibited_characters": [
             "、",

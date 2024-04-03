@@ -11,11 +11,11 @@ import { warn, error } from "../utils/logger";
 async function test1(): Promise<void> {
     console.info("Checking prohibited characters...");
     
-    const prohibitedCharacters: string[] = (await readConfig()).test.prohibited_characters;
+    const prohibitedCharacters: string[] = (await readConfig("../config.json")).test.prohibited_characters;
     const regex: RegExp = new RegExp(`[${prohibitedCharacters.join("")}]`);
     let errorFound: boolean = false;
     
-    await streamTranslationData((line: number, id: string, en?: string, local?: string) => {
+    await streamTranslationData("../translation_data/japanese.tsv", (line: number, id: string, en?: string, local?: string) => {
         if(local != undefined) {
             if(regex.test(local)) {
                 error(line, `A prohibited character detected at line ${line}.`);

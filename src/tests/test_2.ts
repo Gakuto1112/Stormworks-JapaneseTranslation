@@ -12,7 +12,7 @@ async function test2(): Promise<void> {
     
     let errorFound: boolean = false;
     
-    await streamTranslationData((line: number, id: string, en?: string, local?: string) => {
+    await streamTranslationData("../translation_data/japanese.tsv", (line: number, id: string, en?: string, local?: string) => {
         if(en != undefined) {
             if(en.length > 0 && (local == undefined || local.length == 0)) {
                 error(line, `Cannot find local string at line ${line}.`);
