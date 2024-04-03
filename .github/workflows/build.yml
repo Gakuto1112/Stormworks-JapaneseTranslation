@@ -15,6 +15,11 @@ on:
     paths:
       - src/**
       - .github/workflows/test.yml
+  release:
+    types:
+      - released
+      - prereleased
+      
 
 jobs:
   test_1:
@@ -22,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout # pushイベントのときのチェックアウト
-        if: ${{ github.event_name == 'push' }}
+        if: ${{ github.event_name != 'pull_request' }}
         uses: actions/checkout@v4.1.1
       - name: Checkout # pull_requestイベントのときのチェックアウト
         if: ${{ github.event_name == 'pull_request' }}
@@ -46,7 +51,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout # pushイベントのときのチェックアウト
-        if: ${{ github.event_name == 'push' }}
+        if: ${{ github.event_name != 'pull_request' }}
         uses: actions/checkout@v4.1.1
       - name: Checkout # pull_requestイベントのときのチェックアウト
         if: ${{ github.event_name == 'pull_request' }}
@@ -73,7 +78,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout # pushイベントのときのチェックアウト
-        if: ${{ github.event_name == 'push' }}
+        if: ${{ github.event_name != 'pull_request' }}
         uses: actions/checkout@v4.1.1
       - name: Checkout # pull_requestイベントのときのチェックアウト
         if: ${{ github.event_name == 'pull_request' }}
@@ -103,3 +108,14 @@ jobs:
         with:
           name: japanese
           path: ./out/
+  upload_release_assets:
+    name: Upload artifact as release asset
+    if: ${{ github.event_name == 'release' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4.1.4
+      - name: Upload artifact as release asset
+        run: gh release upload ${{ github.event.release.tag_name }} ./japanese.zip --repo ${{ github.repository }}
+        env:
+          GH_TOKEN: ${{ github.token }}
