@@ -4,6 +4,7 @@
     },
     "test": {
         "prohibited_characters": [
+            "|",
             "、",
             "。",
             "　"
