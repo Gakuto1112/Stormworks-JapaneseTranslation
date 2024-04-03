@@ -110,6 +110,7 @@ jobs:
           path: ./out/
   upload_release_assets:
     name: Upload artifact as release asset
+    needs: build
     if: ${{ github.event_name == 'release' }}
     runs-on: ubuntu-latest
     steps:
