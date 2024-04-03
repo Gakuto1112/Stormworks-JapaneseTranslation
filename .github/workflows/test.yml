@@ -31,7 +31,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Run test
-        run: ../../.node_modules/.bin/ts-node ./test_1.ts
+        run: ../../node_modules/.bin/ts-node ./test_1.ts
         working-directory: ./src/tests/
   test_2:
     name: Check local strings
@@ -47,5 +47,5 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Run test
-        run: ../../.node_modules/.bin/ts-node ./test_2.ts
+        run: ../../node_modules/.bin/ts-node ./test_2.ts
         working-directory: ./src/tests/
