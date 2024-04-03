@@ -117,12 +117,12 @@ jobs:
       contents: write
     steps:
       - name: Download artifact
-        id: download_artifact
         uses: actions/download-artifact@v4.1.4
         with:
           name: japanese
+          path: ./japanese/
       - name: Zip artifact
-        run: zip -r ./japanese.zip ${{ steps.download_artifact.outputs.download-path }}
+        run: zip -r ./japanese.zip ./japanese/
       - name: Upload artifact as release asset
         run: gh release upload ${{ github.event.release.tag_name }} ./japanese.zip --repo ${{ github.repository }}
         env:
