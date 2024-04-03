@@ -1,0 +1,20 @@
+{
+  "name": "stormworks-japanese-translation",
+  "description": "Japanese translation data for Stormworks",
+  "author": "Gakuto1112",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+    "stormworks",
+    "translation",
+    "japanese"
+  ],
+  "homepage": "https://github.com/Gakuto1112/Stormworks-JapaneseTranslation",
+  "bugs": {
+    "url": "https://github.com/Gakuto1112/Stormworks-JapaneseTranslation/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gakuto1112/Stormworks-JapaneseTranslation.git"
+  }
+}
