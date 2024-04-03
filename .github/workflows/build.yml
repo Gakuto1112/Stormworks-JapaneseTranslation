@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - src/**
-      - .github/workflows/test.yml
+      - .github/workflows/build.yml
   pull_request:
     types:
       - opened
@@ -14,7 +14,7 @@ on:
       - synchronize
     paths:
       - src/**
-      - .github/workflows/test.yml
+      - .github/workflows/build.yml
   release:
     types:
       - released
