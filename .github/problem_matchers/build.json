@@ -1,0 +1,15 @@
+{
+    "problemMatcher": [
+        {
+            "owner": "Build",
+            "pattern": [
+                {
+                    "regexp": "^\\[(Warning|Error)\\s:\\s(\\d+)\\]:\\s(.+)$",
+                    "severity": 1,
+                    "line": 2,
+                    "message": 3
+                }
+            ]
+        }
+    ]
+}
