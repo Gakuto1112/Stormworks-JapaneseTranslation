@@ -11,7 +11,7 @@ import { warn, error } from "../utils/logger";
 async function test1(): Promise<void> {
     console.info("Checking prohibited characters...");
     
-    const prohibitedCharacters: string[] = (await readConfig()).prohibited_characters;
+    const prohibitedCharacters: string[] = (await readConfig()).test.prohibited_characters;
     const regex: RegExp = new RegExp(`[${prohibitedCharacters.join("")}]`);
     let errorFound: boolean = false;
     

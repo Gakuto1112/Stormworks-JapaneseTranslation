@@ -4,7 +4,10 @@ import fs from "fs";
  * 設定ファイルのデータ構造
  */
 export interface Config {
-    prohibited_characters: string[]
+    build: {},
+    test: {
+        prohibited_characters: string[]
+    }
 }
 
 /**

@@ -1,7 +1,10 @@
 {
-    "prohibited_characters": [
-        "、",
-        "。",
-        "　"
-    ]
+    "build": {},
+    "test": {
+        "prohibited_characters": [
+            "、",
+            "。",
+            "　"
+        ]
+    }
 }
