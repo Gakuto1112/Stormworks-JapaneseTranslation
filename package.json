@@ -18,6 +18,7 @@
     "url": "https://github.com/Gakuto1112/Stormworks-JapaneseTranslation.git"
   },
   "dependencies": {
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
   }
 }
