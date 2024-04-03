@@ -116,6 +116,10 @@ jobs:
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v4.1.4
+        with:
+          name: japanese
+      - name: Zip artifact
+        run: zip -r ./japanese.zip ./japanese/
       - name: Upload artifact as release asset
         run: gh release upload ${{ github.event.release.tag_name }} ./japanese.zip --repo ${{ github.repository }}
         env:
