@@ -30,6 +30,8 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm install
+      - name: Enable problem matcher
+        run: echo ::add-matcher::.github/problem_matchers/test.json
       - name: Run test
         run: ../../.node_modules/.bin/ts-node ./test_1.ts
         working-directory: ./src/tests/
@@ -46,6 +48,8 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm install
+      - name: Enable problem matcher
+        run: echo ::add-matcher::.github/problem_matchers/test.json
       - name: Run test
         run: ../../.node_modules/.bin/ts-node ./test_2.ts
         working-directory: ./src/tests/
