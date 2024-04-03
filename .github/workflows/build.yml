@@ -71,7 +71,7 @@ jobs:
         run: ../../node_modules/.bin/ts-node ./test_2.ts
         working-directory: ./src/tests/
   build:
-    name: build
+    name: Build
     needs:
       - test_1
       - test_2
@@ -113,6 +113,8 @@ jobs:
     needs: build
     if: ${{ github.event_name == 'release' }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Download artifact
         id: download_artifact
