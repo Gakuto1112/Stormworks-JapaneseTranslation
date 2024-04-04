@@ -1,3 +1,5 @@
+言語: 　[English](./README_en.md)　|　**日本語**
+
 # Stormworks-JapaneseTranslation
 [Stormworks: Build and Rescue](https://store.steampowered.com/app/573090/Stormworks_Build_and_Rescue/?l=japanese)を日本語化する翻訳データです。
 ゲームに実装されているローカライゼーション機能で翻訳できる箇所は全て日本語に翻訳しています。
