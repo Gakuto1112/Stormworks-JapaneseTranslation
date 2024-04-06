@@ -1,0 +1,80 @@
+name: Test
+
+on:
+  workflow_call:
+    inputs:
+      ref:
+        description: The target ref to test
+        required: false
+        default: ${{ github.ref }}
+        type: string
+      continue_on_error:
+        description: Continue test even if failed
+        required: false
+        default: false
+        type: boolean
+    outputs:
+      test_1:
+        description: The result of the test 1
+        value: ${{ jobs.test_1.outputs.result }}
+      test_2:
+        description: The result of the test 2
+        value: ${{ jobs.test_2.outputs.result }}
+      
+jobs:
+  test_1:
+    name: Check prohibited characters
+    runs-on: ubuntu-latest
+    outputs:
+      test_1: ${{ steps.output_result.outputs.result }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+        with:
+          ref: ${{ inputs.ref }}
+      - name: Setup Node.js
+        uses: actions/setup-node@v4.0.2
+        with:
+          node-version: 20.12.0
+          cache: npm
+      - name: Install dependencies
+        run: npm install
+      - name: Enable problem matcher
+        run: echo ::add-matcher::.github/problem_matchers/test.json
+      - name: Run test
+        run: ../../node_modules/.bin/ts-node ./test_1.ts
+        working-directory: ./src/tests/
+        continue-on-error: ${{ inputs.continue_on_error }}
+      - name: Disable problem matcher
+        run: echo '::remove-matcher owner=Test::'
+      - name: Output test result
+        id: output_result
+        run: echo result=$(<./out/result.json) >> $GITHUB_OUTPUT
+  test_2:
+    name: Check local strings
+    runs-on: ubuntu-latest
+    outputs:
+      test_2: ${{ steps.output_result.outputs.result }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+        with:
+          ref: ${{ inputs.ref }}
+      - name: Setup Node.js
+        uses: actions/setup-node@v4.0.2
+        with:
+          node-version: 20.12.0
+          cache: npm
+      - name: Install dependencies
+        run: npm install
+      - name: Enable problem matcher
+        run: echo ::add-matcher::.github/problem_matchers/test.json
+      - name: Run test
+        run: ../../node_modules/.bin/ts-node ./test_2.ts
+        working-directory: ./src/tests/
+        continue-on-error: ${{ inputs.continue_on_error }}
+      - name: Disable problem matcher
+        run: echo '::remove-matcher owner=Test::'
+      - name: Output test result
+        id: output_result
+        run: echo result=$(<./out/result.json) >> $GITHUB_OUTPUT

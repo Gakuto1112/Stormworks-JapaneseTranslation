@@ -1,90 +1,23 @@
-name: Test and build
+name: Build
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - src/**
-      - .github/workflows/build.yml
-  pull_request:
-    types:
-      - opened
-      - ready_for_review
-      - synchronize
-    paths:
-      - src/**
-      - .github/workflows/build.yml
-  release:
-    types:
-      - released
-      - prereleased
-      
+  workflow_call:
+    inputs:
+      ref:
+        description: The target ref to test
+        required: false
+        default: ${{ github.ref }}
+        type: string
 
 jobs:
-  test_1:
-    name: Check prohibited characters
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout # pushイベントのときのチェックアウト
-        if: ${{ github.event_name != 'pull_request' }}
-        uses: actions/checkout@v4.1.1
-      - name: Checkout # pull_requestイベントのときのチェックアウト
-        if: ${{ github.event_name == 'pull_request' }}
-        uses: actions/checkout@v4.1.1
-        with:
-          ref: ${{ github.event.pull_request.head.sha }}
-      - name: Setup Node.js
-        uses: actions/setup-node@v4.0.2
-        with:
-          node-version: 20.12.0
-          cache: npm
-      - name: Install dependencies
-        run: npm install
-      - name: Enable problem matcher
-        run: echo ::add-matcher::.github/problem_matchers/test.json
-      - name: Run test
-        run: ../../node_modules/.bin/ts-node ./test_1.ts
-        working-directory: ./src/tests/
-  test_2:
-    name: Check local strings
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout # pushイベントのときのチェックアウト
-        if: ${{ github.event_name != 'pull_request' }}
-        uses: actions/checkout@v4.1.1
-      - name: Checkout # pull_requestイベントのときのチェックアウト
-        if: ${{ github.event_name == 'pull_request' }}
-        uses: actions/checkout@v4.1.1
-        with:
-          ref: ${{ github.event.pull_request.head.sha }}
-      - name: Setup Node.js
-        uses: actions/setup-node@v4.0.2
-        with:
-          node-version: 20.12.0
-          cache: npm
-      - name: Install dependencies
-        run: npm install
-      - name: Enable problem matcher
-        run: echo ::add-matcher::.github/problem_matchers/test.json
-      - name: Run test
-        run: ../../node_modules/.bin/ts-node ./test_2.ts
-        working-directory: ./src/tests/
   build:
     name: Build
-    needs:
-      - test_1
-      - test_2
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout # pushイベントのときのチェックアウト
-        if: ${{ github.event_name != 'pull_request' }}
-        uses: actions/checkout@v4.1.1
-      - name: Checkout # pull_requestイベントのときのチェックアウト
-        if: ${{ github.event_name == 'pull_request' }}
+      - name: Checkout
         uses: actions/checkout@v4.1.1
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: ${{ inputs.ref }}
       - name: Setup Node.js
         uses: actions/setup-node@v4.0.2
         with:
@@ -108,22 +41,3 @@ jobs:
         with:
           name: japanese
           path: ./out/
-  upload_release_assets:
-    name: Upload artifact as release asset
-    needs: build
-    if: ${{ github.event_name == 'release' }}
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v4.1.4
-        with:
-          name: japanese
-          path: ./
-      - name: Zip artifact
-        run: zip -r ./japanese.zip ./
-      - name: Upload artifact as release asset
-        run: gh release upload ${{ github.event.release.tag_name }} ./japanese.zip --repo ${{ github.repository }}
-        env:
-          GH_TOKEN: ${{ github.token }}
