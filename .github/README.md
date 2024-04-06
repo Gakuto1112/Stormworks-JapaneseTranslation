@@ -33,8 +33,8 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581
 ### このレポジトリから
 画面右側にある「Releases」から最新版のタグをクリックしてください。
 遷移先のページ内の「Assets」の中に「japanese.zip」というファイルがあります。
-このファイルをダウンロードし、展開すると中に`japanese.tsv`というファイルがあります（`japanese.xml`は不要です）。
-`japanese.tsv`を以下のディレクトリに移動させます。
+このファイルをダウンロードし、展開すると中に「japanese.tsv」というファイルがあります（「japanese.xml」は不要です）。
+「japanese.tsv」を以下のディレクトリに移動させます。
 
 ```
 C:\Users\<user_name>\AppData\Roaming\Stormworks\data\languages
@@ -44,19 +44,20 @@ C:\Users\<user_name>\AppData\Roaming\Stormworks\data\languages
 > - 上記はWindows環境での例です。
 >   MacOSやLinux環境ではパスが異なります。
 > - Windows環境でもパスが異なる場合があります。
-> - 「AppData」は隠しフォルダです。アドレスバーに直接パスを打ち込むか、非表示ファイルを表示する設定にしてください。
+> - 「AppData」は隠しフォルダです。
+>    アドレスバーに直接パスを打ち込むか、非表示ファイルを表示する設定にしてください。
 
 ゲームを起動し「Settings」→「Language」に進みます。
 「SAVED」の欄に「japanese」がありますので選択します（表示されない場合は「Refresh List」ボタンを押してください）。
 数秒のロードの後、ゲームが日本語になります。
 
 こちらの方法では手動で更新を適用する必要があります。
-新しいバージョンがリリースされたら上記手順を再び行い、`japanese.tsv`を最新のものに置き換えてください。
+新しいバージョンがリリースされたら上記手順を再び行い、「japanese.tsv」を最新のものに置き換えてください。
 なお、新しいバージョンのリリースを見逃さないように、画面上側にある「Watch」ボタンでレポジトリをウォッチすることをお勧めします。
 レポジトリに更新がある度にメールでお知らせを受け取ることができます。
 ウォッチするにはGitHubアカウントが必要です。
 
-コンテンツをアンインストールしたい場合は、`japanese.tsv`を削除してください。
+コンテンツをアンインストールしたい場合は、「japanese.tsv」を削除してください。
 ゲームを再起動すると英語に戻ります。
 なお、英語に戻すだけならコンテンツをアンインストールする必要はありません。
 ゲームのLanguage設定から「OFFICIAL」欄にある「English」を選択してください。
