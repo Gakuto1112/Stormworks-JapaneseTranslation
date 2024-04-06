@@ -64,8 +64,6 @@ C:\Users\<user_name>\AppData\Roaming\Stormworks\data\languages
 
 ## 注意事項
 - このデータを使用して発生したいかなる損害の責任は負いかねます。
-- この翻訳データを適用してもなお、日本語に翻訳されない箇所が一部あります。
-  これはゲームがそこの翻訳に対応していないためです。
-  ここに関して、私は対応しかねます。
+- この翻訳データを適用してもなお、日本語に翻訳されない箇所が一部あります。これはゲームがそこの翻訳に対応していないためです。ここに関して、私は対応しかねます。
 - この日本語訳が適用された状態で作成されたスクリーンショットや実況動画などの作品におけるクレジット表記は不要です（表記して頂けると嬉しいですが...）。
-- 誤字脱字や訳に関する提案がありましたら[Steamワークショップ](https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581)、[Issues](https://github.com/Gakuto1112/Stormworks-JapaneseTranslation/issues)、[Discordサーバー](https://discord.gg/GBqesHHGBR)の「翻訳」 チャンネルのいずれかから報告してください（全ての希望には応えられない場合があります）。
+- 誤字脱字の報告や訳に関する提案がありましたら[Steamワークショップ](https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581)、[Issues](https://github.com/Gakuto1112/Stormworks-JapaneseTranslation/issues)、[Discordサーバー](https://discord.gg/GBqesHHGBR)の「翻訳」 チャンネルのいずれかから報告してください（全ての希望には応えられない場合があります）。

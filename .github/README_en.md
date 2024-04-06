@@ -59,3 +59,9 @@ Please remove "japanese.tsv" if you want to uninstall it.
 The language in the game will be reset to English.
 Please note that it isn't necessary to uninstall the content just to change the language back to English.
 Please select "English" in the "OFFICIAL" field in the language page.
+
+## Notes
+- I'm not responsible for any damages caused by using this content.
+- There are still some sentences that are not translated into Japanese. This is because the game doesn't support these translation. I won't support regarding this.
+- You don't have to credit me for screenshots or videos with this content used (Of course, it welcome to credit me!).
+- If you have any reports about translation errors or suggestions, please report them via [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581), [Issue](https://github.com/Gakuto1112/Stormworks-JapaneseTranslation/issues), or the "翻訳" channel on the [Discord server](https://discord.gg/GBqesHHGBR) (I may not be able to fulfill all requests.).
