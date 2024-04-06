@@ -1,0 +1,31 @@
+name: Build on release
+
+on:
+  release:
+    types:
+      - released
+      - prereleased
+
+jobs:
+  build:
+    name: Build
+    needs: test
+    uses: ./.github/workflows/build.yml
+  upload_release_assets:
+    name: Upload artifact as release asset
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4.1.4
+        with:
+          name: japanese
+          path: ./
+      - name: Zip artifact
+        run: zip -r ./japanese.zip ./
+      - name: Upload artifact as release asset
+        run: gh release upload ${{ github.event.release.tag_name }} ./japanese.zip --repo ${{ github.repository }}
+        env:
+          GH_TOKEN: ${{ github.token }}
