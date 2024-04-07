@@ -54,6 +54,10 @@ jobs:
         run: npm install
       - name: Prepare output folder
         run: mkdir ./out
+      - name: Get diff
+        run: gh pr diff ${{ fromJSON(needs.download_data.outputs.event_data).number }} --repo ${{ github.repository }} > ./out/diff.log
+        env:
+          GH_TOKEN: ${{ github.token }}
       - name: Submit review
         run: ../../node_modules/.bin/ts-node ./submit_review.ts ${{ github.token }} ${{ fromJSON(needs.download_data.outputs.event_data).number }} ${{ fromJSON(needs.download_data.outputs.event_data).pull_request.head.sha }} '${{ needs.test.outputs.test_1 }}' '${{ needs.test.outputs.test_2 }}'
         working-directory: ./src/tests/
