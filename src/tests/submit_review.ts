@@ -67,8 +67,8 @@ async function createReviewData(commitId: string, test1ResultJson: string, test2
             reviewOptions.body += testResults[1].points.map((point: TestPoint) => `- Line ${point.line}\n`).join("");
             reviewOptions.body += "Please fill all translations\n\n";
         }
-        reviewOptions.body += "For more information about tests, please see [CONTRIBUTING.md](https://github.com/Gakuto1112/Test/blob/main/.github/CONTRIBUTING.md#翻訳のルールについて)";
-        if(!testResults[0].passed || !testResults[1].passed) reviewOptions.body += "\n\nOnce you fixed your changes, please request me again by clicking \"re-request review\" button 🔄 (located in the reviewers list on the right side of this page). I'll check your changes again.";
+        reviewOptions.body += "For more information about tests, please see [CONTRIBUTING.md](https://github.com/Gakuto1112/Stormworks-JapaneseTranslation/blob/main/.github/CONTRIBUTING.md#翻訳のルールについて)";
+        if(!testResults[0].passed || !testResults[1].passed) reviewOptions.body += "\n\nOnce you fixed your changes, please request me again by clicking \"re-request review\" button 🔄 (located in the reviewers list on the right side of this page). I\'ll check your changes again.";
         
         //ソースファイルへのレビューコメントを作成
         if(reviewOptions.event == "REQUEST_CHANGES") {
