@@ -16,10 +16,10 @@ on:
     outputs:
       test_1:
         description: The result of the test 1
-        value: ${{ jobs.test_1.outputs.result }}
+        value: ${{ jobs.test_1.outputs.test_1 }}
       test_2:
         description: The result of the test 2
-        value: ${{ jobs.test_2.outputs.result }}
+        value: ${{ jobs.test_2.outputs.test_2 }}
       
 jobs:
   test_1:
