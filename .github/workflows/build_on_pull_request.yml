@@ -78,7 +78,7 @@ jobs:
     needs:
       - download_data
       - review
-    if: ${{ fromJSON(needs.review.outputs.review_data).event == 'APPROVE' }}
+    if: ${{ fromJSON(needs.review.outputs.review_data).event == 'COMMENT' }}
     uses: ./.github/workflows/build.yml
     with:
       ref: ${{ fromJSON(needs.download_data.outputs.event_data).pull_request.head.sha }}
@@ -95,19 +95,46 @@ jobs:
         run: |
           cat << EOF > ./comment.txt
           Finished building translation data. You can get it from the following link:
-          https://github.com/Gakuto1112/TestRepo/actions/runs/${{ needs.build.outputs.run_id }}
+          https://github.com/Gakuto1112/Stormworks-JapaneseTranslation/actions/runs/${{ needs.build.outputs.run_id }}
           EOF
       - name: Send comment
         run: gh pr comment ${{ fromJSON(needs.download_data.outputs.event_data).number }} --body-file ./comment.txt --repo ${{ github.repository }}
+        env:
+          GH_TOKEN: ${{ github.token }}
   request_review:
     name: Request a review for the pull request to Gakuto1112
     needs:
       - download_data
       - review
-    if: ${{ fromJSON(needs.review.outputs.review_data).event == 'APPROVE' && fromJSON(needs.download_data.outputs.event_data).pull_request.user.login != 'Gakuto1112' }}
+    if: ${{ fromJSON(needs.review.outputs.review_data).event == 'COMMENT' && fromJSON(needs.download_data.outputs.event_data).pull_request.user.login != 'Gakuto1112' }}
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
-      - name: Request a review for the pull request to ${{ inputs.reviewer }}
+      - name: Check requested reviewers
+        id: check_reviewers
+        continue-on-error: true
+        run: |
+          gh api \
+          -H 'Accept: application/vnd.github+json' \
+          -H 'X-GitHub-Api-Version: 2022-11-28' \
+          /repos/${{ github.repository }}/pulls/${{ fromJSON(needs.download_data.outputs.event_data).number }}/requested_reviewers \
+          | jq .users[].login | grep Gakuto1112
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Check reviews
+        id: check_reviews
+        continue-on-error: true
+        run: |
+          gh api \
+          -H 'Accept: application/vnd.github+json' \
+          -H 'X-GitHub-Api-Version: 2022-11-28' \
+          /repos/${{ github.repository }}/pulls/${{ fromJSON(needs.download_data.outputs.event_data).number }}/reviews \
+          | jq .[].user.login | grep Gakuto1112
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Request a review for the pull request to Gakuto1112
+        if: ${{ steps.check_reviewers.outcome == 'failure' && steps.check_reviews.outcome == 'failure' }}
         run: |
           gh api \
           --method POST \

@@ -47,28 +47,27 @@ async function createReviewData(commitId: string, test1ResultJson: string, test2
         const reviewOptions: ReviewOptions = {
             commit_id: commitId,
             body: "## Test Results\n### Check prohibited characters\nThis test checks whether you use prohibited characters or not in your changes.\n\n**Result: ",
-            event: "APPROVE",
+            event: "COMMENT",
             comments: []
         };
         
         const testResults: TestResult[] = [JSON.parse(test1ResultJson), JSON.parse(test2ResultJson)];
         //レビュー判定とコメントを作成
-        reviewOptions.event = testResults[0].passed && testResults[1].passed ? "APPROVE" : "REQUEST_CHANGES";
+        reviewOptions.event = testResults[0].passed && testResults[1].passed ? "COMMENT" : "REQUEST_CHANGES";
         if(testResults[0].passed) reviewOptions.body += "🟢 Passed**\n\nNo prohibited character detected in your changes.\n\n";
         else {
             reviewOptions.body += "🔴 Failed**\n\nOne or more prohibited characters detected in your changes. Lines that include prohibited characters are followings:\n";
             reviewOptions.body += testResults[0].points.map((point: TestPoint) => `- Line ${point.line}\n`).join("");
-            reviewOptions.body += "Please remove or replace them.\n\n";
+            reviewOptions.body += "\nPlease remove or replace them.\n\n";
         }
         reviewOptions.body += "### Check missing translations\nThis test checks whether there are one or more missing translations or not in your changes.\n\n**Result: ";
         if(testResults[1].passed) reviewOptions.body += "🟢 Passed**\n\nNo missing translation detected in your changes.\n\n";
         else {
             reviewOptions.body += "🔴 Failed**\n\nOne or more missing translations detected in your changes. Lines whose translation is missing are followings:\n";
             reviewOptions.body += testResults[1].points.map((point: TestPoint) => `- Line ${point.line}\n`).join("");
-            reviewOptions.body += "Please fill all translations\n\n";
+            reviewOptions.body += "\nPlease fill all translations\n\n";
         }
-        reviewOptions.body += "For more information about tests, please see [CONTRIBUTING.md](https://github.com/Gakuto1112/Stormworks-JapaneseTranslation/blob/main/.github/CONTRIBUTING.md#翻訳のルールについて)";
-        if(!testResults[0].passed || !testResults[1].passed) reviewOptions.body += "\n\nOnce you fixed your changes, please request me again by clicking \"re-request review\" button 🔄 (located in the reviewers list on the right side of this page). I\\'ll check your changes again.";
+        reviewOptions.body += "For more information about tests, please see [CONTRIBUTING.md](https://github.com/Gakuto1112/Stormworks-JapaneseTranslation/blob/main/.github/CONTRIBUTING.md#翻訳のルールについて).";
         
         //ソースファイルへのレビューコメントを作成
         if(reviewOptions.event == "REQUEST_CHANGES") {
@@ -99,7 +98,7 @@ async function createReviewData(commitId: string, test1ResultJson: string, test2
                                 testResults.forEach((result: TestResult) => linePoints = linePoints.concat(result.points.filter((point: TestPoint) => point.line == fileLineCounter)));
                                 if(linePoints.length > 0) {
                                     reviewOptions.comments.push({
-                                        path: "/src/translation_data/japanese.tsv",
+                                        path: "src/translation_data/japanese.tsv",
                                         position: lineCounter,
                                         body: linePoints.map((point: TestPoint) => point.reason == ReasonCode.USED_PROHIBITED_CHARS ? "Used one or more prohibited characters in this line." : "A translation is missing in this line.").join("\n\n")
                                     });

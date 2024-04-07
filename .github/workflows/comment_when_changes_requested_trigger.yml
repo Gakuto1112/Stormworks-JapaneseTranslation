@@ -6,6 +6,16 @@ on:
       - submitted
 
 jobs:
-  call_workflow:
-    name: Call workflow
-    uses: Gakuto1112/PublicPullRequestWorkflows/.github/workflows/comment_when_changes_requested_trigger_core.yml@main
+  get_data:
+    name: Get event data
+    if: ${{ github.event.review.state == 'changes_requested' && github.event.review.user.type != 'Bot' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get event data
+        run: echo '${{ toJSON(github.event) }}' > ./event_data.json
+      - name: Upload event data
+        uses: actions/upload-artifact@v4.3.1
+        with:
+          name: event_data
+          path: ./event_data.json
+          retention-days: 1
