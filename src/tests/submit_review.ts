@@ -1,21 +1,11 @@
 import fs from "fs";
 import readline from "readline";
 import { ReasonCode, TestPoint, TestResult } from "../utils/test_result";
-//import { Octokit } from "@octokit/core";
 
 /**
  * Botレビューのオプションデータ
  */
 interface ReviewOptions {
-    /** レポジトリの所有者のGitHubユーザー名 */
-    owner: string,
-    
-    /** レポジトリ名 */
-    repo: string,
-    
-    /** レビューを行う対象のプルリクエスト番号 */
-    pull_number: number,
-    
     /** レビューを行う対象のコミットID */
     commit_id: string,
     
@@ -58,9 +48,6 @@ interface LineComment {
 async function generateAPIRequest(token: string, pullNumber: number, commitId: string, test1ResultJson: string, test2ResultJson: string): Promise<void> {
     return new Promise(async (resolve: () => void) => {
         const reviewOptions: ReviewOptions = {
-            owner: "Gakuto1112",
-            repo: "Stormworks-JapaneseTranslation",
-            pull_number: pullNumber,
             commit_id: commitId,
             body: "## Test Results\n### Check prohibited characters\nThis test checks whether you use prohibited characters or not in your changes.\n\n**Result: ",
             event: "APPROVE",
@@ -133,18 +120,17 @@ async function generateAPIRequest(token: string, pullNumber: number, commitId: s
         }
         
         //リクエスト送信
-        const { Octokit } = await import('@octokit/core');
-        await new Octokit({
-            auth: token
-        }).request("POST /repos/{owner}/{repo}/pulls/{pull_number}/reviews", {
-            owner: reviewOptions.owner,
-            repo: reviewOptions.repo,
-            pull_number: reviewOptions.pull_number,
-            commit_id: reviewOptions.commit_id,
-            body: reviewOptions.body,
-            event: reviewOptions.event,
-            comments: reviewOptions.comments
+        fs.writeFileSync("../../out/review.json", JSON.stringify(reviewOptions), {encoding: "utf-8"});
+        const response = await fetch(`https://api.github.com/repos/Gakuto1112/Stormworks-JapaneseTranslation/pulls/${pullNumber}/reviews`, {
+            method: "POST",
+            headers: {
+                Accept: "application/vnd.github+json",
+                Authorization: `Bearer ${token}`,
+                "X-GitHub-Api-Version": "2022-11-28"
+            },
+            body: JSON.stringify(reviewOptions)
         });
+        console.debug(response);
         resolve();
     });
 }

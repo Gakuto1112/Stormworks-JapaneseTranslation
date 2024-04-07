@@ -3,15 +3,15 @@ name: Request review
 on:
   workflow_run:
     workflows:
-      - Trigger request review action
+      - Trigger "Request review to GitHub Actions" action
     types:
       - completed
 
 jobs:
   call_workflow:
-    name: Call workflow
+    name: Request review to GitHub Actions
     permissions:
       pull-requests: write
     uses: Gakuto1112/PublicPullRequestWorkflows/.github/workflows/request_review_core.yml@main
     with:
-      reviewer: Gakuto1112
+      reviewer: github-actions[bot]

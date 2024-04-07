@@ -1,0 +1,78 @@
+name: Review and build
+
+on:
+  workflow_run:
+    workflows:
+      - Trigger "Review and build" action
+    types:
+      - completed
+
+jobs:
+  download_data:
+    name: Download event data
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    outputs:
+      event_data: ${{ steps.output_event_data.outputs.event_data }}
+    steps:
+      - name: Download artifact
+        uses: dawidd6/action-download-artifact@v3.1.4
+        with:
+          workflow: build_on_pull_request_trigger.yml
+          name: event_data
+      - name: Output event data
+        id: output_event_data
+        run: echo event_data=$(<./event_data.json) >> $GITHUB_OUTPUT
+  test:
+    name: Test
+    needs: download_data
+    uses: ./.github/workflows/test.yml
+    with:
+      ref: ${{ fromJSON(needs.download_data.outputs.event_data).pull_request.head.sha }}
+      continue_on_error: true
+  review:
+    name: Submit a review
+    needs: 
+      - download_data
+      - test
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    outputs:
+      review_data: ${{ steps.output_review.outputs.review_data }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+        with:
+          ref: ${{ fromJSON(needs.download_data.outputs.event_data).pull_request.head.sha }}
+      - name: Setup Node.js
+        uses: actions/setup-node@v4.0.2
+        with:
+          node-version: 20.12.0
+          cache: npm
+      - name: Install dependencies
+        run: npm install
+      - name: Submit review
+        run: ../../node_modules/.bin/ts-node ./submit_review.ts ${{ github.token }} ${{ fromJSON(needs.download_data.outputs.event_data).number }} ${{ fromJSON(needs.download_data.outputs.event_data)..pull_request.head.sha }} ${{ needs.test.outputs.test_1 }} ${{ needs.test.outputs.test_2 }}
+        working-directory: ./src/tests/
+      - name: Output review data
+        id: output_review
+        run: echo review_data=$(<./out/review.json) >> $GITHUB_OUTPUT
+  request_review:
+    name: Request a review for the pull request to Gakuto1112
+    needs:
+      - download_data
+      - review
+    if: ${{ fromJSON(needs.review.outputs.review_data).event == 'APPROVE' && fromJSON(needs.download_data.outputs.event_data).pull_request.user.login != 'Gakuto1112' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Request a review for the pull request to ${{ inputs.reviewer }}
+        run: |
+          gh api \
+          --method POST \
+          -H 'Accept: application/vnd.github+json' \
+          -H 'X-GitHub-Api-Version: 2022-11-28' \
+          /repos/${{ github.repository }}/pulls/${{ fromJSON(needs.download_data.outputs.event_data).number }}/requested_reviewers \
+          -f 'reviewers[]=Gakuto1112'
+        env:
+          GH_TOKEN: ${{ github.token }}

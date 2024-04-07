@@ -1,4 +1,4 @@
-import { error, warn } from "../utils/logger";
+import { error } from "../utils/logger";
 import { ReasonCode } from "../utils/test_result";
 import { TestBase } from "./test_base";
 

@@ -8,8 +8,27 @@ on:
       - completed
 
 jobs:
-  call_workflow:
-    name: Call workflow
+  comment:
+    if: ${{ github.event.workflow_run.conclusion == 'success' && fromJSON(steps.output_event_data.outputs.event_data).review.user.type == 'User' }}
+    runs-on: ubuntu-latest
     permissions:
       pull-requests: write
-    uses: Gakuto1112/PublicPullRequestWorkflows/.github/workflows/comment_when_changes_requested_core.yml@main
+    steps:
+      - name: Download artifact
+        uses: dawidd6/action-download-artifact@v3.1.4
+        with:
+          workflow: comment_when_changes_requested_trigger.yml
+          name: event_data
+      - name: Output event data
+        id: output_event_data
+        run: echo event_data=$(<./event_data.json) >> $GITHUB_OUTPUT
+      - name: Create comment file
+        run: |
+          cat << EOF > ./comment.txt
+          @${{ fromJSON(steps.output_event_data.outputs.event_data).pull_request.user.login }}
+          ${{ fromJSON(steps.output_event_data.outputs.event_data).review.user.login }} requested you to make some changes. Once you make changes, please re-request github-actions[bot] to review by clicking "re-request review" button 🔄 (located in the reviewers list on the right side of this page).
+          EOF
+      - name: Post comment
+        run: gh pr comment ${{ fromJSON(steps.output_event_data.outputs.event_data).pull_request.number }} --body-file ./comment.txt --repo ${{ github.repository }}
+        env:
+          GH_TOKEN: ${{ github.token }}

@@ -9,7 +9,6 @@ on:
 jobs:
   build:
     name: Build
-    needs: test
     uses: ./.github/workflows/build.yml
   upload_release_assets:
     name: Upload artifact as release asset

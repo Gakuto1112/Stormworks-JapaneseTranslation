@@ -1,14 +1,14 @@
-name: Trigger "Request review to GitHub Actions" action
+name: Trigger "Review and build" action
 
 on:
   pull_request:
     types:
-      - opened
-      - ready_for_review
+      - review_requested
 
 jobs:
   call_workflow:
-    name: Trigger "Request review to GitHub Actions" action
+    name: Trigger "Review and build" action
+    if: ${{ github.event.requested_reviewer.login == 'github-actions[bot]' }}
     uses: Gakuto1112/PublicPullRequestWorkflows/.github/workflows/request_review_trigger_core.yml@main
     with:
       reviewer: github-actions[bot]

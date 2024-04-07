@@ -30,6 +30,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.1
+        with:
+          ref: ${{ inputs.ref }}
       - name: Setup Node.js
         uses: actions/setup-node@v4.0.2
         with:
@@ -56,6 +58,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.1
+        with:
+          ref: ${{ inputs.ref }}
       - name: Setup Node.js
         uses: actions/setup-node@v4.0.2
         with:
