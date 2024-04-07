@@ -39,6 +39,8 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm install
+      - name: Prepare output folder
+        run: mkdir ./out
       - name: Enable problem matcher
         run: echo ::add-matcher::.github/problem_matchers/test.json
       - name: Run test
@@ -67,6 +69,8 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm install
+      - name: Prepare output folder
+        run: mkdir ./out
       - name: Enable problem matcher
         run: echo ::add-matcher::.github/problem_matchers/test.json
       - name: Run test
