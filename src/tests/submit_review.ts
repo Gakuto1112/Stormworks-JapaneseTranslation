@@ -37,15 +37,12 @@ interface LineComment {
 }
 
 /**
- * Botレビュー用のGitHub CLIを出力する。
- * @param token Bot操作に使用するトークン
- * @param pullNumber レビュー対象のプルリクエストの番号
+ * Botレビュー用のデータを出力する。
  * @param commitId レビュー対象のコミットID
  * @param test1ResultJson テスト1の結果を示すJSON形式の文字列
  * @param test2ResultJson テスト2の結果を示すJSON形式の文字列
- * @returns Botレビュー用のGitHub CLIコマンド
  */
-async function generateAPIRequest(token: string, pullNumber: number, commitId: string, test1ResultJson: string, test2ResultJson: string): Promise<void> {
+async function createReviewData(commitId: string, test1ResultJson: string, test2ResultJson: string): Promise<void> {
     return new Promise(async (resolve: () => void) => {
         const reviewOptions: ReviewOptions = {
             commit_id: commitId,
@@ -70,7 +67,7 @@ async function generateAPIRequest(token: string, pullNumber: number, commitId: s
             reviewOptions.body += testResults[1].points.map((point: TestPoint) => `- Line ${point.line}\n`).join("");
             reviewOptions.body += "Please fill all translations\n\n";
         }
-        reviewOptions.body += "For more information about tests, please see [CONTRIBUTING.md](https://github.com/Gakuto1112/Stormworks-JapaneseTranslation/blob/main/.github/CONTRIBUTING.md#翻訳のルールについて)";
+        reviewOptions.body += "For more information about tests, please see [CONTRIBUTING.md](https://github.com/Gakuto1112/Test/blob/main/.github/CONTRIBUTING.md#翻訳のルールについて)";
         if(!testResults[0].passed || !testResults[1].passed) reviewOptions.body += "\n\nOnce you fixed your changes, please request me again by clicking \"re-request review\" button 🔄 (located in the reviewers list on the right side of this page). I'll check your changes again.";
         
         //ソースファイルへのレビューコメントを作成
@@ -119,20 +116,11 @@ async function generateAPIRequest(token: string, pullNumber: number, commitId: s
             await generateLineComments();
         }
         
-        //リクエスト送信
+        //レビューデータを出力
         fs.writeFileSync("../../out/review.json", JSON.stringify(reviewOptions), {encoding: "utf-8"});
-        const response = await fetch(`https://api.github.com/repos/Gakuto1112/Stormworks-JapaneseTranslation/pulls/${pullNumber}/reviews`, {
-            method: "POST",
-            headers: {
-                Accept: "application/vnd.github+json",
-                Authorization: `Bearer ${token}`,
-                "X-GitHub-Api-Version": "2022-11-28"
-            },
-            body: JSON.stringify(reviewOptions)
-        });
-        console.debug(response);
+        
         resolve();
     });
 }
 
-generateAPIRequest(process.argv[2], Number(process.argv[3]), process.argv[4], process.argv[5], process.argv[6]);
+createReviewData(process.argv[2], process.argv[3], process.argv[4]);

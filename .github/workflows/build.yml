@@ -8,11 +8,17 @@ on:
         required: false
         default: ${{ github.ref }}
         type: string
+    outputs:
+      run_id:
+        description: The run id of the build action
+        value: ${{ jobs.build.outputs.run_id }}
 
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
+    outputs:
+      run_id: ${{ steps.output_run_id.outputs.run_id }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.1
@@ -41,3 +47,6 @@ jobs:
         with:
           name: japanese
           path: ./out/
+      - name: Output run id
+        id: output_run_id
+        run: echo run_id=${{ github.run_id }} >> $GITHUB_OUTPUT
