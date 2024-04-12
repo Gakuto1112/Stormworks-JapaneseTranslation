@@ -229,7 +229,7 @@ id	description	en	local
 		Seabed Rock Formation 2	海底の岩礁2
 		Two small rock formations on the ocean bed.	2つの小さな海底の岩礁です.
 		Seabed Rock Formation 3	海底の岩礁3
-		Multiple scattered rock stacks on the ocean bed.	いくつもの海食柱が点在している海底の岩礁です. 
+		Multiple scattered rock stacks on the ocean bed.	いくつもの海食柱が点在している海底の岩礁です.
 		Seabed Rock Formation 4	海底の岩礁4
 		A flat rocky formation with central mound on the ocean bed.	中央に塚がある平らな海底の岩礁です.
 		Seabed Rock Formation 5	海底の岩礁5
@@ -969,7 +969,7 @@ id	description	en	local
 		[###] is a reserved key	[###] は予約されているキーです.
 		Mission '###' must be renamed to something other than '###'	ミッション「###」は「###」以外に名前を変更する必要があります.
 		Objective ### in mission '###' has no name	目的 ### (ミッション「###」) は名前がありません.
-		Objective ### in mission '###' has no description	目的 ### (ミッション「###」) は説明がありません. 
+		Objective ### in mission '###' has no description	目的 ### (ミッション「###」) は説明がありません.
 		Objective ### in mission '###' has unfulfilled component dependencies	目的 ### (ミッション「###」) の関係性が満たされません.
 		### is already bound to [###]	### は既に [###] に割り当てられています.
 		### is bound to [###]	### は [###] に割り当てられています.
