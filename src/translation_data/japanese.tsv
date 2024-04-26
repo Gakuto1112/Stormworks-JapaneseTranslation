@@ -7690,8 +7690,8 @@ def_water_pump_manual_node_0_label		Fluid In	流体注入
 def_water_pump_manual_node_0_desc		Connect to an inlet component to take fluid into the system.	ポンプで流す流体を注入します.
 def_water_pump_manual_node_1_label		Fluid Out	流体排出
 def_water_pump_manual_node_1_desc		Connect to an outlet component to release fluid from the system.	ポンプで流した流体を排出します.
-def_water_spawner_name		Fluid Spawner	液体発生器
-def_water_spawner_desc		The fluid spawner for helping with custom fluid tanks, so they can be spawned full, without a need to fill after spawning.	密閉空間の中に設置すると, 設定された種類の液体を設定された量で満たされた状態でスポーンします.
+def_water_spawner_name		Fluid Spawner	流体発生器
+def_water_spawner_desc		The fluid spawner for helping with custom fluid tanks, so they can be spawned full, without a need to fill after spawning. Gases are spawned compressed (60atm).	密閉空間の中に設置すると, 設定された種類の流体を設定された量で満たされた状態でスポーンします. 気体の場合は60気圧で加圧されています.
 def_water_spawner_s_desc		A component to mark an enclosed area to be spawned with fluid inside.	この密閉空間の中は液体で満たされると印を付けるブロックです.
 def_water_suction_duct_name		Fluid Slot Port	流体口 (スロット)
 def_water_suction_duct_desc		Place the port inside of an enclosed volume to connect to that volume, or outside of the vehicle to connect to the ocean.	密閉空間内に設置してその空間内の流体を出し入れしたり, 乗り物の側面に設置して外と流体を出し入れしたりします.
