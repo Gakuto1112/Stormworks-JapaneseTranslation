@@ -11,20 +11,40 @@ jobs:
     name: Build
     uses: ./.github/workflows/build.yml
   upload_release_assets:
-    name: Upload artifact as release asset
+    name: Attach artifact to release assets
     needs: build
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.4
+      - name: Prepare output directory
+        run: |
+          mkdir ./out
+          mkdir ./out/japanese
       - name: Download artifact
         uses: actions/download-artifact@v4.1.4
-        with:
+        with: 
           name: japanese
-          path: ./
+          path: ./out/japanese
+      - name: Copy necessary file
+        run: cp ./LICENSE ./out/LICENSE
+      - name: Create README.txt
+        run: |
+          cat << EOF > ./out/README.txt
+          翻訳データの使用方法や注意事項などは下記のリンクのREADMEをお読みください。
+          https://github.com/Gakuto1112/Stormworks-JapaneseTranslation/blob/main/.github/README.md
+          
+          Please read README at the link below for instructions and notes for the translation data.
+          https://github.com/Gakuto1112/Stormworks-JapaneseTranslation/blob/main/.github/CONTRIBUTING_en.md
+          EOF
       - name: Zip artifact
         run: zip -r ./japanese.zip ./
+        working-directory: ./out
       - name: Upload artifact as release asset
-        run: gh release upload ${{ github.event.release.tag_name }} ./japanese.zip --repo ${{ github.repository }}
+        run: gh release upload ${TAG_NAME} ./out/japanese.zip --repo ${REPOSITORY}
         env:
           GH_TOKEN: ${{ github.token }}
+          TAG_NAME: ${{ github.event.release.tag_name }}
+          REPOSITORY: ${{ github.repository }}
