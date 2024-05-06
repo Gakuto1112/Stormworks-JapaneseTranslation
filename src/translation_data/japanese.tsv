@@ -7034,12 +7034,12 @@ def_steam_coal_duct_node_0_label		Fill Level	物資の量
 def_steam_coal_duct_node_0_desc			ダクトの中の物資の量を出力します.
 def_steam_coal_duct_l_name		Duct Large	物資ダクト (大)
 def_steam_coal_duct_l_desc		Transports resources through the connected system.	接続されている部品へ物資を輸送します.
-def_steam_coal_duct_l_s_desc		A basic resource duct.	基本的な中型の物資ダクトです.
+def_steam_coal_duct_l_s_desc		A basic resource duct.	基本的な大型の物資ダクトです.
 def_steam_coal_duct_l_node_0_label		Fill Level	物資の量
 def_steam_coal_duct_l_node_0_desc			ダクトの中の物資の量を出力します.
 def_steam_coal_duct_m_name		Duct Medium	物資ダクト (中)
 def_steam_coal_duct_m_desc		Transports resources through the connected system.	接続されている部品へ物資を輸送します.
-def_steam_coal_duct_m_s_desc		A basic resource duct.	基本的な大型の物資ダクトです.
+def_steam_coal_duct_m_s_desc		A basic resource duct.	基本的な中型の物資ダクトです.
 def_steam_coal_duct_m_node_0_label		Fill Level	物資の量
 def_steam_coal_duct_m_node_0_desc			ダクトの中の物資の量を出力します.
 def_steam_coal_firebox_name		Firebox	石炭燃焼室 (小)
