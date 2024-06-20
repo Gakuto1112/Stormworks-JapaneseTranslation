@@ -15,7 +15,7 @@ async function build(): Promise<void> {
     await streamTranslationData("./translation_data/japanese.tsv", (line: number, id: string, en?: string, local?: string) => {
         if(en != undefined) {
             if(local != undefined) {
-                if(/^def_.+_name$/.test(id)) writeStream.write(`${id}\t\t${en}\t${en}${separator}${local}\n`);
+                if(/^def_.+_name$/.test(id)) writeStream.write(`${id}\t\t${en}\t${local}${separator}${en}\n`);
                 else writeStream.write(`${id}\t\t${en}\t${local}\n`);
             }
             else {
