@@ -4152,13 +4152,13 @@ def_gun_m_barrel_desc		Barrel extensions increase weapon accuracy, but add addit
 def_gun_m_barrel_s_desc		A heavy autocannon barrel extension.	大型機関砲の砲身を延長するための延長部品です.
 def_gun_m_barrel_1_name		Heavy Autocannon Barrel Extension	機関砲の延長砲身 (大)
 def_gun_m_barrel_1_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
-def_gun_m_barrel_1_s_desc		A heavy autocannon barrel extension.	大型機関砲のマズルブレーキです.
+def_gun_m_barrel_1_s_desc		A heavy autocannon barrel extension.	大型機関砲の砲身を延長するための延長部品です.
 def_gun_m_barrel_2_name		Heavy Autocannon Barrel Extension	機関砲の延長砲身 (大)
 def_gun_m_barrel_2_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
-def_gun_m_barrel_2_s_desc		A heavy autocannon barrel extension.	大型機関砲のマズルブレーキです.
+def_gun_m_barrel_2_s_desc		A heavy autocannon barrel extension.	大型機関砲の砲身を延長するための延長部品です.
 def_gun_m_barrel_3_name		Heavy Autocannon Barrel Extension	機関砲の延長砲身 (大)
 def_gun_m_barrel_3_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
-def_gun_m_barrel_3_s_desc		A heavy autocannon barrel extension.	大型機関砲のマズルブレーキです.
+def_gun_m_barrel_3_s_desc		A heavy autocannon barrel extension.	大型機関砲の砲身を延長するための延長部品です.
 def_gun_m_muzzle_name		Heavy Autocannon Muzzle Brake	機関砲のマズルブレーキ (大)
 def_gun_m_muzzle_desc		A muzzle brake will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
 def_gun_m_muzzle_s_desc		A heavy autocannon muzzle brake.	大型機関砲のマズルブレーキです.
