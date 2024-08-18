@@ -2411,8 +2411,9 @@ id	description	en	local
 		Merch Store	Stormworksグッズストア
 		Fish	魚
 		Fishing Rod	釣り竿
-		[$[action_equipment_use]] Cast [$[action_equipment_secondary]] Reel in	[$[action_equipment_use]] キャスト [$[action_equipment_secondary]] リールを巻く
+		[$[action_equipment_use]] Cast / Reel in [$[action_equipment_secondary]] Cycle hook depth	[$[action_equipment_use]] キャスト/リールを巻く [$[action_equipment_secondary]] 針の深度を変える
 		Fishing Lure	ルアー
+		Crabs and Lobsters	カニとロブスター
 		Anchovy	カタクチイワシ
 		Anglerfish	アンコウ
 		Arctic Char	ホッキョクイワナ
@@ -2456,6 +2457,30 @@ id	description	en	local
 		Tubeshoulders Fish	ハナメイワシ
 		Viperfish	ハナメイワシ
 		Yellowfin Tuna	キハダ
+		Blue Crab	アオガニ
+		Brown Box Crab	フサイバラガニ
+		Coconut Crab	ヤシガニ
+		Dungeness Crab	アメリカイチョウガニ
+		Furry Lobster	ヨロンエビ
+		Atlantic Lobster	アトランティックロブスター
+		Common Lobster	ヨーロッパロブスター
+		Horseshoe Crab	カブトガニ
+		Red Rock Lobster	ミナミイセエビ
+		Cape Rock Lobster	アフリカミナミイセエビ
+		Jonah Crab	ジョナクラブ
+		King Crab	タラバガニ
+		Mud Crab	アミメノコギリガザミ
+		Munida Lobster	ミュニダロブスター
+		Ornate Rock Lobster	ニシキエビ
+		Panulirus Interruptus	カリフォルニアイセエビ
+		Red King Crab	アカタラバガニ
+		Reef Lobster	クミショウグンエビ
+		Slipper Lobster	セミエビ
+		Snow Crab	ズワイガニ
+		Southern Rock Lobster	ミナミイセエビ
+		Spider Crab	タカアシガニ
+		Spiny Lobster	イセエビ
+		Stone Crab	イシガニ
 		Main	メイン
 		Arctic	北極
 		Sawyer	ソーヤー島
@@ -4512,7 +4537,7 @@ def_inventory_equipment_first_aid_s_desc		A small equipment storage unit contain
 def_inventory_equipment_first_aid_node_0_label		Electric	電力
 def_inventory_equipment_first_aid_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_fishing_rod_name		Equipment inventory (Fishing Rod)	保管庫 (中, 釣り竿)
-def_inventory_equipment_fishing_rod_desc		Hold and release [$[action_equipment_use]] to load and cast the fishing line. Hold [$[action_equipment_secondary]] to reel in the fishing line.	[$[action_equipment_use]] を長押しし, 離すことで釣り竿をキャストします. その後, [$[action_equipment_secondary]] を押してリールを巻きます.
+def_inventory_equipment_fishing_rod_desc		Hold and release [$[action_equipment_use]] to load and cast the fishing line. Hold [$[action_equipment_use]] to reel in the fishing line. Press [$[action_equipment_secondary]] before casting to cycle the sink depth of the hook.	[$[action_equipment_use]] を長押しし, 離すことで釣り針を取り付け, 竿をキャストします. [$[action_equipment_use]] を長押ししてリールを巻きます. [$[action_equipment_secondary]] を押すと釣り針が沈む深さを切り替えます.
 def_inventory_equipment_fishing_rod_s_desc		A large equipment storage unit containing a fishing rod.	釣り竿が保管されている中型の保管庫です.
 def_inventory_equipment_fishing_rod_node_0_label		Electric	電力
 def_inventory_equipment_fishing_rod_node_0_desc		Electrical power connection.	電力網から電力を供給します. 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
@@ -5010,6 +5035,13 @@ def_liquid_rocket_small_node_4_label		Gimbal X	x角度
 def_liquid_rocket_small_node_4_desc			ロケットが飛ぶx方向の向きです.
 def_liquid_rocket_small_node_5_label		Throttle	スロットル
 def_liquid_rocket_small_node_5_desc			ロケットの出力の強さを制御します.
+def_lobster_pot_name		Lobster Pot	ロブスターの罠
+def_lobster_pot_desc		A portable trap for catching lobsters and crabs on the sea floor.	海底でロブスターやカニを捕まえる携帯型の罠です.
+def_lobster_pot_s_desc		A trap for lobsters and crabs.	ロブスターとカニを捕獲する罠です.
+def_lobster_pot_node_0_label		Release	解放
+def_lobster_pot_node_0_desc		When on, releases captured crabs and lobsters. When off, keeps them contained.	オン信号で捕獲したロブスターやカニを罠から出します. オフ信号の場合は罠の中から獲物を出しません.
+def_lobster_pot_node_1_label		Fill Level	捕獲量
+def_lobster_pot_node_1_desc			罠の中にいる獲物の量を出力します.
 def_magall_name		Mag All	コネクター (マグオール)
 def_magall_desc		While the connector is active the end will glow and it will stick to most surfaces that it touches. The connection will break if enough stress (200) is applied.	起動している状態でオブジェクトや地形に触れると自動的に接続されます. 200以上の負荷がかかると接続が切れてしまいます.
 def_magall_s_desc		A small connector that will attach to most surfaces.	殆どのオブジェクトや地形に接続できるコネクターです.
@@ -5958,6 +5990,8 @@ def_rope_hook_net_node_2_label		Extend	巻き下げ
 def_rope_hook_net_node_2_desc			オン信号を受け取ると網の張りを弱くします.
 def_rope_hook_net_node_3_label		Retract	巻き上げ
 def_rope_hook_net_node_3_desc			オン信号を受け取ると網の張りを強くします.
+def_rope_hook_net_node_4_label		Net Data	網情報
+def_rope_hook_net_node_4_desc		Outputs attached net data. Value 1: net fill level, Value 2: net extend factor.	取り付けた網の情報を出力します: [1] 網の捕獲量, [2] 網の張りの強さ
 def_rope_hook_winch_name		Medium Winch	ウィンチ (中)
 def_rope_hook_winch_desc		Draw a rope logic link between two Rope Nodes to form a cable. Can be extended and retracted.	ウィンチの本体と取り付け部を選択グリッドなどで別オブジェクトに分けた後, ウィンチの取り付け部のアンカーをロープノードで接続して下さい. ロープを巻く速度はプロパティウィンドウから設定できます.
 def_rope_hook_winch_s_desc		A mechanical winch that can transfer data/electric/fluid through an attached cable, with an extension length of 40m.	接続されるロープによって電力, 信号, 流体を伝達できるウィンチです. ロープ長さは40メートルです.
@@ -7849,7 +7883,7 @@ def_wheel_tank_1_node_0_label		Brake	ブレーキ
 def_wheel_tank_1_node_0_desc		Locks the wheel into place when receiving an on signal.	オン信号を受け取るとブレーキをかけます.
 def_wheel_tank_5_name		Tank Wheel (Large)	履帯車輪 (大)
 def_wheel_tank_5_desc		A drive wheel is required to rotate the connected track. The wheel will form a track with other wheels of the same size and orientation that are placed in line and on the same body.	履帯を動かすには履帯駆動輪を組み込む必要があります. 乗り物のスポーン時に正しい位置にある同じ大きさの車輪同士に履帯が装着されます.
-def_wheel_tank_5_s_desc		Medium wheel for tracked vehicles.	履帯用の大型の車輪です.
+def_wheel_tank_5_s_desc		Large wheel for tracked vehicles.	履帯用の大型の車輪です.
 def_wheel_tank_5_node_0_label		Brake	ブレーキ
 def_wheel_tank_5_node_0_desc		Locks the wheel into place when receiving an on signal.	オン信号を受け取るとブレーキをかけます.
 def_wheel_tank_5_2_name		Tank Wheel (Medium)	履帯車輪 (中)
@@ -7859,7 +7893,7 @@ def_wheel_tank_5_2_node_0_label		Brake	ブレーキ
 def_wheel_tank_5_2_node_0_desc		Locks the wheel into place when receiving an on signal.	オン信号を受け取るとブレーキをかけます.
 def_wheel_tank_7_name		Tank Wheel (Huge)	履帯車輪 (特大)
 def_wheel_tank_7_desc		A drive wheel is required to rotate the connected track. The wheel will form a track with other wheels of the same size and orientation that are placed in line and on the same body.	履帯を動かすには履帯駆動輪を組み込む必要があります. 乗り物のスポーン時に正しい位置にある同じ大きさの車輪同士に履帯が装着されます.
-def_wheel_tank_7_s_desc		Large wheel for tracked vehicles.	履帯用の特大型の車輪です.
+def_wheel_tank_7_s_desc		Huge wheel for tracked vehicles.	履帯用の特大型の車輪です.
 def_wheel_tank_7_node_0_label		Brake	ブレーキ
 def_wheel_tank_7_node_0_desc		Locks the wheel into place when receiving an on signal.	オン信号を受け取るとブレーキをかけます.
 def_wheel_tank_drive_1_name		Tank Drive Wheel (Small)	履帯駆動輪 (小)
@@ -7871,7 +7905,7 @@ def_wheel_tank_drive_1_node_1_label		RPS	動力
 def_wheel_tank_drive_1_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	エンジンからの動力を受け取ります.
 def_wheel_tank_drive_5_name		Tank Drive Wheel (Large)	履帯駆動輪 (大)
 def_wheel_tank_drive_5_desc		The wheel will form a track with other wheels of the same size and orientation that are placed in line and on the same body.	乗り物のスポーン時に正しい位置にある同じ大きさの車輪同士に履帯が装着されます.
-def_wheel_tank_drive_5_s_desc		Medium drive wheel for tracked vehicles.	履帯用の大型の駆動輪です.
+def_wheel_tank_drive_5_s_desc		Large drive wheel for tracked vehicles.	履帯用の大型の駆動輪です.
 def_wheel_tank_drive_5_node_0_label		Brake	ブレーキ
 def_wheel_tank_drive_5_node_0_desc		Locks the wheel into place when receiving an on signal.	オン信号を受け取るとブレーキをかけます.
 def_wheel_tank_drive_5_node_1_label		RPS	動力
@@ -7885,7 +7919,7 @@ def_wheel_tank_drive_5_2_node_1_label		RPS	動力
 def_wheel_tank_drive_5_2_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	エンジンからの動力を受け取ります.
 def_wheel_tank_drive_7_name		Tank Drive Wheel (Huge)	履帯駆動輪 (特大)
 def_wheel_tank_drive_7_desc		The wheel will form a track with other wheels of the same size and orientation that are placed in line and on the same body.	乗り物のスポーン時に正しい位置にある同じ大きさの車輪同士に履帯が装着されます.
-def_wheel_tank_drive_7_s_desc		Large drive wheel for tracked vehicles.	履帯用の特大型の駆動輪です.
+def_wheel_tank_drive_7_s_desc		Huge drive wheel for tracked vehicles.	履帯用の特大型の駆動輪です.
 def_wheel_tank_drive_7_node_0_label		Brake	ブレーキ
 def_wheel_tank_drive_7_node_0_desc		Locks the wheel into place when receiving an on signal.	オン信号を受け取るとブレーキをかけます.
 def_wheel_tank_drive_7_node_1_label		RPS	動力
