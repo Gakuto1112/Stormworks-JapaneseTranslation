@@ -23,7 +23,7 @@ id	description	en	local
 		Server is full	サーバーは満員です.
 		Server is not open to multiplayer	サーバーはマルチプレイ用に開かれていません.
 		You are not whitelisted on this server	あなたはこのサーバーへの接続が許可されていません.
-		You are missing a required DLC	必須のDLCがありません.
+		You are missing a required DLC	サーバーから要求されたDLCがインストールされていません.
 		You are banned from this server	あなたはこのサーバーから接続禁止を受けています.
 		Server already has your account connected - please retry	あなたは既にこのサーバーに接続しています. 再試行してください.
 		no errors detected	エラーは見つかりませんでした.
@@ -2493,6 +2493,9 @@ id	description	en	local
 		A train yard adjacent to the Monkey Brain Launch site and Clarke Airfield.	モンキー・ブレイン発射場とクラーク飛行場に隣接する操車場です.
 		Threshold (+/-)	閾値 (+/-)
 		Clean Oil Spills	原油流出を除去
+		Requires Search and Destroy DLC	Search and Destroy DLCを必須にする.
+		Requires Industrial Frontier DLC	Industrial Frontier DLCを必須にする.
+		Requires Space DLC	Space DLCを必須にする.
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
@@ -4134,7 +4137,7 @@ def_gun_drum_xsmall_s_desc		A machine gun ammo box.	機関銃の弾薬箱です.
 def_gun_drum_xsmall_node_0_label		Ammo count	弾薬数
 def_gun_drum_xsmall_node_0_desc		Outputs the total ammo count stored in the box.	弾薬箱に貯蔵されている弾薬の数を出力します.
 def_gun_l_name		Battle Cannon	大砲 (小)
-def_gun_l_desc		Battle cannons provide powerful, consistent firepower in a compact form.	この大砲は小型ながら強力で安定した火力を発揮します. 英語名は 「Battle cannon」 です. 発射するには武器DLCを有効にする必要があります.
+def_gun_l_desc		Battle cannons provide powerful, consistent firepower in a compact form.	この大砲は小型ながら強力で安定した火力を発揮します. 英語名は 「Battle cannon」 です. 発射するにはSearch and Destroy DLCを有効にする必要があります.
 def_gun_l_s_desc		A battle cannon.	小型の大砲の砲身です.
 def_gun_l_node_0_label		Trigger	発射
 def_gun_l_node_0_desc		When true: fires a loaded shell.	オン信号を受け取ると装填した砲弾を発射します.
@@ -4164,7 +4167,7 @@ def_gun_l_muzzle_2_name		Battle Cannon Muzzle Brake	大砲のマズルブレー�
 def_gun_l_muzzle_2_desc		A muzzle brake will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
 def_gun_l_muzzle_2_s_desc		A battle cannon muzzle brake.	小型大砲のマズルブレーキです.
 def_gun_m_name		Heavy Autocannon	機関砲 (大)
-def_gun_m_desc		Heavy autocannons bridge the gap between fast-firing autocannons and high-caliber cannons. Autocannons require electric power to load ammo from connected belts or drums.	この大型の機関砲は高速射撃ができる小型の機関砲と高威力の大砲の中間に位置する砲台です. 弾薬を装填するために電力が必要となります. 射撃するには武器DLCを有効にする必要があります.
+def_gun_m_desc		Heavy autocannons bridge the gap between fast-firing autocannons and high-caliber cannons. Autocannons require electric power to load ammo from connected belts or drums.	この大型の機関砲は高速射撃ができる小型の機関砲と高威力の大砲の中間に位置する砲台です. 弾薬を装填するために電力が必要となります. 射撃するにはSearch and Destroy DLCを有効にする必要があります.
 def_gun_m_s_desc		A heavy autocannon.	大型の機関砲です.
 def_gun_m_node_0_label		Trigger	射撃
 def_gun_m_node_0_desc		When true: feeds, loads, and fires cartridges from a connected belt or drum.	オン信号を受け取ると弾薬を補給, 装填しながら連続で射撃します.
@@ -4194,7 +4197,7 @@ def_gun_m_muzzle_2_name		Heavy Autocannon Muzzle Brake	機関砲のマズルブ�
 def_gun_m_muzzle_2_desc		A muzzle brake will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
 def_gun_m_muzzle_2_s_desc		A heavy autocannon muzzle brake.	大型機関砲のマズルブレーキです.
 def_gun_rocket_launcher_name		Rocket Launcher	ロケットランチャー
-def_gun_rocket_launcher_desc		Rocket launchers fire powerful high explosive rockets, but cannot be reloaded once empty. Rockets are vulnerable to bullets while in flight.	ロケットランチャーは強力な爆発性ロケットを発射しますが, 一度発射すると再装填できません. 飛行中のロケットは銃弾で打ち落とせます. 発射するには武器DLCを有効にする必要があります.
+def_gun_rocket_launcher_desc		Rocket launchers fire powerful high explosive rockets, but cannot be reloaded once empty. Rockets are vulnerable to bullets while in flight.	ロケットランチャーは強力な爆発性ロケットを発射しますが, 一度発射すると再装填できません. 飛行中のロケットは銃弾で打ち落とせます. 発射するにはSearch and Destroy DLCを有効にする必要があります.
 def_gun_rocket_launcher_s_desc		A 4-shot rocket launcher.	4連装のロケットランチャーです.
 def_gun_rocket_launcher_node_0_label		Trigger	発射
 def_gun_rocket_launcher_node_0_desc		When true: fires a loaded rocket.	オン信号を受け取ると装填したロケットを発射します.
@@ -4203,7 +4206,7 @@ def_gun_rocket_launcher_node_1_desc		Returns true when a rocket is loaded and re
 def_gun_rocket_launcher_node_2_label		Trigger Passthrough	弾切れ
 def_gun_rocket_launcher_node_2_desc		Outputs the trigger value once all rockets have been expended.	全てのロケットを撃ち終わるとオン信号を出力します.
 def_gun_s_name		Light Autocannon	機関砲 (小)
-def_gun_s_desc		Light autocannons provide rapid fire and high ammo capacity. Autocannons require electric power to load ammo from connected belts or drums.	この小型の機関砲は高速射撃が可能で装填弾数も多くなっています. 弾薬を装填するために電力が必要となります. 射撃するには武器DLCを有効にする必要があります.
+def_gun_s_desc		Light autocannons provide rapid fire and high ammo capacity. Autocannons require electric power to load ammo from connected belts or drums.	この小型の機関砲は高速射撃が可能で装填弾数も多くなっています. 弾薬を装填するために電力が必要となります. 射撃するにはSearch and Destroy DLCを有効にする必要があります.
 def_gun_s_s_desc		A light autocannon.	小型の機関砲です.
 def_gun_s_node_0_label		Trigger	射撃
 def_gun_s_node_0_desc		When true: feeds, loads, and fires cartridges from a connected belt or drum.	オン信号を受け取ると弾薬を補給, 装填しながら連続で射撃します.
@@ -4227,7 +4230,7 @@ def_gun_s_muzzle_3_name		Light Autocannon Muzzle Brake	機関砲のマズルブ�
 def_gun_s_muzzle_3_desc		A muzzle brake will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
 def_gun_s_muzzle_3_s_desc		A light autocannon muzzle brake.	小型機関砲のマズルブレーキです.
 def_gun_v_name		Rotary Autocannon	機関砲 (中)
-def_gun_v_desc		Rotary autocannons have a tremendous rate of fire, but can overheat quickly. Autocannons require electric power to load ammo from connected belts or drums.	この中型の機関砲は高速射撃が可能ですが, すぐに過熱します. 弾薬を装填するために電力が必要となります. 射撃するには武器DLCを有効にする必要があります.
+def_gun_v_desc		Rotary autocannons have a tremendous rate of fire, but can overheat quickly. Autocannons require electric power to load ammo from connected belts or drums.	この中型の機関砲は高速射撃が可能ですが, すぐに過熱します. 弾薬を装填するために電力が必要となります. 射撃するにはSearch and Destroy DLCを有効にする必要があります.
 def_gun_v_s_desc		A rotary autocannon.	中型の機関砲です.
 def_gun_v_node_0_label		Trigger	射撃
 def_gun_v_node_0_desc		When true: feeds, loads, and fires cartridges from a connected belt or drum.	オン信号を受け取ると弾薬を補給, 装填しながら連続で射撃します.
@@ -4239,7 +4242,7 @@ def_gun_v_barrel_name		Rotary Autocannon Barrel Extension	機関砲の延長砲�
 def_gun_v_barrel_desc		Barrel extensions increase weapon accuracy, but add additional weight.	砲身を延長すると射撃精度が上がりますが, 重量が増加します.
 def_gun_v_barrel_s_desc		A rotary autocannon barrel extension.	中型機関砲の砲身を延長するための延長部品です.
 def_gun_xl_name		Artillery Cannon	大砲 (中)
-def_gun_xl_desc		Artillery cannons fire high caliber explosive and armor-piercing shells over great distances.	この大砲は大口径の砲弾を遠くまで発射します. 英語名は 「Artillery cannon」です. 発射するには武器DLCを有効にする必要があります.
+def_gun_xl_desc		Artillery cannons fire high caliber explosive and armor-piercing shells over great distances.	この大砲は大口径の砲弾を遠くまで発射します. 英語名は 「Artillery cannon」です. 発射するにはSearch and Destroy DLCを有効にする必要があります.
 def_gun_xl_s_desc		An artillery cannon.	中型の大砲の砲身です.
 def_gun_xl_node_0_label		Trigger	発射
 def_gun_xl_node_0_desc		When true: fires a loaded shell.	オン信号を受け取ると装填した砲弾を発射します.
@@ -4269,14 +4272,14 @@ def_gun_xl_muzzle_2_name		Artillery Cannon Muzzle Brake	大砲のマズルブレ
 def_gun_xl_muzzle_2_desc		A muzzle brake will reduce weapon recoil force when added to the end of a weapon barrel.	マズルブレーキを砲身の端に取り付けることで, 射撃時の反動を軽減します.
 def_gun_xl_muzzle_2_s_desc		A artillery cannon muzzle brake.	中型大砲のマズルブレーキです.
 def_gun_xs_name		Machine Gun	機関銃
-def_gun_xs_desc		Machine guns are lightweight and compact, but require ammo boxes to be reloaded by hand.	機関銃は軽量で小型ですが, 弾薬を手動で装填する必要があります. 射撃するには武器DLCを有効にする必要があります.
+def_gun_xs_desc		Machine guns are lightweight and compact, but require ammo boxes to be reloaded by hand.	機関銃は軽量で小型ですが, 弾薬を手動で装填する必要があります. 射撃するにはSearch and Destroy DLCを有効にする必要があります.
 def_gun_xs_s_desc		A machine gun.	機関銃です.
 def_gun_xs_node_0_label		Trigger	射撃
 def_gun_xs_node_0_desc		When true: feeds, loads, and fires cartridges from a connected ammo box.	オン信号を受け取ると弾薬を補給, 装填しながら連続で射撃します.
 def_gun_xs_node_1_label		Loaded	装填済み
 def_gun_xs_node_1_desc		Returns true when a cartridge is loaded and ready to fire.	弾薬が装填され, 射撃の準備が完了するとオン信号を出力します.
 def_gun_xxl_name		Bertha Cannon	大砲 (大)
-def_gun_xxl_desc		The Bertha cannon fires devastating high explosive mortar shells, with a wide radius of destruction.	この大砲は破壊力のある爆発性の砲弾を発射し, 広い範囲を破壊することができます. 英語名は「Bertha cannon」です. 発射するには武器DLCを有効にする必要があります.
+def_gun_xxl_desc		The Bertha cannon fires devastating high explosive mortar shells, with a wide radius of destruction.	この大砲は破壊力のある爆発性の砲弾を発射し, 広い範囲を破壊することができます. 英語名は「Bertha cannon」です. 発射するにはSearch and Destroy DLCを有効にする必要があります.
 def_gun_xxl_s_desc		A Bertha cannon.	大型の大砲の砲身です.
 def_gun_xxl_node_0_label		Trigger	発射
 def_gun_xxl_node_0_desc		When true: fires a loaded shell.	オン信号を受け取ると装填した砲弾を発射します.
@@ -4692,7 +4695,7 @@ def_inventory_outfit_arctic_s_desc		An outfit inventory unit containing speciali
 def_inventory_outfit_arctic_node_0_label		Electric	電力
 def_inventory_outfit_arctic_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
 def_inventory_outfit_diving_name		Outfit Inventory (Diving)	保管庫 (大, ダイビング装備)
-def_inventory_outfit_diving_desc		When equipped, it will allow deep sea diving to a depth of 230m, and provides air for 10 minutes. The air tank can be refilled by storing the equipment in an outfit inventory unit.	水深250メートルまでの潜水を可能にし, 10分間空気を提供します. 使用後は通電している保管庫で空気の補充ができます.
+def_inventory_outfit_diving_desc		When equipped, it will allow deep sea diving to a depth of 230m, and provides air for 10 minutes. The air tank can be refilled by storing the gear in an outfit inventory unit with an attached air input or via space seat.	水深230メートルまでの潜水を可能にし, 10分間空気を提供します. 使用後は通電している保管庫か宇宙用運転席で空気の補充ができます.
 def_inventory_outfit_diving_s_desc		An outfit inventory unit containing specialist diving equipment.	ダイビング装備が保管されている保管庫です.
 def_inventory_outfit_diving_node_0_label		Electric	電力
 def_inventory_outfit_diving_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
@@ -4714,7 +4717,7 @@ def_inventory_outfit_parachute_s_desc		An outfit inventory unit containing a sin
 def_inventory_outfit_parachute_node_0_label		Electric	電力
 def_inventory_outfit_parachute_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
 def_inventory_outfit_scuba_name		Outfit Inventory (Scuba)	保管庫 (大, スキューバ装備)
-def_inventory_outfit_scuba_desc		When equipped, it will allow diving to a depth of 40m, and provides air for 2 minutes. The air tank can be refilled by storing the gear in an outfit inventory unit.	水深50メートルまでの潜水を可能にし, 2分間空気を提供します.
+def_inventory_outfit_scuba_desc		When equipped, it will allow diving to a depth of 40m, and provides air for 2 minutes. The air tank can be refilled by storing the gear in an outfit inventory unit with an attached air input or via space seat.	水深40メートルまでの潜水を可能にし, 2分間空気を提供します. 使用後は通電している保管庫か宇宙用運転席で空気の補充ができます.
 def_inventory_outfit_scuba_s_desc		An outfit inventory unit containing specialist scuba gear.	スキューバ装備が保管されている保管庫です.
 def_inventory_outfit_scuba_node_0_label		Electric	電力
 def_inventory_outfit_scuba_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
@@ -4722,14 +4725,14 @@ def_inventory_outfit_scuba_node_1_label		Fluid In	流体注入
 def_inventory_outfit_scuba_node_1_desc			
 def_inventory_outfit_space_suit_name		Outfit Inventory (Space)	保管庫 (大, 宇宙服)
 def_inventory_outfit_space_suit_desc		When equipped, it will protect against low temperatures, low pressures and provide oxygen.	装備すると低温低圧環境下で生存可能になり, 生存のための酸素が供給されます.
-def_inventory_outfit_space_suit_s_desc		An outfit inventory unit containing specialist Space Exploration gear required for surviving in space.	宇宙服が保管されている保管庫です.
+def_inventory_outfit_space_suit_s_desc		An outfit inventory unit containing specialist Space Exploration gear required for surviving in space. The air tank can be refilled by storing the gear in an outfit inventory unit with an attached air input or via space seat.	宇宙服が保管されている保管庫です. 使用後は通電している保管庫か宇宙用運転席で空気の補充ができます.
 def_inventory_outfit_space_suit_node_0_label		Electric	電力
 def_inventory_outfit_space_suit_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
 def_inventory_outfit_space_suit_node_1_label		Fluid In	流体注入
 def_inventory_outfit_space_suit_node_1_desc			
 def_inventory_outfit_space_suit_exploration_name		Outfit Inventory (Space Exploration)	保管庫 (大, 宇宙探査服)
 def_inventory_outfit_space_suit_exploration_desc		When equipped, it will protect against low temperatures, low pressures and provide oxygen.	装備すると低温低圧環境下で生存可能になり, 生存のための酸素が供給されます.
-def_inventory_outfit_space_suit_exploration_s_desc		An outfit inventory unit containing specialist Space Exploration gear required for surviving in space.	宇宙探査服が保管されている保管庫です.
+def_inventory_outfit_space_suit_exploration_s_desc		An outfit inventory unit containing specialist Space Exploration gear required for surviving in space. The air tank can be refilled by storing the gear in an outfit inventory unit with an attached air input or via space seat.	宇宙探査服が保管されている保管庫です. 使用後は通電している保管庫か宇宙用運転席で空気の補充ができます.
 def_inventory_outfit_space_suit_exploration_node_0_label		Electric	電力
 def_inventory_outfit_space_suit_exploration_node_0_desc		Electrical power connection.	電力網から電力を供給します. 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
 def_inventory_outfit_space_suit_exploration_node_1_label		Fluid In	流体注入
