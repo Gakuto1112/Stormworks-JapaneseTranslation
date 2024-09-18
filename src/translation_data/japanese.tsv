@@ -6911,7 +6911,7 @@ def_slurry_filter_name		Slurry Filter	スラリー液フィルター
 def_slurry_filter_desc		A pipe with a solids filter that consumes fresh water to slowly convert saturated slurry to slurry and allows free flow of slurry.	淡水を消費して飽和スラリー液をスラリ液へ戻す固体フィルターが内部に備え付けてあります. フィルター間でスラリー液は自由に移動します.
 def_slurry_filter_s_desc		A filter that slowly desaturates slurry.	ゆっくりとスラリー液を浄化するフィルターです.
 def_slurry_filter_node_0_label		Water In	淡水注入
-def_slurry_filter_node_0_desc		Water Input.	炭水を注入します.
+def_slurry_filter_node_0_desc		Water Input.	淡水を注入します.
 def_slurry_filter_node_1_label		Water Out	淡水排出
 def_slurry_filter_node_1_desc		Water Output.	淡水を排出します.
 def_slurry_filter_node_2_label		Slurry In	飽和スラリー液注入
