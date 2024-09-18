@@ -3374,6 +3374,8 @@ def_fluid_filter_node_0_label		Fluid A	流体1
 def_fluid_filter_node_0_desc		Fluid connection.	「流体1」と「流体2」ノード間は指定された流体しか通れません.
 def_fluid_filter_node_1_label		Fluid B	流体2
 def_fluid_filter_node_1_desc		Fluid connection.	「流体1」と「流体2」ノード間は指定された流体しか通れません.
+def_fluid_filter_node_2_label		Flow Rate	流量
+def_fluid_filter_node_2_desc		Fluid flow rate in L/s.	この部品に流れる流体の量をリットル毎秒で出力します.
 def_fluid_filter_v2_name		Fluid Filter	流体フィルター
 def_fluid_filter_v2_desc		The valve can be configured to select which fluid groups may pass across the two directional valve. Liquids or gases.	液体か気体かのどちらがフィルターを通過できるかを設定できます.
 def_fluid_filter_v2_s_desc		The fluid filter can prevent liquids or gases crossing the valve.	液体や気体の通過を防ぐことができるフィルターです.
@@ -3514,6 +3516,8 @@ def_fluid_valve_flow_node_0_label		Fluid In	流体注入
 def_fluid_valve_flow_node_0_desc		Fluid connection for the valve input.	流体を吸入します.
 def_fluid_valve_flow_node_1_label		Fluid Out	流体排出
 def_fluid_valve_flow_node_1_desc		Fluid connection for the valve output.	流体を排出します.
+def_fluid_valve_flow_node_2_label		Flow Rate	流量
+def_fluid_valve_flow_node_2_desc		Fluid flow rate in L/s.	この部品に流れる流体の量をリットル毎秒で出力します.
 def_fluid_valve_on_off_name		Fluid On/Off Valve	流体弁 (オン/オフ)
 def_fluid_valve_on_off_desc		Controls flow from one side of the valve to the other. Fluid can flow in both directions.	流体は双方向から流せます.
 def_fluid_valve_on_off_s_desc		An on/off fluid valve.	オン/オフ信号で開閉できる流体の弁です.
@@ -3525,6 +3529,8 @@ def_fluid_valve_on_off_node_2_label		Valve Control	弁の制御
 def_fluid_valve_on_off_node_2_desc		Valve gate control for opening and closing the valve.	オン信号を受け取ると間は弁を開け, オフ信号を受け取ると弁を閉めます.
 def_fluid_valve_on_off_node_3_label		Electric	電力
 def_fluid_valve_on_off_node_3_desc		Electrical power connection.	電力網から電力を供給します.
+def_fluid_valve_on_off_node_4_label		Flow Rate	流量
+def_fluid_valve_on_off_node_4_desc		Fluid flow rate in L/s.	この部品に流れる流体の量をリットル毎秒で出力します.
 def_fluid_valve_on_off_manual_name		Fluid On/Off Valve (Manual)	流体弁 (手動オン/オフ)
 def_fluid_valve_on_off_manual_desc		Interacting with [$[action_interact_left]]/[$[action_interact_right]] will open / close the valve. Controls flow from one side of the valve to the other. Fluid can flow in both directions.	[$[action_interact_left]]/[$[action_interact_right]] で弁を開閉します. 流体は双方向から流せます.
 def_fluid_valve_on_off_manual_s_desc		An on/off fluid valve with a manual handle.	手動で開閉するためのハンドルが付いた流体の弁です.
@@ -3532,6 +3538,8 @@ def_fluid_valve_on_off_manual_node_0_label		Fluid In	流体1
 def_fluid_valve_on_off_manual_node_0_desc		Fluid input connection for the valve.	弁が開くと流体が流れます.
 def_fluid_valve_on_off_manual_node_1_label		Fluid Out	流体2
 def_fluid_valve_on_off_manual_node_1_desc		Fluid output connection for the valve.	弁が開くと流体が流れます.
+def_fluid_valve_on_off_manual_node_2_label		Flow Rate	流量
+def_fluid_valve_on_off_manual_node_2_desc		Fluid flow rate in L/s.	この部品に流れる流体の量をリットル毎秒で出力します.
 def_fluid_valve_variable_name		Fluid Variable Valve	流体弁 (流量)
 def_fluid_valve_variable_desc		Controls flow from one side of the valve to the other. Fluid can flow in both directions.	流体は双方向から流せます.
 def_fluid_valve_variable_s_desc		A variable fluid valve.	流体の流量を調整できる一方通行の弁です.
@@ -3543,6 +3551,8 @@ def_fluid_valve_variable_node_2_label		Valve Control	流量制御
 def_fluid_valve_variable_node_2_desc		Valve gate control for opening and closing the valve.	数値信号で弁の流量を制御します.
 def_fluid_valve_variable_node_3_label		Electric	電力
 def_fluid_valve_variable_node_3_desc		Electrical power connection.	電力網から電力を供給します.
+def_fluid_valve_variable_node_4_label		Flow Rate	流量
+def_fluid_valve_variable_node_4_desc		Fluid flow rate in L/s.	この部品に流れる流体の量をリットル毎秒で出力します.
 def_foghorn_name		Foghorn	霧笛
 def_foghorn_desc		It has an audible range of 1500m.	音が聞こえる範囲は1500メートルです.
 def_foghorn_s_desc		A ship's foghorn that will sound when receiving an on signal.	オン信号を受け取ると鳴る, 船の霧笛です.
@@ -5938,6 +5948,8 @@ def_relief_valve_gas_node_0_label		Fluid A	気体A
 def_relief_valve_gas_node_0_desc			弁を通過する気体を入出力します.
 def_relief_valve_gas_node_1_label		Fluid B	気体B
 def_relief_valve_gas_node_1_desc			弁を通過する気体を入出力します.
+def_relief_valve_gas_node_2_label		Flow Rate	流量
+def_relief_valve_gas_node_2_desc		Fluid flow rate in L/s.	この部品に流れる流体の量をリットル毎秒で出力します.
 def_relief_valve_liquid_name		Liquid Relief Valve	液体減圧弁
 def_relief_valve_liquid_desc		The valve allows liquids to pass across the two directional valve.	流体が弁を通過することができます.
 def_relief_valve_liquid_s_desc		A relief valve for liquids in a system.	流体システムに設置する液体減圧弁です.
@@ -5945,6 +5957,8 @@ def_relief_valve_liquid_node_0_label		Fluid A	液体A
 def_relief_valve_liquid_node_0_desc			弁を通過する液体を入出力します.
 def_relief_valve_liquid_node_1_label		Fluid B	液体B
 def_relief_valve_liquid_node_1_desc			弁を通過する液体を入出力します.
+def_relief_valve_liquid_node_2_label		Flow Rate	流量
+def_relief_valve_liquid_node_2_desc		Fluid flow rate in L/s.	この部品に流れる流体の量をリットル毎秒で出力します.
 def_rope_hook_name		Rope Anchor	アンカー (ロープ)
 def_rope_hook_desc		Draw a rope logic link between two Rope Anchors to form a rope.	アンカー (ロープ) のロープノード同士を接続するとロープを接続した状態でスポーンします.
 def_rope_hook_s_desc		An anchor point for a basic rope.	ロープが取り付けられるアンカーです.
@@ -7582,6 +7596,8 @@ def_turbocharger_node_1_label		RPS	動力
 def_turbocharger_node_1_desc			エンジンからの動力を受け取ります.
 def_turbocharger_node_2_label		Fluid Out	流体排出
 def_turbocharger_node_2_desc			ポンプで流した流体を排出します.
+def_turbocharger_node_3_label		Flow Rate	流量
+def_turbocharger_node_3_desc		Fluid flow rate in L/s.	この部品に流れる流体の量をリットル毎秒で出力します.
 def_turbocharger_small_name		Impeller Pump (Small)	インペラーポンプ (小)
 def_turbocharger_small_desc		An Impeller that will force fluid through the system when torque is applied.	動力が加えられると流体を流します.
 def_turbocharger_small_s_desc		An Impeller Pump that can push fluid through a system.	動力で流体を流す小型ポンプです.
@@ -7591,6 +7607,8 @@ def_turbocharger_small_node_1_label		RPS	動力
 def_turbocharger_small_node_1_desc			エンジンからの動力を受け取ります.
 def_turbocharger_small_node_2_label		Fluid Out	流体排出
 def_turbocharger_small_node_2_desc			ポンプで流した流体を排出します.
+def_turbocharger_small_node_3_label		Flow Rate	流量
+def_turbocharger_small_node_3_desc		Fluid flow rate in L/s.	この部品に流れる流体の量をリットル毎秒で出力します.
 def_tyre_large_name		Large Tyre	装飾用タイヤ (大)
 def_tyre_large_desc		Useful for creating tyre stacks and fenders.	タイヤの山や緩衝部分の作成に便利です.
 def_tyre_large_s_desc		A large decorative tyre.	大型の装飾用タイヤです.
@@ -7729,6 +7747,8 @@ def_water_pump_node_2_label		Fluid Out	流体排出
 def_water_pump_node_2_desc		Connect to an outlet component to release fluid from the system.	ポンプで流した流体を排出します.
 def_water_pump_node_3_label		Electric	電力
 def_water_pump_node_3_desc		Electrical power connection.	電力網から電力を供給します.
+def_water_pump_node_4_label		Flow Rate	流量
+def_water_pump_node_4_desc		Fluid flow rate in L/s.	この部品に流れる流体の量をリットル毎秒で出力します.
 def_water_pump_large_name		Large Fluid Pump	流体ポンプ (大)
 def_water_pump_large_desc		Connect to an inlet and outlet to create a pumping system to move fluid around a vehicle.	流体を流せる向きは決まっています.
 def_water_pump_large_s_desc		A large fluid pump.	電力で流体を流す大型ポンプです.
@@ -7740,6 +7760,8 @@ def_water_pump_large_node_2_label		On/Off	起動
 def_water_pump_large_node_2_desc		Controls whether or not the fluid is being pumped.	オン信号を受け取ると流体を流します.
 def_water_pump_large_node_3_label		Electric	電力
 def_water_pump_large_node_3_desc		Electrical power connection.	電力網から電力を供給します.
+def_water_pump_large_node_4_label		Flow Rate	流量
+def_water_pump_large_node_4_desc		Fluid flow rate in L/s.	この部品に流れる流体の量をリットル毎秒で出力します.
 def_water_pump_manual_name		Fluid Pump (Manual)	流体ポンプ (手動)
 def_water_pump_manual_desc		Hold [$[action_interact_left]]/[$[action_interact_right]] to create pressure in the pump. Connect to an inlet and outlet to create a pumping system to move fluid around a vehicle.	[$[action_interact_left]]/[$[action_interact_right]] を押し続けて流体を流します.
 def_water_pump_manual_s_desc		A small fluid pump with a manual handle.	手動で回すためのハンドルが付いた小型ポンプです.
@@ -7747,6 +7769,8 @@ def_water_pump_manual_node_0_label		Fluid In	流体注入
 def_water_pump_manual_node_0_desc		Connect to an inlet component to take fluid into the system.	ポンプで流す流体を注入します.
 def_water_pump_manual_node_1_label		Fluid Out	流体排出
 def_water_pump_manual_node_1_desc		Connect to an outlet component to release fluid from the system.	ポンプで流した流体を排出します.
+def_water_pump_manual_node_2_label		Flow Rate	流量
+def_water_pump_manual_node_2_desc		Fluid flow rate in L/s.	この部品に流れる流体の量をリットル毎秒で出力します.
 def_water_spawner_name		Fluid Spawner	流体発生器
 def_water_spawner_desc		The fluid spawner for helping with custom fluid tanks, so they can be spawned full, without a need to fill after spawning. Gases are spawned compressed (60atm).	密閉空間の中に設置すると, 設定された種類の流体を設定された量で満たされた状態でスポーンします. 気体の場合は60気圧で加圧されています.
 def_water_spawner_s_desc		A component to mark an enclosed area to be spawned with fluid inside.	この密閉空間の中は液体で満たされると印を付けるブロックです.
