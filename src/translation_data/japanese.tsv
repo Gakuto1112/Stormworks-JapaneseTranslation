@@ -4347,6 +4347,8 @@ def_gyroscopic_stabilizer_small_node_1_desc		Input rotation value.	方向値を�
 def_handle_name		Handle	取っ手
 def_handle_desc		Interacting with [$[action_interact_left]] or [$[action_interact_right]] again will detach that hand. The handle can be used to drag vehicles around. If a vehicle is too heavy to move, you will be detached automatically when you move outside the handle's interaction range.	取っ手を掴んでいる時に [$[action_interact_left]]/[$[action_interact_right]] を押すと離すことができます. 軽い乗り物は取っ手を掴んでそのまま動かすことができます. プレイヤーが取っ手の範囲外まで移動した場合は自動的に手を離します.
 def_handle_s_desc		A handle that you can attach to by interacting with [$[action_interact_left]] or [$[action_interact_right]].	[$[action_interact_left]] や [$[action_interact_right]] を押して掴むことができる取っ手です.
+def_handle_node_0_label		Is Occupied	使用中
+def_handle_node_0_desc		Returns true if a player is attached to the handle.	誰かがハンドルを握っているととオン信号を出力します.
 def_hatch_name		Sliding Hatch (Electric)	ハッチ (引き戸, 電動)
 def_hatch_desc			
 def_hatch_s_desc		Sliding hatch that can be opened and closed using an on/off signal.	オン/オフ信号で開閉ができる引き戸式のハッチです.
@@ -6040,6 +6042,8 @@ def_rope_hook_winch_node_12_label		Length	ロープの長さ
 def_rope_hook_winch_node_12_desc		The current length of the winch cable in metres.	現在のウィンチから出ているロープの長さをメートル単位で出力します.
 def_rope_hook_winch_node_13_label		Fluid	流体
 def_rope_hook_winch_node_13_desc		Fluid connection for the hose coil.	ホースで接続されている場合はホースを通して流体が自由に移動します. 流量には制限があります.
+def_rope_hook_winch_node_14_label		Speed	巻き取り速度
+def_rope_hook_winch_node_14_desc		The speed of the winch clamped to a relative range of -1 to 1.	ウィンチの巻き取り速度を-1から1の間で指定します.
 def_rope_hook_winch_huge_name		Huge Winch	ウィンチ (特大)
 def_rope_hook_winch_huge_desc		Draw a rope logic link between two Rope Nodes to form a cable. Can be extended and retracted.	ウィンチの本体と取り付け部を選択グリッドなどで別オブジェクトに分けた後, ウィンチの取り付け部のアンカーをロープノードで接続して下さい. ロープを巻く速度はプロパティウィンドウから設定できます.
 def_rope_hook_winch_huge_s_desc		A mechanical winch that can transfer data/electric/fluid through an attached cable, with an extension length of 600m.	接続されるロープによって電力, 信号, 流体を伝達できるウィンチです. ロープ長さは600メートルです.
@@ -6071,6 +6075,8 @@ def_rope_hook_winch_huge_node_12_label		Length	ロープの長さ
 def_rope_hook_winch_huge_node_12_desc		The current length of the winch cable in metres.	現在のウィンチから出ているロープの長さをメートル単位で出力します.
 def_rope_hook_winch_huge_node_13_label		Fluid	流体
 def_rope_hook_winch_huge_node_13_desc		Fluid connection for the hose coil.	ホースで接続されている場合はホースを通して流体が自由に移動します. 流量には制限があります.
+def_rope_hook_winch_huge_node_14_label		Speed	巻き取り速度
+def_rope_hook_winch_huge_node_14_desc		The speed of the winch clamped to a relative range of -1 to 1.	ウィンチの巻き取り速度を-1から1の間で指定します.
 def_rope_hook_winch_large_name		Large Winch	ウィンチ (大)
 def_rope_hook_winch_large_desc		Draw a rope logic link between two Rope Nodes to form a cable. Can be extended and retracted.	ウィンチの本体と取り付け部を選択グリッドなどで別オブジェクトに分けた後, ウィンチの取り付け部のアンカーをロープノードで接続して下さい. ロープを巻く速度はプロパティウィンドウから設定できます.
 def_rope_hook_winch_large_s_desc		A mechanical winch that can transfer data/electric/fluid through an attached cable, with an extension length of 150m.	接続されるロープによって電力, 信号, 流体を伝達できるウィンチです. ロープ長さは150メートルです.
@@ -6102,6 +6108,8 @@ def_rope_hook_winch_large_node_12_label		Length	ロープの長さ
 def_rope_hook_winch_large_node_12_desc		The current length of the winch cable in metres.	現在のウィンチから出ているロープの長さをメートル単位で出力します.
 def_rope_hook_winch_large_node_13_label		Fluid	流体
 def_rope_hook_winch_large_node_13_desc		Fluid connection for the hose coil.	ホースで接続されている場合はホースを通して流体が自由に移動します. 流量には制限があります.
+def_rope_hook_winch_large_node_14_label		Speed	巻き取り速度
+def_rope_hook_winch_large_node_14_desc		The speed of the winch clamped to a relative range of -1 to 1.	ウィンチの巻き取り速度を-1から1の間で指定します.
 def_rope_hook_winch_small_name		Small Winch	ウィンチ (小)
 def_rope_hook_winch_small_desc		Draw a rope logic link between two Rope Nodes to form a cable. Can be extended and retracted.	ウィンチの本体と取り付け部を選択グリッドなどで別オブジェクトに分けた後, ウィンチの取り付け部のアンカーをロープノードで接続して下さい. ロープを巻く速度はプロパティウィンドウから設定できます.
 def_rope_hook_winch_small_s_desc		A mechanical winch that can transfer electric/fluid through an attached cable, with an extension length of 10m.	接続されるロープによって電力, 流体を伝達できるウィンチです. ロープ長さは10メートルです.
