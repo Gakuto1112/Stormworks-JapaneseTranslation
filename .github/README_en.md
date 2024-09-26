@@ -8,7 +8,7 @@ This translation data is available on the Steam Workshop.
 
 https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581
 
-Supported game version: **1.12.2**
+Supported game version: **1.12.3**
 
 ## Translation policies
 This translation avoids using katakana words and technical terms for those who are unfamiliar with the game.
