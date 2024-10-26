@@ -3112,6 +3112,25 @@ def_control_surface_small_node_0_label		Rotation	翼の向き
 def_control_surface_small_node_0_desc		Accepts a value between -1 and 1 that represent the two extremes of the rudder's rotation.	-1から1の数値信号の入力から翼の向きを制御します.
 def_control_surface_small_node_1_label		Electric	電力
 def_control_surface_small_node_1_desc		Electrical power connection.	電力網から電力を供給します.
+def_cryo_cooler_name		Cryo Cooler	低温冷却器
+def_cryo_cooler_desc		A component that cools liquid A and transfers the heat to liquid B.	2種類の流体を入力し, 片方の流体の熱をもう片方の流体に移動させます.
+def_cryo_cooler_s_desc		A powered component that creates a temperature difference between two liquid systems.	電力を使用して流体を冷却する部品です.
+def_cryo_cooler_node_0_label		Liquid A In	流体A注入
+def_cryo_cooler_node_0_desc		Input liquid port for liquid that gets cooled.	冷やす流体を注入します.
+def_cryo_cooler_node_1_label		Liquid A Out	流体A排出
+def_cryo_cooler_node_1_desc		Output liquid port for liquid that gets cooled.	冷えた流体が排出されます.
+def_cryo_cooler_node_2_label		Liquid B In	流体B注入
+def_cryo_cooler_node_2_desc		Input liquid port for liquid that gets warmed.	温められる液体を注入します.
+def_cryo_cooler_node_3_label		Liquid B Out	流体B排出
+def_cryo_cooler_node_3_desc		Output liquid port for liquid that gets warmed.	温められた流体が排出されます.
+def_cryo_cooler_node_4_label		Temp A	流体Aの温度
+def_cryo_cooler_node_4_desc		Compartment temperature.	流体Aの温度を出力します.
+def_cryo_cooler_node_5_label		Temp B	流体Bの温度
+def_cryo_cooler_node_5_desc		Compartment temperature.	流体Bの温度を出力します.
+def_cryo_cooler_node_6_label		Electric	電力
+def_cryo_cooler_node_6_desc		Electrical power connection.	電力網から電力を供給します.
+def_cryo_cooler_node_7_label		On/Off	起動
+def_cryo_cooler_node_7_desc		Controls whether or not the component transfers heat between liquids.	流体の熱交換を行うかどうかを制御します.
 def_data_logger_bool_name		Data Logger (Bool)	データ監視ブロック (オンオフ信号)
 def_data_logger_bool_desc		Link to the bool output node of another component to record data for unit tests.	オンオフ信号出力と接続してデータを記録します.
 def_data_logger_bool_s_desc		A bool data logging block for unit tests.	単体テストのためにオンオフ信号を監視できるブロックです.
