@@ -2497,6 +2497,13 @@ id	description	en	local
 		Requires Industrial Frontier DLC	Industrial Frontier DLCを必須にする.
 		Requires Space DLC	Space DLCを必須にする.
 		Double Wheel	二重タイヤ
+		Racing Helmet (Full)	レーサーのヘルメット (フル)
+		Bike Helmet	バイクのヘルメット
+		Racing Helmet (Open)	レーサーのヘルメット (オープン)
+		Racing Jacket	レーサーのジャケット
+		Bike Jacket	バイクのジャケット
+		Bike Suit	バイクのスーツ
+		Racing Overalls	レーサーのオーバーオール
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
@@ -8049,8 +8056,8 @@ def_winch_large_b_desc
 def_winch_large_b_s_desc			
 def_winch_large_b_node_0_label		Fluid	流体
 def_winch_large_b_node_0_desc		Fluid connection for the end of the hose.	ウィンチを通して流体が自由に移動します.
-def_winch_pulley_name		Pulley	滑車 (直線)
-def_winch_pulley_desc		Draw a rope logic link between two rope nodes to form a cable. Ropes will slide based on difference in force applied to each rope.	滑車部品にある2つのロープノードにロープを接続します. ロープの力が変化すると反対側のロープの長さが変化します.
+def_winch_pulley_name		Rope Pulley	滑車 (ロープ, 直線)
+def_winch_pulley_desc		Draw a rope logic link between two rope nodes to form a rope. Ropes will slide based on difference in force applied to each rope.	滑車部品にある2つのロープノードにロープを接続します. ロープの力が変化すると反対側のロープの長さが変化します.
 def_winch_pulley_s_desc		A pulley that changes attached rope lengths based on forces applied to ropes.	ロープにかかる力に基づいて接続されたロープの長さを変化させる滑車です.
 def_winch_pulley_node_0_label		Rope 1 Length	ロープ1の長さ
 def_winch_pulley_node_0_desc		The current length of rope 1 in metres.	ロープ1の長さをメートル単位で出力します.
@@ -8060,8 +8067,30 @@ def_winch_pulley_node_2_label		Rope 2	ロープ2
 def_winch_pulley_node_2_desc			
 def_winch_pulley_node_3_label		Rope 1	ロープ1
 def_winch_pulley_node_3_desc			
-def_winch_pulley_corner_name		Pulley (Corner)	滑車 (角)
-def_winch_pulley_corner_desc		Draw a rope logic link between two rope nodes to form a cable. Ropes will slide based on difference in force applied to each rope.	滑車部品にある2つのロープノードにロープを接続します. ロープの力が変化すると反対側のロープの長さが変化します.
+def_winch_pulley_cable_name		Electric Cable Pulley	滑車 (電気ケーブル, 直線)
+def_winch_pulley_cable_desc		Draw a rope logic link between two rope nodes to form a cable. Cables will slide based on difference in force applied to each cable.	滑車部品にある2つのロープノードにケーブルを接続します. ケーブルの力が変化すると反対側のケーブルの長さが変化します.
+def_winch_pulley_cable_s_desc		A pulley that changes attached cable lengths based on forces applied to cables.	ケーブルにかかる力に基づいて接続されたケーブルの長さを変化させる滑車です.
+def_winch_pulley_cable_node_0_label		Rope 1 Length	ケーブル1の長さ
+def_winch_pulley_cable_node_0_desc		The current length of rope 1 in metres.	ケーブル1の長さをメートル単位で出力します.
+def_winch_pulley_cable_node_1_label		Rope 2 Length	ケーブル2の長さ
+def_winch_pulley_cable_node_1_desc		The current length of rope 2 in metres.	ケーブル2の長さをメートル単位で出力します.
+def_winch_pulley_cable_node_2_label		Rope 2	ケーブル2
+def_winch_pulley_cable_node_2_desc			
+def_winch_pulley_cable_node_3_label		Rope 1	ケーブル1
+def_winch_pulley_cable_node_3_desc			
+def_winch_pulley_cable_corner_name		Electric Cable Pulley (Corner)	滑車 (電気ケーブル, 角)
+def_winch_pulley_cable_corner_desc		Draw a rope logic link between two rope nodes to form a cable. Cables will slide based on difference in force applied to each cable.	滑車部品にある2つのロープノードにケーブルを接続します. ケーブルの力が変化すると反対側のケーブルの長さが変化します.
+def_winch_pulley_cable_corner_s_desc		A pulley that changes attached cable lengths based on forces applied to cables.	ケーブルにかかる力に基づいて接続されたケーブルの長さを変化させる滑車です.
+def_winch_pulley_cable_corner_node_0_label		Rope 1 Length	ケーブル1の長さ
+def_winch_pulley_cable_corner_node_0_desc		The current length of rope 1 in metres.	ケーブル1の長さをメートル単位で出力します.
+def_winch_pulley_cable_corner_node_1_label		Rope 2 Length	ケーブル2の長さ
+def_winch_pulley_cable_corner_node_1_desc		The current length of rope 2 in metres.	ケーブル2の長さをメートル単位で出力します.
+def_winch_pulley_cable_corner_node_2_label		Rope 2	ケーブル2
+def_winch_pulley_cable_corner_node_2_desc			
+def_winch_pulley_cable_corner_node_3_label		Rope 1	ケーブル1
+def_winch_pulley_cable_corner_node_3_desc			
+def_winch_pulley_corner_name		Rope Pulley (Corner)	滑車 (ロープ, 角)
+def_winch_pulley_corner_desc		Draw a rope logic link between two rope nodes to form a rope. Ropes will slide based on difference in force applied to each rope.	滑車部品にある2つのロープノードにロープを接続します. ロープの力が変化すると反対側のロープの長さが変化します.
 def_winch_pulley_corner_s_desc		A pulley that changes attached rope lengths based on forces applied to ropes.	ロープにかかる力に基づいて接続されたロープの長さを変化させる滑車です.
 def_winch_pulley_corner_node_0_label		Rope 1 Length	ロープ1の長さ
 def_winch_pulley_corner_node_0_desc		The current length of rope 1 in metres.	ロープ1の長さをメートル単位で出力します.
@@ -8071,6 +8100,36 @@ def_winch_pulley_corner_node_2_label		Rope 2	ロープ2
 def_winch_pulley_corner_node_2_desc			
 def_winch_pulley_corner_node_3_label		Rope 1	ロープ1
 def_winch_pulley_corner_node_3_desc			
+def_winch_pulley_hose_name		Fluid Hose Pulley	滑車 (ホース, 直線)
+def_winch_pulley_hose_desc		Draw a rope logic link between two rope nodes to form a hose. Hoses will slide based on difference in force applied to each hose.	滑車部品にある2つのロープノードにホースを接続します. ホースの力が変化すると反対側のホースの長さが変化します.
+def_winch_pulley_hose_s_desc		A pulley that changes attached hose lengths based on forces applied to hoses.	ホースにかかる力に基づいて接続されたホースの長さを変化させる滑車です.
+def_winch_pulley_hose_node_0_label		Rope 1 Length	ホース1の長さ
+def_winch_pulley_hose_node_0_desc		The current length of rope 1 in metres.	ホース1の長さをメートル単位で出力します.
+def_winch_pulley_hose_node_1_label		Rope 2 Length	ホース2の長さ
+def_winch_pulley_hose_node_1_desc		The current length of rope 2 in metres.	ホース2の長さをメートル単位で出力します.
+def_winch_pulley_hose_node_2_label		Rope 2	ロープ2
+def_winch_pulley_hose_node_2_desc			
+def_winch_pulley_hose_node_3_label		Rope 1	ロープ1
+def_winch_pulley_hose_node_3_desc			
+def_winch_pulley_hose_node_4_label		Fluid Node 1	流体入出力1
+def_winch_pulley_hose_node_4_desc			
+def_winch_pulley_hose_node_5_label		Fluid Node 2	流体入出力2
+def_winch_pulley_hose_node_5_desc			
+def_winch_pulley_hose_corner_name		Fluid Hose Pulley (Corner)	滑車 (ホース, 角)
+def_winch_pulley_hose_corner_desc		Draw a rope logic link between two rope nodes to form a hose. Hoses will slide based on difference in force applied to each hose.	滑車部品にある2つのロープノードにホースを接続します. ホースの力が変化すると反対側のホースの長さが変化します.
+def_winch_pulley_hose_corner_s_desc		A pulley that changes attached hose lengths based on forces applied to hoses.	ホースにかかる力に基づいて接続されたホースの長さを変化させる滑車です.
+def_winch_pulley_hose_corner_node_0_label		Rope 1 Length	ホース1の長さ
+def_winch_pulley_hose_corner_node_0_desc		The current length of rope 1 in metres.	ホース1の長さをメートル単位で出力します.
+def_winch_pulley_hose_corner_node_1_label		Rope 2 Length	ホース2の長さ
+def_winch_pulley_hose_corner_node_1_desc		The current length of rope 2 in metres.	ホース2の長さをメートル単位で出力します.
+def_winch_pulley_hose_corner_node_2_label		Rope 2	ロープ2
+def_winch_pulley_hose_corner_node_2_desc			
+def_winch_pulley_hose_corner_node_3_label		Rope 1	ロープ1
+def_winch_pulley_hose_corner_node_3_desc			
+def_winch_pulley_hose_corner_node_4_label		Fluid Node 1	流体入出力1
+def_winch_pulley_hose_corner_node_4_desc			
+def_winch_pulley_hose_corner_node_5_label		Fluid Node 2	流体入出力2
+def_winch_pulley_hose_corner_node_5_desc			
 def_window_1x1_name		Window 1x1	窓 (平面, 1x1)
 def_window_1x1_desc		Sits flush with walls and ceilings.	壁や天井に適合します.
 def_window_1x1_s_desc		Basic window piece.	基本的な窓の部品です.
