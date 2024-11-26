@@ -16,7 +16,7 @@ jobs:
       event_data: ${{ steps.output_event_data.outputs.event_data }}
     steps:
       - name: Download artifact
-        uses: dawidd6/action-download-artifact@v3.1.4
+        uses: dawidd6/action-download-artifact@v6
         with:
           workflow: build_on_pull_request_trigger.yml
           name: event_data
