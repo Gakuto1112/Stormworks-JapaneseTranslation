@@ -2399,7 +2399,7 @@ id	description	en	local
 		Night Duration	夜間の長さ
 		Space	宇宙
 		ERROR: You are banned	エラー: あなたは接続禁止処分を受けています
-		Banned users are not permitted to play Stormworks online. You have been banned for using a modified version of the game for the purposes of cheating, greifing, piracy, or another illegal purpose.	接続禁止処分を受けているプレイヤーはStormworksのオンラインプレイに参加できません. あなたは過去にチート行為, 迷惑行為, ゲームの無断複製 (海賊版, 割れ), その他違法行為を行ったため, 接続禁止処分を受けました.
+		Banned users are not permitted to play Stormworks online. You have been banned for using a modified version of the game for the purposes of cheating, griefing, piracy, or another illegal purpose.	接続禁止処分を受けているプレイヤーはStormworksのオンラインプレイができません. あなたはチート行為, 嫌がらせ行為, 割れ行為, その他違法な行為を目的に改造されたStromworksを使用していたため, 接続禁止処分を受けています.
 		Buffalo	バイソン
 		Bighorn Sheep	オオツノヒツジ
 		Roadrunner	ミチバシリ
@@ -2504,6 +2504,22 @@ id	description	en	local
 		Bike Jacket	バイクのジャケット
 		Bike Suit	バイクのスーツ
 		Racing Overalls	レーサーのオーバーオール
+		Enabled Mods	有効なMod
+		Your local mods.	ローカル上のMod
+		Mods you've subscribed to on the Steam Workshop.	SteamワークショップからダウンロードしたMod
+		Downloading mods...	Modをダウンロードしています...
+		Are you sure you want to upload this mod to the Steam Workshop?	このModをSteamワークショップにアップロードしますか?
+		Are you sure you want to update this mod on the Steam Workshop?\n\nAny players who have subscribed to your mod will receive your changes.	Steamワークショップ上にあるこのModを更新しますか?\n\nこのModをサブスクライブしているプレイヤー全員にこの変更が反映されます.
+		UPLOAD MOD	Modのアップロード
+		UPDATE MOD	Modの更新
+		Your mod has failed to upload to the Steam workshop.	Steamワークショップへのアップロードに失敗しました.
+		Your mod was successfully uploaded to the Steam workshop.	Steamワークショップへのアップロードに成功しました.
+		MOD UPLOAD COMPLETE	Modのアップロード完了
+		Copy filepath	パスをコピー
+		Local	ローカル
+		Cannot upload modded vehicles.	Modによる要素を含む乗り物はアップロードできません.
+		The vehicle you are trying to load is missing a component definition, ensure your save has the required mods enabled.	読み込もうとしている乗り物の部品の一部の定義が見つかりません. 要求されたModが有効になっているか確認してください.
+		Group: Mod Name	グループ: Mod名
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
