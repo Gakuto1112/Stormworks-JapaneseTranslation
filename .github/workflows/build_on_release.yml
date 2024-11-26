@@ -30,7 +30,7 @@ jobs:
           path: ./out/japanese
       - name: Copy necessary file
         run: |
-          co ./.github/README.txt ./out/README.txt
+          cp ./.github/README.txt ./out/README.txt
           cp ./LICENSE ./out/LICENSE
       - name: Zip artifact
         run: zip -r ./japanese.zip ./
