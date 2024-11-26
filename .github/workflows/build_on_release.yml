@@ -29,16 +29,9 @@ jobs:
           name: japanese
           path: ./out/japanese
       - name: Copy necessary file
-        run: cp ./LICENSE ./out/LICENSE
-      - name: Create README.txt
         run: |
-          cat << EOF > ./out/README.txt
-          翻訳データの使用方法や注意事項などは下記のリンクのREADMEをお読みください。
-          https://github.com/Gakuto1112/Stormworks-JapaneseTranslation/blob/main/.github/README.md
-          
-          Please read README at the link below for instructions and notes for the translation data.
-          https://github.com/Gakuto1112/Stormworks-JapaneseTranslation/blob/main/.github/CONTRIBUTING_en.md
-          EOF
+          co ./.github/README.txt ./out/README.txt
+          cp ./LICENSE ./out/LICENSE
       - name: Zip artifact
         run: zip -r ./japanese.zip ./
         working-directory: ./out
