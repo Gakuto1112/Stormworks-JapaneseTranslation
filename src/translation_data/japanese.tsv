@@ -709,7 +709,7 @@ id	description	en	local
 		OUTPUT	出力
 		INPUT	入力
 		IN STOCK	在庫あり
-		EACH	/ 個
+		EACH	/ 1つあたり
 		OUT OF STOCK	在庫切れ
 		Cost	コスト
 		Locked	ロック済み
@@ -2520,6 +2520,7 @@ id	description	en	local
 		Cannot upload modded vehicles.	Modによる要素を含む乗り物はアップロードできません.
 		The vehicle you are trying to load is missing a component definition, ensure your save has the required mods enabled.	読み込もうとしている乗り物の部品の一部の定義が見つかりません. 要求されたModが有効になっているか確認してください.
 		Group: Mod Name	グループ: Mod名
+		Rotation Speed	回転速度
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
@@ -6166,6 +6167,13 @@ def_rope_hook_winch_small_node_3_label		Electric Node	電力
 def_rope_hook_winch_small_node_3_desc			電力網から電力を供給します. 電気ケーブルで接続されている場合は電気ケーブルを通して電力が自由に移動します.
 def_rope_hook_winch_small_node_4_label		Fluid	流体
 def_rope_hook_winch_small_node_4_desc		Fluid connection for the hose coil.	ホースで接続されている場合はホースを通して流体が自由に移動します. 流量には制限があります.
+def_rotating_light_name		Rotating Light	回転灯
+def_rotating_light_desc			回転速度や方向はプロパティウィンドウから設定できます.
+def_rotating_light_s_desc		A rotating light that can be controlled using an on/off signal.	オンオフ信号で制御可能な回る照明です.
+def_rotating_light_node_0_label		Light Switch	点灯
+def_rotating_light_node_0_desc		Controls whether or not the light is switched on.	照明のオンオフを制御します.
+def_rotating_light_node_1_label		Electric	電力
+def_rotating_light_node_1_desc		Electrical power connection.	電力網から電力を供給します.
 def_rotation_sensor_name		Tilt Sensor	傾斜計
 def_rotation_sensor_desc		The measurement is expressed in terms of turns, with an output range of -0.25 to 0.25 turns. A value of zero points towards the horizon.	-0.25回転から0.25回転の範囲で計測します. 回転単位で出力されます. 0は水平を指します.
 def_rotation_sensor_s_desc		A sensor that measures how much it has tilted, relative to the horizon.	水平を基準にどれだけ傾いているかを測定する傾斜計です.
