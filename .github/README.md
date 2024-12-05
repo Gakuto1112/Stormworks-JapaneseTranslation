@@ -8,7 +8,7 @@
 
 https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581
 
-対応ゲームバージョン ： **1.13.0**
+対応ゲームバージョン ： **1.13.1**
 
 ## !!! 重要なお知らせ !!!
 （2024/11/26更新）
