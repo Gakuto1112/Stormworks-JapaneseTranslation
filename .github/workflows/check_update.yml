@@ -49,3 +49,28 @@ jobs:
           TOKEN: ${{ github.token }}
           REPOSITORY: ${{ github.repository }}
           HASH: ${{ github.sha }}
+  create_issue:
+    name: Create update issues
+    needs: check
+    if: ${{ needs.check.outputs.update_entries >= 1 }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+      - name: Replace template placeholders
+        run: |
+          sed "s/<\!--\s\$UPDATE_VERSION\s-->/${UPDATE_VERSION}/g" ./issue_template.md
+          sed "s/<\!--\s\$UPDATE_NAME\s-->/${UPDATE_NAME}/g" ./issue_template.md
+          sed "s/<\!--\s\$NEWS_URL\s-->/${NEWS_URL}/g" ./issue_template.md
+        env:
+          UPDATE_VERSION: ${{ fromJSON(needs.check.outputs.update_data)[0].version }}
+          UPDATE_NAME: ${{ fromJSON(needs.check.outputs.update_data)[0].update_name }}
+          NEWS_URL: ${{ fromJSON(needs.check.outputs.update_data)[0].url }}
+        working-directory: ./.github/update_checker
+      - name: Create issue
+        run: gh issue create --title "${UPDATE_VERSION}への対応" --body-file ./issue_template.md --label "game update" --repo ${REPOSITORY}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          UPDATE_VERSION: ${{ fromJSON(needs.check.outputs.update_data)[0].version }}
+          REPOSITORY: ${{ github.repository }}
+        working-directory: ./.github/update_checker
