@@ -1,0 +1,51 @@
+name: Check game updates
+
+on: workflow_dispatch
+
+jobs:
+  check:
+    name: Check game updates
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      update_data: ${{ steps.filter_news_entry.outputs.entry_data }}
+      update_entries: ${{ steps.filter_news_entry.outputs.entries }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+      - name: Get last check date
+        id: get_last_check_date
+        run: echo last_check_date=$(cat ./last_update_date.json | jq '.last_check_date') > $GITHUB_OUTPUT
+        working-directory: ./.github/update_checker
+      - name: Get Steam news
+        id: get_steam_news
+        run: echo steam_news_response=$(curl 'https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=573090') > $GITHUB_OUTPUT
+      - name: Filter news entry
+        id: filter_news_entry
+        run: |
+          echo ${NEWS_DATA} | jq '.appnews.newsitems[] | select(.date >= ${LAST_CHECK_DATE}) | select(.title | test("^v\\d+\\.\\d+\\.\\d+\\s-\\s"))' | jq -s '.' > tmp.json
+          echo entry_data=$(cat tmp.json | jq 'map({ version: .title | scan("v\\d+\\.\\d+\\.\\d+"), update_name: .title | scan("(?<=\\s-\\s).+$") | rtrimstr("!"), url: .url })') > $GITHUB_OUTPUT
+          echo entries=$(cat ./tmp.json | jq 'length') > $GITHUB_OUTPUT
+        env:
+          NEWS_DATA: ${{ steps.get_steam_news.outputs.steam_news_response }}
+          LAST_CHECK_DATE: ${{ steps.get_last_check_date.outputs.last_check_date }}
+        working-directory: ./.github/update_checker
+      - name: Update check date
+        run: echo {\"last_check_date\":$(date +%s)} | jq '.' > ./last_update_date.json
+        working-directory: ./.github/update_checker
+      - name: Remove temp files
+        run: rm ./tmp.json
+        working-directory: ./.github/update_checker
+      - name: Commit and push
+        run: |
+          git remote set-url origin https://github-actions:${TOKEN}@github.com/${REPOSITORY}
+          git config user.name github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+          git add --all
+          git commit -m '[GitHub Actions] ドキュメントの自動生成' -m '対象のコミット: ${HASH}'
+          git push origin
+        env:
+          TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          HASH: ${{ github.sha }}
