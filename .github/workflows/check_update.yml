@@ -2,7 +2,7 @@ name: Check game updates
 
 on:
   schedule:
-    - cron: '0 23 * * 4'
+    - cron: '0 0 * * 4'
 
 jobs:
   check:
