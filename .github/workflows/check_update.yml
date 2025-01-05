@@ -16,17 +16,17 @@ jobs:
         uses: actions/checkout@v4.2.2
       - name: Get last check date
         id: get_last_check_date
-        run: echo last_check_date=$(cat ./last_update_date.json | jq '.last_check_date') > $GITHUB_OUTPUT
+        run: echo last_check_date=$(cat ./last_update_date.json | jq '.last_check_date') >> $GITHUB_OUTPUT
         working-directory: ./.github/update_checker
       - name: Get Steam news
         id: get_steam_news
-        run: echo steam_news_response=$(curl 'https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=573090') > $GITHUB_OUTPUT
+        run: echo steam_news_response=$(curl 'https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=573090') >> $GITHUB_OUTPUT
       - name: Filter news entry
         id: filter_news_entry
         run: |
-          echo ${NEWS_DATA} | jq '.appnews.newsitems[] | select(.date >= ${LAST_CHECK_DATE}) | select(.title | test("^v\\d+\\.\\d+\\.\\d+\\s-\\s"))' | jq -s '.' > tmp.json
-          echo entry_data=$(cat tmp.json | jq 'map({ version: .title | scan("v\\d+\\.\\d+\\.\\d+"), update_name: .title | scan("(?<=\\s-\\s).+$") | rtrimstr("!"), url: .url })') > $GITHUB_OUTPUT
-          echo entries=$(cat ./tmp.json | jq 'length') > $GITHUB_OUTPUT
+          echo ${NEWS_DATA} | jq '.appnews.newsitems[]' | jq "select(.date >= ${LAST_CHECK_DATE})" | jq 'select(.title | test("^v\\d+\\.\\d+\\.\\d+\\s-\\s"))' | jq -s '.' > tmp.json
+          echo entry_data=$(cat tmp.json | jq 'map({ version: .title | scan("v\\d+\\.\\d+\\.\\d+"), update_name: .title | scan("(?<=\\s-\\s).+$") | rtrimstr("!"), url: .url })') >> $GITHUB_OUTPUT
+          echo entries=$(cat ./tmp.json | jq 'length') >> $GITHUB_OUTPUT
         env:
           NEWS_DATA: ${{ steps.get_steam_news.outputs.steam_news_response }}
           LAST_CHECK_DATE: ${{ steps.get_last_check_date.outputs.last_check_date }}
@@ -48,27 +48,29 @@ jobs:
         env:
           TOKEN: ${{ github.token }}
           REPOSITORY: ${{ github.repository }}
-          HASH: ${{ github.sha }}
   create_issue:
     name: Create update issues
     needs: check
     if: ${{ needs.check.outputs.update_entries >= 1 }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.2
       - name: Replace template placeholders
         run: |
-          sed "s/<\!--\s\$UPDATE_VERSION\s-->/${UPDATE_VERSION}/g" ./issue_template.md
-          sed "s/<\!--\s\$UPDATE_NAME\s-->/${UPDATE_NAME}/g" ./issue_template.md
-          sed "s/<\!--\s\$NEWS_URL\s-->/${NEWS_URL}/g" ./issue_template.md
+          sed "s|<\!--\s\$UPDATE_VERSION\s-->|${UPDATE_VERSION}|g" ./issue_template.md > ./tmp_1.md
+          sed "s|<\!--\s\$UPDATE_NAME\s-->|${UPDATE_NAME}|g" ./tmp_1.md > ./tmp_2.md
+          sed "s|<\!--\s\$NEWS_URL\s-->|${NEWS_URL}|g" ./tmp_2.md > ./tmp_3.md
         env:
           UPDATE_VERSION: ${{ fromJSON(needs.check.outputs.update_data)[0].version }}
           UPDATE_NAME: ${{ fromJSON(needs.check.outputs.update_data)[0].update_name }}
           NEWS_URL: ${{ fromJSON(needs.check.outputs.update_data)[0].url }}
         working-directory: ./.github/update_checker
       - name: Create issue
-        run: gh issue create --title "${UPDATE_VERSION}への対応" --body-file ./issue_template.md --label "game update" --repo ${REPOSITORY}
+        run: gh issue create --title "${UPDATE_VERSION}への対応" --body-file ./tmp_3.md --label 'game update' --repo ${REPOSITORY}
         env:
           GH_TOKEN: ${{ github.token }}
           UPDATE_VERSION: ${{ fromJSON(needs.check.outputs.update_data)[0].version }}
