@@ -10,20 +10,6 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581
 
 Supported game version: **1.13.4**
 
-## !!! IMPORTANT NOTICE !!!
-<!-- この章は次回更新時に削除する（書き込み時の日付：2024/12/5）。 -->
-(Updated 12/5/2024)
-
-~~As of game version 1.13.0, a bug has been confirmed where all component names and descriptions are displayed in English on the game side.~~
-~~I cannot deal with this issue, so please wait a while until it is fixed.~~
-
-~~(Issue report) https://geometa.co.uk/support/stormworks/26714<br>~~
-~~Please vote on the bug report at the link so that it can be brought to the attention of the Stromworks developers.~~
-~~Thank you in advance for your cooperation.~~
-
-→ This issue was fixed in game version 1.13.1.
-After this version, the translation will be displayed correctly.
-
 ## Translation policies
 This translation avoids using katakana words and technical terms for those who are unfamiliar with the game.
 In addition, some words are not the same as those translated from the English word to match other translations. 
