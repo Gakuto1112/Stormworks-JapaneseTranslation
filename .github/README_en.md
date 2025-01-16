@@ -8,7 +8,7 @@ This translation data is available on the Steam Workshop.
 
 https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581
 
-Supported game version: **1.13.1**
+Supported game version: **1.13.4**
 
 ## !!! IMPORTANT NOTICE !!!
 <!-- この章は次回更新時に削除する（書き込み時の日付：2024/12/5）。 -->
