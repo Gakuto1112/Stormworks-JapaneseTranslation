@@ -2521,6 +2521,7 @@ id	description	en	local
 		The vehicle you are trying to load is missing a component definition, ensure your save has the required mods enabled.	読み込もうとしている乗り物の部品の一部の定義が見つかりません. 要求されたModが有効になっているか確認してください.
 		Group: Mod Name	グループ: Mod名
 		Rotation Speed	回転速度
+		No Signal	信号なし
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
@@ -2545,7 +2546,7 @@ def_05_wedge_2_s_desc		1x2 wedge-shaped building block.	1x2の大きさの三角
 def_06_pyramid_2_name		Pyramid 1x2	三角ブロック (1x2)
 def_06_pyramid_2_desc		Components can be attached to all faces, with the exception of the triangular face. Pyramids can act as a corner-piece for perpendicular lines of wedge blocks.	斜面を除く全ての面に部品を取付けられます. 三角ブロックは斜めブロックの角の接続に使用できます.
 def_06_pyramid_2_s_desc		1x2 pyramid-shaped building block. 	1x2の大きさの三角錐型の基本的なブロックです.
-def_07_invpyramid_2_name		Inverse pyramid 1x2	逆三角ブロック (1x2)
+def_07_invpyramid_2_name		Inverse Pyramid 1x2	逆三角ブロック (1x2)
 def_07_invpyramid_2_desc		Components can be attached to all faces, with the exception of the triangular face. Inverse pyramids are useful for closing gaps between perpendicular lines of wedge and pyramid blocks.	斜面を除く全ての面に部品を取付けられます.逆三角ブロックは斜めブロックや三角ブロックの隙間を埋めるのに便利です.
 def_07_invpyramid_2_s_desc		1x2 inverse pyramid-shaped building block.	1x2の直方体から三角錐を切り取った形の基本的なブロックです.
 def_08_wedge_4_name		Wedge 1x4	斜めブロック (1x4)
@@ -4391,8 +4392,8 @@ def_gyroscopic_stabilizer_small_node_1_desc		Input rotation value.	方向値を�
 def_handle_name		Handle	取っ手
 def_handle_desc		Interacting with [$[action_interact_left]] or [$[action_interact_right]] again will detach that hand. The handle can be used to drag vehicles around. If a vehicle is too heavy to move, you will be detached automatically when you move outside the handle's interaction range.	取っ手を掴んでいる時に [$[action_interact_left]]/[$[action_interact_right]] を押すと離すことができます. 軽い乗り物は取っ手を掴んでそのまま動かすことができます. プレイヤーが取っ手の範囲外まで移動した場合は自動的に手を離します.
 def_handle_s_desc		A handle that you can attach to by interacting with [$[action_interact_left]] or [$[action_interact_right]].	[$[action_interact_left]] や [$[action_interact_right]] を押して掴むことができる取っ手です.
-def_handle_node_0_label		Is Occupied	使用中
-def_handle_node_0_desc		Returns true if a player is attached to the handle.	誰かがハンドルを握っているととオン信号を出力します.
+def_handle_node_0_label		Occupied	使用中
+def_handle_node_0_desc		Outputs an on signal if a player is attached to the handle.	誰かがハンドルを握っているととオン信号を出力します.
 def_hatch_name		Sliding Hatch (Electric)	ハッチ (引き戸, 電動)
 def_hatch_desc			
 def_hatch_s_desc		Sliding hatch that can be opened and closed using an on/off signal.	オン/オフ信号で開閉ができる引き戸式のハッチです.
@@ -7688,6 +7689,15 @@ def_vehicle_tool_welder_node_0_label		Electric	電力
 def_vehicle_tool_welder_node_0_desc		Electrical power connection.	電力網から電力を供給します.
 def_vehicle_tool_welder_node_1_label		Activate	起動
 def_vehicle_tool_welder_node_1_desc		Enable welding torch.	オン信号を受け取ると溶接機を起動します.
+def_viewing_scope_name		Viewing Scope	スコープ
+def_viewing_scope_desc		Interact to display video data at full detail.	映像信号と接続すると出力された映像をゲーム画面いっぱいに表示できます.
+def_viewing_scope_s_desc		A viewing scope.	[$[action_interact_left]]/[$[action_interact_right]] で覗けるスコープです.
+def_viewing_scope_node_0_label		Video Signal	映像入力
+def_viewing_scope_node_0_desc			スコープを覗いたときにゲーム画面いっぱいに表示する映像を入力します.
+def_viewing_scope_node_1_label		Electric	電力
+def_viewing_scope_node_1_desc			電力網から電力を供給します.
+def_viewing_scope_node_2_label		Occupied	使用中
+def_viewing_scope_node_2_desc		Outputs an on signal if this viewing scope is occupied by a character.	誰かがスコープを覗いているとオン信号を出力します.
 def_warhead_body_large_name		Warhead Body (Large)	弾頭 (大, 本体)
 def_warhead_body_large_desc		Detonates from an impact, or when receiving damage. Be careful!	衝撃か損傷を受けると爆発します. 取り扱い注意!
 def_warhead_body_large_s_desc		A large explosive warhead.	大型の爆発性の弾頭です.
