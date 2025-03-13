@@ -2522,6 +2522,176 @@ id	description	en	local
 		Group: Mod Name	グループ: Mod名
 		Rotation Speed	回転速度
 		No Signal	信号なし
+		United Kingdom	イギリス
+		Scotland	スコットランド
+		United States	アメリカ
+		Russia	ロシア
+		Australia	オーストラリア
+		Norway	ノルウェー
+		Poland	ポーランド
+		France	フランス
+		Germany	ドイツ
+		Hungary	ハンガリー
+		Canada	カナダ
+		Japan	日本
+		Ukraine	ウクライナ
+		Sweden	スウェーデン
+		Netherlands	オランダ
+		Mexico	メキシコ
+		Italy	イタリア
+		Argentina	アルジェリア
+		Spain	スペイン
+		Luxembourg	ルクセンブルク
+		Austria	オーストリア
+		Denmark	デンマーク
+		Azerbaijan	アゼルバイジャン
+		Belarus	ベラルーシ
+		Belgium	ベルギー
+		Bosnia	ボスニア
+		Brazil	ブラジル
+		Bulgaria	ブルガリア
+		China	中国
+		Colombia	コロンビア
+		Czech Republic	チェコ
+		European Union	欧州連合
+		Finland	フィンランド
+		Greece	ギリシャ
+		India	インド
+		Monaco	モナコ
+		Iran	イラン
+		Ireland	アイルランド
+		Israel	イスラエル
+		Malaysia	マレーシア
+		Portugal	ポルトガル
+		Romania	ルーマニア
+		Saudi Arabia	サウジアラビア
+		Singapore	シンガポール
+		South Africa	南アフリカ
+		South Korea	韓国
+		Switzerland	スイス
+		Thailand	タイ
+		Turkey	トルコ
+		Venezuela	ベネズエラ
+		Afghanistan	アフガニスタン
+		Albania	アルバニア
+		Algeria	アルジェリア
+		Antarctica	南極大陸
+		Bangladesh	バングラデシュ
+		Greenland	グリーンランド
+		Jamaica	ジャマイカ
+		Kenya	ケニア
+		Lithuania	リトアニア
+		Chile	チリ
+		Iceland	アイスランド
+		Egypt	エジプト
+		Slovakia	スロバキア
+		Serbia	セルビア
+		Estonia	エストニア
+		Latvia	ラトビア
+		Uruguay	ウルグアイ
+		Rhodesia	ローデシア
+		Morocco	モロッコ
+		Ecuador	エクアドル
+		Senegal	セネガル
+		England	イングランド
+		Wales	ウェールズ
+		Tunisia	チュニジア
+		Croatia	クロアチア
+		Ghana	ガーナ
+		Cameroon	カメルーン
+		Tajikistan	タジキスタン
+		Philippines	フィリピン
+		Vietnam	ベトナム
+		Kazakhstan	カザフスタン
+		Mongolia	モンゴリア
+		Nigeria	ナイジェリア
+		Ethiopia	エチオピア
+		Pakistan	パキスタン
+		Angola	アンゴラ
+		Georgia	ジョージア
+		Macedonia	マケドニア
+		New Zealand	ニュージーランド
+		Indonesia	インドネシア
+		Gender Queer	ジェンダークィア
+		Agender	エイジェンダー
+		Gay Men's Pride	ゲイ・マンズ・プライド
+		Abrosexual	アブロセクシュアル
+		Lesbian	レズビアン
+		Pansexual	パンセクシュアル
+		Bisexual	バイセクシュアル
+		Asexual	アセクシャル
+		Intersex	インターセックス
+		Nonbinary	ノンバイナリー
+		New Progress Pride	プログレス・プライド
+		Transgender	トランスジェンダー
+		Philadelphia Pride	フィラデルフィア・プライド
+		6-Color Pride	プライド
+		Ally	アライ
+		Androgyne	アンドロジーン
+		Light Gray	薄灰色
+		Cedar Brown	シダーブラウン
+		Peanut Brown	ピーナッツブラウン
+		Orange	橙色
+		Yellow	黄色
+		Dark Green	濃緑色
+		Green	緑色
+		Mint Blue	青緑色
+		Light Blue	水色
+		Blue	青色
+		Pink	桃色
+		Baby Pink	ベビーピンク
+		Blood Red	ブラッドレッド
+		Red	赤色
+		Standard Light Blue	標準水色
+		Standard Purple	標準紫色
+		Standard Royal Blue	標準青色
+		Standard Green	標準緑色
+		Standard Yellow	標準黄色
+		Standard Red	標準赤色
+		Black	黒色
+		Gray	灰色
+		White	白色
+		Dark Gray	濃灰色
+		Stormworks Logo	Stormworksのロゴ
+		Geometa Logo	Geometaのロゴ
+		Carrier Command 2 Logo	Carrier Command 2のロゴ
+		GQ Games	GQ Games
+		Frantic	Frantic
+		Camodo Gaming	Camodo Gaming
+		Lynx Highland	Lynx Highland
+		ND Gaming	ND Gaming
+		Raptor	Raptor
+		Spycakes	Spycakes
+		Rubber Duck	ラバーダック
+		454SS	454ss
+		Neotastic	Neotastic
+		ProfNCognito	ProfNCognito
+		Beautiful OB	Beautiful OB
+		Captain Cockerels	Captain Cockerels
+		Basil	バジル
+		Boat	ボート
+		Plane	プレーン
+		Skill Issue	スキル・イシュー
+		Pipe	パイプ
+		Jolly Roger	海賊旗
+		UNO	UNO
+		MCRO	MCRO
+		LOCKI	LOCKI
+		HOPE	HOPE
+		HANDAO	HANDAO
+		NEVERGREEN	NEVERGREEN
+		CLAM OIL	CLAM OIL
+		SPAM	SPAM
+		OOPS	OOPS
+		ACRES	ACRES
+		Nations	国旗
+		Colors	単色
+		Pride	プライド
+		Community	コミュニティ
+		Shipping	運送会社
+		Category	カテゴリー
+		Flag	旗
+		Sailing	帆
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
@@ -3400,6 +3570,15 @@ def_fish_finder_node_1_label		Activate	起動
 def_fish_finder_node_1_desc		Enable the Fishfinder.	オン信号を受け取ると魚群探知機を起動します.
 def_fish_finder_node_2_label		Fish Data	魚群情報
 def_fish_finder_node_2_desc		Outputs data for a detected fish. On/Off 1: Returns true when a fish is detected. Value 1: The yaw angle between the sensor and the detected fish measured in turns, Value 2: The horizontal distance from the sensor to the detected fish measured in metres, Value 3: The depth from the sensor to the fish measured in metres.	検出した魚群の情報を出力します: オンオフ1. 魚群を検出するとオン信号を出力します, 値1. 魚群までの相対的なヨー角度 (回転単位), 値2. 魚群までの水平距離 (メートル), 値3. 魚群までの水深 (メートル)
+def_flag_large_name		Flag (Large)	旗 (大)
+def_flag_large_desc		The flag design can be set in the properties menu.	旗は乗り物の移動に応じてたなびきます. 旗のデザインはプロパティウィンドウから変更できます.
+def_flag_large_s_desc		A large sized flagpole.	大型の旗のポールです.
+def_flag_medium_name		Flag (Medium)	旗 (中)
+def_flag_medium_desc		The flag design can be set in the properties menu.	旗は乗り物の移動に応じてたなびきます. 旗のデザインはプロパティウィンドウから変更できます.
+def_flag_medium_s_desc		A medium sized flagpole.	中型の旗のポールです.
+def_flag_small_name		Flag (Small)	旗 (小)
+def_flag_small_desc		The flag design can be set in the properties menu.	旗は乗り物の移動に応じてたなびきます. 旗のデザインはプロパティウィンドウから変更できます.
+def_flag_small_s_desc		A small sized flagpole.	小型の旗のポールです.
 def_flare_launcher_name		Flare Launcher	発煙筒投擲機
 def_flare_launcher_desc		Set the flare canister type and launch velocity in the component properties.	投擲する発煙筒の種類と投擲速度はプロパティウィンドウから設定できます.
 def_flare_launcher_s_desc		Single-use flare launcher for signalling and illumination.	信号弾や照明弾として使用する単発の発煙筒投擲機です.
@@ -4938,6 +5117,15 @@ def_jet_engine_turbine_small_node_2_label		RPS	秒間エンジン回転数
 def_jet_engine_turbine_small_node_2_desc		The rotations per second generated by the turbine.	1秒間あたりのエンジンの回転数 (RPS) を出力します.
 def_jet_engine_turbine_small_node_3_label		Electric	電力
 def_jet_engine_turbine_small_node_3_desc		The electric connection to output electric energy.	電力網に発電した電力を送ります.
+def_keel_large_name		Keel (Large)	キール (大)
+def_keel_large_desc		The keel resists rolling forces while submerged, helping to keep a boat upright and stable. The keel also resists lateral sliding forces, causing the majority of a boats movement to be in the direction of the keel axis. When combined with the force provided by a sail, this allows a sailboat to move forward in a crosswind, or even upwind.	キールが水中にある場合は, 船が横転する力に抵抗するため船が直立しやすくなります. また, キールは横方向への移動も防ぐため, 船はキールの向きと同じ方向に動くことになります. これにより風の向きにかかわらず, 帆船が目的の方向に進むことができます.
+def_keel_large_s_desc		A large boat keel used for sailing.	航海のための船の大型のキールです.
+def_keel_medium_name		Keel (Medium)	キール (中)
+def_keel_medium_desc		The keel resists rolling forces while submerged, helping to keep a boat upright and stable. The keel also resists lateral sliding forces, causing the majority of a boats movement to be in the direction of the keel axis. When combined with the force provided by a sail, this allows a sailboat to move forward in a crosswind, or even upwind.	キールが水中にある場合は, 船が横転する力に抵抗するため船が直立しやすくなります. また, キールは横方向への移動も防ぐため, 船はキールの向きと同じ方向に動くことになります. これにより風の向きにかかわらず, 帆船が目的の方向に進むことができます.
+def_keel_medium_s_desc		A medium boat keel used for sailing.	航海のための船の中型のキールです.
+def_keel_small_name		Keel (Small)	キール (小)
+def_keel_small_desc		The keel resists rolling forces while submerged, helping to keep a boat upright and stable. The keel also resists lateral sliding forces, causing the majority of a boats movement to be in the direction of the keel axis. When combined with the force provided by a sail, this allows a sailboat to move forward in a crosswind, or even upwind.	キールが水中にある場合は, 船が横転する力に抵抗するため船が直立しやすくなります. また, キールは横方向への移動も防ぐため, 船はキールの向きと同じ方向に動くことになります. これにより風の向きにかかわらず, 帆船が目的の方向に進むことができます.
+def_keel_small_s_desc		A small boat keel used for sailing.	航海のための船の小型のキールです.
 def_ladder_small_name		Ladder	梯子
 def_ladder_small_desc		You can attach to the ladder by interacting with [$[action_use_seat]], then detach again with either [$[action_use_seat]] or [$[action_jump]]. You will automatically detach from the ladder when you reach the top.	[$[action_use_seat]] を押して梯子の登り下りをし, [$[action_use_seat]] や [$[action_jump]] を押して梯子から離れます. 頂上に達すると自動で梯子から離れます.
 def_ladder_small_s_desc		Single ladder rung. Multiple rungs can placed on top of each other to form a ladder of abitrary length.	一段の梯子です. 梯子を複数重ねて設置することで, 任意の長さの梯子になります.
@@ -6056,6 +6244,13 @@ def_rope_hook_net_node_3_label		Retract	巻き上げ
 def_rope_hook_net_node_3_desc			オン信号を受け取ると網の張りを強くします.
 def_rope_hook_net_node_4_label		Net Data	網情報
 def_rope_hook_net_node_4_desc		Outputs attached net data. Value 1: net fill level, Value 2: net extend factor.	取り付けた網の情報を出力します: [1] 網の捕獲量, [2] 網の張りの強さ
+def_rope_hook_sail_name		Sail Anchor	アンカー (帆)
+def_rope_hook_sail_desc		Draw a rope logic link between four Sail Anchors in a loop to form a sail. A sail will convert force from the wind to the direction of the sail facing. The sail force is strongest when fully facing the wind to act as a parachute, but also has a strong force when facing slightly off a right-angle from the wind to act as a wing. A keel is recommended for sailboats to apply sail forces in a useful direction.	4つの帆アンカーを結ぶようにロープノードを描くことで乗り物のスポーン時に帆を生成します. 帆は風を受けることで推進力を生み出します. 帆と風が垂直になっている場合が最も推進力を生み出しますが, 斜め方向になっていたとしても大きな推進力を生み出します. 帆船を作成する場合はキールを併用することが推奨されます.
+def_rope_hook_sail_s_desc		An anchor point for a sail.	帆が取り付けられるアンカーです.
+def_rope_hook_sail_node_0_label		Sail Node	帆ノード
+def_rope_hook_sail_node_0_desc			4つ帆アンカーをロープノードで結ぶことで帆を生成します.
+def_rope_hook_sail_node_1_label		Take In/Out Sails	帆の取り込み/取り出し
+def_rope_hook_sail_node_1_desc		While active, allows the ropes forming the sail to spool freely.	オン信号を受け取る間, 帆が自由に伸縮するようになります.
 def_rope_hook_winch_name		Medium Winch	ウィンチ (中)
 def_rope_hook_winch_desc		Draw a rope logic link between two Rope Nodes to form a cable. Can be extended and retracted.	ウィンチの本体と取り付け部を選択グリッドなどで別オブジェクトに分けた後, ウィンチの取り付け部のアンカーをロープノードで接続して下さい. ロープを巻く速度はプロパティウィンドウから設定できます.
 def_rope_hook_winch_s_desc		A mechanical winch that can transfer data/electric/fluid through an attached cable, with an extension length of 40m.	接続されるロープによって電力, 信号, 流体を伝達できるウィンチです. ロープ長さは40メートルです.
