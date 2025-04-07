@@ -3202,7 +3202,7 @@ def_connector_large_node_1_desc		An on/off signal to send to a connected magnet.
 def_connector_large_node_2_label		Number Received	数値信号受信
 def_connector_large_node_2_desc		The number value received from a connected magnet.	相手のコネクターからの数値信号を受信します.
 def_connector_large_node_3_label		Number Sent	数値信号送信
-def_connector_large_node_3_desc		A number signal to send to a connected magnet.	相手のコネクターへ数値信号信号を送信します.
+def_connector_large_node_3_desc		A number signal to send to a connected magnet.	相手のコネクターへ数値信号を送信します.
 def_connector_large_node_4_label		Connected	接続済み
 def_connector_large_node_4_desc		Outputs an on signal if the connector is attached to another connector.	他のコネクターと接続されるとオン信号が出力されます.
 def_connector_large_node_5_label		On/Off Received	オン/オフ信号受信
