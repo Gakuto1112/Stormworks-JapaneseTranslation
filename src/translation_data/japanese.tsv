@@ -3008,7 +3008,7 @@ def_buzzer_node_0_desc		Plays the selected sound when toggled from off to on.	�
 def_buzzer_node_1_label		Electric	電力
 def_buzzer_node_1_desc		Electrical power connection.	電力接続
 def_camera_gimbal_name		Camera Gimbal	カメラ (回転式)
-def_camera_gimbal_desc		Has an infrared mode as well as pivot controls, a variable field of view.	赤外線モードが搭載されており, 回転/拡大/縮小ができます.
+def_camera_gimbal_desc		Has an infrared mode as well as pivot controls, a variable field of view.	赤外線モードが搭載されており, 回転/拡大/縮小ができます.	赤外線モードでは, 明るい所が見えにくく, 映像も不鮮明になりますが, 真っ暗な場所でも見えるようになります.
 def_camera_gimbal_s_desc		A gimbal camera with video output feed.	映像を出力する大型のカメラです. 自由に回転できます.
 def_camera_gimbal_node_0_label		Camera Feed	カメラの映像
 def_camera_gimbal_node_0_desc			カメラで捉えた映像を出力します.
@@ -3023,7 +3023,7 @@ def_camera_gimbal_node_4_desc		Controls the rotation of the camera base.	カメ�
 def_camera_gimbal_node_5_label		Pitch Rotation	縦回転
 def_camera_gimbal_node_5_desc		Controls the rotation of the camera head.	カメラの縦方向の回転を制御します.
 def_camera_gimbal_laser_name		Camera Stabilized	カメラ (回転式, 安定化機能付き)
-def_camera_gimbal_laser_desc		Has an infrared mode, variable field of view, stabilized and tracking modes.	赤外線モードが搭載されており, 回転/拡大/縮小ができます.
+def_camera_gimbal_laser_desc		Has an infrared mode, variable field of view, stabilized and tracking modes.	赤外線モードが搭載されており, 回転/拡大/縮小ができます.		赤外線モードでは, 明るい所が見えにくく, 映像も不鮮明になりますが, 真っ暗な場所でも見えるようになります.
 def_camera_gimbal_laser_s_desc		A stabilized gimbal camera with video output feed.	映像を出力する大型のカメラです. 自由に回転でき, 特定の場所を写し続けることもできます.
 def_camera_gimbal_laser_node_0_label		Camera Feed	カメラの映像
 def_camera_gimbal_laser_node_0_desc			カメラで捉えた映像を出力します.
@@ -3050,7 +3050,7 @@ def_camera_gimbal_laser_node_10_desc		Composite value channels: 1: x position of
 def_camera_gimbal_laser_node_11_label		Laser Wavelength	レーザーの波長
 def_camera_gimbal_laser_node_11_desc		The specific light wavelength to emit (whole number).	照射するレーザーの波長を制御します. 入力する数値は整数です.
 def_camera_med_name		Camera Medium	カメラ (中)
-def_camera_med_desc		Has infrared mode as well as variable field of view. Can be pivoted up to 0.125 turns using composite input.	赤外線モードや, 拡大/縮小機能が搭載されています. 複合信号で視点方向を0.125回転単位まで変更できます.
+def_camera_med_desc		Has infrared mode as well as variable field of view. Can be pivoted up to 0.125 turns using composite input.	赤外線モードや, 拡大/縮小機能が搭載されています. 複合信号で視点方向を0.125回転単位まで変更できます.	赤外線モードでは, 明るい所が見えにくく, 映像も不鮮明になりますが, 真っ暗な場所でも見えるようになります.
 def_camera_med_s_desc		A camera with video output feed.	映像を出力する中型のカメラです.
 def_camera_med_node_0_label		Camera Feed	カメラの映像
 def_camera_med_node_0_desc			カメラで捉えた映像を出力します.
