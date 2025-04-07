@@ -3266,42 +3266,42 @@ def_connector_water_node_5_desc		Video data to send to the connected connector.	
 def_connector_water_node_6_label		Video Data Receive	映像信号受信
 def_connector_water_node_6_desc		Video data to receive from the connected connector.	相手のコネクターからの映像信号を受信します.
 def_control_fin_large_name		Control Fin Large	可動翼 (頂点, 大)
-def_control_fin_large_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号を入力して翼の向きを制御します.
+def_control_fin_large_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号を入力することで翼の向きを制御します.
 def_control_fin_large_s_desc		The fin can be attached to the surface of a vehicle to direct its motion.	乗り物に取り付けて, 乗り物の動きを制御できる大型の可動翼です.
 def_control_fin_large_node_0_label		Rotation	翼の向き
 def_control_fin_large_node_0_desc		Accepts a value between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号の入力から翼の向きを制御します.
 def_control_fin_large_node_1_label		Electric	電力
 def_control_fin_large_node_1_desc		Electrical power connection.	電力接続
 def_control_fin_medium_name		Control Fin Medium	可動翼 (頂点, 中)
-def_control_fin_medium_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号を入力して翼の向きを制御します.
+def_control_fin_medium_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号を入力することで翼の向きを制御します.
 def_control_fin_medium_s_desc		The fin can be attached to the surface of a vehicle to direct its motion.	乗り物に取り付けて, 乗り物の動きを制御できる中型の可動翼です.
 def_control_fin_medium_node_0_label		Rotation	翼の向き
 def_control_fin_medium_node_0_desc		Accepts a value between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号の入力から翼の向きを制御します.
 def_control_fin_medium_node_1_label		Electric	電力
 def_control_fin_medium_node_1_desc		Electrical power connection.	電力接続
 def_control_fin_small_name		Control Fin Small	可動翼 (頂点, 小)
-def_control_fin_small_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号を入力して翼の向きを制御します.
+def_control_fin_small_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号を入力することで翼の向きを制御します.
 def_control_fin_small_s_desc		The fin can be attached to the surface of a vehicle to direct its motion.	乗り物に取り付けて, 乗り物の動きを制御できる小型の可動翼です.
 def_control_fin_small_node_0_label		Rotation	翼の向き
 def_control_fin_small_node_0_desc		Accepts a value between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号の入力から翼の向きを制御します.
 def_control_fin_small_node_1_label		Electric	電力
 def_control_fin_small_node_1_desc		Electrical power connection.	電力接続
 def_control_surface_large_name		Control Surface (Large)	可動翼 (平面, 大)
-def_control_surface_large_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号を入力して翼の向きを制御します.
+def_control_surface_large_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号を入力することで翼の向きを制御します.
 def_control_surface_large_s_desc		The control surface can be attached to a surface of the vehicle to apply force as air or water is flowing over it.	乗り物に取り付けて, 乗り物の動きを制御できる大型の可動翼です.
 def_control_surface_large_node_0_label		Rotation	翼の向き
 def_control_surface_large_node_0_desc		Accepts a value between -1 and 1 that represent the two extremes of the rudder's rotation.	-1から1の数値信号の入力から翼の向きを制御します.
 def_control_surface_large_node_1_label		Electric	電力
 def_control_surface_large_node_1_desc		Electrical power connection.	電力接続
 def_control_surface_medium_name		Control Surface (Medium)	可動翼 (平面, 中)
-def_control_surface_medium_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号を入力して翼の向きを制御します.
+def_control_surface_medium_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号を入力することで翼の向きを制御します.
 def_control_surface_medium_s_desc		The control surface can be attached to a surface of the vehicle to apply force as air or water is flowing over it.	乗り物に取り付けて, 乗り物の動きを制御できる中型の可動翼です.
 def_control_surface_medium_node_0_label		Rotation	翼の向き
 def_control_surface_medium_node_0_desc		Accepts a value between -1 and 1 that represent the two extremes of the rudder's rotation.	-1から1の数値信号の入力から翼の向きを制御します.
 def_control_surface_medium_node_1_label		Electric	電力
 def_control_surface_medium_node_1_desc		Electrical power connection.	電力接続
 def_control_surface_small_name		Control Surface (Small)	可動翼 (平面, 小)
-def_control_surface_small_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号を入力して翼の向きを制御します.
+def_control_surface_small_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号を入力することで翼の向きを制御します.
 def_control_surface_small_s_desc		The control surface can be attached to a surface of the vehicle to apply force as air or water is flowing over it.	乗り物に取り付けて, 乗り物の動きを制御できる小型の可動翼です.
 def_control_surface_small_node_0_label		Rotation	翼の向き
 def_control_surface_small_node_0_desc		Accepts a value between -1 and 1 that represent the two extremes of the rudder's rotation.	-1から1の数値信号の入力から翼の向きを制御します.
