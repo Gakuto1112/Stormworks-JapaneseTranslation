@@ -3004,7 +3004,7 @@ def_buzzer_name		Buzzer	ブザー
 def_buzzer_desc		The type of sound, volume, and pitch can be customised by selecting this component with the select tool. It has an audible range of 30m.	音の種類, 音量, 再生速度はプロパティウィンドウから設定できます. 音が聞こえる範囲は30メートルです.
 def_buzzer_s_desc		A buzzer that will play a selected sound when toggled from off to on.	オン/オフ信号の立ち上がり時に設定された音を鳴らすブザーです.
 def_buzzer_node_0_label		Buzzer	ブザー再生
-def_buzzer_node_0_desc		Plays the selected sound when toggled from off to on.	オン/オフ信号の立ち上がり時に音を鳴らします.
+def_buzzer_node_0_desc		Plays the selected sound when toggled from off to on.	信号がオンになったときに音声を再生します.
 def_buzzer_node_1_label		Electric	電力
 def_buzzer_node_1_desc		Electrical power connection.	電力接続
 def_camera_gimbal_name		Camera Gimbal	カメラ (回転式)
