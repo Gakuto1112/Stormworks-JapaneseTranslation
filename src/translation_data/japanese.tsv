@@ -3563,7 +3563,7 @@ def_fan_small_node_0_label		RPS	動力
 def_fan_small_node_0_desc			エンジンからの動力を受け取ります.
 def_fish_finder_name		Fishfinder	魚群探知機
 def_fish_finder_desc		This sensor outputs the relative angle, distance and depth to a random detected fish within its range using sound waves when submerged.	この探知機は水中で音波を使用し, 範囲内の魚群を検知し, 対象の魚群までの相対的な角度を距離を出力します.
-def_fish_finder_s_desc		A sensor that returns information about a fish within 100m when submerged.	水中設置すると100m以内の魚群情報を出力するセンサーです.
+def_fish_finder_s_desc		A sensor that returns information about a fish within 100m when submerged.	水中に設置すると100m以内の魚群情報を出力するセンサーです.
 def_fish_finder_node_0_label		Electric	電力
 def_fish_finder_node_0_desc		Electrical power connection.	電力接続
 def_fish_finder_node_1_label		Activate	起動
