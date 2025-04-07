@@ -3143,7 +3143,7 @@ def_connector_hardpoint_a_node_8_label		Electric	電力
 def_connector_hardpoint_a_node_8_desc		Electrical power connection.	電力接続
 def_connector_hardpoint_b_name		Hardpoint Connector Attachment	ハードポイントコネクター接続部 (角)
 def_connector_hardpoint_b_desc		A hardpoint body will connect to a hardpoint attachment when correctly aligned, fixing the two components in place while transferring logic and fluid.	ハードポイントコネクター取り付けは本体が正しい配置されると自動的に接続されます. 接続中はコネクター間で信号や流体を伝達できます.
-def_connector_hardpoint_b_s_desc		A hardpoint connector for building detachable vehicle sections.	乗り物に取り付けるパーツを作成するためのハードポイントコネクターです.
+def_connector_hardpoint_b_s_desc		A hardpoint connector for building detachable vehicle sections.	分離可能なパーツを乗り物に作成するためのハードポイントコネクターです.
 def_connector_hardpoint_b_node_0_label		Launched	発射済み
 def_connector_hardpoint_b_node_0_desc		Outputs an on signal if the connector is sent a launch signal by the parent.	本体の「発射」ノードのオン信号で切り離された場合にオン信号を出力します.
 def_connector_hardpoint_b_node_1_label		Fluid	流体
@@ -3160,7 +3160,7 @@ def_connector_hardpoint_b_node_6_label		Electric	電力
 def_connector_hardpoint_b_node_6_desc		Electrical power connection.	電力接続
 def_connector_hardpoint_b_round_name		Hardpoint Connector Attachment (Round)	ハードポイントコネクター接続部 (丸)
 def_connector_hardpoint_b_round_desc		A hardpoint body will connect to a hardpoint attachment when correctly aligned, fixing the two components in place while transferring logic and fluid.	ハードポイントコネクター取り付けは本体が正しい配置されると自動的に接続されます. 接続中はコネクター間で信号や流体を伝達できます.
-def_connector_hardpoint_b_round_s_desc		A hardpoint connector for building detachable vehicle sections.	乗り物に取り付けるパーツを作成するためのハードポイントコネクターです.
+def_connector_hardpoint_b_round_s_desc		A hardpoint connector for building detachable vehicle sections.	分離可能なパーツを乗り物に作成するためのハードポイントコネクターです.
 def_connector_hardpoint_b_round_node_0_label		Launched	発射
 def_connector_hardpoint_b_round_node_0_desc		Outputs an on signal if the connector is sent a launch signal by the parent.	本体の「発射」ノードのオン信号で切り離された場合にオン信号を出力します.
 def_connector_hardpoint_b_round_node_1_label		Fluid	流体
