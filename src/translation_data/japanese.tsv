@@ -3640,28 +3640,28 @@ def_fluid_radiator_node_1_label		Fluid B	流体2
 def_fluid_radiator_node_1_desc		Fluid Connection.	流体を吸入/排出します.
 def_fluid_radiator_electric_name		Fluid Heat Radiator 3x3 (Electric)	放熱器 (電動, 小)
 def_fluid_radiator_electric_desc		Fluid inside the cooler will lose temperature, supplying electric for the fan will increase the rate of exchange.	放熱器内の流体は冷えていきます. 電力を与えることでより早く冷えます.
-def_fluid_radiator_electric_s_desc		Radiator type cooler for fluid.	流体を冷やす放熱器です. 電力で動く送風機が付いています.
+def_fluid_radiator_electric_s_desc		Radiator type cooler for fluid.	流体を冷やす放熱器です. 電力で動くファンが付いています.
 def_fluid_radiator_electric_node_0_label		Fluid A	流体1
 def_fluid_radiator_electric_node_0_desc		Fluid Connection.	流体を吸入/排出します.
 def_fluid_radiator_electric_node_1_label		Fluid B	流体2
 def_fluid_radiator_electric_node_1_desc		Fluid Connection.	流体を吸入/排出します.
 def_fluid_radiator_electric_node_2_label		Electric	電力
 def_fluid_radiator_electric_node_2_desc			電力接続
-def_fluid_radiator_electric_node_3_label		Fan On/Off	送風機オン/オフ
-def_fluid_radiator_electric_node_3_desc			オン信号を受け取ると送風機が作動します.
+def_fluid_radiator_electric_node_3_label		Fan On/Off	ファンのオン/オフ
+def_fluid_radiator_electric_node_3_desc			オン信号を受け取るとファンが作動します.
 def_fluid_radiator_electric_node_4_label		Temperature	温度
 def_fluid_radiator_electric_node_4_desc			放熱器内の流体の温度を出力します.
 def_fluid_radiator_electric_5_name		Fluid Heat Radiator 5x5 (Electric)	放熱器 (電動, 大)
 def_fluid_radiator_electric_5_desc		Fluid inside the cooler will lose temperature, supplying electric for the fan will increase the rate of exchange.	放熱器内の流体は冷えていきます. 電力を与えることでより早く冷えます.
-def_fluid_radiator_electric_5_s_desc		Radiator type cooler for fluid.	流体を冷やす放熱器です. 電力で動く送風機が付いています.
+def_fluid_radiator_electric_5_s_desc		Radiator type cooler for fluid.	流体を冷やす放熱器です. 電力で動くファンが付いています.
 def_fluid_radiator_electric_5_node_0_label		Fluid A	流体1
 def_fluid_radiator_electric_5_node_0_desc		Fluid Connection.	流体を吸入/排出します.
 def_fluid_radiator_electric_5_node_1_label		Fluid B	流体2
 def_fluid_radiator_electric_5_node_1_desc		Fluid Connection.	流体を吸入/排出します.
 def_fluid_radiator_electric_5_node_2_label		Electric	電力
 def_fluid_radiator_electric_5_node_2_desc			電力接続
-def_fluid_radiator_electric_5_node_3_label		Fan On/Off	送風機オン/オフ
-def_fluid_radiator_electric_5_node_3_desc			オン信号を受け取ると送風機が作動します.
+def_fluid_radiator_electric_5_node_3_label		Fan On/Off	ファンのオン/オフ
+def_fluid_radiator_electric_5_node_3_desc			オン信号を受け取るとファンが作動します.
 def_fluid_radiator_electric_5_node_4_label		Temperature	温度
 def_fluid_radiator_electric_5_node_4_desc			放熱器内の流体の温度を出力します.
 def_fluid_tank_compressed_gas_1_3_name		Gas Tank (Small)	ガスタンク (小)
