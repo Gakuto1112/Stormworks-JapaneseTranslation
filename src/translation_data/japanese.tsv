@@ -2894,21 +2894,21 @@ def_barometer_node_0_label		Pressure	圧力
 def_barometer_node_0_desc			
 def_battery_large_name		Electric Battery Large	電池 (大)
 def_battery_large_desc			出力される電力の電圧は蓄電量の低下とともに低下します.
-def_battery_large_s_desc		A large battery array for storing electrical charge.	電力を蓄えられる大型の電池です.
+def_battery_large_s_desc		A large battery array for storing electrical charge.	電力を蓄えられる大型の蓄電池です.
 def_battery_large_node_0_label		Electric Store	電力
 def_battery_large_node_0_desc		Energy storage for the electrical system.	電力網に電力を送ったり, 電力を受け取って蓄えたりします.
 def_battery_large_node_1_label		Charge	蓄電量
 def_battery_large_node_1_desc		Data output giving the charge of the battery from 0 to 1.	電池の蓄電量を0から1の範囲で出力します.
 def_battery_medium_name		Electric Battery Medium	電池 (中)
 def_battery_medium_desc			出力される電力の電圧は蓄電量の低下とともに低下します.
-def_battery_medium_s_desc		A medium battery for storing electrical charge.	電力を蓄えられる中型の電池です.
+def_battery_medium_s_desc		A medium battery for storing electrical charge.	電力を蓄えられる中型の蓄電池です.
 def_battery_medium_node_0_label		Electric Store	電力
 def_battery_medium_node_0_desc		Energy storage for the electrical system.	電力網に電力を送ったり, 電力を受け取って蓄えたりします.
 def_battery_medium_node_1_label		Charge	蓄電量
 def_battery_medium_node_1_desc		Data output giving the charge of the battery from 0 to 1.	電池の蓄電量を0から1の範囲で出力します.
 def_battery_small_name		Electric Battery Small	電池 (小)
 def_battery_small_desc			出力される電力の電圧は蓄電量の低下とともに低下します.
-def_battery_small_s_desc		A small battery for storing electrical charge.	電力を蓄えられる小型の電池です.
+def_battery_small_s_desc		A small battery for storing electrical charge.	電力を蓄えられる小型の蓄電池です.
 def_battery_small_node_0_label		Electric Store	電力
 def_battery_small_node_0_desc		Energy storage for the electrical system.	電力網に電力を送ったり, 電力を受け取って蓄えたりします.
 def_battery_small_node_1_label		Charge	蓄電量
