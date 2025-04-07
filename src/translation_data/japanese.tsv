@@ -3581,7 +3581,7 @@ def_flag_small_desc		The flag design can be set in the properties menu.	旗は�
 def_flag_small_s_desc		A small sized flagpole.	小型の旗のポールです.
 def_flare_launcher_name		Flare Launcher	発煙筒投擲機
 def_flare_launcher_desc		Set the flare canister type and launch velocity in the component properties.	投擲する発煙筒の種類と投擲速度はプロパティウィンドウから設定できます.
-def_flare_launcher_s_desc		Single-use flare launcher for signalling and illumination.	信号弾や照明弾として使用する単発の発煙筒投擲機です.
+def_flare_launcher_s_desc		Single-use flare launcher for signalling and illumination.	信号弾や照明弾を発射する使用する単発の発煙筒投擲機です.
 def_flare_launcher_node_0_label		Launch	投擲
 def_flare_launcher_node_0_desc			オン信号を受け取ると発煙筒を投擲します.
 def_flare_launcher_node_1_label		Launch Passthrough	空打ち
