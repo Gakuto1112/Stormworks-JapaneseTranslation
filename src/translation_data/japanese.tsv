@@ -2760,9 +2760,9 @@ def_aircraft_engine_node_3_desc		The fuel supply for the engine.	エンジンを
 def_aircraft_engine_node_4_label		Air	空気
 def_aircraft_engine_node_4_desc		The air supply for the engine.	エンジンを動かすために供給される空気です.
 def_aircraft_engine_node_5_label		In Coolant	冷媒吸入
-def_aircraft_engine_node_5_desc		The return flow (cold) for the coolant system.	冷却システムからの温度の低い冷却媒体を吸入します.
+def_aircraft_engine_node_5_desc		The return flow (cold) for the coolant system.	冷却システムからの温度の低い冷媒を吸入します.
 def_aircraft_engine_node_6_label		Out Coolant	冷媒排出
-def_aircraft_engine_node_6_desc		The output flow (hot) for the coolant system.	冷却システムへ向けて温まった冷却媒体を排出します.
+def_aircraft_engine_node_6_desc		The output flow (hot) for the coolant system.	冷却システムへ向けて温まった冷媒を排出します.
 def_aircraft_engine_node_7_label		Exhaust	排気
 def_aircraft_engine_node_7_desc		Out flow for combusted fumes from the engine.	エンジンからの排気ガスが排出されます.
 def_aircraft_engine_node_8_label		Exhaust	排気
@@ -3512,10 +3512,10 @@ def_engine_node_3_label		Fuel	燃料
 def_engine_node_3_desc		The fuel supply for the engine.	エンジンを動かすために供給される燃料です.
 def_engine_node_4_label		Air	空気
 def_engine_node_4_desc		The air supply for the engine.	エンジンを動かすために供給される空気です.
-def_engine_node_5_label		In Coolant	冷却媒体吸入
-def_engine_node_5_desc		The return flow (cold) for the coolant system.	冷却システムからの温度の低い冷却媒体を吸入します.
-def_engine_node_6_label		Out Coolant	冷却媒体排出
-def_engine_node_6_desc		The output flow (hot) for the coolant system.	冷却システムへ向けて温まった冷却媒体を排出します.
+def_engine_node_5_label		In Coolant	冷媒吸入
+def_engine_node_5_desc		The return flow (cold) for the coolant system.	冷却システムからの温度の低い冷媒を吸入します.
+def_engine_node_6_label		Out Coolant	冷媒排出
+def_engine_node_6_desc		The output flow (hot) for the coolant system.	冷却システムへ向けて温まった冷媒を排出します.
 def_engine_node_7_label		Exhaust	排気
 def_engine_node_7_desc		Out flow for combusted fumes from the engine.	エンジンからの排気ガスが排出されます.
 def_engine_node_8_label		RPS	秒間エンジン回転数
@@ -3537,10 +3537,10 @@ def_engine_diesel_node_3_label		Fuel	燃料
 def_engine_diesel_node_3_desc		The fuel supply for the engine.	エンジンを動かすために供給される燃料です.
 def_engine_diesel_node_4_label		Air	空気
 def_engine_diesel_node_4_desc		The air supply for the engine.	エンジンを動かすために供給される空気です.
-def_engine_diesel_node_5_label		In Coolant	冷却媒体吸入
-def_engine_diesel_node_5_desc		The return flow (cold) for the coolant system.	冷却システムからの温度の低い冷却媒体を吸入します.
-def_engine_diesel_node_6_label		Out Coolant	冷却媒体排出
-def_engine_diesel_node_6_desc		The output flow (hot) for the coolant system.	冷却システムへ向けて温まった冷却媒体を排出します.
+def_engine_diesel_node_5_label		In Coolant	冷媒吸入
+def_engine_diesel_node_5_desc		The return flow (cold) for the coolant system.	冷却システムからの温度の低い冷媒を吸入します.
+def_engine_diesel_node_6_label		Out Coolant	冷媒排出
+def_engine_diesel_node_6_desc		The output flow (hot) for the coolant system.	冷却システムへ向けて温まった冷媒を排出します.
 def_engine_diesel_node_7_label		Exhaust	排気
 def_engine_diesel_node_7_desc		Out flow for combusted fumes from the engine.	エンジンからの排気ガスが排出されます.
 def_engine_diesel_node_8_label		Exhaust	排気
@@ -3791,13 +3791,13 @@ def_furnace_electric_name		Electric Furnace	電気炉
 def_furnace_electric_desc		Produces large amounts of heat from electricity.	電力で大量の熱を発生させます.
 def_furnace_electric_s_desc		An electrically powered furnace.	電力で稼働する加熱炉です.
 def_furnace_electric_node_0_label		Temperature	温度
-def_furnace_electric_node_0_desc		Temperature of the coolant that is being heated.	加熱させている冷却媒体の温度を出力します.
+def_furnace_electric_node_0_desc		Temperature of the coolant that is being heated.	加熱させている冷媒の温度を出力します.
 def_furnace_electric_node_1_label		Enable	起動
 def_furnace_electric_node_1_desc		Activate the electric furnace.	オン信号で炉を加熱します.
-def_furnace_electric_node_2_label		Coolant In	冷却媒体注入
-def_furnace_electric_node_2_desc		In port for fluid to be heated by the furnace.	炉で加熱する冷却媒体を注入します.
-def_furnace_electric_node_3_label		Coolant Out	冷却媒体排出
-def_furnace_electric_node_3_desc		Out port for fluid to be heated by the furnace.	炉で加熱した冷却媒体を排出します.
+def_furnace_electric_node_2_label		Coolant In	冷媒注入
+def_furnace_electric_node_2_desc		In port for fluid to be heated by the furnace.	炉で加熱する冷媒を注入します.
+def_furnace_electric_node_3_label		Coolant Out	冷媒排出
+def_furnace_electric_node_3_desc		Out port for fluid to be heated by the furnace.	炉で加熱した冷媒を排出します.
 def_furnace_electric_node_4_label		Electric	電力
 def_furnace_electric_node_4_desc		Electrical power connection.	電力接続
 def_furnace_industrial_name		Industrial Diesel Furnace	工業用加熱炉
@@ -3806,13 +3806,13 @@ def_furnace_industrial_s_desc		A diesel powered furnace.	軽油を燃料とす�
 def_furnace_industrial_node_0_label		Diesel Level	軽油の量
 def_furnace_industrial_node_0_desc			
 def_furnace_industrial_node_1_label		Temperature	温度
-def_furnace_industrial_node_1_desc		Temperature of the coolant that is being heated.	加熱させている冷却媒体の温度を出力します.
+def_furnace_industrial_node_1_desc		Temperature of the coolant that is being heated.	加熱させている冷媒の温度を出力します.
 def_furnace_industrial_node_2_label		Ignition	点火
 def_furnace_industrial_node_2_desc		Activate to consume diesel and ignite the furnace.	オン信号を受け取ると燃料を消費して炉を点火します.
-def_furnace_industrial_node_3_label		Coolant In	冷却媒体注入
-def_furnace_industrial_node_3_desc		In port for fluid to be heated by the furnace.	炉で加熱する冷却媒体を注入します.
-def_furnace_industrial_node_4_label		Coolant Out	冷却媒体排出
-def_furnace_industrial_node_4_desc		Out port for fluid to be heated by the furnace.	炉で加熱した冷却媒体を排出します.
+def_furnace_industrial_node_3_label		Coolant In	冷媒注入
+def_furnace_industrial_node_3_desc		In port for fluid to be heated by the furnace.	炉で加熱する冷媒を注入します.
+def_furnace_industrial_node_4_label		Coolant Out	冷媒排出
+def_furnace_industrial_node_4_desc		Out port for fluid to be heated by the furnace.	炉で加熱した冷媒を排出します.
 def_furnace_industrial_node_5_label		Air In	空気
 def_furnace_industrial_node_5_desc		Port for supplying air.	炉を動かすために供給される空気です.
 def_furnace_industrial_node_6_label		Exhaust Out	排煙
@@ -5370,9 +5370,9 @@ def_modular_engine_clutch_5x5_node_0_label		Clutch Pressure	クラッチ圧力
 def_modular_engine_clutch_5x5_node_0_desc			エンジンの動力を伝える割合を0から1の範囲で制御します.
 def_modular_engine_clutch_5x5_node_1_label		RPS	動力
 def_modular_engine_clutch_5x5_node_1_desc		The power supplied by the engine for inputting to other components.	エンジンの動力を他の動力を必要とする部品に向けて出力します.
-def_modular_engine_coolant_manifold_name		Modular Engine Coolant Manifold	吸入/排出口 (冷却媒体)
-def_modular_engine_coolant_manifold_desc		Attach a manifold to a cylinder to provide a connection for coolant to that cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	これを気筒に取り付けることでその組み立て式エンジンに冷却媒体を供給できます. 隣接している気筒はこの吸入/排出口からの冷却媒体を共有できます.
-def_modular_engine_coolant_manifold_s_desc		A modular engine coolant manifold.	組み立て式エンジンの部品です. エンジンを冷やす冷却媒体を吸入/排出します.
+def_modular_engine_coolant_manifold_name		Modular Engine Coolant Manifold	吸入/排出口 (冷媒)
+def_modular_engine_coolant_manifold_desc		Attach a manifold to a cylinder to provide a connection for coolant to that cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	これを気筒に取り付けることでその組み立て式エンジンに冷媒を供給できます. 隣接している気筒はこの吸入/排出口からの冷媒を共有できます.
+def_modular_engine_coolant_manifold_s_desc		A modular engine coolant manifold.	組み立て式エンジンの部品です. エンジンを冷やす冷媒を吸入/排出します.
 def_modular_engine_coolant_manifold_node_0_label		Coolant A	流体1
 def_modular_engine_coolant_manifold_node_0_desc			流体を吸入/排出します.
 def_modular_engine_coolant_manifold_node_1_label		Coolant B	流体2
@@ -5408,7 +5408,7 @@ def_modular_engine_crankshaft_converter_5x5_s_desc		A modular engine crankshaft 
 def_modular_engine_crankshaft_converter_5x5_node_0_label		RPS	エンジン回転数
 def_modular_engine_crankshaft_converter_5x5_node_0_desc		Output value giving data info on engine speed.	1秒間あたりのエンジンの回転数 (RPS) を出力します.
 def_modular_engine_cylinder_straight_name		Modular Engine Cylinder 1x1	気筒 (1x1)
-def_modular_engine_cylinder_straight_desc		Attach a cylinder to a crankshafts outer surface to produce power for an engine. The cylinder requires a manifold to move air, fuel, and exhaust through the cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	組み立て式エンジンには気筒が1つ以上必要です. 気筒をクランクシャフトに取り付けて動力を産みます. 動力を発生させるには空気, 燃料の吸入, 排気の排出が必要です. 更に温度を安定させるには十分な冷却媒体が必要です. 隣接している気筒はこれらの空気, 燃料, 排気, 冷却媒体を共有できます. クランクシャフトの大きさに合った気筒を選んで下さい.
+def_modular_engine_cylinder_straight_desc		Attach a cylinder to a crankshafts outer surface to produce power for an engine. The cylinder requires a manifold to move air, fuel, and exhaust through the cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	組み立て式エンジンには気筒が1つ以上必要です. 気筒をクランクシャフトに取り付けて動力を産みます. 動力を発生させるには空気, 燃料の吸入, 排気の排出が必要です. 更に温度を安定させるには十分な冷媒が必要です. 隣接している気筒はこれらの空気, 燃料, 排気, 冷媒を共有できます. クランクシャフトの大きさに合った気筒を選んで下さい.
 def_modular_engine_cylinder_straight_s_desc		A modular engine cylinder.	組み立て式エンジンの部品です. エンジンの基礎部品の1つです.
 def_modular_engine_cylinder_straight_node_0_label		Composite Data	気筒の情報
 def_modular_engine_cylinder_straight_node_0_desc		Outputs data from the cylinder. (Value 1 : Air Volume) (Value 2 : Fuel Volume) (Value 3 : Temperature)	気筒の情報を出力します. (数値チャンネル 1: 空気の量を出力します. 2: 燃料の量を出力します. 3: エンジンの温度を出力します.)
@@ -5490,21 +5490,21 @@ def_modular_engine_intake_manifold_node_0_desc			吸入口が燃料を吸入す�
 def_modular_engine_intake_manifold_node_1_label		Fuel	燃料
 def_modular_engine_intake_manifold_node_1_desc			エンジンを動かすために供給される燃料です.
 def_modular_engine_manifold_corner_name		Modular Engine Manifold (Corner)	気筒接続 (角)
-def_modular_engine_manifold_corner_desc		Attach a manifold to a cylinder to provide connections for air, fuel, and exhaust for that cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	これで接続された気筒は, 隣接している気筒と同様に空気, 燃料, 排気, 冷却媒体を共有できます.
+def_modular_engine_manifold_corner_desc		Attach a manifold to a cylinder to provide connections for air, fuel, and exhaust for that cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	これで接続された気筒は, 隣接している気筒と同様に空気, 燃料, 排気, 冷媒を共有できます.
 def_modular_engine_manifold_corner_s_desc		A modular engine manifold.	組み立て式エンジンの部品です. 同じエンジンの離れた気筒を接続します.
 def_modular_engine_manifold_straight_name		Modular Engine Manifold (Straight)	気筒接続 (直線)
-def_modular_engine_manifold_straight_desc		Attach a manifold to a cylinder to provide connections for air, fuel, and exhaust for that cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	これで接続された気筒は, 隣接している気筒と同様に空気, 燃料, 排気, 冷却媒体を共有できます.
+def_modular_engine_manifold_straight_desc		Attach a manifold to a cylinder to provide connections for air, fuel, and exhaust for that cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	これで接続された気筒は, 隣接している気筒と同様に空気, 燃料, 排気, 冷媒を共有できます.
 def_modular_engine_manifold_straight_s_desc		A modular engine manifold.	組み立て式エンジンの部品です. 同じエンジンの離れた気筒を接続します.
 def_modular_engine_manifold_t_name		Modular Engine Manifold (T)	気筒接続 (T字)
-def_modular_engine_manifold_t_desc		Attach a manifold to a cylinder to provide connections for air, fuel, and exhaust for that cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	これで接続された気筒は, 隣接している気筒と同様に空気, 燃料, 排気, 冷却媒体を共有できます.
+def_modular_engine_manifold_t_desc		Attach a manifold to a cylinder to provide connections for air, fuel, and exhaust for that cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	これで接続された気筒は, 隣接している気筒と同様に空気, 燃料, 排気, 冷媒を共有できます.
 def_modular_engine_manifold_t_s_desc		A modular engine manifold.	組み立て式エンジンの部品です. 同じエンジンの離れた気筒を接続します.
 def_modular_engine_piston_3x3_name		Modular Engine Cylinder 3x3	気筒 (3x3)
-def_modular_engine_piston_3x3_desc		Attach a cylinder to a crankshafts outer surface to produce power for an engine. The cylinder requires a manifold to move air, fuel, and exhaust through the cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	組み立て式エンジンには気筒が1つ以上必要です. 気筒をクランクシャフトに取り付けて動力を産みます. 動力を発生させるには空気, 燃料の吸入, 排気の排出が必要です. 更に温度を安定させるには十分な冷却媒体が必要です. 隣接している気筒はこれらの空気, 燃料, 排気, 冷却媒体を共有できます. クランクシャフトの大きさに合った気筒を選んで下さい.
+def_modular_engine_piston_3x3_desc		Attach a cylinder to a crankshafts outer surface to produce power for an engine. The cylinder requires a manifold to move air, fuel, and exhaust through the cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	組み立て式エンジンには気筒が1つ以上必要です. 気筒をクランクシャフトに取り付けて動力を産みます. 動力を発生させるには空気, 燃料の吸入, 排気の排出が必要です. 更に温度を安定させるには十分な冷媒が必要です. 隣接している気筒はこれらの空気, 燃料, 排気, 冷媒を共有できます. クランクシャフトの大きさに合った気筒を選んで下さい.
 def_modular_engine_piston_3x3_s_desc		A modular engine cylinder.	組み立て式エンジンの部品です. エンジンの基礎部品の1つです.
 def_modular_engine_piston_3x3_node_0_label		Composite Data	気筒の情報
 def_modular_engine_piston_3x3_node_0_desc		Outputs data from the cylinder. (Value 1 : Air Volume) (Value 2 : Fuel Volume) (Value 3 : Temperature)	気筒の情報を出力します. (数値チャンネル 1: 空気の量を出力します. 2: 燃料の量を出力します. 3: エンジンの温度を出力します.)
 def_modular_engine_piston_5x5_name		Modular Engine Cylinder 5x5	気筒 (5x5)
-def_modular_engine_piston_5x5_desc		Attach a cylinder to a crankshafts outer surface to produce power for an engine. The cylinder requires a manifold to move air, fuel, and exhaust through the cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	組み立て式エンジンには気筒が1つ以上必要です. 気筒をクランクシャフトに取り付けて動力を産みます. 動力を発生させるには空気, 燃料の吸入, 排気の排出が必要です. 更に温度を安定させるには十分な冷却媒体が必要です. 隣接している気筒はこれらの空気, 燃料, 排気, 冷却媒体を共有できます. クランクシャフトの大きさに合った気筒を選んで下さい.
+def_modular_engine_piston_5x5_desc		Attach a cylinder to a crankshafts outer surface to produce power for an engine. The cylinder requires a manifold to move air, fuel, and exhaust through the cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	組み立て式エンジンには気筒が1つ以上必要です. 気筒をクランクシャフトに取り付けて動力を産みます. 動力を発生させるには空気, 燃料の吸入, 排気の排出が必要です. 更に温度を安定させるには十分な冷媒が必要です. 隣接している気筒はこれらの空気, 燃料, 排気, 冷媒を共有できます. クランクシャフトの大きさに合った気筒を選んで下さい.
 def_modular_engine_piston_5x5_s_desc		A modular engine cylinder.	組み立て式エンジンの部品です. エンジンの基礎部品の1つです.
 def_modular_engine_piston_5x5_node_0_label		Composite Data	気筒の情報
 def_modular_engine_piston_5x5_node_0_desc		Outputs data from the cylinder. (Value 1 : Air Volume) (Value 2 : Fuel Volume) (Value 3 : Temperature)	気筒の情報を出力します. (数値チャンネル 1: 空気の量を出力します. 2: 燃料の量を出力します. 3: エンジンの温度を出力します.)
@@ -7355,10 +7355,10 @@ def_stair_top_s_desc		A single step that can be used at the top of a staircase t
 def_steam_boiler_name		Steam Boiler	蒸気ボイラー
 def_steam_boiler_desc		The boiler should be connected to a firebox to supply heat for evaporation. Control the rate of evaporation to maintain consistent output steam pressure.	ボイラーは燃焼室や原子炉と接続してそれらからの熱で水を沸騰させます. 蒸気の生産を安定させるには沸騰速度を制御する必要があります.
 def_steam_boiler_s_desc		A boiler for evaporating water into steam.	水を沸騰させて蒸気を発生させるボイラーです.
-def_steam_boiler_node_0_label		Coolant A	冷却媒体1
-def_steam_boiler_node_0_desc		Port for supplying hot fluid to heat the contents of the boiler.	燃焼室や原子炉などで温めた冷却媒体でボイラーを加熱します.
-def_steam_boiler_node_1_label		Coolant B	冷却媒体2
-def_steam_boiler_node_1_desc		Port for supplying hot fluid to heat the contents of the boiler.	燃焼室や原子炉などで温めた冷却媒体でボイラーを加熱します.
+def_steam_boiler_node_0_label		Coolant A	冷媒1
+def_steam_boiler_node_0_desc		Port for supplying hot fluid to heat the contents of the boiler.	燃焼室や原子炉などで温めた冷媒でボイラーを加熱します.
+def_steam_boiler_node_1_label		Coolant B	冷媒2
+def_steam_boiler_node_1_desc		Port for supplying hot fluid to heat the contents of the boiler.	燃焼室や原子炉などで温めた冷媒でボイラーを加熱します.
 def_steam_boiler_node_2_label		Water In	水注入
 def_steam_boiler_node_2_desc			ボイラーで沸騰させる水を注入します.
 def_steam_boiler_node_3_label		Steam Out	蒸気排出
@@ -7391,10 +7391,10 @@ def_steam_coal_firebox_node_1_label		Temperature	温度
 def_steam_coal_firebox_node_1_desc		Temperature of the coolant that is being heated.	燃焼室の中の温度を出力します.
 def_steam_coal_firebox_node_2_label		Ignition	点火
 def_steam_coal_firebox_node_2_desc		Activate to consume a coal and ignite the firebox.	オン信号を受け取ると石炭を1個消費して点火します.
-def_steam_coal_firebox_node_3_label		Coolant In	冷却媒体注入
-def_steam_coal_firebox_node_3_desc		In port for fluid to be heated by the firebox.	燃焼室で加熱する冷却媒体を注入します.
-def_steam_coal_firebox_node_4_label		Coolant Out	冷却媒体排出
-def_steam_coal_firebox_node_4_desc		Out port for fluid to be heated by the firebox.	燃焼室で加熱した冷却媒体を排出します. ボイラーに供給してボイラーを加熱します.
+def_steam_coal_firebox_node_3_label		Coolant In	冷媒注入
+def_steam_coal_firebox_node_3_desc		In port for fluid to be heated by the firebox.	燃焼室で加熱する冷媒を注入します.
+def_steam_coal_firebox_node_4_label		Coolant Out	冷媒排出
+def_steam_coal_firebox_node_4_desc		Out port for fluid to be heated by the firebox.	燃焼室で加熱した冷媒を排出します. ボイラーに供給してボイラーを加熱します.
 def_steam_coal_firebox_node_5_label		Air	空気
 def_steam_coal_firebox_node_5_desc		Port for supplying air to the fire.	火炎室を動かすために供給される空気です.
 def_steam_coal_firebox_node_6_label		Exhaust	排煙
@@ -7408,10 +7408,10 @@ def_steam_coal_firebox_l_node_1_label		Temperature	温度
 def_steam_coal_firebox_l_node_1_desc		Temperature of the coolant that is being heated.	燃焼室の中の温度を出力します.
 def_steam_coal_firebox_l_node_2_label		Ignition	点火
 def_steam_coal_firebox_l_node_2_desc		Activate to consume a coal and ignite the firebox.	オン信号を受け取ると石炭を1個消費して点火します.
-def_steam_coal_firebox_l_node_3_label		Coolant In	冷却媒体注入
-def_steam_coal_firebox_l_node_3_desc		In port for fluid to be heated by the firebox.	燃焼室で加熱する冷却媒体を注入します.
-def_steam_coal_firebox_l_node_4_label		Coolant Out	冷却媒体排出
-def_steam_coal_firebox_l_node_4_desc		Out port for fluid to be heated by the firebox.	燃焼室で加熱した冷却媒体を排出します. ボイラーに供給してボイラーを加熱します.
+def_steam_coal_firebox_l_node_3_label		Coolant In	冷媒注入
+def_steam_coal_firebox_l_node_3_desc		In port for fluid to be heated by the firebox.	燃焼室で加熱する冷媒を注入します.
+def_steam_coal_firebox_l_node_4_label		Coolant Out	冷媒排出
+def_steam_coal_firebox_l_node_4_desc		Out port for fluid to be heated by the firebox.	燃焼室で加熱した冷媒を排出します. ボイラーに供給してボイラーを加熱します.
 def_steam_coal_firebox_l_node_5_label		Air	空気
 def_steam_coal_firebox_l_node_5_desc		Port for supplying air to the fire.	火炎室を動かすために供給される空気です.
 def_steam_coal_firebox_l_node_6_label		Exhaust	排煙
@@ -7446,10 +7446,10 @@ def_steam_coal_vacuum_node_1_desc		Electrical input.	電力接続
 def_steam_condenser_name		Steam Condenser	復水器
 def_steam_condenser_desc		The condenser should be continously cooled to function efficiently.	復水器を効率的に動作させるには, 継続的な冷却を行って下さい.
 def_steam_condenser_s_desc		A condenser for converting steam back to water.	蒸気を水に戻す復水器です.
-def_steam_condenser_node_0_label		Coolant A	冷却媒体1
-def_steam_condenser_node_0_desc		Port for supplying cold fluid to cool the contents of the condenser.	復水器を冷却する冷却媒体です.
-def_steam_condenser_node_1_label		Coolant B	冷却媒体2
-def_steam_condenser_node_1_desc		Port for supplying cold fluid to cool the contents of the condenser.	復水器を冷却する冷却媒体です.
+def_steam_condenser_node_0_label		Coolant A	冷媒1
+def_steam_condenser_node_0_desc		Port for supplying cold fluid to cool the contents of the condenser.	復水器を冷却する冷媒です.
+def_steam_condenser_node_1_label		Coolant B	冷媒2
+def_steam_condenser_node_1_desc		Port for supplying cold fluid to cool the contents of the condenser.	復水器を冷却する冷媒です.
 def_steam_condenser_node_2_label		Steam In	蒸気注入
 def_steam_condenser_node_2_desc			水に戻す蒸気を注入します.
 def_steam_condenser_node_3_label		Water Out	水排出
