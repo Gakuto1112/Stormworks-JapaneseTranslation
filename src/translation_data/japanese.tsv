@@ -764,7 +764,7 @@ id	description	en	local
 		Please limit your selected tags to a maximum of 10.	選択できるタグの数は最大で10個です.
 		Please select at least 1 tag.	少なくとも1個はタグを選択して下さい.
 		Your vehicle is too small to be uploaded to the workshop.	この乗り物はSteamワークショップにアップロードするには小さ過ぎます.
-		Your custom thumbnail is not a 512x512 size PNG.	このカスタムサムネイルは512x512のPNGファイルではありません.
+		Your custom thumbnail is not a 512x512 size PNG.	このカスタムサムネイルは512x512のPNG形式のファイルではありません.
 		You are missing some components in this vehicle, they have been removed:\n	この乗り物の部品のいくつかがありません. 以下の不足分は取り除かれます:\n
 		Some components do not fit or may be overlapping, they have been removed:\n	いくつかの部品は合わないか重なり合っています. 以下の部品は取り除かれます:\n
 		INCOMPATIBLE DIFFICULTY	作成モードの不一致
