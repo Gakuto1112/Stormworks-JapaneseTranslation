@@ -2870,9 +2870,9 @@ def_angular_speed_sensor_desc		This sensor outputs the angular speed of the comp
 def_angular_speed_sensor_s_desc		This sensor outputs its current angular speed in rotations per second, allowing you to measure how fast your vehicle is rotating.	この計測器は現在の角速度を回転数毎秒で出力します. 乗り物がどれだけ速く回転しているかを測定できます.
 def_angular_speed_sensor_node_0_label		Angular Speed	角速度
 def_angular_speed_sensor_node_0_desc		The sensor's angular speed in rotations per second.	測定した角速度を回転数毎秒で出力します.
-def_artificial_horizon_name		Artificial Horizon	人工水平器
+def_artificial_horizon_name		Artificial Horizon	人工水平儀
 def_artificial_horizon_desc		The horizon ball rotates up and down as your vehicle's pitch changes, and the central line gives an indication of your vehicle's roll. This is a useful component to have in your helicopter to make it easier to fly at night and in thick fog. An on/off signal can be used to toggle the backlight.	乗り物のピッチに合わせて球が上下に回転し, ロールに合わせて左右に回転します. 視界が悪い中での飛行を容易にするために航空機に搭載すると便利な部品です. オン/オフ信号でバックライトを制御できます.
-def_artificial_horizon_s_desc		The artificial horizon shows you the orientation of your vehicle with respect to the horizon line.	人工水平器は水平線に対しての乗り物の傾きを表示します.
+def_artificial_horizon_s_desc		The artificial horizon shows you the orientation of your vehicle with respect to the horizon line.	人工水平儀は水平線に対しての乗り物の傾きを表示します.
 def_artificial_horizon_node_0_label		Backlight	バックライト
 def_artificial_horizon_node_0_desc		Enables the backlight when receiving an on signal.	オン信号を受け取るとバックライトが点灯します.
 def_artificial_horizon_node_1_label		Electric	電力
