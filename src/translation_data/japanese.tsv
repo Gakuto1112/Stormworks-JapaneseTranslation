@@ -3290,21 +3290,21 @@ def_control_surface_large_name		Control Surface (Large)	可動翼 (平面, 大)
 def_control_surface_large_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号の入力によって翼の向きを制御できます.
 def_control_surface_large_s_desc		The control surface can be attached to a surface of the vehicle to apply force as air or water is flowing over it.	乗り物に取り付けて, 乗り物の動きを制御できる大型の可動翼です.
 def_control_surface_large_node_0_label		Rotation	翼の向き
-def_control_surface_large_node_0_desc		Accepts a value between -1 and 1 that represent the two extremes of the rudder's rotation.	-1から1の数値信号の入力によって翼の向きを制御できます..
+def_control_surface_large_node_0_desc		Accepts a value between -1 and 1 that represent the two extremes of the rudder's rotation.	-1から1の数値信号の入力によって翼の向きを制御できます.
 def_control_surface_large_node_1_label		Electric	電力
 def_control_surface_large_node_1_desc		Electrical power connection.	電力接続
 def_control_surface_medium_name		Control Surface (Medium)	可動翼 (平面, 中)
 def_control_surface_medium_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号の入力によって翼の向きを制御できます.
 def_control_surface_medium_s_desc		The control surface can be attached to a surface of the vehicle to apply force as air or water is flowing over it.	乗り物に取り付けて, 乗り物の動きを制御できる中型の可動翼です.
 def_control_surface_medium_node_0_label		Rotation	翼の向き
-def_control_surface_medium_node_0_desc		Accepts a value between -1 and 1 that represent the two extremes of the rudder's rotation.	-1から1の数値信号の入力によって翼の向きを制御できます..
+def_control_surface_medium_node_0_desc		Accepts a value between -1 and 1 that represent the two extremes of the rudder's rotation.	-1から1の数値信号の入力によって翼の向きを制御できます.
 def_control_surface_medium_node_1_label		Electric	電力
 def_control_surface_medium_node_1_desc		Electrical power connection.	電力接続
 def_control_surface_small_name		Control Surface (Small)	可動翼 (平面, 小)
 def_control_surface_small_desc		It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.	-1から1の数値信号の入力によって翼の向きを制御できます.
 def_control_surface_small_s_desc		The control surface can be attached to a surface of the vehicle to apply force as air or water is flowing over it.	乗り物に取り付けて, 乗り物の動きを制御できる小型の可動翼です.
 def_control_surface_small_node_0_label		Rotation	翼の向き
-def_control_surface_small_node_0_desc		Accepts a value between -1 and 1 that represent the two extremes of the rudder's rotation.	-1から1の数値信号の入力によって翼の向きを制御できます..
+def_control_surface_small_node_0_desc		Accepts a value between -1 and 1 that represent the two extremes of the rudder's rotation.	-1から1の数値信号の入力によって翼の向きを制御できます.
 def_control_surface_small_node_1_label		Electric	電力
 def_control_surface_small_node_1_desc		Electrical power connection.	電力接続
 def_cryo_cooler_name		Cryo Cooler	低温冷却器
