@@ -2759,9 +2759,9 @@ def_aircraft_engine_node_3_label		Fuel	燃料
 def_aircraft_engine_node_3_desc		The fuel supply for the engine.	エンジンを動かすために供給される燃料です.
 def_aircraft_engine_node_4_label		Air	空気
 def_aircraft_engine_node_4_desc		The air supply for the engine.	エンジンを動かすために供給される空気です.
-def_aircraft_engine_node_5_label		In Coolant	冷却媒体吸入
+def_aircraft_engine_node_5_label		In Coolant	冷媒吸入
 def_aircraft_engine_node_5_desc		The return flow (cold) for the coolant system.	冷却システムからの温度の低い冷却媒体を吸入します.
-def_aircraft_engine_node_6_label		Out Coolant	冷却媒体排出
+def_aircraft_engine_node_6_label		Out Coolant	冷媒排出
 def_aircraft_engine_node_6_desc		The output flow (hot) for the coolant system.	冷却システムへ向けて温まった冷却媒体を排出します.
 def_aircraft_engine_node_7_label		Exhaust	排気
 def_aircraft_engine_node_7_desc		Out flow for combusted fumes from the engine.	エンジンからの排気ガスが排出されます.
