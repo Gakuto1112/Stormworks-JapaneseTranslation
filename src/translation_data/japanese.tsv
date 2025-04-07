@@ -2792,9 +2792,9 @@ def_air_exchanger_node_2_desc		Input fluid port.	液体の吸入口です.
 def_air_exchanger_node_3_label		Fluid Out	液体排出
 def_air_exchanger_node_3_desc		Output fluid port.	液体の排出口です.
 def_air_exchanger_node_4_label		Temp A	気体の温度
-def_air_exchanger_node_4_desc		Compartment air temperature.	熱交換器内の気体の温度を出力します.
+def_air_exchanger_node_4_desc		Compartment air temperature.	内部の気体の温度を出力します.
 def_air_exchanger_node_5_label		Temp B	液体の温度
-def_air_exchanger_node_5_desc		Compartment water temperature.	熱交換器内の液体の温度を出力します.
+def_air_exchanger_node_5_desc		Compartment water temperature.	内部の液体の温度を出力します.
 def_air_exchanger_5_2_name		Air-Liquid Heat Exchanger 5x2	気体-液体熱交換器 (5x2)
 def_air_exchanger_5_2_desc		An intercooler that averages heat between air and a liquid at a rate proportional to the component's size.	熱を交換できる能力は熱交換器の大きさに比例します.
 def_air_exchanger_5_2_s_desc		A heat exchanger that averages heat between air and a liquid.	吸入する気体と液体の温度を均一にする熱交換器です.
@@ -2807,9 +2807,9 @@ def_air_exchanger_5_2_node_2_desc		Input fluid port.	液体の吸入口です.
 def_air_exchanger_5_2_node_3_label		Fluid Out	液体排出
 def_air_exchanger_5_2_node_3_desc		Output fluid port.	液体の排出口です.
 def_air_exchanger_5_2_node_4_label		Temp A	気体の温度
-def_air_exchanger_5_2_node_4_desc		Compartment air temperature.	熱交換器内の気体の温度を出力します.
+def_air_exchanger_5_2_node_4_desc		Compartment air temperature.	内部の気体の温度を出力します.
 def_air_exchanger_5_2_node_5_label		Temp B	液体の温度
-def_air_exchanger_5_2_node_5_desc		Compartment water temperature.	熱交換器内の液体の温度を出力します.
+def_air_exchanger_5_2_node_5_desc		Compartment water temperature.	内部の液体の温度を出力します.
 def_air_exchanger_5_3_name		Air-Liquid Heat Exchanger 5x3	気体-液体熱交換器 (5x3)
 def_air_exchanger_5_3_desc		An intercooler that averages heat between air and a liquid at a rate proportional to the component's size.	熱を交換できる能力は熱交換器の大きさに比例します.
 def_air_exchanger_5_3_s_desc		A heat exchanger that averages heat between air and a liquid.	吸入する気体と液体の温度を均一にする熱交換器です.
@@ -2822,9 +2822,9 @@ def_air_exchanger_5_3_node_2_desc		 Input fluid port.	 液体の吸入口です.
 def_air_exchanger_5_3_node_3_label		Fluid Out	液体排出
 def_air_exchanger_5_3_node_3_desc		Output fluid port.	液体の排出口です.
 def_air_exchanger_5_3_node_4_label		Temp A	気体の温度
-def_air_exchanger_5_3_node_4_desc		Compartment air temperature.	熱交換器内の気体の温度を出力します.
+def_air_exchanger_5_3_node_4_desc		Compartment air temperature.	内部の気体の温度を出力します.
 def_air_exchanger_5_3_node_5_label		Temp B	液体の温度
-def_air_exchanger_5_3_node_5_desc		Compartment water temperature.	熱交換器内の液体の温度を出力します.
+def_air_exchanger_5_3_node_5_desc		Compartment water temperature.	内部の液体の温度を出力します.
 def_air_exchanger_9_3_name		Air-Liquid Heat Exchanger 9x3	気体-液体熱交換器 (9x3)
 def_air_exchanger_9_3_desc		An intercooler that averages heat between air and a liquid at a rate proportional to the component's size.	熱を交換できる能力は熱交換器の大きさに比例します.
 def_air_exchanger_9_3_s_desc		A heat exchanger that averages heat between air and a liquid.	吸入する気体と液体の温度を均一にする熱交換器です.
@@ -2837,9 +2837,9 @@ def_air_exchanger_9_3_node_2_desc		Input fluid port.	液体の吸入口です.
 def_air_exchanger_9_3_node_3_label		Fluid Out	液体排出
 def_air_exchanger_9_3_node_3_desc		Output fluid port.	液体の排出口です.
 def_air_exchanger_9_3_node_4_label		Temp A	気体の温度
-def_air_exchanger_9_3_node_4_desc		Compartment air temperature.	熱交換器内の気体の温度を出力します.
+def_air_exchanger_9_3_node_4_desc		Compartment air temperature.	内部の気体の温度を出力します.
 def_air_exchanger_9_3_node_5_label		Temp B	液体の温度
-def_air_exchanger_9_3_node_5_desc		Compartment water temperature.	熱交換器内の液体の温度を出力します.
+def_air_exchanger_9_3_node_5_desc		Compartment water temperature.	内部の液体の温度を出力します.
 def_air_exchanger_9_5_name		Air-Liquid Heat Exchanger 9x5	気体-液体熱交換器 (9x5)
 def_air_exchanger_9_5_desc		An intercooler that averages heat between air and a liquid at a rate proportional to the component's size.	熱を交換できる能力は熱交換器の大きさに比例します.
 def_air_exchanger_9_5_s_desc		A heat exchanger that averages heat between air and a liquid.	吸入する気体と液体の温度を均一にする熱交換器です.
@@ -2852,9 +2852,9 @@ def_air_exchanger_9_5_node_2_desc		Input fluid port.	液体の吸入口です.
 def_air_exchanger_9_5_node_3_label		Fluid Out	液体排出
 def_air_exchanger_9_5_node_3_desc		Output fluid port.	液体の排出口です.
 def_air_exchanger_9_5_node_4_label		Temp A	気体の温度
-def_air_exchanger_9_5_node_4_desc		Compartment air temperature.	熱交換器内の気体の温度を出力します.
+def_air_exchanger_9_5_node_4_desc		Compartment air temperature.	内部の気体の温度を出力します.
 def_air_exchanger_9_5_node_5_label		Temp B	液体の温度
-def_air_exchanger_9_5_node_5_desc		Compartment water temperature.	熱交換器内の液体の温度を出力します.
+def_air_exchanger_9_5_node_5_desc		Compartment water temperature.	内部の液体の温度を出力します.
 def_air_filter_name		Air Filter	気体口 (フィルター)
 def_air_filter_desc			
 def_air_filter_s_desc		Port used to allow air in and out of a fluid system.	空気の吸入や排出を行う気体口です.
@@ -4599,9 +4599,9 @@ def_heat_exchanger_2_2_node_2_desc		Input air port.	気体の吸入口です.
 def_heat_exchanger_2_2_node_3_label		Air B Out	気体2排出
 def_heat_exchanger_2_2_node_3_desc		Output air port.	気体の排出口です.
 def_heat_exchanger_2_2_node_4_label		Temp A	気体1の温度
-def_heat_exchanger_2_2_node_4_desc		Compartment temperature.	熱交換器内の気体の温度を出力します.
+def_heat_exchanger_2_2_node_4_desc		Compartment temperature.	内部の気体の温度を出力します.
 def_heat_exchanger_2_2_node_5_label		Temp B	気体2の温度
-def_heat_exchanger_2_2_node_5_desc		Compartment temperature.	熱交換器内の気体の温度を出力します.
+def_heat_exchanger_2_2_node_5_desc		Compartment temperature.	内部の気体の温度を出力します.
 def_heat_exchanger_5_5_name		Air-Air Heat Exchanger 2x5	気体-気体熱交換器 (2x5)
 def_heat_exchanger_5_5_desc		A heat exchanger that averages heat between two air systems at a rate proportional to the component's size.	熱を交換できる能力は熱交換器の大きさに比例します.
 def_heat_exchanger_5_5_s_desc		A heat exchanger that averages heat between two air systems.	吸入する2つの気体の温度を均一にする熱交換器です.
@@ -4614,9 +4614,9 @@ def_heat_exchanger_5_5_node_2_desc		Input air port.	気体の吸入口です.
 def_heat_exchanger_5_5_node_3_label		Air B Out	気体2排出
 def_heat_exchanger_5_5_node_3_desc		Output air port.	気体の排出口です.
 def_heat_exchanger_5_5_node_4_label		Temp A	気体1の温度
-def_heat_exchanger_5_5_node_4_desc		Compartment temperature.	熱交換器内の気体の温度を出力します.
+def_heat_exchanger_5_5_node_4_desc		Compartment temperature.	内部の気体の温度を出力します.
 def_heat_exchanger_5_5_node_5_label		Temp B	気体2の温度
-def_heat_exchanger_5_5_node_5_desc		Compartment temperature.	熱交換器内の気体の温度を出力します.
+def_heat_exchanger_5_5_node_5_desc		Compartment temperature.	内部の気体の温度を出力します.
 def_heat_exchanger_9_9_name		Air-Air Heat Exchanger 3x9	気体-気体熱交換器 (3x9)
 def_heat_exchanger_9_9_desc		A heat exchanger that averages heat between two air systems at a rate proportional to the component's size.	熱を交換できる能力は熱交換器の大きさに比例します.
 def_heat_exchanger_9_9_s_desc		A heat exchanger that averages heat between two air systems.	吸入する2つの気体の温度を均一にする熱交換器です.
@@ -4629,9 +4629,9 @@ def_heat_exchanger_9_9_node_2_desc		Input air port.	気体の吸入口です.
 def_heat_exchanger_9_9_node_3_label		Air B Out	気体2排出
 def_heat_exchanger_9_9_node_3_desc		Output air port.	気体の排出口です.
 def_heat_exchanger_9_9_node_4_label		Temp A	気体1の温度
-def_heat_exchanger_9_9_node_4_desc		Compartment temperature.	熱交換器内の気体の温度を出力します.
+def_heat_exchanger_9_9_node_4_desc		Compartment temperature.	内部の気体の温度を出力します.
 def_heat_exchanger_9_9_node_5_label		Temp B	気体2の温度
-def_heat_exchanger_9_9_node_5_desc		Compartment temperature.	熱交換器内の気体の温度を出力します.
+def_heat_exchanger_9_9_node_5_desc		Compartment temperature.	内部の気体の温度を出力します.
 def_heavy_rotor_name		Heavy Rotor	ローター (重)
 def_heavy_rotor_desc		Three standard number inputs control the rotor's swashplate, allowing you to affect the pitch, roll, and collective rotor angle. Power received from an engine affects the amount of up and down force that the rotor will generate.	3つの数値信号でローター板を制御し, ピッチ, ロール, コレクティブを制御します. 得られる推進力の大きさはこのローターを回すエンジンの動力の大きさに依存します. 水中では推進力が低下します.
 def_heavy_rotor_s_desc		A heavy duty rotor with thrust vectoring.	推進力を得られる重量型のローターです.
@@ -4712,9 +4712,9 @@ def_intercooler_node_2_desc		Input fluid port.	液体の吸入口です.
 def_intercooler_node_3_label		Fluid B Out	液体2排出
 def_intercooler_node_3_desc		Output fluid port.	液体の排出口です.
 def_intercooler_node_4_label		Temp A	液体1の温度
-def_intercooler_node_4_desc		Compartment temperature.	熱交換器内の液体の温度を出力します.
+def_intercooler_node_4_desc		Compartment temperature.	内部の液体の温度を出力します.
 def_intercooler_node_5_label		Temp B	液体2の温度
-def_intercooler_node_5_desc		Compartment temperature.	熱交換器内の液体の温度を出力します.
+def_intercooler_node_5_desc		Compartment temperature.	内部の液体の温度を出力します.
 def_intercooler_large_name		Liquid-Liquid Heat Exchanger 5x5	液体-液体熱交換器 (5x5)
 def_intercooler_large_desc		A heat exchanger that averages heat between two liquid systems at a rate proportional to the component's size.	熱を交換できる能力は熱交換器の大きさに比例します.
 def_intercooler_large_s_desc		A heat exchanger that averages heat between two liquid systems.	吸入する2つの液体の温度を均一にする熱交換器です.
@@ -4727,9 +4727,9 @@ def_intercooler_large_node_2_desc		Input fluid port.	液体の吸入口です.
 def_intercooler_large_node_3_label		Fluid B Out	液体2排出
 def_intercooler_large_node_3_desc		Output fluid port.	液体の排出口です.
 def_intercooler_large_node_4_label		Temp A	液体1の温度
-def_intercooler_large_node_4_desc		Compartment temperature.	熱交換器内の液体の温度を出力します.
+def_intercooler_large_node_4_desc		Compartment temperature.	内部の液体の温度を出力します.
 def_intercooler_large_node_5_label		Temp B	液体2の温度
-def_intercooler_large_node_5_desc		Compartment temperature.	熱交換器内の液体の温度を出力します.
+def_intercooler_large_node_5_desc		Compartment temperature.	内部の液体の温度を出力します.
 def_inventory_equipment_binoculars_name		Equipment inventory (Binoculars)	保管庫 (小, 双眼鏡)
 def_inventory_equipment_binoculars_desc		Hold [$[action_equipment_use]] to zoom in on faraway objects.	[$[action_equipment_use]] を押してズームインし, 遠くを見ます.
 def_inventory_equipment_binoculars_s_desc		A small equipment storage unit containing a pair of binoculars.	双眼鏡が保管されている小型の保管庫です.
