@@ -2975,9 +2975,9 @@ def_button_throttle_lever_name		Throttle Lever	レバー
 def_button_throttle_lever_desc		The output ranges from -1 to 1, and will increase/decrease depending on which half of the lever you interact with. The two on/off inputs can be used to control the lever externally with different buttons. The speed of the lever can be configured by selecting this component with the select tool.	レバーのどちらかを操作すると設定値の範囲内で数値信号が上下します. 2つのオン/オフ入力は外部のオン/オフ信号でレバーを制御するのに使用します. 最小値, 最大値, 初期値, レバーの速度はプロパティウィンドウから設定できます.
 def_button_throttle_lever_s_desc		A throttle lever that acts as two buttons controlling one number output.	2つのボタンで数値信号が制御できるレバーです.
 def_button_throttle_lever_node_0_label		Up	上げる
-def_button_throttle_lever_node_0_desc		Increases the Throttle Value when input is held.	オン信号を受け取る間は設定された速度でレバーを上げます.
+def_button_throttle_lever_node_0_desc		Increases the Throttle Value when input is held.	オン信号を受け取っている間は設定された速度でレバーを上げます.
 def_button_throttle_lever_node_1_label		Down	下げる
-def_button_throttle_lever_node_1_desc		Decreases the Throttle Value when input is held.	オン信号を受け取る間は設定された速度でレバーを下げます.
+def_button_throttle_lever_node_1_desc		Decreases the Throttle Value when input is held.	オン信号を受け取っている間は設定された速度でレバーを下げます.
 def_button_throttle_lever_node_2_label		Throttle	出力
 def_button_throttle_lever_node_2_desc		Outputs the stored Throttle Value.	レバーが制御している数値信号を出力します.
 def_button_throttle_lever_node_3_label		Electric	電力
