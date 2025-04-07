@@ -3015,7 +3015,7 @@ def_camera_gimbal_node_0_desc			カメラで捉えた映像を出力します.
 def_camera_gimbal_node_1_label		Electric	電力
 def_camera_gimbal_node_1_desc			電力接続
 def_camera_gimbal_node_2_label		Infrared Mode	赤外線モード
-def_camera_gimbal_node_2_desc		Controls whether or not the infrared mode is switched on.	オン信号を受け取ると赤外線モードになります. 赤外線モードでは, 明るい所が見えにくく, 映像も不鮮明になりますが, 真っ暗な場所でも見えるようになります.
+def_camera_gimbal_node_2_desc		Controls whether or not the infrared mode is switched on.	オン信号を受け取ると赤外線モードになります. 
 def_camera_gimbal_node_3_label		Field of View	視野角
 def_camera_gimbal_node_3_desc		Controls the level of zoom of the camera.	カメラをズームイン/アウトします.
 def_camera_gimbal_node_4_label		Pivot Rotation	横回転
@@ -3030,7 +3030,7 @@ def_camera_gimbal_laser_node_0_desc			カメラで捉えた映像を出力しま
 def_camera_gimbal_laser_node_1_label		Electric	電力
 def_camera_gimbal_laser_node_1_desc			電力接続
 def_camera_gimbal_laser_node_2_label		Infrared Mode	赤外線モード
-def_camera_gimbal_laser_node_2_desc		Controls whether or not the infrared mode is switched on.	オン信号を受け取ると赤外線モードになります. 赤外線モードでは, 明るい所が見えにくく, 映像も不鮮明になりますが, 真っ暗な場所でも見えるようになります.
+def_camera_gimbal_laser_node_2_desc		Controls whether or not the infrared mode is switched on.	オン信号を受け取ると赤外線モードになります. 
 def_camera_gimbal_laser_node_3_label		Enable Laser	レーザー照射
 def_camera_gimbal_laser_node_3_desc		Enables the Laser.	オン信号を受け取るとカメラからレーザーが照射されます.
 def_camera_gimbal_laser_node_4_label		Field of View	 視野角
@@ -3057,7 +3057,7 @@ def_camera_med_node_0_desc			カメラで捉えた映像を出力します.
 def_camera_med_node_1_label		Electric	電力
 def_camera_med_node_1_desc			電力接続
 def_camera_med_node_2_label		Infrared Mode	赤外線モード
-def_camera_med_node_2_desc		Controls whether or not the infrared mode is switched on.	オン信号を受け取ると赤外線モードになります. 赤外線モードでは, 明るい所が見えにくく, 映像も不鮮明になりますが, 真っ暗な場所でも見えるようになります.
+def_camera_med_node_2_desc		Controls whether or not the infrared mode is switched on.	オン信号を受け取ると赤外線モードになります. 
 def_camera_med_node_3_label		Field of View	視野角
 def_camera_med_node_3_desc		Controls the level of zoom of the camera.	カメラをズームイン/アウトします.
 def_camera_med_node_4_label		Pivot	視点方向
