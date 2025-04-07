@@ -3505,7 +3505,7 @@ def_engine_s_desc		Small diesel engine that can be connected to powered componen
 def_engine_node_0_label		Throttle	スロットル
 def_engine_node_0_desc		Standard value between 0 and 1 that controls the throttle of the engine.	エンジンのスロットルを調整する数値で, 範囲は0から1です.
 def_engine_node_1_label		Starter	セルモーター
-def_engine_node_1_desc		Increases the engine RPS using electrical power to start up the engine.	エンジンの始動のために, 電力を使用してエンジンを少し回転させます. エンジンが始動した後はオフにしてもエンジンは止まりません.
+def_engine_node_1_desc		Increases the engine RPS using electrical power to start up the engine.	エンジンの始動のために, 電力を使用してエンジンを回転させます. エンジンが始動した後はオフにしてもエンジンは止まりません.
 def_engine_node_2_label		RPS	動力
 def_engine_node_2_desc		The power supplied by the engine for inputting to other components.	エンジンの動力を他の動力を必要とする部品に向けて出力します.
 def_engine_node_3_label		Fuel	燃料
