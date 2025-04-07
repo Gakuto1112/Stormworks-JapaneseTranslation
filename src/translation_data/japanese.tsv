@@ -2752,7 +2752,7 @@ def_aircraft_engine_s_desc		Medium diesel engine that can be connected to powere
 def_aircraft_engine_node_0_label		Throttle	スロットル
 def_aircraft_engine_node_0_desc		Standard value between 0 and 1 that controls the throttle of the engine.	エンジンのスロットルを調整する数値で, 範囲は0から1です.
 def_aircraft_engine_node_1_label		Starter	セルモーター
-def_aircraft_engine_node_1_desc		Increases the engine RPS using electrical power to start up the engine.	エンジンの始動のために, 電力を使用してエンジンを少し回転させます. エンジンが始動した後はオフにしてもエンジンは止まりません.
+def_aircraft_engine_node_1_desc		Increases the engine RPS using electrical power to start up the engine.	エンジンの始動のために, 電力を使用してエンジンを回転させます. エンジンが始動した後はオフにしてもエンジンは止まりません.
 def_aircraft_engine_node_2_label		RPS	動力
 def_aircraft_engine_node_2_desc		The power supplied by the engine for inputting to other components.	エンジンの動力を他の動力を必要とする部品に向けて出力します.
 def_aircraft_engine_node_3_label		Fuel	燃料
@@ -3530,7 +3530,7 @@ def_engine_diesel_s_desc		Large diesel engine that can be connected to powered c
 def_engine_diesel_node_0_label		Throttle	スロットル
 def_engine_diesel_node_0_desc		Standard value between 0 and 1 that controls the throttle of the engine.	エンジンのスロットルを調整する数値で, 範囲は0から1です.
 def_engine_diesel_node_1_label		Starter	セルモーター
-def_engine_diesel_node_1_desc		Increases the engine RPS using electrical power to start up the engine.	エンジンの始動のために, 電力を使用してエンジンを少し回転させます. エンジンが始動した後はオフにしてもエンジンは止まりません.
+def_engine_diesel_node_1_desc		Increases the engine RPS using electrical power to start up the engine.	エンジンの始動のために, 電力を使用してエンジンを回転させます. エンジンが始動した後はオフにしてもエンジンは止まりません.
 def_engine_diesel_node_2_label		RPS	動力
 def_engine_diesel_node_2_desc		The power supplied by the engine for inputting to other components.	エンジンの動力を他の動力を必要とする部品に向けて出力します.
 def_engine_diesel_node_3_label		Fuel	燃料
@@ -5521,9 +5521,9 @@ def_modular_engine_sensor_temperature_node_0_label		Temperature	温度
 def_modular_engine_sensor_temperature_node_0_desc			エンジンの温度を出力します.
 def_modular_engine_starter_name		Modular Engine Starter	セルモーター
 def_modular_engine_starter_desc		Attach a starter to a Drive Belt component and supply power to apply an inefficient force on the engine to get it started.	ベルトに取り付けて使用します.
-def_modular_engine_starter_s_desc		A modular engine starter.	組み立て式エンジンの部品です. エンジンの始動のために, 電力を使用してエンジンを少し回転させます. 組み立て式エンジン以外では使用できません.
+def_modular_engine_starter_s_desc		A modular engine starter.	組み立て式エンジンの部品です. エンジンの始動のために, 電力を使用してエンジンを回転させます. 組み立て式エンジン以外では使用できません.
 def_modular_engine_starter_node_0_label		Starter	セルモーター
-def_modular_engine_starter_node_0_desc			エンジンの始動のために, 電力を使用してエンジンを少し回転させます. エンジンが始動した後はオフにしてもエンジンは止まりません.
+def_modular_engine_starter_node_0_desc			エンジンの始動のために, 電力を使用してエンジンを回転させます. エンジンが始動した後はオフにしてもエンジンは止まりません.
 def_modular_engine_starter_node_1_label		Electric	電力
 def_modular_engine_starter_node_1_desc		Electrical power connection.	電力接続
 def_monitor_1_name		Monitor 1x1	ディスプレイ (1x1)
@@ -7851,7 +7851,7 @@ def_turbine_s_desc		Turbine engine that can be connected to powered components.	
 def_turbine_node_0_label		RPS	動力
 def_turbine_node_0_desc		The rps supplied by the engine for inputting to other components.	エンジンの動力を他の動力を必要とする部品に向けて出力します.
 def_turbine_node_1_label		Starter	セルモーター
-def_turbine_node_1_desc		Increases the engine RPS using electrical power to start up the engine.	エンジンの始動のために, 電力を使用してエンジンを少し回転させます. エンジンが始動した後はオフにしてもエンジンは止まりません.
+def_turbine_node_1_desc		Increases the engine RPS using electrical power to start up the engine.	エンジンの始動のために, 電力を使用してエンジンを回転させます. エンジンが始動した後はオフにしてもエンジンは止まりません.
 def_turbine_node_2_label		Throttle	スロットル
 def_turbine_node_2_desc		Standard value between 0 and 1 that controls the throttle of the engine.	エンジンのスロットルを調整する数値で, 範囲は0から1です.
 def_turbine_node_3_label		Electric	電力
