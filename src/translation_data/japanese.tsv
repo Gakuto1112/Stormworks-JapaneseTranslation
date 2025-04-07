@@ -3829,14 +3829,14 @@ def_gas_measure_node_1_desc		Returns the total capacity of an enclosed volume in
 def_gas_measure_node_2_label		Composite Data	複合データ
 def_gas_measure_node_2_desc		Outputs the volumes of individual gas types on their respective channel. The data can be directly merged with a Liquid meter. The Air fluid type is equivalent to the sum of the oxygen, carbon dioxide and nitrogen values. Channels: 4-Air, 5-CO2, 8-Steam, 11-Oxygen, 12-Nitrogen, 13-Hydrogen.	それぞれの気体の量を出力します. 内圧計が使用する複合信号のチャンネルは, 貯水量計が使用するチャンネルと重複しないようになっています. "空気"は酸素と二酸化炭素と窒素を合計した量を示します. チャンネル: [4] 空気, [5] 二酸化炭素, [8] 蒸気, [11] 酸素, [12] 窒素, [13] 水素
 def_gate_bool_and_name		And	論理積 (AND)
-def_gate_bool_and_desc		The output will only be switched on if both inputs are on.	2つの入力の両方がオン信号を受け取る時のみオン信号を出力します.
+def_gate_bool_and_desc		The output will only be switched on if both inputs are on.	両方の入力がオン信号である時にオン信号を出力します.
 def_gate_bool_and_s_desc		A logic gate that outputs the logical AND of two input signals.	2つのオン/オフ信号の入力の論理積 (AND) を出力する論理部品です.
 def_gate_bool_and_node_0_label		A	A
 def_gate_bool_and_node_0_desc		The first value to perform the logical AND on.	論理積 (AND) を演算するオン/オフ信号の入力です.
 def_gate_bool_and_node_1_label		B	B
 def_gate_bool_and_node_1_desc		The second value to perform the logical AND on.	論理積 (AND) を演算するオン/オフ信号の入力です.
 def_gate_bool_and_node_2_label		A AND B	A AND B
-def_gate_bool_and_node_2_desc		Outputs an on signal when both A and B are on, and an off signal if either one is off.	2つの入力の両方がオン信号を受け取る時のみオン信号を出力します.
+def_gate_bool_and_node_2_desc		Outputs an on signal when both A and B are on, and an off signal if either one is off.	両方の入力がオン信号である時にオン信号を出力します.
 def_gate_bool_blink_name		Blinker	点滅
 def_gate_bool_blink_desc		You can set the duration that the signal should stay on and off for by selecting it with the select tool. A control signal determines whether or not the blinker should output anything. If the control signal is off, the blinker's output will be off. The internal blink timer is reset every time the control signal is switched off.	「制御信号」ノードがオン信号を受け取ると設定された周期で「点滅信号」ノードからオンとオフが出力されます. 「制御信号」ノードがオフ信号を受け取るたびに内部のタイマーはリセットされます. オンとオフの周期の長さはプロパティウィンドウから設定できます.
 def_gate_bool_blink_s_desc		The blinker outputs a value that blinks between on and off at a set rate.	設定された周期で信号のオンとオフを繰り返す論理部品です.
