@@ -693,9 +693,9 @@ id	description	en	local
 		Are you sure you want to test this mission in the world?\n\nYour mission will be automatically despawned when you return to the addon editor.	このミッションをワールドでテストしますか?\n\nテスト後ミッションエディターを再度開くとミッションは自動で削除します.
 		SET OBJECTIVE DEPENDENCIES	目的の関係性の設定
 		OTHER OBJECTIVES	他の目的
-		SET COMPONENT DEPENDENCIES	コンポーネントの関係の設定
+		SET COMPONENT DEPENDENCIES	コンポーネントの依存関係の設定
 		COMPONENTS	コンポーネント
-		SET MISSION DEPENDENCIES	ミッションの関係性の設定
+		SET MISSION DEPENDENCIES	ミッションの依存関係の設定
 		OTHER MISSIONS	他のミッション
 		This mission will only spawn in career mode if all of its dependencies are met. It will never spawn if its dependencies have failed to be met.	このミッションはキャリアモードで全ての関係性が満たされる場合のみ発生します. 関係性が満たされない場合は発生することはありません.
 		TRIGGERS	トリガー
