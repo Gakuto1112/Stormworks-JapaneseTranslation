@@ -340,7 +340,7 @@ id	description	en	local
 		OBJECTIVES	目的
 		OBJECTIVE	目的
 		SET ACTION COMPONENTS	アクションコンポーネントの設定
-		DEPENDENCIES	関係性
+		DEPENDENCIES	依存関係
 		SET ACTION OBJECTIVES	アクション目的の設定
 		Uploading to workshop. Please wait...	Steamワークショップにアップロードしています. しばらくお待ち下さい...
 		Loading. Please wait...	読み込み中です. しばらくお待ち下さい...
