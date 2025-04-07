@@ -3791,7 +3791,7 @@ def_furnace_electric_name		Electric Furnace	電気炉
 def_furnace_electric_desc		Produces large amounts of heat from electricity.	電力で大量の熱を発生させます.
 def_furnace_electric_s_desc		An electrically powered furnace.	電力で稼働する加熱炉です.
 def_furnace_electric_node_0_label		Temperature	温度
-def_furnace_electric_node_0_desc		Temperature of the coolant that is being heated.	加熱させている冷媒の温度を出力します.
+def_furnace_electric_node_0_desc		Temperature of the coolant that is being heated.	加熱されている冷媒の温度を出力します.
 def_furnace_electric_node_1_label		Enable	起動
 def_furnace_electric_node_1_desc		Activate the electric furnace.	オン信号で炉を加熱します.
 def_furnace_electric_node_2_label		Coolant In	冷媒注入
@@ -3806,7 +3806,7 @@ def_furnace_industrial_s_desc		A diesel powered furnace.	軽油を燃料とす�
 def_furnace_industrial_node_0_label		Diesel Level	軽油の量
 def_furnace_industrial_node_0_desc			
 def_furnace_industrial_node_1_label		Temperature	温度
-def_furnace_industrial_node_1_desc		Temperature of the coolant that is being heated.	加熱させている冷媒の温度を出力します.
+def_furnace_industrial_node_1_desc		Temperature of the coolant that is being heated.	加熱されている冷媒の温度を出力します.
 def_furnace_industrial_node_2_label		Ignition	点火
 def_furnace_industrial_node_2_desc		Activate to consume diesel and ignite the furnace.	オン信号を受け取ると燃料を消費して炉を点火します.
 def_furnace_industrial_node_3_label		Coolant In	冷媒注入
