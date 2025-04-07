@@ -26,7 +26,7 @@ id	description	en	local
 		You are missing a required DLC	サーバーから要求されたDLCがインストールされていません.
 		You are banned from this server	あなたはこのサーバーから接続禁止を受けています.
 		Server already has your account connected - please retry	あなたは既にこのサーバーに接続しています. 再試行してください.
-		no errors detected	エラーは見つかりませんでした.
+		no errors detected	エラーは検出されませんでした.
 		Variables	変数
 		Input 1	入力1
 		Input 2	入力2
