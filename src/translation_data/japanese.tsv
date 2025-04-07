@@ -2699,7 +2699,7 @@ def_01_block_static_name		Static Block	固定ブロック
 def_01_block_static_desc		This block cannot be removed.	このブロックは削除できません.
 def_01_block_static_s_desc		Static root block used as a base for all vehicles.	固定ブロックは全ての乗り物の基礎として使用されます.
 def_01_block_weight_name		Weight Block	重りブロック
-def_01_block_weight_desc		Weight blocks have a larger impact on the vehicle's centre of mass, making them useful for balance and stability.	重りブロックを使えば簡単に重心を調整できますので, バランス制御や姿勢制御に役立ちます.
+def_01_block_weight_desc		Weight blocks have a larger impact on the vehicle's centre of mass, making them useful for balance and stability.	重りブロックを使えば簡単に重心を調整できますので, バランス調整や安定性のために役立ちます.
 def_01_block_weight_s_desc		Basic cube-shaped building block with an increased mass.	普通のブロックよりも重いブロックです.
 def_02_wedge_name		Wedge	斜めブロック
 def_02_wedge_desc		Components can be attached to all faces, with the exception of the sloped face.	斜面を除く全ての面に部品を取付けられます.
