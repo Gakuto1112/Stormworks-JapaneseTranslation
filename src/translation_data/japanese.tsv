@@ -3744,7 +3744,7 @@ def_fluid_valve_flow_node_2_label		Flow Rate	流量
 def_fluid_valve_flow_node_2_desc		Fluid flow rate in L/s.	この部品に流れる流体の量をリットル毎秒で出力します.
 def_fluid_valve_on_off_name		Fluid On/Off Valve	流体弁 (オン/オフ)
 def_fluid_valve_on_off_desc		Controls flow from one side of the valve to the other. Fluid can flow in both directions.	流体は双方向から流せます.
-def_fluid_valve_on_off_s_desc		An on/off fluid valve.	オン/オフ信号で開閉できる流体の弁です.
+def_fluid_valve_on_off_s_desc		An on/off fluid valve.	オン/オフ信号で開閉できる流体用の弁です.
 def_fluid_valve_on_off_node_0_label		Fluid In	流体1
 def_fluid_valve_on_off_node_0_desc		Fluid input connection for the valve.	弁が開くと流体が流れます.
 def_fluid_valve_on_off_node_1_label		Fluid Out	流体2
