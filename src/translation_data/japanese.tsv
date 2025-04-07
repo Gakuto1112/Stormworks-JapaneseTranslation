@@ -3177,7 +3177,7 @@ def_connector_hardpoint_b_round_node_6_label		Electric	電力
 def_connector_hardpoint_b_round_node_6_desc		Electrical power connection.	電力接続
 def_connector_hinge_name		Hinge Connector	コネクター (辺)
 def_connector_hinge_desc		Two connectors will attach when they are within close proximity and both are switched on. They will connect along their long edge and hinge along this axis. An on/off output allows you to check whether or not this connector is currently attached to anything.	起動している2つのコネクターが近くにあると自動的に接続されます. このコネクターは辺に沿って接続され, この辺に沿って回転します. コネクターが接続されているかどうかはオン/オフ信号を通して確認できます.
-def_connector_hinge_s_desc		A small magnetic connector that can be used to attach two or more vehicles together.	他の乗り物を接続できる中型の磁気コネクターです.
+def_connector_hinge_s_desc		A small magnetic connector that can be used to attach two or more vehicles together.	他の乗り物と接続できる中型の磁気コネクターです.
 def_connector_hinge_node_0_label		Magnet Toggle	コネクター起動
 def_connector_hinge_node_0_desc		Enables the connector's magnet when receiving an on signal.	オン信号を受け取るとコネクターを起動します.
 def_connector_hinge_node_1_label		Connected	接続済み
@@ -3194,7 +3194,7 @@ def_connector_hinge_node_6_label		Video Data Receive	映像信号受信
 def_connector_hinge_node_6_desc		Video data to receive from the connected connector.	相手のコネクターからの映像信号を受信します.
 def_connector_large_name		Large Connector	コネクター (面)
 def_connector_large_desc		Two large connectors will attach when they are within close proximity and both are switched on. The additional inputs and outputs allow you to send and receive power and signals between two connected magnets, giving you a limited amount of control over a linked vehicle. An additional on/off output allows you to check whether or not this connector is currently attached to anything.	起動している2つのコネクターが近くにあると自動的に接続されます. このコネクターでは通常の信号の送受信に加えて, 数値信号とオン/オフ信号を送受信でき, 動力と流体も伝達できます. コネクターが接続されているかどうかはオン/オフ信号を通して確認できます.
-def_connector_large_s_desc		A magnetic connector that can be used to attach two or more vehicles together.	他の乗り物を接続できる大型の磁気コネクターです.
+def_connector_large_s_desc		A magnetic connector that can be used to attach two or more vehicles together.	他の乗り物と接続できる大型の磁気コネクターです.
 def_connector_large_node_0_label		Magnet Toggle	コネクター起動
 def_connector_large_node_0_desc		Enables the connector's magnet when receiving an on signal.	オン信号を受け取るとコネクターを起動します.
 def_connector_large_node_1_label		On/Off Sent	オン/オフ信号送信
@@ -3233,7 +3233,7 @@ def_connector_slider_track_desc		Gripper connectors will attach to the track whe
 def_connector_slider_track_s_desc		A connector that can be used to build a track for grippers to attach to.	コネクター (レール) が接続できるレールを作成できるレールです.
 def_connector_small_name		Small Connector	コネクター (点)
 def_connector_small_desc		Two small connectors will attach when they are within close proximity and both are switched on. An on/off output allows you to check whether or not this connector is currently attached to anything.	起動している2つのコネクターが近くにあると自動的に接続されます. このコネクターは点に沿って接続され, この点に沿って回転します. コネクターが接続されているかどうかはオン/オフ信号を通して確認できます.
-def_connector_small_s_desc		A small magnetic connector that can be used to attach two or more vehicles together.	他の乗り物を接続できる小型の磁気コネクターです.
+def_connector_small_s_desc		A small magnetic connector that can be used to attach two or more vehicles together.	他の乗り物と接続できる小型の磁気コネクターです.
 def_connector_small_node_0_label		Magnet Toggle	コネクター起動
 def_connector_small_node_0_desc		Enables the connector's magnet when receiving an on signal.	オン信号を受け取るとコネクターを起動します.
 def_connector_small_node_1_label		Connected	接続済み
