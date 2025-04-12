@@ -16,10 +16,11 @@ jobs:
       event_data: ${{ steps.output_event_data.outputs.event_data }}
     steps:
       - name: Download artifact
-        uses: dawidd6/action-download-artifact@v6
+        uses: dawidd6/action-download-artifact@v9
         with:
           workflow: build_on_pull_request_trigger.yml
           name: event_data
+          allow_forks: true
       - name: Output event data
         id: output_event_data
         run: echo event_data=$(<./event_data.json) >> $GITHUB_OUTPUT
