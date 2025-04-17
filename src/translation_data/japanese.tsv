@@ -2589,7 +2589,7 @@ id	description	en	local
 		Estonia	エストニア
 		Latvia	ラトビア
 		Uruguay	ウルグアイ
-		Rhodesia	ローデシア
+		Zimbabwe	ジンバブエ
 		Morocco	モロッコ
 		Ecuador	エクアドル
 		Senegal	セネガル
@@ -3431,8 +3431,8 @@ def_door_frame_controller_desc		Placing the controller as part of a door frame w
 def_door_frame_controller_s_desc		Controller unit for sealing door frames.	ドアを完全に施錠する制御装置です.
 def_door_frame_controller_node_0_label		Lock Seal	施錠
 def_door_frame_controller_node_0_desc		Controls if the door panel will lock in place when sealed.	オン信号を受け取ると, ドアが施錠可能位置にある場合は施錠します.
-def_door_frame_controller_node_1_label		Seal State	施錠状態
-def_door_frame_controller_node_1_desc		Indicates if the door panel is closed and forming a seal.	ドアが正しく施錠されている場合はオン信号を出力します.
+def_door_frame_controller_node_1_label		Seal State	施錠可能
+def_door_frame_controller_node_1_desc		Indicates if the door panel is closed and forming a seal.	ドアを施錠できる状態であればオン信号を出力します.
 def_door_frame_corner_name		Door Frame Corner	カスタムドア枠 (角)
 def_door_frame_corner_desc		To create a valid frame, there must be a continuous loop of frame parts in a consistent orientation with no other parts inside the frame.	枠内に他のブロックがない状態にして, 全ての枠の部品が同じ向きで設置されていないと正しいドア枠として認識されません.
 def_door_frame_corner_s_desc		A corner piece for building openings to sealed fluid compartments.	機密可能なカスタムドアを作成する角の部品です.
