@@ -12,7 +12,7 @@ export async function streamTranslationData(path: string, callback: (line: numbe
         const reader: readline.Interface = readline.createInterface(fs.createReadStream(path, {encoding: "utf-8"}));
         reader.addListener("line", (line: string) => {
             const lineSplit: string[] = line.split("\t");
-            callback(lineNum++, lineSplit[0], lineSplit[2], lineSplit[3]);
+            callback(lineNum++, lineSplit[0], lineSplit[2], lineSplit.length > 3 ? lineSplit.slice(3).join("\t"): undefined);
         });
         reader.addListener("close", () => resolve());
     });
