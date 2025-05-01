@@ -114,7 +114,7 @@ id	description	en	local
 		Return to your home base.	拠点に戻ります.
 		Home	拠点
 		Welcome to Stormworks	Stormworksにようこそ
-		FIX YOUR BOAT	ボートを修理しよう
+		FIX YOUR BOAT	ボートを修理しましょう
 		Your boat was damaged in a recent storm. You will need to use a workbench to fix it.	最近の嵐でボートが壊れてしまいました. 作業台を使って修理する必要があるでしょう.
 		Workbench	作業台
 		VEHICLE EDITOR	乗り物エディター
@@ -457,7 +457,7 @@ id	description	en	local
 		Custom difficulty settings.	カスタム難易度設定です.
 		Custom mode. A sandbox environment with an array of settings to customise your session. Career or Creative.	カスタムモードです. サンドボックスモードの環境で, 様々なゲーム設定を変更できます. キャリアモードまたはクリエイティブモードとして機能します.
 		Classic mode. Career mode with research tree and third person.	クラシックモードです. 研究要素, 三人称視点が利用可能なキャリアモードです.
-		Career mode. Expand your coastguard empire. Complete missions with survival style settings.	キャリアモードです. 自分の領土を広げよう. サバイバル設定でミッションに挑戦しよう.
+		Career mode. Expand your coastguard empire. Complete missions with survival style settings.	キャリアモードです. 自分の領土を広げよう. サバイバル設定でミッションに挑戦しましょう.
 		Custom game mode settings.	カスタムゲームモード設定です.
 		PLEASE CHOOSE ANOTHER KEY	他のキーを割り当てて下さい.
 		PRESS CONTROLLER BUTTON TO REBIND TO	割り当てたいコントローラーのボタンを押して下さい.
@@ -616,7 +616,7 @@ id	description	en	local
 		1 objective	1つの目的
 		requirements	必要物
 		UPLOAD NEW ADDON	アドオンを新規アップロード
-		Share your addon with other players on the Steam Workshop.	Steamワークショップであなたのアドオンをみんなに共有しよう.
+		Share your addon with other players on the Steam Workshop.	Steamワークショップであなたのアドオンをみんなに共有しましょう.
 		Addon	アドオン
 		Addon Name	アドオン名
 		Test Location	この場所でテスト
@@ -799,7 +799,7 @@ id	description	en	local
 		Backups of the 10 most recent autosaves.	直近10回のオートセーブによるバックアップ.
 		Microcontrollers you've uploaded to the Steam Workshop.	Steamワークショップにアップロードしたマイクロコントローラー.
 		STEAM WORKSHOP UPLOAD	Steamワークショップにアップロード
-		Share your microcontroller with other players on the Steam Workshop.	Steamワークショップであなたのマイクロコントローラーをみんなに共有しよう.
+		Share your microcontroller with other players on the Steam Workshop.	Steamワークショップであなたのマイクロコントローラーをみんなに共有しましょう.
 		UPLOAD NAME	アップロードするマイクロコントローラーの名前
 		Microcontroller	マイクロコントローラー
 		Tags	タグ
