@@ -2692,6 +2692,9 @@ id	description	en	local
 		Category	カテゴリー
 		Flag	旗
 		Sailing	帆
+		Firefighter SCBA	自給呼吸式防火服
+		Battery	バッテリー
+		Water	水
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
@@ -4734,275 +4737,282 @@ def_inventory_equipment_binoculars_name		Equipment inventory (Binoculars)	保管
 def_inventory_equipment_binoculars_desc		Hold [$[action_equipment_use]] to zoom in on faraway objects.	[$[action_equipment_use]] を押してズームインし, 遠くを見ます.
 def_inventory_equipment_binoculars_s_desc		A small equipment storage unit containing a pair of binoculars.	双眼鏡が保管されている小型の保管庫です.
 def_inventory_equipment_binoculars_node_0_label		Electric	電力
-def_inventory_equipment_binoculars_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_binoculars_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_c4_name		Equipment inventory (C4 Explosive)	保管庫 (小, C4爆弾)
 def_inventory_equipment_c4_desc		Press [$[action_equipment_use]] to arm and plant the C-4 explosive on a nearby surface.	[$[action_equipment_use]] を押してC4爆弾を設置します.
 def_inventory_equipment_c4_s_desc		A small equipment storage unit containing C-4 plastic explosive.	C4爆弾が保管されている小型の保管庫です.
 def_inventory_equipment_c4_node_0_label		Electric	電力
-def_inventory_equipment_c4_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_c4_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_c4_detonator_name		Equipment inventory (C4 Detonator)	保管庫 (小, C4爆弾起爆装置)
 def_inventory_equipment_c4_detonator_desc		Press [$[action_equipment_use]] to detonate armed C-4 explosives.	[$[action_equipment_use]] を押して設置したC4爆弾を爆破します.
 def_inventory_equipment_c4_detonator_s_desc		A small equipment storage unit containing a C-4 remote detonator.	C4爆弾起爆装置が保管されている小型の保管庫です.
 def_inventory_equipment_c4_detonator_node_0_label		Electric	電力
-def_inventory_equipment_c4_detonator_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_c4_detonator_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_cable_name		Equipment inventory (Cable)	保管庫 (中, 電気ケーブル)
 def_inventory_equipment_cable_desc		Press [$[action_equipment_use]] to attach the cable to an unoccupied electrical cable anchor. Interacting with [$[action_interact_left]]/[$[action_interact_right]] on an occupied electical cable anchor will retrieve the cable if the player has inventory space to hold it.	[$[action_equipment_use]] を押してアンカー (電力) に電気ケーブルを差し込みます. 既に電気ケーブルが接続されているアンカー (電力) に [$[action_interact_left]]/[$[action_interact_right]] を押すと電気ケーブルを取り外し, プレイヤーのインベントリに空きがあるならそこにしまいます.
 def_inventory_equipment_cable_s_desc		A large equipment storage unit containing 20m of electrical cable.	20メートルの電気ケーブルが保管されている中型の保管庫です.
 def_inventory_equipment_cable_node_0_label		Electric	電力
-def_inventory_equipment_cable_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_cable_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_compass_name		Equipment inventory (Compass)	保管庫 (小, コンパス)
 def_inventory_equipment_compass_desc		When held, the red needle of the compass will point northwards. The compass also displays a bearing on the equipment hotbar UI.	手に持つと, 針が北の向きを示し, 現在向いている方角を度数法で表示します.
 def_inventory_equipment_compass_s_desc		A small equipment storage unit containing a compass.	コンパスが保管されている小型の保管庫です.
 def_inventory_equipment_compass_node_0_label		Electric	電力
-def_inventory_equipment_compass_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_compass_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_defibrillator_name		Equipment inventory (Defibrillator)	保管庫 (中, 自動体外式除細動器)
 def_inventory_equipment_defibrillator_desc		Press [$[action_equipment_use]] on an incapacitated survivor to revive them. Requires electric charge to function, and will recharge when placed into a powered large equipment storage unit.	[$[action_equipment_use]] を押して意識不明のプレイヤーや生存者を蘇生します. 蘇生が遅れると助けることができなくなります. 使用できる回数には限りがあり, 使用後は通電している保管庫で充電する必要があります.
 def_inventory_equipment_defibrillator_s_desc		A large equipment storage unit containing a defibrillator.	自動体外式除細動器が保管されている中型の保管庫です.
 def_inventory_equipment_defibrillator_node_0_label		Electric	電力
-def_inventory_equipment_defibrillator_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_defibrillator_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_dog_whistle_name		Equipment inventory (Dog Whistle)	保管庫 (小, 犬笛)
 def_inventory_equipment_dog_whistle_desc		Hold [$[action_equipment_use]] to sound the whistle. Nearby dogs will respond to certain whistle patterns. 1 long burst = Wait. 2 short bursts = Follow.	[$[action_equipment_use]]を長押しして笛を吹きます. 付近の犬が笛のパターンに応じて反応します.\n\n1回長く吹く = 待て\n2回短く吹く = ついてこい
 def_inventory_equipment_dog_whistle_s_desc		A small equipment storage unit containing a dog whistle.	犬笛が保管されている小型の保管庫です.
 def_inventory_equipment_dog_whistle_node_0_label		Electric	電力
-def_inventory_equipment_dog_whistle_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_dog_whistle_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_fire_extinguisher_name		Equipment inventory (Fire Extinguisher)	保管庫 (中, 消火器)
 def_inventory_equipment_fire_extinguisher_desc		Hold [$[action_equipment_use]] to spray a stream of water capable of extinguishing fires. This equipment has a limited water capacity and cannot be refilled.	[$[action_equipment_use]] を押して消火剤を放出し, 消火活動を行います. 使用できる時間には限りがあり, 乗り物を作業台に戻すまで補充できません.
 def_inventory_equipment_fire_extinguisher_s_desc		A large equipment storage unit containing a fire extinguisher.	消火器が保管されている中型の保管庫です.
 def_inventory_equipment_fire_extinguisher_node_0_label		Electric	電力
-def_inventory_equipment_fire_extinguisher_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_fire_extinguisher_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_first_aid_name		Equipment inventory (First Aid Kit)	保管庫 (小, 治療セット)
 def_inventory_equipment_first_aid_desc		Press [$[action_equipment_use]] to heal yourself, or heal a survivor highlighted by your crosshair.	[$[action_equipment_use]] を押して自分自身または, 視点を合わせてるプレイヤーや生存者の体力を回復します.
 def_inventory_equipment_first_aid_s_desc		A small equipment storage unit containing a first aid kit.	治療セットが保管されている小型の保管庫です.
 def_inventory_equipment_first_aid_node_0_label		Electric	電力
-def_inventory_equipment_first_aid_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_first_aid_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_fishing_rod_name		Equipment inventory (Fishing Rod)	保管庫 (中, 釣り竿)
 def_inventory_equipment_fishing_rod_desc		Hold and release [$[action_equipment_use]] to load and cast the fishing line. Hold [$[action_equipment_use]] to reel in the fishing line. Press [$[action_equipment_secondary]] before casting to cycle the sink depth of the hook.	[$[action_equipment_use]] を長押しし, 離すことで釣り針を取り付け, 竿をキャストします. [$[action_equipment_use]] を長押ししてリールを巻きます. [$[action_equipment_secondary]] を押すと釣り針が沈む深さを切り替えます.
 def_inventory_equipment_fishing_rod_s_desc		A large equipment storage unit containing a fishing rod.	釣り竿が保管されている中型の保管庫です.
 def_inventory_equipment_fishing_rod_node_0_label		Electric	電力
-def_inventory_equipment_fishing_rod_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_fishing_rod_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_flare_name		Equipment inventory (Flare)	保管庫 (小, 発煙筒)
 def_inventory_equipment_flare_desc		Press [$[action_equipment_use]] to throw a red smoke flare which burns for a long time.	[$[action_equipment_use]] を押して発煙筒を投げ, 赤い煙が長時間発生します.
 def_inventory_equipment_flare_s_desc		A small equipment storage unit containing flares.	発煙筒が保管されている小型の保管庫です.
 def_inventory_equipment_flare_node_0_label		Electric	電力
-def_inventory_equipment_flare_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_flare_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_flaregun_name		Equipment inventory (Flaregun)	保管庫 (小, 照明銃)
 def_inventory_equipment_flaregun_desc		Press [$[action_equipment_use]] to fire a red illumination flare that burns for a short time, and [$[action_equipment_secondary]] to reload.	[$[action_equipment_use]] を押して照明弾を発射し, 赤い光を短時間発生させます. [$[action_equipment_secondary]] を押して弾を補充します.
 def_inventory_equipment_flaregun_s_desc		A small equipment storage unit containing a flaregun preloaded with 1 flaregun round.	1発の弾が入っている照明銃が保管されている小型の保管庫です.
 def_inventory_equipment_flaregun_node_0_label		Electric	電力
-def_inventory_equipment_flaregun_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_flaregun_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_flaregun_ammo_name		Equipment inventory (Flaregun Ammo)	保管庫 (小, 照明銃の弾薬箱)
 def_inventory_equipment_flaregun_ammo_desc		Press [$[action_equipment_use]] to reload an equipped flaregun.	[$[action_equipment_use]] を押してインベントリの照明銃に弾を補充します.
 def_inventory_equipment_flaregun_ammo_s_desc		A small equipment storage unit containing a box flaregun ammo.	照明銃の弾薬箱が保管されている小型の保管庫です.
 def_inventory_equipment_flaregun_ammo_node_0_label		Electric	電力
-def_inventory_equipment_flaregun_ammo_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_flaregun_ammo_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_flashlight_name		Equipment inventory (Flashlight)	保管庫 (小, 懐中電灯)
 def_inventory_equipment_flashlight_desc		Press [$[action_equipment_use]] to toggle the flashlight on or off. Requires electric charge to function, and will recharge when placed into a powered small equipment storage unit.	[$[action_equipment_use]] を押して懐中電灯のオン/オフを切り替えます. 使用するには充電が必要であり, 使用後は通電している保管庫で充電する必要があります.
 def_inventory_equipment_flashlight_s_desc		A small equipment storage unit containing a flashlight.	懐中電灯が保管されている小型の保管庫です.
 def_inventory_equipment_flashlight_node_0_label		Electric	電力
-def_inventory_equipment_flashlight_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_flashlight_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_geiger_counter_name		Equipment inventory (Radiation Detector)	保管庫 (小, 放射線測定器)
 def_inventory_equipment_geiger_counter_desc		Press [$[action_equipment_use]] to toggle radiation detection on or off. Requires electric charge to function, and will recharge when placed into a powered small equipment storage unit.	[$[action_equipment_use]] を押して放射線測定器のオン/オフを切り替えます. 使用するには充電が必要であり, 使用後は通電している保管庫で充電する必要があります.
 def_inventory_equipment_geiger_counter_s_desc		A small equipment storage unit containing a radiation detector.	放射線測定器が保管されている小型の保管庫です.
 def_inventory_equipment_geiger_counter_node_0_label		Electric	電力
-def_inventory_equipment_geiger_counter_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_geiger_counter_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_glowstick_name		Equipment inventory (Glowstick)	保管庫 (小, 蛍光棒)
 def_inventory_equipment_glowstick_desc		Press [$[action_equipment_use]] to throw a glowstick which emits light for an extended time. The editor paint tool can be used to set the glowstick hue.	[$[action_equipment_use]] を押して蛍光棒を投げ, 一定時間発光します. 着色モードで蛍光棒の発光色を変更できます.
 def_inventory_equipment_glowstick_s_desc		A small equipment storage unit containing glowsticks.	蛍光棒が保管されている小型の保管庫です.
 def_inventory_equipment_glowstick_node_0_label		Electric	電力
-def_inventory_equipment_glowstick_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_glowstick_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_grenade_name		Equipment Inventory (Hand Grenade)	保管庫 (小, 手榴弾)
 def_inventory_equipment_grenade_desc		Press [$[action_equipment_use]] to throw a hand grenade, which will detonate after a short delay.	[$[action_equipment_use]]を押して手榴弾を投擲します. 投擲後しばらくすると爆発します.
 def_inventory_equipment_grenade_s_desc		A small equipment storage unit containing a hand grenade.	手榴弾が保管されている小型の保管庫です.
 def_inventory_equipment_grenade_node_0_label		Electric	電力
-def_inventory_equipment_grenade_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_grenade_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_hose_name		Equipment inventory (Hose)	保管庫 (中, ホース)
 def_inventory_equipment_hose_desc		Press [$[action_equipment_use]] to attach the hose to an unoccupied fluid hose anchor. Interacting with [$[action_interact_left]]/[$[action_interact_right]] on an occupied fluid hose anchor will retrieve the hose if the player has inventory space to hold it. If the hose contains water, press [$[action_equipment_secondary]] to toggle open the hose valve and allow the water to flow freely.	$[action_equipment_use]] を押してアンカー (流体) にホースを差し込みます. 既にホースが接続されているアンカー (流体) に [$[action_interact_left]]/[$[action_interact_right]] を押すとホースを取り外し, プレイヤーのインベントリに空きがあるならそこにしまいます. ホースに通水している時は [$[action_equipment_secondary]] を押して放水できます.
 def_inventory_equipment_hose_s_desc		A large equipment storage unit containing 20m of fluid hosing.	20メートルのホースが保管されている中型の保管庫です.
 def_inventory_equipment_hose_node_0_label		Electric	電力
-def_inventory_equipment_hose_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_hose_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_night_vision_binoculars_name		Equipment inventory (Night Vision Binoculars)	保管庫 (小, 暗視ゴーグル)
 def_inventory_equipment_night_vision_binoculars_desc		Hold [$[action_equipment_use]] to zoom in on faraway objects. The night vision effect provides improved visibility in low light conditions, but hinders visibility in daylight. Requires electric charge to function, and will recharge when placed into a powered small equipment storage unit.	[$[action_equipment_use]] を押してズームインし, 遠くを見ます. 暗視ゴーグルでは暗い所がよく見えるようになりますが, 逆に明るい所は見えにくくなります. 使用するには充電が必要であり, 使用後は通電している保管庫で充電する必要があります.
 def_inventory_equipment_night_vision_binoculars_s_desc		A small equipment storage unit containing a pair of night vision binoculars.	暗視ゴーグルが保管されている小型の保管庫です.
 def_inventory_equipment_night_vision_binoculars_node_0_label		Electric	電力
-def_inventory_equipment_night_vision_binoculars_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_night_vision_binoculars_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_oxygen_mask_name		Equipment inventory (Oxygen Mask)	保管庫 (小, 酸素マスク)
 def_inventory_equipment_oxygen_mask_desc		Press [$[action_equipment_use]] to recover your breath while underwater. This equipment has a limited air capacity, and will refill when placed into a powered small equipment storage unit.	[$[action_equipment_use]] を押して水中でも酸素を吸入できます. 使用できる時間には限りがあり, 使用後は通電している保管庫で補充する必要があります.
 def_inventory_equipment_oxygen_mask_s_desc		A small equipment storage unit containing an oxygen mask.	酸素マスクが保管されている小型の保管庫です.
 def_inventory_equipment_oxygen_mask_node_0_label		Electric	電力
-def_inventory_equipment_oxygen_mask_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_oxygen_mask_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_pistol_name		Equipment inventory (Pistol)	保管庫 (小, 拳銃)
 def_inventory_equipment_pistol_desc		Press [$[action_equipment_use]] to fire, and [$[action_equipment_secondary]] to reload. The pistol is compact enough for a belt holster, and can be accurate when recoil is carefully managed.	[$[action_equipment_use]]を押して発砲します. [$[action_equipment_secondary]]を押して弾薬を補充します. 拳銃はベルトに取り付けられるほど小型であり, 射撃時の反動を制御できれば正確な射撃が可能です.
 def_inventory_equipment_pistol_s_desc		A small equipment storage unit containing a pistol.	拳銃が保管されている小型の保管庫です.
 def_inventory_equipment_pistol_node_0_label		Electric	電力
-def_inventory_equipment_pistol_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_pistol_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_pistol_ammo_name		Equipment Inventory (Pistol Ammo)	保管庫 (小, 拳銃の弾薬)
 def_inventory_equipment_pistol_ammo_desc		Press [$[action_equipment_use]] to reload an equipped pistol.	[$[action_equipment_use]]を押して手持ちの拳銃に弾薬を補充します.
 def_inventory_equipment_pistol_ammo_s_desc		A small equipment storage unit containing a pistol ammo magazine.	拳銃の弾薬が保管されている小型の保管庫です.
 def_inventory_equipment_pistol_ammo_node_0_label		Electric	電力
-def_inventory_equipment_pistol_ammo_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_pistol_ammo_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_radio_name		Equipment inventory (Radio)	保管庫 (小, トランシーバー)
 def_inventory_equipment_radio_desc		Hold [$[action_equipment_use]] transmit voice audio. Press [$[action_equipment_secondary]] to cycle between frequencies 0~8, or turn the radio off. When a frequncy is selected, the radio will transmit and receive voice audio on that frequency only. Requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. (Max Effective Range : 500m)	[$[action_equipment_use]] を押して発信します. [$[action_equipment_secondary]] を押して0から8チャンネルの範囲でチャンネルを切り替えます. 設定されたチャンネルでのみ発信/受信ができます. 範囲は500メートルです. 使用するには充電が必要であり, 使用後は通電している保管庫で充電する必要があります.
 def_inventory_equipment_radio_s_desc		A small equipment storage unit containing a handheld radio.	トランシーバーが保管されている小型の保管庫です.
 def_inventory_equipment_radio_node_0_label		Electric	電力
-def_inventory_equipment_radio_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_radio_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_radio_signal_locator_name		Equipment inventory (Radio Signal Locator)	保管庫 (中, 信号探知機)
 def_inventory_equipment_radio_signal_locator_desc		Press [$[action_equipment_use]] to toggle the locator on or off. When active, the locator produces audible beeps that increase in frequency as the player nears an active transponder. The handheld locator has a shorter detection range than the vehicle mounted locator, but can narrow down the target location to a smaller area. Requires electric charge to function, and will recharge when placed into a powered large equipment storage unit.	[$[action_equipment_use]] を押して信号探知機のオン/オフを切り替えます. 遭難信号を探知すると発信源までのおおよその距離を音で知らせます. 手持ちの信号探知機は乗り物に搭載するものよりも探知範囲が狭く, 発信源の特定に使用できます. 使用するには充電が必要であり, 使用後は通電している保管庫で充電する必要があります.
 def_inventory_equipment_radio_signal_locator_s_desc		A large equipment storage unit containing a handheld transponder locator.	信号探知機が保管されている中型の保管庫です.
 def_inventory_equipment_radio_signal_locator_node_0_label		Electric	電力
-def_inventory_equipment_radio_signal_locator_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_radio_signal_locator_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_remote_control_name		Equipment inventory (Remote Control Unit)	保管庫 (小, 遠隔操作端末)
 def_inventory_equipment_remote_control_desc		Press [$[action_equipment_use]] to toggle the remote control on or off. Press [$[action_equipment_secondary]] to cycle between frequencies 0~8. When active, the remote control uses the basic vehicle pilot seat input bindings and transmits them as composite radio data on the selected frequency. Requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. (Max Effective Range : 500m)	[$[action_equipment_use]] を押して遠隔操作端末のオン/オフを切り替えます. [$[action_equipment_secondary]] を押して0から8チャンネルの範囲でチャンネルを切り替えます. オンの時は通常の操縦席の操作を設定されたチャンネルで発信します. 範囲は500メートルです. 使用するには充電が必要であり, 使用後は通電している保管庫で充電する必要があります.
 def_inventory_equipment_remote_control_s_desc		A small equipment storage unit containing a remote control unit.	遠隔操作端末が保管されている小型の保管庫です.
 def_inventory_equipment_remote_control_node_0_label		Electric	電力
-def_inventory_equipment_remote_control_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_remote_control_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_rifle_name		Equipment inventory (Rifle)	保管庫 (中, 小銃)
 def_inventory_equipment_rifle_desc		Press [$[action_equipment_use]] to fire, and [$[action_equipment_secondary]] to reload. The rifle fires accurate and powerful shots for long-range engagements.	[$[action_equipment_use]]を押して発砲します. [$[action_equipment_secondary]]を押して弾薬を補充します. 小銃は正確で強力な射撃が可能であり, 遠距離からの戦闘ができます.
 def_inventory_equipment_rifle_s_desc		A large equipment storage unit containing a rifle.	小銃が保管されている中型の保管庫です.
 def_inventory_equipment_rifle_node_0_label		Electric	電力
-def_inventory_equipment_rifle_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_rifle_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_rifle_ammo_name		Equipment inventory (Rifle Ammo)	保管庫 (小, 小銃の弾薬)
 def_inventory_equipment_rifle_ammo_desc		Press [$[action_equipment_use]] to reload an equipped rifle.	[$[action_equipment_use]]を押して手持ちの小銃に弾薬を補充します.
 def_inventory_equipment_rifle_ammo_s_desc		A small equipment storage unit containing a rifle ammo magazine.	小銃の弾薬が保管されている小型の保管庫です.
 def_inventory_equipment_rifle_ammo_node_0_label		Electric	電力
-def_inventory_equipment_rifle_ammo_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_rifle_ammo_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_rope_name		Equipment inventory (Rope)	保管庫 (中, ロープ)
 def_inventory_equipment_rope_desc		Press [$[action_equipment_use]] to attach the rope to any rope anchor. Interacting with [$[action_interact_left]]/[$[action_interact_right]] on an occupied rope anchor will retrieve the rope if the player has inventory space to hold it.	[$[action_equipment_use]] を押してアンカー (ロープ) にロープを差し込みます. 既にロープが接続されているアンカー (ロープ) に [$[action_interact_left]]/[$[action_interact_right]] を押すとロープを取り外し, プレイヤーのインベントリに空きがあるならそこにしまいます.
 def_inventory_equipment_rope_s_desc		A large equipment storage unit containing 20m of rope.	20メートルのロープが保管されている中型の保管庫です.
 def_inventory_equipment_rope_node_0_label		Electric	電力
-def_inventory_equipment_rope_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_rope_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_smg_name		Equipment inventory (SMG)	保管庫 (中, 短機関銃)
 def_inventory_equipment_smg_desc		Press [$[action_equipment_use]] to fire, and [$[action_equipment_secondary]] to reload. The SMG has a high rate of fire and magazine capacity.	[$[action_equipment_use]]を押して発砲します. [$[action_equipment_secondary]]を押して弾薬を補充します. 短機関銃は高速射撃が可能で, 装弾数も多いです.
 def_inventory_equipment_smg_s_desc		A large equipment storage unit containing a submachine gun.	短機関銃が保管されている中型の保管庫です.
 def_inventory_equipment_smg_node_0_label		Electric	電力
-def_inventory_equipment_smg_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_smg_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_smg_ammo_name		Equipment inventory (SMG Ammo)	保管庫 (小, 短機関銃の弾薬)
 def_inventory_equipment_smg_ammo_desc		Press [$[action_equipment_use]] to reload an equipped submachine gun.	[$[action_equipment_use]]を押して手持ちの短機関銃に弾薬を補充します.
 def_inventory_equipment_smg_ammo_s_desc		A small equipment storage unit containing a submachine gun ammo magazine.	短機関銃の弾薬が保管されている小型の保管庫です.
 def_inventory_equipment_smg_ammo_node_0_label		Electric	電力
-def_inventory_equipment_smg_ammo_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_smg_ammo_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_speargun_name		Equipment inventory (Speargun)	保管庫 (中, 銃槍)
 def_inventory_equipment_speargun_desc		Press [$[action_equipment_use]] to fire, and [$[action_equipment_secondary]] to reload. The speargun can be fired underwater and spears travel through the water more effectively than bullets.	[$[action_equipment_use]]を押して発砲します. [$[action_equipment_secondary]]を押して弾薬を補充します. 銃槍は水中でも発射でき, 通常の弾よりもよく飛んでいきます.
 def_inventory_equipment_speargun_s_desc		A large equipment storage unit containing a speargun.	銃槍が保管されている中型の保管庫です.
 def_inventory_equipment_speargun_node_0_label		Electric	電力
-def_inventory_equipment_speargun_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_speargun_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_speargun_ammo_name		Equipment inventory (Speargun Ammo)	保管庫 (小, 銃槍の弾薬)
 def_inventory_equipment_speargun_ammo_desc		Press [$[action_equipment_use]] to reload an equipped speargun.	[$[action_equipment_use]]を押して手持ちの銃槍に弾薬を補充します.
 def_inventory_equipment_speargun_ammo_s_desc		A small equipment storage unit containing a box of speargun ammo.	銃槍の弾薬が保管されている小型の保管庫です.
 def_inventory_equipment_speargun_ammo_node_0_label		Electric	電力
-def_inventory_equipment_speargun_ammo_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_speargun_ammo_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_strobe_light_name		Equipment inventory (Strobe Light)	保管庫 (小, ストロボライト)
 def_inventory_equipment_strobe_light_desc		Press [$[action_equipment_use]] to toggle the strobe light on or off. Press [$[action_equipment_secondary]] to toggle MOB (man overboard) mode, which will automatically turn the strobe light on if the player is submerged in water. The strobe light will continue to function when unequipped or discarded. Requires electric charge to function, and will recharge when placed into a powered small equipment storage unit.	[$[action_equipment_use]] を押してストロボライトのオン/オフを切り替えます. [$[action_equipment_secondary]] 押して船外作業モードのオン/オフを切り替えます. 船外作業モードは水の中に入った時に自動でストロボライトをオンにするモードです. 使用するには充電が必要であり, 使用後は通電している保管庫で充電する必要があります.
 def_inventory_equipment_strobe_light_s_desc		A small equipment storage unit containing a strobe light.	ストロボライトが保管されている小型の保管庫です.
 def_inventory_equipment_strobe_light_node_0_label		Electric	電力
-def_inventory_equipment_strobe_light_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_strobe_light_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_strobe_light_infrared_name		Equipment inventory (Strobe Light, Infrared)	保管庫 (小, ストロボライト (赤外線))
 def_inventory_equipment_strobe_light_infrared_desc		Press [$[action_equipment_use]] to toggle the strobe light on or off. Press [$[action_equipment_secondary]] to toggle MOB (man overboard) mode, which will automatically turn the strobe light on if the player is submerged in water. The strobe light will continue to function when unequipped or discarded. The infrared strobe light flashes are only visible to infrared cameras. Requires electric charge to function, and will recharge when placed into a powered small equipment storage unit.	[$[action_equipment_use]] を押してストロボライトのオン/オフを切り替えます. [$[action_equipment_secondary]] 押して船外作業モードのオン/オフを切り替えます. 船外作業モードは水の中に入った時に自動でストロボライトをオンにするモードです. このストロボライトは赤外線カメラを通してでのみ, 光を見ることができます. 使用するには充電が必要であり, 使用後は通電している保管庫で充電する必要があります.
 def_inventory_equipment_strobe_light_infrared_s_desc		A small equipment storage unit containing an infrared strobe light.	ストロボライト (赤外線) が保管されている保管庫です.
 def_inventory_equipment_strobe_light_infrared_node_0_label		Electric	電力
-def_inventory_equipment_strobe_light_infrared_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_strobe_light_infrared_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_transponder_name		Equipment inventory (Transponder)	保管庫 (小, 遭難信号発信機)
 def_inventory_equipment_transponder_desc		Press [$[action_equipment_use]] to toggle the transponder on or off. Press [$[action_equipment_secondary]] to toggle MOB (man overboard) mode, which will automatically turn the transponder on if the player is submerged in water. The transponder will continue to function when unequipped or discarded. Requires electric charge to function, and will recharge when placed into a powered small equipment storage unit.	[$[action_equipment_use]] を押して遭難信号発信機のオン/オフを切り替えます. [$[action_equipment_secondary]] 押して船外作業モードのオン/オフを切り替えます. 船外作業モードは水の中に入った時に自動で遭難信号発信機をオンにするモードです. 使用するには充電が必要であり, 使用後は通電している保管庫で充電する必要があります.
 def_inventory_equipment_transponder_s_desc		A small equipment storage unit containing a handheld transponder.	遭難信号発信機が保管されている小型の保管庫です.
 def_inventory_equipment_transponder_node_0_label		Electric	電力
-def_inventory_equipment_transponder_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_transponder_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_underwater_welding_torch_name		Equipment inventory (Underwater Welding Torch)	保管庫 (中, 水中用溶接機)
 def_inventory_equipment_underwater_welding_torch_desc		Hold [$[action_equipment_use]] to repair damaged vehicle components highlighted by the players crosshair. The underwater welding torch holds less fuel than the standard welding torch, but can be operated while submerged in water. This equipment has a limited fuel capacity and cannot be refilled.	[$[action_equipment_use]] を押し続けて, 視点を合わせている損傷した部品を修理します. 通常の溶接機よりも使用時間は短いですが, 水中で修理できます. 使用できる時間には限りがあり, 乗り物を作業台に戻すまで補充できません.
 def_inventory_equipment_underwater_welding_torch_s_desc		A large equipment storage unit containing an underwater welding torch.	水中用溶接機が保管された中型の保管庫です.
 def_inventory_equipment_underwater_welding_torch_node_0_label		Electric	電力
-def_inventory_equipment_underwater_welding_torch_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_underwater_welding_torch_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_welding_torch_name		Equipment inventory (Welding Torch)	保管庫 (中, 溶接機)
 def_inventory_equipment_welding_torch_desc		Hold [$[action_equipment_use]] to repair damaged vehicle components highlighted by the players crosshair. This equipment has a limited fuel capacity and cannot be refilled.	[$[action_equipment_use]] を押し続けて, 視点を合わせている損傷した部品を修理します. 水中での修理はできません. 使用するには充電が必要であり, 乗り物を作業台に戻すまで補充できません.
 def_inventory_equipment_welding_torch_s_desc		A large equipment storage unit containing a welding torch.	溶接機が保管されている中型の保管庫です.
 def_inventory_equipment_welding_torch_node_0_label		Electric	電力
-def_inventory_equipment_welding_torch_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_equipment_welding_torch_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_medium_name		Large equipment inventory (Empty)	保管庫 (中)
 def_inventory_medium_desc		Only large handheld equipment can be stored in this unit. When connected to an electric power source, any rechargable equipment stored in the unit will drain a small amount of electricity until recharged to 100% capacity.	大型の携帯品のみ収納できます. この保管庫が通電している場合, 充電可能な携帯品が保管された時に充電します.
 def_inventory_medium_s_desc		An empty large equipment storage unit.	何も保管されていない中型の保管庫です.
 def_inventory_medium_node_0_label		Electric	電力
-def_inventory_medium_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_medium_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_outfit_name		Outfit Inventory (Empty)	保管庫 (大)
 def_inventory_outfit_desc		Interacting with [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected outfit. Only specialist outfits can be stored in this unit. When connected to an electric power source, any rechargable outfits stored in the unit will drain a small amount of electricity until recharged to 100% capacity.	[$[action_interact_left]]/[$[action_interact_right]] を押して保管庫の装備品を装備したり, 装備している装備品を保管庫へ収納します. 装備品のみ収納できます. この保管庫が通電している場合, 充電可能な装備品が保管された時に充電します.
 def_inventory_outfit_s_desc		An empty outfit storage unit.	何も保管されていない大型の保管庫です.
 def_inventory_outfit_node_0_label		Electric	電力
-def_inventory_outfit_node_0_desc		Electrical power connection.	電力接続 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_node_0_desc		Electrical power connection.	装備品が保管されているとき, その装備品に充電が必要な場合は充電します.
 def_inventory_outfit_arctic_name		Outfit Inventory (Arctic)	保管庫 (大, 防寒着)
 def_inventory_outfit_arctic_desc		When equipped, it will increase your temperature enough to survive in colder weather conditions. Its thermal effectiveness is reduced when wet.	寒い地域での活動を容易にします. 濡れていると防寒性能が低下します.
 def_inventory_outfit_arctic_s_desc		An outfit inventory unit containing specialist thermal clothing for surviving Arctic temperatures.	防寒着が保管されている保管庫です.
 def_inventory_outfit_arctic_node_0_label		Electric	電力
-def_inventory_outfit_arctic_node_0_desc		Electrical power connection.	電力接続 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_arctic_node_0_desc		Electrical power connection.	装備品が保管されているとき, その装備品に充電が必要な場合は充電します.
 def_inventory_outfit_diving_name		Outfit Inventory (Diving)	保管庫 (大, ダイビング装備)
 def_inventory_outfit_diving_desc		When equipped, it will allow deep sea diving to a depth of 230m, and provides air for 10 minutes. The air tank can be refilled by storing the gear in an outfit inventory unit with an attached air input or via space seat.	水深230メートルまでの潜水を可能にし, 10分間空気を提供します. 使用後は通電している保管庫か宇宙用運転席で空気の補充ができます.
 def_inventory_outfit_diving_s_desc		An outfit inventory unit containing specialist diving equipment.	ダイビング装備が保管されている保管庫です.
 def_inventory_outfit_diving_node_0_label		Electric	電力
-def_inventory_outfit_diving_node_0_desc		Electrical power connection.	電力接続 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_diving_node_0_desc		Electrical power connection.	装備品が保管されているとき, その装備品に充電が必要な場合は充電します.
 def_inventory_outfit_diving_node_1_label		Fluid In	流体注入
 def_inventory_outfit_diving_node_1_desc			
 def_inventory_outfit_firefighter_name		Outfit Inventory (Firefighter)	保管庫 (大, 防火服)
 def_inventory_outfit_firefighter_desc		When equipped, it will absorb 95% of damage dealt by fires.	炎によるダメージを95%軽減します.
 def_inventory_outfit_firefighter_s_desc		An outfit inventory unit containing specialist firefighting gear.	防火服が保管されている大型の保管庫です.
 def_inventory_outfit_firefighter_node_0_label		Electric	電力
-def_inventory_outfit_firefighter_node_0_desc		Electrical power connection.	電力接続 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_firefighter_node_0_desc		Electrical power connection.	装備品が保管されているとき, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_firefighter_scba_name		Outfit Inventory (Firefighter SCBA)	保管庫 (大, 自給呼吸式防火服)
+def_inventory_outfit_firefighter_scba_desc		When equipped, it will absorb 95% of damage dealt by fires, and provides breathable air for the user. The air tank can be refilled by storing the gear in an outfit inventory unit.	炎によるダメージを95%軽減し, 生存のための酸素が供給されます. 使用後は通電している保管庫で空気の補充ができます.
+def_inventory_outfit_firefighter_scba_s_desc		An outfit inventory unit containing specialist firefighting gear.	自給呼吸式防火服が保管されている大型の保管庫です.
+def_inventory_outfit_firefighter_scba_node_0_label		Electric	電力
+def_inventory_outfit_firefighter_scba_node_0_desc		Electrical power connection.	装備品が保管されているとき, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_firefighter_scba_node_1_label		Fluid In	流体注入
+def_inventory_outfit_firefighter_scba_node_1_desc			
 def_inventory_outfit_hazmat_name		Outfit Inventory (Hazmat)	保管庫 (大, 防護服)
 def_inventory_outfit_hazmat_desc		When equipped, it will absorb 95% of incoming radiation.	被曝によるダメージを95%軽減します.
 def_inventory_outfit_hazmat_s_desc		An outfit inventory unit containing specialist hazmat gear.	防護服が保管されている大型の保管庫です.
 def_inventory_outfit_hazmat_node_0_label		Electric	電力
-def_inventory_outfit_hazmat_node_0_desc		Electrical power connection.	電力接続 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_hazmat_node_0_desc		Electrical power connection.	装備品が保管されているとき, その装備品に充電が必要な場合は充電します.
 def_inventory_outfit_parachute_name		Outfit Inventory (Parachute)	保管庫 (大, パラシュート)
 def_inventory_outfit_parachute_desc		When selected, press [$[action_equipment_use]] while falling to deploy the parachute. It will then open when you are falling fast enough. Press [$[action_equipment_secondary]] to close the parachute. This parachute is single-use once equipped but can be refolded by storing it in an outfit inventory unit.	落下中に [$[action_equipment_use]] を押してパラシュートを開きます. 一定の速度以上で落下している場合は自動的に開きます. [$[action_equipment_secondary]] を押してパラシュートを閉じます. このパラシュートは1回限りで, 一度使用すると保管庫にしまうまで再使用できません.
 def_inventory_outfit_parachute_s_desc		An outfit inventory unit containing a single-use parachute.	パラシュートが保管されている大型の保管庫です.
 def_inventory_outfit_parachute_node_0_label		Electric	電力
-def_inventory_outfit_parachute_node_0_desc		Electrical power connection.	電力接続 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_parachute_node_0_desc		Electrical power connection.	装備品が保管されているとき, その装備品に充電が必要な場合は充電します.
 def_inventory_outfit_scuba_name		Outfit Inventory (Scuba)	保管庫 (大, スキューバ装備)
 def_inventory_outfit_scuba_desc		When equipped, it will allow diving to a depth of 40m, and provides air for 2 minutes. The air tank can be refilled by storing the gear in an outfit inventory unit with an attached air input or via space seat.	水深40メートルまでの潜水を可能にし, 2分間空気を提供します. 使用後は通電している保管庫か宇宙用運転席で空気の補充ができます.
 def_inventory_outfit_scuba_s_desc		An outfit inventory unit containing specialist scuba gear.	スキューバ装備が保管されている保管庫です.
 def_inventory_outfit_scuba_node_0_label		Electric	電力
-def_inventory_outfit_scuba_node_0_desc		Electrical power connection.	電力接続 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_scuba_node_0_desc		Electrical power connection.	装備品が保管されているとき, その装備品に充電が必要な場合は充電します.
 def_inventory_outfit_scuba_node_1_label		Fluid In	流体注入
 def_inventory_outfit_scuba_node_1_desc			
 def_inventory_outfit_space_suit_name		Outfit Inventory (Space)	保管庫 (大, 宇宙服)
-def_inventory_outfit_space_suit_desc		When equipped, it will protect against low temperatures, low pressures and provide oxygen.	装備すると低温低圧環境下で生存可能になり, 生存のための酸素が供給されます.
+def_inventory_outfit_space_suit_desc		When equipped, it will protect against low temperatures, low pressures and provide oxygen.	低温低圧環境下で生存可能になり, 生存のための酸素が供給されます.
 def_inventory_outfit_space_suit_s_desc		An outfit inventory unit containing specialist Space Exploration gear required for surviving in space. The air tank can be refilled by storing the gear in an outfit inventory unit with an attached air input or via space seat.	宇宙服が保管されている保管庫です. 使用後は通電している保管庫か宇宙用運転席で空気の補充ができます.
 def_inventory_outfit_space_suit_node_0_label		Electric	電力
-def_inventory_outfit_space_suit_node_0_desc		Electrical power connection.	電力接続 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_space_suit_node_0_desc		Electrical power connection.	装備品が保管されているとき, その装備品に充電が必要な場合は充電します.
 def_inventory_outfit_space_suit_node_1_label		Fluid In	流体注入
 def_inventory_outfit_space_suit_node_1_desc			
 def_inventory_outfit_space_suit_exploration_name		Outfit Inventory (Space Exploration)	保管庫 (大, 宇宙探査服)
-def_inventory_outfit_space_suit_exploration_desc		When equipped, it will protect against low temperatures, low pressures and provide oxygen.	装備すると低温低圧環境下で生存可能になり, 生存のための酸素が供給されます.
+def_inventory_outfit_space_suit_exploration_desc		When equipped, it will protect against low temperatures, low pressures and provide oxygen.	低温低圧環境下で生存可能になり, 生存のための酸素が供給されます.
 def_inventory_outfit_space_suit_exploration_s_desc		An outfit inventory unit containing specialist Space Exploration gear required for surviving in space. The air tank can be refilled by storing the gear in an outfit inventory unit with an attached air input or via space seat.	宇宙探査服が保管されている保管庫です. 使用後は通電している保管庫か宇宙用運転席で空気の補充ができます.
 def_inventory_outfit_space_suit_exploration_node_0_label		Electric	電力
-def_inventory_outfit_space_suit_exploration_node_0_desc		Electrical power connection.	電力接続 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_space_suit_exploration_node_0_desc		Electrical power connection.	装備品が保管されているとき, その装備品に充電が必要な場合は充電します.
 def_inventory_outfit_space_suit_exploration_node_1_label		Fluid In	流体注入
 def_inventory_outfit_space_suit_exploration_node_1_desc			
 def_inventory_outfit_wep_armor_vest_name		Outfit Inventory (Armor Vest)	保管庫 (大, 防具 (重量))
 def_inventory_outfit_wep_armor_vest_desc		When equipped, damage from projectiles to the body and head is greatly reduced.  Wearing the outfit significantly limits movement speed.	飛び道具による体と頭のダメージを大幅に軽減します. 装備中は移動速度が中程度低下します.
 def_inventory_outfit_wep_armor_vest_s_desc		An outfit inventory unit containing specialist millitary clothing for projectile protection.	軍事用防具が保管されている保管庫です.
 def_inventory_outfit_wep_armor_vest_node_0_label		Electric	電力
-def_inventory_outfit_wep_armor_vest_node_0_desc		Electrical power connection.	電力接続 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_wep_armor_vest_node_0_desc		Electrical power connection.	装備品が保管されているとき, その装備品に充電が必要な場合は充電します.
 def_inventory_outfit_wep_black_hawk_vest_name		Outfit Inventory (Black Hawk Vest)	保管庫 (大, 防弾チョッキ)
 def_inventory_outfit_wep_black_hawk_vest_desc		When equipped, damage from projectiles to the body is reduced slightly.	飛び道具による体のダメージを少し軽減します.
 def_inventory_outfit_wep_black_hawk_vest_s_desc		An outfit inventory unit containing specialist millitary clothing for projectile protection.	軍事用防具が保管されている保管庫です.
 def_inventory_outfit_wep_black_hawk_vest_node_0_label		Electric	電力
-def_inventory_outfit_wep_black_hawk_vest_node_0_desc		Electrical power connection.	電力接続 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_wep_black_hawk_vest_node_0_desc		Electrical power connection.	装備品が保管されているとき, その装備品に充電が必要な場合は充電します.
 def_inventory_outfit_wep_bomb_disposal_name		Outfit Inventory (Bomb Disposal)	保管庫 (大, 爆弾処理装備)
 def_inventory_outfit_wep_bomb_disposal_desc		When equipped, damage from explosives is drastically reduced. Damage from projectiles to the body and head is slightly reduced. Wearing the outfit greatly limits movement speed.	爆破物によるダメージを大幅に軽減します. また, 飛び道具による体と頭のダメージを少し軽減します. 装備中は移動速度が大幅に低下します.
 def_inventory_outfit_wep_bomb_disposal_s_desc		An outfit inventory unit containing specialist millitary clothing for explosive protection.	特殊な軍事用対爆防具が保管されている保管庫です.
 def_inventory_outfit_wep_bomb_disposal_node_0_label		Electric	電力
-def_inventory_outfit_wep_bomb_disposal_node_0_desc		Electrical power connection.	電力接続 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_wep_bomb_disposal_node_0_desc		Electrical power connection.	装備品が保管されているとき, その装備品に充電が必要な場合は充電します.
 def_inventory_outfit_wep_chest_rig_name		Outfit Inventory (Chest Rig)	保管庫 (大, 防具 (軽量))
 def_inventory_outfit_wep_chest_rig_desc		When equipped, damage from projectiles to the body is reduced slightly and damage to the head is significantly reduced.	飛び道具による体のダメージを少し軽減し, 頭のダメージを中程度軽減します.
 def_inventory_outfit_wep_chest_rig_s_desc		An outfit inventory unit containing specialist millitary clothing for projectile protection.	軍事用防具が保管されている保管庫です.
 def_inventory_outfit_wep_chest_rig_node_0_label		Electric	電力
-def_inventory_outfit_wep_chest_rig_node_0_desc		Electrical power connection.	電力接続 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_wep_chest_rig_node_0_desc		Electrical power connection.	装備品が保管されているとき, その装備品に充電が必要な場合は充電します.
 def_inventory_outfit_wep_plate_vest_name		Outfit Inventory (Plate Vest)	保管庫 (大, 防具 (中量))
 def_inventory_outfit_wep_plate_vest_desc		When equipped, damage from projectiles to the body is reduced significantly and damage to the head is greatly reduced.  Wearing the outfit significantly limits movement speed.	飛び道具による体のダメージを中程度軽減し, 頭のダメージを大幅に軽減します. 装備中は移動速度が少し低下します.
 def_inventory_outfit_wep_plate_vest_s_desc		An outfit inventory unit containing specialist millitary clothing for projectile protection.	軍事用防具が保管されている保管庫です.
 def_inventory_outfit_wep_plate_vest_node_0_label		Electric	電力
-def_inventory_outfit_wep_plate_vest_node_0_desc		Electrical power connection.	電力接続 装備品が保管されている時, その装備品に充電が必要な場合は充電します.
+def_inventory_outfit_wep_plate_vest_node_0_desc		Electrical power connection.	装備品が保管されているとき, その装備品に充電が必要な場合は充電します.
 def_inventory_small_name		Small equipment inventory (Empty)	保管庫 (小)
 def_inventory_small_desc		Only small handheld equipment can be stored in this unit. When connected to an electric power source, any rechargable equipment stored in the unit will drain a small amount of electricity until recharged to 100% capacity.	小型の携帯品のみ収納できます. この保管庫が通電している場合, 充電可能な携帯品が保管された時に充電します.
 def_inventory_small_s_desc		An empty small equipment storage unit.	何も保管されていない小型の保管庫です.
 def_inventory_small_node_0_label		Electric	電力
-def_inventory_small_node_0_desc		Electrical power connection.	電力接続 携帯品が保管されている時, その携帯品に充電が必要な場合は充電します.
+def_inventory_small_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_jet_engine_combustion_chamber_name		Jet Combustion Chamber	燃焼室
 def_jet_engine_combustion_chamber_desc		This is part of a set of modular jet engine components. Combustion will begin when the internal pressure is high enough.	ジェットエンジンを構成する部品の1つです. 内部の圧力が十分に高くなると燃焼を開始します.
 def_jet_engine_combustion_chamber_s_desc		A combustion chamber that burns jet fuel to sustain a jet engine.	ジェット燃料を燃焼させてジェットエンジンを稼働させる燃料室です.
@@ -6022,8 +6032,8 @@ def_radar_advanced_missile_laser_node_2_label		Sensor Data	センサー情報
 def_radar_advanced_missile_laser_node_2_desc		Outputs data for up to 8 targets. On/Off 1-8 : Target 1 Found, Target 2 Found, etc... Values 1-32 : Target 1 Distance, Target 1 Azimuth Angle, Target 1 Elevation Angle, Target 1 Time Since Detection, Target 2 Distance, Target 2 Azimuth Angle, Target 2 Elevation Angle, Target 2 Time Since Detection, etc...	検出した物体の情報を最大8個出力します. オン/オフチャンネル 1-8: 何かを検出している間はオン信号を出力します. 検出している物体の数だけ出力されます. 数値チャンネル 1-4: 1つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 5-8: 2つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 以降, 8つ目の物体まで続きます.
 def_radar_advanced_missile_laser_node_3_label		Missile Output	ミサイル出力
 def_radar_advanced_missile_laser_node_3_desc		Outputs x and y data for the most immediate target. Link this directly into a rocket fins component.	最寄りの対象のXY座標を出力します. ミサイルの翼の部品と直接接続して下さい.
-def_radar_advanced_missile_laser_node_4_label		Frequency	周波数
-def_radar_advanced_missile_laser_node_4_desc		Target laser frequency to scan for.	スキャンするレーザーの周波数を指定します.
+def_radar_advanced_missile_laser_node_4_label		Wavelength	波長
+def_radar_advanced_missile_laser_node_4_desc		The specific light wavelength to detect (whole number).	検出する特定の光の波長を整数値で入力します.
 def_radar_advanced_phalanx_name		Radar (Phalanx)	レーダー (ファランクス)
 def_radar_advanced_phalanx_desc		This sensor outputs the distance and relative angle to a detected object within its range and field of view using radio waves. Sensitivity is based on FOV, target size, and distance.	電波を利用して検出した物体の距離と相対的な角度を出力します. ファランクスとは, レーダーにより小型高速の目標を自動で追撃するシステムのことです. 精度は視野角, 対象の大きさ, 対象との距離に依存します.
 def_radar_advanced_phalanx_s_desc		A radar that returns information about a detected object within its view.	検出した物体の情報を出力するレーダーです.
@@ -7609,7 +7619,7 @@ def_torque_meter_node_1_label		RPS	秒間回転数
 def_torque_meter_node_1_desc		The rotations per second of the power system.	動力の秒間回転数 (RPS) を出力します.
 def_torque_meter_node_2_label		Torque	動力の大きさ
 def_torque_meter_node_2_desc		The torque reading from the power system.	動力の大きさを出力します.
-def_train_wheels_name		Train Wheel Assembly Classic	列車の車輪 (従来)
+def_train_wheels_name		Train Wheel Assembly Classic	列車の車輪 (従来型)
 def_train_wheels_desc		Attaches to rail lines.	鉄道のレールに沿って回転します. この車輪は以前のバージョンから存在したものです.
 def_train_wheels_s_desc		Train wheel assembly.	列車を作成する時に使用する台車です.
 def_train_wheels_node_0_label		Brakes	ブレーキ
@@ -7618,34 +7628,44 @@ def_train_wheels_node_1_label		RPS	動力
 def_train_wheels_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	エンジンからの動力を受け取ります.
 def_train_wheels_node_2_label		Wheel Slip	空転
 def_train_wheels_node_2_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
-def_train_wheels_dynamic_flanged_name		Train Wheel Assembly Flanged A	列車の車輪 (無動力A)
+def_train_wheels_node_3_label		Wheel Release	脱線
+def_train_wheels_node_3_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
+def_train_wheels_dynamic_flanged_name		Train Wheel Assembly Flanged A	列車の車輪 (無動力型A)
 def_train_wheels_dynamic_flanged_desc		Attaches to rail lines.	鉄道のレールに沿って回転します.
 def_train_wheels_dynamic_flanged_s_desc		Unpowered train wheel assembly.	無動力の車輪です.
 def_train_wheels_dynamic_flanged_node_0_label		Brakes	ブレーキ
 def_train_wheels_dynamic_flanged_node_0_desc		Number input to set the level of braking applied to the wheels.	車輪にブレーキをかける割合を0から1の範囲で入力します.
 def_train_wheels_dynamic_flanged_node_1_label		Wheel Slip	空転
 def_train_wheels_dynamic_flanged_node_1_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
-def_train_wheels_dynamic_flanged_b_name		Train Wheel Assembly Flanged B	列車の車輪 (無動力B)
+def_train_wheels_dynamic_flanged_node_2_label		Wheel Release	脱線
+def_train_wheels_dynamic_flanged_node_2_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
+def_train_wheels_dynamic_flanged_b_name		Train Wheel Assembly Flanged B	列車の車輪 (無動力型B)
 def_train_wheels_dynamic_flanged_b_desc		Attaches to rail lines.	鉄道のレールに沿って回転します.
 def_train_wheels_dynamic_flanged_b_s_desc		Unpowered train wheel assembly.	無動力の車輪です.
 def_train_wheels_dynamic_flanged_b_node_0_label		Brakes	ブレーキ
 def_train_wheels_dynamic_flanged_b_node_0_desc		Number input to set the level of braking applied to the wheels.	車輪にブレーキをかける割合を0から1の範囲で入力します.
 def_train_wheels_dynamic_flanged_b_node_1_label		Wheel Slip	空転
 def_train_wheels_dynamic_flanged_b_node_1_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
-def_train_wheels_dynamic_flanged_c_name		Train Wheel Assembly Flanged C	列車の車輪 (無動力C)
+def_train_wheels_dynamic_flanged_b_node_2_label		Wheel Release	脱線
+def_train_wheels_dynamic_flanged_b_node_2_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
+def_train_wheels_dynamic_flanged_c_name		Train Wheel Assembly Flanged C	列車の車輪 (無動力型C)
 def_train_wheels_dynamic_flanged_c_desc		Attaches to rail lines.	鉄道のレールに沿って回転します.
 def_train_wheels_dynamic_flanged_c_s_desc		Unpowered train wheel assembly.	無動力の車輪です.
 def_train_wheels_dynamic_flanged_c_node_0_label		Brakes	ブレーキ
 def_train_wheels_dynamic_flanged_c_node_0_desc		Number input to set the level of braking applied to the wheels.	車輪にブレーキをかける割合を0から1の範囲で入力します.
 def_train_wheels_dynamic_flanged_c_node_1_label		Wheel Slip	空転
 def_train_wheels_dynamic_flanged_c_node_1_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
-def_train_wheels_dynamic_flanged_d_name		Train Wheel Assembly Flanged D	列車の車輪 (無動力D)
+def_train_wheels_dynamic_flanged_c_node_2_label		Wheel Release	脱線
+def_train_wheels_dynamic_flanged_c_node_2_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
+def_train_wheels_dynamic_flanged_d_name		Train Wheel Assembly Flanged D	列車の車輪 (無動力型D)
 def_train_wheels_dynamic_flanged_d_desc		Attaches to rail lines.	鉄道のレールに沿って回転します.
 def_train_wheels_dynamic_flanged_d_s_desc		Unpowered train wheel assembly.	無動力の車輪です.
 def_train_wheels_dynamic_flanged_d_node_0_label		Brakes	ブレーキ
 def_train_wheels_dynamic_flanged_d_node_0_desc		Number input to set the level of braking applied to the wheels.	車輪にブレーキをかける割合を0から1の範囲で入力します.
 def_train_wheels_dynamic_flanged_d_node_1_label		Wheel Slip	空転
 def_train_wheels_dynamic_flanged_d_node_1_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
+def_train_wheels_dynamic_flanged_d_node_2_label		Wheel Release	脱線
+def_train_wheels_dynamic_flanged_d_node_2_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
 def_train_wheels_dynamic_steam_basic_mid_name		Train Wheel Assembly Medium	列車の車輪 (中)
 def_train_wheels_dynamic_steam_basic_mid_desc		Attaches to rail lines.	鉄道のレールに沿って回転します.
 def_train_wheels_dynamic_steam_basic_mid_s_desc		Train wheel assembly.	列車を作成する時に使用する台車です.
@@ -7655,48 +7675,62 @@ def_train_wheels_dynamic_steam_basic_mid_node_1_label		RPS	動力
 def_train_wheels_dynamic_steam_basic_mid_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	エンジンからの動力を受け取ります.
 def_train_wheels_dynamic_steam_basic_mid_node_2_label		Wheel Slip	空転
 def_train_wheels_dynamic_steam_basic_mid_node_2_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
-def_train_wheels_dynamic_steam_large_name		Train Wheel Assembly Steam Large A	列車の車輪 (蒸気, 大A)
+def_train_wheels_dynamic_steam_basic_mid_node_3_label		Wheel Release	脱線
+def_train_wheels_dynamic_steam_basic_mid_node_3_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
+def_train_wheels_dynamic_steam_large_name		Train Wheel Assembly Steam Large A	列車の車輪 (蒸気型, 大A)
 def_train_wheels_dynamic_steam_large_desc		Attaches to rail lines. Connect to a train wheel drive piston or another steam train assembly.	鉄道のレールに沿って回転します. 列車の蒸気ピストンや他の蒸気駆動の列車の車輪と接続して使用します.
 def_train_wheels_dynamic_steam_large_s_desc		Steam powered train wheel assembly.	蒸気機関で動作する列車の車輪です.
 def_train_wheels_dynamic_steam_large_node_0_label		Brakes	ブレーキ
 def_train_wheels_dynamic_steam_large_node_0_desc		Number input to set the level of braking applied to the wheels.	車輪にブレーキをかける割合を0から1の範囲で入力します.
 def_train_wheels_dynamic_steam_large_node_1_label		Wheel Slip	空転
 def_train_wheels_dynamic_steam_large_node_1_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
-def_train_wheels_dynamic_steam_large_b_name		Train Wheel Assembly Steam Large B	列車の車輪 (蒸気, 大B)
+def_train_wheels_dynamic_steam_large_node_2_label		Wheel Release	脱線
+def_train_wheels_dynamic_steam_large_node_2_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
+def_train_wheels_dynamic_steam_large_b_name		Train Wheel Assembly Steam Large B	列車の車輪 (蒸気型, 大B)
 def_train_wheels_dynamic_steam_large_b_desc		Attaches to rail lines. Connect to a train wheel drive piston or another steam train assembly.	鉄道のレールに沿って回転します. 列車の蒸気ピストンや他の蒸気駆動の列車の車輪と接続して使用します.
 def_train_wheels_dynamic_steam_large_b_s_desc		Steam powered train wheel assembly.	蒸気機関で動作する列車の車輪です.
 def_train_wheels_dynamic_steam_large_b_node_0_label		Brakes	ブレーキ
 def_train_wheels_dynamic_steam_large_b_node_0_desc		Number input to set the level of braking applied to the wheels.	車輪にブレーキをかける割合を0から1の範囲で入力します.
 def_train_wheels_dynamic_steam_large_b_node_1_label		Wheel Slip	空転
 def_train_wheels_dynamic_steam_large_b_node_1_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
-def_train_wheels_dynamic_steam_mid_name		Train Wheel Assembly Steam Medium A	列車の車輪 (蒸気, 中A)
+def_train_wheels_dynamic_steam_large_b_node_2_label		Wheel Release	脱線
+def_train_wheels_dynamic_steam_large_b_node_2_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
+def_train_wheels_dynamic_steam_mid_name		Train Wheel Assembly Steam Medium A	列車の車輪 (蒸気型, 中A)
 def_train_wheels_dynamic_steam_mid_desc		Attaches to rail lines. Connect to a train wheel drive piston or another steam train assembly.	鉄道のレールに沿って回転します. 列車の蒸気ピストンや他の蒸気駆動の列車の車輪と接続して使用します.
 def_train_wheels_dynamic_steam_mid_s_desc		Steam powered train wheel assembly.	蒸気機関で動作する列車の車輪です.
 def_train_wheels_dynamic_steam_mid_node_0_label		Brakes	ブレーキ
 def_train_wheels_dynamic_steam_mid_node_0_desc		Number input to set the level of braking applied to the wheels.	車輪にブレーキをかける割合を0から1の範囲で入力します.
 def_train_wheels_dynamic_steam_mid_node_1_label		Wheel Slip	空転
 def_train_wheels_dynamic_steam_mid_node_1_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
-def_train_wheels_dynamic_steam_mid_b_name		Train Wheel Assembly Steam Medium B	列車の車輪 (蒸気, 中B)
+def_train_wheels_dynamic_steam_mid_node_2_label		Wheel Release	脱線
+def_train_wheels_dynamic_steam_mid_node_2_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
+def_train_wheels_dynamic_steam_mid_b_name		Train Wheel Assembly Steam Medium B	列車の車輪 (蒸気型, 中B)
 def_train_wheels_dynamic_steam_mid_b_desc		Attaches to rail lines. Connect to a train wheel drive piston or another steam train assembly.	鉄道のレールに沿って回転します. 列車の蒸気ピストンや他の蒸気駆動の列車の車輪と接続して使用します.
 def_train_wheels_dynamic_steam_mid_b_s_desc		Steam powered train wheel assembly.	蒸気機関で動作する列車の車輪です.
 def_train_wheels_dynamic_steam_mid_b_node_0_label		Brakes	ブレーキ
 def_train_wheels_dynamic_steam_mid_b_node_0_desc		Number input to set the level of braking applied to the wheels.	車輪にブレーキをかける割合を0から1の範囲で入力します.
 def_train_wheels_dynamic_steam_mid_b_node_1_label		Wheel Slip	空転
 def_train_wheels_dynamic_steam_mid_b_node_1_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
-def_train_wheels_dynamic_steam_small_name		Train Wheel Assembly Steam Small A	列車の車輪 (蒸気, 小A)
+def_train_wheels_dynamic_steam_mid_b_node_2_label		Wheel Release	脱線
+def_train_wheels_dynamic_steam_mid_b_node_2_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
+def_train_wheels_dynamic_steam_small_name		Train Wheel Assembly Steam Small A	列車の車輪 (蒸気型, 小A)
 def_train_wheels_dynamic_steam_small_desc		Attaches to rail lines. Connect to a train wheel drive piston or another steam train assembly.	鉄道のレールに沿って回転します. 列車の蒸気ピストンや他の蒸気駆動の列車の車輪と接続して使用します.
 def_train_wheels_dynamic_steam_small_s_desc		Steam powered train wheel assembly.	蒸気機関で動作する列車の車輪です.
 def_train_wheels_dynamic_steam_small_node_0_label		Brakes	ブレーキ
 def_train_wheels_dynamic_steam_small_node_0_desc		Number input to set the level of braking applied to the wheels.	車輪にブレーキをかける割合を0から1の範囲で入力します.
 def_train_wheels_dynamic_steam_small_node_1_label		Wheel Slip	空転
 def_train_wheels_dynamic_steam_small_node_1_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
-def_train_wheels_dynamic_steam_small_b_name		Train Wheel Assembly Steam Small B	列車の車輪 (蒸気, 小B)
+def_train_wheels_dynamic_steam_small_node_2_label		Wheel Release	脱線
+def_train_wheels_dynamic_steam_small_node_2_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
+def_train_wheels_dynamic_steam_small_b_name		Train Wheel Assembly Steam Small B	列車の車輪 (蒸気型, 小B)
 def_train_wheels_dynamic_steam_small_b_desc		Attaches to rail lines. Connect to a train wheel drive piston or another steam train assembly.	鉄道のレールに沿って回転します. 列車の蒸気ピストンや他の蒸気駆動の列車の車輪と接続して使用します.
 def_train_wheels_dynamic_steam_small_b_s_desc		Steam powered train wheel assembly.	蒸気機関で動作する列車の車輪です.
 def_train_wheels_dynamic_steam_small_b_node_0_label		Brakes	ブレーキ
 def_train_wheels_dynamic_steam_small_b_node_0_desc		Number input to set the level of braking applied to the wheels.	車輪にブレーキをかける割合を0から1の範囲で入力します.
 def_train_wheels_dynamic_steam_small_b_node_1_label		Wheel Slip	空転
 def_train_wheels_dynamic_steam_small_b_node_1_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
+def_train_wheels_dynamic_steam_small_b_node_2_label		Wheel Release	脱線
+def_train_wheels_dynamic_steam_small_b_node_2_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
 def_train_wheels_dynamic_steam_small_basic_name		Train Wheel Assembly Small	列車の車輪 (小)
 def_train_wheels_dynamic_steam_small_basic_desc		Attaches to rail lines.	鉄道のレールに沿って回転します.
 def_train_wheels_dynamic_steam_small_basic_s_desc		Train wheel assembly.	列車を作成する時に使用する台車です.
@@ -7706,6 +7740,8 @@ def_train_wheels_dynamic_steam_small_basic_node_1_label		RPS	動力
 def_train_wheels_dynamic_steam_small_basic_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	エンジンからの動力を受け取ります.
 def_train_wheels_dynamic_steam_small_basic_node_2_label		Wheel Slip	空転
 def_train_wheels_dynamic_steam_small_basic_node_2_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
+def_train_wheels_dynamic_steam_small_basic_node_3_label		Wheel Release	脱線
+def_train_wheels_dynamic_steam_small_basic_node_3_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
 def_train_wheels_dynamic_x1_name		Train Wheel Assembly x1	列車の車輪 (1連)
 def_train_wheels_dynamic_x1_desc		Attaches to rail lines.	鉄道のレールに沿って回転します.
 def_train_wheels_dynamic_x1_s_desc		Train wheel assembly.	列車を作成する時に使用する台車です.
@@ -7715,6 +7751,8 @@ def_train_wheels_dynamic_x1_node_1_label		RPS	動力
 def_train_wheels_dynamic_x1_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	エンジンからの動力を受け取ります.
 def_train_wheels_dynamic_x1_node_2_label		Wheel Slip	空転
 def_train_wheels_dynamic_x1_node_2_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
+def_train_wheels_dynamic_x1_node_3_label		Wheel Release	脱線
+def_train_wheels_dynamic_x1_node_3_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
 def_train_wheels_dynamic_x1_small_name		Train Wheel Assembly x1 Small	列車の車輪 (1連, 小)
 def_train_wheels_dynamic_x1_small_desc		Attaches to rail lines.	鉄道のレールに沿って回転します.
 def_train_wheels_dynamic_x1_small_s_desc		Train wheel assembly.	列車を作成する時に使用する台車です.
@@ -7724,6 +7762,8 @@ def_train_wheels_dynamic_x1_small_node_1_label		RPS	動力
 def_train_wheels_dynamic_x1_small_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	エンジンからの動力を受け取ります.
 def_train_wheels_dynamic_x1_small_node_2_label		Wheel Slip	空転
 def_train_wheels_dynamic_x1_small_node_2_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
+def_train_wheels_dynamic_x1_small_node_3_label		Wheel Release	脱線
+def_train_wheels_dynamic_x1_small_node_3_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
 def_train_wheels_dynamic_x2_name		Train Wheel Assembly x2	列車の車輪 (2連)
 def_train_wheels_dynamic_x2_desc		Attaches to rail lines.	鉄道のレールに沿って回転します.
 def_train_wheels_dynamic_x2_s_desc		Train wheel assembly.	列車を作成する時に使用する台車です.
@@ -7733,6 +7773,8 @@ def_train_wheels_dynamic_x2_node_1_label		RPS	動力
 def_train_wheels_dynamic_x2_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	エンジンからの動力を受け取ります.
 def_train_wheels_dynamic_x2_node_2_label		Wheel Slip	空転
 def_train_wheels_dynamic_x2_node_2_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
+def_train_wheels_dynamic_x2_node_3_label		Wheel Release	脱線
+def_train_wheels_dynamic_x2_node_3_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
 def_train_wheels_dynamic_x3_name		Train Wheel Assembly x3	列車の車輪 (3連)
 def_train_wheels_dynamic_x3_desc		Attaches to rail lines.	鉄道のレールに沿って回転します.
 def_train_wheels_dynamic_x3_s_desc		Train wheel assembly.	列車を作成する時に使用する台車です.
@@ -7742,6 +7784,8 @@ def_train_wheels_dynamic_x3_node_1_label		RPS	動力
 def_train_wheels_dynamic_x3_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	エンジンからの動力を受け取ります.
 def_train_wheels_dynamic_x3_node_2_label		Wheel Slip	空転
 def_train_wheels_dynamic_x3_node_2_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
+def_train_wheels_dynamic_x3_node_3_label		Wheel Release	脱線
+def_train_wheels_dynamic_x3_node_3_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
 def_train_wheels_piston_name		Train Wheel Drive Piston Small	列車の蒸気ピストン (小)
 def_train_wheels_piston_desc		Attach to the front of a group of train-wheel assemblies to generate torque for them via mechanical steam power. Activate the reverser to flip the internal valves and the direction of travel.	蒸気駆動の車輪と隣接させることで, 蒸気の力で車輪を駆動させます. 内蔵の反転装置を作動させると進行方向と逆方向に移動できます.
 def_train_wheels_piston_s_desc		Steam powered train piston assembly.	蒸気駆動の列車の車輪を駆動させる蒸気ピストンです.
