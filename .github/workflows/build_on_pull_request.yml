@@ -16,7 +16,7 @@ jobs:
       event_data: ${{ steps.output_event_data.outputs.event_data }}
     steps:
       - name: Download artifact
-        uses: dawidd6/action-download-artifact@v9
+        uses: dawidd6/action-download-artifact@v10
         with:
           workflow: build_on_pull_request_trigger.yml
           name: event_data
@@ -43,11 +43,11 @@ jobs:
       review_data: ${{ steps.output_review.outputs.review_data }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v4.2.2
         with:
           ref: ${{ fromJSON(needs.download_data.outputs.event_data).pull_request.head.sha }}
       - name: Setup Node.js
-        uses: actions/setup-node@v4.0.2
+        uses: actions/setup-node@v4.4.0
         with:
           node-version: 20.12.0
           cache: npm

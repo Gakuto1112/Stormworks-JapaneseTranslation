@@ -21,11 +21,11 @@ jobs:
       run_id: ${{ steps.output_run_id.outputs.run_id }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v4.2.2
         with:
           ref: ${{ inputs.ref }}
       - name: Setup Node.js
-        uses: actions/setup-node@v4.0.2
+        uses: actions/setup-node@v4.4.0
         with:
           node-version: 20.12.0
           cache: npm
@@ -43,7 +43,7 @@ jobs:
       - name: Disable problem matcher
         run: echo '::remove-matcher owner=Build::'
       - name: Upload artifact
-        uses: actions/upload-artifact@v4.3.1
+        uses: actions/upload-artifact@v4.6.2
         with:
           name: japanese
           path: ./out/
