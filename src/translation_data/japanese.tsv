@@ -6807,7 +6807,7 @@ def_seat_node_15_label		Headset Audio	ヘッドセット音声信号出力
 def_seat_node_15_desc			ヘッドセットが選択されているときに, 座っているプレイヤーからの音声を出力します.
 def_seat_node_16_label		Headset Audio	ヘッドセット音声信号入力
 def_seat_node_16_desc			ヘッドセットが選択されているときに, 座っているプレイヤーへ音声を再生します.
-def_seat_node_17_label		Headset Video	ヘッドセット映像信号出力
+def_seat_node_17_label		Headset Video	ヘッドセット映像信号入力
 def_seat_node_17_desc		Displays video UI overlay on a helmet mounted display.	ヘッドセットが選択されているときに, 座っているプレイヤーへ映像を直接表示します.
 def_seat_bed_name		Bed	ベッド
 def_seat_bed_desc		You can get in and out of the bed by interacting with it using [$[action_use_seat]]. You can place a rescued survivor in any bed by using [$[action_use_seat]] while carrying them.	[$[action_use_seat]] を押して寝たり起きたりします. 意識がある人を担いでいる時に [$[action_use_seat]] を押してその人を寝かせます.
@@ -6851,7 +6851,7 @@ def_seat_compact_node_15_label		Headset Audio	ヘッドセット音声信号出�
 def_seat_compact_node_15_desc			ヘッドセットが選択されているときに, 座っているプレイヤーからの音声を出力します.
 def_seat_compact_node_16_label		Headset Audio	ヘッドセット音声信号入力
 def_seat_compact_node_16_desc			ヘッドセットが選択されているときに, 座っているプレイヤーへ音声を再生します.
-def_seat_compact_node_17_label		Headset Video	ヘッドセット映像信号出力
+def_seat_compact_node_17_label		Headset Video	ヘッドセット映像信号入力
 def_seat_compact_node_17_desc		Displays video UI overlay on a helmet mounted display.	ヘッドセットが選択されているときに, 座っているプレイヤーへ映像を直接表示します.
 def_seat_handle_name		Control Handle	操縦ハンドル
 def_seat_handle_desc		You can get in and out of the position by interacting with it using [$[action_use_seat]].	キーボードなどで-1から1の範囲を操作できる数値信号を4個, オン/オフ信号を7個提供し, 使用している人の視点方向も出力されます. [$[action_use_seat]] を使用したり使用をやめたりします. キーの挙動などはプロパティウィンドウから設定できます.
@@ -6890,7 +6890,7 @@ def_seat_handle_node_15_label		Headset Audio	ヘッドセット音声信号出�
 def_seat_handle_node_15_desc			ヘッドセットが選択されているときに, 座っているプレイヤーからの音声を出力します.
 def_seat_handle_node_16_label		Headset Audio	ヘッドセット音声信号入力
 def_seat_handle_node_16_desc			ヘッドセットが選択されているときに, 座っているプレイヤーへ音声を再生します.
-def_seat_handle_node_17_label		Headset Video	ヘッドセット映像信号出力
+def_seat_handle_node_17_label		Headset Video	ヘッドセット映像信号入力
 def_seat_handle_node_17_desc		Displays video UI overlay on a helmet mounted display.	ヘッドセットが選択されているときに, 座っているプレイヤーへ映像を直接表示します.
 def_seat_harness_name		Harness	ハーネス
 def_seat_harness_desc		You can get in and out of the harness by interacting with it using [$[action_use_seat]]. You can place a rescued survivor in any harness by using [$[action_use_seat]] while carrying them.	キーボードなどで操作できるオン/オフ信号を7個提供します. [$[action_use_seat]] を押して乗ったり降りたりします. 意識がある人を担いでいる時に [$[action_use_seat]] を押してその人を乗せます.
@@ -6950,7 +6950,7 @@ def_seat_helm_node_15_label		Headset Audio	ヘッドセット音声信号出力
 def_seat_helm_node_15_desc			ヘッドセットが選択されているときに, 使用しているプレイヤーからの音声を出力します.
 def_seat_helm_node_16_label		Headset Audio	ヘッドセット音声信号入力
 def_seat_helm_node_16_desc			ヘッドセットが選択されているときに, 使用しているプレイヤーへ音声を再生します.
-def_seat_helm_node_17_label		Headset Video	ヘッドセット映像信号出力
+def_seat_helm_node_17_label		Headset Video	ヘッドセット映像信号入力
 def_seat_helm_node_17_desc		Displays video UI overlay on a helmet mounted display.	ヘッドセットが選択されているときに, 座っているプレイヤーへ映像を直接表示します.
 def_seat_hotas_name		Pilot Seat (HOTAS)	パイロット席 (HOTAS)
 def_seat_hotas_desc		It provides 10 number outputs that produce a standard value ranging from -1 to 1, and 48 on/off outputs. You can get in and out of the pilot seat by interacting with it using [$[action_use_seat]]. Designed for use with HOTAS controllers.	キーボードなどで-1から1の範囲を操作できる数値信号を8個, オン/オフ信号を49個提供し, 座っている人の視点方向も出力されます. [$[action_use_seat]] を押して座ったり立ったりします. HOTASとはパイロットが操縦桿から手を離さずにレーダーや兵器の操作ができるシステムのことです. より多くの軸やボタンを使用するには多くのボタンを備えるゲームパッドが必要になります. キーの挙動などはプロパティウィンドウから設定できます.
@@ -7081,7 +7081,7 @@ def_seat_hotas_node_61_label		Headset Audio	ヘッドセット音声信号出力
 def_seat_hotas_node_61_desc			ヘッドセットが選択されているときに, 使用しているプレイヤーからの音声を出力します.
 def_seat_hotas_node_62_label		Headset Audio	ヘッドセット音声信号入力
 def_seat_hotas_node_62_desc			ヘッドセットが選択されているときに, 使用しているプレイヤーへ音声を再生します.
-def_seat_hotas_node_63_label		Headset Video	ヘッドセット映像信号出力
+def_seat_hotas_node_63_label		Headset Video	ヘッドセット映像信号入力
 def_seat_hotas_node_63_desc		Displays video UI overlay on a helmet mounted display.	ヘッドセットが選択されているときに, 座っているプレイヤーへ映像を直接表示します.
 def_seat_medical_name		Medical Bed	医療用ベッド
 def_seat_medical_desc		You can get in and out of the medical bed by interacting with it using [$[action_use_seat]]. You can place a rescued survivor in any medical bed by using [$[action_use_seat]] while carrying them.	[$[action_use_seat]] を押して寝たり起きたりします. 意識がある人を担いでいる時に [$[action_use_seat]] を押してその人を寝かせます. 医療用ベッドに寝ている人は体力の回復が早くなります. 医療用ベッドでは時間の早送りができません.
@@ -7135,7 +7135,7 @@ def_seat_racing_node_15_label		Headset Audio	ヘッドセット音声信号出�
 def_seat_racing_node_15_desc			ヘッドセットが選択されているときに, 座っているプレイヤーからの音声を出力します.
 def_seat_racing_node_16_label		Headset Audio	ヘッドセット音声信号入力
 def_seat_racing_node_16_desc			ヘッドセットが選択されているときに, 座っているプレイヤーへ音声を再生します.
-def_seat_racing_node_17_label		Headset Video	ヘッドセット映像信号出力
+def_seat_racing_node_17_label		Headset Video	ヘッドセット映像信号入力
 def_seat_racing_node_17_desc		Displays video UI overlay on a helmet mounted display.	ヘッドセットが選択されているときに, 座っているプレイヤーへ映像を直接表示します.
 def_seat_saddle_name		Saddle Seat	サドル型運転席
 def_seat_saddle_desc		You can get in and out of the seat by interacting with it using [$[action_use_seat]]. You can place a rescued survivor in any seat by using [$[action_use_seat]] while carrying them.	[$[action_use_seat]] を押して座ったり立ったりします. 意識がある人を担いでいる時に [$[action_use_seat]] を押すとその人を座らせます.
@@ -7174,7 +7174,7 @@ def_seat_saddle_node_15_label		Headset Audio	ヘッドセット音声信号出�
 def_seat_saddle_node_15_desc			ヘッドセットが選択されているときに, 座っているプレイヤーからの音声を出力します.
 def_seat_saddle_node_16_label		Headset Audio	ヘッドセット音声信号入力
 def_seat_saddle_node_16_desc			ヘッドセットが選択されているときに, 座っているプレイヤーへ音声を再生します.
-def_seat_saddle_node_17_label		Headset Video	ヘッドセット映像信号出力
+def_seat_saddle_node_17_label		Headset Video	ヘッドセット映像信号入力
 def_seat_saddle_node_17_desc		Displays video UI overlay on a helmet mounted display.	ヘッドセットが選択されているときに, 座っているプレイヤーへ映像を直接表示します.
 def_seat_saddle_passenger_name		Saddle Passenger Seat	サドル型座席
 def_seat_saddle_passenger_desc		You can get in and out of the seat by interacting with it using [$[action_use_seat]]. You can place a rescued survivor in any seat by using [$[action_use_seat]] while carrying them.	[$[action_use_seat]] を押して座ったり立ったりします. 意識がある人を担いでいる時に [$[action_use_seat]] を押すとその人を座らせます.
@@ -7218,7 +7218,7 @@ def_seat_space_node_15_label		Headset Audio	ヘッドセット音声信号出力
 def_seat_space_node_15_desc			ヘッドセットが選択されているときに, 使用しているプレイヤーからの音声を出力します.
 def_seat_space_node_16_label		Headset Audio	ヘッドセット音声信号入力
 def_seat_space_node_16_desc			ヘッドセットが選択されているときに, 使用しているプレイヤーへ音声を再生します.
-def_seat_space_node_17_label		Headset Video	ヘッドセット映像信号出力
+def_seat_space_node_17_label		Headset Video	ヘッドセット映像信号入力
 def_seat_space_node_17_desc		Displays video UI overlay on a helmet mounted display.	ヘッドセットが選択されているときに, 座っているプレイヤーへ映像を直接表示します.
 def_seat_space_node_18_label		Fluid In	流体注入
 def_seat_space_node_18_desc			座席の使用中に使用する呼吸用の酸素を供給します.
