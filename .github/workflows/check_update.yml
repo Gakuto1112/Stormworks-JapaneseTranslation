@@ -3,6 +3,7 @@ name: Check game updates
 on:
   schedule:
     - cron: '0 0 * * 4'
+  workflow_dispatch:
 
 jobs:
   check:
