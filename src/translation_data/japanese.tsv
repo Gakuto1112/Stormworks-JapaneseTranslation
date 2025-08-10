@@ -1134,7 +1134,7 @@ id	description	en	local
 		Zombie	ゾンビ
 		Skeleton	ガイコツ
 		CUSTOM OPTIONS	ゲーム設定
-		Override Time	時間設定を上書き
+		Override Time	時間設定の上書き
 		Clean All Vehicles	全ての乗り物を除去
 		Vehicle Cleanup	全ての乗り物の削除
 		Respawning	リスポーン
@@ -2218,7 +2218,7 @@ id	description	en	local
 		Industrial Equipment	工業装備
 		You were disconnected.	切断されました.
 		Noclip	すり抜け
-		Override Wind Direction	風向を上書き
+		Override Wind Direction	風向の上書き
 		LOCK SETTINGS	設定をロック
 		Air	空気
 		Carbon Dioxide	二酸化炭素
