@@ -2678,7 +2678,7 @@ id	description	en	local
 		MCRO	MCRO
 		LOCKI	LOCKI
 		HOPE	HOPE
-		HANDAO	HANDAO
+		BANDAO	BANDAO
 		NEVERGREEN	NEVERGREEN
 		CLAM OIL	CLAM OIL
 		SPAM	SPAM
@@ -4337,7 +4337,7 @@ def_gun_belt_receiver_l_node_0_desc		Returns true if the belt contains a shell.	
 def_gun_belt_receiver_l_node_1_label		Connected	接続済み
 def_gun_belt_receiver_l_node_1_desc		Returns true when two nearby receivers are aligned, and can transfer ammo between them.	他のコネクターと接続されるとオン信号が出力されます.
 def_gun_belt_receiver_xl_name		Artillery Cannon Belt (Connector)	大砲の弾帯 (中, コネクター)
-def_gun_belt_receiver_xl_desc		Cannon ammo belts can store and transfer ammo shells. Connector belts allow ammo transfers between vehicles.Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 乗り物間での弾の輸送ができます. 砲弾の種類はプロパティウィンドウから設定できます.
+def_gun_belt_receiver_xl_desc		Cannon ammo belts can store and transfer ammo shells. Connector belts allow ammo transfers between vehicles. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 乗り物間での弾の輸送ができます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_receiver_xl_s_desc		An artillery cannon ammo belt.	中型の大砲の弾帯の部品です.
 def_gun_belt_receiver_xl_node_0_label		Contains Ammo	弾薬装填
 def_gun_belt_receiver_xl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
@@ -4812,7 +4812,7 @@ def_inventory_equipment_flaregun_node_0_label		Electric	電力
 def_inventory_equipment_flaregun_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_flaregun_ammo_name		Equipment inventory (Flaregun Ammo)	保管庫 (小, 照明銃の弾薬箱)
 def_inventory_equipment_flaregun_ammo_desc		Press [$[action_equipment_use]] to reload an equipped flaregun.	[$[action_equipment_use]] を押してインベントリの照明銃に弾を補充します.
-def_inventory_equipment_flaregun_ammo_s_desc		A small equipment storage unit containing a box flaregun ammo.	照明銃の弾薬箱が保管されている小型の保管庫です.
+def_inventory_equipment_flaregun_ammo_s_desc		A small equipment storage unit containing a box of flaregun ammo.	照明銃の弾薬箱が保管されている小型の保管庫です.
 def_inventory_equipment_flaregun_ammo_node_0_label		Electric	電力
 def_inventory_equipment_flaregun_ammo_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_flashlight_name		Equipment inventory (Flashlight)	保管庫 (小, 懐中電灯)
@@ -4861,7 +4861,7 @@ def_inventory_equipment_pistol_ammo_s_desc		A small equipment storage unit conta
 def_inventory_equipment_pistol_ammo_node_0_label		Electric	電力
 def_inventory_equipment_pistol_ammo_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_radio_name		Equipment inventory (Radio)	保管庫 (小, トランシーバー)
-def_inventory_equipment_radio_desc		Hold [$[action_equipment_use]] transmit voice audio. Press [$[action_equipment_secondary]] to cycle between frequencies 0~8, or turn the radio off. When a frequncy is selected, the radio will transmit and receive voice audio on that frequency only. Requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. (Max Effective Range : 500m)	[$[action_equipment_use]] を押して発信します. [$[action_equipment_secondary]] を押して0から8チャンネルの範囲でチャンネルを切り替えます. 設定されたチャンネルでのみ発信/受信ができます. 範囲は500メートルです. 使用するには充電が必要であり, 使用後は通電している保管庫で充電する必要があります.
+def_inventory_equipment_radio_desc		Hold [$[action_equipment_use]] transmit voice audio. Press [$[action_equipment_secondary]] to cycle between frequencies 0~8, or turn the radio off. When a frequency is selected, the radio will transmit and receive voice audio on that frequency only. Requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. (Max Effective Range : 500m)	[$[action_equipment_use]] を押して発信します. [$[action_equipment_secondary]] を押して0から8チャンネルの範囲でチャンネルを切り替えます. 設定されたチャンネルでのみ発信/受信ができます. 範囲は500メートルです. 使用するには充電が必要であり, 使用後は通電している保管庫で充電する必要があります.
 def_inventory_equipment_radio_s_desc		A small equipment storage unit containing a handheld radio.	トランシーバーが保管されている小型の保管庫です.
 def_inventory_equipment_radio_node_0_label		Electric	電力
 def_inventory_equipment_radio_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
@@ -6021,6 +6021,8 @@ def_radar_advanced_node_2_label		Radar Data	検出した物体の情報
 def_radar_advanced_node_2_desc		Outputs data for up to 8 targets. On/Off 1-8 : Target 1 Found, Target 2 Found, etc... Values 1-32 : Target 1 Distance, Target 1 Azimuth Angle, Target 1 Elevation Angle, Target 1 Time Since Detection, Target 2 Distance, Target 2 Azimuth Angle, Target 2 Elevation Angle, Target 2 Time Since Detection, etc...	検出した物体の情報を最大8個出力します. オン/オフチャンネル 1-8: 何かを検出している間はオン信号を出力します. 検出している物体の数だけ出力されます. 数値チャンネル 1-4: 1つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 5-8: 2つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 以降, 8つ目の物体まで続きます.
 def_radar_advanced_node_3_label		Radar Rotation	向き
 def_radar_advanced_node_3_desc		Current radar rotation from forward in turns.	レーダーの方向を回転単位で出力します.
+def_radar_advanced_node_4_label		Gimbal Input	ジンバル入力
+def_radar_advanced_node_4_desc		Inputs rotation data for radar in manual mode. Value 1: The yaw angle of the radar measured in turns, Value 2: The pitch angle of the radar measured in turns from -0.125 to 0.125.	レーダーの手動制御時の回転情報を入力します. 数値チャンネル 1: 回転単位でのヨー, 2: 回転単位でのピッチ (-0.125 - 0.125) 
 def_radar_advanced_awacs_name		Radar (AWACS)	レーダー (AWACS)
 def_radar_advanced_awacs_desc		This sensor outputs the distance and relative angle to a detected object within its range and field of view using radio waves. Sensitivity is based on FOV, target size, and distance.	電波を利用して検出した物体の距離と相対的な角度を出力します. AWACSとは, 敵航空機を早期に探知して, 味方の指揮を取るためのレーダーを搭載した航空機のことで, これはそのレーダーです. 精度は視野角, 対象の大きさ, 対象との距離に依存します.
 def_radar_advanced_awacs_s_desc		A long range radar that returns information about a detected object within its view.	検出した物体の情報を出力する長距離のレーダーです.
@@ -6032,6 +6034,8 @@ def_radar_advanced_awacs_node_2_label		Radar Data	検出した物体の情報
 def_radar_advanced_awacs_node_2_desc		Outputs data for up to 8 targets. On/Off 1-8 : Target 1 Found, Target 2 Found, etc... Values 1-32 : Target 1 Distance, Target 1 Azimuth Angle, Target 1 Elevation Angle, Target 1 Time Since Detection, Target 2 Distance, Target 2 Azimuth Angle, Target 2 Elevation Angle, Target 2 Time Since Detection, etc...	検出した物体の情報を最大8個出力します. オン/オフチャンネル 1-8: 何かを検出している間はオン信号を出力します. 検出している物体の数だけ出力されます. 数値チャンネル 1-4: 1つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 5-8: 2つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 以降, 8つ目の物体まで続きます.
 def_radar_advanced_awacs_node_3_label		Radar Rotation	向き
 def_radar_advanced_awacs_node_3_desc		Current radar rotation from forward in turns.	レーダーの方向を回転単位で出力します.
+def_radar_advanced_awacs_node_4_label		Gimbal Input	ジンバル入力
+def_radar_advanced_awacs_node_4_desc		Inputs rotation data for radar in manual mode. Value 1: The yaw angle of the radar measured in turns, Value 2: The pitch angle of the radar measured in turns from -0.125 to 0.125.	レーダーの手動制御時の回転情報を入力します. 数値チャンネル 1: 回転単位でのヨー, 2: 回転単位でのピッチ (-0.125 - 0.125)
 def_radar_advanced_dish_name		Radar (Dish)	レーダー (皿)
 def_radar_advanced_dish_desc		This sensor outputs the distance and relative angle to a detected object within its range and field of view using radio waves. Sensitivity is based on FOV, target size, and distance.	電波を利用して検出した物体の距離と相対的な角度を出力します. 精度は視野角, 対象の大きさ, 対象との距離に依存します.
 def_radar_advanced_dish_s_desc		A radar that returns information about a detected object within its view.	検出した物体の情報を出力するレーダーです.
@@ -6043,6 +6047,8 @@ def_radar_advanced_dish_node_2_label		Radar Data	検出した物体の情報
 def_radar_advanced_dish_node_2_desc		Outputs data for up to 8 targets. On/Off 1-8 : Target 1 Found, Target 2 Found, etc... Values 1-32 : Target 1 Distance, Target 1 Azimuth Angle, Target 1 Elevation Angle, Target 1 Time Since Detection, Target 2 Distance, Target 2 Azimuth Angle, Target 2 Elevation Angle, Target 2 Time Since Detection, etc...	検出した物体の情報を最大8個出力します. オン/オフチャンネル 1-8: 何かを検出している間はオン信号を出力します. 検出している物体の数だけ出力されます. 数値チャンネル 1-4: 1つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 5-8: 2つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 以降, 8つ目の物体まで続きます.
 def_radar_advanced_dish_node_3_label		Radar Rotation	向き
 def_radar_advanced_dish_node_3_desc		Current radar rotation from forward in turns.	レーダーの方向を回転単位で出力します.
+def_radar_advanced_dish_node_4_label		Gimbal Input	ジンバル入力
+def_radar_advanced_dish_node_4_desc		Inputs rotation data for radar in manual mode. Value 1: The yaw angle of the radar measured in turns, Value 2: The pitch angle of the radar measured in turns from -0.125 to 0.125.	レーダーの手動制御時の回転情報を入力します. 数値チャンネル 1: 回転単位でのヨー, 2: 回転単位でのピッチ (-0.125 - 0.125)
 def_radar_advanced_missile_name		Radar (Missile)	レーダー (ミサイル)
 def_radar_advanced_missile_desc		This sensor outputs the distance and relative angle to a detected object within its range and field of view using radio waves. This sensor is designed for missiles and its radar acts along the Z axis. Sensitivity is based on FOV, target size, and distance.	電波を利用して検出した物体の距離と相対的な角度を出力します. このレーダーはミサイルへの搭載を想定しており, レーダーはz軸方向に作用します. 精度は視野角, 対象の大きさ, 対象との距離に依存します.
 def_radar_advanced_missile_s_desc		A short range radar that returns information about a detected object within its view.	検出した物体の情報を出力する短距離のレーダーです.
@@ -6080,6 +6086,8 @@ def_radar_advanced_phalanx_node_2_label		Radar Data	検出した物体の情報
 def_radar_advanced_phalanx_node_2_desc		Outputs data for up to 8 targets. On/Off 1-8 : Target 1 Found, Target 2 Found, etc... Values 1-32 : Target 1 Distance, Target 1 Azimuth Angle, Target 1 Elevation Angle, Target 1 Time Since Detection, Target 2 Distance, Target 2 Azimuth Angle, Target 2 Elevation Angle, Target 2 Time Since Detection, etc...	検出した物体の情報を最大8個出力します. オン/オフチャンネル 1-8: 何かを検出している間はオン信号を出力します. 検出している物体の数だけ出力されます. 数値チャンネル 1-4: 1つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 5-8: 2つ目の物体の距離, 水平方向の角度, 垂直方向の角度, 検出からの経過時間を出力します. 以降, 8つ目の物体まで続きます.
 def_radar_advanced_phalanx_node_3_label		Radar Rotation	向き
 def_radar_advanced_phalanx_node_3_desc		Current radar rotation from forward in turns.	レーダーの方向を回転単位で出力します.
+def_radar_advanced_phalanx_node_4_label		Gimbal Input	ジンバル入力
+def_radar_advanced_phalanx_node_4_desc		Inputs rotation data for radar in manual mode. Value 1: The yaw angle of the radar measured in turns, Value 2: The pitch angle of the radar measured in turns from -0.125 to 0.125.	レーダーの手動制御時の回転情報を入力します. 数値チャンネル 1: 回転単位でのヨー, 2: 回転単位でのピッチ (-0.125 - 0.125)
 def_radar_detector_name		Radar Detector	レーダー検出器
 def_radar_detector_desc		This sensor outputs an On signal when it detects a radio wave.	レーダーの電波を検出するとオン信号を出力します.
 def_radar_detector_s_desc		A sensor that can detect radar waves.	レーダーの電波を検出する検出器です.
@@ -8309,6 +8317,11 @@ def_wheel_tank_1_desc		A drive wheel is required to rotate the connected track. 
 def_wheel_tank_1_s_desc		Small wheel for tracked vehicles.	履帯用の小型の車輪です.
 def_wheel_tank_1_node_0_label		Brake	ブレーキ
 def_wheel_tank_1_node_0_desc		Locks the wheel into place when receiving an on signal.	オン信号を受け取るとブレーキをかけます.
+def_wheel_tank_1_wide_name		Tank Wheel (Small/Wide)	履帯車輪 (小, 幅広)
+def_wheel_tank_1_wide_desc		A drive wheel is required to rotate the connected track. The wheel will form a track with other wheels of the same size and orientation that are placed in line and on the same body.	履帯を動かすには履帯駆動輪を組み込む必要があります. 乗り物のスポーン時に正しい位置にある同じ大きさの車輪同士に履帯が装着されます.
+def_wheel_tank_1_wide_s_desc		Widened small wheel for tracked vehicles.	幅が広い履帯用の小型の車輪です.
+def_wheel_tank_1_wide_node_0_label		Brake	ブレーキ
+def_wheel_tank_1_wide_node_0_desc		Locks the wheel into place when receiving an on signal.	オン信号を受け取るとブレーキをかけます.
 def_wheel_tank_5_name		Tank Wheel (Large)	履帯車輪 (大)
 def_wheel_tank_5_desc		A drive wheel is required to rotate the connected track. The wheel will form a track with other wheels of the same size and orientation that are placed in line and on the same body.	履帯を動かすには履帯駆動輪を組み込む必要があります. 乗り物のスポーン時に正しい位置にある同じ大きさの車輪同士に履帯が装着されます.
 def_wheel_tank_5_s_desc		Large wheel for tracked vehicles.	履帯用の大型の車輪です.
@@ -8331,6 +8344,13 @@ def_wheel_tank_drive_1_node_0_label		Brake	ブレーキ
 def_wheel_tank_drive_1_node_0_desc		Locks the wheel into place when receiving an on signal.	オン信号を受け取るとブレーキをかけます.
 def_wheel_tank_drive_1_node_1_label		RPS	動力
 def_wheel_tank_drive_1_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	エンジンからの動力を受け取ります.
+def_wheel_tank_drive_1_wide_name		Tank Drive Wheel (Small/Wide)	履帯駆動輪 (小, 幅広)
+def_wheel_tank_drive_1_wide_desc		The wheel will form a track with other wheels of the same size and orientation that are placed in line and on the same body.	乗り物のスポーン時に正しい位置にある同じ大きさの車輪同士に履帯が装着されます.
+def_wheel_tank_drive_1_wide_s_desc		Widened small drive wheel for tracked vehicles.	幅が広い履帯用の小型の駆動輪です.
+def_wheel_tank_drive_1_wide_node_0_label		Brake	ブレーキ
+def_wheel_tank_drive_1_wide_node_0_desc		Locks the wheel into place when receiving an on signal.	オン信号を受け取るとブレーキをかけます.
+def_wheel_tank_drive_1_wide_node_1_label		RPS	動力
+def_wheel_tank_drive_1_wide_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	エンジンからの動力を受け取ります.
 def_wheel_tank_drive_5_name		Tank Drive Wheel (Large)	履帯駆動輪 (大)
 def_wheel_tank_drive_5_desc		The wheel will form a track with other wheels of the same size and orientation that are placed in line and on the same body.	乗り物のスポーン時に正しい位置にある同じ大きさの車輪同士に履帯が装着されます.
 def_wheel_tank_drive_5_s_desc		Large drive wheel for tracked vehicles.	履帯用の大型の駆動輪です.
