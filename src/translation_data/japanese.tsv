@@ -4260,6 +4260,26 @@ def_gun_belt_corner_xxl_desc		Cannon ammo belts can store and transfer ammo shel
 def_gun_belt_corner_xxl_s_desc		A bertha cannon ammo belt.	大型の大砲の弾帯の部品です.
 def_gun_belt_corner_xxl_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_corner_xxl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
+def_gun_belt_flex_name		Autocannon Belt (Flexible)	機関砲の弾帯 (柔軟)
+def_gun_belt_flex_desc		Flexible belts can be connected together by rope nodes to transfer ammo. Autocannon belts can transfer all calibers of autocannon ammo.	柔軟型の弾帯はロープノードで接続することで弾薬を輸送できます. 機関砲の弾帯は全ての口径の機関砲の弾を輸送できます.
+def_gun_belt_flex_s_desc		An autocannon ammo belt.	機関砲の弾帯の部品です.
+def_gun_belt_flex_node_0_label		Ammo	弾薬
+def_gun_belt_flex_node_0_desc			弾薬の輸送ベルトを形成します.
+def_gun_belt_flex_l_name		Battle Cannon Belt (Flexible)	大砲の弾帯 (小, 柔軟)
+def_gun_belt_flex_l_desc		Flexible belts can be connected together by rope nodes to transfer ammo. Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.	柔軟型の弾帯はロープノードで接続することで弾薬を輸送できます. 大砲の弾帯は内部に砲弾を格納し, 輸送できます. 砲弾の種類はプロパティウィンドウから設定できます.
+def_gun_belt_flex_l_s_desc		A battle cannon ammo belt.	小型の大砲の弾帯の部品です.
+def_gun_belt_flex_l_node_0_label		Ammo	弾薬
+def_gun_belt_flex_l_node_0_desc			弾薬の輸送ベルトを形成します.
+def_gun_belt_flex_xl_name		Artillery Cannon Belt (Flexible)	大砲の弾帯 (中, 柔軟)
+def_gun_belt_flex_xl_desc		Flexible belts can be connected together by rope nodes to transfer ammo. Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.	柔軟型の弾帯はロープノードで接続することで弾薬を輸送できます. 大砲の弾帯は内部に砲弾を格納し, 輸送できます. 砲弾の種類はプロパティウィンドウから設定できます.
+def_gun_belt_flex_xl_s_desc		An artillery cannon ammo belt.	中型の大砲の弾帯の部品です.
+def_gun_belt_flex_xl_node_0_label		Ammo	弾薬
+def_gun_belt_flex_xl_node_0_desc			弾薬の輸送ベルトを形成します.
+def_gun_belt_flex_xxl_name		Bertha Cannon Belt (Flexible)	大砲の弾帯 (大, 柔軟)
+def_gun_belt_flex_xxl_desc		Flexible belts can be connected together by rope nodes to transfer ammo. Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window. Bertha shells are too large to be moved by hand.	柔軟型の弾帯はロープノードで接続することで弾薬を輸送できます. 大砲の弾帯は内部に砲弾を格納し, 輸送できます. 大型の砲弾は大きすぎて手で持ち運ぶことはできません. 砲弾の種類はプロパティウィンドウから設定できます.
+def_gun_belt_flex_xxl_s_desc		A bertha cannon ammo belt.	大型の大砲の弾帯の部品です.
+def_gun_belt_flex_xxl_node_0_label		Ammo	弾薬
+def_gun_belt_flex_xxl_node_0_desc			弾薬の輸送ベルトを形成します.
 def_gun_belt_junction_name		Autocannon Belt (Junction)	機関砲の弾帯 (分岐)
 def_gun_belt_junction_desc		Autocannon belts can transfer all calibers of autocannon ammo. Junction belts redirect the path of ammo transfer.	機関砲の弾帯は全ての口径の機関砲の弾を輸送できます. この弾帯は弾を2方向に分岐します.
 def_gun_belt_junction_s_desc		An autocannon ammo belt.	機関砲の弾帯の部品です.
@@ -6372,6 +6392,8 @@ def_rope_hook_winch_huge_node_13_label		Fluid	流体
 def_rope_hook_winch_huge_node_13_desc		Fluid connection for the hose coil.	ホースで接続されている場合はホースを通して流体が自由に移動します. 流量には制限があります.
 def_rope_hook_winch_huge_node_14_label		Speed	巻き取り速度
 def_rope_hook_winch_huge_node_14_desc		The speed of the winch clamped to a relative range of -1 to 1.	ウィンチの巻き取り速度を-1から1の間で指定します.
+def_rope_hook_winch_huge_node_15_label		Detach Rope	ロープ取り外し
+def_rope_hook_winch_huge_node_15_desc			オン信号を受け取ると接続されているロープを外します.
 def_rope_hook_winch_large_name		Large Winch	ウィンチ (大)
 def_rope_hook_winch_large_desc		Draw a rope logic link between two Rope Nodes to form a cable. Can be extended and retracted.	ウィンチの本体と取り付け部を選択グリッドなどで別オブジェクトに分けた後, ウィンチの取り付け部のアンカーをロープノードで接続してください. ロープを巻く速度はプロパティウィンドウから設定できます.
 def_rope_hook_winch_large_s_desc		A mechanical winch that can transfer data/electric/fluid through an attached cable, with an extension length of 150m.	接続されるロープによって電力, 信号, 流体を伝達できるウィンチです. ロープ長さは150メートルです.
@@ -6405,6 +6427,8 @@ def_rope_hook_winch_large_node_13_label		Fluid	流体
 def_rope_hook_winch_large_node_13_desc		Fluid connection for the hose coil.	ホースで接続されている場合はホースを通して流体が自由に移動します. 流量には制限があります.
 def_rope_hook_winch_large_node_14_label		Speed	巻き取り速度
 def_rope_hook_winch_large_node_14_desc		The speed of the winch clamped to a relative range of -1 to 1.	ウィンチの巻き取り速度を-1から1の間で指定します.
+def_rope_hook_winch_large_node_15_label		Detach Rope	ロープ取り外し
+def_rope_hook_winch_large_node_15_desc			オン信号を受け取ると接続されているロープを外します.
 def_rope_hook_winch_small_name		Small Winch	ウィンチ (小)
 def_rope_hook_winch_small_desc		Draw a rope logic link between two Rope Nodes to form a cable. Can be extended and retracted.	ウィンチの本体と取り付け部を選択グリッドなどで別オブジェクトに分けた後, ウィンチの取り付け部のアンカーをロープノードで接続してください. ロープを巻く速度はプロパティウィンドウから設定できます.
 def_rope_hook_winch_small_s_desc		A mechanical winch that can transfer electric/fluid through an attached cable, with an extension length of 10m.	接続されるロープによって電力, 流体を伝達できるウィンチです. ロープ長さは10メートルです.
