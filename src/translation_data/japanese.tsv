@@ -4208,83 +4208,83 @@ def_gps_sensor_node_2_desc		Electrical power connection.	電力接続
 def_gun_belt_corner_name		Autocannon Belt (Corner)	機関砲の弾帯 (角長辺)
 def_gun_belt_corner_desc		Autocannon belts can transfer all calibers of autocannon ammo.	機関砲の弾帯は全ての口径の機関砲の弾を輸送できます.
 def_gun_belt_corner_s_desc		An autocannon ammo belt.	機関砲の弾帯の部品です.
-def_gun_belt_corner_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_corner_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_corner_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_corner_flat_name		Autocannon Belt (Corner Flat)	機関砲の弾帯 (角短辺)
 def_gun_belt_corner_flat_desc		Autocannon belts can transfer all calibers of autocannon ammo.	機関砲の弾帯は全ての口径の機関砲の弾を輸送できます.
 def_gun_belt_corner_flat_s_desc		An autocannon ammo belt.	機関砲の弾帯の部品です.
-def_gun_belt_corner_flat_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_corner_flat_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_corner_flat_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_corner_flat_l_name		Battle Cannon Belt (Corner Inner)	大砲の弾帯 (小, 角内向き)
 def_gun_belt_corner_flat_l_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_corner_flat_l_s_desc		A battle cannon ammo belt.	小型の大砲の弾帯の部品です.
-def_gun_belt_corner_flat_l_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_corner_flat_l_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_corner_flat_l_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_corner_flat_reverse_l_name		Battle Cannon Belt (Corner Outer)	大砲の弾帯 (小, 角外向き)
 def_gun_belt_corner_flat_reverse_l_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_corner_flat_reverse_l_s_desc		A battle cannon ammo belt.	小型の大砲の弾帯の部品です.
-def_gun_belt_corner_flat_reverse_l_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_corner_flat_reverse_l_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_corner_flat_reverse_l_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_corner_flat_reverse_xl_name		Artillery Cannon Belt (Corner Outer)	大砲の弾帯 (中, 角外向き)
 def_gun_belt_corner_flat_reverse_xl_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_corner_flat_reverse_xl_s_desc		An artillery cannon ammo belt.	中型の大砲の弾帯の部品です.
-def_gun_belt_corner_flat_reverse_xl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_corner_flat_reverse_xl_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_corner_flat_reverse_xl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_corner_flat_reverse_xxl_name		Bertha Cannon Belt (Corner Outer)	大砲の弾帯 (大, 角外向き)
 def_gun_belt_corner_flat_reverse_xxl_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window. Bertha shells are too large to be moved by hand.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 大型の砲弾は大きすぎて手で持ち運ぶことはできません. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_corner_flat_reverse_xxl_s_desc		A bertha cannon ammo belt.	大型の大砲の弾帯の部品です.
-def_gun_belt_corner_flat_reverse_xxl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_corner_flat_reverse_xxl_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_corner_flat_reverse_xxl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_corner_flat_xl_name		Artillery Cannon Belt (Corner Inner)	大砲の弾帯 (中, 角内向き)
 def_gun_belt_corner_flat_xl_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_corner_flat_xl_s_desc		An artillery cannon ammo belt.	中型の大砲の弾帯の部品です.
-def_gun_belt_corner_flat_xl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_corner_flat_xl_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_corner_flat_xl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_corner_flat_xxl_name		Bertha Cannon Belt (Corner Inner)	大砲の弾帯 (大, 角内向き)
 def_gun_belt_corner_flat_xxl_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window. Bertha shells are too large to be moved by hand.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 大型の砲弾は大きすぎて手で持ち運ぶことはできません. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_corner_flat_xxl_s_desc		A bertha cannon ammo belt.	大型の大砲の弾帯の部品です.
-def_gun_belt_corner_flat_xxl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_corner_flat_xxl_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_corner_flat_xxl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_corner_l_name		Battle Cannon Belt (Corner)	大砲の弾帯 (小, 角)
 def_gun_belt_corner_l_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_corner_l_s_desc		A battle cannon ammo belt.	小型の大砲の弾帯の部品です.
-def_gun_belt_corner_l_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_corner_l_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_corner_l_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_corner_xl_name		Artillery Cannon Belt (Corner)	大砲の弾帯 (中, 角)
 def_gun_belt_corner_xl_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_corner_xl_s_desc		An artillery cannon ammo belt.	中型の大砲の弾帯の部品です.
-def_gun_belt_corner_xl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_corner_xl_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_corner_xl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_corner_xxl_name		Bertha Cannon Belt (Corner)	大砲の弾帯 (大, 角)
 def_gun_belt_corner_xxl_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window. Bertha shells are too large to be moved by hand.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 大型の砲弾は大きすぎて手で持ち運ぶことはできません. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_corner_xxl_s_desc		A bertha cannon ammo belt.	大型の大砲の弾帯の部品です.
-def_gun_belt_corner_xxl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_corner_xxl_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_corner_xxl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_junction_name		Autocannon Belt (Junction)	機関砲の弾帯 (分岐)
 def_gun_belt_junction_desc		Autocannon belts can transfer all calibers of autocannon ammo. Junction belts redirect the path of ammo transfer.	機関砲の弾帯は全ての口径の機関砲の弾を輸送できます. この弾帯は弾を2方向に分岐します.
 def_gun_belt_junction_s_desc		An autocannon ammo belt.	機関砲の弾帯の部品です.
-def_gun_belt_junction_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_junction_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_junction_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_junction_node_1_label		Junction Switch	分岐の切り替え
 def_gun_belt_junction_node_1_desc		Switches the ammo transfer T-junction between the left and right sides.	オン信号を受け取るたびに砲弾の輸送方向を切り替えます.
 def_gun_belt_junction_l_name		Battle Cannon Belt (Junction)	大砲の弾帯 (小, 分岐)
 def_gun_belt_junction_l_desc		Cannon ammo belts can store and transfer ammo shells. Junction belts redirect the path of ammo transfer. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. この弾帯は砲弾を2方向に分岐します. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_junction_l_s_desc		A battle cannon ammo belt.	小型の大砲の弾帯の部品です.
-def_gun_belt_junction_l_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_junction_l_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_junction_l_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_junction_l_node_1_label		Junction Switch	分岐の切り替え
 def_gun_belt_junction_l_node_1_desc		Switches the ammo transfer T-junction between the left and right sides.	オン信号を受け取るたびに砲弾の輸送方向を切り替えます.
 def_gun_belt_junction_xl_name		Artillery Cannon Belt (Junction)	大砲の弾帯 (中, 分岐)
 def_gun_belt_junction_xl_desc		Cannon ammo belts can store and transfer ammo shells. Junction belts redirect the path of ammo transfer. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. この弾帯は砲弾を2方向に分岐します. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_junction_xl_s_desc		An artillery cannon ammo belt.	中型の大砲の弾帯の部品です.
-def_gun_belt_junction_xl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_junction_xl_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_junction_xl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_junction_xl_node_1_label		Junction Switch	分岐の切り替え
 def_gun_belt_junction_xl_node_1_desc		Switches the ammo transfer T-junction between the left and right sides.	オン信号を受け取るたびに砲弾の輸送方向を切り替えます.
 def_gun_belt_junction_xxl_name		Bertha Cannon Belt (Junction)	大砲の弾帯 (大, 分岐)
 def_gun_belt_junction_xxl_desc		Cannon ammo belts can store and transfer ammo shells. Junction belts redirect the path of ammo transfer. Spawned ammo type can be set in component properties window. Bertha shells are too large to be moved by hand.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. この弾帯は砲弾を2方向に分岐します. 大型の砲弾は大きすぎて手で持ち運ぶことはできません. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_junction_xxl_s_desc		A bertha cannon ammo belt.	大型の大砲の弾帯の部品です.
-def_gun_belt_junction_xxl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_junction_xxl_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_junction_xxl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_junction_xxl_node_1_label		Junction Switch	分岐の切り替え
 def_gun_belt_junction_xxl_node_1_desc		Switches the ammo transfer T-junction between the left and right sides.	オン信号を受け取るたびに砲弾の輸送方向を切り替えます.
@@ -4293,7 +4293,7 @@ def_gun_belt_loader_desc		Autocannon belts can transfer all calibers of autocann
 def_gun_belt_loader_s_desc		An autocannon ammo belt.	機関砲の弾帯の部品です.
 def_gun_belt_loader_node_0_label		Feed	輸送
 def_gun_belt_loader_node_0_desc		Transfer cartridges in the direction of the arrow.	オン信号を受け取ると矢印の方向へ弾を輸送します.
-def_gun_belt_loader_node_1_label		Contains Ammo	弾薬装填
+def_gun_belt_loader_node_1_label		Contains Ammo	弾薬装填済み
 def_gun_belt_loader_node_1_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_loader_node_2_label		Electric	電力
 def_gun_belt_loader_node_2_desc		Electrical power connection.	電力接続
@@ -4302,7 +4302,7 @@ def_gun_belt_loader_l_desc		Cannon ammo belts can store and transfer ammo shells
 def_gun_belt_loader_l_s_desc		A battle cannon ammo belt.	小型の大砲の弾帯の部品です.
 def_gun_belt_loader_l_node_0_label		Feed	輸送
 def_gun_belt_loader_l_node_0_desc		Transfer shells in the direction of the arrow.	オン信号を受け取ると矢印の方向へ砲弾を輸送します.
-def_gun_belt_loader_l_node_1_label		Contains Ammo	弾薬装填
+def_gun_belt_loader_l_node_1_label		Contains Ammo	弾薬装填済み
 def_gun_belt_loader_l_node_1_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_loader_l_node_2_label		Electric	電力
 def_gun_belt_loader_l_node_2_desc		Electrical power connection.	電力接続
@@ -4311,7 +4311,7 @@ def_gun_belt_loader_xl_desc		Cannon ammo belts can store and transfer ammo shell
 def_gun_belt_loader_xl_s_desc		An artillery cannon ammo belt.	中型の大砲の弾帯の部品です.
 def_gun_belt_loader_xl_node_0_label		Feed	輸送
 def_gun_belt_loader_xl_node_0_desc		Transfer shells in the direction of the arrow.	オン信号を受け取ると矢印の方向へ砲弾を輸送します.
-def_gun_belt_loader_xl_node_1_label		Contains Ammo	弾薬装填
+def_gun_belt_loader_xl_node_1_label		Contains Ammo	弾薬装填済み
 def_gun_belt_loader_xl_node_1_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_loader_xl_node_2_label		Electric	電力
 def_gun_belt_loader_xl_node_2_desc		Electrical power connection.	電力接続
@@ -4320,57 +4320,57 @@ def_gun_belt_loader_xxl_desc		Cannon ammo belts can store and transfer ammo shel
 def_gun_belt_loader_xxl_s_desc		A bertha cannon ammo belt.	大型の大砲の弾帯の部品です.
 def_gun_belt_loader_xxl_node_0_label		Feed	輸送
 def_gun_belt_loader_xxl_node_0_desc		Transfer shells in the direction of the arrow.	オン信号を受け取ると矢印の方向へ砲弾を輸送します.
-def_gun_belt_loader_xxl_node_1_label		Contains Ammo	弾薬装填
+def_gun_belt_loader_xxl_node_1_label		Contains Ammo	弾薬装填済み
 def_gun_belt_loader_xxl_node_1_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_loader_xxl_node_2_label		Electric	電力
 def_gun_belt_loader_xxl_node_2_desc		Electrical power connection.	電力接続
 def_gun_belt_receiver_name		Autocannon Belt (Connector)	機関砲の弾帯 (コネクター)
 def_gun_belt_receiver_desc		Autocannon belts can transfer all calibers of autocannon ammo. Connector belts allow ammo transfers between vehicles.	機関砲の弾帯は全ての口径の機関砲の弾を輸送できます. 乗り物間での弾の輸送ができます.
 def_gun_belt_receiver_s_desc		An autocannon ammo belt.	機関砲の弾帯の部品です.
-def_gun_belt_receiver_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_receiver_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_receiver_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_receiver_node_1_label		Connected	接続済み
 def_gun_belt_receiver_node_1_desc			他のコネクターと接続されるとオン信号が出力されます.
 def_gun_belt_receiver_l_name		Battle Cannon Belt (Connector)	大砲の弾帯 (小, コネクター)
 def_gun_belt_receiver_l_desc		Cannon ammo belts can store and transfer ammo shells. Connector belts allow ammo transfers between vehicles. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 乗り物間での弾の輸送ができます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_receiver_l_s_desc		A battle cannon ammo belt.	小型の大砲の弾帯の部品です.
-def_gun_belt_receiver_l_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_receiver_l_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_receiver_l_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_receiver_l_node_1_label		Connected	接続済み
 def_gun_belt_receiver_l_node_1_desc		Returns true when two nearby receivers are aligned, and can transfer ammo between them.	他のコネクターと接続されるとオン信号が出力されます.
 def_gun_belt_receiver_xl_name		Artillery Cannon Belt (Connector)	大砲の弾帯 (中, コネクター)
 def_gun_belt_receiver_xl_desc		Cannon ammo belts can store and transfer ammo shells. Connector belts allow ammo transfers between vehicles. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 乗り物間での弾の輸送ができます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_receiver_xl_s_desc		An artillery cannon ammo belt.	中型の大砲の弾帯の部品です.
-def_gun_belt_receiver_xl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_receiver_xl_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_receiver_xl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_receiver_xl_node_1_label		Connected	接続済み
 def_gun_belt_receiver_xl_node_1_desc		Returns true when two nearby receivers are aligned, and can transfer ammo between them.	他のコネクターと接続されるとオン信号が出力されます.
 def_gun_belt_receiver_xxl_name		Bertha Cannon Belt (Connector)	大砲の弾帯 (大, コネクター)
 def_gun_belt_receiver_xxl_desc		Cannon ammo belts can store and transfer ammo shells. Connector belts allow ammo transfers between vehicles. Spawned ammo type can be set in component properties window. Bertha shells are too large to be moved by hand.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 乗り物間での弾の輸送ができます. 大型の砲弾は大きすぎて手で持ち運ぶことはできません. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_receiver_xxl_s_desc		A bertha cannon ammo belt.	大型の大砲の弾帯の部品です.
-def_gun_belt_receiver_xxl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_receiver_xxl_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_receiver_xxl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_receiver_xxl_node_1_label		Connected	接続済み
 def_gun_belt_receiver_xxl_node_1_desc		Returns true when two nearby receivers are aligned, and can transfer ammo between them.	他のコネクターと接続されるとオン信号が出力されます.
 def_gun_belt_straight_name		Autocannon Belt (Straight)	機関砲の弾帯 (直線)
 def_gun_belt_straight_desc		Autocannon belts can transfer all calibers of autocannon ammo.	機関砲の弾帯は全ての口径の機関砲の弾を輸送できます.
 def_gun_belt_straight_s_desc		An autocannon ammo belt.	機関砲の弾帯の部品です.
-def_gun_belt_straight_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_straight_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_straight_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_straight_l_name		Battle Cannon Belt (Straight)	大砲の弾帯 (小, 直線)
 def_gun_belt_straight_l_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_straight_l_s_desc		A battle cannon ammo belt.	小型の大砲の弾帯の部品です.
-def_gun_belt_straight_l_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_straight_l_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_straight_l_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_straight_xl_name		Artillery Cannon Belt (Straight)	大砲の弾帯 (中, 直線)
 def_gun_belt_straight_xl_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_straight_xl_s_desc		An artillery cannon ammo belt.	中型の大砲の弾帯の部品です.
-def_gun_belt_straight_xl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_straight_xl_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_straight_xl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_belt_straight_xxl_name		Bertha Cannon Belt (Straight)	大砲の弾帯 (大, 直線)
 def_gun_belt_straight_xxl_desc		Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window. Bertha shells are too large to be moved by hand.	大砲の弾帯は内部に砲弾を格納し, 輸送できます. 大型の砲弾は大きすぎて手で持ち運ぶことはできません. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_straight_xxl_s_desc		A bertha cannon ammo belt.	大型の大砲の弾帯の部品です.
-def_gun_belt_straight_xxl_node_0_label		Contains Ammo	弾薬装填
+def_gun_belt_straight_xxl_node_0_label		Contains Ammo	弾薬装填済み
 def_gun_belt_straight_xxl_node_0_desc		Returns true if the belt contains a shell.	この部品の中に弾薬があるとオン信号を出力します.
 def_gun_drum_large_name		Autocannon Ammo Drum (Large)	機関砲の弾薬ドラム (大)
 def_gun_drum_large_desc		Ammo drums store autocannon cartridges of the caliber specified in the component properties window. Differing calibers cannot be mixed within a single ammo drum.	弾薬ドラムは1種類の機関砲の弾を貯蔵できます. 異なる種類の弾は同時に貯蔵できません.
