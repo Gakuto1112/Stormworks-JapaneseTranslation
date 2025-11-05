@@ -974,31 +974,31 @@ id	description	en	local
 		### is already bound to [###]	### は既に [###] に割り当てられています.
 		### is bound to [###]	### は [###] に割り当てられています.
 		Starter Base	始まりの拠点
-		Features a small dock.	小さなドッグがあります.
+		Features a small dock.	小さなドックがあります.
 		Creative Base	クリエイティブ拠点
-		Features a hangar, large dock, and runway.	大きな格納庫, 大きなドッグ, 滑走路があります.
+		Features a hangar, large dock, and runway.	大きな格納庫, 大きなドック, 滑走路があります.
 		Helicopter Base	ヘリコプター拠点
 		Features a hangar and helipad.	大きな格納庫とヘリポートがあります.
 		O'Neill Airbase	オ・ニール航空基地
 		An airstrip on the North-East side of the Sawyer Islands.	ソーヤー島の北東に位置する航空基地です.
 		Sawyer Islands' South-East Fishing Village	ソーヤー島南東部の漁村
-		A cosy fishing village with a dock on the South side of the Sawyer Islands.	ソーヤー島の南部の漁村です. 大きなドッグがあります.
+		A cosy fishing village with a dock on the South side of the Sawyer Islands.	ソーヤー島の南部の漁村です. 大きなドックがあります.
 		Harrison Airbase	ハリソン航空基地
 		An airstrip on the North-West side of the Sawyer Islands.	ソーヤー島の北西に位置する航空基地です.
 		Sawyer Islands' North Harbour	ソーヤー島北部の港
-		A harbour with railway access on the North coast of the Sawyer Islands.	ソーヤー島の北部の港です. 大きなドッグと鉄道ターミナルがあります.
+		A harbour with railway access on the North coast of the Sawyer Islands.	ソーヤー島の北部の港です. 大きなドックと鉄道ターミナルがあります.
 		Harbour Base	港拠点
-		Harbour base, large dock.	港の拠点です. 大きなドッグがあります.
+		Harbour base, large dock.	港の拠点です. 大きなドックがあります.
 		Airstrip Base	滑走路基地
 		Features a hangar and runway.	小さな格納庫と滑走路があります.
 		Military Base	軍事基地
 		A small military establishment with a hangar, barracks and runway.	大きな格納庫, 兵舎, 滑走路がある小さな軍事基地です.
 		Terminal Spycakes	スパイケークターミナル
-		Large dock and small village with various access routes to the island.	大きなドッグ, 鉄道ターミナル, 小さな村あります. 島へは様々な道順があります.
+		Large dock and small village with various access routes to the island.	大きなドック, 鉄道ターミナル, 小さな村あります. 島へは様々な道順があります.
 		Mainland Airstrip	本土滑走路
 		Old hangar with airstrip and a small village.	大きな古い格納庫, 小さな村があります.
 		Terminal Camodo	カモドターミナル
-		Train yard and shipping terminal at the end of the key.	鉄道ターミナルと大きなドッグがあります. キー諸島の終点です.
+		Train yard and shipping terminal at the end of the key.	鉄道ターミナルと大きなドックがあります. キー諸島の終点です.
 		Trainline Island 1	鉄道が通る島1
 		A curved section of trainline that passes over a small uninhabited island.	小さな無人島を通過する, 線路のカーブ区間です.
 		Trainline Island 2	鉄道が通る島2
@@ -1016,7 +1016,7 @@ id	description	en	local
 		Custom Base Oil Rig (Large)	カスタム石油採掘所
 		The base of a large, disused oil rig, ready for building a new platform.	使われなくなった大きな石油採掘所の土台です. 新しい石油プラットフォームを作成できます.
 		Arctic Island Base	北極島拠点
-		A huge airfield and shipping dock base.	巨大な滑走路と大きなドッグがあります.
+		A huge airfield and shipping dock base.	巨大な滑走路と大きなドックがあります.
 		Sell	売却
 		Buy	購入
 		Invalid Fluid Type	不正な燃料の種類
