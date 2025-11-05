@@ -4614,7 +4614,7 @@ def_handle_name		Handle	取っ手
 def_handle_desc		Interacting with [$[action_interact_left]] or [$[action_interact_right]] again will detach that hand. The handle can be used to drag vehicles around. If a vehicle is too heavy to move, you will be detached automatically when you move outside the handle's interaction range.	取っ手を掴んでいる時に [$[action_interact_left]]/[$[action_interact_right]] を押すと離すことができます. 軽い乗り物は取っ手を掴んでそのまま動かすことができます. プレイヤーが取っ手の範囲外まで移動した場合は自動的に手を離します.
 def_handle_s_desc		A handle that you can attach to by interacting with [$[action_interact_left]] or [$[action_interact_right]].	[$[action_interact_left]] や [$[action_interact_right]] を押して掴むことができる取っ手です.
 def_handle_node_0_label		Occupied	使用中
-def_handle_node_0_desc		Outputs an on signal if a player is attached to the handle.	誰かがハンドルを握っているととオン信号を出力します.
+def_handle_node_0_desc		Outputs an on signal if a player is attached to the handle.	誰かがハンドルを握っているとオン信号を出力します.
 def_hatch_name		Sliding Hatch (Electric)	ハッチ (引き戸, 電動)
 def_hatch_desc			
 def_hatch_s_desc		Sliding hatch that can be opened and closed using an on/off signal.	オン/オフ信号で開閉ができる引き戸式のハッチです.
