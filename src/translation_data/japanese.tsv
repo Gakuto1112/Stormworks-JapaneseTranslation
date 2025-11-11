@@ -3427,8 +3427,8 @@ def_door_dock_large_node_9_label		Composite input	複合信号受信
 def_door_dock_large_node_9_desc		Composite data input.	相手のコネクターへ複合信号を受信します.
 def_door_dock_small_name		Hinged Dock Hatch	ハッチ (押し戸, ドッキング)
 def_door_dock_small_desc			
-def_door_dock_small_s_desc		Hinged door that can be opened and closed using an on/off signal.	オン/オフ信号で開閉ができる押し戸式のハッチです.
-def_door_dock_small_node_0_label		Open/Close	開閉
+def_door_dock_small_s_desc		Hinged door that can be opened and closed using an on/off signal.	オン/オフ信号で開閉可能な押し戸式のハッチです.
+def_door_dock_small_node_0_label		Open/Close	ハッチ開閉
 def_door_dock_small_node_0_desc		Opens the door when receiving an on signal, and closes it when receiving an off signal.	オン信号を受け取るとハッチを開け, オフ信号を受け取るとハッチを閉めます.
 def_door_dock_small_node_1_label		Magnet Toggle	コネクター起動
 def_door_dock_small_node_1_desc		Enables the door's magnet when receiving an on signal.	オン信号を受け取るとコネクターを起動します.
@@ -3473,12 +3473,12 @@ def_door_manual_large_node_0_label		Lock	施錠
 def_door_manual_large_node_0_desc		Locks the door when receiving an on signal.	オン信号を受け取るとドアを施錠します.
 def_door_manual_sliding_small_name		Sliding Hatch	ハッチ (引き戸)
 def_door_manual_sliding_small_desc			
-def_door_manual_sliding_small_s_desc		Sliding door that can be opened and closed by hand and locked using an on/off signal.	手動で開閉ができる引き戸式のハッチで, オン/オフ信号で施錠もできます.
+def_door_manual_sliding_small_s_desc		Sliding door that can be opened and closed by hand and locked using an on/off signal.	手動で開閉可能な引き戸式のハッチで, オン/オフ信号で施錠もできます.
 def_door_manual_sliding_small_node_0_label		Lock	施錠
 def_door_manual_sliding_small_node_0_desc		Locks the door when receiving an on signal.	オン信号を受け取るとハッチを施錠します.
 def_door_manual_small_name		Hinged Hatch	ハッチ (押し戸)
 def_door_manual_small_desc			
-def_door_manual_small_s_desc		Hinged door that can be opened and closed by hand and locked using an on/off signal.	手動で開閉ができる押し戸式のハッチで, オン/オフ信号で施錠もできます.
+def_door_manual_small_s_desc		Hinged door that can be opened and closed by hand and locked using an on/off signal.	手動で開閉可能な押し戸式のハッチで, オン/オフ信号で施錠もできます.
 def_door_manual_small_node_0_label		Lock	施錠
 def_door_manual_small_node_0_desc		Locks the door when receiving an on signal.	オン信号を受け取るとハッチを施錠します.
 def_door_panel_corner_name		Door Panel Corner	カスタムドア (角)
@@ -4617,8 +4617,8 @@ def_handle_node_0_label		Occupied	使用中
 def_handle_node_0_desc		Outputs an on signal if a player is attached to the handle.	誰かがハンドルを握っているとオン信号を出力します.
 def_hatch_name		Sliding Hatch (Electric)	ハッチ (引き戸, 電動)
 def_hatch_desc			
-def_hatch_s_desc		Sliding hatch that can be opened and closed using an on/off signal.	オン/オフ信号で開閉ができる引き戸式のハッチです.
-def_hatch_node_0_label		Hatch Open/Close	開閉
+def_hatch_s_desc		Sliding hatch that can be opened and closed using an on/off signal.	オン/オフ信号で開閉可能な引き戸式のハッチです.
+def_hatch_node_0_label		Hatch Open/Close	ハッチ開閉
 def_hatch_node_0_desc		Opens the hatch when receiving an on signal, and closes it when receiving an off signal.	オン信号を受け取るとドアを開け, オフ信号を受け取るとドアを閉めます.
 def_hatch_node_1_label		Electric	電力
 def_hatch_node_1_desc		Electrical power connection.	電力接続
