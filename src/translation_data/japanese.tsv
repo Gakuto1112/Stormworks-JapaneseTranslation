@@ -80,7 +80,7 @@ id	description	en	local
 		Click on the 'Logic' button in the top bar to enter logic connecting mode.	上部バーの「ロジック」ボタンをクリックしてロジック接続モードに入ります.
 		Select the 'Data' logic type to view 'On/Off' and 'Number' logic nodes.	「オン/オフ」と「数値」のノードを見るために「データ」ロジックタイプを選択します.
 		Select the 'Power' logic type to view 'Power' logic nodes.	「動力「のノードを見るために「動力」ロジックタイプを選択します.
-		Place a wedge in the highlighted space.\n\nYou can change a component's rotation by hovering over different adjacent surfaces in the vehicle.	強調表示された場所に斜めブロックを置きます.\n\n乗り物の異なる面にカーソルを合わせることで, 部品の向きを変えることができます.
+		Place a wedge in the highlighted space.\n\nYou can change a component's rotation by hovering over different adjacent surfaces in the vehicle.	強調表示された場所に斜めブロックを置きます.\n\n乗り物の異なる面にカーソルを合わせることで, 部品の向きを変えられます.
 		Click on the wedge block in the component list to start building with it.	部品一覧から斜めブロックをクリックして, 斜めブロックでブロックの設置を開始します.
 		Place the next five wedges.\n\nMultiple wedges can be placed at once by dragging.	次の5つの斜めブロックを設置します.\n\nドラッグすると複数のブロックを一度に設置できます.
 		You can also use the following keys to rotate and flip the component.\n\n[j] rotates on the x axis\n[k] rotates on the y axis\n[l] rotates on the z axis\n\n[u] flips on the x axis\n[i] flips on the y axis\n[o] flips on the z axis\n\n[p] toggles the rotation display	次のキーで部品の回転や反転が可能です.\n\n[j] でx軸回転\n[k] でy軸回転\n[l] でz軸回転\n\n[u] でx軸反転\n[i] でy軸反転\n[o] でz軸反転\n\n[p] でブロック操作ガイドを表示/非表示にできます.
@@ -355,7 +355,7 @@ id	description	en	local
 		ADDON UPLOAD COMPLETE	アドオンのアップロード完了
 		Your addon was successfully uploaded to the Steam workshop.\n\n We recommend heading to your addon's workshop page to add more information about the content you've included.\n\n Any vehicles used in your addon have been included as part of the upload. Players will not need to separately subscribe to any of these vehicles.	このアドオンは正常にSteamワークショップにアップロードされました.\n\nこのアドオンのSteamワークショップのページにアクセスして, 追加の情報を付け加えることをお勧めします.\n\nこのアドオンに含まれる乗り物は一緒にアドオンに同梱されていますので, このアドオンを利用するプレイヤーは別途乗り物をサブスクライブする必要はありません.
 		ADDON UPDATE COMPLETE	アドオンの更新完了
-		Your addon was updated successfully.\n\nYou can customise the changelog for this update by heading to your addon's workshop page to let your subscribers know what's new.	このアドオンは正常に更新されました.\n\nこのアドオンの利用者に変更点を知らせるために, このアドオンのSteamワークショップのページにアクセスして, この更新のチェンジログを編集することができます.
+		Your addon was updated successfully.\n\nYou can customise the changelog for this update by heading to your addon's workshop page to let your subscribers know what's new.	このアドオンは正常に更新されました.\n\nSteamワークショップのページ内の変更履歴を編集し, 今回の更新内容をアドオンのサブスクライバーに知らせることもできます.
 		missions	ミッション
 		mission	ミッション
 		objectives	目的
@@ -648,7 +648,7 @@ id	description	en	local
 		Zones can be used to set up advanced mission behaviour at specific world locations with addon Lua. These zones can be accessed globally by any addon script with functions getZones() and isInZone().	ゾーンはLuaスクリプトを用いて, ワールドの特定の場所で高度な振る舞いを設定するのに使用します. ゾーンは全てのアドオンから getZones() や isInZone() を用いて取得できます.
 		Zones are used to specify a location, these zones are local to a addon and can be accessed like any other local component through getLocationObjectData(). Mission Zones are generally more appropriate for constructing procedural style missions.	ゾーンは場所の指定に使用され, ゾーンはこのアドオンから他のオブジェクトと同じように getLocationObjectData() を用いて取得できます. ミッションゾーンは一般的に手続き型のミッションを作成するのに適しています.
 		ADD VEHICLE	乗り物を追加
-		You can set a vehicle to be static in the properties window. Static vehicles are fixed in place, making them useful for adding buildings or cranes to missions.	プロパティウィンドウで乗り物を固定することができます. 固定された乗り物はその場から動かず, ミッションで建物やクレーンなどを追加するのに役立ちます.
+		You can set a vehicle to be static in the properties window. Static vehicles are fixed in place, making them useful for adding buildings or cranes to missions.	プロパティウィンドウで乗り物を固定できます. 固定された乗り物はその場から動かず, ミッションで建物やクレーンなどを追加するのに役立ちます.
 		ADD VEHICLE BUTTON	乗り物のボタンを追加
 		Vehicle buttons allow your mission to interact with a named button on a vehicle. You must parent the button to a vehicle, and set the 'button display name' in the properties window to be the name of a button on the parent vehicle.	乗り物のボタンを設定すると, ミッションが乗り物の名前が付いているボタンを操作できるようになります. 乗り物側でボタンの表示名を設定する必要があります.
 		ADD FLARE	発煙筒を追加
@@ -656,7 +656,7 @@ id	description	en	local
 		ADD FIRE	炎を追加
 		Fires can be extinguished using water cannons and will spread to other nearby fires. The size of the fire and whether or not it is initially lit can be customised in the properties window.	炎は放水銃や消火器を使って消火できます. 炎は時間経過と共に規模が拡大し, 付近の乗り物にも延焼する場合があります. 炎の大きさと, 初めから燃えているかどうかはプロパティウィンドウから設定できます.
 		ADD LOOT	宝箱を追加
-		Loot boxes allow you to hide additional rewards in your missions. Each one will give the player a random reward with a value between $6000 and $10000.	ミッション中に追加の報酬として宝箱を隠すことができます. 宝箱1つにつき$6000から$10000の追加報酬を受け取れます.
+		Loot boxes allow you to hide additional rewards in your missions. Each one will give the player a random reward with a value between $6000 and $10000.	ミッション中に追加の報酬として宝箱を隠せます. 宝箱1つにつき$6000から$10000の追加報酬を受け取れます.
 		ADD ANIMAL	動物を追加
 		The animal type can be customised in the properties window. If the 'Sharks' difficulty option is enabled, sharks will stalk and attack characters in the water.	動物はプロパティウィンドウから設定できます. 「サメ」のゲーム設定が有効の場合, サメは水中にいるキャラクターを追尾し, 攻撃します.
 		Done	完了
@@ -780,9 +780,9 @@ id	description	en	local
 		MICROCONTROLLER UPLOAD COMPLETE	マイクロコントローラーのアップロード完了
 		Your microcontroller was successfully uploaded to the Steam workshop.\n\nWe recommend heading to your microcontroller's workshop page to add a description, screenshots, and usage instructions.	このマイクロコントローラーはSteamワークショップへ正常にアップロードされました.\n\nこのマイクロコントローラーのSteamワークショップのページにアクセスして, 説明文やスクリーンショットや使い方の説明を付け加えることをお勧めします.
 		VEHICLE UPDATE COMPLETE	乗り物の更新完了
-		Your vehicle was updated successfully.\n\nYou can customise the changelog for this update by heading to your vehicle's workshop page to let your subscribers know what's new.	この乗り物は正常に更新されました.\n\nこの乗り物のの利用者に変更点を知らせるために, このアドオンのSteamワークショップのページにアクセスして, この更新のチェンジログを編集することができます.
+		Your vehicle was updated successfully.\n\nYou can customise the changelog for this update by heading to your vehicle's workshop page to let your subscribers know what's new.	この乗り物は正常に更新されました.\n\nSteamワークショップのページ内の変更履歴を編集し, 今回の更新内容を乗り物のサブスクライバーに知らせることもできます.
 		MICROCONTROLLER UPDATE COMPLETE	マイクロコントローラーの更新完了
-		Your microcontroller was updated successfully.\n\nYou can customise the changelog for this update by heading to your microcontroller's workshop page to let your subscribers know what's new.	このマイクロコントローラーは正常に更新されました.\n\nこの乗り物ののマイクロコントローラーに変更点を知らせるために, このアドオンのSteamワークショップのページにアクセスして, この更新のチェンジログを編集することができます.
+		Your microcontroller was updated successfully.\n\nYou can customise the changelog for this update by heading to your microcontroller's workshop page to let your subscribers know what's new.	このマイクロコントローラーは正常に更新されました.\n\nSteamワークショップのページ内の変更履歴を編集し, 今回の更新内容をマイクロコントローラーのサブスクライバーに知らせることもできます.
 		EXPORT COMPLETE	エクスポート完了
 		SUCCESS	成功
 		The action was completed successfully.	このアクションは正常に完了しました.
@@ -933,7 +933,7 @@ id	description	en	local
 		Megalodons	メガロドン
 		Megalodons will stalk and attack your vehicles.	メガロドンは乗り物を追跡し攻撃します.
 		Teleport Vehicles	乗り物のテレポート
-		Teleport vehicles back to the workbench from the map.	マップから乗り物を作業台に戻すことができます.
+		Teleport vehicles back to the workbench from the map.	マップから乗り物を作業台に戻せます.
 		Fast Travel	テレポート
 		Fast travel back to your base from the map.	マップから拠点にテレポートできます.
 		Permadeath	リスポーン不可
@@ -2381,10 +2381,10 @@ id	description	en	local
 		Allow Liquids	液体を通す
 		Allow Gases	気体を通す
 		WARNING	警告
-		Missing required coal to fill ducts/hopper to requested level	ダクト/ホッパーに指定した量を満たすことができるだけの石炭がありません.
-		Missing required diesel to fill tanks to requested level	タンクに指定した量を満たすことができるだけの軽油がありません.
-		Missing required jet fuel to fill tanks to requested level	タンクに指定した量を満たすことができるだけのジェット燃料がありません.
-		Missing required uranium ingots to fill fuel rods to requested level	燃料棒に指定した量を満たすことができるだけのウランの延べ棒がありません.
+		Missing required coal to fill ducts/hopper to requested level	ダクト/ホッパーに指定した量を満せるだけの石炭がありません.
+		Missing required diesel to fill tanks to requested level	タンクに指定した量を満せるだけの軽油がありません.
+		Missing required jet fuel to fill tanks to requested level	タンクに指定した量を満せるだけのジェット燃料がありません.
+		Missing required uranium ingots to fill fuel rods to requested level	燃料棒に指定した量を満せるだけのウランの延べ棒がありません.
 		too short to attach	短すぎます
 		Move closer to attach	更に近づいてください
 		Space Suit	宇宙服
@@ -2753,7 +2753,7 @@ def_16_invpyramid_4x4_desc		Components can be attached to all faces, with the ex
 def_16_invpyramid_4x4_s_desc		4x4 inverse pyramid-shaped building block.	4x4の直方体から三角錐を切り取った形の基本的なブロックです.
 def_aircraft_engine_name		Medium Engine	エンジン (中)
 def_aircraft_engine_desc		An on/off signal controls engine startup and throttle signal controls energy output.	オン/オフ信号でエンジンを始動し, 数値信号によるスロットルで出力を調整します.
-def_aircraft_engine_s_desc		Medium diesel engine that can be connected to powered components.	中型のディーゼルエンジンで動力を必要とする部品を取付けて動かすことができます.
+def_aircraft_engine_s_desc		Medium diesel engine that can be connected to powered components.	動力を要求する部品に動力を供給できる中型のディーゼルエンジンです.
 def_aircraft_engine_node_0_label		Throttle	スロットル
 def_aircraft_engine_node_0_desc		Standard value between 0 and 1 that controls the throttle of the engine.	エンジンのスロットルを調整する数値で, 範囲は0から1です.
 def_aircraft_engine_node_1_label		Starter	セルモーター
@@ -2919,7 +2919,7 @@ def_battery_small_node_0_desc		Energy storage for the electrical system.	電力�
 def_battery_small_node_1_label		Charge	蓄電量
 def_battery_small_node_1_desc		Data output giving the charge of the battery from 0 to 1.	電池の蓄電量を0から1の範囲で出力します.
 def_button_key_name		Key Button	キーボタン
-def_button_key_desc		Once activated, interacting with the button again will deactivate it instantly. The hold duration can be customised by selecting this component with the select tool. The external input can be used to simulate interacting with the button down using the output of another component. The button's default state can be configured by selecting it with the select component.	一方で, オフにするには長押しする必要はありません. 外部入力でボタンのオン/オフを制御することができ, 複数のボタンを同時に制御できます. 長押しする時間, ボタンの初期状態はプロパティウィンドウから設定できます.
+def_button_key_desc		Once activated, interacting with the button again will deactivate it instantly. The hold duration can be customised by selecting this component with the select tool. The external input can be used to simulate interacting with the button down using the output of another component. The button's default state can be configured by selecting it with the select component.	一方で, オフにするには長押しする必要はありません. 外部入力でボタンのオン/オフを制御ができ, 複数のボタンを同時に制御できます. 長押しする時間や, ボタンの初期状態はプロパティウィンドウから設定できます.
 def_button_key_s_desc		A button that must be held down for a set duration before activating.	オンにするには設定した時間押し続ける必要があるボタンです.
 def_button_key_node_0_label		Activated	オン
 def_button_key_node_0_desc		Outputs an on signal when interacting with the button for the set duration.	ボタンを設定した時間押し続けるとオン信号を出力します.
@@ -2959,7 +2959,7 @@ def_button_lock_node_1_desc		Allows the button to be interacted with when receiv
 def_button_lock_node_2_label		Electric	電力
 def_button_lock_node_2_desc		Electrical power connection.	電力接続
 def_button_push_name		Push Button	押しボタン
-def_button_push_desc		An external on/off signal can also be used to control whether or not the button is pressed, allowing you to chain multiple buttons together to unify their outputs.	外部入力でボタンのオン/オフを制御することができ, 複数のボタンを同時に制御できます.
+def_button_push_desc		An external on/off signal can also be used to control whether or not the button is pressed, allowing you to chain multiple buttons together to unify their outputs.	外部入力でボタンのオン/オフを制御ができ, 複数のボタンを同時に制御できます.
 def_button_push_s_desc		A button that outputs an on signal when you interact with [$[action_interact_left]]/[$[action_interact_right]], and an off signal when not interacting.	[$[action_interact_left]]/[$[action_interact_right]] を押している間のみオン信号を出力するボタンです.
 def_button_push_node_0_label		Pressed	オン
 def_button_push_node_0_desc		Outputs an on signal when you interact wtih [$[action_interact_left]]/[$[action_interact_right]], and an off signal otherwise.	[e] を押している間のみオン信号を出力します.
@@ -2968,7 +2968,7 @@ def_button_push_node_1_desc		Allows an external on/off signal to control whether
 def_button_push_node_2_label		Electric	電力
 def_button_push_node_2_desc		Electrical power connection.	電力接続
 def_button_push_2side_name		Push Button (2 Sided)	押しボタン (2面)
-def_button_push_2side_desc		An external on/off signal can also be used to control whether or not the button is pressed, allowing you to chain multiple buttons together to unify their outputs.	外部入力でボタンのオン/オフを制御することができ, 複数のボタンを同時に制御できます.
+def_button_push_2side_desc		An external on/off signal can also be used to control whether or not the button is pressed, allowing you to chain multiple buttons together to unify their outputs.	外部入力でボタンのオン/オフを制御ができ, 複数のボタンを同時に制御できます.
 def_button_push_2side_s_desc		A button that outputs an on signal when interacting with [$[action_interact_left]]/[$[action_interact_right]].	[$[action_interact_left]]/[$[action_interact_right]] を押している間のみオン信号を出力するボタンです. ボタンは両面に付いています.
 def_button_push_2side_node_0_label		Pressed	オン
 def_button_push_2side_node_0_desc		Outputs an on signal when you interact with [$[action_interact_left]]/[$[action_interact_right]], and an off signal otherwise.	[$[action_interact_left]]/[$[action_interact_right]] を押している間のみオン信号を出力します.
@@ -2988,7 +2988,7 @@ def_button_throttle_lever_node_2_desc		Outputs the stored Throttle Value.	レバ
 def_button_throttle_lever_node_3_label		Electric	電力
 def_button_throttle_lever_node_3_desc		Electrical power connection.	電力接続
 def_button_toggle_name		Toggle Button	切り替えボタン
-def_button_toggle_desc		An external on/off signal can also be used to control whether or not the button is pressed, allowing you to chain multiple buttons together to unify their outputs. The button's default state can be configured by selecting it with the select component.	外部入力でボタンのオン/オフを制御することができ, 複数のボタンを同時に制御できます. ボタンの初期状態はプロパティウィンドウから設定できます.
+def_button_toggle_desc		An external on/off signal can also be used to control whether or not the button is pressed, allowing you to chain multiple buttons together to unify their outputs. The button's default state can be configured by selecting it with the select component.	外部入力でボタンのオン/オフを制御ができ, 複数のボタンを同時に制御できます. ボタンの初期状態はプロパティウィンドウから設定できます.
 def_button_toggle_s_desc		A button that toggles between sending an on or off signal when you press [$[action_interact_left]]/[$[action_interact_right]] on it.	[$[action_interact_left]]/[$[action_interact_right]] を押す度にオン/オフを切り替えるボタンです.
 def_button_toggle_node_0_label		Toggled	オン
 def_button_toggle_node_0_desc		Outputs an on/off signal that can be toggled by interacting with [$[action_interact_left]]/[$[action_interact_right]].	[$[action_interact_left]]/[$[action_interact_right]] を押すたびに出力するオン/オフ信号を切り替えます.
@@ -2997,7 +2997,7 @@ def_button_toggle_node_1_desc		Allows an external on/off signal to control wheth
 def_button_toggle_node_2_label		Electric	  電力
 def_button_toggle_node_2_desc		Electrical power connection.	電力接続
 def_button_toggle_2side_name		Toggle Button (2 Sided)	切り替えボタン (2面)
-def_button_toggle_2side_desc		An external on/off signal can also be used to control whether or not the button is pressed, allowing you to chain multiple buttons together to unify their outputs. The button's default state can be configured by selecting it with the select component.	外部入力でボタンのオン/オフを制御することができ, 複数のボタンを同時に制御できます. ボタンの初期状態はプロパティウィンドウから設定できます.
+def_button_toggle_2side_desc		An external on/off signal can also be used to control whether or not the button is pressed, allowing you to chain multiple buttons together to unify their outputs. The button's default state can be configured by selecting it with the select component.	外部入力でボタンのオン/オフを制御ができ, 複数のボタンを同時に制御できます. ボタンの初期状態はプロパティウィンドウから設定できます.
 def_button_toggle_2side_s_desc		A button that toggles between sending an on or off signal when you press [$[action_interact_left]]/[$[action_interact_right]] on it.	[$[action_interact_left]]/[$[action_interact_right]] を押す度にオン/オフを切り替えるボタンです. ボタンは両面に付いています.
 def_button_toggle_2side_node_0_label		Toggled	オン
 def_button_toggle_2side_node_0_desc		Outputs an on/off signal that can be toggled by interacting with [$[action_interact_left]]/[$[action_interact_right]].	[$[action_interact_left]]/[$[action_interact_right]] を押すたびに出力するオン/オフ信号を切り替えます.
@@ -3077,7 +3077,7 @@ def_camera_small_node_1_desc			電力接続
 def_camera_small_node_2_label		Pivot	視点方向
 def_camera_small_node_2_desc		Inputs for camera X/Y pivot. (Value 1 : Pivot X) (Value 2 : Pivot Y)	カメラの視点方向を入力します (1: x軸, 2: y軸).
 def_catalytic_converter_name		Catalytic Converter	触媒
-def_catalytic_converter_desc		Catalytic converter that removes fumes and decreases the number of exhaust particles emitted from an exhaust.	排気ガスをこの触媒に通すことによって, 煙の量を減らすことができます. 触媒を複数設置すると更に減ります. 触媒には設置する方向があります.
+def_catalytic_converter_desc		Catalytic converter that removes fumes and decreases the number of exhaust particles emitted from an exhaust.	排気ガスをこの触媒に通すことによって, 煙の量を減らせます. 触媒を複数設置すると更に減ります. 触媒には設置する方向があります.
 def_catalytic_converter_s_desc		Reduces particles from exhausts.	排気ガスを綺麗にする触媒です.
 def_catalytic_converter_node_0_label		Exhaust In	排気吸引
 def_catalytic_converter_node_0_desc			エンジンなどからの排気を吸引します.
@@ -3227,7 +3227,7 @@ def_connector_large_node_11_desc		Video data to send to the connected connector.
 def_connector_large_node_12_label		Video Data Receive	映像信号受信
 def_connector_large_node_12_desc		Video data to receive from the connected connector.	相手のコネクターからの映像信号を受信します.
 def_connector_slider_gripper_name		Sliding Connector Gripper	コネクター (レール)
-def_connector_slider_gripper_desc		The gripper will attach to a track when they are aligned and close enough, and will detach when it slides off the end or receives an on signal to the connector release input. The brake can be enabled to prevent the gripper from sliding along the track.	コネクターレールが近くにあると自動的に接続されます. レールから外れるか「コネクターの切り離し」ノードへオン信号が入力される接続が解除されます. 「ブレーキ」ノードへオン信号が入力されるとコネクターがレール上を移動するのを防ぐことができます.
+def_connector_slider_gripper_desc		The gripper will attach to a track when they are aligned and close enough, and will detach when it slides off the end or receives an on signal to the connector release input. The brake can be enabled to prevent the gripper from sliding along the track.	コネクターレールが近くにあると自動的に接続されます. レールから外れるか「コネクターの切り離し」ノードへオン信号が入力される接続が解除されます. 「ブレーキ」ノードへオン信号が入力されるとコネクターがレール上を移動するのを防げます.
 def_connector_slider_gripper_s_desc		A connector that will attach to and slide along a connector track.	コネクターレールに接続し, レール上を移動できるコネクターです.
 def_connector_slider_gripper_node_0_label		Release Connector	コネクターの切り離し
 def_connector_slider_gripper_node_0_desc		Releases the connector when receiving an on signal.	オン信号を受け取る間は他のコネクターレールと接続されません.
@@ -3523,7 +3523,7 @@ def_electrolyser_node_3_label		Enable	稼働
 def_electrolyser_node_3_desc			オン信号を受け取ると電気分解が開始されます.
 def_engine_name		Small Engine	エンジン (小)
 def_engine_desc		An on/off signal controls engine startup and throttle signal controls energy output.	オン/オフ信号でエンジンを始動し, 数値信号によるスロットルで出力を調整します.
-def_engine_s_desc		Small diesel engine that can be connected to powered components.	小型のディーゼルエンジンで動力を必要とする部品を取付けて動かすことができます.
+def_engine_s_desc		Small diesel engine that can be connected to powered components.	動力を要求する部品に動力を供給できる小型のディーゼルエンジンです.
 def_engine_node_0_label		Throttle	スロットル
 def_engine_node_0_desc		Standard value between 0 and 1 that controls the throttle of the engine.	エンジンのスロットルを調整する数値で, 範囲は0から1です.
 def_engine_node_1_label		Starter	セルモーター
@@ -3548,7 +3548,7 @@ def_engine_node_10_label		Electric	電力
 def_engine_node_10_desc		Electrical power connection.	電力接続
 def_engine_diesel_name		Large Engine	エンジン (大)
 def_engine_diesel_desc		An on/off signal controls engine startup and throttle signal controls energy output.	オン/オフ信号でエンジンを始動し, 数値信号によるスロットルで出力を調整します.
-def_engine_diesel_s_desc		Large diesel engine that can be connected to powered components.	大型のディーゼルエンジンで動力を必要とする部品を取付けて動かすことができます.
+def_engine_diesel_s_desc		Large diesel engine that can be connected to powered components.	動力を要求する部品に動力を供給できる大型のディーゼルエンジンです.
 def_engine_diesel_node_0_label		Throttle	スロットル
 def_engine_diesel_node_0_desc		Standard value between 0 and 1 that controls the throttle of the engine.	エンジンのスロットルを調整する数値で, 範囲は0から1です.
 def_engine_diesel_node_1_label		Starter	セルモーター
@@ -3615,7 +3615,7 @@ def_fluid_exhaust_node_0_label		Fluid	流体
 def_fluid_exhaust_node_0_desc		Allows fluid to flow in and out of an enclosed volume or the ocean.	この排気口から吸入/排出を行う流体です.
 def_fluid_filter_name		Fluid Filter	流体フィルター
 def_fluid_filter_desc		The valve can be configured to select which fluids may pass across the two directional valve.	通す液体はプロパティウィンドウから設定できます.
-def_fluid_filter_s_desc		The fluid filter only allows certain types of fluid across the valve.	特定の流体だけを通すことができる流体フィルターです.
+def_fluid_filter_s_desc		The fluid filter only allows certain types of fluid across the valve.	特定の流体だけを通せる流体フィルターです.
 def_fluid_filter_node_0_label		Fluid A	流体1
 def_fluid_filter_node_0_desc		Fluid connection.	「流体1」と「流体2」ノード間は指定された流体しか通れません.
 def_fluid_filter_node_1_label		Fluid B	流体2
@@ -3624,7 +3624,7 @@ def_fluid_filter_node_2_label		Flow Rate	流量
 def_fluid_filter_node_2_desc		Fluid flow rate in L/s.	この部品に流れる流体の量をリットル毎秒で出力します.
 def_fluid_filter_v2_name		Fluid Filter	流体フィルター
 def_fluid_filter_v2_desc		The valve can be configured to select which fluid groups may pass across the two directional valve. Liquids or gases.	液体か気体かのどちらがフィルターを通過できるかを設定できます.
-def_fluid_filter_v2_s_desc		The fluid filter can prevent liquids or gases crossing the valve.	液体や気体の通過を防ぐことができるフィルターです.
+def_fluid_filter_v2_s_desc		The fluid filter can prevent liquids or gases crossing the valve.	液体や気体の通過を防げるフィルターです.
 def_fluid_filter_v2_node_0_label		Fluid A	流体1
 def_fluid_filter_v2_node_0_desc		Fluid connection.	フィルターにかける流体の接続口です.
 def_fluid_filter_v2_node_1_label		Fluid B	流体B
@@ -4555,7 +4555,7 @@ def_gun_xs_node_0_desc		When true: feeds, loads, and fires cartridges from a con
 def_gun_xs_node_1_label		Loaded	装填済み
 def_gun_xs_node_1_desc		Returns true when a cartridge is loaded and ready to fire.	弾薬が装填され, 射撃の準備が完了するとオン信号を出力します.
 def_gun_xxl_name		Bertha Cannon	大砲 (大)
-def_gun_xxl_desc		The Bertha cannon fires devastating high explosive mortar shells, with a wide radius of destruction.	この大砲は破壊力のある爆発性の砲弾を発射し, 広い範囲を破壊することができます. 英語名は「Bertha cannon」です. 発射するにはSearch and Destroy DLCを有効にする必要があります.
+def_gun_xxl_desc		The Bertha cannon fires devastating high explosive mortar shells, with a wide radius of destruction.	この大砲は破壊力のある爆発性の砲弾を発射し, 広い範囲を破壊できます. 英語名は「Bertha cannon」です. 発射するにはSearch and Destroy DLCを有効にする必要があります.
 def_gun_xxl_s_desc		A Bertha cannon.	大型の大砲の砲身です.
 def_gun_xxl_node_0_label		Trigger	発射
 def_gun_xxl_node_0_desc		When true: fires a loaded shell.	オン信号を受け取ると装填した砲弾を発射します.
@@ -4590,29 +4590,29 @@ def_gyro_node_8_desc		Enables the gyroscope's auto-hover circuit when receiving 
 def_gyro_node_9_label		Electric	電力
 def_gyro_node_9_desc		Electrical power connection.	電力接続
 def_gyroscopic_stabilizer_name		Reaction Wheel	リアクションホイール
-def_gyroscopic_stabilizer_desc		This component can be wired directly to an aligned angular rotation sensor to stabilize its rotation.	回転センサーと直接接続して乗り物の向きを安定させることができます.
+def_gyroscopic_stabilizer_desc		This component can be wired directly to an aligned angular rotation sensor to stabilize its rotation.	回転センサーと直接接続して乗り物の向きを安定させられます.
 def_gyroscopic_stabilizer_s_desc		A stabilization system that outputs a force to counter the input rotation.	入力された回転に反する力を出力する姿勢制御装置です.
 def_gyroscopic_stabilizer_node_0_label		Electric	電力
 def_gyroscopic_stabilizer_node_0_desc		Electrical power connection.	電力接続
 def_gyroscopic_stabilizer_node_1_label		Rotation	向き
 def_gyroscopic_stabilizer_node_1_desc		Input rotation value.	方向値を入力します.
 def_gyroscopic_stabilizer_large_name		Reaction Wheel (Large)	リアクションホイール (大)
-def_gyroscopic_stabilizer_large_desc		This component can be wired directly to an aligned angular rotation sensor to stabilize its rotation.	回転センサーと直接接続して乗り物の向きを安定させることができます.
+def_gyroscopic_stabilizer_large_desc		This component can be wired directly to an aligned angular rotation sensor to stabilize its rotation.	回転センサーと直接接続して乗り物の向きを安定させられます.
 def_gyroscopic_stabilizer_large_s_desc		A stabilization system that outputs a force to counter the input rotation.	入力された回転に反する力を出力する姿勢制御装置です.
 def_gyroscopic_stabilizer_large_node_0_label		Electric	電力
 def_gyroscopic_stabilizer_large_node_0_desc		Electrical power connection.	電力接続
 def_gyroscopic_stabilizer_large_node_1_label		Rotation	向き
 def_gyroscopic_stabilizer_large_node_1_desc		Input rotation value.	方向値を入力します.
 def_gyroscopic_stabilizer_small_name		Reaction Wheel (Small)	リアクションホイール (小)
-def_gyroscopic_stabilizer_small_desc		This component can be wired directly to an aligned angular rotation sensor to stabilize its rotation.	回転センサーと直接接続して乗り物の向きを安定させることができます.
+def_gyroscopic_stabilizer_small_desc		This component can be wired directly to an aligned angular rotation sensor to stabilize its rotation.	回転センサーと直接接続して乗り物の向きを安定させられます.
 def_gyroscopic_stabilizer_small_s_desc		A stabilization system that outputs a force to counter the input rotation.	入力された回転に反する力を出力する姿勢制御装置です.
 def_gyroscopic_stabilizer_small_node_0_label		Electric	電力
 def_gyroscopic_stabilizer_small_node_0_desc		Electrical power connection.	電力接続
 def_gyroscopic_stabilizer_small_node_1_label		Rotation	向き
 def_gyroscopic_stabilizer_small_node_1_desc		Input rotation value.	方向値を入力します.
 def_handle_name		Handle	取っ手
-def_handle_desc		Interacting with [$[action_interact_left]] or [$[action_interact_right]] again will detach that hand. The handle can be used to drag vehicles around. If a vehicle is too heavy to move, you will be detached automatically when you move outside the handle's interaction range.	取っ手を掴んでいる時に [$[action_interact_left]]/[$[action_interact_right]] を押すと離すことができます. 軽い乗り物は取っ手を掴んでそのまま動かすことができます. プレイヤーが取っ手の範囲外まで移動した場合は自動的に手を離します.
-def_handle_s_desc		A handle that you can attach to by interacting with [$[action_interact_left]] or [$[action_interact_right]].	[$[action_interact_left]] や [$[action_interact_right]] を押して掴むことができる取っ手です.
+def_handle_desc		Interacting with [$[action_interact_left]] or [$[action_interact_right]] again will detach that hand. The handle can be used to drag vehicles around. If a vehicle is too heavy to move, you will be detached automatically when you move outside the handle's interaction range.	取っ手を掴んでいる時に [$[action_interact_left]]/[$[action_interact_right]] を押すと離せます. 軽い乗り物は取っ手を掴んでそのまま動かせます. プレイヤーが取っ手の範囲外まで移動した場合は自動的に手を離します.
+def_handle_s_desc		A handle that you can attach to by interacting with [$[action_interact_left]] or [$[action_interact_right]].	[$[action_interact_left]] や [$[action_interact_right]] を押して掴める取っ手です.
 def_handle_node_0_label		Occupied	使用中
 def_handle_node_0_desc		Outputs an on signal if a player is attached to the handle.	誰かがハンドルを握っているとオン信号を出力します.
 def_hatch_name		Sliding Hatch (Electric)	ハッチ (引き戸, 電動)
@@ -4798,7 +4798,7 @@ def_inventory_equipment_compass_s_desc		A small equipment storage unit containin
 def_inventory_equipment_compass_node_0_label		Electric	電力
 def_inventory_equipment_compass_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_defibrillator_name		Equipment inventory (Defibrillator)	保管庫 (中, 自動体外式除細動器)
-def_inventory_equipment_defibrillator_desc		Press [$[action_equipment_use]] on an incapacitated survivor to revive them. Requires electric charge to function, and will recharge when placed into a powered large equipment storage unit.	[$[action_equipment_use]] を押して意識不明のプレイヤーや生存者を蘇生します. 蘇生が遅れると助けることができなくなります. 使用できる回数には限りがあり, 使用後は通電している保管庫で充電する必要があります.
+def_inventory_equipment_defibrillator_desc		Press [$[action_equipment_use]] on an incapacitated survivor to revive them. Requires electric charge to function, and will recharge when placed into a powered large equipment storage unit.	[$[action_equipment_use]] を押して意識不明のプレイヤーや生存者を蘇生します. 蘇生が遅れると助けられなくなります. 使用できる回数には限りがあり, 使用後は通電している保管庫で充電する必要があります.
 def_inventory_equipment_defibrillator_s_desc		A large equipment storage unit containing a defibrillator.	自動体外式除細動器が保管されている中型の保管庫です.
 def_inventory_equipment_defibrillator_node_0_label		Electric	電力
 def_inventory_equipment_defibrillator_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
@@ -4938,7 +4938,7 @@ def_inventory_equipment_strobe_light_s_desc		A small equipment storage unit cont
 def_inventory_equipment_strobe_light_node_0_label		Electric	電力
 def_inventory_equipment_strobe_light_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
 def_inventory_equipment_strobe_light_infrared_name		Equipment inventory (Strobe Light, Infrared)	保管庫 (小, ストロボライト (赤外線))
-def_inventory_equipment_strobe_light_infrared_desc		Press [$[action_equipment_use]] to toggle the strobe light on or off. Press [$[action_equipment_secondary]] to toggle MOB (man overboard) mode, which will automatically turn the strobe light on if the player is submerged in water. The strobe light will continue to function when unequipped or discarded. The infrared strobe light flashes are only visible to infrared cameras. Requires electric charge to function, and will recharge when placed into a powered small equipment storage unit.	[$[action_equipment_use]] を押してストロボライトのオン/オフを切り替えます. [$[action_equipment_secondary]] 押して船外作業モードのオン/オフを切り替えます. 船外作業モードは水の中に入った時に自動でストロボライトをオンにするモードです. このストロボライトは赤外線カメラを通してでのみ, 光を見ることができます. 使用するには充電が必要であり, 使用後は通電している保管庫で充電する必要があります.
+def_inventory_equipment_strobe_light_infrared_desc		Press [$[action_equipment_use]] to toggle the strobe light on or off. Press [$[action_equipment_secondary]] to toggle MOB (man overboard) mode, which will automatically turn the strobe light on if the player is submerged in water. The strobe light will continue to function when unequipped or discarded. The infrared strobe light flashes are only visible to infrared cameras. Requires electric charge to function, and will recharge when placed into a powered small equipment storage unit.	[$[action_equipment_use]] を押してストロボライトのオン/オフを切り替えます. [$[action_equipment_secondary]] 押して船外作業モードのオン/オフを切り替えます. 船外作業モードは水の中に入った時に自動でストロボライトをオンにするモードです. このストロボライトは赤外線カメラを通してでのみ, 光を視認できます. 使用するには充電が必要であり, 使用後は通電している保管庫で充電する必要があります.
 def_inventory_equipment_strobe_light_infrared_s_desc		A small equipment storage unit containing an infrared strobe light.	ストロボライト (赤外線) が保管されている保管庫です.
 def_inventory_equipment_strobe_light_infrared_node_0_label		Electric	電力
 def_inventory_equipment_strobe_light_infrared_node_0_desc		Electrical power connection.	携帯品が保管されているとき, その携帯品に充電が必要な場合は充電します.
@@ -5167,13 +5167,13 @@ def_jet_engine_turbine_small_node_2_desc		The rotations per second generated by 
 def_jet_engine_turbine_small_node_3_label		Electric	電力
 def_jet_engine_turbine_small_node_3_desc		The electric connection to output electric energy.	電力網に発電した電力を送ります.
 def_keel_large_name		Keel (Large)	キール (大)
-def_keel_large_desc		The keel resists rolling forces while submerged, helping to keep a boat upright and stable. The keel also resists lateral sliding forces, causing the majority of a boats movement to be in the direction of the keel axis. When combined with the force provided by a sail, this allows a sailboat to move forward in a crosswind, or even upwind.	キールが水中にある場合は, 船が横転する力に抵抗するため船が直立しやすくなります. また, キールは横方向への移動も防ぐため, 船はキールの向きと同じ方向に動くことになります. これにより風の向きにかかわらず, 帆船が目的の方向に進むことができます.
+def_keel_large_desc		The keel resists rolling forces while submerged, helping to keep a boat upright and stable. The keel also resists lateral sliding forces, causing the majority of a boats movement to be in the direction of the keel axis. When combined with the force provided by a sail, this allows a sailboat to move forward in a crosswind, or even upwind.	キールが水中にある場合は, 船が横転する力に抵抗するため船が直立しやすくなります. また, キールは横方向への移動も防ぐため, 船はキールの向きと同じ方向に動くことになります. これにより風の向きにかかわらず, 帆船が目的の方向に進めます.
 def_keel_large_s_desc		A large boat keel used for sailing.	航海のための船の大型のキールです.
 def_keel_medium_name		Keel (Medium)	キール (中)
-def_keel_medium_desc		The keel resists rolling forces while submerged, helping to keep a boat upright and stable. The keel also resists lateral sliding forces, causing the majority of a boats movement to be in the direction of the keel axis. When combined with the force provided by a sail, this allows a sailboat to move forward in a crosswind, or even upwind.	キールが水中にある場合は, 船が横転する力に抵抗するため船が直立しやすくなります. また, キールは横方向への移動も防ぐため, 船はキールの向きと同じ方向に動くことになります. これにより風の向きにかかわらず, 帆船が目的の方向に進むことができます.
+def_keel_medium_desc		The keel resists rolling forces while submerged, helping to keep a boat upright and stable. The keel also resists lateral sliding forces, causing the majority of a boats movement to be in the direction of the keel axis. When combined with the force provided by a sail, this allows a sailboat to move forward in a crosswind, or even upwind.	キールが水中にある場合は, 船が横転する力に抵抗するため船が直立しやすくなります. また, キールは横方向への移動も防ぐため, 船はキールの向きと同じ方向に動くことになります. これにより風の向きにかかわらず, 帆船が目的の方向に進めます.
 def_keel_medium_s_desc		A medium boat keel used for sailing.	航海のための船の中型のキールです.
 def_keel_small_name		Keel (Small)	キール (小)
-def_keel_small_desc		The keel resists rolling forces while submerged, helping to keep a boat upright and stable. The keel also resists lateral sliding forces, causing the majority of a boats movement to be in the direction of the keel axis. When combined with the force provided by a sail, this allows a sailboat to move forward in a crosswind, or even upwind.	キールが水中にある場合は, 船が横転する力に抵抗するため船が直立しやすくなります. また, キールは横方向への移動も防ぐため, 船はキールの向きと同じ方向に動くことになります. これにより風の向きにかかわらず, 帆船が目的の方向に進むことができます.
+def_keel_small_desc		The keel resists rolling forces while submerged, helping to keep a boat upright and stable. The keel also resists lateral sliding forces, causing the majority of a boats movement to be in the direction of the keel axis. When combined with the force provided by a sail, this allows a sailboat to move forward in a crosswind, or even upwind.	キールが水中にある場合は, 船が横転する力に抵抗するため船が直立しやすくなります. また, キールは横方向への移動も防ぐため, 船はキールの向きと同じ方向に動くことになります. これにより風の向きにかかわらず, 帆船が目的の方向に進めます.
 def_keel_small_s_desc		A small boat keel used for sailing.	航海のための船の小型のキールです.
 def_ladder_small_name		Ladder	梯子
 def_ladder_small_desc		You can attach to the ladder by interacting with [$[action_use_seat]], then detach again with either [$[action_use_seat]] or [$[action_jump]]. You will automatically detach from the ladder when you reach the top.	[$[action_use_seat]] を押して梯子の登り下りをし, [$[action_use_seat]] や [$[action_jump]] を押して梯子から離れます. 頂上に達すると自動で梯子から離れます.
@@ -5229,7 +5229,7 @@ def_laser_point_sensor_node_1_desc		On/Off channel 1: is laser detected. Number 
 def_laser_point_sensor_node_2_label		Wavelength	レーザーの波長
 def_laser_point_sensor_node_2_desc		The specific light wavelength to detect (whole number).	照射するレーザーの波長を制御します. 入力する数値は整数です.
 def_linear_base_name		Linear Track Base	レール土台 (大)
-def_linear_base_desc		You can build the track using the Linear Track Extension component. This base component provides 3 blocks that can be built on. A pair of on/off signals allow you to control the up and down motion of the slider, and a numerical output lets you measure the slider's offset from its starting position. Multiple slider bases can run along the same track. The up/down speed can be configured by selecting this component with the select tool.	レール上を移動するオブジェクトを作成することができます. この土台は3ブロック分です. 2つのオン/オフ信号でレール上を動かし, 数値信号の出力で初期位置からの移動距離を測ることができます. 同じレール上に複数の土台を設置することができます. 土台の移動速度はプロパティウィンドウから設定できます.
+def_linear_base_desc		You can build the track using the Linear Track Extension component. This base component provides 3 blocks that can be built on. A pair of on/off signals allow you to control the up and down motion of the slider, and a numerical output lets you measure the slider's offset from its starting position. Multiple slider bases can run along the same track. The up/down speed can be configured by selecting this component with the select tool.	レール上を移動するオブジェクトを作成できます. この土台は3ブロック分です. 2つのオン/オフ信号でレール上を動かし, 数値信号の出力で初期位置からの移動距離を測れます. 同じレール上に複数の土台を設置できます. 土台の移動速度はプロパティウィンドウから設定できます.
 def_linear_base_s_desc		A slider that moves along a modular linear track.	大型のレール上を移動できる土台です.
 def_linear_base_node_0_label		Down	後退
 def_linear_base_node_0_desc		Moves the slider in the track's down direction (indicated by the hollow arrow).	オン信号を受け取ると設定された速度で土台を後ろに動かします.
@@ -5244,7 +5244,7 @@ def_linear_base_node_4_desc		Power connection for transfering mechanical energy.
 def_linear_base_node_5_label		Fluid	流体
 def_linear_base_node_5_desc		Fluid connection for transfering fluid.	レール間で流体の伝達ができます.
 def_linear_compact_base_name		Compact Linear Track Base	レール土台 (小)
-def_linear_compact_base_desc		You can build the track using the Compact Linear Track Extension component. The speed of the slider can be set using its number input.	レール上を移動するオブジェクトを作成することができます. 土台の移動速度は数値信号で制御します.
+def_linear_compact_base_desc		You can build the track using the Compact Linear Track Extension component. The speed of the slider can be set using its number input.	レール上を移動するオブジェクトを作成できます. 土台の移動速度は数値信号で制御します.
 def_linear_compact_base_s_desc		A compact slider that moves along a modular linear track.	小型のレール上を移動できる土台です.
 def_linear_compact_base_node_0_label		Slider Speed	移動速度
 def_linear_compact_base_node_0_desc			-1から1の範囲で土台の移動速度を制御します.
@@ -5898,7 +5898,7 @@ def_oil_rig_drill_connector_node_3_desc		Connects or disconnects a pair of drill
 def_oil_rig_drill_connector_node_4_label		Connector Aligned	掘削棒揃え済み
 def_oil_rig_drill_connector_node_4_desc		Returns true when the connection point aligns over the end of a pair of drill rods.	掘削棒同士が揃って接続可能であればオン信号を出力します.
 def_oil_rig_drill_driver_name		Oil Rig Rotary Table	油井回転台
-def_oil_rig_drill_driver_desc		Torque provided by an external motor rotates the table, which can rotate a drill rod placed through the center of the table.	動力を与えて回転台を回転させて, 接続した掘削棒を回転させることができます.
+def_oil_rig_drill_driver_desc		Torque provided by an external motor rotates the table, which can rotate a drill rod placed through the center of the table.	動力を与えて回転台を回転させて, 接続した掘削棒を回転させられます.
 def_oil_rig_drill_driver_s_desc		A rotary table for drilling in an oil rig.	油井に使われる回転台です.
 def_oil_rig_drill_driver_node_0_label		Clamp	掘削棒接続
 def_oil_rig_drill_driver_node_0_desc		Attach a drill rod to the table. This will transfer any rotation of the table to the attached drill rod.	オン信号を受け取ると掘削棒と回転台を接続し, 掘削棒を回転できるようにします.
@@ -5995,21 +5995,21 @@ def_propeller_s_desc		A small boat propeller.	船の小型スクリューです.
 def_propeller_node_0_label		RPS	動力
 def_propeller_node_0_desc		Receives power generated by an engine.	エンジンからの動力を受け取ります.
 def_propeller_pitch_name		Pitchable Propeller	スクリュー (可変ピッチ, 中)
-def_propeller_pitch_desc		A standard number input controls the propeller's hub, allowing you to affect its pitch. Power received from an engine affects forward and backward force generated. This propeller will only operate underwater.	エンジンからの動力を受け取ると前後に推進力を発生させます. 水中でのみ動作します. 更に数値信号の入力でスクリューの方向を変えることができ, 乗り物のピッチを制御できます.
+def_propeller_pitch_desc		A standard number input controls the propeller's hub, allowing you to affect its pitch. Power received from an engine affects forward and backward force generated. This propeller will only operate underwater.	エンジンからの動力を受け取ると前後に推進力を発生させます. 水中でのみ動作します. 更に数値信号の入力でスクリューの方向を変えられます, 乗り物のピッチを制御できます.
 def_propeller_pitch_s_desc		A boat propeller with controllable pitch.	船のスクリューです.
 def_propeller_pitch_node_0_label		RPS	動力
 def_propeller_pitch_node_0_desc		Receives power generated by an engine.	エンジンからの動力を受け取ります.
 def_propeller_pitch_node_1_label		Pitch	ピッチ
 def_propeller_pitch_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	スクリューのピッチ (乗り物の前後方向の回転) を制御する-1から1の範囲の数値信号です.
 def_propeller_pitch_large_name		Large Pitchable Propeller	スクリュー (可変ピッチ, 大)
-def_propeller_pitch_large_desc		A standard number input controls the propeller's hub, allowing you to affect its pitch. Power received from an engine affects forward and backward force generated. This propeller will only operate underwater.	エンジンからの動力を受け取ると前後に推進力を発生させます. 水中でのみ動作します. 更に数値信号の入力でスクリューの方向を変えることができ, 乗り物のピッチを制御できます.
+def_propeller_pitch_large_desc		A standard number input controls the propeller's hub, allowing you to affect its pitch. Power received from an engine affects forward and backward force generated. This propeller will only operate underwater.	エンジンからの動力を受け取ると前後に推進力を発生させます. 水中でのみ動作します. 更に数値信号の入力でスクリューの方向を変えられます, 乗り物のピッチを制御できます.
 def_propeller_pitch_large_s_desc		A large boat propeller with controllable pitch.	船の大型スクリューです.
 def_propeller_pitch_large_node_0_label		RPS	動力
 def_propeller_pitch_large_node_0_desc		Receives power generated by an engine.	エンジンからの動力を受け取ります.
 def_propeller_pitch_large_node_1_label		Pitch	ピッチ
 def_propeller_pitch_large_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	スクリューのピッチ (乗り物の前後方向の回転) を制御する-1から1の範囲の数値信号です.
 def_propeller_pitch_small_name		Small Pitchable Propeller	スクリュー (可変ピッチ, 小)
-def_propeller_pitch_small_desc		A standard number input controls the propeller's hub, allowing you to affect its pitch. Power received from an engine affects forward and backward force generated. This propeller will only operate underwater.	エンジンからの動力を受け取ると前後に推進力を発生させます. 水中でのみ動作します. 更に数値信号の入力でスクリューの方向を変えることができ, 乗り物のピッチを制御できます.
+def_propeller_pitch_small_desc		A standard number input controls the propeller's hub, allowing you to affect its pitch. Power received from an engine affects forward and backward force generated. This propeller will only operate underwater.	エンジンからの動力を受け取ると前後に推進力を発生させます. 水中でのみ動作します. 更に数値信号の入力でスクリューの方向を変えられます, 乗り物のピッチを制御できます.
 def_propeller_pitch_small_s_desc		A small boat propeller with controllable pitch.	船の小型スクリューです.
 def_propeller_pitch_small_node_0_label		RPS	動力
 def_propeller_pitch_small_node_0_desc		Receives power generated by an engine.	エンジンからの動力を受け取ります.
@@ -6243,7 +6243,7 @@ def_rain_sensor_s_desc		A rain sensor for measuring the current meteorological c
 def_rain_sensor_node_0_label		Rain Factor	雨量
 def_rain_sensor_node_0_desc		The amount of current rain fall from 0 to 1.	雨量を0 (雨最小) から1 (雨最大) の範囲で出力します.
 def_rcs_thruster_name		RCS Thruster	姿勢制御スラスター
-def_rcs_thruster_desc		The reaction control system can fire in 4 non-cardinal directions resulting in 5 directions of motion. RCS thrusters also have body relative activation modes where thrusters will collaborate from different orientations to achieve the desired translation or rotation. The RCS thruster also has positional and rotational stabilization toggles.	姿勢制御システムは水平4方向に噴射させることができ, 結果として5方向に乗り物を動かすことができます. また相対制御モードにより複数の異なる向きのスラスターで目標の位置や向きに近づけることが可能です. 更に位置や向きの回転制御の有効化/無効化が可能です.
+def_rcs_thruster_desc		The reaction control system can fire in 4 non-cardinal directions resulting in 5 directions of motion. RCS thrusters also have body relative activation modes where thrusters will collaborate from different orientations to achieve the desired translation or rotation. The RCS thruster also has positional and rotational stabilization toggles.	姿勢制御システムは水平4方向に噴射させられます, 結果として5方向に乗り物を動かせます. また相対制御モードにより複数の異なる向きのスラスターで目標の位置や向きに近づけることが可能です. 更に位置や向きの回転制御の有効化/無効化が可能です.
 def_rcs_thruster_s_desc		A fluid jet that fires pressurized air for altitude control and translation.	高圧空気を噴射して高度と姿勢制御を行うジェットです.
 def_rcs_thruster_node_0_label		Composite Input	複合信号入力
 def_rcs_thruster_node_0_desc		Composite bool channels: 1:Component X+, 2:Component X-, 3:Component Z+, 4:Component Z-, 5:Enable position stabilization, 6:Enable rotation stabilization, 7:Body X+, 8:Body X-, 9:Body Y+, 10:Body Y-, 11:Body Z+, 12:Body Z-, 13:Body Rotate X+, 14:Body Rotate X-, 15:Body Rotate Y+, 16:Body Rotate Y-, 17:Body Rotate Z+, 18:Body Rotate Z-	オンオフ信号チャンネル: [1] 部品x+, [2] 部品x-, [3] 部品z+, [4] 部品z-, [5] 位置安定化の有効化, [6] 向き安定化の有効化, [7] 機体x+, [8] 機体x-, [9] 機体y+, [10] 機体y-, [11] 機体z+, [12] 機体z-, [13] 機体回転x+, [14] 機体回転x-, [15] 機体回転y+, [16] 機体回転y-, [17] 機体回転z+, [18] 機体回転z-
@@ -6252,7 +6252,7 @@ def_rcs_thruster_node_1_desc		The fluid input to output from the thruster.	ス�
 def_rcs_thruster_node_2_label		Electric	電力
 def_rcs_thruster_node_2_desc		Electrical power connection.	電力接続
 def_relief_valve_gas_name		Gas Relief Valve	気体減圧弁
-def_relief_valve_gas_desc		The valve allows gases to pass across the two directional valve.	気体が弁を通過することができます.
+def_relief_valve_gas_desc		The valve allows gases to pass across the two directional valve.	弁内を通過する気体の流量を出力する機能があります.
 def_relief_valve_gas_s_desc		A relief valve for gases in a system.	流体システムに設置する気体減圧弁です.
 def_relief_valve_gas_node_0_label		Fluid A	気体A
 def_relief_valve_gas_node_0_desc			弁を通過する気体を入出力します.
@@ -6261,7 +6261,7 @@ def_relief_valve_gas_node_1_desc			弁を通過する気体を入出力します
 def_relief_valve_gas_node_2_label		Flow Rate	流量
 def_relief_valve_gas_node_2_desc		Fluid flow rate in L/s.	この部品に流れる流体の量をリットル毎秒で出力します.
 def_relief_valve_liquid_name		Liquid Relief Valve	液体減圧弁
-def_relief_valve_liquid_desc		The valve allows liquids to pass across the two directional valve.	流体が弁を通過することができます.
+def_relief_valve_liquid_desc		The valve allows liquids to pass across the two directional valve.	弁内を通過する流体の流量を出力する機能があります.
 def_relief_valve_liquid_s_desc		A relief valve for liquids in a system.	流体システムに設置する液体減圧弁です.
 def_relief_valve_liquid_node_0_label		Fluid A	液体A
 def_relief_valve_liquid_node_0_desc			弁を通過する液体を入出力します.
@@ -7546,17 +7546,17 @@ def_steam_coal_funnel_node_0_label		Open	排出
 def_steam_coal_funnel_node_0_desc			オン信号を受け取ると中の物資をゆっくり排出します.
 def_steam_coal_hopper_name		Hopper	物資ホッパー (小)
 def_steam_coal_hopper_desc		Pouring resources into the receptacle will add it to the connected system.	上部に物資を落とすと自動的に内部に取り込みます.
-def_steam_coal_hopper_s_desc		A hopper that can accept bulk minerals, ingots, and fish.	物資を中に入れる小型のホッパーです. 鉱物, 延べ棒, 魚を扱うことができます.
+def_steam_coal_hopper_s_desc		A hopper that can accept bulk minerals, ingots, and fish.	物資を中に入れる小型のホッパーです. 鉱物, 延べ棒, 魚を扱えます.
 def_steam_coal_hopper_node_0_label		Fill Level	物資の量
 def_steam_coal_hopper_node_0_desc			ホッパーの中の物資の量を出力します.
 def_steam_coal_hopper_l_name		Hopper Large	物資ホッパー (大)
 def_steam_coal_hopper_l_desc		Pouring resources into the receptacle will add it to the connected system.	上部に物資を落とすと自動的に内部に取り込みます.
-def_steam_coal_hopper_l_s_desc		A hopper that can accept bulk minerals, ingots, and fish.	物資を中に入れる大型のホッパーです. 鉱物, 延べ棒, 魚を扱うことができます.
+def_steam_coal_hopper_l_s_desc		A hopper that can accept bulk minerals, ingots, and fish.	物資を中に入れる大型のホッパーです. 鉱物, 延べ棒, 魚を扱えます.
 def_steam_coal_hopper_l_node_0_label		Fill Level	物資の量
 def_steam_coal_hopper_l_node_0_desc			ホッパーの中の物資の量を出力します.
 def_steam_coal_hopper_m_name		Hopper Medium	物資ホッパー (中)
 def_steam_coal_hopper_m_desc		Pouring resources into the receptacle will add it to the connected system.	上部に物資を落とすと自動的に内部に取り込みます.
-def_steam_coal_hopper_m_s_desc		A hopper that can accept bulk minerals, ingots, and fish.	物資を中に入れる中型のホッパーです. 鉱物, 延べ棒, 魚を扱うことができます.
+def_steam_coal_hopper_m_s_desc		A hopper that can accept bulk minerals, ingots, and fish.	物資を中に入れる中型のホッパーです. 鉱物, 延べ棒, 魚を扱えます.
 def_steam_coal_hopper_m_node_0_label		Fill Level	物資の量
 def_steam_coal_hopper_m_node_0_desc			ホッパーの中の物資の量を出力します.
 def_steam_coal_vacuum_name		Vacuum Duct	物資ダクト (吸引)
@@ -7959,28 +7959,28 @@ def_trans_angle_desc
 def_trans_angle_s_desc		An angled pipe for transferring to components from an engine.	動力や流体を輸送するパイプの角部分です.
 def_trans_block_angle_name		Pipe Angle (Enclosed)	配管 (角, ブロック)
 def_trans_block_angle_desc			
-def_trans_block_angle_s_desc		An angled pipe for transferring to components from an engine.	動力や流体を輸送するパイプの角部分です. ブロックの形をしており, 壁や床などに埋め込むことができます.
+def_trans_block_angle_s_desc		An angled pipe for transferring to components from an engine.	動力や流体を輸送するパイプの角部分です. ブロックの形をしており, 壁や床などに埋め込めます.
 def_trans_block_corner_name		Pipe Angle Corner (Enclosed)	配管 (角分岐, ブロック)
 def_trans_block_corner_desc			
-def_trans_block_corner_s_desc		A T-shaped pipe segment that can be used to branch piping into three directions.	動力や流体を輸送するパイプの角分岐部分です. ブロックの形をしており, 壁や床などに埋め込むことができます.
+def_trans_block_corner_s_desc		A T-shaped pipe segment that can be used to branch piping into three directions.	動力や流体を輸送するパイプの角分岐部分です. ブロックの形をしており, 壁や床などに埋め込めます.
 def_trans_block_cross_name		Pipe Cross (Enclosed)	配管 (十字, ブロック)
 def_trans_block_cross_desc			
-def_trans_block_cross_s_desc		An X-shaped pipe segment that can be used to branch piping into four directions.	動力や流体を輸送するパイプの十字部分です. ブロックの形をしており, 壁や床などに埋め込むことができます.
+def_trans_block_cross_s_desc		An X-shaped pipe segment that can be used to branch piping into four directions.	動力や流体を輸送するパイプの十字部分です. ブロックの形をしており, 壁や床などに埋め込めます.
 def_trans_block_cross_corner_name		Pipe Cross Corner (Enclosed)	配管 (角十字, ブロック)
 def_trans_block_cross_corner_desc			
-def_trans_block_cross_corner_s_desc		An X-shaped pipe segment that can be used to branch piping into five directions.	動力や流体を輸送するパイプの角十字部分です. ブロックの形をしており, 壁や床などに埋め込むことができます.
+def_trans_block_cross_corner_s_desc		An X-shaped pipe segment that can be used to branch piping into five directions.	動力や流体を輸送するパイプの角十字部分です. ブロックの形をしており, 壁や床などに埋め込めます.
 def_trans_block_omni_name		Pipe Omni (Enclosed)	配管 (全方向, ブロック)
 def_trans_block_omni_desc			
-def_trans_block_omni_s_desc		An omnidirectional pipe segment.	動力や流体を輸送するパイプの全方向分岐部分です. ブロックの形をしており, 壁や床などに埋め込むことができます.
+def_trans_block_omni_s_desc		An omnidirectional pipe segment.	動力や流体を輸送するパイプの全方向分岐部分です. ブロックの形をしており, 壁や床などに埋め込めます.
 def_trans_block_straight_name		Pipe Straight (Enclosed)	配管 (直線, ブロック)
 def_trans_block_straight_desc			
-def_trans_block_straight_s_desc		A straight section of pipe for transferring to components from an engine.	動力や流体を輸送するパイプの直線部分です. ブロックの形をしており, 壁や床などに埋め込むことができます.
+def_trans_block_straight_s_desc		A straight section of pipe for transferring to components from an engine.	動力や流体を輸送するパイプの直線部分です. ブロックの形をしており, 壁や床などに埋め込めます.
 def_trans_block_t_name		Pipe T-Piece (Enclosed)	配管 (T字, ブロック)
 def_trans_block_t_desc			
-def_trans_block_t_s_desc		A T-shaped pipe segment that can be used to branch piping into three directions.	動力や流体を輸送するパイプのT字部分です. ブロックの形をしており, 壁や床などに埋め込むことができます.
+def_trans_block_t_s_desc		A T-shaped pipe segment that can be used to branch piping into three directions.	動力や流体を輸送するパイプのT字部分です. ブロックの形をしており, 壁や床などに埋め込めます.
 def_trans_block_t_corner_name		Pipe T-Piece Corner (Enclosed)	配管 (角T字, ブロック)
 def_trans_block_t_corner_desc			
-def_trans_block_t_corner_s_desc		A T-shaped pipe segment that can be used to branch piping into four directions.	動力や流体を輸送するパイプの角T字部分です. ブロックの形をしており, 壁や床などに埋め込むことができます.
+def_trans_block_t_corner_s_desc		A T-shaped pipe segment that can be used to branch piping into four directions.	動力や流体を輸送するパイプの角T字部分です. ブロックの形をしており, 壁や床などに埋め込めます.
 def_trans_corner_name		Pipe Angle Corner	配管 (角分岐, パイプ)
 def_trans_corner_desc			
 def_trans_corner_s_desc		A T-shaped pipe segment that can be used to branch piping into three directions.	動力や流体を輸送するパイプの角分岐部分です.
@@ -8004,7 +8004,7 @@ def_trans_t_corner_desc
 def_trans_t_corner_s_desc		A T-shaped pipe segment that can be used to branch piping into four directions.	動力や流体を輸送するパイプの角T字部分です.
 def_turbine_name		Turbine Engine	タービンエンジン
 def_turbine_desc		An on/off signal controls engine startup. The throttle input takes a standard value between -1 and 1 and controls the forward and backward force of connected components. The engine's maximum power output is split between connected components.	オン/オフ信号でエンジンを始動し, 数値信号によるスロットルで出力を調整します. エンジンの最大出力は接続された部品で分割されます.
-def_turbine_s_desc		Turbine engine that can be connected to powered components.	動力を必要とする部品と接続できるタービンエンジンです.
+def_turbine_s_desc		Turbine engine that can be connected to powered components.	動力を要求する部品に動力を供給できるタービンエンジンです.
 def_turbine_node_0_label		RPS	動力
 def_turbine_node_0_desc		The rps supplied by the engine for inputting to other components.	エンジンの動力を他の動力を必要とする部品に向けて出力します.
 def_turbine_node_1_label		Starter	セルモーター
