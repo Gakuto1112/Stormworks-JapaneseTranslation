@@ -7911,7 +7911,7 @@ def_train_wheels_piston_node_2_desc			内部の蒸気を排出して蒸気を循
 def_train_wheels_piston_node_3_label		Steam Out	蒸気排出
 def_train_wheels_piston_node_3_desc			内部の蒸気を排出して蒸気を循環させます.
 def_train_wheels_piston_node_4_label		Reverser	反転装置
-def_train_wheels_piston_node_4_desc		Reverse piston direction.	オン信号を受け取ると進行方向を反転できます.
+def_train_wheels_piston_node_4_desc		Reverse piston direction.	オン信号を受け取ると進行方向を反転させます.
 def_train_wheels_piston_large_name		Train Wheel Drive Piston Large	列車の蒸気ピストン (大)
 def_train_wheels_piston_large_desc		Attach to the front of a group of train-wheel assemblies to generate torque for them via mechanical steam power. Activate the reverser to flip the internal valves and the direction of travel.	蒸気駆動の車輪と隣接させることで, 蒸気の力で車輪を駆動させます. 内蔵の反転装置を作動させると進行方向と逆方向に移動できます.
 def_train_wheels_piston_large_s_desc		Steam powered train piston assembly.	蒸気駆動の列車の車輪を駆動させる蒸気ピストンです.
@@ -7924,7 +7924,7 @@ def_train_wheels_piston_large_node_2_desc			内部の蒸気を排出して蒸気
 def_train_wheels_piston_large_node_3_label		Steam Out	蒸気排出
 def_train_wheels_piston_large_node_3_desc			内部の蒸気を排出して蒸気を循環させます.
 def_train_wheels_piston_large_node_4_label		Reverser	反転装置
-def_train_wheels_piston_large_node_4_desc		Reverse piston direction.	オン信号を受け取ると進行方向を反転できます.
+def_train_wheels_piston_large_node_4_desc		Reverse piston direction.	オン信号を受け取ると進行方向を反転させます.
 def_train_wheels_piston_mid_name		Train Wheel Drive Piston Medium	列車の蒸気ピストン (中)
 def_train_wheels_piston_mid_desc		Attach to the front of a group of train-wheel assemblies to generate torque for them via mechanical steam power. Activate the reverser to flip the internal valves and the direction of travel.	蒸気駆動の車輪と隣接させることで, 蒸気の力で車輪を駆動させます. 内蔵の反転装置を作動させると進行方向と逆方向に移動できます.
 def_train_wheels_piston_mid_s_desc		Steam powered train piston assembly.	蒸気駆動の列車の車輪を駆動させる蒸気ピストンです.
@@ -7937,7 +7937,7 @@ def_train_wheels_piston_mid_node_2_desc			内部の蒸気を排出して蒸気�
 def_train_wheels_piston_mid_node_3_label		Steam Out	蒸気排出
 def_train_wheels_piston_mid_node_3_desc			内部の蒸気を排出して蒸気を循環させます.
 def_train_wheels_piston_mid_node_4_label		Reverser	反転装置
-def_train_wheels_piston_mid_node_4_desc		Reverse piston direction.	オン信号を受け取ると進行方向を反転できます.
+def_train_wheels_piston_mid_node_4_desc		Reverse piston direction.	オン信号を受け取ると進行方向を反転させます.
 def_transponder_name		Transponder	遭難信号発信機
 def_transponder_desc		When activated, emits a continuous transponder signal that can be detected over great distances by any transponder locator.	起動すると, 探知機によって探知できる信号が広範囲に渡って発信されます.
 def_transponder_s_desc		An emergency search and rescue transponder.	遭難信号を発信する発信機です.
