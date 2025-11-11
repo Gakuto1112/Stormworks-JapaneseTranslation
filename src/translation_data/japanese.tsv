@@ -591,6 +591,7 @@ id	description	en	local
 		Requires Password	パスワードを設定する
 		Password	パスワード
 		Max Players	定員数
+		Allow Modded Components	Mod部品を許可
 		Host	ホスト
 		Submit	OK
 		CHOOSE BASE	拠点の選択
@@ -4264,22 +4265,22 @@ def_gun_belt_flex_name		Autocannon Belt (Flexible)	機関砲の弾帯 (柔軟)
 def_gun_belt_flex_desc		Flexible belts can be connected together by rope nodes to transfer ammo. Autocannon belts can transfer all calibers of autocannon ammo.	柔軟型の弾帯はロープノードで接続することで弾薬を輸送できます. 機関砲の弾帯は全ての口径の機関砲の弾を輸送できます.
 def_gun_belt_flex_s_desc		An autocannon ammo belt.	機関砲の弾帯の部品です.
 def_gun_belt_flex_node_0_label		Ammo	弾薬
-def_gun_belt_flex_node_0_desc			弾薬の輸送ベルトを形成します.
+def_gun_belt_flex_node_0_desc			もう一方の柔軟型弾帯と接続し, 弾薬の輸送ベルトを形成します.
 def_gun_belt_flex_l_name		Battle Cannon Belt (Flexible)	大砲の弾帯 (小, 柔軟)
 def_gun_belt_flex_l_desc		Flexible belts can be connected together by rope nodes to transfer ammo. Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.	柔軟型の弾帯はロープノードで接続することで弾薬を輸送できます. 大砲の弾帯は内部に砲弾を格納し, 輸送できます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_flex_l_s_desc		A battle cannon ammo belt.	小型の大砲の弾帯の部品です.
 def_gun_belt_flex_l_node_0_label		Ammo	弾薬
-def_gun_belt_flex_l_node_0_desc			弾薬の輸送ベルトを形成します.
+def_gun_belt_flex_l_node_0_desc			もう一方の柔軟型弾帯と接続し, 弾薬の輸送ベルトを形成します.
 def_gun_belt_flex_xl_name		Artillery Cannon Belt (Flexible)	大砲の弾帯 (中, 柔軟)
 def_gun_belt_flex_xl_desc		Flexible belts can be connected together by rope nodes to transfer ammo. Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.	柔軟型の弾帯はロープノードで接続することで弾薬を輸送できます. 大砲の弾帯は内部に砲弾を格納し, 輸送できます. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_flex_xl_s_desc		An artillery cannon ammo belt.	中型の大砲の弾帯の部品です.
 def_gun_belt_flex_xl_node_0_label		Ammo	弾薬
-def_gun_belt_flex_xl_node_0_desc			弾薬の輸送ベルトを形成します.
+def_gun_belt_flex_xl_node_0_desc			もう一方の柔軟型弾帯と接続し, 弾薬の輸送ベルトを形成します.
 def_gun_belt_flex_xxl_name		Bertha Cannon Belt (Flexible)	大砲の弾帯 (大, 柔軟)
 def_gun_belt_flex_xxl_desc		Flexible belts can be connected together by rope nodes to transfer ammo. Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window. Bertha shells are too large to be moved by hand.	柔軟型の弾帯はロープノードで接続することで弾薬を輸送できます. 大砲の弾帯は内部に砲弾を格納し, 輸送できます. 大型の砲弾は大きすぎて手で持ち運ぶことはできません. 砲弾の種類はプロパティウィンドウから設定できます.
 def_gun_belt_flex_xxl_s_desc		A bertha cannon ammo belt.	大型の大砲の弾帯の部品です.
 def_gun_belt_flex_xxl_node_0_label		Ammo	弾薬
-def_gun_belt_flex_xxl_node_0_desc			弾薬の輸送ベルトを形成します.
+def_gun_belt_flex_xxl_node_0_desc			もう一方の柔軟型弾帯と接続し, 弾薬の輸送ベルトを形成します.
 def_gun_belt_junction_name		Autocannon Belt (Junction)	機関砲の弾帯 (分岐)
 def_gun_belt_junction_desc		Autocannon belts can transfer all calibers of autocannon ammo. Junction belts redirect the path of ammo transfer.	機関砲の弾帯は全ての口径の機関砲の弾を輸送できます. この弾帯は弾を2方向に分岐します.
 def_gun_belt_junction_s_desc		An autocannon ammo belt.	機関砲の弾帯の部品です.
@@ -7539,6 +7540,11 @@ def_steam_coal_firebox_l_node_5_label		Air	空気
 def_steam_coal_firebox_l_node_5_desc		Port for supplying air to the fire.	火炎室を動かすために供給される空気です.
 def_steam_coal_firebox_l_node_6_label		Exhaust	排煙
 def_steam_coal_firebox_l_node_6_desc		Port for removing exhaust from burnt coal.	燃焼室からの煙が排出されます.
+def_steam_coal_flex_name		Flexible Duct	物資ダクト (柔軟)
+def_steam_coal_flex_desc		Transports resources through the connected system. Flexible ducts can be connected together by rope nodes to transfer resources.	接続されている部品へ物資を輸送します. 柔軟型の物質ダクトはロープノードで接続することで物資を輸送できます.
+def_steam_coal_flex_s_desc		A flexible resource duct.	柔軟に配置可能な物資ダクトです.
+def_steam_coal_flex_node_0_label		Duct	ダクト接続
+def_steam_coal_flex_node_0_desc			もう一方の柔軟型物資ダクトと接続し, ダクトを形成します.
 def_steam_coal_funnel_name		Funnel Duct	物資排出口
 def_steam_coal_funnel_desc		Can be toggled to slowly move resources out of the connected system.	オン信号を受け取ると中の物資をゆっくり排出します.
 def_steam_coal_funnel_s_desc		A funnel for moving resources.	物資を排出する排出口です.
@@ -7735,14 +7741,16 @@ def_torque_meter_node_2_desc		The torque reading from the power system.	動力�
 def_train_wheels_name		Train Wheel Assembly Classic	列車の車輪 (従来型)
 def_train_wheels_desc		Attaches to rail lines.	鉄道のレールに沿って回転します. この車輪は以前のバージョンから存在したものです.
 def_train_wheels_s_desc		Train wheel assembly.	列車を作成する時に使用する台車です.
-def_train_wheels_node_0_label		Brakes	ブレーキ
-def_train_wheels_node_0_desc		Number input to set the level of braking applied to the wheels.	車輪にブレーキをかける割合を0から1の範囲で入力します.
-def_train_wheels_node_1_label		RPS	動力
-def_train_wheels_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	エンジンからの動力を受け取ります.
-def_train_wheels_node_2_label		Wheel Slip	空転
-def_train_wheels_node_2_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
-def_train_wheels_node_3_label		Wheel Release	脱線
-def_train_wheels_node_3_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
+def_train_wheels_node_0_label		Electric	電力出力
+def_train_wheels_node_0_desc		Electrical power connection. Receives electric energy from the rail lines.	レールから受け取った電力を出力します.
+def_train_wheels_node_1_label		Brakes	ブレーキ
+def_train_wheels_node_1_desc		Number input to set the level of braking applied to the wheels.	車輪にブレーキをかける割合を0から1の範囲で入力します.
+def_train_wheels_node_2_label		RPS	動力
+def_train_wheels_node_2_desc		Receives power generated by an engine to control forward and backward rotation.	エンジンからの動力を受け取ります.
+def_train_wheels_node_3_label		Wheel Slip	空転
+def_train_wheels_node_3_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
+def_train_wheels_node_4_label		Wheel Release	脱線
+def_train_wheels_node_4_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
 def_train_wheels_dynamic_flanged_name		Train Wheel Assembly Flanged A	列車の車輪 (無動力型A)
 def_train_wheels_dynamic_flanged_desc		Attaches to rail lines.	鉄道のレールに沿って回転します.
 def_train_wheels_dynamic_flanged_s_desc		Unpowered train wheel assembly.	無動力の車輪です.
@@ -7880,25 +7888,29 @@ def_train_wheels_dynamic_x1_small_node_3_desc		Input to release wheels.	オン�
 def_train_wheels_dynamic_x2_name		Train Wheel Assembly x2	列車の車輪 (2連)
 def_train_wheels_dynamic_x2_desc		Attaches to rail lines.	鉄道のレールに沿って回転します.
 def_train_wheels_dynamic_x2_s_desc		Train wheel assembly.	列車を作成する時に使用する台車です.
-def_train_wheels_dynamic_x2_node_0_label		Brakes	ブレーキ
-def_train_wheels_dynamic_x2_node_0_desc		Number input to set the level of braking applied to the wheels.	車輪にブレーキをかける割合を0から1の範囲で入力します.
-def_train_wheels_dynamic_x2_node_1_label		RPS	動力
-def_train_wheels_dynamic_x2_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	エンジンからの動力を受け取ります.
-def_train_wheels_dynamic_x2_node_2_label		Wheel Slip	空転
-def_train_wheels_dynamic_x2_node_2_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
-def_train_wheels_dynamic_x2_node_3_label		Wheel Release	脱線
-def_train_wheels_dynamic_x2_node_3_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
+def_train_wheels_dynamic_x2_node_0_label		Electric	電力出力
+def_train_wheels_dynamic_x2_node_0_desc		Electrical power connection. Receives electric energy from the rail lines.	レールから受け取った電力を出力します.
+def_train_wheels_dynamic_x2_node_1_label		Brakes	ブレーキ
+def_train_wheels_dynamic_x2_node_1_desc		Number input to set the level of braking applied to the wheels.	車輪にブレーキをかける割合を0から1の範囲で入力します.
+def_train_wheels_dynamic_x2_node_2_label		RPS	動力
+def_train_wheels_dynamic_x2_node_2_desc		Receives power generated by an engine to control forward and backward rotation.	エンジンからの動力を受け取ります.
+def_train_wheels_dynamic_x2_node_3_label		Wheel Slip	空転
+def_train_wheels_dynamic_x2_node_3_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
+def_train_wheels_dynamic_x2_node_4_label		Wheel Release	脱線
+def_train_wheels_dynamic_x2_node_4_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
 def_train_wheels_dynamic_x3_name		Train Wheel Assembly x3	列車の車輪 (3連)
 def_train_wheels_dynamic_x3_desc		Attaches to rail lines.	鉄道のレールに沿って回転します.
 def_train_wheels_dynamic_x3_s_desc		Train wheel assembly.	列車を作成する時に使用する台車です.
-def_train_wheels_dynamic_x3_node_0_label		Brakes	ブレーキ
-def_train_wheels_dynamic_x3_node_0_desc		Number input to set the level of braking applied to the wheels.	車輪にブレーキをかける割合を0から1の範囲で入力します.
-def_train_wheels_dynamic_x3_node_1_label		RPS	動力
-def_train_wheels_dynamic_x3_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	エンジンからの動力を受け取ります.
-def_train_wheels_dynamic_x3_node_2_label		Wheel Slip	空転
-def_train_wheels_dynamic_x3_node_2_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
-def_train_wheels_dynamic_x3_node_3_label		Wheel Release	脱線
-def_train_wheels_dynamic_x3_node_3_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
+def_train_wheels_dynamic_x3_node_0_label		Electric	電力出力
+def_train_wheels_dynamic_x3_node_0_desc		Electrical power connection. Receives electric energy from the rail lines.	レールから受け取った電力を出力します.
+def_train_wheels_dynamic_x3_node_1_label		Brakes	ブレーキ
+def_train_wheels_dynamic_x3_node_1_desc		Number input to set the level of braking applied to the wheels.	車輪にブレーキをかける割合を0から1の範囲で入力します.
+def_train_wheels_dynamic_x3_node_2_label		RPS	動力
+def_train_wheels_dynamic_x3_node_2_desc		Receives power generated by an engine to control forward and backward rotation.	エンジンからの動力を受け取り, 正転と反転を制御します.
+def_train_wheels_dynamic_x3_node_3_label		Wheel Slip	空転
+def_train_wheels_dynamic_x3_node_3_desc		Detects if wheels are slipping resulting in reduced torque.	車輪が空転して動力が失われているとオン信号を出力します.
+def_train_wheels_dynamic_x3_node_4_label		Wheel Release	脱線
+def_train_wheels_dynamic_x3_node_4_desc		Input to release wheels.	オン信号を受け取ると車輪をレールから外します.
 def_train_wheels_piston_name		Train Wheel Drive Piston Small	列車の蒸気ピストン (小)
 def_train_wheels_piston_desc		Attach to the front of a group of train-wheel assemblies to generate torque for them via mechanical steam power. Activate the reverser to flip the internal valves and the direction of travel.	蒸気駆動の車輪と隣接させることで, 蒸気の力で車輪を駆動させます. 内蔵の反転装置を作動させると進行方向と逆方向に移動できます.
 def_train_wheels_piston_s_desc		Steam powered train piston assembly.	蒸気駆動の列車の車輪を駆動させる蒸気ピストンです.
