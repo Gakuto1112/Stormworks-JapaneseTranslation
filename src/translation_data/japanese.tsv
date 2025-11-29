@@ -2698,6 +2698,12 @@ id	description	en	local
 		Water	水
 		Spawn Particles	粒子の放出
 		Tourism Castle	観光向け古城
+		Keel Force	キールの効力
+		Machine Gun Large Ammo Box (Kinetic)	機関銃の弾薬箱 (運動エネルギー弾)
+		Machine Gun Large Ammo Box (High Explosive)	機関銃の弾薬箱 (榴弾)
+		Machine Gun Large Ammo Box (Fragmentation)	機関銃の弾薬箱 (破片榴弾)
+		Machine Gun Large Ammo Box (Armor Piercing)	機関銃の弾薬箱 (徹甲弾)
+		Machine Gun Large Ammo Box (Incendiary)	機関銃の弾薬箱 (焼夷弾)
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
@@ -4413,6 +4419,11 @@ def_gun_drum_xsmall_desc		Stores machine gun ammo, but can only be reloaded by h
 def_gun_drum_xsmall_s_desc		A machine gun ammo box.	機関銃の弾薬箱です.
 def_gun_drum_xsmall_node_0_label		Ammo count	弾薬数
 def_gun_drum_xsmall_node_0_desc		Outputs the total ammo count stored in the box.	弾薬箱に貯蔵されている弾薬の数を出力します.
+def_gun_drum_xsmall_2_name		Machine Gun Ammo Box (Large)	機関銃の弾薬箱 (第)
+def_gun_drum_xsmall_2_desc		Stores machine gun ammo, but can only be reloaded by hand. Machine guns are restricted to Kinetic, Armor-Piercing, and Incendiary ammo only.	機関銃に弾薬箱を補給しますが, 手で補給する必要があります. 弾薬は運動エネルギー弾, 徹甲弾, 焼夷弾のみに限られます.
+def_gun_drum_xsmall_2_s_desc		A machine gun ammo box with greater capacity.	より多くの弾薬を格納できる, 機関銃の弾薬箱です.
+def_gun_drum_xsmall_2_node_0_label		Ammo count	弾薬数
+def_gun_drum_xsmall_2_node_0_desc		Outputs the total ammo count stored in the box.	弾薬箱に貯蔵されている弾薬の数を出力します.
 def_gun_l_name		Battle Cannon	大砲 (小)
 def_gun_l_desc		Battle cannons provide powerful, consistent firepower in a compact form.	この大砲は小型ながら強力で安定した火力を発揮します. 英語名は 「Battle cannon」 です. 発射するにはSearch and Destroy DLCを有効にする必要があります.
 def_gun_l_s_desc		A battle cannon.	小型の大砲の砲身です.
@@ -5870,8 +5881,40 @@ def_multibody_turret_small_a_node_2_desc		Electrical power connection.	電力接
 def_multibody_turret_small_b_name		Turret Ring (Small)	タレット土台 (小)の部品
 def_multibody_turret_small_b_desc			
 def_multibody_turret_small_b_s_desc			
+def_multibody_velocity_pivot_01_a_fluid_name		Velocity Pivot (Fluid)	回転軸 (流体)
+def_multibody_velocity_pivot_01_a_fluid_desc		Inputting a value of 0 will cause it to stop. The pivot's current rotation can be read from its output. An output of 1 corresponds to one full turn, and -1 to a full turn in the opposite direction.	0が入力されると回転を停止します. 回転軸の現在の回転速度はロジック出力から取得できます. 1という出力は正転での最大回転を表し, -1という出力は逆転での最大回転を表します.
+def_multibody_velocity_pivot_01_a_fluid_s_desc		A pivot that will continuously rotate at a set input speed.	入力された速度で回転する大型の電動回転軸です.
+def_multibody_velocity_pivot_01_a_fluid_node_0_label		Rotational Speed	回転速度
+def_multibody_velocity_pivot_01_a_fluid_node_0_desc		The speed at which the pivot should rotate.	回転軸の回転速度を-1から1の範囲で制御します.
+def_multibody_velocity_pivot_01_a_fluid_node_1_label		Current Rotation	現在の回転数
+def_multibody_velocity_pivot_01_a_fluid_node_1_desc		The pivot's measured rotation expressed in fractions of full turns.	初期位置からの現在の回転数 (何回転したか) を出力します.
+def_multibody_velocity_pivot_01_a_fluid_node_2_label		Electric	電力
+def_multibody_velocity_pivot_01_a_fluid_node_2_desc		Electrical power connection.	電力接続
+def_multibody_velocity_pivot_01_a_fluid_node_3_label		Fluid	流体
+def_multibody_velocity_pivot_01_a_fluid_node_3_desc		Fluid connection for transfering fluids.	この回転部品の間でやり取りする流体を入出力します.
+def_multibody_velocity_pivot_01_a_torque_name		Velocity Pivot (Power)	回転軸 (動力)
+def_multibody_velocity_pivot_01_a_torque_desc		Inputting a value of 0 will cause it to stop. The pivot's current rotation can be read from its output. An output of 1 corresponds to one full turn, and -1 to a full turn in the opposite direction.	0が入力されると回転を停止します. 回転軸の現在の回転速度はロジック出力から取得できます. 1という出力は正転での最大回転を表し, -1という出力は逆転での最大回転を表します.
+def_multibody_velocity_pivot_01_a_torque_s_desc		A pivot that will continuously rotate at a set input speed.	入力された速度で回転する大型の電動回転軸です.
+def_multibody_velocity_pivot_01_a_torque_node_0_label		Rotational Speed	回転速度
+def_multibody_velocity_pivot_01_a_torque_node_0_desc		The speed at which the pivot should rotate.	回転軸の回転速度を-1から1の範囲で制御します.
+def_multibody_velocity_pivot_01_a_torque_node_1_label		Current Rotation	現在の回転数
+def_multibody_velocity_pivot_01_a_torque_node_1_desc		The pivot's measured rotation expressed in fractions of full turns.	初期位置からの現在の回転数 (何回転したか) を出力します.
+def_multibody_velocity_pivot_01_a_torque_node_2_label		Electric	電力
+def_multibody_velocity_pivot_01_a_torque_node_2_desc		Electrical power connection.	電力接続
+def_multibody_velocity_pivot_01_a_torque_node_3_label		RPS	動力
+def_multibody_velocity_pivot_01_a_torque_node_3_desc		Power connection for transfering mechanical energy.	この回転部品の間でやり取りする動力を入出力します.
+def_multibody_velocity_pivot_01_b_fluid_name		Velocity Pivot	回転軸
+def_multibody_velocity_pivot_01_b_fluid_desc			
+def_multibody_velocity_pivot_01_b_fluid_s_desc			
+def_multibody_velocity_pivot_01_b_fluid_node_0_label		Fluid	流体
+def_multibody_velocity_pivot_01_b_fluid_node_0_desc		Fluid connection for transfering fluids.	この回転部品の間でやり取りする流体を入出力します.
+def_multibody_velocity_pivot_01_b_torque_name		Velocity Pivot	回転軸
+def_multibody_velocity_pivot_01_b_torque_desc			
+def_multibody_velocity_pivot_01_b_torque_s_desc			
+def_multibody_velocity_pivot_01_b_torque_node_0_label		RPS	動力
+def_multibody_velocity_pivot_01_b_torque_node_0_desc		Power connection for transfering mechanical energy.	この回転部品の間でやり取りする動力を入出力します.
 def_multibody_velocity_pivot_a_name		Velocity Pivot	回転軸 (大, 速度)
-def_multibody_velocity_pivot_a_desc		Inputting a value of 0 will cause it to stop. The pivot's current rotation can be read from its output. An output of 1 corresponds to one full turn, and -1 to a full turn in the opposite direction.	0が入力されると回転を停止します. また現在の回転数を出力します.
+def_multibody_velocity_pivot_a_desc		Inputting a value of 0 will cause it to stop. The pivot's current rotation can be read from its output. An output of 1 corresponds to one full turn, and -1 to a full turn in the opposite direction.	0が入力されると回転を停止します. 回転軸の現在の回転速度はロジック出力から取得できます. 1という出力は正転での最大回転を表し, -1という出力は逆転での最大回転を表します.
 def_multibody_velocity_pivot_a_s_desc		A pivot that will continuously rotate at a set input speed.	入力された速度で回転する大型の電動回転軸です.
 def_multibody_velocity_pivot_a_node_0_label		Rotational Speed	回転速度
 def_multibody_velocity_pivot_a_node_0_desc		The speed at which the pivot should rotate.	回転軸の回転速度を-1から1の範囲で制御します.
