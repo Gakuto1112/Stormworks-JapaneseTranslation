@@ -2704,6 +2704,17 @@ id	description	en	local
 		Machine Gun Large Ammo Box (Fragmentation)	機関銃の弾薬箱 (破片榴弾)
 		Machine Gun Large Ammo Box (Armor Piercing)	機関銃の弾薬箱 (徹甲弾)
 		Machine Gun Large Ammo Box (Incendiary)	機関銃の弾薬箱 (焼夷弾)
+		Sort: None	並び順: なし
+		Sort: Active	並び順: 使用した順
+		Sort: Date	並び順: 保存した順
+		Sort: A to Z	並び順: アルファベット順
+		Default	デフォルト
+		Set Group	グループを設定
+		Assign the vehicle to the selected group	追加先のグループを選択してください.
+		New Group	新規グループ
+		New Group Name	新規グループ名を入力してください.
+		Delete Group	グループを削除
+		Delete the group and return its vehicles to the default group	削除するグループを選択してください. 選択したグループに属する乗り物はデフォルトグループに戻されます.
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
