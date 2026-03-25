@@ -132,3 +132,4 @@ dist
 # ユーザ定義
 .vscode/
 Stormworks-JapaneseTranslation.code-workspace
+.DS_Store

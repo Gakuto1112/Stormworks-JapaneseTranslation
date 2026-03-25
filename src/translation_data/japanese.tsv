@@ -2698,6 +2698,8 @@ id	description	en	local
 		Water	水
 		Spawn Particles	粒子の放出
 		Tourism Castle	観光向け古城
+		Fuel Level	燃料の充填量
+		Destroy Vehicles	乗り物を破壊する
 		Keel Force	キールの効力
 		Machine Gun Large Ammo Box (Kinetic)	機関銃の弾薬箱 (運動エネルギー弾)
 		Machine Gun Large Ammo Box (High Explosive)	機関銃の弾薬箱 (榴弾)
@@ -2715,6 +2717,9 @@ id	description	en	local
 		New Group Name	新規グループ名を入力してください.
 		Delete Group	グループを削除
 		Delete the group and return its vehicles to the default group	削除するグループを選択してください. 選択したグループに属する乗り物はデフォルトグループに戻されます.
+		PHOTOSENSITIVITY WARNING	光過敏性発作に関する警告
+		A small percentage of individuals may experience seizures when exposed, to certain visual images, including light patterns or flashing lights, even with no history of epilepsy or seizures.	てんかんや発作の既往歴がない場合でも, 特定の光のパターンや明滅などの視覚的イメージに晒されることで, ごく一部の人には発作症状が現れる場合があります.
+		IMMEDIATELY stop playing and consult a doctor if you experience any symptoms.	プレイ中に何らかの症状を感じた場合は, "すぐに"ゲームプレイを中止し, 医師に相談してください.
 def_01_block_name		Block	ブロック
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	このブロックは25センチメートルの大きさです. 6面全てに部品を取り付けられます.
 def_01_block_s_desc		Basic cube-shaped building block.	立方体型の基本的なブロックです.
@@ -2936,6 +2941,15 @@ def_battery_small_node_0_label		Electric Store	電力
 def_battery_small_node_0_desc		Energy storage for the electrical system.	電力網に電力を送ったり, 電力を受け取って蓄えたりします.
 def_battery_small_node_1_label		Charge	蓄電量
 def_battery_small_node_1_desc		Data output giving the charge of the battery from 0 to 1.	電池の蓄電量を0から1の範囲で出力します.
+def_buoyancy_float_block_name		Buoyancy Float Block	浮きブロック
+def_buoyancy_float_block_desc			液体に対して浮力を発生させます.
+def_buoyancy_float_block_s_desc		A block-shaped buoyant float.	立方体型の浮きブロックです.
+def_buoyancy_float_pyramid_name		Buoyancy Float Pyramid	浮き三角ブロック
+def_buoyancy_float_pyramid_desc			液体に対して浮力を発生させます.
+def_buoyancy_float_pyramid_s_desc		A pyramid-shaped buoyant float.	三角錐型の浮きブロックです.
+def_buoyancy_float_wedge_name		Buoyancy Float Wedge	浮き斜めブロック
+def_buoyancy_float_wedge_desc			液体に対して浮力を発生させます.
+def_buoyancy_float_wedge_s_desc		A wedge-shaped buoyant float.	三角柱型の浮きブロックです.
 def_button_key_name		Key Button	キーボタン
 def_button_key_desc		Once activated, interacting with the button again will deactivate it instantly. The hold duration can be customised by selecting this component with the select tool. The external input can be used to simulate interacting with the button down using the output of another component. The button's default state can be configured by selecting it with the select component.	一方で, オフにするには長押しする必要はありません. 外部入力でボタンのオン/オフを制御ができ, 複数のボタンを同時に制御できます. 長押しする時間や, ボタンの初期状態はプロパティウィンドウから設定できます.
 def_button_key_s_desc		A button that must be held down for a set duration before activating.	オンにするには設定した時間押し続ける必要があるボタンです.
