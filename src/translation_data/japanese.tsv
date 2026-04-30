@@ -2700,6 +2700,8 @@ id	description	en	local
 		Tourism Castle	観光向け古城
 		Fuel Level	燃料の充填量
 		Destroy Vehicles	乗り物を破壊する
+		FPS Limit	FPS制限
+		Hydrous Ore	含水鉱石
 		Keel Force	キールの効力
 		Machine Gun Large Ammo Box (Kinetic)	機関銃の弾薬箱 (運動エネルギー弾)
 		Machine Gun Large Ammo Box (High Explosive)	機関銃の弾薬箱 (榴弾)
@@ -3052,7 +3054,7 @@ def_camera_gimbal_node_0_desc			カメラで捉えた映像を出力します.
 def_camera_gimbal_node_1_label		Electric	電力
 def_camera_gimbal_node_1_desc			電力接続
 def_camera_gimbal_node_2_label		Infrared Mode	赤外線モード
-def_camera_gimbal_node_2_desc		Controls whether or not the infrared mode is switched on.	オン信号を受け取ると赤外線モードになります. 
+def_camera_gimbal_node_2_desc		Controls whether or not the infrared mode is switched on.	オン信号を受け取ると赤外線モードになります.
 def_camera_gimbal_node_3_label		Field of View	視野角
 def_camera_gimbal_node_3_desc		Controls the level of zoom of the camera.	カメラをズームイン/アウトします.
 def_camera_gimbal_node_4_label		Pivot Rotation	横回転
@@ -3067,7 +3069,7 @@ def_camera_gimbal_laser_node_0_desc			カメラで捉えた映像を出力しま
 def_camera_gimbal_laser_node_1_label		Electric	電力
 def_camera_gimbal_laser_node_1_desc			電力接続
 def_camera_gimbal_laser_node_2_label		Infrared Mode	赤外線モード
-def_camera_gimbal_laser_node_2_desc		Controls whether or not the infrared mode is switched on.	オン信号を受け取ると赤外線モードになります. 
+def_camera_gimbal_laser_node_2_desc		Controls whether or not the infrared mode is switched on.	オン信号を受け取ると赤外線モードになります.
 def_camera_gimbal_laser_node_3_label		Enable Laser	レーザー照射
 def_camera_gimbal_laser_node_3_desc		Enables the Laser.	オン信号を受け取るとカメラからレーザーが照射されます.
 def_camera_gimbal_laser_node_4_label		Field of View	 視野角
@@ -3094,7 +3096,7 @@ def_camera_med_node_0_desc			カメラで捉えた映像を出力します.
 def_camera_med_node_1_label		Electric	電力
 def_camera_med_node_1_desc			電力接続
 def_camera_med_node_2_label		Infrared Mode	赤外線モード
-def_camera_med_node_2_desc		Controls whether or not the infrared mode is switched on.	オン信号を受け取ると赤外線モードになります. 
+def_camera_med_node_2_desc		Controls whether or not the infrared mode is switched on.	オン信号を受け取ると赤外線モードになります.
 def_camera_med_node_3_label		Field of View	視野角
 def_camera_med_node_3_desc		Controls the level of zoom of the camera.	カメラをズームイン/アウトします.
 def_camera_med_node_4_label		Pivot	視点方向
@@ -4749,6 +4751,17 @@ def_humidity_sensor_desc		The reading can be read from the sensor's number outpu
 def_humidity_sensor_s_desc		A humidity sensor for measuring the current fog and visibility meteorological conditions.	現在の霧量を測定する湿度計です.
 def_humidity_sensor_node_0_label		Humidity Factor	霧量
 def_humidity_sensor_node_0_desc		The level of humidity in the air, relating to the fog visibility.	霧量を0 (霧最小) から1 (霧最大) の範囲で出力します.
+def_hydrogen_fuel_cell_name		Hydrogen Fuel Cell	水素燃料電池
+def_hydrogen_fuel_cell_desc		Pumping hydrogen and oxygen into the fuel cell generates power while creating water as a byproduct.	水素と酸素を送り込むと発電すると同時に, 副産物として水を生成します.
+def_hydrogen_fuel_cell_s_desc		A hydrogen fuel cell capable of generating electric power.	電力を生み出す水素燃料電池です.
+def_hydrogen_fuel_cell_node_0_label		Electric	電力
+def_hydrogen_fuel_cell_node_0_desc		The electric connection to output electric energy.	電力網に発電した電力を送ります.
+def_hydrogen_fuel_cell_node_1_label		Oxygen In	酸素注入
+def_hydrogen_fuel_cell_node_1_desc			発電に使用する酸素を注入します.
+def_hydrogen_fuel_cell_node_2_label		Hydrogen In	水素注入
+def_hydrogen_fuel_cell_node_2_desc			発電に使用する水素を注入します.
+def_hydrogen_fuel_cell_node_3_label		Water Out	水排出
+def_hydrogen_fuel_cell_node_3_desc			生成された水を排出します.
 def_impact_sensor_name		Impact Sensor	衝撃計
 def_impact_sensor_desc		Setting the impact threshold property will tune the sensitivity for impacts. When the instant change in velocity from an impact exceeds the threshold, an on signal is produced.	設定された閾値以上の速度の急激な変化があった場合はオン信号を出力します. 閾値はプロパティウィンドウから設定できます.
 def_impact_sensor_s_desc		A sensor activated by a sudden change in velocity.	急激な速度の変化を検出する衝撃計です.
@@ -6113,7 +6126,7 @@ def_radar_advanced_node_2_desc		Outputs data for up to 8 targets. On/Off 1-8 : T
 def_radar_advanced_node_3_label		Radar Rotation	向き
 def_radar_advanced_node_3_desc		Current radar rotation from forward in turns.	レーダーの方向を回転単位で出力します.
 def_radar_advanced_node_4_label		Gimbal Input	ジンバル入力
-def_radar_advanced_node_4_desc		Inputs rotation data for radar in manual mode. Value 1: The yaw angle of the radar measured in turns, Value 2: The pitch angle of the radar measured in turns from -0.125 to 0.125.	レーダーの手動制御時の回転情報を入力します. 数値チャンネル 1: 回転単位でのヨー, 2: 回転単位でのピッチ (-0.125 - 0.125) 
+def_radar_advanced_node_4_desc		Inputs rotation data for radar in manual mode. Value 1: The yaw angle of the radar measured in turns, Value 2: The pitch angle of the radar measured in turns from -0.125 to 0.125.	レーダーの手動制御時の回転情報を入力します. 数値チャンネル 1: 回転単位でのヨー, 2: 回転単位でのピッチ (-0.125 - 0.125)
 def_radar_advanced_awacs_name		Radar (AWACS)	レーダー (AWACS)
 def_radar_advanced_awacs_desc		This sensor outputs the distance and relative angle to a detected object within its range and field of view using radio waves. Sensitivity is based on FOV, target size, and distance.	電波を利用して検出した物体の距離と相対的な角度を出力します. AWACSとは, 敵航空機を早期に探知して, 味方の指揮を取るためのレーダーを搭載した航空機のことで, これはそのレーダーです. 精度は視野角, 対象の大きさ, 対象との距離に依存します.
 def_radar_advanced_awacs_s_desc		A long range radar that returns information about a detected object within its view.	検出した物体の情報を出力する長距離のレーダーです.
@@ -8190,6 +8203,15 @@ def_watercannon_node_2_label		Fluid Supply	水注入
 def_watercannon_node_2_desc		The fluid input to output from the nozzle. Filters to water only.	銃口から放出する水を供給します. 淡水か海水以外は注入できません.
 def_watercannon_node_3_label		Electric	電力
 def_watercannon_node_3_desc		Electrical power connection.	電力接続
+def_water_extractor_name		Water Extractor	水抽出機
+def_water_extractor_desc		Extracts water from hydrous ores when supplied with electric power.	電力が供給されると含水鉱石から水を抽出します.
+def_water_extractor_s_desc		A machine to process minerals into water.	鉱物から水を精製する機械です.
+def_water_extractor_node_0_label		Power	電力
+def_water_extractor_node_0_desc			電力接続
+def_water_extractor_node_1_label		Process	稼働
+def_water_extractor_node_1_desc			オン信号を受け取ると水の抽出作業を行います。
+def_water_extractor_node_2_label		Water Out	水排出
+def_water_extractor_node_2_desc			抽出した水が排出されます.
 def_water_hose_name		Hose	ホースウィンチ
 def_water_hose_desc		This can be used to transport water between Two bodies. Two on/off signals are used to control whether the hose is moving up (towards the base) or down (away from the base). A number output allows you to measure the hose's current length if necessary. The maximum length of the hose is 16 metres (64 blocks). The speed of the hose mechanism can be configured by selecting this component with the select tool.	ウィンチ間で流体が自由に移動します. 2つのオン/オフ信号でウィンチの上げ下げをします. またウィンチから出ているホースの長さをメートル単位で出力します. ホース長さは16メートルです. ホースを巻く速度はプロパティウィンドウから設定できます.
 def_water_hose_s_desc		A building block attached to the end of a mechanical hose that can be raised and lowered.	流体を伝達できるウィンチです.
