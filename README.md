@@ -1,21 +1,25 @@
 言語: 　[English](./README_en.md)　|　**日本語**
 
 # Stormworks-JapaneseTranslation
+
 [Stormworks: Build and Rescue](https://store.steampowered.com/app/573090/Stormworks_Build_and_Rescue/?l=japanese)を日本語化する翻訳データです。
 ゲームに実装されているローカライゼーション機能で翻訳できる箇所は全て日本語に翻訳しています。
 
 この翻訳データはSteamワークショップで公開しています。
 
-https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581
+<https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581>
 
-対応ゲームバージョン ： **1.15.12**
+対応ゲームバージョン ： **1.15.16**
 
 ## 翻訳方針について
+
 ゲームに慣れていない方向けに、カタカナ言葉や専門用語を避けた翻訳にしています。
 また、他の翻訳との整合性を合わせるために、英語の原文を訳したものと同じ文章ではないものがあります。
 
 ## 使い方
+
 ### Steamワークショップから
+
 上記のSteamワークショップのページからコンテンツをサブスクライブしてください（無料です）。
 サブスクライブすると自動的にコンテンツがダウンロードされます。
 ダウンロード完了後、ゲームを開き、「Settings」→「Language」に進み「WORKSHOP」の欄にある「japanese」を選択してください（表示されない場合はしばらく待ってから「Refresh List」ボタンを押してください）。
@@ -31,6 +35,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581
 ゲームのLanguage設定から「OFFICIAL」欄にある「English」を選択してください。
 
 ### このレポジトリから
+
 画面右側にある「Releases」から最新版のタグをクリックしてください。
 遷移先のページ内の「Assets」の中に「japanese.zip」というファイルがあります。
 このファイルをダウンロードし、展開すると中に「japanese.tsv」というファイルがあります（「japanese.xml」は不要です）。
@@ -41,6 +46,7 @@ C:\Users\<user_name>\AppData\Roaming\Stormworks\data\languages
 ```
 
 > [!NOTE]
+>
 > - 上記はWindows環境での例です。
 >   MacOSやLinux環境ではパスが異なります。
 > - Windows環境でもパスが異なる場合があります。
@@ -63,6 +69,7 @@ C:\Users\<user_name>\AppData\Roaming\Stormworks\data\languages
 ゲームのLanguage設定から「OFFICIAL」欄にある「English」を選択してください。
 
 ## 注意事項
+
 - このデータを使用して発生したいかなる損害の責任は負いかねます。
 - この翻訳データを適用してもなお、日本語に翻訳されない箇所が一部あります。これはゲームがそこの翻訳に対応していないためです。ここに関して、私は対応しかねます。
 - この日本語訳が適用された状態で作成されたスクリーンショットや実況動画などの作品におけるクレジット表記は不要です（表記して頂けると嬉しいですが...）。
