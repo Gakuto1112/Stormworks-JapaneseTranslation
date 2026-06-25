@@ -4460,6 +4460,8 @@ def_gun_l_node_1_label		Loaded	装填済み
 def_gun_l_node_1_desc		Returns true when a shell is loaded and ready to fire.	砲弾が装填され, 発射の準備が完了するとオン信号を出力します.
 def_gun_l_node_2_label		Open Breech	砲尾の開閉
 def_gun_l_node_2_desc		When true: opens the breech to allow shells to be loaded.	オン信号を受け取ると砲尾が開き, 砲弾を手動で装填できます.
+def_gun_l_node_3_label		Fuse Timer	炸裂遅延
+def_gun_l_node_3_desc		Sets the optional time-delay fuse in seconds for high-explosive and fragmentation ammo types.	榴弾と破片榴弾における炸裂までの時間を秒単位で設定します.
 def_gun_l_barrel_name		Battle Cannon Barrel Extension	大砲の延長砲身 (小)
 def_gun_l_barrel_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
 def_gun_l_barrel_s_desc		A battle cannon barrel extension.	小型大砲の砲身を延長するための延長部品です.
@@ -4490,6 +4492,8 @@ def_gun_m_node_1_label		Loaded	装填済み
 def_gun_m_node_1_desc		Returns true when a cartridge is loaded and ready to fire.	弾薬が装填され, 射撃の準備が完了するとオン信号を出力します.
 def_gun_m_node_2_label		Electric	電力
 def_gun_m_node_2_desc		Electrical power connection.	電力接続
+def_gun_m_node_3_label		Fuse Timer	炸裂遅延
+def_gun_m_node_3_desc		Sets the optional time-delay fuse in seconds for high-explosive and fragmentation ammo types.	榴弾と破片榴弾における炸裂までの時間を秒単位で設定します.
 def_gun_m_barrel_name		Heavy Autocannon Barrel Extension	機関砲の延長砲身 (大)
 def_gun_m_barrel_desc		Barrel extensions increase weapon accuracy, but add additional weight.	砲身を延長すると射撃精度が上がりますが, 重量が増加します.
 def_gun_m_barrel_s_desc		A heavy autocannon barrel extension.	大型機関砲の砲身を延長するための延長部品です.
@@ -4565,6 +4569,8 @@ def_gun_xl_node_1_label		Loaded	装填済み
 def_gun_xl_node_1_desc		Returns true when a shell is loaded and ready to fire.	砲弾が装填され, 発射の準備が完了するとオン信号を出力します.
 def_gun_xl_node_2_label		Open Breech	砲尾の開閉
 def_gun_xl_node_2_desc		When true: opens the breech to allow shells to be loaded.	オン信号を受け取ると砲尾が開き, 砲弾を手動で装填できます.
+def_gun_xl_node_3_label		Fuse Timer	炸裂遅延
+def_gun_xl_node_3_desc		Sets the optional time-delay fuse in seconds for high-explosive and fragmentation ammo types.	榴弾と破片榴弾における炸裂までの時間を秒単位で設定します.
 def_gun_xl_barrel_name		Artillery Cannon Barrel Extension	大砲の延長砲身 (中)
 def_gun_xl_barrel_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
 def_gun_xl_barrel_s_desc		An artillery cannon barrel extension.	中型大砲の砲身を延長するための延長部品です.
@@ -4602,6 +4608,8 @@ def_gun_xxl_node_1_label		Loaded	装填済み
 def_gun_xxl_node_1_desc		Returns true when a shell is loaded and ready to fire.	砲弾が装填され, 発射の準備が完了するとオン信号を出力します.
 def_gun_xxl_node_2_label		Open Breech	砲尾の開閉
 def_gun_xxl_node_2_desc		When true: opens the breech to allow shells to be loaded.	オン信号を受け取ると砲尾が開き, 砲弾を手動で装填できます.
+def_gun_xxl_node_3_label		Fuse Timer	炸裂遅延
+def_gun_xxl_node_3_desc		Sets the optional time-delay fuse in seconds for high-explosive and fragmentation ammo types.	榴弾と破片榴弾における炸裂までの時間を秒単位で設定します.
 def_gun_xxl_barrel_name		Bertha Cannon Barrel Extension	大砲の延長砲身 (大)
 def_gun_xxl_barrel_desc		Barrel extensions increase weapon accuracy, but also produce more recoil force.	砲身を延長すると射撃精度が上がりますが, 射撃時の反動が増加します.
 def_gun_xxl_barrel_s_desc		A Bertha cannon barrel extension.	大型大砲の砲身を延長するための延長部品です.
