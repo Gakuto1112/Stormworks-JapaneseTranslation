@@ -9,7 +9,7 @@ This translation data is available on the Steam Workshop.
 
 <https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581>
 
-Supported game version: **1.15.16**
+Supported game version: **1.15.18**
 
 ## Translation policies
 
