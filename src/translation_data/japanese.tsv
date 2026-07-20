@@ -19,7 +19,7 @@ id	description	en	local
 		LOAD MULTIPLAYER GAME	マルチプレイゲームの読み込み
 		Invalid password	不正なパスワード
 		Incompatible game version	互換性のないゲームバージョン
-		server version	サーバのーのバージョン
+		server version	サーバーのバージョン
 		Server is full	サーバーは満員です.
 		Server is not open to multiplayer	サーバーはマルチプレイ用に開かれていません.
 		You are not whitelisted on this server	あなたはこのサーバーへの接続が許可されていません.
@@ -79,7 +79,7 @@ id	description	en	local
 		Not	論理否定 (NOT)
 		Click on the 'Logic' button in the top bar to enter logic connecting mode.	上部バーの「ロジック」ボタンをクリックしてロジック接続モードに入ります.
 		Select the 'Data' logic type to view 'On/Off' and 'Number' logic nodes.	「オン/オフ」と「数値」のノードを見るために「データ」ロジックタイプを選択します.
-		Select the 'Power' logic type to view 'Power' logic nodes.	「動力「のノードを見るために「動力」ロジックタイプを選択します.
+		Select the 'Power' logic type to view 'Power' logic nodes.	「動力」のノードを見るために「動力」ロジックタイプを選択します.
 		Place a wedge in the highlighted space.\n\nYou can change a component's rotation by hovering over different adjacent surfaces in the vehicle.	強調表示された場所に斜めブロックを置きます.\n\n乗り物の異なる面にカーソルを合わせることで, 部品の向きを変えられます.
 		Click on the wedge block in the component list to start building with it.	部品一覧から斜めブロックをクリックして, 斜めブロックでブロックの設置を開始します.
 		Place the next five wedges.\n\nMultiple wedges can be placed at once by dragging.	次の5つの斜めブロックを設置します.\n\nドラッグすると複数のブロックを一度に設置できます.
@@ -94,7 +94,7 @@ id	description	en	local
 		Type in a name for your boat.\nThen click on the 'Save' button.	ボートの名前を入力します.\n次に「保存」ボタンをクリックします.
 		Click on the 'Save' button in the top bar to start saving your boat.	上部バーの「保存」ボタンをクリックしてボートの保存を開始します.
 		Press [$[action_missions]] again to close the missions screen.	[$[action_missions]] をもう一度押してミッション画面を閉じます.
-		You have a new mission.\nPress [$[action_missions]] to bring up the missions screen and get more information.	新規ミッションがあります.\n[$[action_missions]] を押してミッション画面を表示して, 詳細な情報を確認します.t
+		You have a new mission.\nPress [$[action_missions]] to bring up the missions screen and get more information.	新規ミッションがあります.\n[$[action_missions]] を押してミッション画面を表示して, 詳細な情報を確認します.
 		Click on the 'Missions' button to see an overview of all currently available missions.	「ミッション」ボタンをクリックして, 現在受諾可能なミッションの概要を確認します.
 		Click the mission overview to show more detailed information about it.	ミッション概要をクリックしてミッションの詳細情報を確認します.
 		Click the 'Toggle Active' button to make this the active mission.\n\nThe mission will then be shown on the map and in game.	「追跡オン/オフ」をクリックしてミッションを追跡します.\n\n追跡するミッションはマップ画面とゲーム中に表示されます.
@@ -205,7 +205,7 @@ id	description	en	local
 		Key Chemical Plant	キー諸島の化学工場
 		Small island with chemical plant on the key.	化学工場があるキー諸島の小さな島です.
 		Key Lighthouse OB	キー諸島の灯台
-		Small island with lighthouse on the key.	灯台があるキー諸島のの小さな島です.
+		Small island with lighthouse on the key.	灯台があるキー諸島の小さな島です.
 		Uninhabited 1	無人島1
 		Small island with cliff edges.	崖がある小さな島です.
 		Uninhabited 2	無人島2
@@ -1295,12 +1295,12 @@ id	description	en	local
 		RESET GRID	グリッドのリセット
 		Reset the selection grid to its default size.	選択グリッドの大きさをデフォルトのものに戻します.
 		MOVE/CUT	移動/切り取り
-		Cut the contents of the selection grid from your vehicle. Logic links to other parts of your vehicle will be preserved the first time you paste.	乗り物から選択グリッド範囲内の部分を切り取ります. 最初に行う貼り付け貼り付けでは, 他の部分とのロジック接続は維持されます.
+		Cut the contents of the selection grid from your vehicle. Logic links to other parts of your vehicle will be preserved the first time you paste.	乗り物から選択グリッド範囲内の部分を切り取ります. 最初に行う貼り付けでは, 他の部分とのロジック接続は維持されます.
 		CUT	切り取り
 		Copy the current selection to the clipboard and remove it.	選択グリッド範囲内のものをクリップボードにコピーし, 乗り物から選択グリッド範囲内のものを削除します.
 		COPY	コピー
 		Copy the current selection to the clipboard.	選択グリッド範囲内のものをクリップボードにコピーします.
-		Copy the contents of the selection grid.	選択グリッドグリッド範囲内のものをコピーします.
+		Copy the contents of the selection grid.	選択グリッド範囲内のものをコピーします.
 		LOAD CONTENT	乗り物の読み込み
 		Load a subassembly into the selection grid.	別の乗り物を選択グリッドに読み込みます.
 		PASTE	貼り付け
@@ -1336,7 +1336,7 @@ id	description	en	local
 		DIRECTION ARROWS	方向矢印
 		Toggle visibility of the directional arrows shown on components.	部品の向きを表す矢印を表示/非表示にします.
 		ROTATION LABELS	回転ガイド
-		Toggle visibility of the rotation hotkey hints when placing components.	部品置く時の回転ガイドを表示/非表示にます.
+		Toggle visibility of the rotation hotkey hints when placing components.	部品を置く時の回転ガイドを表示/非表示にます.
 		GRID LINES	グリッド線
 		Toggle visibility of the editor grid lines.	グリッド線を表示/非表示にします.
 		MEASUREMENTS	メジャー表示
