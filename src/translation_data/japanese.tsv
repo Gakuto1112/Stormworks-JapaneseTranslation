@@ -4446,7 +4446,7 @@ def_gun_drum_xsmall_desc		Stores machine gun ammo, but can only be reloaded by h
 def_gun_drum_xsmall_s_desc		A machine gun ammo box.	機関銃の弾薬箱です.
 def_gun_drum_xsmall_node_0_label		Ammo count	弾薬数
 def_gun_drum_xsmall_node_0_desc		Outputs the total ammo count stored in the box.	弾薬箱に貯蔵されている弾薬の数を出力します.
-def_gun_drum_xsmall_2_name		Machine Gun Ammo Box (Large)	機関銃の弾薬箱 (第)
+def_gun_drum_xsmall_2_name		Machine Gun Ammo Box (Large)	機関銃の弾薬箱 (大)
 def_gun_drum_xsmall_2_desc		Stores machine gun ammo, but can only be reloaded by hand. Machine guns are restricted to Kinetic, Armor-Piercing, and Incendiary ammo only.	機関銃に弾薬箱を補給しますが, 手で補給する必要があります. 弾薬は運動エネルギー弾, 徹甲弾, 焼夷弾のみに限られます.
 def_gun_drum_xsmall_2_s_desc		A machine gun ammo box with greater capacity.	より多くの弾薬を格納できる, 機関銃の弾薬箱です.
 def_gun_drum_xsmall_2_node_0_label		Ammo count	弾薬数
