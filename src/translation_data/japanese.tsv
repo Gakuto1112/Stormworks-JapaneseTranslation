@@ -3491,10 +3491,10 @@ def_door_frame_controller_node_1_label		Seal State	施錠可能
 def_door_frame_controller_node_1_desc		Indicates if the door panel is closed and forming a seal.	ドアを施錠できる状態であればオン信号を出力します.
 def_door_frame_corner_name		Door Frame Corner	カスタムドア枠 (角)
 def_door_frame_corner_desc		To create a valid frame, there must be a continuous loop of frame parts in a consistent orientation with no other parts inside the frame.	枠内に他のブロックがない状態にして, 全ての枠の部品が同じ向きで設置されていないと正しいドア枠として認識されません.
-def_door_frame_corner_s_desc		A corner piece for building openings to sealed fluid compartments.	機密可能なカスタムドアを作成する角の部品です.
+def_door_frame_corner_s_desc		A corner piece for building openings to sealed fluid compartments.	気密可能なカスタムドアを作成する角の部品です.
 def_door_frame_straight_name		Door Frame Edge	カスタムドア枠 (辺)
 def_door_frame_straight_desc		To create a valid frame, there must be a continuous loop of frame parts in a consistent orientation with no other parts inside the frame.	枠内に他のブロックがない状態にして, 全ての枠の部品が同じ向きで設置されていないと正しいドア枠として認識されません.
-def_door_frame_straight_s_desc		A straight edge for building openings to sealed fluid compartments.	機密可能なカスタムドアを作成する辺の部品です.
+def_door_frame_straight_s_desc		A straight edge for building openings to sealed fluid compartments.	気密可能なカスタムドアを作成する辺の部品です.
 def_door_manual_name		Sliding Door	ドア (引き戸)
 def_door_manual_desc			
 def_door_manual_s_desc		Sliding door that can be opened and closed by hand and locked using an on/off signal.	手動で開閉ができる引き戸で, オン/オフ信号で施錠もできます.
@@ -3517,10 +3517,10 @@ def_door_manual_small_node_0_label		Lock	施錠
 def_door_manual_small_node_0_desc		Locks the door when receiving an on signal.	オン信号を受け取るとハッチを施錠します.
 def_door_panel_corner_name		Door Panel Corner	カスタムドア (角)
 def_door_panel_corner_desc		A valid door panel can be created with a loop of door panel pieces, filled with blocks flush to the outer face. Door panels must also fill a door frame and be built in their closed position within the frame to be valid.	ドア内に他のブロックがない状態にして, 全てのドアの部品が同じ向きで設置されていないと正しいドアとして認識されません.
-def_door_panel_corner_s_desc		A corner piece for building door panels.	機密可能なカスタムドアを作成する角の部品です.
+def_door_panel_corner_s_desc		A corner piece for building door panels.	気密可能なカスタムドアを作成する角の部品です.
 def_door_panel_straight_name		Door Panel Edge	カスタムドア (辺)
 def_door_panel_straight_desc		A valid door panel can be created with a loop of door panel pieces, filled with blocks flush to the outer face. Door panels must also fill a door frame and be built in their closed position within the frame to be valid.	ドア内に他のブロックがない状態にして, 全てのドアの部品が同じ向きで設置されていないと正しいドアとして認識されません.
-def_door_panel_straight_s_desc		A straight edge piece for building door panels.	機密可能なカスタムドアを作成する辺の部品です.
+def_door_panel_straight_s_desc		A straight edge piece for building door panels.	気密可能なカスタムドアを作成する辺の部品です.
 def_electric_curcuit_breaker_name		Electric Circuit Breaker	電力遮断器
 def_electric_curcuit_breaker_desc		When turned on, the circuit breaker closes the circuit, allowing electrical energy to flow between terminals A and B.	遮断器がオンの時は電力Aと電力Bは通電します.
 def_electric_curcuit_breaker_s_desc		A circuit breaker for electrical systems.	電力網の遮断器です.
