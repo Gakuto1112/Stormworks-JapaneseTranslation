@@ -2,6 +2,7 @@ from argparse import ArgumentParser, Namespace
 from pathlib import Path
 
 from common_modules.paths import paths
+from common_modules.logger import Logger
 
 
 def setArgs() -> ArgumentParser:
@@ -43,6 +44,8 @@ def processArgs(args: Namespace) -> None:
 
 	paths.input_locale_path = Path(args.src_path)
 	paths.output_locale_path = Path(args.dist_path)
+	if args.colored:
+		Logger.is_colored = True
 
 def main() -> None:
 	"""
