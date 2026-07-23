@@ -29,7 +29,7 @@ class Paths:
 	@property
 	def input_locale_path(self) -> Path:
 		"""
-		入力データとなるローカルデータのパス
+		入力データとなるロケールデータのパス
 		"""
 
 		return self._input_locale_path
@@ -45,7 +45,7 @@ class Paths:
 	@property
 	def output_locale_path(self) -> Path:
 		"""
-		ビルド済みのローカルデータの出力パス
+		ビルド済みのロケールデータの出力パス
 		"""
 
 		return self._output_locale_path
