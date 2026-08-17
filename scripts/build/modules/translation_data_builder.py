@@ -29,6 +29,38 @@ class TranslationDataBuilder:
 			return file.read()
 
 	@staticmethod
+	def _prepare_dist_directory() -> None:
+		"""
+		ビルド済みの翻訳データを出力するディレクトリを作成する。
+		すでにディレクトリが存在する場合は何もしない。
+
+		Raises:
+			PermissionError: ディレクトリの作成権限がない場合
+			IOError: その他の入出力エラーが発生した場合
+		"""
+
+		dist_directory = paths.output_locale_path.parent
+		if not dist_directory.exists():
+			dist_directory.mkdir(parents=True, exist_ok=True)
+
+	@staticmethod
+	def _write_translation_output(data: str) -> None:
+		"""
+		入力された文字列を翻訳データを出力ファイルに書き込む。
+
+		Args:
+			data (str): 書き込む翻訳データの文字列
+
+		Raises:
+			IsADirectoryError: 指定されたパスがディレクトリである場合
+			PermissionError: 指定されたパスのファイルに対する書き込み権限がない場合
+			IOError: その他の入出力エラーが発生した場合
+		"""
+
+		with open(paths.output_locale_path, "w", encoding="utf-8") as file:
+			file.write(data)
+
+	@staticmethod
 	def _set_debug_args() -> None:
 		"""
 		デバッグ用コマンドライン引数を設定する。
@@ -79,6 +111,29 @@ class TranslationDataBuilder:
 		if Logger.should_print_debug_log:
 			Logger.print_spacer(1)
 		Logger.print_info(f"Successfully read translation source from \"{paths.input_locale_path}\"")
+
+		try:
+			TranslationDataBuilder._prepare_dist_directory()
+		except PermissionError:
+			Logger.print_error(f"No permission to create the output directory for translation data ({paths.output_locale_path.parent})")
+			exit(errno.EACCES)
+		except IOError:
+			Logger.print_error(f"An unexpected error occurred while creating the output directory for translation data ({paths.output_locale_path.parent})")
+			exit(errno.EIO)
+
+		try:
+			TranslationDataBuilder._write_translation_output(source_data)
+		except IsADirectoryError:
+			Logger.print_error(f"The specified translation output file is a directory ({paths.output_locale_path})")
+			exit(errno.EISDIR)
+		except PermissionError:
+			Logger.print_error(f"No permission to write to the specified translation output file ({paths.output_locale_path})")
+			exit(errno.EACCES)
+		except IOError:
+			Logger.print_error(f"An unexpected error occurred while writing to the translation output file ({paths.output_locale_path})")
+			exit(errno.EIO)
+
+		Logger.print_info(f"Successfully wrote translation data to \"{paths.output_locale_path}\"")
 
 if __name__ == "__main__":
 	TranslationDataBuilder().debug()
