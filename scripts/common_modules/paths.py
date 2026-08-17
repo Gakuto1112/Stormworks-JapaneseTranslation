@@ -18,6 +18,11 @@ class Paths:
 	ビルド済みのロケールデータの出力パス
 	"""
 
+	_config_path: Path = _root / "scripts" / "config.toml"
+	"""
+	ツールの設定ファイルのパス
+	"""
+
 	@property
 	def root(self) -> Path:
 		"""
@@ -57,5 +62,21 @@ class Paths:
 		"""
 
 		self._output_locale_path = path
+
+	@property
+	def config_path(self) -> Path:
+		"""
+		ツールの設定ファイルのパス
+		"""
+
+		return self._config_path
+
+	@config_path.setter
+	def config_path(self, path: Path) -> None:
+		"""
+		config_pathのセッター関数
+		"""
+
+		self._config_path = path
 
 paths = Paths()
