@@ -70,15 +70,12 @@ class TranslationDataBuilder:
 		parser = ArgumentParser(description="Translation data builder for Stormworks Japanese translation")
 		parser.add_argument("--src-path", "-i", type=str, default=paths.input_locale_path, help="Overrides default source path. Default: ../../src/japanese.tsv")
 		parser.add_argument("--colored", "-l", action="store_true", help="Enables colored output in the terminal.")
-		parser.add_argument("--debug-output", "-d", action="store_true", help="Enables debug outputs.")
 
 		# パスの設定
 		args = parser.parse_args()
 		paths.input_locale_path = args.src_path
 		if args.colored:
 			Logger.is_colored = True
-		if args.debug_output:
-			Logger.should_print_debug_log = True
 
 	def debug(self) -> None:
 		"""
@@ -86,6 +83,7 @@ class TranslationDataBuilder:
 		"""
 
 		self._set_debug_args()
+		Logger.should_print_debug_log = True
 
 		# デバッグ出力
 		Logger.print_info("Translation data builder for Stormworks Japanese translation")
