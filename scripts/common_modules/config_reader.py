@@ -4,6 +4,7 @@ from argparse import ArgumentParser
 
 from .paths import paths
 from .logger import Logger
+from .errors.config_not_loaded_error import ConfigNotLoadedError
 from .models.config_models.config import Config
 
 
@@ -37,6 +38,22 @@ class ConfigReader:
 			raw_config = tomllib.load(file)
 
 		self._config = Config.from_dict(raw_config)
+
+	def get_separator(self) -> str:
+		"""
+		設定値から翻訳データの区切り文字(`build.separator`)を取得する。
+
+		Returns:
+			str: 設定値から取得した翻訳データの区切り文字
+
+		Raises:
+			ConfigNotLoadedError: 設定値がロードされる前に呼び出された場合
+		"""
+
+		if self._config is None:
+			raise ConfigNotLoadedError("Configuration has not been loaded yet. Please call read_config() before accessing configuration values.")
+
+		return self._config.build.separator
 
 	@staticmethod
 	def _set_debug_args() -> None:
@@ -87,5 +104,7 @@ class ConfigReader:
 		Logger.print_spacer(1)
 		Logger.print_debug(str(self._config))
 
+config_reader = ConfigReader()
+
 if __name__ == "__main__":
-	ConfigReader().debug()
+	config_reader.debug()

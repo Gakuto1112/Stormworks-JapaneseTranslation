@@ -4,6 +4,7 @@ import re
 
 from common_modules.paths import paths
 from common_modules.logger import Logger
+from common_modules.config_reader import config_reader
 from common_modules.models.translation_key import TranslationKey
 
 
@@ -82,7 +83,7 @@ class TranslationDataBuilder:
 			translation_key = TranslationKey(id=chunks[0] if chunks[0] != "" else None, en=chunks[2] if chunks[2] != "" else None, jp=chunks[3] if chunks[3] != "" else None)
 
 			if translation_key.id is not None and translation_key.en is not None and translation_key.jp is not None and re.fullmatch(r"def_.+_name", translation_key.id) is not None:
-				merged_translation_data += f"{translation_key.id}\t\t{translation_key.en}\t{translation_key.jp} | {translation_key.en}\n"
+				merged_translation_data += f"{translation_key.id}\t\t{translation_key.en}\t{translation_key.jp}{config_reader.get_separator()}{translation_key.en}\n"
 			else:
 				merged_translation_data += line + "\n"
 
@@ -112,6 +113,8 @@ class TranslationDataBuilder:
 
 		self._set_debug_args()
 		Logger.should_print_debug_log = True
+
+		config_reader.read_config()
 
 		# デバッグ出力
 		Logger.print_info("Translation data builder for Stormworks Japanese translation")
