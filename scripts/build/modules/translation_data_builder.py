@@ -6,7 +6,6 @@ from common_modules.paths import paths
 from common_modules.logger import Logger
 from common_modules.translation_data_reader import TranslationDataReader
 from common_modules.config_reader import ConfigReader
-from common_modules.models.translation_key import TranslationKey
 
 
 class TranslationDataBuilder:
