@@ -53,7 +53,7 @@ def processArgs(args: Namespace) -> None:
 		Logger.is_colored = True
 	if args.debug:
 		Logger.should_print_debug_log= True
-		
+
 def build() -> None:
 	"""
 	翻訳データをビルドする。
@@ -61,7 +61,23 @@ def build() -> None:
 
 	Logger.print_info("Loading configuration...")
 
-	ConfigReader.read_config()
+	try:
+		ConfigReader.read_config()
+	except FileNotFoundError:
+		Logger.print_error(f"Configuration file not found ({paths.config_path})")
+		exit(errno.ENOENT)
+	except IsADirectoryError:
+		Logger.print_error(f"Configuration path is a directory ({paths.config_path})")
+		exit(errno.EISDIR)
+	except PermissionError:
+		Logger.print_error(f"No permission to read configuration file ({paths.config_path})")
+		exit(errno.EACCES)
+	except IOError:
+		Logger.print_error(f"An unexpected I/O error occurred while reading the configuration file ({paths.config_path})")
+		exit(errno.EIO)
+	except Exception as e:
+		Logger.print_error(f"An unexpected error occurred while reading the configuration file ({paths.config_path}): {str(e)}")
+		exit(errno.EPERM)
 
 	Logger.print_info("Configuration loaded successfully.")
 
@@ -81,6 +97,9 @@ def build() -> None:
 		exit(errno.EIO)
 	except ConfigNotLoadedError:
 		Logger.print_error("Tool configuration has not been loaded yet. This error should not occur if the tool is used correctly. Please report this issue to the developer.")
+		exit(errno.EPERM)
+	except Exception as e:
+		Logger.print_error(f"An unexpected error occurred while building translation data: {str(e)}")
 		exit(errno.EPERM)
 
 def main() -> None:

@@ -119,6 +119,9 @@ class ConfigReader:
 		except IOError:
 			Logger.print_error(f"An unexpected error occurred while reading the config file ({paths.config_path})")
 			exit(errno.EIO)
+		except Exception as e:
+			Logger.print_error(f"An unexpected error occurred while reading the config file ({paths.config_path}): {str(e)}")
+			exit(errno.EPERM)
 
 		Logger.print_info(f"Successfully read config from \"{paths.config_path}\"")
 		Logger.print_spacer(1)

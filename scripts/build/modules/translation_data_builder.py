@@ -142,6 +142,9 @@ class TranslationDataBuilder:
 		except IOError:
 			Logger.print_error(f"An unexpected error occurred while reading the translation source file ({paths.input_locale_path})")
 			exit(errno.EIO)
+		except Exception as e:
+			Logger.print_error(f"An unexpected error occurred while reading the translation source file ({paths.input_locale_path}): {str(e)}")
+			exit(errno.EPERM)
 
 		if Logger.should_print_debug_log:
 			Logger.print_spacer(1)
@@ -157,6 +160,9 @@ class TranslationDataBuilder:
 		except IOError:
 			Logger.print_error(f"An unexpected error occurred while creating the output directory for translation data ({paths.output_locale_path.parent})")
 			exit(errno.EIO)
+		except Exception as e:
+			Logger.print_error(f"An unexpected error occurred while creating the output directory for translation data ({paths.output_locale_path.parent}): {str(e)}")
+			exit(errno.EPERM)
 
 		try:
 			TranslationDataBuilder._write_translation_output(merged_data)
@@ -169,6 +175,9 @@ class TranslationDataBuilder:
 		except IOError:
 			Logger.print_error(f"An unexpected error occurred while writing to the translation output file ({paths.output_locale_path})")
 			exit(errno.EIO)
+		except Exception as e:
+			Logger.print_error(f"An unexpected error occurred while writing to the translation output file ({paths.output_locale_path}): {str(e)}")
+			exit(errno.EPERM)
 
 		Logger.print_info(f"Successfully wrote translation data to \"{paths.output_locale_path}\"")
 
