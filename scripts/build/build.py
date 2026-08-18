@@ -1,8 +1,12 @@
 from argparse import ArgumentParser, Namespace
 from pathlib import Path
+import errno
 
 from common_modules.paths import paths
 from common_modules.logger import Logger
+from common_modules.config_reader import config_reader
+from common_modules.errors.config_not_loaded_error import ConfigNotLoadedError
+from .modules.translation_data_builder import TranslationDataBuilder
 
 
 def setArgs() -> ArgumentParser:
@@ -47,6 +51,31 @@ def processArgs(args: Namespace) -> None:
 	if args.colored:
 		Logger.is_colored = True
 
+def build() -> None:
+	"""
+	翻訳データをビルドする。
+	"""
+
+	config_reader.read_config()
+
+	try:
+		TranslationDataBuilder.build()
+	except FileNotFoundError:
+		Logger.print_error(f"Translation source file not found ({paths.input_locale_path})")
+		exit(errno.ENOENT)
+	except IsADirectoryError:
+		Logger.print_error(f"Translation source file is a directory ({paths.input_locale_path})")
+		exit(errno.EISDIR)
+	except PermissionError:
+		Logger.print_error(f"No permission to read/write translation files ({paths.input_locale_path} / {paths.output_locale_path})")
+		exit(errno.EACCES)
+	except IOError:
+		Logger.print_error("An unexpected I/O error occurred.")
+		exit(errno.EIO)
+	except ConfigNotLoadedError:
+		Logger.print_error("Tool configuration has not been loaded yet. This error should not occur if the tool is used correctly. Please report this issue to the developer.")
+		exit(errno.EPERM)
+
 def main() -> None:
 	"""
 	エントリー関数
@@ -56,6 +85,9 @@ def main() -> None:
 	parser = setArgs()
 	args = parseArgs(parser)
 	processArgs(args)
+
+	# ビルド
+	build()
 
 if __name__ == "__main__":
 	main()

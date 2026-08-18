@@ -88,6 +88,33 @@ class TranslationDataBuilder:
 				merged_translation_data += line + "\n"
 
 		return merged_translation_data
+
+	@staticmethod
+	def build() -> None:
+		"""
+		翻訳データのビルドを行う。
+
+		このメソッドは以下の動作を行う。
+
+		1. 翻訳データをソースファイルから読み込む。
+		2. ゲーム内コンポーネントの名称の和訳と英語原文を結合する。
+		3. ビルド済みの翻訳データを出力するディレクトリがなければ作成する。
+		4. ビルド済みの翻訳データを出力ファイルに書き込む。
+
+		このメソッドはConfigReaderがロードした設定値を使用するため、このメソッドを呼ぶ前に少なくとも1回はConfigReader.read_config()を呼び出す必要がある。
+
+		Raises:
+			FileNotFoundError: 指定されたパスにファイルが存在しない場合
+			IsADirectoryError: 指定されたパスがディレクトリである場合
+			PermissionError: 指定されたパスのファイルに対する読み取り/書き込み権限がない場合
+			IOError: その他の入出力エラーが発生した場合
+			ConfigNotLoadedError: 設定値がロードされる前に呼び出された場合
+		"""
+
+		source_data = TranslationDataBuilder._read_translation_source()
+		merged_data = TranslationDataBuilder._merge_component_names(source_data)
+		TranslationDataBuilder._prepare_dist_directory()
+		TranslationDataBuilder._write_translation_output(merged_data)
 	
 	@staticmethod
 	def _set_debug_args() -> None:
