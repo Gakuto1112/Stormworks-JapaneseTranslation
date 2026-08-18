@@ -19,7 +19,8 @@ class ConfigReader:
 	`None`の場合はまだ読み込んでいないことを示す。
 	"""
 
-	def read_config(self) -> None:
+	@classmethod
+	def read_config(cls) -> None:
 		"""
 		ツールの設定値をファイルから読み取り、モジュール内にロードする。
 		既にロード済みの場合に呼び出すと、設定値をリロードする。
@@ -32,14 +33,15 @@ class ConfigReader:
 			TypeError: 設定値の形式が正しくない場合
 		"""
 
-		self._config = None
+		cls._config = None
 
 		with open(paths.config_path, "rb") as file:
 			raw_config = tomllib.load(file)
 
-		self._config = Config.from_dict(raw_config)
+		cls._config = Config.from_dict(raw_config)
 
-	def get_separator(self) -> str:
+	@classmethod
+	def get_separator(cls) -> str:
 		"""
 		設定値から翻訳データの区切り文字(`build.separator`)を取得する。
 
@@ -50,10 +52,10 @@ class ConfigReader:
 			ConfigNotLoadedError: 設定値がロードされる前に呼び出された場合
 		"""
 
-		if self._config is None:
+		if cls._config is None:
 			raise ConfigNotLoadedError("Configuration has not been loaded yet. Please call read_config() before accessing configuration values.")
 
-		return self._config.build.separator
+		return cls._config.build.separator
 
 	@staticmethod
 	def _set_debug_args() -> None:
@@ -72,12 +74,13 @@ class ConfigReader:
 		if args.colored:
 			Logger.is_colored = True
 
-	def debug(self) -> None:
+	@classmethod
+	def debug(cls) -> None:
 		"""
 		動作確認用のメソッド
 		"""
 
-		self._set_debug_args()
+		cls._set_debug_args()
 		Logger.should_print_debug_log = True
 
 		# デバッグ出力
@@ -86,7 +89,7 @@ class ConfigReader:
 		Logger.print_info(f"Reading config from \"{paths.config_path}\" ...")
 
 		try:
-			self.read_config()
+			cls.read_config()
 		except FileNotFoundError:
 			Logger.print_error(f"The specified config file was not found ({paths.config_path})")
 			exit(errno.ENOENT)
@@ -102,9 +105,7 @@ class ConfigReader:
 
 		Logger.print_info(f"Successfully read config from \"{paths.config_path}\"")
 		Logger.print_spacer(1)
-		Logger.print_debug(str(self._config))
-
-config_reader = ConfigReader()
+		Logger.print_debug(str(cls._config))
 
 if __name__ == "__main__":
-	config_reader.debug()
+	ConfigReader.debug()

@@ -4,7 +4,7 @@ import re
 
 from common_modules.paths import paths
 from common_modules.logger import Logger
-from common_modules.config_reader import config_reader
+from common_modules.config_reader import ConfigReader
 from common_modules.models.translation_key import TranslationKey
 
 
@@ -83,7 +83,7 @@ class TranslationDataBuilder:
 			translation_key = TranslationKey(id=chunks[0] if chunks[0] != "" else None, en=chunks[2] if chunks[2] != "" else None, jp=chunks[3] if chunks[3] != "" else None)
 
 			if translation_key.id is not None and translation_key.en is not None and translation_key.jp is not None and re.fullmatch(r"def_.+_name", translation_key.id) is not None:
-				merged_translation_data += f"{translation_key.id}\t\t{translation_key.en}\t{translation_key.jp}{config_reader.get_separator()}{translation_key.en}\n"
+				merged_translation_data += f"{translation_key.id}\t\t{translation_key.en}\t{translation_key.jp}{ConfigReader.get_separator()}{translation_key.en}\n"
 			else:
 				merged_translation_data += line + "\n"
 
@@ -133,15 +133,16 @@ class TranslationDataBuilder:
 		if args.colored:
 			Logger.is_colored = True
 
-	def debug(self) -> None:
+	@classmethod
+	def debug(cls) -> None:
 		"""
 		動作確認用のメソッド
 		"""
 
-		self._set_debug_args()
+		cls._set_debug_args()
 		Logger.should_print_debug_log = True
 
-		config_reader.read_config()
+		ConfigReader.read_config()
 
 		# デバッグ出力
 		Logger.print_info("Translation data builder for Stormworks Japanese translation")
@@ -167,7 +168,7 @@ class TranslationDataBuilder:
 			Logger.print_spacer(1)
 		Logger.print_info(f"Successfully read translation source from \"{paths.input_locale_path}\"")
 
-		merged_data = self._merge_component_names(source_data)
+		merged_data = cls._merge_component_names(source_data)
 
 		try:
 			TranslationDataBuilder._prepare_dist_directory()
@@ -193,4 +194,4 @@ class TranslationDataBuilder:
 		Logger.print_info(f"Successfully wrote translation data to \"{paths.output_locale_path}\"")
 
 if __name__ == "__main__":
-	TranslationDataBuilder().debug()
+	TranslationDataBuilder.debug()

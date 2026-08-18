@@ -4,7 +4,7 @@ import errno
 
 from common_modules.paths import paths
 from common_modules.logger import Logger
-from common_modules.config_reader import config_reader
+from common_modules.config_reader import ConfigReader
 from common_modules.errors.config_not_loaded_error import ConfigNotLoadedError
 from .modules.translation_data_builder import TranslationDataBuilder
 
@@ -56,7 +56,7 @@ def build() -> None:
 	翻訳データをビルドする。
 	"""
 
-	config_reader.read_config()
+	ConfigReader.read_config()
 
 	try:
 		TranslationDataBuilder.build()
