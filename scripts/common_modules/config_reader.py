@@ -2,8 +2,9 @@ import tomllib
 import errno
 from argparse import ArgumentParser
 
-from common_modules.paths import paths
-from common_modules.logger import Logger
+from .paths import paths
+from .logger import Logger
+from .models.config_models.config import Config
 
 
 class ConfigReader:
@@ -11,7 +12,11 @@ class ConfigReader:
 	ツールの設定値をファイルから読み取り、設定値を他のモジュールに提供するクラス
 	"""
 
-	_config: dict|None = None
+	_config: Config|None = None
+	"""
+	ファイルから読み込んだ設定値を格納するインスタンス。
+	`None`の場合はまだ読み込んでいないことを示す。
+	"""
 
 	def read_config(self) -> None:
 		"""
@@ -23,12 +28,15 @@ class ConfigReader:
 			IsADirectoryError: 指定されたパスがディレクトリである場合
 			PermissionError: 指定されたパスのファイルに対する読み取り�権限がない場合
 			IOError: その他の入出力エラーが発生した場合
+			TypeError: 設定値の形式が正しくない場合
 		"""
 
 		self._config = None
 
 		with open(paths.config_path, "rb") as file:
-			self._config = tomllib.load(file)
+			raw_config = tomllib.load(file)
+
+		self._config = Config.from_dict(raw_config)
 
 	@staticmethod
 	def _set_debug_args() -> None:
