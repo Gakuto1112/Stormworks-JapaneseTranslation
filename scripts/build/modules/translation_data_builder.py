@@ -4,6 +4,7 @@ import re
 
 from common_modules.paths import paths
 from common_modules.logger import Logger
+from common_modules.translation_data_reader import TranslationDataReader
 from common_modules.config_reader import ConfigReader
 from common_modules.models.translation_key import TranslationKey
 
@@ -12,24 +13,6 @@ class TranslationDataBuilder:
 	"""
 	翻訳データをソースからビルドするクラス
 	"""
-
-	@staticmethod
-	def _read_translation_source() -> str:
-		"""
-		翻訳データのソースファイルを読み込み、その内容を文字列として返す。
-
-		Returns:
-			str: 読み込んだ翻訳データの文字列
-
-		Raises:
-			FileNotFoundError: 指定されたパスにファイルが存在しない場合
-			IsADirectoryError: 指定されたパスがディレクトリである場合
-			PermissionError: 指定されたパスのファイルに対する読み取り権限がない場合
-			IOError: その他の入出力エラーが発生した場合
-		"""
-
-		with open(paths.input_locale_path, "r", encoding="utf-8") as file:
-			return file.read()
 
 	@staticmethod
 	def _prepare_dist_directory() -> None:
@@ -111,7 +94,7 @@ class TranslationDataBuilder:
 			ConfigNotLoadedError: 設定値がロードされる前に呼び出された場合
 		"""
 
-		source_data = TranslationDataBuilder._read_translation_source()
+		source_data = TranslationDataReader.read_translation_source()
 		merged_data = TranslationDataBuilder._merge_component_names(source_data)
 		TranslationDataBuilder._prepare_dist_directory()
 		TranslationDataBuilder._write_translation_output(merged_data)
@@ -150,7 +133,7 @@ class TranslationDataBuilder:
 		Logger.print_info(f"Reading translation source from \"{paths.input_locale_path}\" ...")
 
 		try:
-			source_data = TranslationDataBuilder._read_translation_source()
+			source_data = TranslationDataReader.read_translation_source()
 		except FileNotFoundError:
 			Logger.print_error(f"The specified translation source file was not found ({paths.input_locale_path})")
 			exit(errno.ENOENT)
