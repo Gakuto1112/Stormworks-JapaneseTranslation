@@ -61,14 +61,11 @@ class TranslationDataBuilder:
 
 		merged_translation_data = ""
 
-		for line in translation_data.splitlines():
-			chunks = line.split("\t")
-			translation_key = TranslationKey(id=chunks[0] if chunks[0] != "" else None, en=chunks[2] if chunks[2] != "" else None, jp=chunks[3] if chunks[3] != "" else None)
-
-			if translation_key.id is not None and translation_key.en is not None and translation_key.jp is not None and re.fullmatch(r"def_.+_name", translation_key.id) is not None:
-				merged_translation_data += f"{translation_key.id}\t\t{translation_key.en}\t{translation_key.jp}{ConfigReader.get_separator()}{translation_key.en}\n"
+		for key in TranslationDataReader.get_translation_key_iterator(translation_data):
+			if key.id is not None and key.en is not None and key.jp is not None and re.fullmatch(r"def_.+_name", key.id) is not None:
+				merged_translation_data += f"{key.id}\t\t{key.en}\t{key.jp}{ConfigReader.get_separator()}{key.en}\n"
 			else:
-				merged_translation_data += line + "\n"
+				merged_translation_data += f"{key.id if key.id is not None else ''}\t\t{key.en if key.en is not None else ''}\t{key.jp if key.jp is not None else ''}\n"
 
 		return merged_translation_data
 
