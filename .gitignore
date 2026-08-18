@@ -136,3 +136,4 @@ __pycache__
 .vscode/
 Stormworks-JapaneseTranslation.code-workspace
 .DS_Store
+scripts/test/reports/
