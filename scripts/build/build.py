@@ -22,6 +22,7 @@ def setArgs() -> ArgumentParser:
 	parser.add_argument("--src-path", "-i", type=str, default=paths.input_locale_path, help="Overrides default source path. Default: ../../src/japanese.tsv")
 	parser.add_argument("--dist-path", "-o", type=str, default=paths.output_locale_path, help="Overrides default destination path. Default: ../../dist/japanese.tsv")
 	parser.add_argument("--colored", "-l", action="store_true", help="Enables colored output in the terminal.")
+	parser.add_argument("--debug", "-d", action="store_true", help="Enables debug mode, which provides additional debug information during execution.")
 
 	return parser
 
@@ -50,13 +51,19 @@ def processArgs(args: Namespace) -> None:
 	paths.output_locale_path = Path(args.dist_path)
 	if args.colored:
 		Logger.is_colored = True
-
+	if args.debug:
+		Logger.should_print_debug_log= True
+		
 def build() -> None:
 	"""
 	翻訳データをビルドする。
 	"""
 
+	Logger.print_info("Loading configuration...")
+
 	ConfigReader.read_config()
+
+	Logger.print_info("Configuration loaded successfully.")
 
 	try:
 		TranslationDataBuilder.build()
@@ -81,13 +88,28 @@ def main() -> None:
 	エントリー関数
 	"""
 
+	# タイトル表示
+	Logger.print_info("Translation Data Build Tool for Stormworks Japanese Translation")
+	Logger.print_spacer(1)
+
 	# 引数の処理
 	parser = setArgs()
 	args = parseArgs(parser)
 	processArgs(args)
 
+	# 設定値のデバッグ出力
+	Logger.print_debug(f"Input source path: {paths.input_locale_path}")
+	Logger.print_debug(f"Output destination path: {paths.output_locale_path}")
+	Logger.print_debug(f"Configuration file path: {paths.config_path}")
+	Logger.print_spacer(1)
+
+	Logger.print_info("Building translation data...")
+
 	# ビルド
 	build()
+
+	Logger.print_info(f"Completed building translation data.")
+	Logger.print_info(f"The built translation data has been saved to \"{paths.output_locale_path}\".")
 
 if __name__ == "__main__":
 	main()
