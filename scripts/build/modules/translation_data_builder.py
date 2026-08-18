@@ -79,9 +79,9 @@ class TranslationDataBuilder:
 
 		for line in translation_data.splitlines():
 			chunks = line.split("\t")
-			translation_key = TranslationKey(id=chunks[0], en=chunks[2] if chunks[2] != "" else None, jp=chunks[3] if chunks[3] != "" else None)
+			translation_key = TranslationKey(id=chunks[0] if chunks[0] != "" else None, en=chunks[2] if chunks[2] != "" else None, jp=chunks[3] if chunks[3] != "" else None)
 
-			if translation_key.en is not None and translation_key.jp is not None and re.fullmatch(r"def_.+_name", translation_key.id) is not None:
+			if translation_key.id is not None and translation_key.en is not None and translation_key.jp is not None and re.fullmatch(r"def_.+_name", translation_key.id) is not None:
 				merged_translation_data += f"{translation_key.id}\t\t{translation_key.en}\t{translation_key.jp} | {translation_key.en}\n"
 			else:
 				merged_translation_data += line + "\n"
