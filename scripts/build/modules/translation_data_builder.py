@@ -1,8 +1,10 @@
 from argparse import ArgumentParser
 import errno
+import re
 
 from common_modules.paths import paths
 from common_modules.logger import Logger
+from common_modules.models.translation_key import TranslationKey
 
 
 class TranslationDataBuilder:
@@ -44,12 +46,12 @@ class TranslationDataBuilder:
 			dist_directory.mkdir(parents=True, exist_ok=True)
 
 	@staticmethod
-	def _write_translation_output(data: str) -> None:
+	def _write_translation_output(translation_data: str) -> None:
 		"""
 		入力された文字列を翻訳データを出力ファイルに書き込む。
 
 		Args:
-			data (str): 書き込む翻訳データの文字列
+			translation_data (str): 書き込む翻訳データの文字列
 
 		Raises:
 			IsADirectoryError: 指定されたパスがディレクトリである場合
@@ -58,8 +60,34 @@ class TranslationDataBuilder:
 		"""
 
 		with open(paths.output_locale_path, "w", encoding="utf-8") as file:
-			file.write(data)
+			file.write(translation_data)
 
+	@staticmethod
+	def _merge_component_names(translation_data: str) -> str:
+		"""
+		ゲーム内コンポーネントの名称の和訳と英語原文を結合して返す。
+		和訳と英語原文の間に挟まる区切り文字はコンフィグファイルから読み込まれる。
+
+		Args:
+			translation_data (str): 書き込む翻訳データの文字列
+
+		Returns:
+			str: マージ済みの翻訳データの文字列
+		"""
+
+		merged_translation_data = ""
+
+		for line in translation_data.splitlines():
+			chunks = line.split("\t")
+			translation_key = TranslationKey(id=chunks[0], en=chunks[2] if chunks[2] != "" else None, jp=chunks[3] if chunks[3] != "" else None)
+
+			if translation_key.en is not None and translation_key.jp is not None and re.fullmatch(r"def_.+_name", translation_key.id) is not None:
+				merged_translation_data += f"{translation_key.id}\t\t{translation_key.en}\t{translation_key.jp} | {translation_key.en}\n"
+			else:
+				merged_translation_data += line + "\n"
+
+		return merged_translation_data
+	
 	@staticmethod
 	def _set_debug_args() -> None:
 		"""
@@ -105,10 +133,11 @@ class TranslationDataBuilder:
 			Logger.print_error(f"An unexpected error occurred while reading the translation source file ({paths.input_locale_path})")
 			exit(errno.EIO)
 
-		Logger.print_debug(source_data)
 		if Logger.should_print_debug_log:
 			Logger.print_spacer(1)
 		Logger.print_info(f"Successfully read translation source from \"{paths.input_locale_path}\"")
+
+		merged_data = self._merge_component_names(source_data)
 
 		try:
 			TranslationDataBuilder._prepare_dist_directory()
@@ -120,7 +149,7 @@ class TranslationDataBuilder:
 			exit(errno.EIO)
 
 		try:
-			TranslationDataBuilder._write_translation_output(source_data)
+			TranslationDataBuilder._write_translation_output(merged_data)
 		except IsADirectoryError:
 			Logger.print_error(f"The specified translation output file is a directory ({paths.output_locale_path})")
 			exit(errno.EISDIR)
