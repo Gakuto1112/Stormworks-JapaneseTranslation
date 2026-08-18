@@ -57,6 +57,23 @@ class ConfigReader:
 
 		return cls._config.build.separator
 
+	@classmethod
+	def get_prohibited_characters(cls) -> list[str]:
+		"""
+		設定値から禁止文字のリスト(`test.prohibited_characters`)を取得する。
+
+		Returns:
+			list[str]: 設定値から取得した禁止文字のリスト
+
+		Raises:
+			ConfigNotLoadedError: 設定値がロードされる前に呼び出された場合
+		"""
+
+		if cls._config is None:
+			raise ConfigNotLoadedError("Configuration has not been loaded yet. Please call read_config() before accessing configuration values.")
+
+		return cls._config.test.prohibited_characters
+
 	@staticmethod
 	def _set_debug_args() -> None:
 		"""
