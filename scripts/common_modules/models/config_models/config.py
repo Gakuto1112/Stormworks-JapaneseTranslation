@@ -3,6 +3,7 @@ from typing import Self
 
 from ...paths import paths
 from .build_config import BuildConfig
+from .test_config import TestConfig
 
 
 @dataclass(frozen=True, slots=True)
@@ -14,6 +15,11 @@ class Config:
 	build: BuildConfig
 	"""
 	ビルド設定値
+	"""
+
+	test: TestConfig
+	"""
+	テストの設定値
 	"""
 
 	@classmethod
@@ -39,5 +45,15 @@ class Config:
 		if not isinstance(separator, str):
 			raise TypeError(f"The \"separator\" value in the \"build\" section must be a string in the configuration file ({paths.config_path})")
 
-		return cls(build=BuildConfig(separator=separator))
-	
+		test_config = config_dict.get("test", dict())
+		if not isinstance(test_config, dict):
+			raise TypeError(f"The \"test\" section is required in the configuration file ({paths.config_path})")
+
+		prohibited_characters = test_config.get("prohibited_characters", None)
+		if not isinstance(prohibited_characters, list) or not all(isinstance(char, str) for char in prohibited_characters):
+			raise TypeError(f"The \"prohibited_characters\" value in the \"test\" section must be a list of strings in the configuration file ({paths.config_path})")
+
+		return cls(
+			build=BuildConfig(separator=separator),
+			test=TestConfig(prohibited_characters=prohibited_characters)
+		)
