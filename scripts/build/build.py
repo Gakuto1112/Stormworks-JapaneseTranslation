@@ -67,7 +67,7 @@ def build() -> None:
 		Logger.print_error(f"Configuration file not found ({paths.config_path})")
 		exit(errno.ENOENT)
 	except IsADirectoryError:
-		Logger.print_error(f"Configuration path is a directory ({paths.config_path})")
+		Logger.print_error(f"Configuration file path is a directory ({paths.config_path})")
 		exit(errno.EISDIR)
 	except PermissionError:
 		Logger.print_error(f"No permission to read configuration file ({paths.config_path})")

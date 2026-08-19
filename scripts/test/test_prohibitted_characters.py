@@ -19,7 +19,7 @@ class TestProhibitedCharacters(unittest.TestCase):
 		except FileNotFoundError:
 			self.fail(f"Configuration file not found ({paths.config_path}).")
 		except IsADirectoryError:
-			self.fail(f"Configuration path is a directory ({paths.config_path}).")
+			self.fail(f"Configuration file path is a directory ({paths.config_path}).")
 		except PermissionError:
 			self.fail(f"No permission to read/write configuration file ({paths.config_path}).")
 		except IOError:
