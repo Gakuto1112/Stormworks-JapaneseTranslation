@@ -37,8 +37,8 @@ class TestProhibitedCharacters(unittest.TestCase):
 		try:
 			for i, key in enumerate(TranslationDataReader.get_translation_key_iterator(TranslationDataReader.read_translation_source())):
 				if key.jp is not None:
-						with self.subTest(line=i + 1):
-							self.assertTrue(re.search(rf"[{re.escape(''.join(prohibited_characters))}]", key.jp) is None, f"One or more prohibited characters detected in Japanese translation at line {i + 1})")
+					with self.subTest(line=i + 1):
+						self.assertTrue(re.search(rf"[{re.escape(''.join(prohibited_characters))}]", key.jp) is None, f"One or more prohibited characters detected in Japanese translation at line {i + 1})")
 		except FileNotFoundError:
 			self.fail(f"Translation source file not found ({paths.input_locale_path}).")
 		except IsADirectoryError:
