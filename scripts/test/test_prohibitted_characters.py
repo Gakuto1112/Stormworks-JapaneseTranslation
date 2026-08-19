@@ -49,6 +49,3 @@ class TestProhibitedCharacters(unittest.TestCase):
 			self.fail(f"An unexpected I/O error occurred while reading the translation source file ({paths.input_locale_path}).")
 		except Exception as e:
 			self.fail(f"An unexpected error occurred while reading the translation source file ({paths.input_locale_path}): {str(e)}")
-
-if __name__ == "__main__":
-    unittest.main()
