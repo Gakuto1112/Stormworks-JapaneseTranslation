@@ -9,7 +9,7 @@
 
 <https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581>
 
-対応ゲームバージョン ： **1.15.18**
+対応ゲームバージョン ： **<!-- TARGET_GAME_VERSION_START -->1.15.18<!-- TARGET_GAME_VERSION_END -->**
 
 ## 翻訳方針について
 
