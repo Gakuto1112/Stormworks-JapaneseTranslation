@@ -1,52 +1,24 @@
 name: Build
 
 on:
-  workflow_call:
-    inputs:
-      ref:
-        description: The target ref to test
-        required: false
-        default: ${{ github.ref }}
-        type: string
-    outputs:
-      run_id:
-        description: The run id of the build action
-        value: ${{ jobs.build.outputs.run_id }}
+  push:
+    branches:
+      - main
+    paths:
+      - src/**
+      - scripts/**
+      - .github/workflows/**
+  pull_request:
+    branches:
+      - main
+    paths:
+      - src/**
+      - scripts/**
+      - .github/workflows/**
 
 jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-    outputs:
-      run_id: ${{ steps.output_run_id.outputs.run_id }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4.2.2
-        with:
-          ref: ${{ inputs.ref }}
-      - name: Setup Node.js
-        uses: actions/setup-node@v4.4.0
-        with:
-          node-version: 20.12.0
-          cache: npm
-      - name: Install dependencies
-        run: npm install
-      - name: Prepare output folder
-        run: mkdir ./out
-      - name: Copy xml file
-        run: cp ./src/translation_data/japanese.xml ./out/japanese.xml
-      - name: Enable problem matcher
-        run: echo ::add-matcher::.github/problem_matchers/build.json
-      - name: Build
-        run: ../node_modules/.bin/ts-node ./build.ts
-        working-directory: ./src/
-      - name: Disable problem matcher
-        run: echo '::remove-matcher owner=Build::'
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4.6.2
-        with:
-          name: japanese
-          path: ./out/
-      - name: Output run id
-        id: output_run_id
-        run: echo run_id=${{ github.run_id }} >> $GITHUB_OUTPUT
+  call_build_core:
+    name: Call build core workflow
+    permissions:
+      contents: read
+    uses: ./.github/workflows/build_core.yml
