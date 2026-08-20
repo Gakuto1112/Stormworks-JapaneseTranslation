@@ -1,21 +1,53 @@
-MIT License
+# License / 利用規約
 
-Copyright (c) 2024 Gakuto1112
+## 1. Secondary Creation Policy / 二次創作に関するガイドライン
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This project, "Stormworks-JapaneseTranslation," is a user-made Japanese translation based on "Stormworks: Build and Rescue" owned by Geometa Ltd.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+本プロジェクト（Stormworks-JapaneseTranslation）は、Geometa Ltd. が権利を所有する「Stormworks: Build and Rescue」のユーザーメイドの翻訳データでです。
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+## 2. Ownership & Scope / 権利の所在と適用範囲
+
+We distinguish between official intellectual property and the original work created for this project as follows:
+
+本プロジェクトでは、公式の知的財産と独自制作部分を以下の通り区別しています。
+
+### Gakuto1112 (Author) Rights
+
+- Translation data (`src/japanese.tsv`, `src/japanese.xml`) created by Gakuto1112.
+- Original programs used to build and validate the translation data, located under `scripts/`.
+- The MIT License below applies to these "Translation Data" and "Programs."
+
+### Official Rights
+
+- The original English source text is owned by Geometa Ltd. Translating it into Japanese does not transfer or waive any of Geometa Ltd.'s rights.
+- Some of the translated text may reproduce terms, names, or phrases whose rights belong to Geometa Ltd. (e.g. in-game proper nouns). Ownership of such portions remains with Geometa Ltd. even where they appear in the translation data.
+
+## 3. Prohibited Acts / 禁止事項
+
+To protect the creative community, the following acts are strictly prohibited:
+
+創作コミュニティを保護するため、以下の行為を固く禁止します。
+
+- Plagiarism & Impersonation (自作発言の禁止):
+  Do not claim this work (or modified versions of it) as your own original creation. Please credit the original author (Gakuto1112) when sharing or distributing.
+- Violation of Official Rules:
+  Any use that damages the reputation of Geometa Ltd. or violates Steam Workshop's terms of use.
+
+## 4. Disclaimer / 免責事項
+
+This is an unofficial project. It is not affiliated with or endorsed by Geometa Ltd.
+
+The software is provided "as is," without warranty of any kind. The author (Gakuto1112) is not responsible for any issues or damages arising from the use of this project.
+
+The author reserves the right to take down this repository immediately upon request from Geometa Ltd.
+
+## 5. Software License (MIT)
+
+Copyright (c) 2026 Gakuto1112
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
