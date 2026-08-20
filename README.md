@@ -1,74 +1,9 @@
 # Stormworks-JapaneseTranslation
 
-[Stormworks: Build and Rescue](https://store.steampowered.com/app/573090/Stormworks_Build_and_Rescue/?l=japanese)を日本語化する翻訳データです。
-ゲームに実装されているローカライゼーション機能で翻訳できる箇所は全て日本語に翻訳しています。
+乗り物製作シミュレーションゲーム「[Stormworks: Build and Rescue](https://store.steampowered.com/app/573090/Stormworks_Build_and_Rescue/)」のゲーム内テキストを日本語化する翻訳データです。
 
-この翻訳データはSteamワークショップで公開しています。
+対応ゲームバージョン：**<!-- TARGET_GAME_VERSION_START -->1.15.18<!-- TARGET_GAME_VERSION_END -->**
 
-<https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581>
+![サムネイルスクリーンショット1](./docs/images/readme/thumbnail_1.jpg)
 
-対応ゲームバージョン ： **<!-- TARGET_GAME_VERSION_START -->1.15.18<!-- TARGET_GAME_VERSION_END -->**
-
-## 翻訳方針について
-
-ゲームに慣れていない方向けに、カタカナ言葉や専門用語を避けた翻訳にしています。
-また、他の翻訳との整合性を合わせるために、英語の原文を訳したものと同じ文章ではないものがあります。
-
-## 使い方
-
-### Steamワークショップから
-
-上記のSteamワークショップのページからコンテンツをサブスクライブしてください（無料です）。
-サブスクライブすると自動的にコンテンツがダウンロードされます。
-ダウンロード完了後、ゲームを開き、「Settings」→「Language」に進み「WORKSHOP」の欄にある「japanese」を選択してください（表示されない場合はしばらく待ってから「Refresh List」ボタンを押してください）。
-数秒のロードの後、ゲームが日本語になります。
-
-サブスクライブ中は自動的に更新が適用されるため、操作は不要です。
-ただし、ゲームが起動していない間に更新が適用されるため、ゲームを起動し続けていると更新が適用されません。
-ご注意ください。
-
-コンテンツをアンインストールしたい場合は、コンテンツのサブスクライブを終了してください。
-コンテンツが自動的に削除され、ゲームを再起動すると英語に戻ります。
-なお、英語に戻すだけならコンテンツをアンインストールする必要はありません。
-ゲームのLanguage設定から「OFFICIAL」欄にある「English」を選択してください。
-
-### このレポジトリから
-
-画面右側にある「Releases」から最新版のタグをクリックしてください。
-遷移先のページ内の「Assets」の中に「japanese.zip」というファイルがあります。
-このファイルをダウンロードし、展開すると中に「japanese.tsv」というファイルがあります（「japanese.xml」は不要です）。
-「japanese.tsv」を以下のディレクトリに移動させます。
-
-```
-C:\Users\<user_name>\AppData\Roaming\Stormworks\data\languages
-```
-
-> [!NOTE]
->
-> - 上記はWindows環境での例です。
->   MacOSやLinux環境ではパスが異なります。
-> - Windows環境でもパスが異なる場合があります。
-> - 「AppData」は隠しフォルダです。
->    アドレスバーに直接パスを打ち込むか、非表示ファイルを表示する設定にしてください。
-
-ゲームを起動し「Settings」→「Language」に進みます。
-「SAVED」の欄に「japanese」がありますので選択します（表示されない場合は「Refresh List」ボタンを押してください）。
-数秒のロードの後、ゲームが日本語になります。
-
-こちらの方法では手動で更新を適用する必要があります。
-新しいバージョンがリリースされたら上記手順を再び行い、「japanese.tsv」を最新のものに置き換えてください。
-なお、新しいバージョンのリリースを見逃さないように、画面上側にある「Watch」ボタンでレポジトリをウォッチすることをお勧めします。
-レポジトリに更新がある度にメールでお知らせを受け取ることができます。
-ウォッチするにはGitHubアカウントが必要です。
-
-コンテンツをアンインストールしたい場合は、「japanese.tsv」を削除してください。
-ゲームを再起動すると英語に戻ります。
-なお、英語に戻すだけならコンテンツをアンインストールする必要はありません。
-ゲームのLanguage設定から「OFFICIAL」欄にある「English」を選択してください。
-
-## 注意事項
-
-- このデータを使用して発生したいかなる損害の責任は負いかねます。
-- この翻訳データを適用してもなお、日本語に翻訳されない箇所が一部あります。これはゲームがそこの翻訳に対応していないためです。ここに関して、私は対応しかねます。
-- この日本語訳が適用された状態で作成されたスクリーンショットや実況動画などの作品におけるクレジット表記は不要です（表記して頂けると嬉しいですが...）。
-- 誤字脱字の報告や訳に関する提案がありましたら[Steamワークショップ](https://steamcommunity.com/sharedfiles/filedetails/?id=2081775581)、[Issues](https://github.com/Gakuto1112/Stormworks-JapaneseTranslation/issues)、[Discordサーバー](https://discord.gg/GBqesHHGBR)の「翻訳」 チャンネルのいずれかから報告してください（全ての希望には応えられない場合があります）。
+![サムネイルスクリーンショット2](./docs/images/readme/thumbnail_2.jpg)
