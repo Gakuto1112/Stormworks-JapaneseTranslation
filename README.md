@@ -116,3 +116,9 @@ SteamでStormworksを購入しているのであれば、Steamアカウントは
 ![購読解除ボタン](./docs/images/readme/unsubscribe_button.jpg)
 
 ローカル上で直接適用した場合は、Stormworksの言語データディレクトリから`japanese.tsv`を削除してください。
+
+## 注意事項
+
+- 翻訳データを適用してもなお、依然として英語のままであるテキストがあります。
+  これらのテキストは翻訳データの適用では翻訳できませんのでご了承ください。
+- 誤字脱字の報告や翻訳に関する提案がありましたら、Steamワークショップのコメント欄もしくは、[Issues](https://github.com/Gakuto1112/Stormworks-JapaneseTranslation/issues)まで気軽にコメントしてください。
