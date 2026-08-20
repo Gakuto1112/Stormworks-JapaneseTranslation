@@ -52,7 +52,7 @@ SteamでStormworksを購入しているのであれば、Steamアカウントは
 
    ![日本語になったStormworks](./docs/images/readme/applying_japanese_4.jpg)
 
-## ローカル上での直接適用
+### ローカル上での直接適用
 
 1. [Releasesページ](https://github.com/Gakuto1112/Stormworks-JapaneseTranslation/releases)に移動します。
 
