@@ -91,3 +91,28 @@ SteamでStormworksを購入しているのであれば、Steamアカウントは
    ここまで作業すれば、日本語が適用されています。
 
    ![日本語になったStormworks](./docs/images/readme/applying_japanese_4.jpg)
+
+## 翻訳データの削除方法
+
+1. タイトル画面より「設定（Settings）」に移動します。
+
+   ![設定に移動](./docs/images/readme/removing_japanese_1.jpg)
+
+2. 「言語（Language）」タブを開き、「公式（OFFICIAL）」セクションにある「English」をクリックします。
+
+   ![翻訳データを選択](./docs/images/readme/removing_japanese_2.jpg)
+
+3. 適用確認画面が表示されるため「OK（Confirm）」をクリックします。
+
+   ![適用確認画面](./docs/images/readme/removing_japanese_3.jpg)
+
+4. ゲームロゴが表示されてしばらく経つと、タイトル画面が再び表示されます。
+   ここまで作業すれば、英語に戻っています。
+
+   ![英語に戻ったStormworks](./docs/images/readme/removing_japanese_4.jpg)
+
+デバイスから翻訳データを削除するには、Steamワークショップから翻訳データを購読解除します。
+
+![購読解除ボタン](./docs/images/readme/unsubscribe_button.jpg)
+
+ローカル上で直接適用した場合は、Stormworksの言語データディレクトリから`japanese.tsv`を削除してください。
