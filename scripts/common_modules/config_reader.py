@@ -29,6 +29,7 @@ class ConfigReader:
 			FileNotFoundError: 指定されたパスにファイルが存在しない場合
 			IsADirectoryError: 指定されたパスがディレクトリである場合
 			PermissionError: 指定されたパスのファイルに対する読み取り�権限がない場合
+			UnicodeDecodeError: ファイルの内容のデコードに失敗した場合（バイナリファイルを読み込もうとした場合など）
 			IOError: その他の入出力エラーが発生した場合
 			TypeError: 設定値の形式が正しくない場合
 		"""
@@ -116,6 +117,9 @@ class ConfigReader:
 		except PermissionError:
 			Logger.print_error(f"No permission to read the specified config file ({paths.config_path})")
 			exit(errno.EACCES)
+		except UnicodeDecodeError:
+			Logger.print_error(f"Failed to decode the config file ({paths.config_path})")
+			exit(errno.EILSEQ)
 		except IOError:
 			Logger.print_error(f"An unexpected error occurred while reading the config file ({paths.config_path})")
 			exit(errno.EIO)

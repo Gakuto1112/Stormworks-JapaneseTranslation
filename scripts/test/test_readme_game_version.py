@@ -1,9 +1,9 @@
 import os
 import re
 import unittest
-from pathlib import Path
 
 from common_modules.paths import paths
+from common_modules.file_reader import FileReader
 
 
 class TestReadmeGameVersion(unittest.TestCase):
@@ -11,26 +11,6 @@ class TestReadmeGameVersion(unittest.TestCase):
 	"""
 	比較を行うタグ（バージョン）の名前
 	"""
-
-	def _read_file(self, file_path: Path) -> str:
-		"""
-		指定されたファイルの内容を文字列として読み込む。
-
-		Args:
-			file_path (Path): 読み込むファイルのパス
-
-		Returns:
-			str: 読み込んだファイルの内容
-
-		Raises:
-			FileNotFoundError: 指定されたファイルが存在しない場合
-			IsADirectoryError: 指定されたパスがディレクトリである場合
-			PermissionError: ファイルの読み取り権限がない場合
-			IOError: その他の入出力エラーが発生した場合
-		"""
-
-		with open(file_path, "r", encoding="utf-8") as file:
-			return file.read()
 
 	def test_readme_game_version(self) -> None:
 		"""
@@ -50,13 +30,15 @@ class TestReadmeGameVersion(unittest.TestCase):
 		for path in [paths.readme_jp_path, paths.readme_en_path]:
 			with self.subTest(file=path.name):
 				try:
-					content = self._read_file(path)
+					content = FileReader.read_file(path)
 				except FileNotFoundError:
 					self.fail(f"Readme file not found ({path}).")
 				except IsADirectoryError:
 					self.fail(f"Readme file path is a directory, not a file ({path}).")
 				except PermissionError:
 					self.fail(f"No permission to read readme file ({path}).")
+				except UnicodeDecodeError:
+					self.fail(f"Failed to decode readme file ({path}).")
 				except IOError:
 					self.fail(f"An unexpected I/O error occurred while reading readme file ({path}).")
 				except Exception as e:

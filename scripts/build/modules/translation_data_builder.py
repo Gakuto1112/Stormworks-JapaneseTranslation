@@ -3,8 +3,9 @@ import errno
 import re
 
 from common_modules.paths import paths
+from common_modules.file_reader import FileReader
 from common_modules.logger import Logger
-from common_modules.translation_data_reader import TranslationDataReader
+from common_modules.translation_key_iterator_generator import TranslationKeyIteratorGenerator
 from common_modules.config_reader import ConfigReader
 
 
@@ -37,6 +38,7 @@ class TranslationDataBuilder:
 			translation_data (str): 書き込む翻訳データの文字列
 
 		Raises:
+			DirectoryNotFoundError: 出力先のディレクトリが存在しない場合
 			IsADirectoryError: 指定されたパスがディレクトリである場合
 			PermissionError: 指定されたパスのファイルに対する書き込み権限がない場合
 			IOError: その他の入出力エラーが発生した場合
@@ -60,7 +62,7 @@ class TranslationDataBuilder:
 
 		merged_translation_data = ""
 
-		for key in TranslationDataReader.get_translation_key_iterator(translation_data):
+		for key in TranslationKeyIteratorGenerator.get_translation_key_iterator(translation_data):
 			if key.id is not None and key.en is not None and key.jp is not None and re.fullmatch(r"def_.+_name", key.id) is not None:
 				merged_translation_data += f"{key.id}\t\t{key.en}\t{key.jp}{ConfigReader.get_separator()}{key.en}\n"
 			else:
@@ -83,14 +85,15 @@ class TranslationDataBuilder:
 		このメソッドはConfigReaderがロードした設定値を使用するため、このメソッドを呼ぶ前に少なくとも1回はConfigReader.read_config()を呼び出す必要がある。
 
 		Raises:
-			FileNotFoundError: 指定されたパスにファイルが存在しない場合
-			IsADirectoryError: 指定されたパスがディレクトリである場合
+			FileNotFoundError: 翻訳データのソースのパスにファイルが存在しない場合
+			IsADirectoryError: 翻訳データのソースのパスがディレクトリである場合
 			PermissionError: 指定されたパスのファイルに対する読み取り/書き込み権限がない場合
+			UnicodeDecodeError: ファイルの内容のデコードに失敗した場合（バイナリファイルを読み込もうとした場合など）
 			IOError: その他の入出力エラーが発生した場合
 			ConfigNotLoadedError: 設定値がロードされる前に呼び出された場合
 		"""
 
-		source_data = TranslationDataReader.read_translation_source()
+		source_data = FileReader.read_file(paths.input_locale_path)
 		merged_data = TranslationDataBuilder._merge_component_names(source_data)
 		TranslationDataBuilder._prepare_dist_directory()
 		TranslationDataBuilder._write_translation_output(merged_data)
@@ -129,7 +132,7 @@ class TranslationDataBuilder:
 		Logger.print_info(f"Reading translation source from \"{paths.input_locale_path}\" ...")
 
 		try:
-			source_data = TranslationDataReader.read_translation_source()
+			source_data = FileReader.read_file(paths.input_locale_path)
 		except FileNotFoundError:
 			Logger.print_error(f"The specified translation source file was not found ({paths.input_locale_path})")
 			exit(errno.ENOENT)
@@ -139,6 +142,9 @@ class TranslationDataBuilder:
 		except PermissionError:
 			Logger.print_error(f"No permission to read the specified translation source file ({paths.input_locale_path})")
 			exit(errno.EACCES)
+		except UnicodeDecodeError:
+			Logger.print_error(f"Failed to decode the translation source file ({paths.input_locale_path})")
+			exit(errno.EILSEQ)
 		except IOError:
 			Logger.print_error(f"An unexpected error occurred while reading the translation source file ({paths.input_locale_path})")
 			exit(errno.EIO)
