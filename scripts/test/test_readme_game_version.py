@@ -27,31 +27,29 @@ class TestReadmeGameVersion(unittest.TestCase):
 		if match is None:
 			self.fail(f"Invalid tag name format: {self._tag_name}. Expected format: vX.Y.Z-suffix (e.g., v1.0.0-a).")
 
-		for path in [paths.readme_jp_path, paths.readme_en_path]:
-			with self.subTest(file=path.name):
-				try:
-					content = FileReader.read_file(path)
-				except FileNotFoundError:
-					self.fail(f"Readme file not found ({path}).")
-				except IsADirectoryError:
-					self.fail(f"Readme file path is a directory, not a file ({path}).")
-				except PermissionError:
-					self.fail(f"No permission to read readme file ({path}).")
-				except UnicodeDecodeError:
-					self.fail(f"Failed to decode readme file ({path}).")
-				except IOError:
-					self.fail(f"An unexpected I/O error occurred while reading readme file ({path}).")
-				except Exception as e:
-					self.fail(f"An unexpected error occurred while reading readme file ({path}): {str(e)}")
+		try:
+			content = FileReader.read_file(paths.readme_path)
+		except FileNotFoundError:
+			self.fail(f"Readme file not found ({paths.readme_path}).")
+		except IsADirectoryError:
+			self.fail(f"Readme file path is a directory, not a file ({paths.readme_path}).")
+		except PermissionError:
+			self.fail(f"No permission to read readme file ({paths.readme_path}).")
+		except UnicodeDecodeError:
+			self.fail(f"Failed to decode readme file ({paths.readme_path}).")
+		except IOError:
+			self.fail(f"An unexpected I/O error occurred while reading readme file ({paths.readme_path}).")
+		except Exception as e:
+			self.fail(f"An unexpected error occurred while reading readme file ({paths.readme_path}): {str(e)}")
 
-				readme_anchor_match = re.search(r"<!--\sTARGET_GAME_VERSION_START\s-->(.*?)<!--\sTARGET_GAME_VERSION_END\s-->", content, re.DOTALL)
+		readme_anchor_match = re.search(r"<!--\sTARGET_GAME_VERSION_START\s-->(.*?)<!--\sTARGET_GAME_VERSION_END\s-->", content, re.DOTALL)
 
-				if readme_anchor_match is None:
-					self.fail(f"Target game version anchor not found in \"{path.name}\"")
+		if readme_anchor_match is None:
+			self.fail(f"Target game version anchor not found in \"{paths.readme_path.name}\"")
 
-				readme_version_match = re.match(r"(\d+\.\d+\.\d+)", readme_anchor_match.group(1).strip())
+		readme_version_match = re.match(r"(\d+\.\d+\.\d+)", readme_anchor_match.group(1).strip())
 
-				if readme_version_match is None:
-					self.fail(f"Invalid target game version format in \"{path.name}\". Expected format: X.Y.Z (e.g., 1.0.0).")
+		if readme_version_match is None:
+			self.fail(f"Invalid target game version format in \"{paths.readme_path.name}\". Expected format: X.Y.Z (e.g., 1.0.0).")
 
-				self.assertEqual(readme_version_match.group(1), match.group(1), f"The target game version in \"{path.name}\" does not match the version in the tag name ({match.group(1)}).")
+		self.assertEqual(readme_version_match.group(1), match.group(1), f"The target game version in \"{paths.readme_path.name}\" does not match the version in the tag name ({match.group(1)}).")

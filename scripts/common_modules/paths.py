@@ -23,14 +23,9 @@ class Paths:
 	ツールの設定ファイルのパス
 	"""
 
-	_readme_jp_path: Path = _root / "README.md"
+	_readme_path: Path = _root / "README.md"
 	"""
-	日本語版READMEのパス
-	"""
-
-	_readme_en_path: Path = _root / "README_en.md"
-	"""
-	英語版READMEのパス
+	READMEのパス
 	"""
 
 	@property
@@ -90,19 +85,11 @@ class Paths:
 		self._config_path = path
 
 	@property
-	def readme_jp_path(self) -> Path:
+	def readme_path(self) -> Path:
 		"""
-		日本語版READMEのパス
-		"""
-
-		return self._readme_jp_path
-
-	@property
-	def readme_en_path(self) -> Path:
-		"""
-		英語版READMEのパス
+		READMEのパス
 		"""
 
-		return self._readme_en_path
+		return self._readme_path
 
 paths = Paths()

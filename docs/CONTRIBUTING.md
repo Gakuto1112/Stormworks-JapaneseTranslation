@@ -1,5 +1,3 @@
-言語: 　[English](./CONTRIBUTING_en.md)　|　**日本語**
-
 ## CONTRIBUTING
 
 ### 編集を行うファイルについて
