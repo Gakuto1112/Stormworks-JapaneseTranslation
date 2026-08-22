@@ -1,84 +1,26 @@
-name: Test
+name: Test on push/pull-request
 
 on:
-  workflow_call:
-    inputs:
-      ref:
-        description: The target ref to test
-        required: false
-        default: ${{ github.ref }}
-        type: string
-      continue_on_error:
-        description: Continue test even if failed
-        required: false
-        default: false
-        type: boolean
-    outputs:
-      test_1:
-        description: The result of the test 1
-        value: ${{ jobs.test_1.outputs.test_1 }}
-      test_2:
-        description: The result of the test 2
-        value: ${{ jobs.test_2.outputs.test_2 }}
-      
+  push:
+    branches:
+      - main
+    paths:
+      - src/**
+      - scripts/**
+      - .github/workflows/test.yml
+      - .github/workflows/test_core.yml
+  pull_request:
+    branches:
+      - main
+    paths:
+      - src/**
+      - scripts/**
+      - .github/workflows/test.yml
+      - .github/workflows/test_core.yml
+
 jobs:
-  test_1:
-    name: Check prohibited characters
-    runs-on: ubuntu-latest
-    outputs:
-      test_1: ${{ steps.output_result.outputs.result }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4.2.2
-        with:
-          ref: ${{ inputs.ref }}
-      - name: Setup Node.js
-        uses: actions/setup-node@v4.4.0
-        with:
-          node-version: 20.12.0
-          cache: npm
-      - name: Install dependencies
-        run: npm install
-      - name: Prepare output folder
-        run: mkdir ./out
-      - name: Enable problem matcher
-        run: echo ::add-matcher::.github/problem_matchers/test.json
-      - name: Run test
-        run: ../../node_modules/.bin/ts-node ./test_1.ts
-        working-directory: ./src/tests/
-        continue-on-error: ${{ inputs.continue_on_error }}
-      - name: Disable problem matcher
-        run: echo '::remove-matcher owner=Test::'
-      - name: Output test result
-        id: output_result
-        run: echo result=$(<./out/result.json) >> $GITHUB_OUTPUT
-  test_2:
-    name: Check local strings
-    runs-on: ubuntu-latest
-    outputs:
-      test_2: ${{ steps.output_result.outputs.result }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4.2.2
-        with:
-          ref: ${{ inputs.ref }}
-      - name: Setup Node.js
-        uses: actions/setup-node@v4.4.0
-        with:
-          node-version: 20.12.0
-          cache: npm
-      - name: Install dependencies
-        run: npm install
-      - name: Prepare output folder
-        run: mkdir ./out
-      - name: Enable problem matcher
-        run: echo ::add-matcher::.github/problem_matchers/test.json
-      - name: Run test
-        run: ../../node_modules/.bin/ts-node ./test_2.ts
-        working-directory: ./src/tests/
-        continue-on-error: ${{ inputs.continue_on_error }}
-      - name: Disable problem matcher
-        run: echo '::remove-matcher owner=Test::'
-      - name: Output test result
-        id: output_result
-        run: echo result=$(<./out/result.json) >> $GITHUB_OUTPUT
+  call_test_core:
+    permissions:
+      contents: read
+      checks: write
+    uses: ./.github/workflows/test_core.yml

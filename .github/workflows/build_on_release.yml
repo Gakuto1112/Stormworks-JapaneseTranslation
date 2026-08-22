@@ -7,34 +7,37 @@ on:
       - prereleased
 
 jobs:
-  build:
-    name: Build
-    uses: ./.github/workflows/build.yml
+  call_build_core:
+    name: Call build core workflow
+    permissions:
+      contents: read
+    uses: ./.github/workflows/build_core.yml
   upload_release_assets:
     name: Attach artifact to release assets
-    needs: build
+    needs: call_build_core
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4.2.2
-      - name: Prepare output directory
-        run: |
-          mkdir ./out
-          mkdir ./out/japanese
+      - name: Prepare artifact directory
+        run: mkdir -p ./artifacts/japanese
       - name: Download artifact
-        uses: actions/download-artifact@v4.3.0
+        uses: actions/download-artifact@v8.0.1
         with: 
           name: japanese
-          path: ./out/japanese
+          path: ./artifacts/japanese
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+      - name: Prepare output directory
+        run: mkdir -p ./out/japanese
       - name: Copy necessary file
         run: |
+          cp ./artifacts/japanese/* ./out/japanese
           cp ./.github/package_readme/README.txt ./out/README.txt
           cp ./LICENSE ./out/LICENSE
       - name: Zip artifact
         run: zip -r ./japanese.zip ./
-        working-directory: ./out
+        working-directory: ./out/
       - name: Upload artifact as release asset
         run: gh release upload ${TAG_NAME} ./out/japanese.zip --repo ${REPOSITORY}
         env:
