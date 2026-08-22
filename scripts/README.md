@@ -71,7 +71,7 @@ uv run python -m build.build
 | --- | --- |
 | [`test_prohibited_characters.py`](./test/test_prohibitted_characters.py) | 和訳文内に禁止文字が含まれていないかテストします。<br>禁止文字のリストは[スクリプト設定ファイル](#スクリプト設定ファイル)から取得します。 |
 | [`test_missing_translations`](./test/test_missing_translations.py) | 翻訳漏れの項目がないかテストします。<br>対応する英語原文がない項目はテスト対象外です。 |
-| [`test_readme_game_version`](./test/test_readme_game_version.py) | タグ名とREADMEドキュメントに書かれている対応ゲームバージョンが一致しているかテストします。<br>このテストはシェルに環境変数`TAG_NAME`が設定されている場合のみ実行されます。 |
+| [`test_readme_game_version`](./test/test_readme_game_version.py) | タグ名とREADMEドキュメントに書かれている対応ゲームバージョンが一致しているかテストします。<br>このテストはシェルに環境変数`TAG_NAME`が設定されている場合のみ実行されます。<br>タグ名と対応ゲームバージョンの関係性については[タグ名説明ドキュメント](../docs/tag_name.md)を確認してください。 |
 <!-- markdownlint-enable MD033 -->
 
 ### 実行方法<!-- markdownlint-disable-line MD024 -->
