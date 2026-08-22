@@ -1,0 +1,14 @@
+{
+	"recommendations": [
+		"streetsidesoftware.code-spell-checker",
+		"tamasfe.even-better-toml",
+		"github.vscode-github-actions",
+		"davidanson.vscode-markdownlint",
+		"ms-python.vscode-pylance",
+		"ms-python.python",
+		"ms-python.debugpy",
+		"ms-python.vscode-python-envs",
+		"mechatroner.rainbow-csv",
+		"redhat.vscode-yaml"
+	]
+}
