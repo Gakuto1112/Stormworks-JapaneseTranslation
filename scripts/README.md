@@ -34,7 +34,7 @@
 
 ![ゲーム内表示の例](../docs/images/script_readme/display_name_example.jpg)
 
-和訳文と英語原文の間に挟まる文字列（区切り文字）は、[`config.toml`](./config.toml)内の`build.separator`から取得します。
+和訳文と英語原文の間に挟まる文字列（区切り文字）は、[スクリプト設定ファイル](#スクリプト設定ファイル)から取得します。
 
 この和訳文と英語原文を結合する仕様は、Stormworks日本語コミュニティからの要望を受けて取り入れています。
 
@@ -69,7 +69,7 @@ uv run python -m build.build
 <!-- markdownlint-disable MD033 -->
 | テストファイル名 | テスト内容 |
 | --- | --- |
-| [`test_prohibited_characters.py`](./test/test_prohibitted_characters.py) | 和訳文内に禁止文字が含まれていないかテストします。<br>禁止文字のリストは[`config.toml`](./config.toml)内の`test.prohibited_characters`から取得します。 |
+| [`test_prohibited_characters.py`](./test/test_prohibitted_characters.py) | 和訳文内に禁止文字が含まれていないかテストします。<br>禁止文字のリストは[スクリプト設定ファイル](#スクリプト設定ファイル)から取得します。 |
 | [`test_missing_translations`](./test/test_missing_translations.py) | 翻訳漏れの項目がないかテストします。<br>対応する英語原文がない項目はテスト対象外です。 |
 | [`test_readme_game_version`](./test/test_readme_game_version.py) | タグ名とREADMEドキュメントに書かれている対応ゲームバージョンが一致しているかテストします。<br>このテストはシェルに環境変数`TAG_NAME`が設定されている場合のみ実行されます。 |
 <!-- markdownlint-enable MD033 -->
