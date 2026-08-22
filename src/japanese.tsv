@@ -5301,18 +5301,18 @@ def_linear_base_node_4_label		RPS	動力
 def_linear_base_node_4_desc		Power connection for transfering mechanical energy.	レール間で動力の伝達ができます.
 def_linear_base_node_5_label		Fluid	流体
 def_linear_base_node_5_desc		Fluid connection for transfering fluid.	レール間で流体の伝達ができます.
-def_linear_compact_base_name		Compact Linear Track Base	レール土台 (小)
+def_linear_compact_base_name		Compact Linear Track Base	レール土台 (コンパクト)
 def_linear_compact_base_desc		You can build the track using the Compact Linear Track Extension component. The speed of the slider can be set using its number input.	レール上を移動するオブジェクトを作成できます. 土台の移動速度は数値信号で制御します.
 def_linear_compact_base_s_desc		A compact slider that moves along a modular linear track.	小型のレール上を移動できる土台です.
 def_linear_compact_base_node_0_label		Slider Speed	移動速度
 def_linear_compact_base_node_0_desc			-1から1の範囲で土台の移動速度を制御します.
 def_linear_compact_base_node_1_label		Electric	電力
 def_linear_compact_base_node_1_desc		Electrical power connection.	電力接続
-def_linear_compact_head_name		Compact Linear Track Head	レール土台 (小) の部品
+def_linear_compact_head_name		Compact Linear Track Head	レール土台 (コンパクト) の部品
 def_linear_compact_head_desc			
 def_linear_compact_head_s_desc			
-def_linear_compact_module_name		Compact Linear Track Extension	レール (小)
-def_linear_compact_module_desc		A Compact Linear Track Base must be attached somewhere along the track for it to function.	これとは別にレール土台 (小) を1つ以上取り付ける必要があります.
+def_linear_compact_module_name		Compact Linear Track Extension	レール (コンパクト)
+def_linear_compact_module_desc		A Compact Linear Track Base must be attached somewhere along the track for it to function.	これとは別にレール土台 (コンパクト) を1つ以上取り付ける必要があります.
 def_linear_compact_module_s_desc		An extension piece that can be used to build compact linear tracks.	小型のレールを作成するための拡張部品です.
 def_linear_head_name		Linear Track Head	レール土台 (大) の部品
 def_linear_head_desc			
@@ -5770,25 +5770,25 @@ def_motor_small_node_1_label		Electric	電力
 def_motor_small_node_1_desc		The electric energy input to be converted into mechanical force.	電力接続
 def_motor_small_node_2_label		Throttle	スロットル
 def_motor_small_node_2_desc		The throttle input to control how much electric energy is converted to force.	モーターが電力を動力に変換する量を調整する数値で, 範囲は0から1です.
-def_multibody_compact_pivot_b_name		Compact Pivot	電動回転軸 (小) の部品
+def_multibody_compact_pivot_b_name		Compact Pivot	電動回転軸 (コンパクト) の部品
 def_multibody_compact_pivot_b_desc			
 def_multibody_compact_pivot_b_s_desc			
-def_multibody_compact_pivot_robotic_a_name		Compact Robotic Pivot	電動回転軸 (小, 方向)
+def_multibody_compact_pivot_robotic_a_name		Compact Robotic Pivot	電動回転軸 (コンパクト, 方向)
 def_multibody_compact_pivot_robotic_a_desc		The pivot has a range of motion of 0.25 turns in both directions. A standard input value sets the target orientation within the pivot's range of motion. The pivot's speed can be configured by selecting it with the select tool.	この回転軸は-0.25回転から0.25回転の範囲で回転でき, 数値信号で向く方向を指定します. 回転速度はプロパティウィンドウから設定できます.
 def_multibody_compact_pivot_robotic_a_s_desc		A small robotic pivot that will orientate towards the input value within its range of motion.	回転できる範囲内で入力された方向へ向く小型の電動回転軸です.
 def_multibody_compact_pivot_robotic_a_node_0_label		Rotation Target	向き
 def_multibody_compact_pivot_robotic_a_node_0_desc		The standard value setting the orientation within the range of motion.	回転軸が向く方向を-1から1の範囲で制御します.
 def_multibody_compact_pivot_robotic_a_node_1_label		Electric	電力
 def_multibody_compact_pivot_robotic_a_node_1_desc		Electrical power connection.	電力接続
-def_multibody_compact_pivot_torque_a_name		Compact Pivot (Power)	回転軸 (動力)
+def_multibody_compact_pivot_torque_a_name		Compact Pivot (Power)	回転軸 (コンパクト, 動力)
 def_multibody_compact_pivot_torque_a_desc			
 def_multibody_compact_pivot_torque_a_s_desc		A small pivot that can rotate freely about its axis.	自由に回転する小型の回転軸です.
 def_multibody_compact_pivot_torque_a_node_0_label		RPS	動力
 def_multibody_compact_pivot_torque_a_node_0_desc		Power connection for transfering mechanical energy.	蝶番間で動力の伝達ができます.
-def_multibody_compact_pivot_torque_b_name		Compact Pivot (Power)	回転軸 (小) の部品
+def_multibody_compact_pivot_torque_b_name		Compact Pivot (Power)	回転軸 (コンパクト) の部品
 def_multibody_compact_pivot_torque_b_node_0_label		RPS	動力
 def_multibody_compact_pivot_torque_b_node_0_desc		Power connection for transfering mechanical energy.	蝶番間で動力の伝達ができます.
-def_multibody_compact_pivot_velocity_a_name		Compact Velocity Pivot	電動回転軸 (小, 速度)
+def_multibody_compact_pivot_velocity_a_name		Compact Velocity Pivot	電動回転軸 (コンパクト, 速度)
 def_multibody_compact_pivot_velocity_a_desc		Inputting a value of 0 will cause it to stop.	0が入力されると回転を停止します.
 def_multibody_compact_pivot_velocity_a_s_desc		A small pivot that will continuously rotate at a set input speed.	入力された速度で回転する小型の電動回転軸です.
 def_multibody_compact_pivot_velocity_a_node_0_label		Rotational Speed	回転
@@ -6938,7 +6938,7 @@ def_seat_bed_desc		You can get in and out of the bed by interacting with it usin
 def_seat_bed_s_desc		A bed.	ベッドです.
 def_seat_bed_node_0_label		Occupied	使用中
 def_seat_bed_node_0_desc		Outputs an on signal if this bed is occupied by a character.	誰かが寝ているとオン信号を出力します.
-def_seat_compact_name		Compact Pilot Seat	パイロット席 (小型)
+def_seat_compact_name		Compact Pilot Seat	パイロット席 (コンパクト)
 def_seat_compact_desc		It provides 4 number outputs that produce a standard value ranging from -1 to 1, and 6 on/off outputs. You can get in and out of the compact pilot seat by interacting with it using [$[action_use_seat]].	キーボードなどで-1から1の範囲を操作できる数値信号を4個, オン/オフ信号を7個提供し, 座っている人の視点方向も出力されます. [$[action_use_seat]] を押して座ったり立ったりします. キーの挙動などはプロパティウィンドウから設定できます.
 def_seat_compact_s_desc		The compact pilot seat lets you translate keyboard presses into output signals that can control logic components.	座っているプレイヤーのキーボード入力などで乗り物を操作できる座席です.
 def_seat_compact_node_0_label		Occupied	使用中
