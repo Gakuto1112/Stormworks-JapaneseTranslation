@@ -3,7 +3,6 @@ name: Build on release
 on:
   release:
     types:
-      - created
       - released
       - prereleased
 
@@ -20,6 +19,8 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
       - name: Prepare artifact directory
         run: mkdir -p ./artifacts/japanese
       - name: Download artifact
@@ -27,8 +28,6 @@ jobs:
         with: 
           name: japanese
           path: ./artifacts/japanese
-      - name: Checkout
-        uses: actions/checkout@v7.0.1
       - name: Prepare output directory
         run: mkdir -p ./out/japanese
       - name: Inspect downloaded artifact
