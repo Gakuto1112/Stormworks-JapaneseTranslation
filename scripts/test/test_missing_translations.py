@@ -2,7 +2,8 @@ import unittest
 
 from common_modules.paths import paths
 from common_modules.config_reader import ConfigReader
-from common_modules.translation_data_reader import TranslationDataReader
+from common_modules.file_reader import FileReader
+from common_modules.translation_key_iterator_generator import TranslationKeyIteratorGenerator
 
 
 class TestMissingTranslations(unittest.TestCase):
@@ -25,7 +26,7 @@ class TestMissingTranslations(unittest.TestCase):
 			self.fail(f"An unexpected error occurred while reading the configuration file ({paths.config_path}): {str(e)}")
 
 		try:
-			for i, key in enumerate(TranslationDataReader.get_translation_key_iterator(TranslationDataReader.read_translation_source())):
+			for i, key in enumerate(TranslationKeyIteratorGenerator.get_translation_key_iterator(FileReader.read_file(paths.input_locale_path))):
 				if key.en is not None:
 					with self.subTest(line=i + 1):
 						self.assertTrue(key.jp is not None, f"Missing Japanese translation at line {i + 1}")
