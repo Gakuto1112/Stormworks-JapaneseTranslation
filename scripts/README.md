@@ -25,9 +25,9 @@
    uv sync
    ```
 
-## ビルドスクリプト
+## ビルドスクリプト（`./build`）
 
-ビルドスクリプトでは、翻訳データのソースファイルを加工し、配布用のファイルを生成するスクリプトです。
+ビルドスクリプトは、翻訳データのソースファイルを加工し、配布用のファイルを生成するスクリプトです。
 翻訳データのソースファイルから和訳文に英語原文を結合する加工を行なったものを出力します。
 
 例えば、英語原文「*Block*」と和訳文「*ブロック*」がある場合、出力文は「*ブロック | Block*」となります。
@@ -53,7 +53,6 @@ uv run python -m build.build
 
 本ビルドツールにはオプション引数を用意しています。
 
-<!-- markdownlint-disable MD033 -->
 | 引数名 | 追加引数 | 説明 |
 | --- | --- | --- |
 | -h, --help | なし | ビルドツールのオプションの説明を表示します。 |
@@ -61,4 +60,26 @@ uv run python -m build.build
 | -o, --dist-dir | 出力先ファイルまでのパス | 出力先のファイルを指定します。この引数を指定しない場合は`../dist/japanese.tsv`になります。 |
 | -l, --colored | なし | 標準出力に色を付けます。ログ出力などの制御文字がそのまま出力される場合はオフにしてください。 |
 | -d, --debug | なし | より細かいデバッグ出力を有効にします。 |
+
+## テストスクリプト（`./test`）
+
+テストスクリプトは、翻訳データのソースファイルやREADMEドキュメントが正しいかどうかチェックし、その結果を報告するスクリプトです。
+テストには以下の項目があります。
+
+<!-- markdownlint-disable MD033 -->
+| テストファイル名 | テスト内容 |
+| --- | --- |
+| [`test_prohibited_characters.py`](./test/test_prohibitted_characters.py) | 和訳文内に禁止文字が含まれていないかテストします。<br>禁止文字のリストは[`config.toml`](./config.toml)内の`test.prohibited_characters`から取得します。 |
+| [`test_missing_translations`](./test/test_missing_translations.py) | 翻訳漏れの項目がないかテストします。<br>対応する英語原文がない項目はテスト対象外です。 |
+| [`test_readme_game_version`](./test/test_readme_game_version.py) | タグ名とREADMEドキュメントに書かれている対応ゲームバージョンが一致しているかテストします。<br>このテストはシェルに環境変数`TAG_NAME`が設定されている場合のみ実行されます。 |
 <!-- markdownlint-enable MD033 -->
+
+### 実行方法<!-- markdownlint-disable-line MD024 -->
+
+カレントディレクトリを本ディレクトリにし、以下のコマンドを実行してください。
+
+```bash
+uv run python -m xmlrunner discover -s ./test -p "test_*.py" -o ./test/reports  
+```
+
+テスト実行後、レポートファイルが`./test/reports`に出力されます。
