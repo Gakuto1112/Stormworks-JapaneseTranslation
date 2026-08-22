@@ -25,7 +25,7 @@ jobs:
       - name: Run tests
         run: uv run python -m xmlrunner discover -s ./test -p "test_*.py" -o ./test/reports
         env:
-          AVATAR_TAG_NAME: ${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || '' }}
+          TAG_NAME: ${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || '' }}
         working-directory: ./scripts/
       - name: Disable problem matcher
         if: always()
