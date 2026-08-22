@@ -30,8 +30,6 @@ jobs:
           path: ./artifacts/japanese
       - name: Prepare output directory
         run: mkdir -p ./out/japanese
-      - name: Inspect downloaded artifact
-        run: find ./artifacts -maxdepth 3 -type f -print
       - name: Copy necessary file
         run: |
           cp ./artifacts/japanese/* ./out/japanese
