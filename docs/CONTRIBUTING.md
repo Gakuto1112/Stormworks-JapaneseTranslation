@@ -25,6 +25,8 @@
    - Stormworksの設定の「Language（言語）」タブ内の「SAVED（保存済み）」セクションにある「japanese」の項目に⚠️マークが表示されていないことを確認してください。
    - ⚠️マークが表示されている場合、マークをホバーすることで、翻訳漏れのキーが指摘されます。
 
+     ![不足翻訳文の警告](./images/contributing/missing_translation_warning.jpg)
+
 ## テストの実行
 
 上記の和訳ルールは[テストスクリプト](../scripts/README.md#テストスクリプトtest)によって自動でテストされます。
