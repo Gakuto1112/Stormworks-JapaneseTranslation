@@ -1,0 +1,13 @@
+name: Test on tag push
+
+on:
+  push:
+    tags:
+      - v*.*.*-[a-z]
+
+jobs:
+  call_test_core:
+    permissions:
+      contents: read
+      checks: write
+    uses: ./.github/workflows/test_core.yml
