@@ -1,7 +1,7 @@
 [project]
-name = "scripts"
-version = "0.1.0"
-description = "Add your description here"
+name = "stormworks-japanese-translation-scripts"
+version = "1.0.0"
+description = "A set of scripts for managing translation data and the Stormworks-JapaneseTranslation repository."
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
