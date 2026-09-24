@@ -1,5 +1,6 @@
 from argparse import ArgumentParser, Namespace
 import errno
+import time
 
 from common_modules.logger import Logger
 
@@ -92,6 +93,16 @@ def main() -> None:
 	except ValueError:
 		Logger.print_error("Invalid timestamp value specified.")
 		exit(errno.EINVAL)
+
+	# 現在のタイムスタンプが最後の更新確認よりも未来のものか確認
+	last_timestamp = get_last_timestamp(args)
+	current_timestamp = int(time.time())
+
+	if current_timestamp <= last_timestamp:
+		Logger.print_info("This update check is being skipped because the current timestamp is not later than the last update check.")
+		exit(0)
+
+	# TODO: アップデートチェック機能を実装
 
 if __name__ == "__main__":
 	main()
