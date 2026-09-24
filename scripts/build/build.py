@@ -9,7 +9,7 @@ from common_modules.errors.config_not_loaded_error import ConfigNotLoadedError
 from .modules.translation_data_builder import TranslationDataBuilder
 
 
-def setArgs() -> ArgumentParser:
+def set_args() -> ArgumentParser:
 	"""
 	ビルドスクリプトのコマンドライン引数を設定する。
 
@@ -26,7 +26,7 @@ def setArgs() -> ArgumentParser:
 
 	return parser
 
-def parseArgs(parser: ArgumentParser) -> Namespace:
+def parse_args(parser: ArgumentParser) -> Namespace:
 	"""
 	コマンドライン引数を解釈し、入力値をオブジェクトに格納する。
 
@@ -39,7 +39,7 @@ def parseArgs(parser: ArgumentParser) -> Namespace:
 
 	return parser.parse_args()
 
-def processArgs(args: Namespace) -> None:
+def process_args(args: Namespace) -> None:
 	"""
 	コマンドライン引数を処理する。
 
@@ -112,9 +112,9 @@ def main() -> None:
 	Logger.print_spacer(1)
 
 	# 引数の処理
-	parser = setArgs()
-	args = parseArgs(parser)
-	processArgs(args)
+	parser = set_args()
+	args = parse_args(parser)
+	process_args(args)
 
 	# 設定値のデバッグ出力
 	Logger.print_debug(f"Input source path: {paths.input_locale_path}")
