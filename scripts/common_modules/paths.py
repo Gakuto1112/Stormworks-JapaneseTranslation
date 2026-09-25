@@ -28,6 +28,12 @@ class Paths:
 	READMEのパス
 	"""
 
+	_game_update_issue_template_path: Path = _root / "scripts" / "update_check" / "templates" / "game_update_issue.md"
+	"""
+	ゲームアップデート対応Issueのテンプレートパス
+	"""
+	
+
 	@property
 	def root(self) -> Path:
 		"""
@@ -91,5 +97,13 @@ class Paths:
 		"""
 
 		return self._readme_path
+
+	@property
+	def game_update_issue_template_path(self) -> Path:
+		"""
+		ゲームアップデート対応Issueのテンプレートパス
+		"""
+
+		return self._game_update_issue_template_path
 
 paths = Paths()
