@@ -8,6 +8,7 @@ from github import GithubException
 from common_modules.logger import Logger
 from .modules.news_fetcher import NewsFetcher
 from .modules.issue_generator import IssueGenerator
+from .modules.actions_variable_updater import ActionsVariableUpdater
 
 
 def get_last_timestamp(args: Namespace) -> int:
@@ -114,7 +115,7 @@ def main() -> None:
 		exit(0)
 
 	# Steamニュースをフェッチして新しいゲームアップデートを取得
-	Logger.print_info("Checking for new game updates...")
+	Logger.print_info("Fetching Steam news...")
 
 	try:
 		news_game_updates = NewsFetcher.fetch_new_arrival_game_updates(last_timestamp)
@@ -137,6 +138,8 @@ def main() -> None:
 		Logger.print_error(f"Failed to fetch Steam news: unexpected error: {str(e)}")
 		exit(errno.ECONNABORTED)
 
+	Logger.print_info("Fetched Steam news successfully.")
+
 	if len(news_game_updates) > 0:
 		Logger.print_info(f"Found {len(news_game_updates)} new game update(s).")
 		for update in news_game_updates:
@@ -157,7 +160,22 @@ def main() -> None:
 	else:
 		Logger.print_info("No new game updates found.")
 
-	# TODO: 最終更新確認のタイムスタンプを更新
+	Logger.print_spacer(1)
+
+	# 最終更新確認のタイムスタンプを更新
+	Logger.print_info("Updating the last checked timestamp...")
+
+	try:
+		ActionsVariableUpdater.update_last_timestamp(current_timestamp)
+	except EnvironmentError:
+		Logger.print_error("GITHUB_VARIABLES_TOKEN or GITHUB_REPOSITORY environment variable is not set.")
+		exit(errno.EINVAL)
+	except GithubException as e:
+		Logger.print_error(f"Failed to update GitHub Actions variable: {str(e)}")
+		Logger.print_debug(str(e.message))
+		exit(errno.ECONNABORTED)
+
+	Logger.print_info("Updated the last checked timestamp successfully.")
 
 if __name__ == "__main__":
 	main()
