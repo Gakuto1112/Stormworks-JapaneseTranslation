@@ -105,6 +105,7 @@ class IssueGenerator:
 	def post_issue(title: str, content: str) -> None:
 		"""
 		生成したIssueをGitHubに投稿する。
+		必要なアクセストークンとリポジトリ情報は環境変数から取得する。
 
 		Args:
 			title (str): 投稿するIssueのタイトル
