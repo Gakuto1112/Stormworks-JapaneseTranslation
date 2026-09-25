@@ -47,8 +47,8 @@ wheels = [
 ]
 
 [[package]]
-name = "scripts"
-version = "0.1.0"
+name = "stormworks-japanese-translation-scripts"
+version = "1.0.0"
 source = { virtual = "." }
 dependencies = [
     { name = "unittest-xml-reporting" },
