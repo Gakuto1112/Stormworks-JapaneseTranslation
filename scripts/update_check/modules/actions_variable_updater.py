@@ -27,11 +27,11 @@ class ActionsVariableUpdater:
 			GithubException: GitHub APIの操作中にエラーが発生した場合
 		"""
 
-		token = os.getenv("GITHUB_VARIABLES_TOKEN")
+		token = os.getenv("ACTIONS_VARIABLES_TOKEN")
 		repository = os.getenv("GITHUB_REPOSITORY")
 
 		if not token or not repository:
-			raise EnvironmentError("GITHUB_VARIABLES_TOKEN or GITHUB_REPOSITORY environment variable is not set.")
+			raise EnvironmentError("ACTIONS_VARIABLES_TOKEN or GITHUB_REPOSITORY environment variable is not set.")
 
 		github = Github(auth=Auth.Token(token))
 		repository = github.get_repo(repository)

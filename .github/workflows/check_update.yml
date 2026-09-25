@@ -6,76 +6,31 @@ on:
   workflow_dispatch:
 
 jobs:
-  check:
+  check_update:
     name: Check game updates
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    outputs:
-      update_data: ${{ steps.filter_news_entry.outputs.entry_data }}
-      update_entries: ${{ steps.filter_news_entry.outputs.entries }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4.2.2
-      - name: Get last check date
-        id: get_last_check_date
-        run: echo last_check_date=$(cat ./last_update_date.json | jq '.last_check_date') >> $GITHUB_OUTPUT
-        working-directory: ./.github/update_checker
-      - name: Get Steam news
-        id: get_steam_news
-        run: echo steam_news_response=$(curl 'https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=573090') >> $GITHUB_OUTPUT
-      - name: Filter news entry
-        id: filter_news_entry
-        run: |
-          echo ${NEWS_DATA} | jq '.appnews.newsitems[]' | jq "select(.date >= ${LAST_CHECK_DATE})" | jq 'select(.title | test("^v\\d+\\.\\d+\\.\\d+\\s-\\s"))' | jq -s '.' > tmp.json
-          echo entry_data=$(cat tmp.json | jq 'map({ version: .title | scan("v\\d+\\.\\d+\\.\\d+"), update_name: .title | scan("(?<=\\s-\\s).+$") | rtrimstr("!"), url: .url })') >> $GITHUB_OUTPUT
-          echo entries=$(cat ./tmp.json | jq 'length') >> $GITHUB_OUTPUT
-        env:
-          NEWS_DATA: ${{ steps.get_steam_news.outputs.steam_news_response }}
-          LAST_CHECK_DATE: ${{ steps.get_last_check_date.outputs.last_check_date }}
-        working-directory: ./.github/update_checker
-      - name: Update check date
-        run: echo {\"last_check_date\":$(date +%s)} | jq '.' > ./last_update_date.json
-        working-directory: ./.github/update_checker
-      - name: Remove temp files
-        run: rm ./tmp.json
-        working-directory: ./.github/update_checker
-      - name: Commit and push
-        run: |
-          git remote set-url origin https://github-actions:${TOKEN}@github.com/${REPOSITORY}
-          git config user.name github-actions[bot]
-          git config user.email github-actions[bot]@users.noreply.github.com
-          git add --all
-          git commit -m '[GitHub Actions] アップデートの確認日時を更新'
-          git push origin
-        env:
-          TOKEN: ${{ github.token }}
-          REPOSITORY: ${{ github.repository }}
-  create_issue:
-    name: Create update issues
-    needs: check
-    if: ${{ needs.check.outputs.update_entries >= 1 }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
       issues: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.2.2
-      - name: Replace template placeholders
-        run: |
-          sed "s|<\!--\s\$UPDATE_VERSION\s-->|${UPDATE_VERSION}|g" ./issue_template.md > ./tmp_1.md
-          sed "s|<\!--\s\$UPDATE_NAME\s-->|${UPDATE_NAME}|g" ./tmp_1.md > ./tmp_2.md
-          sed "s|<\!--\s\$NEWS_URL\s-->|${NEWS_URL}|g" ./tmp_2.md > ./tmp_3.md
+        uses: actions/checkout@v7.0.1
+      - name: Setup UV
+        uses: astral-sh/setup-uv@v10.2.0
+        with:
+          enable-cache: auto
+      - name: Install dependencies
+        run: uv sync
+        working-directory: ./scripts/
+      - name: Enable problem matcher
+        run: echo "::add-matcher::.github/problem_matchers/script_logger.json"
+      - name: Run script
+        run: uv run python -m update_check.update_check ${LAST_TIMESTAMP}
+        working-directory: ./scripts/
         env:
-          UPDATE_VERSION: ${{ fromJSON(needs.check.outputs.update_data)[0].version }}
-          UPDATE_NAME: ${{ fromJSON(needs.check.outputs.update_data)[0].update_name }}
-          NEWS_URL: ${{ fromJSON(needs.check.outputs.update_data)[0].url }}
-        working-directory: ./.github/update_checker
-      - name: Create issue
-        run: gh issue create --title "${UPDATE_VERSION}への対応" --body-file ./tmp_3.md --label 'game update' --repo ${REPOSITORY}
-        env:
-          GH_TOKEN: ${{ github.token }}
-          UPDATE_VERSION: ${{ fromJSON(needs.check.outputs.update_data)[0].version }}
-          REPOSITORY: ${{ github.repository }}
-        working-directory: ./.github/update_checker
+          GITHUB_TOKEN: ${{ github.token }}
+          ACTIONS_VARIABLES_TOKEN: ${{ secrets.ACTIONS_VARIABLE_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          LAST_TIMESTAMP: ${{ vars.last_timestamp }}
+      - name: Disable problem matcher
+        run: echo "::remove-matcher owner=script_logger"
