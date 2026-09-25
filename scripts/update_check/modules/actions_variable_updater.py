@@ -8,7 +8,7 @@ class ActionsVariableUpdater:
 	Github ActionsのVariablesを更新するクラス。
 	"""
 
-	_LAST_TIMESTAMP_VARIABLE_NAME = "last_timestamp"
+	_LAST_TIMESTAMP_VARIABLE_NAME = "LAST_TIMESTAMP"
 	"""
 	最終更新確認タイムスタンプのVariable名
 	"""
