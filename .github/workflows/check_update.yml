@@ -32,6 +32,6 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           ACTIONS_VARIABLES_TOKEN: ${{ secrets.ACTIONS_VARIABLES_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-          LAST_TIMESTAMP: ${{ vars.last_timestamp }}
+          LAST_TIMESTAMP: ${{ vars.LAST_TIMESTAMP }}
       - name: Disable problem matcher
         run: echo "::remove-matcher owner=script_logger"
