@@ -7,6 +7,7 @@
 | --- | --- | --- |
 | ビルド | `build` | 翻訳データのソースから、和訳文に英語原文を結合する加工を行い、出力ディレクトリ（`./dist`）に加工済み翻訳データを出力します。 |
 | テスト | `test` | 翻訳データやREADMEドキュメントが適切かどうか、検証を行います。 |
+| 更新確認 | `update_check` | Steamニュースからゲームの更新情報を取得し、必要であれば更新対応用のIssueを作成します。 |
 
 ## 共通セットアップ
 
@@ -83,6 +84,42 @@ uv run python -m xmlrunner discover -s ./test -p "test_*.py" -o ./test/reports
 ```
 
 テスト実行後、レポートファイルが`./test/reports`に出力されます。
+
+## アップデート確認スクリプト（`./update_check`）
+
+アップデート確認スクリプトは、Steamニュースからゲームの更新情報を取得し、必要であればゲーム更新後の対応を促すIssueを作成するスクリプトです。
+このスクリプトはローカルでは実行できません。
+
+このスクリプトでは以下のコマンドライン引数が必要です。
+
+<!-- markdownlint-disable MD033 -->
+| 引数名 | 説明 |
+| --- | --- |
+| `last_timestamp` | 最後に更新確認した際のUNIXタイムスタンプを指定します。 <br> 通常はワークフローで自動設定します。 |
+<!-- markdownlint-enable MD033 -->
+
+更に、このスクリプトでは、以下の環境変数を使用します。
+
+<!-- markdownlint-disable MD033 -->
+| 環境変数名 | 説明 |
+| --- | --- |
+| `GITHUB_TOKEN` | GitHub ActionsからIssueを作成するためのアクセストークンです。 <br> 通常はGitHub Actionsのランタイム内にあるものを使用します。 |
+| `ACTIONS_VARIABLES_TOKEN` | GitHub ActionsからActions Variablesを更新するためのアクセストークンです。 <br> 対象のリポジトリに対してVariablesの読み書き権限が与えられたアクセストークンをActions Secretsに同名のトークンとして登録しておきます。 |
+| `GITHUB_REPOSITORY` | Issueの作成やActions Variablesの更新を行う対象のリポジトリを示す文字列です。（例: `Gakuto1112/Stormworks-JapaneseTranslation`） <br> 通常はGitHub Actionsのランタイム内にあるものを使用します。 |
+<!-- markdownlint-enable MD033 -->
+
+本スクリプトをフォークして使用する場合は、自身のアカウントで、本リポジトリに対してVariablesの読み書き権限が与えられたFine-grained PATを発行し、リポジトリのActions Secretsに`ACTIONS_VARIABLES_TOKEN`という名称で登録してください。
+
+### Actions Variables
+
+本スクリプトは変数保持のため、GitHubのActions Variablesを使用します。
+本リポジトリをフォークして使用する場合は、以下の変数をActions Variablesに登録してください。
+
+<!-- markdownlint-disable MD033 -->
+| 変数名 | 説明 |
+| --- | --- |
+| `LAST_TIMESTAMP` | 最後に更新確認を行った際のUNIXタイムスタンプです。 <br> スクリプトはこのタイムスタンプから現在のタイムスタンプまでの期間のSteamニュースを抽出して更新確認を行います。 <br> 本変数の更新は、Actions Variablesに登録したアクセストークンを用いて、スクリプトから行います。 |
+<!-- markdownlint-enable MD033 -->
 
 ## スクリプト設定ファイル
 
