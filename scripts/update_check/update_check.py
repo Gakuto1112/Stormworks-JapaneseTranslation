@@ -5,7 +5,6 @@ from urllib.error import HTTPError, URLError
 
 from common_modules.logger import Logger
 from .modules.news_fetcher import NewsFetcher
-from .models.game_update_entry import GameUpdateEntry
 
 
 def get_last_timestamp(args: Namespace) -> int:
@@ -79,43 +78,6 @@ def process_args(args: Namespace) -> None:
 
 	get_last_timestamp(args) # タイムスタンプの整合性確認のために呼び出し
 
-def get_new_game_update(timestamp: int) -> list[GameUpdateEntry]:
-	"""
-	入力されたタイムスタンプから現在までにニュース投稿されたゲームアップデートの情報を取得する。
-
-	Args:
-		timestamp (int): 最後に更新を確認した際のUNIXタイムスタンプ
-
-	Returns:
-		list[GameUpdateEntry]: 新たに投稿されたゲームアップデートの情報のリスト
-	"""
-
-	try:
-		news = NewsFetcher.fetch_news()
-	except HTTPError as e:
-		Logger.print_error(f"Failed to fetch Steam news: got error response ({e.code})")
-		exit(errno.ECONNABORTED)
-	except URLError as e:
-		Logger.print_error(f"Failed to fetch Steam news: network error ({e.reason})")
-		exit(errno.ECONNABORTED)
-	except TimeoutError:
-		Logger.print_error("Failed to fetch Steam news: request timed out")
-		exit(errno.ETIMEDOUT)
-	except ConnectionResetError:
-		Logger.print_error("Failed to fetch Steam news: connection was reset")
-		exit(errno.ECONNABORTED)
-	except UnicodeError:
-		Logger.print_error("Failed to fetch Steam news: failed to decode response")
-		exit(errno.EILSEQ)
-	except Exception as e:
-		Logger.print_error(f"Failed to fetch Steam news: unexpected error: {str(e)}")
-		exit(errno.ECONNABORTED)
-
-	new_arrival_news = NewsFetcher.filter_new_arrival_news(news.appnews.newsitems, timestamp)
-	new_game_updates = NewsFetcher.extract_game_update_news(new_arrival_news)
-
-	return new_game_updates
-
 def main() -> None:
 	"""
 	エントリー関数
@@ -143,16 +105,38 @@ def main() -> None:
 	Logger.print_debug(f"Difference from last check: {current_timestamp - last_timestamp}")
 	Logger.print_spacer(1)
 
+	# タイムスタンプの比較
 	if current_timestamp <= last_timestamp:
 		Logger.print_info("This update check is being skipped because the current timestamp is not later than the last update check.")
 		exit(0)
 
+	# Steamニュースをフェッチして新しいゲームアップデートを取得
 	Logger.print_info("Checking for new game updates...")
 
-	new_game_updates = get_new_game_update(last_timestamp)
-	if len(new_game_updates) > 0:
-		Logger.print_info(f"Found {len(new_game_updates)} new game update(s).")
-		for update in new_game_updates:
+	try:
+		news_game_updates = NewsFetcher.fetch_new_arrival_game_updates(last_timestamp)
+	except HTTPError as e:
+		Logger.print_error(f"Failed to fetch Steam news: got error response ({e.code})")
+		exit(errno.ECONNABORTED)
+	except URLError as e:
+		Logger.print_error(f"Failed to fetch Steam news: network error ({e.reason})")
+		exit(errno.ECONNABORTED)
+	except TimeoutError:
+		Logger.print_error("Failed to fetch Steam news: request timed out")
+		exit(errno.ETIMEDOUT)
+	except ConnectionResetError:
+		Logger.print_error("Failed to fetch Steam news: connection was reset")
+		exit(errno.ECONNABORTED)
+	except UnicodeError:
+		Logger.print_error("Failed to fetch Steam news: failed to decode response")
+		exit(errno.EILSEQ)
+	except Exception as e:
+		Logger.print_error(f"Failed to fetch Steam news: unexpected error: {str(e)}")
+		exit(errno.ECONNABORTED)
+
+	if len(news_game_updates) > 0:
+		Logger.print_info(f"Found {len(news_game_updates)} new game update(s).")
+		for update in news_game_updates:
 			Logger.print_debug(f"- {update.version} - {update.title}")
 		# TODO: 新しいゲームアップデートに関するIssue作成の処理を作成。
 	else:
