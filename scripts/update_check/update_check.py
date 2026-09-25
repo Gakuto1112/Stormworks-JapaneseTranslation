@@ -138,6 +138,11 @@ def main() -> None:
 	last_timestamp = get_last_timestamp(args)
 	current_timestamp = int(time.time())
 
+	Logger.print_debug(f"Last timestamp: {last_timestamp}")
+	Logger.print_debug(f"Current timestamp: {current_timestamp}")
+	Logger.print_debug(f"Difference from last check: {current_timestamp - last_timestamp}")
+	Logger.print_spacer(1)
+
 	if current_timestamp <= last_timestamp:
 		Logger.print_info("This update check is being skipped because the current timestamp is not later than the last update check.")
 		exit(0)
