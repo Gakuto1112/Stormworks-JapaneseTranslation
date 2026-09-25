@@ -127,7 +127,7 @@ class NewsFetcher:
 			Logger.print_error("Failed to fetch Steam news: failed to decode response")
 			exit(errno.EILSEQ)
 		except Exception as e:
-			Logger.print_error(f"Failed to fetch Steam news: unexpected error ({e})")
+			Logger.print_error(f"Failed to fetch Steam news: unexpected error: {str(e)}")
 			exit(errno.ECONNABORTED)
 
 		Logger.print_info("Successfully fetched Steam news.")
