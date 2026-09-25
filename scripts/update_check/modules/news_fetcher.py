@@ -15,7 +15,7 @@ class NewsFetcher:
 	StormworksのSteamニュースを取得するクラス。
 	"""
 
-	STEAM_NEWS_URL: str = "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=573090"
+	_STEAM_NEWS_URL: str = "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=573090"
 	"""
 	SteamニュースのフェッチURL
 	"""
@@ -41,7 +41,7 @@ class NewsFetcher:
 			UnicodeError: レスポンスのデコードに失敗した場合
 		"""
 
-		with urllib.request.urlopen(cls.STEAM_NEWS_URL) as response:
+		with urllib.request.urlopen(cls._STEAM_NEWS_URL) as response:
 			return SteamNews.from_dict(json.loads(response.read()))
 
 	@staticmethod
