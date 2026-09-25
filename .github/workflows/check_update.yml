@@ -27,6 +27,7 @@ jobs:
       - name: Run script
         run: uv run python -m update_check.update_check ${LAST_TIMESTAMP}
         working-directory: ./scripts/
+        timeout-minutes: 5
         env:
           GITHUB_TOKEN: ${{ github.token }}
           ACTIONS_VARIABLES_TOKEN: ${{ secrets.ACTIONS_VARIABLES_TOKEN }}
