@@ -42,7 +42,7 @@ class NewsFetcher:
 		"""
 
 		with urllib.request.urlopen(cls.STEAM_NEWS_URL) as response:
-			return SteamNews.from_dict(json.loads(response))
+			return SteamNews.from_dict(json.loads(response.read()))
 
 	@staticmethod
 	def _filter_new_arrival_news(news_entries: list[SteamNewsEntry], from_timestamp: int) -> list[SteamNewsEntry]:
