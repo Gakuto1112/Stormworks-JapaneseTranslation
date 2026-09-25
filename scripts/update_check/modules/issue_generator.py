@@ -1,5 +1,8 @@
 import errno
 import re
+import os
+
+from github import Auth, Github, GithubException
 
 from common_modules.logger import Logger
 from common_modules.paths import paths
@@ -72,6 +75,38 @@ class IssueGenerator:
 		"""
 
 		return re.sub(r"<!--.*?-->([\s\t]*?\n)?", "", template, flags=re.DOTALL)
+
+	@staticmethod
+	def post_issue(title: str, content: str) -> None:
+		"""
+		生成したIssueをGitHubに投稿する。
+
+		Args:
+			title (str): 投稿するIssueのタイトル
+			content (str): 投稿するIssueの本文
+		"""
+
+		token = os.getenv("GITHUB_TOKEN")
+		repository = os.getenv("GITHUB_REPOSITORY")
+
+		if not token or not repository:
+			raise EnvironmentError("GITHUB_TOKEN or GITHUB_REPOSITORY environment variable is not set.")
+
+		try:
+			github = Github(auth=Auth.Token(token))
+			repository = github.get_repo(repository)
+
+			issue = repository.create_issue(
+				title=title,
+				body=content,
+				labels=["game update"],
+			)
+
+			Logger.print_info(f"Issue created: #{issue.number} - #{title}")
+		except GithubException as e:
+			Logger.print_error(f"Failed to create issue: {str(e)}")
+			Logger.print_debug(f"{e.message}")
+			exit(errno.EIO)
 
 	@classmethod
 	def debug(cls) -> None:
