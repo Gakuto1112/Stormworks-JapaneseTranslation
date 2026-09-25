@@ -58,6 +58,21 @@ class IssueGenerator:
 
 		return re.sub(r"<!--\s*\${([A-Z_]+)}\s*-->", placeholder_replacement_handler, template)
 
+	@staticmethod
+	def remove_template_comments(template: str) -> str:
+		"""
+		テンプレート内にあるコメントを削除する。
+		先に`replace_placeholders`メソッドでプレースホルダーを置換する。
+
+		Args:
+			template (str): コメントを削除する対象のテンプレート文字列
+
+		Returns:
+			コメントが削除されたテンプレート文字列
+		"""
+
+		return re.sub(r"<!--.*?-->([\s\t]*?\n)?", "", template, flags=re.DOTALL)
+
 	@classmethod
 	def debug(cls) -> None:
 		"""
@@ -99,6 +114,7 @@ class IssueGenerator:
 			title="Test Update",
 			url="https://example.com/"
 		))
+		issue_content = cls.remove_template_comments(issue_content)
 
 		Logger.print_info("Placeholders replaced successfully.")
 		Logger.print_spacer(1)
