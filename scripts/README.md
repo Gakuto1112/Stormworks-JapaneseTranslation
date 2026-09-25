@@ -1,6 +1,6 @@
 # 翻訳データスクリプト
 
-このディレクトリには、翻訳データの加工や検証行うスクリプトが格納されています。
+本ディレクトリには、翻訳データの加工や検証行うスクリプトが格納されています。
 利用可能なスクリプトは次のとおりです。
 
 | スクリプト | サブディレクトリ名 | 説明 |
@@ -37,7 +37,7 @@
 
 和訳文と英語原文の間に挟まる文字列（区切り文字）は、[スクリプト設定ファイル](#スクリプト設定ファイル)から取得します。
 
-この和訳文と英語原文を結合する仕様は、Stormworks日本語コミュニティからの要望を受けて取り入れています。
+本和訳文と英語原文を結合する仕様は、Stormworks日本語コミュニティからの要望を受けて取り入れています。
 
 ### 実行方法
 
@@ -57,8 +57,8 @@ uv run python -m build.build
 | 引数名 | 追加引数 | 説明 |
 | --- | --- | --- |
 | -h, --help | なし | ビルドツールのオプションの説明を表示します。 |
-| -i, --src-dir | ソースファイルまでのパス | 翻訳データのソースファイルを指定します。この引数を指定しない場合は`../src/japanese.tsv`になります。 |
-| -o, --dist-dir | 出力先ファイルまでのパス | 出力先のファイルを指定します。この引数を指定しない場合は`../dist/japanese.tsv`になります。 |
+| -i, --src-dir | ソースファイルまでのパス | 翻訳データのソースファイルを指定します。本引数を指定しない場合は`../src/japanese.tsv`になります。 |
+| -o, --dist-dir | 出力先ファイルまでのパス | 出力先のファイルを指定します。本引数を指定しない場合は`../dist/japanese.tsv`になります。 |
 | -l, --colored | なし | 標準出力に色を付けます。ログ出力などの制御文字がそのまま出力される場合はオフにしてください。 |
 | -d, --debug | なし | より細かいデバッグ出力を有効にします。 |
 
@@ -72,7 +72,7 @@ uv run python -m build.build
 | --- | --- |
 | [`test_prohibited_characters.py`](./test/test_prohibitted_characters.py) | 和訳文内に禁止文字が含まれていないかテストします。<br>禁止文字のリストは[スクリプト設定ファイル](#スクリプト設定ファイル)から取得します。 |
 | [`test_missing_translations`](./test/test_missing_translations.py) | 翻訳漏れの項目がないかテストします。<br>対応する英語原文がない項目はテスト対象外です。 |
-| [`test_readme_game_version`](./test/test_readme_game_version.py) | タグ名とREADMEドキュメントに書かれている対応ゲームバージョンが一致しているかテストします。<br>このテストはシェルに環境変数`TAG_NAME`が設定されている場合のみ実行されます。<br>タグ名と対応ゲームバージョンの関係性については[タグ名説明ドキュメント](../docs/tag_name.md)を確認してください。 |
+| [`test_readme_game_version`](./test/test_readme_game_version.py) | タグ名とREADMEドキュメントに書かれている対応ゲームバージョンが一致しているかテストします。<br>本テストはシェルに環境変数`TAG_NAME`が設定されている場合のみ実行されます。<br>タグ名と対応ゲームバージョンの関係性については[タグ名説明ドキュメント](../docs/tag_name.md)を確認してください。 |
 <!-- markdownlint-enable MD033 -->
 
 ### 実行方法<!-- markdownlint-disable-line MD024 -->
@@ -88,9 +88,9 @@ uv run python -m xmlrunner discover -s ./test -p "test_*.py" -o ./test/reports
 ## アップデート確認スクリプト（`./update_check`）
 
 アップデート確認スクリプトは、Steamニュースからゲームの更新情報を取得し、必要であればゲーム更新後の対応を促すIssueを作成するスクリプトです。
-このスクリプトはローカルでは実行できません。
+本スクリプトはローカルでは実行できません。
 
-このスクリプトでは以下のコマンドライン引数が必要です。
+本スクリプトでは以下のコマンドライン引数が必要です。
 
 <!-- markdownlint-disable MD033 -->
 | 引数名 | 説明 |
@@ -98,7 +98,7 @@ uv run python -m xmlrunner discover -s ./test -p "test_*.py" -o ./test/reports
 | `last_timestamp` | 最後に更新確認した際のUNIXタイムスタンプを指定します。 <br> 通常はワークフローで自動設定します。 |
 <!-- markdownlint-enable MD033 -->
 
-更に、このスクリプトでは、以下の環境変数を使用します。
+更に、本スクリプトでは、以下の環境変数を使用します。
 
 <!-- markdownlint-disable MD033 -->
 | 環境変数名 | 説明 |
@@ -118,7 +118,7 @@ uv run python -m xmlrunner discover -s ./test -p "test_*.py" -o ./test/reports
 <!-- markdownlint-disable MD033 -->
 | 変数名 | 説明 |
 | --- | --- |
-| `LAST_TIMESTAMP` | 最後に更新確認を行った際のUNIXタイムスタンプです。 <br> スクリプトはこのタイムスタンプから現在のタイムスタンプまでの期間のSteamニュースを抽出して更新確認を行います。 <br> 本変数の更新は、Actions Variablesに登録したアクセストークンを用いて、スクリプトから行います。 |
+| `LAST_TIMESTAMP` | 最後に更新確認を行った際のUNIXタイムスタンプです。 <br> スクリプトは本タイムスタンプから現在のタイムスタンプまでの期間のSteamニュースを抽出して更新確認を行います。 <br> 本変数の更新は、Actions Variablesに登録したアクセストークンを用いて、スクリプトから行います。 |
 <!-- markdownlint-enable MD033 -->
 
 ## スクリプト設定ファイル
