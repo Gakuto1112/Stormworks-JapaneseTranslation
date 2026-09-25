@@ -19,7 +19,12 @@ class GameUpdateEntry:
 
 	title: str
 	"""
-	アップデートのタイトル名。
+	ゲームアップデートのタイトル名。
+	"""
+
+	url: str
+	"""
+	ゲームアップデートに関連したニュースURL。
 	"""
 
 	@classmethod
@@ -48,5 +53,6 @@ class GameUpdateEntry:
 
 		return cls(
 			version=version.group(0),
-			title=update_title
+			title=update_title,
+			url=steam_news_entry.url
 		)

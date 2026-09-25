@@ -1,8 +1,10 @@
 import errno
+import re
 
 from common_modules.logger import Logger
 from common_modules.paths import paths
 from common_modules.file_reader import FileReader
+from ..models.game_update_entry import GameUpdateEntry
 
 
 class IssueGenerator:
@@ -27,6 +29,34 @@ class IssueGenerator:
 		"""
 
 		return FileReader.read_file(paths.game_update_issue_template_path)
+
+	@staticmethod
+	def replace_placeholders(template: str, game_update_data: GameUpdateEntry) -> str:
+		"""
+		テンプレート内のプレースホルダーにゲームアップデートデータを挿入し、置換後の文字列を返す。
+
+		Args:
+			template (str): Issueテンプレートの文字列
+			game_update_data (GameUpdateEntry): 置換対象のゲームアップデートのデータ
+
+		Returns:
+			置換後のIssueテンプレートの文字列
+		"""
+
+		def placeholder_replacement_handler(match: re.Match) -> str:
+			placeholder_name = match.group(1)
+
+			if placeholder_name == "UPDATE_VERSION":
+				return game_update_data.version
+			elif placeholder_name == "UPDATE_NAME":
+				return game_update_data.title
+			elif placeholder_name == "NEWS_URL":
+				return game_update_data.url
+			else:
+				Logger.print_warning(f"Unknown placeholder found in issue template: {placeholder_name}")
+				return ""
+
+		return re.sub(r"<!--\s*\${([A-Z_]+)}\s*-->", placeholder_replacement_handler, template)
 
 	@classmethod
 	def debug(cls) -> None:
@@ -61,6 +91,20 @@ class IssueGenerator:
 
 		Logger.print_info("Issue template loaded successfully.")
 		Logger.print_spacer(1)
+
+		Logger.print_info("Replacing placeholders in issue template...")
+
+		issue_content = cls.replace_placeholders(template, GameUpdateEntry(
+			version="v1.0.0",
+			title="Test Update",
+			url="https://example.com/"
+		))
+
+		Logger.print_info("Placeholders replaced successfully.")
+		Logger.print_spacer(1)
+
+		Logger.print_info("Printing generated issue content...")
+		Logger.print_info(issue_content)
 
 if __name__ == "__main__":
 	IssueGenerator.debug()
