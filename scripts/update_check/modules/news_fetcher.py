@@ -41,10 +41,8 @@ class NewsFetcher:
 			UnicodeError: レスポンスのデコードに失敗した場合
 		"""
 
-		with urllib.request.urlopen(cls.STEAM_NEWS_URL) as res:
-			response_data = res.read().decode("utf-8")
-
-		return SteamNews.from_dict(json.loads(response_data))
+		with urllib.request.urlopen(cls.STEAM_NEWS_URL) as response:
+			return SteamNews.from_dict(json.loads(response))
 
 	@staticmethod
 	def filter_new_arrival_news(news_entries: list[SteamNewsEntry], from_timestamp: int) -> list[SteamNewsEntry]:
