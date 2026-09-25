@@ -3,8 +3,11 @@ import errno
 import time
 from urllib.error import HTTPError, URLError
 
+from github import GithubException
+
 from common_modules.logger import Logger
 from .modules.news_fetcher import NewsFetcher
+from .modules.issue_generator import IssueGenerator
 
 
 def get_last_timestamp(args: Namespace) -> int:
@@ -138,7 +141,19 @@ def main() -> None:
 		Logger.print_info(f"Found {len(news_game_updates)} new game update(s).")
 		for update in news_game_updates:
 			Logger.print_debug(f"- {update.version} - {update.title}")
-		# TODO: 新しいゲームアップデートに関するIssue作成の処理を作成。
+
+		# ゲームアップデート対応のIssueの作成
+		Logger.print_info("Creating issues for new game updates...")
+		for update in news_game_updates:
+			try:
+				IssueGenerator.post_issue(f"{update.version}への対応", IssueGenerator.generate_issue_content(update))
+			except EnvironmentError:
+				Logger.print_error("GITHUB_TOKEN or GITHUB_REPOSITORY environment variable is not set.")
+				exit(errno.EINVAL)
+			except GithubException as e:
+				Logger.print_error(f"Failed to create issue on GitHub: {str(e)}")
+				Logger.print_debug(str(e.message))
+				exit(errno.ECONNABORTED)
 	else:
 		Logger.print_info("No new game updates found.")
 

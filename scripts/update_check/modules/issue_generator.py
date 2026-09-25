@@ -16,7 +16,7 @@ class IssueGenerator:
 	"""
 
 	@staticmethod
-	def read_template() -> str:
+	def _read_template() -> str:
 		"""
 		ゲームアップデート対応Issueのテンプレートを読み込む。
 
@@ -34,7 +34,7 @@ class IssueGenerator:
 		return FileReader.read_file(paths.game_update_issue_template_path)
 
 	@staticmethod
-	def replace_placeholders(template: str, game_update_data: GameUpdateEntry) -> str:
+	def _replace_placeholders(template: str, game_update_data: GameUpdateEntry) -> str:
 		"""
 		テンプレート内のプレースホルダーにゲームアップデートデータを挿入し、置換後の文字列を返す。
 
@@ -62,7 +62,7 @@ class IssueGenerator:
 		return re.sub(r"<!--\s*\${([A-Z_]+)}\s*-->", placeholder_replacement_handler, template)
 
 	@staticmethod
-	def remove_template_comments(template: str) -> str:
+	def _remove_template_comments(template: str) -> str:
 		"""
 		テンプレート内にあるコメントを削除する。
 		先に`replace_placeholders`メソッドでプレースホルダーを置換する。
@@ -75,6 +75,31 @@ class IssueGenerator:
 		"""
 
 		return re.sub(r"<!--.*?-->([\s\t]*?\n)?", "", template, flags=re.DOTALL)
+
+	@classmethod
+	def generate_issue_content(cls, game_update_data: GameUpdateEntry) -> str:
+		"""
+		ゲームアップデート対応Issueの本文を生成する。
+
+		Args:
+			game_update_data (GameUpdateEntry): ゲームアップデートのデータ
+
+		Returns:
+			生成されたIssueの本文の文字列
+
+		Raises:
+			FileNotFoundError: 指定されたファイルが存在しない場合
+			IsADirectoryError: 指定されたパスがディレクトリである場合
+			PermissionError: ファイルの読み取り権限がない場合
+			UnicodeDecodeError: ファイルの内容のデコードに失敗した場合（バイナリファイルを読み込もうとした場合など）
+			IOError: その他の入出力エラーが発生した場合
+		"""
+
+		template = cls._read_template()
+		content = cls._replace_placeholders(template, game_update_data)
+		content = cls._remove_template_comments(content)
+
+		return content
 
 	@staticmethod
 	def post_issue(title: str, content: str) -> None:
@@ -120,7 +145,7 @@ class IssueGenerator:
 
 		Logger.print_info("Reading issue template...")
 		try:
-			template = cls.read_template()
+			template = cls._read_template()
 		except FileNotFoundError:
 			Logger.print_error(f"Issue template file not found ({paths.game_update_issue_template_path})")
 			exit(errno.ENOENT)
@@ -142,12 +167,12 @@ class IssueGenerator:
 
 		Logger.print_info("Replacing placeholders in issue template...")
 
-		issue_content = cls.replace_placeholders(template, GameUpdateEntry(
+		issue_content = cls._replace_placeholders(template, GameUpdateEntry(
 			version="v1.0.0",
 			title="Test Update",
 			url="https://example.com/"
 		))
-		issue_content = cls.remove_template_comments(issue_content)
+		issue_content = cls._remove_template_comments(issue_content)
 
 		Logger.print_info("Placeholders replaced successfully.")
 		Logger.print_spacer(1)
