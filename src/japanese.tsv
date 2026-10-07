@@ -65,7 +65,7 @@ id	description	en	local
 		Linearly interpolate x to y by z	x から y を z で線形補完する
 		Clamp x within y and z	x を y から z の間に収める
 		Conversions	変換
-		m/s to kmph	メートル毎秒からメートル毎時
+		m/s to kmph	メートル毎秒からキロメートル毎時
 		m/s to mph	メートル毎秒からマイル毎時
 		m/s to knots	メートル毎秒からノット (海里毎時)
 		Turns to radians	回転数から弧度法
