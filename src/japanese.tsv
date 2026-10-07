@@ -43,7 +43,7 @@ id	description	en	local
 		Multiply	乗算
 		Divide	除算
 		Modulo (fmod)	剰余算
-		Power	動力
+		Power	累乗
 		Trigonometry (radians)	三角関数 (ラジアン)
 		Sine	正弦
 		Cosine	余弦
