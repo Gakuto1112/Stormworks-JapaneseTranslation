@@ -12,7 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get event data
-        run: echo '${{ toJSON(github.event) }}' > ./event_data.json
+        env:
+          EVENT_DATA: ${{ toJSON(github.event) }}
+        run: printf '%s\n' "$EVENT_DATA" > ./event_data.json
       - name: Upload event data
         uses: actions/upload-artifact@v4.6.2
         with:
